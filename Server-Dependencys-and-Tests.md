@@ -74,10 +74,10 @@ Version      |Tested Date  |Tested by|Notes|Deps
 ## Ubuntu
 Version      |Tested Date|Tested by|Notes|Deps
 -------------|-----------|---------|-----|-------------------------------------------------------|
-12.04 x32 LTS|05/08/2014 |         |     |mailutils postfix unzip libstdc++5                     |
-12.04 x64 LTS|05/08/2014 |         |     |mailutils postfix unzip libstdc++5:i386                |
-13.10 x64    |05/08/2014 |         |     |mailutils postfix unzip libstdc++5:i386                |
-14.04 x64 LTS|05/08/2014 |         |     |mailutils postfix unzip libstdc++5:i386                |
+12.04 x32 LTS|05/08/2014 |[dgibbs64](https://github.com/dgibbs64)|     |mailutils postfix unzip libstdc++5                     |
+12.04 x64 LTS|05/08/2014 |[dgibbs64](https://github.com/dgibbs64)|     |mailutils postfix unzip libstdc++5:i386                |
+13.10 x64    |05/08/2014 |[dgibbs64](https://github.com/dgibbs64)|     |mailutils postfix unzip libstdc++5:i386                |
+14.04 x64 LTS|05/08/2014 |[dgibbs64](https://github.com/dgibbs64)|     |mailutils postfix unzip libstdc++5:i386                |
 
 ## Debian
 Version      |Tested Date |Tested by|Notes|Deps
@@ -93,3 +93,27 @@ Version      |Tested Date |Tested by|Notes|Deps
 6 x32        |05/08/2014 |[dgibbs64](https://github.com/dgibbs64)|EPEL|mailx nano unzip wget tmux compat-libstdc++-33|
 6 x64        |05/08/2014 |[dgibbs64](https://github.com/dgibbs64)|EPEL|mailx nano unzip wget tmux compat-libstdc++-33.i686 ld-linux.so.2|
 7 x64        |05/08/2014 |[dgibbs64](https://github.com/dgibbs64)|     |mailx nano unzip wget tmux compat-libstdc++-33.i686 ld-linux.so.2 bzip2|
+
+# Unreal Tournament 99
+## Ubuntu
+Version      |Tested Date|Tested by|Notes|Deps
+-------------|-----------|---------|-----|---------------------------------------------------------|
+12.04 x32 LTS|05/08/2014 |[dgibbs64](https://github.com/dgibbs64)|     |mailutils postfix          |
+12.04 x64 LTS|05/08/2014 |[dgibbs64](https://github.com/dgibbs64)|     |mailutils postfix lib32gcc1|
+13.10 x64    |05/08/2014 |[dgibbs64](https://github.com/dgibbs64)|     |mailutils postfix lib32gcc1|
+14.04 x64 LTS|Test Required | |     |                           |
+
+## Debian
+Version      |Tested Date |Tested by|Notes|Deps
+-------------|-----------|---------|-----|-------------------------------------------------------------------|
+6 x32        |05/08/2014 |[dgibbs64](https://github.com/dgibbs64)|     |mailutils postfix tmux ca-certificates|
+6 x64        |05/08/2014 |[dgibbs64](https://github.com/dgibbs64)|     |mailutils postfix tmux ca-certificates lib32gcc1|
+7 x32        |05/08/2014 |[dgibbs64](https://github.com/dgibbs64)|     |mailutils postfix tmux ca-certificates|
+7 x64        |05/08/2014 |[dgibbs64](https://github.com/dgibbs64)|     |mailutils postfix tmux ca-certificates lib32gcc1|
+
+## CentOS
+Version      |Tested Date |Tested by|Notes|Deps
+-------------|-----------|---------|-----|-------------------------------------------------------------------|
+6 x32        |05/08/2014 |[dgibbs64](https://github.com/dgibbs64)|EPEL|mailx tmux nano wget|
+6 x64        |05/08/2014 |[dgibbs64](https://github.com/dgibbs64)|EPEL|mailx tmux nano wget libstdc++.i686|
+7 x64        |Test Required | |     ||
