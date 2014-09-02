@@ -1,5 +1,7 @@
-dog | bird | cat
+# Natural Selection 2
+
+Distro | Version | cat
 ----|------|----
-foo | foo  | foo
+ | foo  | foo
 bar | bar  | bar
-baz | baz  | baz
+ | baz  | baz
