@@ -5,4 +5,4 @@ Distro|Version|Tested Date|Notes|Deps
       |12.04 x32 LTS| foo |
 Ubuntu|12.04 x64 LTS| bar |
       |13.10 x64    | baz | 
-      |14.04 x64 LTS|
+      |14.04 x64 LTS|     |
