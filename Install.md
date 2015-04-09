@@ -1,7 +1,7 @@
 Select the server you want to install and follow the instructions.
 
 Note: Ensure you have installed the relevant [[dependencies]] before you install a server
-=7 Days to Die=
+# 7 Days to Die
 1. Create a user and login.
     adduser sdtdserver
     passwd sdtdserver
@@ -24,7 +24,7 @@ You will need to enter your steam username and password to allow authentication 
 
     ./sdtdserver install
 
-=ARMA 3=
+# ARMA 3
 1. Create a user and login.
     adduser arma3server
     passwd arma3server
@@ -47,7 +47,7 @@ You will need to enter your steam username and password to allow authentication 
 
     ./arma3server install
 
-=Blade Symphony=
+# Blade Symphony
 '''''note:''' You must own a copy of this game in a steam account to download the server.''
 
 1. Create a user and login.
@@ -71,7 +71,7 @@ You will need to enter your steam username and password to allow authentication 
 5. Run the installer and follow the instructions.
 
     ./bsserver install
-=Counter-Strike 1.6=
+# Counter-Strike 1.6
 1. Create a user and login.
     adduser cssserver
     passwd cssserver
@@ -84,7 +84,7 @@ You will need to enter your steam username and password to allow authentication 
 4. Run the installer and follow the instructions.
 
     ./cssserver install
-=Counter-Strike: Condition Zero=
+# Counter-Strike: Condition Zero
 1. Create a user and login.
     adduser csczserver
     passwd csczserver
@@ -97,7 +97,7 @@ You will need to enter your steam username and password to allow authentication 
 4. Run the installer and follow the instructions.
 
     ./csczserver install
-=Counter-Strike: Global Offensive=
+# Counter-Strike: Global Offensive
 1. Create a user and login.
     adduser csgoserver
     passwd csgoserver
@@ -110,7 +110,7 @@ You will need to enter your steam username and password to allow authentication 
 4. Run the installer and follow the instructions.
 
     ./csgoserver install
-=Counter-Strike: Source=
+# Counter-Strike: Source
 1. Create a user and login.
     adduser cssserver
     passwd cssserver
@@ -123,7 +123,7 @@ You will need to enter your steam username and password to allow authentication 
 4. Run the installer and follow the instructions.
 
     ./cssserver install
-=Day of Defeat=
+# Day of Defeat
 1. Create a user and login.
     adduser dodserver
     passwd dodserver
@@ -136,7 +136,7 @@ You will need to enter your steam username and password to allow authentication 
 4. Run the installer and follow the instructions.
 
     ./dodserver install
-=Day of Defeat: Source=
+# Day of Defeat: Source
 1. Create a user and login.
     adduser dodsserver
     passwd dodsserver
@@ -149,7 +149,7 @@ You will need to enter your steam username and password to allow authentication 
 4. Run the installer and follow the instructions.
 
     ./dodsserver install
-=Deathmatch Classic=
+# Deathmatch Classic
 1. Create a user and login.
     adduser dmcserver
     passwd dmcserver
@@ -160,7 +160,7 @@ You will need to enter your steam username and password to allow authentication 
 3. Make it executable.
     chmod +x dmcserver
 4. Run the installer and follow the instructions.
-=Double Action: Boogaloo=
+# Double Action: Boogaloo
 1. Create a user and login.
     adduser dabserver
     passwd dabserver
@@ -173,7 +173,7 @@ You will need to enter your steam username and password to allow authentication 
 4. Run the installer and follow the instructions.
 
     ./dabserver install
-=Fistful of Frags=
+# Fistful of Frags
 1. Create a user and login.
     adduser fofserver
     passwd fofserver
@@ -185,7 +185,7 @@ You will need to enter your steam username and password to allow authentication 
     chmod +x fofserver
 4. Run the installer and follow the instructions.
     ./fofserver install
-=Garry's Mod=
+# Garry's Mod
 1. Create a user and login.
     adduser gmodserver
     passwd gmodserver
@@ -197,7 +197,7 @@ You will need to enter your steam username and password to allow authentication 
     chmod +x gmodserver
 4. Run the installer and follow the instructions.
     ./gmodserver install
-=Half Life: Deathmatch=
+# Half Life: Deathmatch
 1. Create a user and login.
     adduser hldmserver
     passwd hldmserver
@@ -210,7 +210,7 @@ You will need to enter your steam username and password to allow authentication 
 4. Run the installer and follow the instructions.
     ./hldmserver install
 
-=Half Life 2: Deathmatch=
+# Half Life 2: Deathmatch
 1. Create a user and login.
     adduser hl2dmserver
     passwd hl2dmserver
@@ -222,7 +222,7 @@ You will need to enter your steam username and password to allow authentication 
     chmod +x hl2dmserver
 4. Run the installer and follow the instructions.
     ./hl2dmserver install
-=Insurgency=
+# Insurgency
 1. Create a user and login.
     adduser insserver
     passwd insserver
@@ -234,7 +234,7 @@ You will need to enter your steam username and password to allow authentication 
     chmod +x insserver
 4. Run the installer and follow the instructions.
     ./insserver install
-=Just Cause 2=
+# Just Cause 2
 1. Create a user and login.
     adduser jc2server
     passwd jc2server
@@ -246,7 +246,7 @@ You will need to enter your steam username and password to allow authentication 
     chmod +x jc2server
 4. Run the installer and follow the instructions.
     ./jc2server install
-=Killing Floor=
+# Killing Floor
 1. Create a user and login.
     adduser kfserver
     passwd kfserver
@@ -268,7 +268,7 @@ You will need to enter your steam username and password to allow authentication 
 5. Run the installer and follow the instructions.
 
     ./kfserver install
-=Left 4 Dead 2=
+# Left 4 Dead 2
 1. Create a user and login.
     adduser l4d2server
     passwd l4d2server
@@ -281,7 +281,7 @@ You will need to enter your steam username and password to allow authentication 
 4. Run the installer and follow the instructions.
 
     ./l4d2server install
-=Left 4 Dead=
+# Left 4 Dead
 1. Create a user and login.
     adduser l4dserver
     passwd l4dserver
@@ -294,7 +294,7 @@ You will need to enter your steam username and password to allow authentication 
 4. Run the installer and follow the instructions.
 
     ./l4dserver install
-=Mumble=
+# Mumble
 1. Create a user and login.
     adduser mumbleserver
     passwd mumbleserver
@@ -307,7 +307,7 @@ You will need to enter your steam username and password to allow authentication 
 4. Run the installer and follow the instructions.
 
     ./mumbleserver install
-=No More Room in Hell=
+# No More Room in Hell
 1. Create a user and login.
     adduser nmrihserver
     passwd nmrihserver
@@ -330,7 +330,7 @@ You will need to enter your steam username and password to allow authentication 
 
     ./nmrihserver install
 
-=Natural Selection 2=
+# Natural Selection 2
 1. Create a user and login.
     adduser ns2server
     passwd ns2server
@@ -352,7 +352,7 @@ You will need to enter your steam username and password to allow authentication 
 5. Run the installer and follow the instructions.
 
     ./ns2server install
-=Opposing Force=
+# Opposing Force
 1. Create a user and login.
     adduser opforserver
     passwd opforserver
@@ -364,7 +364,7 @@ You will need to enter your steam username and password to allow authentication 
     chmod +x opforserver
 4. Run the installer and follow the instructions.
 
-=Red Orchestra: Ostfront 41-45=
+# Red Orchestra: Ostfront 41-45
 1. Create a user and login.
     adduser roserver
     passwd roserver
@@ -386,7 +386,7 @@ You will need to enter your steam username and password to allow authentication 
 5. Run the installer and follow the instructions.
 
     ./roserver install
-=Ricochet=
+# Ricochet
 1. Create a user and login.
     adduser ricochetserver
     passwd ricochetserver
@@ -397,7 +397,7 @@ You will need to enter your steam username and password to allow authentication 
 3. Make it executable.
     chmod +x ricochetserver
 4. Run the installer and follow the instructions.
-=Serious Sam 3: BFE=
+# Serious Sam 3: BFE
 1. Create a user and login.
     adduser ss3server
     passwd ss3server
@@ -419,7 +419,7 @@ You will need to enter your steam username and password to allow authentication 
 5. Run the installer and follow the instructions.
 
     ./ss3server install
-=Starbound=
+# Starbound
 '''''note:''' You must own a copy of this game in a steam account to download the server.''
 
 1. Create a user and login.
@@ -443,7 +443,7 @@ You will need to enter your steam username and password to allow authentication 
 5. Run the installer and follow the instructions.
 
     ./sbserver install
-=Team Fortress 2=
+# Team Fortress 2
 1. Create a user and login.
     adduser tf2server
     passwd tf2server
@@ -456,7 +456,7 @@ You will need to enter your steam username and password to allow authentication 
 4. Run the installer and follow the instructions.
 
     ./tf2server install
-=Team Fortress Classic=
+# Team Fortress Classic
 1. Create a user and login.
     adduser tfcserver
     passwd tfcserver
@@ -469,7 +469,7 @@ You will need to enter your steam username and password to allow authentication 
 4. Run the installer and follow the instructions.
 
     ./tfcserver install
-=Teamspeak 3=
+# Teamspeak 3
 1. Create a user and login.
     adduser ts3server
     passwd ts3server
@@ -482,7 +482,7 @@ You will need to enter your steam username and password to allow authentication 
 4. Run the installer and follow the instructions.
 
     ./ts3server install
-=Unreal Tournament 2004=
+# Unreal Tournament 2004
 1. Create a user and login.
     adduser ut2k4server
     passwd ut2k4server
@@ -495,7 +495,7 @@ You will need to enter your steam username and password to allow authentication 
 4. Run the installer and follow the instructions.
 
     ./ut2k4server install
-=Unreal Tournament 99=
+# Unreal Tournament 99
 1. Create a user and login.
     adduser ut99server
     passwd ut99server
@@ -508,6 +508,3 @@ You will need to enter your steam username and password to allow authentication 
 4. Run the installer and follow the instructions.
 
     ./ut99server install
-=See Also=
-* [[Dependencies]]
-* [[Usage]]
