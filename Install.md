@@ -3,17 +3,18 @@ Select the server you want to install and follow the instructions.
 Note: Ensure you have installed the relevant [[dependencies]] before you install a server
 # 7 Days to Die
 1. Create a user and login.
+
     adduser sdtdserver
     passwd sdtdserver
 
     su - sdtdserver
 2. Download the script.
-    wget http://gameservermanagers.com/dl/sdtdserver
+    `wget http://gameservermanagers.com/dl/sdtdserver`
 3. Make it executable.
-    chmod +x sdtdserver
+    `chmod +x sdtdserver`
 4. Add Steam login details
 
-You will need to enter your steam username and password to allow authentication to the steamCMD system. I recommend that you create a new Steam username just for the server.
+> You will need to enter your steam username and password to allow authentication to the steamCMD system. I recommend that you create a new Steam username just for the server.
 
     nano sdtdserver
 
@@ -48,7 +49,7 @@ You will need to enter your steam username and password to allow authentication 
     ./arma3server install
 
 # Blade Symphony
-'''''note:''' You must own a copy of this game in a steam account to download the server.''
+> note: You must own a copy of this game in a steam account to download the server.
 
 1. Create a user and login.
     adduser bsserver
@@ -58,16 +59,17 @@ You will need to enter your steam username and password to allow authentication 
 2. Download the script.
     wget http://gameservermanagers.com/dl/bsserver
 3. Make it executable.
-    chmod +x bsserver
+    `chmod +x bsserver`
 4. Add Steam login details
 
-You will need to enter your steam username and password to allow authentication to the steamCMD system. I recommend that you create a new Steam username just for the server.
+> You will need to enter your steam username and password to allow authentication to the steamCMD system. I recommend that you create a new Steam username just for the server.
 
     nano bsserver
 
     # Steam login
     steamuser="username"
     steampass="password"
+
 5. Run the installer and follow the instructions.
 
     ./bsserver install
@@ -84,6 +86,7 @@ You will need to enter your steam username and password to allow authentication 
 4. Run the installer and follow the instructions.
 
     ./cssserver install
+
 # Counter-Strike: Condition Zero
 1. Create a user and login.
     adduser csczserver
