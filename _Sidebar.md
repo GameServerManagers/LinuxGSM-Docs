@@ -1,3 +1,4 @@
 # Getting Started
-Dependencies
-Install
+* Dependencies
+* Install
+* Usage
