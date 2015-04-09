@@ -16,7 +16,7 @@ The Linux Game Server Manager is tested to work on the following Linux systems.
 * Debian based distros (Ubuntu, Mint etc.).
 * Redhat based distros (CentOS, Fedora etc.).
 * Glibc >= 2.15 recommended (different servers have different requirements).
-*Tmux >= 1.6 recommended.
+* Tmux >= 1.6 recommended.
 
 # Distros
 * Ubuntu
