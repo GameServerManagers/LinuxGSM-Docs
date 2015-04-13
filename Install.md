@@ -1,29 +1,31 @@
+Below are the basic instructions to get started with installing a game server using LGSM.
+
 Select the server you want to install and follow the instructions.
 
-Note: Ensure you have installed the relevant [[dependencies]] before you install a server
+> Note: Ensure you have installed the relevant [[dependencies]] before you install a server
+
 # 7 Days to Die
+![7 Days to Die](http://gameservermanagers.com/wp-content/themes/lgsm/img/games/sdtdserver_logo-250x143.jpg)
+
 1. Create a user and login.
+    
+        adduser sdtdserver
+        passwd sdtdserver
+        su - sdtdserver
 
-    adduser sdtdserver
-    passwd sdtdserver
-
-    su - sdtdserver
 2. Download the script.
     `wget http://gameservermanagers.com/dl/sdtdserver`
 3. Make it executable.
     `chmod +x sdtdserver`
-4. Add Steam login details
+4. Add Steam login details. `nano sdtdserver`
 
-> You will need to enter your steam username and password to allow authentication to the SteamCMD system. I recommend that you create a new Steam username just for the server.
+    > You will need to enter your steam username and password to allow authentication to the SteamCMD system. I recommend that you create a new Steam username just for the server.
 
-    nano sdtdserver
-
-    # Steam login
-    steamuser="username"
-    steampass="password"
+        # Steam login
+        steamuser="username"
+        steampass="password"
 5. Run the installer and follow the instructions.
-
-    ./sdtdserver install
+    `./sdtdserver install`
 
 # ARMA 3
 1. Create a user and login.
