@@ -14,7 +14,7 @@ Note: Ensure you have installed the relevant [[dependencies]] before you install
     `chmod +x sdtdserver`
 4. Add Steam login details
 
-> You will need to enter your steam username and password to allow authentication to the steamCMD system. I recommend that you create a new Steam username just for the server.
+> You will need to enter your steam username and password to allow authentication to the SteamCMD system. I recommend that you create a new Steam username just for the server.
 
     nano sdtdserver
 
@@ -37,7 +37,7 @@ Note: Ensure you have installed the relevant [[dependencies]] before you install
     chmod +x arma3server
 4. Add Steam login details
 
-You will need to enter your steam username and password to allow authentication to the steamCMD system. I recommend that you create a new Steam username just for the server.
+> You will need to enter your steam username and password to allow authentication to the SteamCMD system. I recommend that you create a new Steam username just for the server.
 
     nano arma3server
 
@@ -62,7 +62,7 @@ You will need to enter your steam username and password to allow authentication 
     `chmod +x bsserver`
 4. Add Steam login details
 
-> You will need to enter your steam username and password to allow authentication to the steamCMD system. I recommend that you create a new Steam username just for the server.
+> > You will need to enter your steam username and password to allow authentication to the SteamCMD system. I recommend that you create a new Steam username just for the server.
 
     nano bsserver
 
@@ -261,7 +261,7 @@ You will need to enter your steam username and password to allow authentication 
     chmod +x kfserver
 4. Add Steam login details
 
-You will need to enter your steam username and password to allow authentication to the steamCMD system. I recommend that you create a new Steam username just for the server.
+> You will need to enter your steam username and password to allow authentication to the SteamCMD system. I recommend that you create a new Steam username just for the server.
 
     nano kfserver
 
@@ -322,7 +322,7 @@ You will need to enter your steam username and password to allow authentication 
     chmod +x nmrihserver
 4. Add Steam login details
 
-You will need to enter your steam username and password to allow authentication to the steamCMD system. I recommend that you create a new Steam username just for the server.
+> You will need to enter your steam username and password to allow authentication to the SteamCMD system. I recommend that you create a new Steam username just for the server.
 
     nano nmrihserver
 
@@ -345,7 +345,7 @@ You will need to enter your steam username and password to allow authentication 
     chmod +x ns2server
 4. Add Steam login details
 
-You will need to enter your steam username and password to allow authentication to the steamCMD system. I recommend that you create a new Steam username just for the server.
+> You will need to enter your steam username and password to allow authentication to the SteamCMD system. I recommend that you create a new Steam username just for the server.
 
     nano ns2server
 
@@ -379,7 +379,7 @@ You will need to enter your steam username and password to allow authentication 
     chmod +x roserver
 4. Add Steam login details
 
-You will need to enter your steam username and password to allow authentication to the steamCMD system. I recommend that you create a new Steam username just for the server.
+> You will need to enter your steam username and password to allow authentication to the SteamCMD system. I recommend that you create a new Steam username just for the server.
 
     nano roserver
 
@@ -412,7 +412,7 @@ You will need to enter your steam username and password to allow authentication 
     chmod +x ss3server
 4. Add Steam login details
 
-You will need to enter your steam username and password to allow authentication to the steamCMD system. I recommend that you create a new Steam username just for the server.
+> You will need to enter your steam username and password to allow authentication to the SteamCMD system. I recommend that you create a new Steam username just for the server.
 
     nano ss3server
 
@@ -436,7 +436,7 @@ You will need to enter your steam username and password to allow authentication 
     chmod +x sbserver
 4. Add Steam login details
 
-You will need to enter your steam username and password to allow authentication to the steamCMD system. I recommend that you create a new Steam username just for the server.
+> You will need to enter your steam username and password to allow authentication to the SteamCMD system. I recommend that you create a new Steam username just for the server.
 
     nano bsserver
 
