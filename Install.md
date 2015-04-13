@@ -5,7 +5,7 @@ Select the server you want to install and follow the instructions.
 > Note: Ensure you have installed the relevant [[dependencies]] before you install a server
 
 # 7 Days to Die
-![7 Days to Die](http://gameservermanagers.com/wp-content/themes/lgsm/img/games/sdtdserver_logo-250x143.jpg)
+![7 Days to Die](http://cdn.akamai.steamstatic.com/steam/apps/251570/header.jpg)
 
 1. Create a user and login.
     
