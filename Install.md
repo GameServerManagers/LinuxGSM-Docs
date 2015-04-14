@@ -3,7 +3,7 @@ Select the server you want to install and follow the instructions.
 
 > note: Ensure you have installed the relevant [[dependencies]] before you install a server
 
-# Game Servers
+### Game Servers
  - [7 Days to Die](#7-Day-to-Die)
  - [ARMA 3](#ARMA-3)
  - [Blade Symphony](#Blade-Symphony)
