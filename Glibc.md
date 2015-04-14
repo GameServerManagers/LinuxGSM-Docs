@@ -44,7 +44,9 @@ A list of all the servers Glibc requirements
 Disto Glibc Versions
 ====================
 
-List of distros and there Glibc version. [distrowatch.com][] is also a great source to find this infomation.
+List of distros and there Glibc version. 
+
+[distrowatch.com][] is also a great source to find this infomation.
 
 | Distro           | Glibc   |
 |------------------|---------|
