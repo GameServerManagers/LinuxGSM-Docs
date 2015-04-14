@@ -9,9 +9,9 @@ _note: Ensure you have installed the relevant [[dependencies]] before you instal
 
 1. Create a user and login.
 
-            adduser sdtdserver
-            passwd sdtdserver
-            su - sdtdserver
+        adduser sdtdserver
+        passwd sdtdserver
+        su - sdtdserver
 
 2. Download the script. `wget http://gameservermanagers.com/dl/sdtdserver`
 3. Make it executable. `chmod +x sdtdserver`
@@ -22,8 +22,10 @@ _note: Ensure you have installed the relevant [[dependencies]] before you instal
         # Steam login
         steamuser="username"
         steampass="password"
+
 5. Run the installer and follow the instructions.
-    `./sdtdserver install`
+
+        ./sdtdserver install
 
 # ARMA 3
 ![ARMA 3](http://cdn.akamai.steamstatic.com/steam/apps/107410/header.jpg)
@@ -56,251 +58,271 @@ _note: Ensure you have installed the relevant [[dependencies]] before you instal
 
         adduser bsserver
         passwd bsserver
-
         su - bsserver
 
 2. Download the script. `wget http://gameservermanagers.com/dl/bsserver`
 3. Make it executable. `chmod +x bsserver`
-4. Add Steam login details. nano bsserver
+4. Add Steam login details. `nano bsserver`
 
-> You will need to enter your steam username and password to allow authentication to the SteamCMD system. I recommend that you create a new Steam username just for the server.
+    > You will need to enter your steam username and password to allow authentication to the SteamCMD system. I recommend that you create a new Steam username just for the server.
 
-    # Steam login
-    steamuser="username"
-    steampass="password"
+        # Steam login
+        steamuser="username"
+        steampass="password"
 
 5. Run the installer and follow the instructions.
 
-    ./bsserver install
+        ./bsserver install
+
 # Counter-Strike 1.6
 ![Counter-Strike 1.6](http://cdn.akamai.steamstatic.com/steam/apps/10/header.jpg)
 
 1. Create a user and login.
-        adduser cssserver
-        passwd cssserver
 
-        su - cssserver
-2. Download the script.
-    `wget http://gameservermanagers.com/dl/cssserver`
-3. Make it executable.
-    `chmod +x cssserver`
+        adduser csserver
+        passwd csserver
+        su - csserver
+2. Download the script. `wget http://gameservermanagers.com/dl/csserver`
+3. Make it executable. `chmod +x csserver`
 4. Run the installer and follow the instructions.
 
-    ./cssserver install
+        ./csserver install
 
 # Counter-Strike: Condition Zero
 ![Counter-Strike: Condition Zero](http://cdn.akamai.steamstatic.com/steam/apps/80/header.jpg)
+
 1. Create a user and login.
+
         adduser csczserver
         passwd csczserver
-
         su - csczserver
-2. Download the script.
-    `wget http://gameservermanagers.com/dl/csczserver`
-3. Make it executable.
-    `chmod +x csczserver`
+2. Download the script. `wget http://gameservermanagers.com/dl/csczserver`
+3. Make it executable. `chmod +x csczserver`
 4. Run the installer and follow the instructions.
 
-    ./csczserver install
+        ./csczserver install
+
 # Counter-Strike: Global Offensive
 ![Counter-Strike: Global Offensive](http://cdn.akamai.steamstatic.com/steam/apps/730/header.jpg)
+
 1. Create a user and login.
+
         adduser csgoserver
         passwd csgoserver
-
         su - csgoserver
-2. Download the script.
-    `wget http://gameservermanagers.com/dl/csgoserver`
-3. Make it executable.
-    `chmod +x csgoserver`
+2. Download the script. `wget http://gameservermanagers.com/dl/csgoserver`
+3. Make it executable. `chmod +x csgoserver`
 4. Run the installer and follow the instructions.
 
-    ./csgoserver install
+        ./csgoserver install
+
 # Counter-Strike: Source
+![Counter-Strike: Source](http://cdn.akamai.steamstatic.com/steam/apps/240/header.jpg)
+
 1. Create a user and login.
+
         adduser cssserver
         passwd cssserver
-
         su - cssserver
-2. Download the script.
-    `wget http://gameservermanagers.com/dl/cssserver`
-3. Make it executable.
-    `chmod +x cssserver`
+2. Download the script. `wget http://gameservermanagers.com/dl/cssserver`
+3. Make it executable. `chmod +x cssserver`
 4. Run the installer and follow the instructions.
 
-    ./cssserver install
+        ./cssserver install
+
 # Day of Defeat
+![Day of Defeat](http://cdn.akamai.steamstatic.com/steam/apps/30/header.jpg)
+
 1. Create a user and login.
+
         adduser dodserver
         passwd dodserver
-
         su - dodserver
-2. Download the script.
-    `wget http://gameservermanagers.com/dl/dodserver`
-3. Make it executable.
-    `chmod +x dodserver`
+2. Download the script. `wget http://gameservermanagers.com/dl/dodserver`
+3. Make it executable. `chmod +x dodserver`
 4. Run the installer and follow the instructions.
 
-    ./dodserver install
+        ./dodserver install
+
 # Day of Defeat: Source
+![Day of Defeat: Source](http://cdn.akamai.steamstatic.com/steam/apps/300/header.jpg)
+
 1. Create a user and login.
+
         adduser dodsserver
         passwd dodsserver
-
         su - dodsserver
-2. Download the script.
-    `wget http://gameservermanagers.com/dl/dodsserver`
-3. Make it executable.
-    `chmod +x dodsserver`
+2. Download the script. `wget http://gameservermanagers.com/dl/dodsserver`
+3. Make it executable. `chmod +x dodsserver`
 4. Run the installer and follow the instructions.
 
-    ./dodsserver install
+        ./dodsserver install
+
 # Deathmatch Classic
+![Deathmatch Classic](http://cdn.akamai.steamstatic.com/steam/apps/40/header.jpg)
+
 1. Create a user and login.
+
         adduser dmcserver
         passwd dmcserver
-
         su - dmcserver
-2. Download the script.
-    `wget http://gameservermanagers.com/dl/dmcserver`
-3. Make it executable.
-    `chmod +x dmcserver`
+2. Download the script. `wget http://gameservermanagers.com/dl/dmcserver`
+3. Make it executable. `chmod +x dmcserver`
 4. Run the installer and follow the instructions.
+
+        ./dmcserver install
+
 # Double Action: Boogaloo
+![Double Action: Boogaloo](http://cdn.akamai.steamstatic.com/steam/apps/317360/header.jpg)
+
 1. Create a user and login.
+
         adduser dabserver
         passwd dabserver
-
         su - dabserver
-2. Download the script.
-    `wget http://gameservermanagers.com/dl/dabserver`
-3. Make it executable.
-    `chmod +x dabserver`
+2. Download the script. `wget http://gameservermanagers.com/dl/dabserver`
+3. Make it executable. `chmod +x dabserver`
 4. Run the installer and follow the instructions.
 
-    ./dabserver install
+        ./dabserver install
+
 # Fistful of Frags
+![Fistful of Frags](http://cdn.akamai.steamstatic.com/steam/apps/265630/header.jpg)
+
 1. Create a user and login.
+
         adduser fofserver
         passwd fofserver
-
         su - fofserver
-2. Download the script.
-    `wget http://gameservermanagers.com/dl/fofserver`
-3. Make it executable.
-    `chmod +x fofserver`
+2. Download the script. `wget http://gameservermanagers.com/dl/fofserver`
+3. Make it executable. `chmod +x fofserver`
 4. Run the installer and follow the instructions.
-    ./fofserver install
+
+        ./fofserver install
+
 # Garry's Mod
+![Garry's Mod](http://cdn.akamai.steamstatic.com/steam/apps/4000/header.jpg)
+
 1. Create a user and login.
+
         adduser gmodserver
         passwd gmodserver
-
         su - gmodserver
-2. Download the script.
-    `wget http://gameservermanagers.com/dl/gmodserver`
-3. Make it executable.
-    `chmod +x gmodserver`
+2. Download the script. `wget http://gameservermanagers.com/dl/gmodserver`
+3. Make it executable. `chmod +x gmodserver`
 4. Run the installer and follow the instructions.
-    ./gmodserver install
+
+        ./gmodserver install
+
 # Half Life: Deathmatch
+![Half Life: Deathmatch](http://cdn.akamai.steamstatic.com/steam/apps/70/header.jpg)
+
 1. Create a user and login.
+
         adduser hldmserver
         passwd hldmserver
-
         su - hldmserver
-2. Download the script.
-    `wget http://gameservermanagers.com/dl/hldmserver`
-3. Make it executable.
-    `chmod +x hldmserver`
+2. Download the script. `wget http://gameservermanagers.com/dl/hldmserver`
+3. Make it executable. `chmod +x hldmserver`
 4. Run the installer and follow the instructions.
-    ./hldmserver install
+
+        ./hldmserver install
 
 # Half Life 2: Deathmatch
+![Half Life 2: Deathmatch](http://cdn.akamai.steamstatic.com/steam/apps/320/header.jpg)
+
 1. Create a user and login.
+
         adduser hl2dmserver
         passwd hl2dmserver
-
         su - hl2dmserver
-2. Download the script.
-    `wget http://gameservermanagers.com/dl/hl2dmserver`
-3. Make it executable.
-    `chmod +x hl2dmserver`
+2. Download the script. `wget http://gameservermanagers.com/dl/hl2dmserver`
+3. Make it executable. `chmod +x hl2dmserver`
 4. Run the installer and follow the instructions.
-    ./hl2dmserver install
+
+        ./hl2dmserver install
+
 # Insurgency
+![Insurgency](http://cdn.akamai.steamstatic.com/steam/apps/222880/header.jpg)
+
 1. Create a user and login.
+
         adduser insserver
         passwd insserver
-
         su - insserver
-2. Download the script.
-    `wget http://gameservermanagers.com/dl/insserver`
-3. Make it executable.
-    `chmod +x insserver`
+2. Download the script. `wget http://gameservermanagers.com/dl/insserver`
+3. Make it executable. `chmod +x insserver`
 4. Run the installer and follow the instructions.
-    ./insserver install
+
+        ./insserver install
+
 # Just Cause 2
+![Just Cause 2](http://cdn.akamai.steamstatic.com/steam/apps/8190/header.jpg)
+
 1. Create a user and login.
+
         adduser jc2server
         passwd jc2server
-
         su - jc2server
-2. Download the script.
-    `wget http://gameservermanagers.com/dl/jc2server`
-3. Make it executable.
-    `chmod +x jc2server`
+2. Download the script. `wget http://gameservermanagers.com/dl/jc2server`
+3. Make it executable. `chmod +x jc2server`
 4. Run the installer and follow the instructions.
-    ./jc2server install
+
+        ./jc2server install
+
 # Killing Floor
+![Killing Floor](http://cdn.akamai.steamstatic.com/steam/apps/1250/header.jpg)
+
 1. Create a user and login.
+
         adduser kfserver
         passwd kfserver
-
         su - kfserver
-2. Download the script.
-    `wget http://gameservermanagers.com/dl/kfserver`
-3. Make it executable.
-    `chmod +x kfserver`
-4. Add Steam login details.
+2. Download the script. `wget http://gameservermanagers.com/dl/kfserver`
+3. Make it executable. `chmod +x kfserver`
+4. Add Steam login details. `nano kfserver`
 
-> You will need to enter your steam username and password to allow authentication to the SteamCMD system. I recommend that you create a new Steam username just for the server.
+    > You will need to enter your steam username and password to allow authentication to the SteamCMD system. I recommend that you create a new Steam username just for the server.
 
-    nano kfserver
+        # Steam login
+        steamuser="username"
+        steampass="password"
 
-    # Steam login
-    steamuser="username"
-    steampass="password"
 5. Run the installer and follow the instructions.
 
-    ./kfserver install
-# Left 4 Dead 2
-1. Create a user and login.
-        adduser l4d2server
-        passwd l4d2server
+        ./kfserver install
 
-        su - l4d2server
-2. Download the script.
-    `wget http://gameservermanagers.com/dl/l4d2server`
-3. Make it executable.
-    `chmod +x l4d2server`
-4. Run the installer and follow the instructions.
-
-    ./l4d2server install
 # Left 4 Dead
+![Left 4 Dead](http://cdn.akamai.steamstatic.com/steam/apps/500/header.jpg)
+
 1. Create a user and login.
+
         adduser l4dserver
         passwd l4dserver
-
         su - l4dserver
-2. Download the script.
-    `wget http://gameservermanagers.com/dl/l4dserver`
-3. Make it executable.
-    `chmod +x l4dserver`
+2. Download the script. `wget http://gameservermanagers.com/dl/l4dserver`
+3. Make it executable. `chmod +x l4dserver`
 4. Run the installer and follow the instructions.
 
-    ./l4dserver install
+        ./l4dserver install
+
+# Left 4 Dead 2
+![Left 4 Dead 2](http://cdn.akamai.steamstatic.com/steam/apps/550/header.jpg)
+
+1. Create a user and login.
+
+        adduser l4d2server
+        passwd l4d2server
+        su - l4d2server
+2. Download the script. `wget http://gameservermanagers.com/dl/l4d2server`
+3. Make it executable. `chmod +x l4d2server`
+4. Run the installer and follow the instructions.
+
+        ./l4d2server install
+
 # Mumble
+![Mumble](http://gameservermanagers.com/wp-content/themes/lgsm/img/games/mumbleserver_logo-250x143.jpg)
+
 1. Create a user and login.
         adduser mumbleserver
         passwd mumbleserver
@@ -312,148 +334,160 @@ _note: Ensure you have installed the relevant [[dependencies]] before you instal
     `chmod +x mumbleserver`
 4. Run the installer and follow the instructions.
 
-    ./mumbleserver install
+        ./mumbleserver install
+
 # No More Room in Hell
+![No More Room in Hell](http://cdn.akamai.steamstatic.com/steam/apps/224260/header.jpg)
+
 1. Create a user and login.
+
         adduser nmrihserver
         passwd nmrihserver
-
         su - nmrihserver
-2. Download the script.
-    `wget http://gameservermanagers.com/dl/nmrihserver`
-3. Make it executable.
-    `chmod +x nmrihserver`
-4. Add Steam login details.
+2. Download the script. `wget http://gameservermanagers.com/dl/nmrihserver`
+3. Make it executable. `chmod +x nmrihserver`
+4. Add Steam login details. `nano nmrihserver`
 
-> You will need to enter your steam username and password to allow authentication to the SteamCMD system. I recommend that you create a new Steam username just for the server.
+    > You will need to enter your steam username and password to allow authentication to the SteamCMD system. I recommend that you create a new Steam username just for the server.
 
-    nano nmrihserver
+        # Steam login
+        steamuser="username"
+        steampass="password"
 
-    # Steam login
-    steamuser="username"
-    steampass="password"
 5. Run the installer and follow the instructions.
 
-    ./nmrihserver install
+        ./nmrihserver install
 
 # Natural Selection 2
+![Natural Selection 2](http://cdn.akamai.steamstatic.com/steam/apps/4920/header.jpg)
+
 1. Create a user and login.
+
         adduser ns2server
         passwd ns2server
-
         su - ns2server
-2. Download the script.
-    `wget http://gameservermanagers.com/dl/ns2server`
-3. Make it executable.
-    `chmod +x ns2server`
-4. Add Steam login details.
+2. Download the script. `wget http://gameservermanagers.com/dl/ns2server`
+3. Make it executable. `chmod +x ns2server`
+4. Add Steam login details. `nano ns2server`
 
-> You will need to enter your steam username and password to allow authentication to the SteamCMD system. I recommend that you create a new Steam username just for the server.
+    > You will need to enter your steam username and password to allow authentication to the SteamCMD system. I recommend that you create a new Steam username just for the server.
 
-    nano ns2server
+        # Steam login
+        steamuser="username"
+        steampass="password"
 
-    # Steam login
-    steamuser="username"
-    steampass="password"
 5. Run the installer and follow the instructions.
 
-    ./ns2server install
+        ./ns2server install
+
 # Opposing Force
+![Opposing Force](http://cdn.akamai.steamstatic.com/steam/apps/50/header.jpg)
+
 1. Create a user and login.
+
         adduser opforserver
         passwd opforserver
-
-        su - opfserver
+        su - opforserver
 2. Download the script.
     `wget http://gameservermanagers.com/dl/opforserver`
 3. Make it executable.
     `chmod +x opforserver`
 4. Run the installer and follow the instructions.
 
+        ./opforserver install
+
 # Red Orchestra: Ostfront 41-45
+![Red Orchestra: Ostfront 41-45](http://cdn.akamai.steamstatic.com/steam/apps/1200/header.jpg)
+
 1. Create a user and login.
-        adduser roserver`
-        passwd roserver`
 
+        adduser roserver
+        passwd roserver
         su - roserver
-2. Download the script.
-    `wget http://gameservermanagers.com/dl/roserver`
-3. Make it executable.
-    `chmod +x roserver`
-4. Add Steam login details.
+2. Download the script. `wget http://gameservermanagers.com/dl/roserver`
+3. Make it executable. `chmod +x roserver`
+4. Add Steam login details. `nano roserver`
 
-> You will need to enter your steam username and password to allow authentication to the SteamCMD system. I recommend that you create a new Steam username just for the server.
+    > You will need to enter your steam username and password to allow authentication to the SteamCMD system. I recommend that you create a new Steam username just for the server.
 
-    nano roserver
+        # Steam login
+        steamuser="username"
+        steampass="password"
 
-    # Steam login
-    steamuser="username"
-    steampass="password"
 5. Run the installer and follow the instructions.
 
-    ./roserver install
+        ./roserver install
+
 # Ricochet
+![Ricochet](http://cdn.akamai.steamstatic.com/steam/apps/60/header.jpg)
+
 1. Create a user and login.
         adduser ricochetserver
         passwd ricochetserver
 
-        su - ricochet
+        su - ricochetserver
 2. Download the script.
     `wget http://gameservermanagers.com/dl/ricochetserver`
 3. Make it executable.
     `chmod +x ricochetserver`
 4. Run the installer and follow the instructions.
+
+        ./ricochetserver install
+
 # Serious Sam 3: BFE
+![Red Orchestra: Ostfront 41-45](http://cdn.akamai.steamstatic.com/steam/apps/41070/header.jpg)
+
 1. Create a user and login.
+
         adduser ss3server
         passwd ss3server
-
         su - ss3server
-2. Download the script.
-    `wget http://gameservermanagers.com/dl/ss3server`
-3. Make it executable.
-    `chmod +x ss3server`
-4. Add Steam login details.
+2. Download the script. `wget http://gameservermanagers.com/dl/ss3server`
+3. Make it executable. `chmod +x ss3server`
+4. Add Steam login details. `nano ss3server`
 
-> You will need to enter your steam username and password to allow authentication to the SteamCMD system. I recommend that you create a new Steam username just for the server.
+    > You will need to enter your steam username and password to allow authentication to the SteamCMD system. I recommend that you create a new Steam username just for the server.
 
-    nano ss3server
+        # Steam login
+        steamuser="username"
+        steampass="password"
 
-    # Steam login
-    steamuser="username"
-    steampass="password"
 5. Run the installer and follow the instructions.
 
-    ./ss3server install
+        ./ss3server install
+
 # Starbound
-'''''note:''' You must own a copy of this game in a steam account to download the server.''
+![Starbound](http://cdn.akamai.steamstatic.com/steam/apps/211820/header.jpg)
+
+> note: You must own a copy of this game in a steam account to download the server.
 
 1. Create a user and login.
+
         adduser sbserver
         passwd sbserver
-
         su - sbserver
-2. Download the script.
-    `wget http://gameservermanagers.com/dl/sbserver`
-3. Make it executable.
-    `chmod +x sbserver`
-4. Add Steam login details.
 
-> You will need to enter your steam username and password to allow authentication to the SteamCMD system. I recommend that you create a new Steam username just for the server.
+2. Download the script. `wget http://gameservermanagers.com/dl/sbserver`
+3. Make it executable. `chmod +x sbserver`
+4. Add Steam login details. `nano sbserver`
 
-    nano bsserver
+    > You will need to enter your steam username and password to allow authentication to the SteamCMD system. I recommend that you create a new Steam username just for the server.
 
-    # Steam login
-    steamuser="username"
-    steampass="password"
+        # Steam login
+        steamuser="username"
+        steampass="password"
+
 5. Run the installer and follow the instructions.
 
-    ./sbserver install
+        ./sbserver install
+
 # Team Fortress 2
+![Team Fortress 2](http://cdn.akamai.steamstatic.com/steam/apps/440/header.jpg)
+
 1. Create a user and login.
+
         adduser tf2server
         passwd tf2server
-
         su - tf2server
 2. Download the script.
     `wget http://gameservermanagers.com/dl/tf2server`
@@ -461,12 +495,15 @@ _note: Ensure you have installed the relevant [[dependencies]] before you instal
     `chmod +x tf2server`
 4. Run the installer and follow the instructions.
 
-    ./tf2server install
+        ./tf2server install
+
 # Team Fortress Classic
+![Team Fortress Classic](http://cdn.akamai.steamstatic.com/steam/apps/20/header.jpg)
+
 1. Create a user and login.
+
         adduser tfcserver
         passwd tfcserver
-
         su - tfcserver
 2. Download the script.
     `wget http://gameservermanagers.com/dl/tfcserver`
@@ -474,12 +511,15 @@ _note: Ensure you have installed the relevant [[dependencies]] before you instal
     `chmod +x tfcserver`
 4. Run the installer and follow the instructions.
 
-    ./tfcserver install
+        ./tfcserver install
+
 # Teamspeak 3
+![Teamspeak 3](http://gameservermanagers.com/wp-content/themes/lgsm/img/games/ts3server_logo-250x143.jpg)
+
 1. Create a user and login.
+
         adduser ts3server
         passwd ts3server
-
         su - ts3server
 2. Download the script.
     `wget http://gameservermanagers.com/dl/ts3server`
@@ -487,12 +527,15 @@ _note: Ensure you have installed the relevant [[dependencies]] before you instal
     `chmod +x ts3server`
 4. Run the installer and follow the instructions.
 
-    ./ts3server install
+        ./ts3server install
+
 # Unreal Tournament 2004
+![Unreal Tournament 2004](http://cdn.akamai.steamstatic.com/steam/apps/13230/header.jpg)
+
 1. Create a user and login.
+
         adduser ut2k4server
         passwd ut2k4server
-
         su - ut2k4server
 2. Download the script.
     `wget http://gameservermanagers.com/dl/ut2k4server`
@@ -500,12 +543,15 @@ _note: Ensure you have installed the relevant [[dependencies]] before you instal
     `chmod +x ut2k4server`
 4. Run the installer and follow the instructions.
 
-    ./ut2k4server install
+        ./ut2k4server install
+
 # Unreal Tournament 99
+![Unreal Tournament 2004](http://cdn.akamai.steamstatic.com/steam/apps/13240/header.jpg)
+
 1. Create a user and login.
+
         adduser ut99server
         passwd ut99server
-
         su - ut99server
 2. Download the script.
     `wget http://gameservermanagers.com/dl/ut99server`
@@ -513,4 +559,4 @@ _note: Ensure you have installed the relevant [[dependencies]] before you instal
     `chmod +x ut99server`
 4. Run the installer and follow the instructions.
 
-    ./ut99server install
+        ./ut99server install
