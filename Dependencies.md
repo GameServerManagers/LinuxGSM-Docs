@@ -182,7 +182,7 @@ Natural Selection 2
 
 ## ![CentOS Icon](https://github.com/dgibbs64/linuxgsm/blob/master/images/icons/centos-icon-32.png) CentOS
 
-| | Distro | | Arch | | Dependencies                                  |
+| Distro | Arch | Dependencies                                  |
 |----------|--------|-------------------------------------------------|
 | CentOS 6 | x32    | speex mailx tmux glibc                          |
 | CentOS 6 | x64    | speex.i686 mailx tmux glibc.i686                |
@@ -190,7 +190,7 @@ Natural Selection 2
 
 ## ![Debian Icon](https://github.com/dgibbs64/linuxgsm/blob/master/images/icons/debian-icon-32.png) Debian
 
-| | Distro | | Arch | | Dependencies                                                               |
+| Distro | Arch | Dependencies                                                               |
 |----------|--------|------------------------------------------------------------------------------|
 | Debian 6 | x32    | speex:i386 libgtk2.0-0:i386 tmux mailutils postfix ca-certificates           |
 | Debian 6 | x64    | speex:i386 libgtk2.0-0:i386 tmux mailutils postfix ca-certificates lib32gcc1 |
@@ -199,7 +199,7 @@ Natural Selection 2
 
 ## ![Ubuntu Icon](https://github.com/dgibbs64/linuxgsm/blob/master/images/icons/ubuntu-icon-32.png) Ubuntu
 
-| | Distro         | | Arch | | Dependencies                                                               |
+| Distro         | Arch | Dependencies                                                               |
 |------------------|--------|------------------------------------------------------------------------------|
 | Ubuntu 12.04 LTS | x32    | speex:i386 libgtk2.0-0:i386 tmux mailutils postfix                           |
 | Ubuntu 12.04 LTS | x64    | speex:i386 libgtk2.0-0:i386 tmux mailutils postfix lib32gcc1 libstdc++6:i386 |
@@ -211,7 +211,7 @@ Unreal Tournament 2004
 
 ## ![CentOS Icon](https://github.com/dgibbs64/linuxgsm/blob/master/images/icons/centos-icon-32.png) CentOS
 
-| | Distro | | Arch | | Dependencies                                                        |
+| Distro | Arch | Dependencies                                                        |
 |----------|--------|-----------------------------------------------------------------------|
 | CentOS 6 | x32    | mailx postfix bzip2 unzip tmux compat-libstdc++-33 ld-linux.so.2      |
 | CentOS 6 | x64    | mailx postfix bzip2 unzip tmux compat-libstdc++-33.i686 ld-linux.so.2 |
@@ -219,7 +219,7 @@ Unreal Tournament 2004
 
 ## ![Debian Icon](https://github.com/dgibbs64/linuxgsm/blob/master/images/icons/debian-icon-32.png) Debian
 
-| | Distro | | Arch | | Dependencies                                                     |
+| Distro | Arch | Dependencies                                                      |
 |----------|--------|--------------------------------------------------------------------|
 | Debian 6 | x32    | mailutils postfix bzip2 unzip tmux ca-certificates libstdc++5      |
 | Debian 6 | x64    | mailutils postfix bzip2 unzip tmux ca-certificates libstdc++5:i386 |
@@ -228,7 +228,7 @@ Unreal Tournament 2004
 
 ## ![Ubuntu Icon](https://github.com/dgibbs64/linuxgsm/blob/master/images/icons/ubuntu-icon-32.png) Ubuntu
 
-| | Distro         | | Arch | | Dependencies                               |
+| Distro         | Arch | Dependencies                               |
 |------------------|--------|----------------------------------------------|
 | Ubuntu 12.04 LTS | x32    | mailutils postfix unzip tmux libstdc++5      |
 | Ubuntu 12.04 LTS | x64    | mailutils postfix unzip tmux libstdc++5:i386 |
@@ -240,7 +240,7 @@ Unreal Tournament 99
 
 ## ![CentOS Icon](https://github.com/dgibbs64/linuxgsm/blob/master/images/icons/centos-icon-32.png) CentOS
 
-| | Distro | | Arch | | Dependencies                          |
+| Distro | Arch | Dependencies                          |
 |----------|--------|-----------------------------------------|
 | CentOS 6 | x32    | mailx postfix bzip2 tmux                |
 | CentOS 6 | x64    | mailx postfix bzip2 tmux libstdc++.i686 |
@@ -248,7 +248,7 @@ Unreal Tournament 99
 
 ## ![Debian Icon](https://github.com/dgibbs64/linuxgsm/blob/master/images/icons/debian-icon-32.png) Debian
 
-| | Distro | | Arch | | Dependencies                                         |
+| Distro | Arch | Dependencies                                         |
 |----------|--------|--------------------------------------------------------|
 | Debian 6 | x32    | mailutils postfix bzip2 tmux ca-certificates           |
 | Debian 6 | x64    | mailutils postfix bzip2 tmux ca-certificates lib32gcc1 |
@@ -257,7 +257,7 @@ Unreal Tournament 99
 
 ## ![Ubuntu Icon](https://github.com/dgibbs64/linuxgsm/blob/master/images/icons/ubuntu-icon-32.png) Ubuntu
 
-| | Distro         | | Arch | | Dependencies                         |
+| Distro         | Arch | Dependencies                         |
 |------------------|--------|----------------------------------------|
 | Ubuntu 12.04 LTS | x32    | mailutils postfix bzip2 tmux           |
 | Ubuntu 12.04 LTS | x64    | mailutils postfix bzip2 tmux lib32gcc1 |
@@ -272,7 +272,7 @@ Requirements for [SteamCMD][] only. SteamCMD is a 32-bit application and require
 
 ## ![CentOS Icon](https://github.com/dgibbs64/linuxgsm/blob/master/images/icons/centos-icon-32.png) CentOS
 
-| | Distro | | Arch | | Dependencies            |
+| Distro | Arch | Dependencies            |
 |----------|--------|---------------------------|
 | CentOS 6 | x32    | glibc libstdc++           |
 | CentOS 6 | x64    | glibc.i686 libstdc++.i686 |
@@ -280,7 +280,7 @@ Requirements for [SteamCMD][] only. SteamCMD is a 32-bit application and require
 
 ## ![Debian Icon](https://github.com/dgibbs64/linuxgsm/blob/master/images/icons/debian-icon-32.png) Debian
 
-| | Distro | | Arch | | Dependencies |
+| Distro | Arch | Dependencies |
 |----------|--------|----------------|
 | Debian 6 | x32    |                |
 | Debian 6 | x64    | lib32gcc1      |
@@ -289,7 +289,7 @@ Requirements for [SteamCMD][] only. SteamCMD is a 32-bit application and require
 
 ## ![Ubuntu Icon](https://github.com/dgibbs64/linuxgsm/blob/master/images/icons/ubuntu-icon-32.png) Ubuntu
 
-| | Distro         | | Arch | | Dependencies |
+| Distro         | Arch | Dependencies |
 |------------------|--------|----------------|
 | Ubuntu 12.04 LTS | x32    |                |
 | Ubuntu 12.04 LTS | x64    | lib32gcc1      |
