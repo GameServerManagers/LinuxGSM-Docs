@@ -2,7 +2,7 @@ Below are the basic instructions to get started with installing a game server us
 
 Select the server you want to install and follow the instructions.
 
-> Note: Ensure you have installed the relevant [[dependencies]] before you install a server
+    > note: Ensure you have installed the relevant [[dependencies]] before you install a server
 
 # 7 Days to Die
 ![7 Days to Die](http://cdn.akamai.steamstatic.com/steam/apps/251570/header.jpg)
@@ -29,6 +29,7 @@ Select the server you want to install and follow the instructions.
 
 # ARMA 3
 ![ARMA 3](http://cdn.akamai.steamstatic.com/steam/apps/107410/header.jpg)
+
 1. Create a user and login.
         adduser arma3server
         passwd arma3server
@@ -53,7 +54,8 @@ Select the server you want to install and follow the instructions.
 
 # Blade Symphony
 ![Blade Symphony](http://cdn.akamai.steamstatic.com/steam/apps/225600/header.jpg)
-> note: You must own a copy of this game in a steam account to download the server.
+
+    > note: You must own a copy of this game in a steam account to download the server.
 
 1. Create a user and login.
         adduser bsserver
@@ -79,6 +81,7 @@ Select the server you want to install and follow the instructions.
     ./bsserver install
 # Counter-Strike 1.6
 ![Counter-Strike 1.6](http://cdn.akamai.steamstatic.com/steam/apps/10/header.jpg)
+
 1. Create a user and login.
         adduser cssserver
         passwd cssserver
