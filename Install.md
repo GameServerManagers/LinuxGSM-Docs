@@ -1,8 +1,7 @@
 Below are the basic instructions to get started with installing a game server using LGSM.
-
 Select the server you want to install and follow the instructions.
 
-_note: Ensure you have installed the relevant [[dependencies]] before you install a server_
+> note: Ensure you have installed the relevant [[dependencies]] before you install a server
 
 # Game Servers
  - [7 Days to Die](#7-Day-to-Die)
