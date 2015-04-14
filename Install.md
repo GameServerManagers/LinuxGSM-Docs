@@ -39,7 +39,7 @@ _note: Ensure you have installed the relevant [[dependencies]] before you instal
     `wget http://gameservermanagers.com/dl/arma3server`
 3. Make it executable.
     `chmod +x arma3server`
-4. Add Steam login details
+4. Add Steam login details.
 
 > You will need to enter your steam username and password to allow authentication to the SteamCMD system. I recommend that you create a new Steam username just for the server.
 
@@ -66,7 +66,7 @@ _note: Ensure you have installed the relevant [[dependencies]] before you instal
     `wget http://gameservermanagers.com/dl/bsserver`
 3. Make it executable.
     `chmod +x bsserver`
-4. Add Steam login details
+4. Add Steam login details.
 
 > You will need to enter your steam username and password to allow authentication to the SteamCMD system. I recommend that you create a new Steam username just for the server.
 
@@ -269,7 +269,7 @@ _note: Ensure you have installed the relevant [[dependencies]] before you instal
     `wget http://gameservermanagers.com/dl/kfserver`
 3. Make it executable.
     `chmod +x kfserver`
-4. Add Steam login details
+4. Add Steam login details.
 
 > You will need to enter your steam username and password to allow authentication to the SteamCMD system. I recommend that you create a new Steam username just for the server.
 
@@ -330,7 +330,7 @@ _note: Ensure you have installed the relevant [[dependencies]] before you instal
     `wget http://gameservermanagers.com/dl/nmrihserver`
 3. Make it executable.
     `chmod +x nmrihserver`
-4. Add Steam login details
+4. Add Steam login details.
 
 > You will need to enter your steam username and password to allow authentication to the SteamCMD system. I recommend that you create a new Steam username just for the server.
 
@@ -353,7 +353,7 @@ _note: Ensure you have installed the relevant [[dependencies]] before you instal
     `wget http://gameservermanagers.com/dl/ns2server`
 3. Make it executable.
     `chmod +x ns2server`
-4. Add Steam login details
+4. Add Steam login details.
 
 > You will need to enter your steam username and password to allow authentication to the SteamCMD system. I recommend that you create a new Steam username just for the server.
 
@@ -387,7 +387,7 @@ _note: Ensure you have installed the relevant [[dependencies]] before you instal
     `wget http://gameservermanagers.com/dl/roserver`
 3. Make it executable.
     `chmod +x roserver`
-4. Add Steam login details
+4. Add Steam login details.
 
 > You will need to enter your steam username and password to allow authentication to the SteamCMD system. I recommend that you create a new Steam username just for the server.
 
@@ -420,7 +420,7 @@ _note: Ensure you have installed the relevant [[dependencies]] before you instal
     `wget http://gameservermanagers.com/dl/ss3server`
 3. Make it executable.
     `chmod +x ss3server`
-4. Add Steam login details
+4. Add Steam login details.
 
 > You will need to enter your steam username and password to allow authentication to the SteamCMD system. I recommend that you create a new Steam username just for the server.
 
@@ -444,7 +444,7 @@ _note: Ensure you have installed the relevant [[dependencies]] before you instal
     `wget http://gameservermanagers.com/dl/sbserver`
 3. Make it executable.
     `chmod +x sbserver`
-4. Add Steam login details
+4. Add Steam login details.
 
 > You will need to enter your steam username and password to allow authentication to the SteamCMD system. I recommend that you create a new Steam username just for the server.
 
