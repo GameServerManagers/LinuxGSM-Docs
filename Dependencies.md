@@ -5,7 +5,7 @@ Below is a complete list of dependencies required for all servers. Use your dist
 
 ## Notes
 ### Distro Compatibility
-The older the server the less likely the game server will work on your server. For example CentOS 5 does not work with most servers. However CentOS 6 can but may require glibc fixes.
+The older the server the less likely the game server will work on your server. For example _CentOS 5_ does not work with most servers. However _CentOS 6_ can but may require glibc fixes.
 
 ### Recommended Distros
 The below servers are the most compatible and work well with all servers.
