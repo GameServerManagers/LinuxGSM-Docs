@@ -58,7 +58,9 @@ List of distros and there glibc version. [distrowatch.com][] is also a great sou
 glibc fixes
 ===========
 
-Many of the servers can work on distros with older _Glibc_ versions by using the _Glibc_ fixes that are available with LGSM. This simply copies the required files to the `serverfiles` directory. Many game servers will look for there dependencies in there serverfiles directory. Even if your dedicated server does not meet the glibc requirement the server may still work. The following servers have a glibc fix available for it.
+> Many of the servers can work on distros with older _Glibc_ versions by using the _Glibc_ fixes that are available with LGSM. 
+
+This simply copies the required files to the `serverfiles` directory. Many game servers will look for there dependencies in there `serverfiles` directory. Even if your dedicated server does not meet the glibc requirement the server may still work. The following servers have a glibc fix available for it.
 
 -   ARMA 3
 -   Blade Symphony
