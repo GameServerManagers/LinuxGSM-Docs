@@ -4,9 +4,9 @@ Most servers require a specific version of Glibc installed. Newer distros normal
 Server Requirements
 ===================
 
-A list of all the servers GLIBC requirements
+A list of all the servers Glibc requirements
 
-| Game Server                      | GLIBC   |
+| Game Server                      | Glibc   |
 |----------------------------------|---------|
 | 7 Days to Die                    | n/a     |
 | ARMA 3                           | 2.13    |
@@ -41,12 +41,12 @@ A list of all the servers GLIBC requirements
 | Unreal Tournament 2004           | n/a     |
 | Unreal Tournament 99             | n/a     |
 
-Disto glibc
-===========
+Disto Glibc Versions
+====================
 
-List of distros and there glibc version. [distrowatch.com][] is also a great source to find this infomation.
+List of distros and there Glibc version. [distrowatch.com][] is also a great source to find this infomation.
 
-| Distro           | glibc   |
+| Distro           | Glibc   |
 |------------------|---------|
 | CentOS 6         | 2.12    |
 | CentOS 7         | 2.17    |
@@ -55,12 +55,12 @@ List of distros and there glibc version. [distrowatch.com][] is also a great sou
 | Ubuntu 12.04 LTS | 2.15    |
 | Ubuntu 14.04 LTS | 2.19    |
 
-glibc fixes
+Glibc fixes
 ===========
 
 > Many of the servers can work on distros with older _Glibc_ versions by using the _Glibc_ fixes that are available with LGSM. 
 
-This simply copies the required files to the `serverfiles` directory. Many game servers will look for there dependencies in there `serverfiles` directory. Even if your dedicated server does not meet the glibc requirement the server may still work. The following servers have a glibc fix available for it.
+This simply copies the required files to the `serverfiles` directory. Many game servers will look for there dependencies in there `serverfiles` directory. Even if your dedicated server does not meet the Glibc requirement the server may still work. The following servers have a Glibc fix available for it.
 
 -   ARMA 3
 -   Blade Symphony
