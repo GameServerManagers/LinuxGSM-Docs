@@ -68,7 +68,7 @@ _note: Ensure you have installed the relevant [[dependencies]] before you instal
     `chmod +x bsserver`
 4. Add Steam login details
 
-> > You will need to enter your steam username and password to allow authentication to the SteamCMD system. I recommend that you create a new Steam username just for the server.
+> You will need to enter your steam username and password to allow authentication to the SteamCMD system. I recommend that you create a new Steam username just for the server.
 
     nano bsserver
 
