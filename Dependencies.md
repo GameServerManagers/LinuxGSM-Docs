@@ -9,8 +9,8 @@ The older the server the less likely the game server will work on your server. F
 ### Recommended Distros
 The below servers are the most compatible and work well with all servers.
 
-* => Ubuntu 12.04 LTS
-* CentOS 7
+* ![Ubuntu Icon](https://github.com/dgibbs64/linuxgsm/blob/master/images/icons/ubuntu-icon-32.png) => Ubuntu 12.04 LTS
+* ![CentOS Icon](https://github.com/dgibbs64/linuxgsm/blob/master/images/icons/centos-icon-32.png) CentOS 7
 
 However any distro with _=> GLIBC 2.15_ and _=> tmux 1.6_ will also be compatible with all servers.
 ### CentOS 6 EPEL
@@ -22,14 +22,15 @@ Only LTS releases are listed here as the dependencies don't normally change betw
 
 ## Source Engine
 Counter Strike: Global Offensive, Counter Strike: Source, Half Life 2:Deathmatch etc.
-### CentOS
+
+### ![CentOS Icon](https://github.com/dgibbs64/linuxgsm/blob/master/images/icons/centos-icon-32.png) CentOS
 | Distro        | Arch | Dependencies                                                       |
 | ------------- | ---- | :----------------------------------------------------------------- |
 | CentOS 6      | x32  | tmux gdb mailx postfix libgcc_s.so.1 glibc                         |
 | CentOS 6      | x32  | tmux gdb mailx postfix libgcc_s.so.1 glibc.i686 ncurses-libs.i686  |
 | CentOS 7      | x64  | tmux gdb mailx postfix glibc.i686 libstdc++.i686 ncurses-libs.i686 |
 
-### Debian
+### ![Debian Icon](https://github.com/dgibbs64/linuxgsm/blob/master/images/icons/debian-icon-32.png) Debian
 | Distro        | Arch | Dependencies                                                     |
 | ------------- | ---- |:---------------------------------------------------------------- |
 | Debian 6      | x32  | tmux gdb mailutils postfix ca-certificates                       |
@@ -37,7 +38,7 @@ Counter Strike: Global Offensive, Counter Strike: Source, Half Life 2:Deathmatch
 | Debian 7      | x32  | tmux gdb mailutils postfix ca-certificates                       |
 | Debian 7      | x64  | tmux gdb mailutils postfix ca-certificates lib32gcc1 lib32tinfo5 |
 
-### Ubuntu
+### ![Ubuntu Icon](https://github.com/dgibbs64/linuxgsm/blob/master/images/icons/ubuntu-icon-32.png) Ubuntu
 | Distro           | Arch | Dependencies                                                     |
 | ---------------- | ---- |:---------------------------------------------------------------- |
 | Ubuntu 12.04 LTS | x32  | tmux gdb mailutils postfix libstdc++6:i386                       |
@@ -52,14 +53,14 @@ Counter Strike: Global Offensive, Counter Strike: Source, Half Life 2:Deathmatch
 
 ## Gold Source Engine
 Counter Strike 1.6, Deathmatch Classic etc.
-### CentOS
+### ![CentOS Icon](https://github.com/dgibbs64/linuxgsm/blob/master/images/icons/centos-icon-32.png) CentOS
 | Distro        | Arch | Dependencies                      |
 | ------------- | ---- | :-------------------------------- |
 | CentOS 6      | x32  | tmux gdb mailx postfix glibc      |
 | CentOS 6      | x32  | tmux gdb mailx postfix glibc.i686 |
 | CentOS 7      | x64  | tmux gdb mailx postfix glibc.i686 |
 
-### Debian
+### ![Debian Icon](https://github.com/dgibbs64/linuxgsm/blob/master/images/icons/debian-icon-32.png) Debian
 | Distro        | Arch | Dependencies                                         |
 | ------------- | ---- |:---------------------------------------------------- |
 | Debian 6      | x32  | tmux gdb mailutils postfix ca-certificates           |
@@ -67,7 +68,7 @@ Counter Strike 1.6, Deathmatch Classic etc.
 | Debian 7      | x32  | tmux gdb mailutils postfix ca-certificates           |
 | Debian 7      | x64  | tmux gdb mailutils postfix ca-certificates lib32gcc1 |
 
-### Ubuntu
+### ![Ubuntu Icon](https://github.com/dgibbs64/linuxgsm/blob/master/images/icons/ubuntu-icon-32.png) Ubuntu
 | Distro           | Arch | Dependencies                                                     |
 | ---------------- | ---- |:---------------------------------------------------------------- |
 | Ubuntu 12.04 LTS | x32  | tmux gdb mailutils postfix                                       |
