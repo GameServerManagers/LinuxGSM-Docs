@@ -13,10 +13,8 @@ _note: Ensure you have installed the relevant [[dependencies]] before you instal
             passwd sdtdserver
             su - sdtdserver
 
-2. Download the script.
-    `wget http://gameservermanagers.com/dl/sdtdserver`
-3. Make it executable.
-    `chmod +x sdtdserver`
+2. Download the script. `wget http://gameservermanagers.com/dl/sdtdserver`
+3. Make it executable. `chmod +x sdtdserver`
 4. Add Steam login details. `nano sdtdserver`
 
     > You will need to enter your steam username and password to allow authentication to the SteamCMD system. I recommend that you create a new Steam username just for the server.
@@ -31,19 +29,16 @@ _note: Ensure you have installed the relevant [[dependencies]] before you instal
 ![ARMA 3](http://cdn.akamai.steamstatic.com/steam/apps/107410/header.jpg)
 
 1. Create a user and login.
+
         adduser arma3server
         passwd arma3server
-
         su - arma3server
-2. Download the script.
-    `wget http://gameservermanagers.com/dl/arma3server`
-3. Make it executable.
-    `chmod +x arma3server`
-4. Add Steam login details.
+
+2. Download the script. `wget http://gameservermanagers.com/dl/arma3server`
+3. Make it executable. `chmod +x arma3server`
+4. Add Steam login details. `nano arma3server`
 
 > You will need to enter your steam username and password to allow authentication to the SteamCMD system. I recommend that you create a new Steam username just for the server.
-
-    nano arma3server
 
     # Steam login
     steamuser="username"
@@ -58,19 +53,17 @@ _note: Ensure you have installed the relevant [[dependencies]] before you instal
 > note: You must own a copy of this game in a steam account to download the server.
 
 1. Create a user and login.
+
         adduser bsserver
         passwd bsserver
 
         su - bsserver
-2. Download the script.
-    `wget http://gameservermanagers.com/dl/bsserver`
-3. Make it executable.
-    `chmod +x bsserver`
-4. Add Steam login details.
+
+2. Download the script. `wget http://gameservermanagers.com/dl/bsserver`
+3. Make it executable. `chmod +x bsserver`
+4. Add Steam login details. nano bsserver
 
 > You will need to enter your steam username and password to allow authentication to the SteamCMD system. I recommend that you create a new Steam username just for the server.
-
-    nano bsserver
 
     # Steam login
     steamuser="username"
