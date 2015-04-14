@@ -33,7 +33,7 @@ This is because tmux is not available as a standard package in CentOS 6.
 ## Ubuntu Releases
 Only LTS releases are listed here as the dependencies don't normally change between LTS releases. However if a difference is found a non LTS release will be added until the newer LTS release is available.
 
-# <a name="Source-Engine"></a>Source Engine
+# Source Engine
 Counter Strike: Global Offensive, Counter Strike: Source, Half Life 2:Deathmatch etc.
 
 ## ![CentOS Icon](https://github.com/dgibbs64/linuxgsm/blob/master/images/icons/centos-icon-32.png) CentOS
