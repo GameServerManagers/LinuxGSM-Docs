@@ -55,7 +55,7 @@ _note: Ensure you have installed the relevant [[dependencies]] before you instal
 # Blade Symphony
 ![Blade Symphony](http://cdn.akamai.steamstatic.com/steam/apps/225600/header.jpg)
 
-    > note: You must own a copy of this game in a steam account to download the server.
+> note: You must own a copy of this game in a steam account to download the server.
 
 1. Create a user and login.
         adduser bsserver
