@@ -4,7 +4,42 @@ Select the server you want to install and follow the instructions.
 
 _note: Ensure you have installed the relevant [[dependencies]] before you install a server_
 
-# 7 Days to Die
+# Game Servers
+ - [7 Days to Die](#7-Day-to-Die)
+ - [ARMA 3](#ARMA-3)
+ - [Blade Symphony](#Blade-Symphony)
+ - [Counter-Strike 1.6](#Counter-Strike-1.6)
+ - [Counter-Strike: Condition Zero](#Counter-Strike-Condition-Zero)
+ - [Counter-Strike: Global Offensive](#Counter-Strike-Global-Offensive)
+ - [Counter-Strike: Source](#Counter-Strike-Global-Offensive)
+ - [Day of Defeat](#Day-of-Defeat)
+ - [Day of Defeat: Source](#Day-of-Defeat-Source)
+ - [Deathmatch Classic](#Day-of-Defeat-Source)
+ - [Double Action: Boogaloo](#Double-Action-Boogaloo)
+ - [Fistful of Frags](#Fistful-of-Frags)
+ - [Garry's Mod](#Garrys-Mod)
+ - [Half Life: Deathmatch](#Half-Life-Deathmatch)
+ - [Half Life 2: Deathmatch](#Half-Life-202-Deathmatch)
+ - [Insurgency](#Insurgency)
+ - [Just Cause 2](#Just-Cause-2)
+ - [Killing Floor](#Killing-Floor)
+ - [Left 4 Dead](#Left-4-Dead)
+ - [Left 4 Dead 2](#Left-4-Dead)
+ - [Mumble](#Mumble)
+ - [No More Room in Hell](#No-More-Room-in-Hell)
+ - [Natural Selection 2](#Natural-Selection-2)
+ - [Opposing Force](#Opposing-Force)
+ - [Red Orchestra: Ostfront 41-45](#Red-Orchestra-Ostfront-41-45)
+ - [Ricochet](#Ricochet)
+ - [Serious Sam 3: BFE](#Serious-Sam-3-BFE)
+ - [Starbound](#Starbound)
+ - [Team Fortress 2](#Team-Fortress-2)
+ - [Team Fortress Classic](#Team-Fortress-Classic)
+ - [Teamspeak 3](#Teamspeak-3)
+ - [Unreal Tournament 2004](#Unreal-Tournament-2004)
+ - [Unreal Tournament 99](#Unreal-Tournament-99)
+
+# <a name="7-Day-to-Die"></a>7 Days to Die
 ![7 Days to Die](http://cdn.akamai.steamstatic.com/steam/apps/251570/header.jpg)
 
 1. Create a user and login.
@@ -27,7 +62,7 @@ _note: Ensure you have installed the relevant [[dependencies]] before you instal
 
         ./sdtdserver install
 
-# ARMA 3
+# <a name="ARMA-3"></a>ARMA 3
 ![ARMA 3](http://cdn.akamai.steamstatic.com/steam/apps/107410/header.jpg)
 
 1. Create a user and login.
@@ -49,7 +84,7 @@ _note: Ensure you have installed the relevant [[dependencies]] before you instal
 
     ./arma3server install
 
-# Blade Symphony
+# <a name="Blade-Symphony"></a>Blade Symphony
 ![Blade Symphony](http://cdn.akamai.steamstatic.com/steam/apps/225600/header.jpg)
 
 > note: You must own a copy of this game in a steam account to download the server.
@@ -74,7 +109,7 @@ _note: Ensure you have installed the relevant [[dependencies]] before you instal
 
         ./bsserver install
 
-# Counter-Strike 1.6
+# <a name="Counter-Strike-1.6"></a>Counter-Strike 1.6
 ![Counter-Strike 1.6](http://cdn.akamai.steamstatic.com/steam/apps/10/header.jpg)
 
 1. Create a user and login.
@@ -88,7 +123,7 @@ _note: Ensure you have installed the relevant [[dependencies]] before you instal
 
         ./csserver install
 
-# Counter-Strike: Condition Zero
+# <a name="Counter-Strike-Condition-Zero"></a>Counter-Strike: Condition Zero
 ![Counter-Strike: Condition Zero](http://cdn.akamai.steamstatic.com/steam/apps/80/header.jpg)
 
 1. Create a user and login.
@@ -102,7 +137,7 @@ _note: Ensure you have installed the relevant [[dependencies]] before you instal
 
         ./csczserver install
 
-# Counter-Strike: Global Offensive
+# <a name="Counter-Strike-Global-Offensive"></a>Counter-Strike: Global Offensive
 ![Counter-Strike: Global Offensive](http://cdn.akamai.steamstatic.com/steam/apps/730/header.jpg)
 
 1. Create a user and login.
@@ -116,7 +151,7 @@ _note: Ensure you have installed the relevant [[dependencies]] before you instal
 
         ./csgoserver install
 
-# Counter-Strike: Source
+# <a name="Counter-Strike-Source"></a>Counter-Strike: Source
 ![Counter-Strike: Source](http://cdn.akamai.steamstatic.com/steam/apps/240/header.jpg)
 
 1. Create a user and login.
@@ -130,7 +165,7 @@ _note: Ensure you have installed the relevant [[dependencies]] before you instal
 
         ./cssserver install
 
-# Day of Defeat
+# <a name="Day-of-Defeat"></a>Day of Defeat
 ![Day of Defeat](http://cdn.akamai.steamstatic.com/steam/apps/30/header.jpg)
 
 1. Create a user and login.
@@ -144,7 +179,7 @@ _note: Ensure you have installed the relevant [[dependencies]] before you instal
 
         ./dodserver install
 
-# Day of Defeat: Source
+# <a name="Day-of-Defeat-Source"></a>Day of Defeat: Source
 ![Day of Defeat: Source](http://cdn.akamai.steamstatic.com/steam/apps/300/header.jpg)
 
 1. Create a user and login.
@@ -158,7 +193,7 @@ _note: Ensure you have installed the relevant [[dependencies]] before you instal
 
         ./dodsserver install
 
-# Deathmatch Classic
+# <a name="Deathmatch-Classic"></a>Deathmatch Classic
 ![Deathmatch Classic](http://cdn.akamai.steamstatic.com/steam/apps/40/header.jpg)
 
 1. Create a user and login.
@@ -172,7 +207,7 @@ _note: Ensure you have installed the relevant [[dependencies]] before you instal
 
         ./dmcserver install
 
-# Double Action: Boogaloo
+# <a name="Double-Action-Boogaloo"></a>Double Action: Boogaloo
 ![Double Action: Boogaloo](http://cdn.akamai.steamstatic.com/steam/apps/317360/header.jpg)
 
 1. Create a user and login.
@@ -186,7 +221,7 @@ _note: Ensure you have installed the relevant [[dependencies]] before you instal
 
         ./dabserver install
 
-# Fistful of Frags
+# <a name="Fistful-of-Frags"></a>Fistful of Frags
 ![Fistful of Frags](http://cdn.akamai.steamstatic.com/steam/apps/265630/header.jpg)
 
 1. Create a user and login.
@@ -200,7 +235,7 @@ _note: Ensure you have installed the relevant [[dependencies]] before you instal
 
         ./fofserver install
 
-# Garry's Mod
+# <a name="Garrys-Mod"></a>Garry's Mod
 ![Garry's Mod](http://cdn.akamai.steamstatic.com/steam/apps/4000/header.jpg)
 
 1. Create a user and login.
@@ -214,7 +249,7 @@ _note: Ensure you have installed the relevant [[dependencies]] before you instal
 
         ./gmodserver install
 
-# Half Life: Deathmatch
+# <a name="Half-Life-Deathmatch"></a>Half Life: Deathmatch
 ![Half Life: Deathmatch](http://cdn.akamai.steamstatic.com/steam/apps/70/header.jpg)
 
 1. Create a user and login.
@@ -228,7 +263,7 @@ _note: Ensure you have installed the relevant [[dependencies]] before you instal
 
         ./hldmserver install
 
-# Half Life 2: Deathmatch
+# <a name="Half-Life-2-Deathmatch"></a>Half Life 2: Deathmatch
 ![Half Life 2: Deathmatch](http://cdn.akamai.steamstatic.com/steam/apps/320/header.jpg)
 
 1. Create a user and login.
@@ -242,7 +277,7 @@ _note: Ensure you have installed the relevant [[dependencies]] before you instal
 
         ./hl2dmserver install
 
-# Insurgency
+# <a name="Insurgency"></a>Insurgency
 ![Insurgency](http://cdn.akamai.steamstatic.com/steam/apps/222880/header.jpg)
 
 1. Create a user and login.
@@ -256,7 +291,7 @@ _note: Ensure you have installed the relevant [[dependencies]] before you instal
 
         ./insserver install
 
-# Just Cause 2
+# <a name="Just-Cause-2"></a>Just Cause 2
 ![Just Cause 2](http://cdn.akamai.steamstatic.com/steam/apps/8190/header.jpg)
 
 1. Create a user and login.
@@ -270,7 +305,7 @@ _note: Ensure you have installed the relevant [[dependencies]] before you instal
 
         ./jc2server install
 
-# Killing Floor
+# <a name="Killing-Floor"></a>Killing Floor
 ![Killing Floor](http://cdn.akamai.steamstatic.com/steam/apps/1250/header.jpg)
 
 1. Create a user and login.
@@ -292,7 +327,7 @@ _note: Ensure you have installed the relevant [[dependencies]] before you instal
 
         ./kfserver install
 
-# Left 4 Dead
+# <a name="Left-4-Dead"></a>Left 4 Dead
 ![Left 4 Dead](http://cdn.akamai.steamstatic.com/steam/apps/500/header.jpg)
 
 1. Create a user and login.
@@ -306,7 +341,7 @@ _note: Ensure you have installed the relevant [[dependencies]] before you instal
 
         ./l4dserver install
 
-# Left 4 Dead 2
+# <a name="Left-4-Dead-2"></a>Left 4 Dead 2
 ![Left 4 Dead 2](http://cdn.akamai.steamstatic.com/steam/apps/550/header.jpg)
 
 1. Create a user and login.
@@ -320,7 +355,7 @@ _note: Ensure you have installed the relevant [[dependencies]] before you instal
 
         ./l4d2server install
 
-# Mumble
+# <a name="Mumble"></a>Mumble
 ![Mumble](http://gameservermanagers.com/wp-content/themes/lgsm/img/games/mumbleserver_logo-250x143.jpg)
 
 1. Create a user and login.
@@ -336,7 +371,7 @@ _note: Ensure you have installed the relevant [[dependencies]] before you instal
 
         ./mumbleserver install
 
-# No More Room in Hell
+# <a name="No-More-Room-in-Hell"></a>No More Room in Hell
 ![No More Room in Hell](http://cdn.akamai.steamstatic.com/steam/apps/224260/header.jpg)
 
 1. Create a user and login.
@@ -358,7 +393,7 @@ _note: Ensure you have installed the relevant [[dependencies]] before you instal
 
         ./nmrihserver install
 
-# Natural Selection 2
+# <a name="Natural-Selection-2"></a>Natural Selection 2
 ![Natural Selection 2](http://cdn.akamai.steamstatic.com/steam/apps/4920/header.jpg)
 
 1. Create a user and login.
@@ -380,7 +415,7 @@ _note: Ensure you have installed the relevant [[dependencies]] before you instal
 
         ./ns2server install
 
-# Opposing Force
+# <a name="Opposing-Force"></a>Opposing Force
 ![Opposing Force](http://cdn.akamai.steamstatic.com/steam/apps/50/header.jpg)
 
 1. Create a user and login.
@@ -396,7 +431,7 @@ _note: Ensure you have installed the relevant [[dependencies]] before you instal
 
         ./opforserver install
 
-# Red Orchestra: Ostfront 41-45
+# <a name="Red-Orchestra-Ostfront-41-45"></a>Red Orchestra: Ostfront 41-45
 ![Red Orchestra: Ostfront 41-45](http://cdn.akamai.steamstatic.com/steam/apps/1200/header.jpg)
 
 1. Create a user and login.
@@ -418,7 +453,7 @@ _note: Ensure you have installed the relevant [[dependencies]] before you instal
 
         ./roserver install
 
-# Ricochet
+# <a name="Ricochet"></a>Ricochet
 ![Ricochet](http://cdn.akamai.steamstatic.com/steam/apps/60/header.jpg)
 
 1. Create a user and login.
@@ -434,7 +469,7 @@ _note: Ensure you have installed the relevant [[dependencies]] before you instal
 
         ./ricochetserver install
 
-# Serious Sam 3: BFE
+# <a name="Serious-Sam-3-BFE"></a>Serious Sam 3: BFE
 ![Red Orchestra: Ostfront 41-45](http://cdn.akamai.steamstatic.com/steam/apps/41070/header.jpg)
 
 1. Create a user and login.
@@ -456,7 +491,7 @@ _note: Ensure you have installed the relevant [[dependencies]] before you instal
 
         ./ss3server install
 
-# Starbound
+# <a name="Starbound"></a>Starbound
 ![Starbound](http://cdn.akamai.steamstatic.com/steam/apps/211820/header.jpg)
 
 > note: You must own a copy of this game in a steam account to download the server.
@@ -481,7 +516,7 @@ _note: Ensure you have installed the relevant [[dependencies]] before you instal
 
         ./sbserver install
 
-# Team Fortress 2
+# <a name="Team-Fortress-2"></a>Team Fortress 2
 ![Team Fortress 2](http://cdn.akamai.steamstatic.com/steam/apps/440/header.jpg)
 
 1. Create a user and login.
@@ -497,7 +532,7 @@ _note: Ensure you have installed the relevant [[dependencies]] before you instal
 
         ./tf2server install
 
-# Team Fortress Classic
+# <a name="Team-Fortress-Classic"></a>Team Fortress Classic
 ![Team Fortress Classic](http://cdn.akamai.steamstatic.com/steam/apps/20/header.jpg)
 
 1. Create a user and login.
@@ -513,7 +548,7 @@ _note: Ensure you have installed the relevant [[dependencies]] before you instal
 
         ./tfcserver install
 
-# Teamspeak 3
+# <a name="Teamspeak-3"></a>Teamspeak 3
 ![Teamspeak 3](http://gameservermanagers.com/wp-content/themes/lgsm/img/games/ts3server_logo-250x143.jpg)
 
 1. Create a user and login.
@@ -529,7 +564,7 @@ _note: Ensure you have installed the relevant [[dependencies]] before you instal
 
         ./ts3server install
 
-# Unreal Tournament 2004
+# <a name="Unreal-Tournament-2004"></a>Unreal Tournament 2004
 ![Unreal Tournament 2004](http://cdn.akamai.steamstatic.com/steam/apps/13230/header.jpg)
 
 1. Create a user and login.
@@ -545,7 +580,7 @@ _note: Ensure you have installed the relevant [[dependencies]] before you instal
 
         ./ut2k4server install
 
-# Unreal Tournament 99
+# <a name="Unreal-Tournament-99"></a>Unreal Tournament 99
 ![Unreal Tournament 2004](http://cdn.akamai.steamstatic.com/steam/apps/13240/header.jpg)
 
 1. Create a user and login.
