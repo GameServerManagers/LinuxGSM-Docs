@@ -2,7 +2,7 @@ Below are the basic instructions to get started with installing a game server us
 
 Select the server you want to install and follow the instructions.
 
-    > note: Ensure you have installed the relevant [[dependencies]] before you install a server
+    note: Ensure you have installed the relevant [[dependencies]] before you install a server
 
 # 7 Days to Die
 ![7 Days to Die](http://cdn.akamai.steamstatic.com/steam/apps/251570/header.jpg)
