@@ -1,1 +1,1 @@
-Linux Game Server Managers_
+![LGSM Logo Footer](https://github.com/dgibbs64/linuxgsm/blob/master/images/logo/lgsm-site-foot.png) [Linux Game Server Managers_](http://gameservermanagers.com)
