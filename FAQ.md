@@ -72,6 +72,7 @@ write error: No space left on device
 The script cannot write to the server because there is no disk space available on your server. Free up some space to resolve.
 
 ulimit SteamCMD startup error
+=============================
 
     ./steamcmd.sh: line 17: ulimit: open files: cannot modify limit: Operation not permitted
 
