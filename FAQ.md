@@ -24,6 +24,16 @@ The script will not run as root and will error if you try. This is for security 
 
     [ FAIL ] Script will not run as root!
 
+How can I install [insert name] mod?
+I have no idea….Why not go and check out the mods official website for install instructions?
+
+Here are a few useful resources for this.
+[Metamod: Source](http://www.sourcemm.net/)
+[Metamod](http://metamod.org/)
+[Sourcemod](http://www.sourcemod.net/)
+[AMX Mod X](http://www.amxmodx.org/)
+[Alliedmodders](http://alliedmods.net/)
+
 [ WARN ] Multiple active network interfaces.
 ============================================
 
