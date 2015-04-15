@@ -58,11 +58,13 @@ You can use cronjobs to automate the process of updating the server. You can eit
 
     crontab -e
 
+
     0 5 * * *  su – csgoserver -c '/home/csgoserver/csgoserver update-restart' > /dev/null 2>&1
 
 ### User Cronjob
 
     crontab -e
+
 
     0 5 * * *  /home/csgoserver/csgoserver update-restart > /dev/null 2>&1
 
@@ -103,11 +105,13 @@ You can use cronjobs to automate the process of monitoring the server. You can e
 
     crontab -e
 
+
     0 5 * * *  su – csgoserver -c '/home/csgoserver/csgoserver monitor' > /dev/null 2>&1
 
 ### User Cronjob
 
     crontab -e
+
 
     0 5 * * *  /home/csgoserver/csgoserver monitor > /dev/null 2>&1
 
@@ -144,3 +148,9 @@ Console allows you to view the live console of a server as it is running and all
 
 To exit the console press “CTRL+b d”.
 > Note: pressing “CTRL+c” will terminate the server.
+
+# Running on Boot
+To run arma3server on boot add the command in to the rc.local file.
+
+    nano /etc/rc.local
+    su - arma3server -c '/home/arma3server/arma3server start'
