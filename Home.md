@@ -21,13 +21,13 @@ The Linux Game Server Managers are tested to work on the following Linux distros
 Other distros are likely to work but are not fully tested.
 <h3>Specific Requirements</h3>
 <ul>
-	<li><a href="http://wiki.gameservermanagers.com/index.php?title=Glibc">GLIBC</a> >= 2.15 recommended [<a href="http://wiki.gameservermanagers.com/index.php?title=Glibc#Server_Requirements">specific requirements</a>].</li>
-	<li><a href="http://wiki.gameservermanagers.com/index.php?title=Tmux">Tmux</a> >= 1.6 recommended (Avoid Tmux 1.8).</li>
+	<li><a href="https://github.com/dgibbs64/linuxgsm/wiki/Glibc">GLIBC</a> >= 2.15 recommended [<a href="https://github.com/dgibbs64/linuxgsm/wiki/Glibc#server-requirements">specific requirements</a>].</li>
+	<li><a href="https://github.com/dgibbs64/linuxgsm/wiki/Tmux">Tmux</a> >= 1.6 recommended (Avoid Tmux 1.8).</li>
 </ul>
 <h2>FAQ</h2>
 All FAQ can be found here.
 
-<a href="http://wiki.gameservermanagers.com/index.php?title=FAQ">http://wiki.gameservermanagers.com/index.php?title=FAQ</a>
+<a href="https://github.com/dgibbs64/linuxgsm/wiki/FAQ">https://github.com/dgibbs64/linuxgsm/wiki/FAQ</a>
 <h2>Donate</h2>
 If you want to donate to the project you can via PayPal, Flattr or Gratipay. I have had a may kind people show there support by sending me a donation. Any donations you send help cover my server costs and buy me a drink. Cheers!
 <ul>
