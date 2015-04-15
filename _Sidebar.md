@@ -2,7 +2,7 @@
 1. [[Dependencies]]
 2. [[Install]]
 3. [[Usage]]
-*. [[FAQ]]
+4. [[FAQ]]
 
 # Features
 * [[Backup]]
