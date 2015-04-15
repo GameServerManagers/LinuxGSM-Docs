@@ -75,6 +75,10 @@ This simply copies the required files to the `serverfiles` directory. Many game 
 -   No More Room in Hell
 -   Serious Sam 3: BFE
 
+These fixes prevent errors similar to the following:
+
+    version `GLIBC_2.15′ not found
+
 External Links
 ==============
 
