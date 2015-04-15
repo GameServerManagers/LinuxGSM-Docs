@@ -3,6 +3,8 @@ Below is a complete list of dependencies required for all servers. Use your dist
 
 > These dependencies should be installed before installing any LGSM server.
 
+Select the engine/game you require.
+
 ### Engine/Game
 * [Source Engine](#Source-Engine)
 * [Gold Source Engine](#Gold-Source-Engine)
