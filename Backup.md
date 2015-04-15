@@ -11,7 +11,7 @@ Example backup file created by backup.
 
 # Default Location
 
-By default backups are saved in the ‘’backup’’ directory.
+By default backups are saved in the backup directory.
 
     ├── home</pre>
     ├── csgoserver 
