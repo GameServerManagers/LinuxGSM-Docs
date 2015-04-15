@@ -69,7 +69,7 @@ You can use cronjobs to automate the process of updating the server. You can eit
 Monitor
 =======
 
-[Monitor][] will check the server to ensure it is online. Should the server go offline, the monitor will attempt to start it again and can report the issue via email. *Note: see gsquery.py for info on how monitor uses gsquery for improved monitoring.*
+Monitor will check the server to ensure it is online. Should the server go offline, the monitor will attempt to start it again and can report the issue via email. *Note: see gsquery.py for info on how monitor uses gsquery for improved monitoring.*
 
 monitor
 -------
@@ -111,8 +111,8 @@ You can use cronjobs to automate the process of monitoring the server. You can e
 
     0 5 * * *  /home/csgoserver/csgoserver monitor > /dev/null 2>&1
 
-Debug
-=====
+Debugging
+========
 
 debug
 -----
@@ -138,4 +138,9 @@ If you need to get all important server details you can use the following comman
 # Console
 
 
-Console allows you to view the live console of a server as it is running and allow you to enter comm
+Console allows you to view the live console of a server as it is running and allow you to enter commands; if supported.
+
+    ./arma3server console
+
+To exit the console press “CTRL+b d”.
+> Note: pressing “CTRL+c” will terminate the server.
