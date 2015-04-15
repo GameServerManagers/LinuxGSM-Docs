@@ -1,5 +1,5 @@
 <h1>Linux Game Server Managers_</h1>
-<a href="http://gameservermanagers.com"><img src="http://wiki.gameservermanagers.com/images/thumb/9/9d/Lgsm_full-2.png/500px-Lgsm_full-2.png" alt="linux Game Server Managers" width="600" /></a>
+<a href="http://gameservermanagers.com"><img src="https://github.com/dgibbs64/linuxgsm/blob/master/images/logo/lgsm-full-light.png" alt="linux Game Server Managers" width="600" /></a>
 
 The Linux Game Server Managers are command line tools for quick, simple deployment and management of various dedicated game servers and voice comms servers.
 <h2>Main features</h2>
