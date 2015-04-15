@@ -39,9 +39,9 @@ Rename the servicename variable.
 
 Change the server ports.
 
-    serverport=2302
-    steamport=2304;
-    steamqueryport=2303;
+    serverport="2302"
+    steamport="2304"
+    steamqueryport="2303"
 
 Copy and rename the server config file.
 
