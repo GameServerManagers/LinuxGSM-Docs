@@ -8,12 +8,12 @@ Game servers traditionally are not easy to manage yourself. Admins often have to
 
 <h2>Main features</h2>
 <ul>
-	<li>Backup</li>
+	<li>[[Backup]]</li>
 	<li>Console</li>
-	<li>Details</li>
+	<li>[[Details]]</li>
 	<li>Installer (SteamCMD)</li>
-	<li>Monitor (including email notification)</li>
-	<li>Update (SteamCMD)</li>
+	<li>[[Monitor]] (including email notification)</li>
+	<li>[[Update]] (SteamCMD)</li>
 	<li>Start/Stop/Restart server</li>
 </ul>
 <h2>Compatibility</h2>
