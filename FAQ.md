@@ -18,6 +18,12 @@ OR
 
 Tmux has not been installed. See the [dependencies][] section of the instructions.
 
+Can I run a server as root?
+===========================
+The script will not run as root and will error if you try. This is for security and to stop permissions issues. For example, if you run update as root any changed files are then owned by root. This means the arma3server user will be unable to access the updated files causing the server to fail.
+
+    [ FAIL ] Script will not run as root!
+
 [ WARN ] Multiple active network interfaces.
 ============================================
 
