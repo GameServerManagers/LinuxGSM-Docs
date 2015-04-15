@@ -61,8 +61,8 @@ You can request I create a script for a particular server by submitting a featur
 
 Please also check that the server can run on Linux before submitting. Servers that require WINE will not be considered.
 
-    Can you remote on to my server and help me set up my game server?
-
+Can you remote on to my server and help me set up my game server?
+=================================================================
 No! That takes all the fun out of it for you and I am not free tech support.
 
 I found a bug how do I report it?
