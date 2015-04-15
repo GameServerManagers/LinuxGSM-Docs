@@ -14,5 +14,3 @@
 
 # Advanced
 * [[Multiple Servers]]
-
-# Resources
