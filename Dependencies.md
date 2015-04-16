@@ -220,6 +220,7 @@ Counter Strike 1.6, Deathmatch Classic etc.
 ---------------------------------------------
 
 > note: Dependancies not yet confirmed
+
 ## ![CentOS Icon](https://github.com/dgibbs64/linuxgsm/blob/master/images/icons/centos-icon-32.png) CentOS
 
 | Distro | Arch | Dependencies                                  |
