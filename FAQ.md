@@ -1,6 +1,6 @@
 Below is a list of common questions that people ask about the Linux Game Server Managers.
 
-FAQ section is to try to help with common problems with LGSM. However see the relevant server page for specific FAQ.
+FAQ section is to try to help with common problems with LGSM.
 
 tmux: command not found
 =======================
