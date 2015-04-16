@@ -217,7 +217,8 @@ Counter Strike 1.6, Deathmatch Classic etc.
 | Ubuntu 14.04 LTS | x64    | speex:i386 libgtk2.0-0:i386 tmux mailutils postfix lib32gcc1 libstdc++6:i386 |
 
 <a name="Project-Zomboid"></a>Project Zomboid
--------------------
+---------------------------------------------
+
 > note: Dependancies not yet confirmed
 ## ![CentOS Icon](https://github.com/dgibbs64/linuxgsm/blob/master/images/icons/centos-icon-32.png) CentOS
 
