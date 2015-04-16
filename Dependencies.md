@@ -1,7 +1,7 @@
 # Summary
 Below is a complete list of dependencies required for all servers. Use your distros package manager (apt-get, yum etc) to install these requirements.
 
-> These dependencies should be installed before installing any LGSM server.
+> These dependencies should be installed _before_ installing any LGSM server.
 
 Select the engine/game you require.
 
