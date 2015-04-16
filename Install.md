@@ -28,6 +28,7 @@ Select the server you want to install and follow the instructions.
  - [No More Room in Hell](#No-More-Room-in-Hell)
  - [Natural Selection 2](#Natural-Selection-2)
  - [Opposing Force](#Opposing-Force)
+ - [Project Zomboid](#ProjectZomboid)
  - [Red Orchestra: Ostfront 41-45](#Red-Orchestra-Ostfront-41-45)
  - [Ricochet](#Ricochet)
  - [Serious Sam 3: BFE](#Serious-Sam-3-BFE)
@@ -429,6 +430,22 @@ Select the server you want to install and follow the instructions.
 4. Run the installer and follow the instructions.
 
         ./opforserver install
+
+# <a name="ProjectZomboid"></a>Project Zomboid
+![Project Zomboid](http://cdn.akamai.steamstatic.com/steam/apps/108600/header.jpg)
+
+1. Create a user and login.
+
+        adduser pzserver
+        passwd pzserver
+        su - pzserver
+2. Download the script.
+    `wget http://gameservermanagers.com/dl/pzserver`
+3. Make it executable.
+    `chmod +x pzserver`
+4. Run the installer and follow the instructions.
+
+        ./pzserver install
 
 # <a name="Red-Orchestra-Ostfront-41-45"></a>Red Orchestra: Ostfront 41-45
 ![Red Orchestra: Ostfront 41-45](http://cdn.akamai.steamstatic.com/steam/apps/1200/header.jpg)
