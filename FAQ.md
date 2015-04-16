@@ -10,7 +10,7 @@ I received the following error
     [ FAIL ] Tmux not installed
         * Tmux is required to run this server.
             * Please see the the following link.
-            * http://gameservermanagers.com/dependencies
+            * http://gameservermanagers.com/tmux
 
 OR
 
