@@ -12,6 +12,7 @@ Select the engine/game you require.
 * [Just Cause 2](#Just-Cause-2)
 * [Killing Floor/Red Orchestra](#Killing-Floor-Red-Orchestra)
 * [Natural Selection 2](#Natural-Selection-2)
+* [Project Zomboid](#Project-Zomboid)
 * [Unreal Tournament 2004](#Unreal-Tournament-2004)
 * [Unreal Tournament 99](#Unreal-Tournament-99)
 * [SteamCMD](#SteamCMD)
@@ -214,6 +215,35 @@ Counter Strike 1.6, Deathmatch Classic etc.
 | Ubuntu 12.04 LTS | x64    | speex:i386 libgtk2.0-0:i386 tmux mailutils postfix lib32gcc1 libstdc++6:i386 |
 | Ubuntu 14.04 LTS | x32    | speex:i386 libgtk2.0-0:i386 tmux mailutils postfix                           |
 | Ubuntu 14.04 LTS | x64    | speex:i386 libgtk2.0-0:i386 tmux mailutils postfix lib32gcc1 libstdc++6:i386 |
+
+<a name="Project-Zomboid"></a>Project Zomboid
+-------------------
+> note: Dependancies not yet confirmed
+## ![CentOS Icon](https://github.com/dgibbs64/linuxgsm/blob/master/images/icons/centos-icon-32.png) CentOS
+
+| Distro | Arch | Dependencies                                  |
+|----------|--------|-------------------------------------------------|
+| CentOS 6 | x32    |                           |
+| CentOS 6 | x64    |                 |
+| CentOS 7 | x64    |  |
+
+## ![Debian Icon](https://github.com/dgibbs64/linuxgsm/blob/master/images/icons/debian-icon-32.png) Debian
+
+| Distro | Arch | Dependencies                                                               |
+|----------|--------|------------------------------------------------------------------------------|
+| Debian 6 | x32    |            |
+| Debian 6 | x64    |               |
+| Debian 7 | x32    |           |
+| Debian 7 | x64    | |
+
+## ![Ubuntu Icon](https://github.com/dgibbs64/linuxgsm/blob/master/images/icons/ubuntu-icon-32.png) Ubuntu
+
+| Distro         | Arch | Dependencies                                                               |
+|------------------|--------|------------------------------------------------------------------------------|
+| Ubuntu 12.04 LTS | x32    |                            |
+| Ubuntu 12.04 LTS | x64    |  |
+| Ubuntu 14.04 LTS | x32    |                            |
+| Ubuntu 14.04 LTS | x64    | |
 
 <a name="Unreal-Tournament-2004"></a>Unreal Tournament 2004
 ----------------------
