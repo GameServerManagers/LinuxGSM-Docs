@@ -219,33 +219,33 @@ Counter Strike 1.6, Deathmatch Classic etc.
 <a name="Project-Zomboid"></a>Project Zomboid
 ---------------------------------------------
 
-> note: Dependancies not yet confirmed
+> note: Dependancies not yet confirmed.
 
 ## ![CentOS Icon](https://github.com/dgibbs64/linuxgsm/blob/master/images/icons/centos-icon-32.png) CentOS
 
-| Distro | Arch | Dependencies                                  |
+| Distro | Arch | Dependencies                                        |
 |----------|--------|-------------------------------------------------|
-| CentOS 6 | x32    |                           |
-| CentOS 6 | x64    |                 |
-| CentOS 7 | x64    |  |
+| CentOS 6 | x32    |  java-1.7.0-openjdk mailx tmux glibc            |
+| CentOS 6 | x64    |  java-1.7.0-openjdk mailx tmux glibc.i686       |
+| CentOS 7 | x64    |  java-1.7.0-openjdk mailx tmux glibc.i686       |
 
 ## ![Debian Icon](https://github.com/dgibbs64/linuxgsm/blob/master/images/icons/debian-icon-32.png) Debian
 
-| Distro | Arch | Dependencies                                                               |
+| Distro   | Arch   | Dependencies                                                                 |
 |----------|--------|------------------------------------------------------------------------------|
-| Debian 6 | x32    |            |
-| Debian 6 | x64    |               |
-| Debian 7 | x32    |           |
-| Debian 7 | x64    | |
+| Debian 6 | x32    | default-jre mailutils tmux postfix ca-certificates                           |
+| Debian 6 | x64    | default-jre mailutils tmux postfix ca-certificates lib32gcc1 libstdc++6:i386 |
+| Debian 7 | x32    | default-jre mailutils tmux postfix ca-certificates                           |
+| Debian 7 | x64    | default-jre mailutils tmux postfix ca-certificates lib32gcc1 libstdc++6:i386 |
 
 ## ![Ubuntu Icon](https://github.com/dgibbs64/linuxgsm/blob/master/images/icons/ubuntu-icon-32.png) Ubuntu
 
-| Distro         | Arch | Dependencies                                                               |
-|------------------|--------|------------------------------------------------------------------------------|
-| Ubuntu 12.04 LTS | x32    |                            |
-| Ubuntu 12.04 LTS | x64    |  |
-| Ubuntu 14.04 LTS | x32    |                            |
-| Ubuntu 14.04 LTS | x64    | |
+| Distro           | Arch   | Dependencies                                                       |
+|------------------|--------|----------------------------------------------------------------|
+| Ubuntu 12.04 LTS | x32    | default-jre mailutils tmux postfix                             |
+| Ubuntu 12.04 LTS | x64    | default-jre mailutils tmux postfix lib32gcc1 libstdc++6:i386   |
+| Ubuntu 14.04 LTS | x32    | default-jre mailutils tmux postfix                             |
+| Ubuntu 14.04 LTS | x64    | default-jre mailutils tmux postfix lib32gcc1 libstdc++6:i386   |
 
 <a name="Unreal-Tournament-2004"></a>Unreal Tournament 2004
 ----------------------
