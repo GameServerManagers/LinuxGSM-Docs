@@ -63,8 +63,10 @@ Glibc fixes
 
 > Many of the servers can work on distros with older _Glibc_ versions by using the _Glibc_ fixes that are available with LGSM. 
 
-This simply copies the required files to the `serverfiles` directory. Many game servers will look for there dependencies in there `serverfiles` directory. Even if your dedicated server does not meet the Glibc requirement the server may still work. The following servers have a Glibc fix available for it.
+This simply copies the required files to the `serverfiles` directory. Many game servers will look for there dependencies in there `serverfiles` directory. Even if your dedicated server does not meet the Glibc requirement the server may still work.
 
+Glibc Fix available
+-------------------
 -   ARMA 3
 -   Blade Symphony
 -   Double Action: Boogaloo
@@ -75,6 +77,11 @@ This simply copies the required files to the `serverfiles` directory. Many game 
 -   Natural Selection 2
 -   No More Room in Hell
 -   Serious Sam 3: BFE
+
+No Glibc Fix available
+----------------------
+- 7 Days to Die
+- Project Zomboid
 
 These fixes prevent errors similar to the following:
 ```
