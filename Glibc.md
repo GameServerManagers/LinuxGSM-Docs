@@ -32,6 +32,7 @@ A list of all the servers Glibc requirements
 | Mumble                           | n/a     |
 | Natural Selection 2              | 2.15    |
 | No More Room in Hell             | 2.15    |
+| Project Zomboid                  | 2.15    |
 | Red Orchestra: Ostfront 41-4     | n/a     |
 | Ricochet                         | 2.07    |
 | Serious Sam 3:BFE                | 2.13    |
