@@ -1,5 +1,5 @@
 # Summary
-Most servers require a specific version of Glibc installed. Newer distros normally have the required version. However the older the distro the less likely the server will run. Check the requirements below. If you have an older distro the game server may still run with a Glibc Fix
+Most servers require a specific version of Glibc installed. Newer distros normally have the required version. However the older the distro the less likely the server will run. Check the requirements below. If you have an older distro the game server may still run with a [Glibc fix](#glibc-fixes).
 
 Server Requirements
 ===================
