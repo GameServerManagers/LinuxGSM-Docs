@@ -65,6 +65,16 @@ Glibc fixes
 
 This simply copies the required files to the `serverfiles` directory. Many game servers will look for there dependencies in there `serverfiles` directory. Even if your dedicated server does not meet the Glibc requirement the server may still work.
 
+These fixes prevent errors similar to the following:
+```
+version `GLIBC_2.15′ not found
+```   
+```
+./7DaysToDie.x86: /usr/lib/libstdc++.so.6: version GLIBCXX_3.4.15 not found (required by ./7DaysToDie.x86)
+./7DaysToDie.x86: /lib/libc.so.6: version GLIBC_2.15 not found (required by ./7DaysToDie.x86)
+./7DaysToDie.x86: /lib/libm.so.6: version GLIBC_2.15 not found (required by ./7DaysToDie.x86)
+```
+
 Glibc Fix available
 -------------------
 -   ARMA 3
@@ -83,15 +93,6 @@ No Glibc Fix available
 - 7 Days to Die
 - Project Zomboid
 
-These fixes prevent errors similar to the following:
-```
-version `GLIBC_2.15′ not found
-```   
-```
-./7DaysToDie.x86: /usr/lib/libstdc++.so.6: version GLIBCXX_3.4.15 not found (required by ./7DaysToDie.x86)
-./7DaysToDie.x86: /lib/libc.so.6: version GLIBC_2.15 not found (required by ./7DaysToDie.x86)
-./7DaysToDie.x86: /lib/libm.so.6: version GLIBC_2.15 not found (required by ./7DaysToDie.x86)
-```
 External Links
 ==============
 
