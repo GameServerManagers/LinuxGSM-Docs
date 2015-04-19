@@ -8,7 +8,7 @@ A list of all the servers Glibc requirements
 
 | Game Server                      | Glibc   |
 |----------------------------------|---------|
-| 7 Days to Die                    | n/a     |
+| 7 Days to Die                    | 2.15     |
 | ARMA 3                           | 2.13    |
 | Blade Symphony                   | 2.15    |
 | Counter Strike: Condition Zero   | 2.07    |
