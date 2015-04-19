@@ -76,9 +76,14 @@ This simply copies the required files to the `serverfiles` directory. Many game 
 -   Serious Sam 3: BFE
 
 These fixes prevent errors similar to the following:
-
-    version `GLIBC_2.15′ not found
-
+```
+version `GLIBC_2.15′ not found
+```   
+```
+./7DaysToDie.x86: /usr/lib/libstdc++.so.6: version GLIBCXX_3.4.15 not found (required by ./7DaysToDie.x86)
+./7DaysToDie.x86: /lib/libc.so.6: version GLIBC_2.15 not found (required by ./7DaysToDie.x86)
+./7DaysToDie.x86: /lib/libm.so.6: version GLIBC_2.15 not found (required by ./7DaysToDie.x86)
+```
 External Links
 ==============
 
