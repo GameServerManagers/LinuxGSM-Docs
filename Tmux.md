@@ -8,9 +8,31 @@ LGSM requires _tmux =\> 1.6_ to enable console logging.
 Known Issues
 ------------
 
+Tmux 1.8
+========
 tmux 1.8 has an issue that prevents console logging from working. This is because the `pipe-pane` feature is broken in tmux 1.8 causing is not to output the console to the console log files. The only solution is to use another version of tmux.
 
 <http://sourceforge.net/p/tmux/mailman/message/32033641/>
+
+create session failed: Operation not permitted
+==============================================
+This issue occurs on CentOS mainly. This is caused by the standard user not having permissions to user _/dev/ptmx_.
+```
+create session failed: ./srcds_linux -game insurgency -strictportbind -ip 1.2.3.4 -port 27015 +clientport 27005 +tv_port 27020 +map ministry +servercfgfile ins-server.cfg -maxplayers 16: Operation not permitted
+```
+
+To fix this the user needs to be part of the _tty_ group.
+
+```
+usermod -G tty insserver
+```
+To check the user has been added check _/etc/group_.
+```
+grep tty /etc/group
+```
+```
+tty:x:5:insserver
+```
 
 ![Tmux Terminal](https://github.com/dgibbs64/linuxgsm/blob/master/images/screens/Tmux.png)
 
