@@ -18,20 +18,20 @@ create session failed: Operation not permitted
 ==============================================
 This issue occurs on CentOS mainly. This is caused by the standard user not having permissions to user _/dev/ptmx_.
 ```
-create session failed: ./srcds_linux -game insurgency -strictportbind -ip 1.2.3.4 -port 27015 +clientport 27005 +tv_port 27020 +map ministry +servercfgfile ins-server.cfg -maxplayers 16: Operation not permitted
+create session failed: ./srcds_linux -game csgo: Operation not permitted
 ```
 
 To fix this the user needs to be part of the _tty_ group.
 
 ```
-usermod -G tty insserver
+usermod -G tty csgoserver
 ```
 To check the user has been added check _/etc/group_.
 ```
 grep tty /etc/group
 ```
 ```
-tty:x:5:insserver
+tty:x:5:csgoserver
 ```
 
 ![Tmux Terminal](https://github.com/dgibbs64/linuxgsm/blob/master/images/screens/Tmux.png)
