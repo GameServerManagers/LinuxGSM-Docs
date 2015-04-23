@@ -416,6 +416,28 @@ Select the server you want to install and follow the instructions.
 
         ./ns2server install
 
+# <a name="NS2-Combat"></a>NS2: Combat
+![NS2: Combat](http://cdn.akamai.steamstatic.com/steam/apps/310110/header.jpg)
+
+1. Create a user and login.
+
+        adduser ns2cserver
+        passwd ns2cserver
+        su - ns2cserver
+2. Download the script. `wget http://gameservermanagers.com/dl/ns2cserver`
+3. Make it executable. `chmod +x ns2cserver`
+4. Add Steam login details. `nano ns2cserver`
+
+    > You will need to enter your steam username and password to allow authentication to the SteamCMD system. I recommend that you create a new Steam username just for the server.
+
+        # Steam login
+        steamuser="username"
+        steampass="password"
+
+5. Run the installer and follow the instructions.
+
+        ./ns2cserver install
+
 # <a name="Opposing-Force"></a>Opposing Force
 ![Opposing Force](http://cdn.akamai.steamstatic.com/steam/apps/50/header.jpg)
 
