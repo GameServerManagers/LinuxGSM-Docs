@@ -11,7 +11,7 @@ Select the engine/game you require.
 * [ARMA 3](#ARMA-3)
 * [Just Cause 2](#Just-Cause-2)
 * [Killing Floor/Red Orchestra](#Killing-Floor-Red-Orchestra)
-* [Natural Selection 2](#Natural-Selection-2)
+* [Natural Selection 2/NS2: Combat](#Natural-Selection-2)
 * [Project Zomboid](#Project-Zomboid)
 * [Unreal Tournament 2004](#Unreal-Tournament-2004)
 * [Unreal Tournament 99](#Unreal-Tournament-99)
