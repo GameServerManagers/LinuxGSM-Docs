@@ -27,6 +27,7 @@ Select the server you want to install and follow the instructions.
  - [Mumble](#Mumble)
  - [No More Room in Hell](#No-More-Room-in-Hell)
  - [Natural Selection 2](#Natural-Selection-2)
+ - [NS2: Combat](#NS2-Combat)
  - [Opposing Force](#Opposing-Force)
  - [Project Zomboid](#ProjectZomboid)
  - [Red Orchestra: Ostfront 41-45](#Red-Orchestra-Ostfront-41-45)
