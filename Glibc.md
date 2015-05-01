@@ -55,6 +55,7 @@ List of distros and there Glibc version.
 | CentOS 7         | 2.17    |
 | Debian 6         | 2.11.2  |
 | Debian 7         | 2.13    |
+| Debian 8         | 2.19    |
 | Ubuntu 12.04 LTS | 2.15    |
 | Ubuntu 14.04 LTS | 2.19    |
 
