@@ -26,9 +26,9 @@ Most servers can be updated automatically using the update feature which uses St
 update
 ------
 
-    ./csgoserver update
-
 This will also restart the server if it is currently online.
+
+    ./csgoserver update
 
 validate
 --------
