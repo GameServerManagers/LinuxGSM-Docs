@@ -28,12 +28,7 @@ update
 
     ./csgoserver update
 
-update-restart
---------------
-
-`update-restart` will stop the server run an update and start the server.
-
-    ./csgoserver update-restart
+This will also restart the server if it is currently online.
 
 validate
 --------
