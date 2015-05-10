@@ -18,3 +18,4 @@
 * [[Default Ports]]
 * [[Glibc]]
 * [[Tmux]]
+* [[gsquery.py]]
