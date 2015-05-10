@@ -97,5 +97,5 @@ No Glibc Fix available
 External Links
 ==============
 
-  [distrowatch.com]: http://distrowatch.com/
-  [Glibc Homepage]: http://www.gnu.org/software/libc/
+[distrowatch.com](http://distrowatch.com/)
+  [Glibc Homepage](http://www.gnu.org/software/libc/) 
