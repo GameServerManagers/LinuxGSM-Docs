@@ -48,7 +48,7 @@ Most servers can be updated automatically using the update feature which uses St
 update
 ------
 
-This will also restart the server if it is currently online.
+Update checks with SteamCMD if any updates are available for the server. If there is update will stop a running server, apply the update and start it again.
 
     ./csgoserver update
 
@@ -58,13 +58,6 @@ validate
 You can use the validate option when updating the server.
 
     ./csgoserver validate
-
-validate-restart
-----------------
-
-`validate-restart` will stop the server run validate and start the server.
-
-    ./csgoserver validate-restart
 
 Automating Updates
 ------------------
