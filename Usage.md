@@ -1,5 +1,27 @@
 A basic overview of how to use the server. For more advanced details on a feature see the feature page.
 
+Configuration
+==============
+Config Files
+------------
+Most servers have a configuration file to alter there settings. This can be found by checking the server details.
+
+````./csgoserver details````
+
+````Config file:   /home/csgoserver/serverfiles/cstrike/cfg/csgo-server.cfg````
+
+You can edit the config file with any linux text editor like nano or vi.
+
+Start Parameters
+------------
+Servers commonly require start parameters that are command line options which are set with the servers executable when you start the server. These parameters can again be found in details. To alter them you will need to edit the main script file.
+
+````vi csgoserver````
+
+````./srcds_run -game fof -strictportbind -ip 192.168.1.1 -port 27015 +clientport 27005 +tv_port 27020 +map fof_depot +servercfgfile fof-server.cfg -maxplayers 16````
+
+LGSM does not provide specific information about configuring your server. There are however many websites that provide documentation and support on configuring your server.
+
 Running
 =======
 
