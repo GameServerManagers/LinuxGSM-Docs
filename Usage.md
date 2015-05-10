@@ -4,7 +4,7 @@ Configuration
 ==============
 Config Files
 ------------
-Most servers have a configuration file to alter there settings. This can be found by checking the server details.
+Most servers have a configuration file to alter the game server settings. This can be found by checking the server details.
 
 ````./csgoserver details````
 
