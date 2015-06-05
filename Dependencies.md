@@ -51,7 +51,7 @@ Counter Strike: Global Offensive, Counter Strike: Source, Half Life 2:Deathmatch
 | Distro        | Arch | Dependencies                                                       |
 | ------------- | ---- | :----------------------------------------------------------------- |
 | CentOS 6      | x32  | tmux gdb mailx postfix libgcc_s.so.1 glibc                         |
-| CentOS 6      | x32  | tmux gdb mailx postfix libgcc_s.so.1 glibc.i686 ncurses-libs.i686  |
+| CentOS 6      | x64  | tmux gdb mailx postfix libgcc_s.so.1 glibc.i686 ncurses-libs.i686  |
 | CentOS 7      | x64  | tmux gdb mailx postfix glibc.i686 libstdc++.i686 ncurses-libs.i686 |
 
 ## ![Debian Icon](https://github.com/dgibbs64/linuxgsm/blob/master/images/icons/debian-icon-32.png) Debian
