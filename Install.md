@@ -43,6 +43,8 @@ Select the server you want to install and follow the instructions.
 # <a name="7-Day-to-Die"></a>7 Days to Die
 ![7 Days to Die](http://cdn.akamai.steamstatic.com/steam/apps/251570/header.jpg)
 
+> note: You must own a copy of this game in a steam account to download the server.
+
 1. Create a user and login.
 
         adduser sdtdserver
