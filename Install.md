@@ -87,7 +87,7 @@ Select the server you want to install and follow the instructions.
 5. Run the installer and follow the instructions.
 
     ./arma3server install
-# <a name="#Black-Mesa-Deathmatch"></a>Black Mesa: Deathmatch
+# <a name="Black-Mesa-Deathmatch"></a>Black Mesa: Deathmatch
 ![Black Mesa: Deathmatch](http://cdn.akamai.steamstatic.com/steam/apps/362890/header.jpg)
 
 1. Create a user and login.
