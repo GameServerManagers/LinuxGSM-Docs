@@ -6,6 +6,7 @@ Select the server you want to install and follow the instructions.
 ### Game Servers
  - [7 Days to Die](#7-Day-to-Die)
  - [ARMA 3](#ARMA-3)
+ - [Black Mesa: Deathmatch](#Black-Mesa-Deathmatch)
  - [Blade Symphony](#Blade-Symphony)
  - [Counter-Strike 1.6](#Counter-Strike-1.6)
  - [Counter-Strike: Condition Zero](#Counter-Strike-Condition-Zero)
@@ -86,6 +87,19 @@ Select the server you want to install and follow the instructions.
 5. Run the installer and follow the instructions.
 
     ./arma3server install
+# <a name="#Black-Mesa-Deathmatch"></a>Black Mesa: Deathmatch
+![Black Mesa: Deathmatch](http://cdn.akamai.steamstatic.com/steam/apps/362890/header.jpg)
+
+1. Create a user and login.
+
+        adduser bmdmserver
+        passwd bmdmserver
+        su - bmdmserver
+2. Download the script. `wget http://gameservermanagers.com/dl/bmdmserver`
+3. Make it executable. `chmod +x bmdmserver`
+4. Run the installer and follow the instructions.
+
+        ./bmdmserver install
 
 # <a name="Blade-Symphony"></a>Blade Symphony
 ![Blade Symphony](http://cdn.akamai.steamstatic.com/steam/apps/225600/header.jpg)
