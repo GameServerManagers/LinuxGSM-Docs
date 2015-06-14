@@ -14,7 +14,7 @@ Select the server you want to install and follow the instructions.
  - [Counter-Strike: Source](#Counter-Strike-Global-Offensive)
  - [Day of Defeat](#Day-of-Defeat)
  - [Day of Defeat: Source](#Day-of-Defeat-Source)
- - [Deathmatch Classic](#Day-of-Defeat-Source)
+ - [Deathmatch Classic](#Deathmatch-Classic)
  - [Double Action: Boogaloo](#Double-Action-Boogaloo)
  - [Fistful of Frags](#Fistful-of-Frags)
  - [Garry's Mod](#Garrys-Mod)
@@ -279,6 +279,21 @@ Select the server you want to install and follow the instructions.
 4. Run the installer and follow the instructions.
 
         ./hldmserver install
+
+# <a name="Half-Life-Deathmatch-Source"></a>Half Life: Deathmatch: Source
+![Half Life: Deathmatch: Source](http://cdn.akamai.steamstatic.com/steam/apps/360/header.jpg)
+
+1. Create a user and login.
+
+        adduser hldmsserver
+        passwd hldmsserver
+        su - hldmsserver
+2. Download the script. `wget http://gameservermanagers.com/dl/hldmsserver`
+3. Make it executable. `chmod +x hldmsserver`
+4. Run the installer and follow the instructions.
+
+        ./hldmsserver install
+
 
 # <a name="Half-Life-2-Deathmatch"></a>Half Life 2: Deathmatch
 ![Half Life 2: Deathmatch](http://cdn.akamai.steamstatic.com/steam/apps/320/header.jpg)
