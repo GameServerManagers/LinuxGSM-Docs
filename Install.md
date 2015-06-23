@@ -549,15 +549,7 @@ Select the server you want to install and follow the instructions.
         su - ss3server
 2. Download the script. `wget http://gameservermanagers.com/dl/ss3server`
 3. Make it executable. `chmod +x ss3server`
-4. Add Steam login details. `nano ss3server`
-
-    > You will need to enter your steam username and password to allow authentication to the SteamCMD system. I recommend that you create a new Steam username just for the server.
-
-        # Steam login
-        steamuser="username"
-        steampass="password"
-
-5. Run the installer and follow the instructions.
+4. Run the installer and follow the instructions.
 
         ./ss3server install
 
