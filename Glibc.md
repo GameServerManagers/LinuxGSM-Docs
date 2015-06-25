@@ -40,7 +40,7 @@ A list of all the servers Glibc requirements
 | Starbound                        | n/a     |
 | Team Fortress: Classic           | 2.07    |
 | Team Fortress 2                  | 2.07    |
-| Unreal Tournament 2004           | n/a     |
+| Unreal Tournament 2004           | 2.00     |
 | Unreal Tournament 99             | n/a     |
 
 Disto Glibc Versions
