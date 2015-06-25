@@ -84,7 +84,7 @@ Counter Strike 1.6, Deathmatch Classic etc.
 | Distro        | Arch | Dependencies                                         |
 | ------------- | ---- |:---------------------------------------------------- |
 | Debian        | x32  | apt-get install tmux mailutils postfix ca-certificates libstdc++6            |
-| Debian        | x64  | sudo apt-get install tmux mailutils postfix ca-certificates lib32gcc1 libstdc++6 libstdc++6:i386 |
+| Debian        | x64  | apt-get install tmux mailutils postfix ca-certificates lib32gcc1 libstdc++6 libstdc++6:i386 |
 
 ## ![Ubuntu Icon](https://github.com/dgibbs64/linuxgsm/blob/master/images/icons/ubuntu-icon-32.png) Ubuntu
 | Distro           | Arch | Dependencies                                                     |
