@@ -1,7 +1,8 @@
 # Summary
-Below is a complete list of dependencies required for all servers. Use your distros package manager (apt-get, yum etc) to install these requirements.
 
 > You can get more specific dependencies from the main website <a href="http://gameservermanagers.com/#supportedgames">http://gameservermanagers.com</a>.
+
+Below is a complete list of dependencies required for all servers. Use your distros package manager (apt-get, yum etc) to install these requirements.
 
 > These dependencies should be installed _before_ installing any LGSM server.
 
