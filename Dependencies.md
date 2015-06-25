@@ -1,6 +1,8 @@
 # Summary
 Below is a complete list of dependencies required for all servers. Use your distros package manager (apt-get, yum etc) to install these requirements.
 
+> You can get more specific dependencies from the main website <a href="http://gameservermanagers.com/#supportedgames">http://gameservermanagers.com</a>.
+
 > These dependencies should be installed _before_ installing any LGSM server.
 
 Select the engine/game you require.
@@ -26,8 +28,8 @@ The below servers are the most compatible and work well with all servers.
 
 * ![Ubuntu Icon](https://github.com/dgibbs64/linuxgsm/blob/master/images/icons/ubuntu-icon-32.png) => Ubuntu 12.04 LTS
 * ![CentOS Icon](https://github.com/dgibbs64/linuxgsm/blob/master/images/icons/centos-icon-32.png) CentOS 7
+* ![Debian Icon](https://github.com/dgibbs64/linuxgsm/blob/master/images/icons/debian-icon-32.png) Debian 8
 
-### Other Distros
 Any distro with _=> GLIBC 2.15_ and _=> tmux 1.6_ will also be compatible with all servers.
 
 ### Glibc Compatibility
@@ -41,8 +43,6 @@ If you are running an older distro check out the [[Glibc]] Wiki page.
 LGSM requires you install [EPEL](http://download.fedoraproject.org/pub/epel/6/i386/repoview/epel-release.html) if running CentOS 6.
 
 This is because tmux is not available as a standard package in CentOS 6.
-## Ubuntu Releases
-Only LTS releases are listed here as the dependencies don't normally change between LTS releases. However if a difference is found a non LTS release will be added until the newer LTS release is available.
 
 # <a name="Source-Engine"></a>Source Engine
 Counter Strike: Global Offensive, Counter Strike: Source, Half Life 2:Deathmatch etc.
@@ -50,25 +50,21 @@ Counter Strike: Global Offensive, Counter Strike: Source, Half Life 2:Deathmatch
 ## ![CentOS Icon](https://github.com/dgibbs64/linuxgsm/blob/master/images/icons/centos-icon-32.png) CentOS
 | Distro        | Arch | Dependencies                                                       |
 | ------------- | ---- | :----------------------------------------------------------------- |
-| CentOS 6      | x32  | tmux gdb mailx postfix libgcc_s.so.1 glibc                         |
-| CentOS 6      | x64  | tmux gdb mailx postfix libgcc_s.so.1 glibc.i686 ncurses-libs.i686  |
-| CentOS 7      | x64  | tmux gdb mailx postfix glibc.i686 libstdc++.i686 ncurses-libs.i686 |
+| CentOS        | x32  | yum install tmux mailx postfix libstdc++                           |
+| CentOS        | x64  | yum install tmux mailx postfix glibc.i686 libstdc++ libstdc++.i686 |
 
 ## ![Debian Icon](https://github.com/dgibbs64/linuxgsm/blob/master/images/icons/debian-icon-32.png) Debian
-| Distro        | Arch | Dependencies                                                     |
-| ------------- | ---- |:---------------------------------------------------------------- |
-| Debian 6      | x32  | tmux gdb mailutils postfix ca-certificates                       |
-| Debian 6      | x64  | tmux gdb mailutils postfix ca-certificates lib32gcc1 lib32tinfo5 |
-| Debian 7      | x32  | tmux gdb mailutils postfix ca-certificates                       |
-| Debian 7      | x64  | tmux gdb mailutils postfix ca-certificates lib32gcc1 lib32tinfo5 |
+| Distro        | Arch | Dependencies                                                                                 |
+| ------------- | ---- |:----------------------------------------------------------------                             |
+| Debian        | x32  | apt-get install tmux mailutils postfix ca-certificates libstdc++6                            |
+| Debian        | x64  | apt-get install tmux mailutils postfix ca-certificates lib32gcc1 libstdc++6 libstdc++6:i386  |
 
 ## ![Ubuntu Icon](https://github.com/dgibbs64/linuxgsm/blob/master/images/icons/ubuntu-icon-32.png) Ubuntu
-| Distro           | Arch | Dependencies                                                     |
-| ---------------- | ---- |:---------------------------------------------------------------- |
-| Ubuntu 12.04 LTS | x32  | tmux gdb mailutils postfix libstdc++6:i386                       |
-| Ubuntu 12.04 LTS | x64  | tmux gdb mailutils postfix lib32gcc1 libstdc++6:i386 lib32tinfo5 |
-| Ubuntu 14.04 LTS | x32  | tmux gdb mailutils postfix libstdc++6:i386                       |
-| Ubuntu 14.04 LTS | x64  | tmux gdb mailutils postfix lib32gcc1 libstdc++6:i386 lib32tinfo5 |
+| Distro           | Arch | Dependencies                                                                 |
+| ---------------- | ---- |:---------------------------------------------------------------------------- |
+| Ubuntu           | x32  | apt-get install tmux mailutils postfix libstdc++6                            |
+| Ubuntu           | x64  | apt-get install tmux mailutils postfix lib32gcc1 libstdc++6 libstdc++6:i386  |
+
 
 ## Other
 | Distro           | Arch | Dependencies                   |
@@ -80,25 +76,20 @@ Counter Strike 1.6, Deathmatch Classic etc.
 ## ![CentOS Icon](https://github.com/dgibbs64/linuxgsm/blob/master/images/icons/centos-icon-32.png) CentOS
 | Distro        | Arch | Dependencies                      |
 | ------------- | ---- | :-------------------------------- |
-| CentOS 6      | x32  | tmux gdb mailx postfix glibc      |
-| CentOS 6      | x32  | tmux gdb mailx postfix glibc.i686 |
-| CentOS 7      | x64  | tmux gdb mailx postfix glibc.i686 |
+| CentOS        | x32  |  yum install tmux mailx postfix glibc.i686 libstdc++ libstdc++.i686 |
+| CentOS        | x64  |  yum install tmux mailx postfix libstdc++  |
 
 ## ![Debian Icon](https://github.com/dgibbs64/linuxgsm/blob/master/images/icons/debian-icon-32.png) Debian
 | Distro        | Arch | Dependencies                                         |
 | ------------- | ---- |:---------------------------------------------------- |
-| Debian 6      | x32  | tmux gdb mailutils postfix ca-certificates           |
-| Debian 6      | x64  | tmux gdb mailutils postfix ca-certificates lib32gcc1 |
-| Debian 7      | x32  | tmux gdb mailutils postfix ca-certificates           |
-| Debian 7      | x64  | tmux gdb mailutils postfix ca-certificates lib32gcc1 |
+| Debian        | x32  | apt-get install tmux mailutils postfix ca-certificates libstdc++6            |
+| Debian        | x64  | sudo apt-get install tmux mailutils postfix ca-certificates lib32gcc1 libstdc++6 libstdc++6:i386 |
 
 ## ![Ubuntu Icon](https://github.com/dgibbs64/linuxgsm/blob/master/images/icons/ubuntu-icon-32.png) Ubuntu
 | Distro           | Arch | Dependencies                                                     |
 | ---------------- | ---- |:---------------------------------------------------------------- |
-| Ubuntu 12.04 LTS | x32  | tmux gdb mailutils postfix                                       |
-| Ubuntu 12.04 LTS | x64  | tmux gdb mailutils postfix lib32gcc1                             |
-| Ubuntu 14.04 LTS | x32  | tmux gdb mailutils postfix                                       |
-| Ubuntu 14.04 LTS | x64  | tmux gdb mailutils postfix lib32gcc1                             |
+| Ubuntu | x32  | apt-get install tmux mailutils postfix libstdc++6                                        |
+| Ubuntu | x64  | apt-get install tmux mailutils postfix lib32gcc1 libstdc++6 libstdc++6:i386                              |
 
 <a name="ARMA-3"></a>ARMA 3
 ------
@@ -107,27 +98,22 @@ Counter Strike 1.6, Deathmatch Classic etc.
 
 | Distro | Arch | Dependencies                                     |
 |----------|--------|----------------------------------------------|
-| CentOS 6 | x32    | tmux mailx postfix glibc                     |
-| CentOS 6 | x64    | tmux mailx postfix glibc.i686                |
-| CentOS 7 | x64    | tmux mailx postfix glibc.i686 libstdc++.i686 |
+| CentOS | x32    |  yum install tmux mailx postfix libstdc++                      |
+| CentOS | x64    |  yum install tmux mailx postfix glibc.i686 libstdc++ libstdc++.i686                 |
 
 ## ![Debian Icon](https://github.com/dgibbs64/linuxgsm/blob/master/images/icons/debian-icon-32.png) Debian
 
 | Distro | Arch | Dependencies                                                         |
 |----------|--------|------------------------------------------------------------------|
-| Debian 6 | x32    | tmux mailutils postfix ca-certificates                           |
-| Debian 6 | x64    | tmux mailutils postfix ca-certificates lib32gcc1                 |
-| Debian 7 | x32    | tmux mailutils postfix ca-certificates libstdc++6                |
-| Debian 7 | x64    | tmux mailutils postfix ca-certificates lib32gcc1 libstdc++6:i386 |
+| Debian | x32    | apt-get install tmux mailutils postfix ca-certificates libstdc++6                 |
+| Debian | x64    | apt-get install tmux mailutils postfix ca-certificates lib32gcc1 libstdc++6 libstdc++6:i386  |
 
 ## ![Ubuntu Icon](https://github.com/dgibbs64/linuxgsm/blob/master/images/icons/ubuntu-icon-32.png) Ubuntu
 
 | Distro         | Arch | Dependencies                                         |
 |------------------|--------|--------------------------------------------------|
-| Ubuntu 12.04 LTS | x32    | tmux mailutils postfix libstdc++6                |
-| Ubuntu 12.04 LTS | x64    | tmux mailutils postfix lib32gcc1 libstdc++6:i386 |
-| Ubuntu 14.04 LTS | x32    | tmux mailutils postfix libstdc++6                |
-| Ubuntu 14.04 LTS | x64    | tmux mailutils postfix lib32gcc1 libstdc++6:i386 |
+| Ubuntu  | x32    | apt-get install tmux mailutils postfix libstdc++6                 |
+| Ubuntu  | x64    | apt-get install tmux mailutils postfix lib32gcc1 libstdc++6 libstdc++6:i386  |
 
 <a name="Just-Cause-2"></a>Just Cause 2
 ------------
