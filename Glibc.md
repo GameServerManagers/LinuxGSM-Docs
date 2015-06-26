@@ -11,6 +11,7 @@ A list of all the servers Glibc requirements
 | Ark: Survival Evolved            | 2.14    |
 | 7 Days to Die                    | 2.15    |
 | ARMA 3                           | 2.13    |
+| Black Mesa: Deathmatch           | 2.07    |
 | Blade Symphony                   | 2.15    |
 | Counter Strike: Condition Zero   | 2.07    |
 | Counter Strike: Global Offensive | 2.07    |
@@ -27,21 +28,21 @@ A list of all the servers Glibc requirements
 | Half Life 2: Deathmatch          | 2.07    |
 | Insurgency                       | 2.15    |
 | Just Cause 2                     | 2.13    |
-| Killing Floor                    | n/a     |
+| Killing Floor                    | 2.07    |
 | Left for Dead                    | 2.07    |
 | Left for Dead 2                  | 2.07    |
 | Mumble                           | n/a     |
 | Natural Selection 2              | 2.15    |
 | No More Room in Hell             | 2.15    |
 | Project Zomboid                  | 2.15    |
-| Red Orchestra: Ostfront 41-4     | n/a     |
+| Red Orchestra: Ostfront 41-4     | 2.07    |
 | Ricochet                         | 2.07    |
 | Serious Sam 3:BFE                | 2.13    |
-| Starbound                        | n/a     |
+| Starbound                        | 2.12    |
 | Team Fortress: Classic           | 2.07    |
 | Team Fortress 2                  | 2.07    |
-| Unreal Tournament 2004           | 2.00     |
-| Unreal Tournament 99             | n/a     |
+| Unreal Tournament 2004           | 2.00    |
+| Unreal Tournament 99             | 2.00    |
 
 Disto Glibc Versions
 ====================
