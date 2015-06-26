@@ -211,8 +211,8 @@ Counter Strike 1.6, Deathmatch Classic etc.
 
 | Distro           | Arch   | Dependencies                                                       |
 |------------------|--------|----------------------------------------------------------------|
-| Ubuntu 14.04 LTS | x32    | apt-get install tmux mailutils postfix libstdc++6 default-jre  |
-| Ubuntu 14.04 LTS | x64    | apt-get install tmux mailutils postfix lib32gcc1 libstdc++6 libstdc++6:i386 default-jre   |
+| Ubuntu | x32    | apt-get install tmux mailutils postfix libstdc++6 default-jre  |
+| Ubuntu | x64    | apt-get install tmux mailutils postfix lib32gcc1 libstdc++6 libstdc++6:i386 default-jre   |
 
 <a name="Unreal-Tournament-2004"></a>Unreal Tournament 2004
 ----------------------
@@ -235,8 +235,8 @@ Counter Strike 1.6, Deathmatch Classic etc.
 
 | Distro         | Arch | Dependencies                               |
 |------------------|--------|----------------------------------------------|
-| Ubuntu 14.04 LTS | x32    | apt-get install tmux mailutils postfix libstdc++6 libsdl1.2debian libstdc++5      |
-| Ubuntu 14.04 LTS | x64    | apt-get install tmux mailutils postfix lib32gcc1 libstdc++6 libstdc++6:i386 libsdl1.2debian libstdc++5:i386 |
+| Ubuntu | x32    | apt-get install tmux mailutils postfix libstdc++6 libsdl1.2debian libstdc++5      |
+| Ubuntu | x64    | apt-get install tmux mailutils postfix lib32gcc1 libstdc++6 libstdc++6:i386 libsdl1.2debian libstdc++5:i386 |
 
 <a name="Unreal-Tournament-99"></a>Unreal Tournament 99
 --------------------
@@ -252,21 +252,21 @@ Counter Strike 1.6, Deathmatch Classic etc.
 
 | Distro | Arch | Dependencies                                         |
 |----------|--------|--------------------------------------------------------|
-| Debian 7 | x32    | apt-get install tmux mailutils postfix ca-certificates libstdc++6 libsdl1.2debian |
-| Debian 7 | x64    | apt-get install tmux mailutils postfix ca-certificates lib32gcc1 libstdc++6 libstdc++6:i386 libsdl1.2debian |
+| Debian | x32    | apt-get install tmux mailutils postfix ca-certificates libstdc++6 libsdl1.2debian |
+| Debian | x64    | apt-get install tmux mailutils postfix ca-certificates lib32gcc1 libstdc++6 libstdc++6:i386 libsdl1.2debian |
 
 ## ![Ubuntu Icon](https://github.com/dgibbs64/linuxgsm/blob/master/images/icons/ubuntu-icon-32.png) Ubuntu
 
 | Distro         | Arch | Dependencies                         |
 |------------------|--------|----------------------------------------|
-| Ubuntu 14.04 LTS | x32    | apt-get install tmux mailutils postfix libstdc++6 libsdl1.2debian |
-| Ubuntu 14.04 LTS | x64    | apt-get install tmux mailutils postfix lib32gcc1 libstdc++6 libstdc++6:i386 libsdl1.2debian |
+| Ubuntu | x32    | apt-get install tmux mailutils postfix libstdc++6 libsdl1.2debian |
+| Ubuntu | x64    | apt-get install tmux mailutils postfix lib32gcc1 libstdc++6 libstdc++6:i386 libsdl1.2debian |
 
 
 <a name="SteamCMD"></a>SteamCMD
 --------
 
-Requirements for [SteamCMD][] only. SteamCMD is a 32-bit application and requires extra packages to work on 64-bit distros. These packages are already included with the game server requires.
+Requirements for [SteamCMD] only. SteamCMD is a 32-bit application and requires extra packages to work on 64-bit distros. These packages are already included with the game server requirements.
 
 ## ![CentOS Icon](https://github.com/dgibbs64/linuxgsm/blob/master/images/icons/centos-icon-32.png) CentOS
 
@@ -279,8 +279,8 @@ Requirements for [SteamCMD][] only. SteamCMD is a 32-bit application and require
 
 | Distro | Arch | Dependencies |
 |----------|--------|----------------|
-| Debian 7 | x32    | apt-get install libstdc++6 |
-| Debian 7 | x64    | apt-get install lib32gcc1 libstdc++6 libstdc++6:i386 |
+| Debian | x32    | apt-get install libstdc++6 |
+| Debian | x64    | apt-get install lib32gcc1 libstdc++6 libstdc++6:i386 |
 
 ## ![Ubuntu Icon](https://github.com/dgibbs64/linuxgsm/blob/master/images/icons/ubuntu-icon-32.png) Ubuntu
 
