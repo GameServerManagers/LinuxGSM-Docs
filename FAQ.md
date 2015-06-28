@@ -39,7 +39,7 @@ Will LGSM run on Raspberry PI?
 ==============================
 Short answer: No
 
-Raspberry PI uses ARM architecture whereas all the game servers will only run on x86 compatible architectures such as 23-bit and 64-bit versions of distros. Raspberry PI is not compatible with x86.
+Raspberry PI uses ARM architecture whereas all the game servers will only run on x86 compatible architectures such as 32-bit and 64-bit versions of distros. Raspberry PI is not compatible with x86.
 
 [ WARN ] Multiple active network interfaces.
 ============================================
