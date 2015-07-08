@@ -1,14 +1,14 @@
 # Getting your Authentication Token
 You will need Don’t Starve Together installed on your personal computer to get your token.
 
-1. Open up the game on your computer. Once you reach the main menu, press the backtick key (`) on your keyboard. You will see a screen similar to this one:
+1: Open up the game on your computer. Once you reach the main menu, press the backtick key (`) on your keyboard. You will see a screen similar to this one:
 
 ![DST Terminal](https://github.com/dgibbs64/linuxgsm/blob/master/images/screens/DSTconsole.png)
 DST Console.
 
 > note: If you’ve never before played the game, you first need to click on Play and create an account.
 
-2. Copy the following string into the box at the bottom of the console:
+2: Copy the following string into the box at the bottom of the console:
 
 `TheNet:GenerateServerToken()`
 
@@ -31,7 +31,7 @@ On Mac OS X:
 
 This file is your server token. Do not share it with anyone.
 
-3. Upload the token file to your server.
+3: Upload the token file to your server.
 
  `cp server_token.txt ~/.klei/DoNotStarveTogether/`
 
