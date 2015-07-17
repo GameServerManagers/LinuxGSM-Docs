@@ -2,6 +2,21 @@ Below is a list of common questions that people ask about the Linux Game Server 
 
 FAQ section is to try to help with common problems with LGSM.
 
+I'm having an issue can you help?
+===============================================
+
+We do want to help you with errors and issues you are having. However please only post an issue if you an issue with LGSM itself.
+
+**LGSM Scripts:** Yes we can provide assistance with LGSM related issues. This maybe such things as an error LGSM is returning or not doing what it is meant to do. Most common problem is that there is a bug in the code that needs to be resolved.
+
+**Game Server:** No we cannot provide assistance with game server related issues. This is because we did not create the game server and have no control of how the game server is developed. This was created by the developer of the game e.g Valve, Facepunch, Tripwire etc. We recommend you seek support from the Games official forums etc. or someone of the the LGSM Steam Group may be able to help  
+
+**Server distro/OS:** No we cannot provide assistance with your servers distro. This is because we did not create the distro. This was created by the developer of the distro e.g Ubuntu, Debian, CentOS etc. You should seek support from the distros official forums etc.
+
+**Unsure what the issue is related to?** If the issue is being generated in debug mode or the console it is likely a game server or distro related issue. 
+
+Remember posting an issue in the correct forum etc. will help you resolve your issue quickly and allows developers to spend more time on issues we can actually assist with.
+
 tmux: command not found
 =======================
 
@@ -113,7 +128,7 @@ Non-steam versions of the games ARE pirated and this would be the only reason to
 [S\_API FAIL] SteamAPI\_Init() failed; SteamAPI\_IsSteamRunning() failed.
 =========================================================================
 
-Ignore the error, do not do anything to attempt to fix it. It is a known issue that has
+Ignore the error, do not do anything to attempt to fix it. It is a known issue that has been happening ever since SteamPipe was introduced (this includes on Source1 games). It does not cause any issue and can be freely ignored.
 
   [dependencies]: dependencies "wikilink"
   [GitHub issues]: https://github.com/dgibbs64/linuxgameservers/issues
