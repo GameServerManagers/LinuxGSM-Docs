@@ -88,6 +88,7 @@ Glibc Fix available
 -   Insurgency
 -   Just Cause 2
 -   Natural Selection 2
+-   NS2: Combat
 -   No More Room in Hell
 -   Serious Sam 3: BFE
 
