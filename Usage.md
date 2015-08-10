@@ -155,13 +155,13 @@ console
 
 Console allows you to view the live console of a server as it is running and allow you to enter commands; if supported.
 
-    ./arma3server console
+    ./csgoserver console
 
 To exit the console press “CTRL+b d”.
 > Note: pressing “CTRL+c” will terminate the server.
 
 # Running on Boot
-To run arma3server on boot add the command in to the rc.local file.
+To run a server on boot add the command in to the rc.local file.
 
     nano /etc/rc.local
-    su - arma3server -c '/home/arma3server/arma3server start'
+    su - csgoserver -c '/home/csgoserver/csgoserver start'
