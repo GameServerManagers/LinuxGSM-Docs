@@ -150,7 +150,8 @@ If you need to get all important server details you can use the following comman
     ./csgoserver details
 
 # Console
-
+console
+-----
 
 Console allows you to view the live console of a server as it is running and allow you to enter commands; if supported.
 
