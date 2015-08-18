@@ -48,7 +48,7 @@ Most servers can be updated automatically using the update feature which uses St
 update
 ------
 
-Update checks with SteamCMD if any updates are available for the server. If there is update will stop a running server, apply the update and start it again.
+Update checks with SteamCMD if any updates are available for the server. The server will update and restart only if required.
 
     ./csgoserver update
 
