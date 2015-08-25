@@ -69,14 +69,14 @@ You can use cronjobs to automate the process of updating the server. You can eit
     crontab -e
 
 
-    0 5 * * *  su – csgoserver -c '/home/csgoserver/csgoserver update-restart' > /dev/null 2>&1
+    0 5 * * *  su – csgoserver -c '/home/csgoserver/csgoserver update' > /dev/null 2>&1
 
 ### User Cronjob
 
     crontab -e
 
 
-    0 5 * * *  /home/csgoserver/csgoserver update-restart > /dev/null 2>&1
+    0 5 * * *  /home/csgoserver/csgoserver update > /dev/null 2>&1
 
 Monitor
 =======
@@ -116,14 +116,14 @@ You can use cronjobs to automate the process of monitoring the server. You can e
     crontab -e
 
 
-    0 5 * * *  su – csgoserver -c '/home/csgoserver/csgoserver monitor' > /dev/null 2>&1
+    */5 * * * *  su – csgoserver -c '/home/csgoserver/csgoserver monitor' > /dev/null 2>&1
 
 ### User Cronjob
 
     crontab -e
 
 
-    0 5 * * *  /home/csgoserver/csgoserver monitor > /dev/null 2>&1
+    */5 * * * *  /home/csgoserver/csgoserver monitor > /dev/null 2>&1
 
 Debugging
 ========
