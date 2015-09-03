@@ -58,6 +58,8 @@ Select the server you want to install and follow the instructions.
 
     > You will need to enter your steam username and password to allow authentication to the SteamCMD system. I recommend that you create a new Steam username just for the server.
 
+    > note: If your steampass variable contains special characters, be sure to escape them
+
         # Steam login
         steamuser="username"
         steampass="password"
@@ -79,7 +81,9 @@ Select the server you want to install and follow the instructions.
 3. Make it executable. `chmod +x arma3server`
 4. Add Steam login details. `nano arma3server`
 
-> You will need to enter your steam username and password to allow authentication to the SteamCMD system. I recommend that you create a new Steam username just for the server.
+    > You will need to enter your steam username and password to allow authentication to the SteamCMD system. I recommend that you create a new Steam username just for the server.
+    
+    > note: If your steampass variable contains special characters, be sure to escape them
 
     # Steam login
     steamuser="username"
@@ -117,6 +121,8 @@ Select the server you want to install and follow the instructions.
 4. Add Steam login details. `nano bsserver`
 
     > You will need to enter your steam username and password to allow authentication to the SteamCMD system. I recommend that you create a new Steam username just for the server.
+
+    > note: If your steampass variable contains special characters, be sure to escape them
 
         # Steam login
         steamuser="username"
@@ -351,6 +357,8 @@ Select the server you want to install and follow the instructions.
 
     > You will need to enter your steam username and password to allow authentication to the SteamCMD system. I recommend that you create a new Steam username just for the server.
 
+    > note: If your steampass variable contains special characters, be sure to escape them
+
         # Steam login
         steamuser="username"
         steampass="password"
@@ -417,6 +425,8 @@ Select the server you want to install and follow the instructions.
 
     > You will need to enter your steam username and password to allow authentication to the SteamCMD system. I recommend that you create a new Steam username just for the server.
 
+    > note: If your steampass variable contains special characters, be sure to escape them
+
         # Steam login
         steamuser="username"
         steampass="password"
@@ -439,6 +449,8 @@ Select the server you want to install and follow the instructions.
 
     > You will need to enter your steam username and password to allow authentication to the SteamCMD system. I recommend that you create a new Steam username just for the server.
 
+    > note: If your steampass variable contains special characters, be sure to escape them
+
         # Steam login
         steamuser="username"
         steampass="password"
@@ -460,6 +472,8 @@ Select the server you want to install and follow the instructions.
 4. Add Steam login details. `nano ns2cserver`
 
     > You will need to enter your steam username and password to allow authentication to the SteamCMD system. I recommend that you create a new Steam username just for the server.
+
+    > note: If your steampass variable contains special characters, be sure to escape them
 
         # Steam login
         steamuser="username"
@@ -515,6 +529,8 @@ Select the server you want to install and follow the instructions.
 
     > You will need to enter your steam username and password to allow authentication to the SteamCMD system. I recommend that you create a new Steam username just for the server.
 
+    > note: If your steampass variable contains special characters, be sure to escape them
+
         # Steam login
         steamuser="username"
         steampass="password"
@@ -569,6 +585,8 @@ Select the server you want to install and follow the instructions.
 4. Add Steam login details. `nano sbserver`
 
     > You will need to enter your steam username and password to allow authentication to the SteamCMD system. I recommend that you create a new Steam username just for the server.
+
+    > note: If your steampass variable contains special characters, be sure to escape them
 
         # Steam login
         steamuser="username"
