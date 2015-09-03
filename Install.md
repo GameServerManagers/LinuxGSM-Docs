@@ -85,12 +85,14 @@ Select the server you want to install and follow the instructions.
     
     > note: If your steampass variable contains special characters, be sure to escape them
 
-    # Steam login
-    steamuser="username"
-    steampass="password"
+        # Steam login
+        steamuser="username"
+        steampass="password"
+
 5. Run the installer and follow the instructions.
 
-    ./arma3server install
+        ./arma3server install
+
 # <a name="Black-Mesa-Deathmatch"></a>Black Mesa: Deathmatch
 ![Black Mesa: Deathmatch](http://cdn.akamai.steamstatic.com/steam/apps/362890/header.jpg)
 
