@@ -398,7 +398,7 @@ Select the server you want to install and follow the instructions.
         ./l4d2server install
 
 # <a name="Mumble"></a>Mumble
-![Mumble](http://gameservermanagers.com/wp-content/themes/lgsm/img/games/mumbleserver_logo-250x143.jpg)
+![Mumble](http://wiki.mumble.info/logo.png)
 
 1. Create a user and login.
         adduser mumbleserver
@@ -631,7 +631,7 @@ Select the server you want to install and follow the instructions.
         ./tfcserver install
 
 # <a name="Teamspeak-3"></a>Teamspeak 3
-![Teamspeak 3](http://gameservermanagers.com/wp-content/themes/lgsm/img/games/ts3server_logo-250x143.jpg)
+![Teamspeak 3](https://upload.wikimedia.org/wikipedia/en/2/2d/TeamSpeak_Logo.png)
 
 1. Create a user and login.
 
