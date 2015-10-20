@@ -11,7 +11,7 @@ Select the server you want to install and follow the instructions.
  - [Counter-Strike 1.6](#Counter-Strike-1.6)
  - [Counter-Strike: Condition Zero](#Counter-Strike-Condition-Zero)
  - [Counter-Strike: Global Offensive](#Counter-Strike-Global-Offensive)
- - [Counter-Strike: Source](#Counter-Strike-Global-Offensive)
+ - [Counter-Strike: Source](#Counter-Strike-Source)
  - [Day of Defeat](#Day-of-Defeat)
  - [Day of Defeat: Source](#Day-of-Defeat-Source)
  - [Deathmatch Classic](#Deathmatch-Classic)
