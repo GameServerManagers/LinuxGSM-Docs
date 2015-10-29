@@ -14,9 +14,7 @@ tmux 1.8 has an issue that prevents console logging from working. This is becaus
 
 <http://sourceforge.net/p/tmux/mailman/message/32033641/>
 
-### Upgrade Tmux 1.8 to 2.0 on Ubunutu
-
-
+### Upgrade Tmux Ubuntu
 
 http://stackoverflow.com/a/25952511
 
