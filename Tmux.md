@@ -14,6 +14,36 @@ tmux 1.8 has an issue that prevents console logging from working. This is becaus
 
 <http://sourceforge.net/p/tmux/mailman/message/32033641/>
 
+### Upgrade Tmux 1.8 to 2.0 on Ubunutu
+
+
+
+http://stackoverflow.com/a/25952511
+
+Here are the steps to update Ubuntu - version 14.04 only (see below for other ubuntu versions):
+
+    sudo apt-get update
+
+    sudo apt-get install -y python-software-properties software-properties-common
+
+    sudo add-apt-repository -y ppa:pi-rho/dev
+
+    sudo apt-get update
+
+    sudo apt-get install -y tmux=2.0-1~ppa1~t
+
+
+If you have another ubuntu version you might want to install a different tmux version from the same repo. So:
+
+ubuntu 12.04 (Precise Pangolin) step 5: `sudo apt-get install -y tmux=1.9a-1~ppa1~p `(installs tmux 1.9)
+
+ubuntu 13.10 (Saucy Salamander) step 5: `sudo apt-get install -y tmux=1.9a-1~ppa1~s` (installs tmux 1.9)
+
+ubuntu 14.10 (Utopic Unicorn) step 5: `sudo apt-get install -y tmux=2.0-1~ppa1~u`
+
+ubuntu 15.04 (Vivid Vervet) step 5: `sudo apt-get install -y tmux=2.0-1~ppa1~v`
+
+
 create session failed: Operation not permitted
 ==============================================
 This issue occurs on CentOS mainly. This is caused by the standard user not having permissions to user _/dev/ptmx_.
