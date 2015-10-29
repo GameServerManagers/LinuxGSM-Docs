@@ -31,7 +31,13 @@ OR
 
     tmux: command not found
 
-Tmux has not been installed. See the [dependencies][] section of the instructions.
+Tmux has not been installed. See the dependencies section of the instructions.
+
+    apt-get install tmux
+
+or
+
+    yum install tmux
 
 Can I run a server as root?
 ===========================
