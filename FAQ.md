@@ -111,7 +111,7 @@ This can be fixed by changing the file descriptor number ulimit:
 Can you create a server script for a [insert name] game server?
 ===============================================================
 
-You can request I create a script for a particular server by submitting a feature request on the [GitHub issues] page. This does not guarantee I will create a script but I will review it and decide if its possible and now much demand there is for it. Servers will be created when time permits.
+You can request I create a script for a particular server by submitting a feature request on the [GitHub issues] page. This does not guarantee I will create a script but I will review it and decide if its possible and how much demand there is for it. Servers will be created when time permits.
 
 Please also check that the server can run on Linux before submitting. Servers that require WINE will not be considered.
 
