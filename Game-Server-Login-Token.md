@@ -8,7 +8,7 @@ To generate a token follow this link. You will be required to login to a steam a
 
 # New command line Parameter
 
-GSLTs can be registered on your server(s) by using the _sv_setsteamaccount_ command either in _autoexec.cfg_ or from a start parameter
+GSLTs can be registered on your server(s) by using the _sv_setsteamaccount_ command either in _autoexec.cfg_ or from a start parameter.
 
 on the server startup line.
 
