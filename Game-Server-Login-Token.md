@@ -1,5 +1,7 @@
 Game Server Login Token is a new system by Valve for managing Game servers.
 
+A token IS now required for running public CS:GO servers and TF2 is optional.
+
 # Generate a token
 [http://steamcommunity.com/dev/managegameservers](http://steamcommunity.com/dev/managegameservers)
 
@@ -19,38 +21,40 @@ GSLT creates a persistent token for your game server. This allows any users who 
 * Counter-Strike: Global Offensive 
 * Team Fortress 2 (GSLT not yet required for public servers)
 
-# If one of my tokens are banned/blacklisted, will all tokens be banned?
+# FAQ
+
+## If one of my tokens are banned/blacklisted, will all tokens be banned?
 Yes, all of the tokens on your account will be blacklisted if one of your servers (tokens) is found to be running a blacklisted plugin. Make sure you read up on Valve’s plugin policies before running your servers so nothing unfortunate happens to your tokens.
 
-# If my GSLTs get banned for running a blacklisted plugin, will my steam account be community and/or VAC banned?
+## If my GSLTs get banned for running a blacklisted plugin, will my steam account be community and/or VAC banned?
 No one knows just yet what will happen to the steam account itself. Most likely, it won’t be VAC banned, but Valve’s requirement that anyone creating GSLTs is not community banned, you may be community banned for running blacklisted plugins.
 
-# Can I use the same GSLT for multiple servers?
+## Can I use the same GSLT for multiple servers?
 No. You must create a unique GSLT for each simultaneously running server.
 
-# Can I re-use GSLTs?
+## Can I re-use GSLTs?
 Yes, you can add your GSLT to a new server, you just can’t run two servers with the same GSLT, at the same time.
 
-# Do I still need a Steam WebAPI key to host workshop maps?
+## Do I still need a Steam WebAPI key to host workshop maps?
 Unfortunately, despite registering a GSLT to your server, CS:GO servers will still need a Steam WebAPI key to host maps from the Workshop.
 
-# Will this also affect Team Fortress 2?
+## Will this also affect Team Fortress 2?
 As of yet, no official confirmation has been made that TF2 servers will also require GSLTs, but they do support them so it’s not a wild guess that this is to come.
 
-# My server loses connection to the registered Steam account
+## My server loses connection to the registered Steam account
 Don’t use the same GSLT for multiple servers. When a server starts with a specific GSLT, it will disconnect any other servers already running that same GSLT. You need to create a unique GSLT for each server.
 
-# Is there a limit on how many GSLTs my account can have?
+## Is there a limit on how many GSLTs my account can have?
 Yes, you can have a maximum of 1000 GSLTs on your account.
 
-# What are the requirements for my account to be able to create a GSLT?
+## What are the requirements for my account to be able to create a GSLT?
 Your Steam account must not be currently community banned or locked.
 Your Steam account must not be limited.
 Your Steam account must have a qualifying registered phone.
 Your Steam account must own the game for which you are creating a GSLT.
 Your Steam account may not have more than 1000 tokens.
 
-# Can I run servers without GSLTs?
+## Can I run servers without GSLTs?
 No, you need to have a GSLT to run your CS:GO server.
 
 For further information see this useful blog post: [http://dathost.net/blog/important-information-regarding-our-csgo-servers/](http://dathost.net/blog/important-information-regarding-our-csgo-servers/)
