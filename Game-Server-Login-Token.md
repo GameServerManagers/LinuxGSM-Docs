@@ -1,6 +1,6 @@
-Game Server Login Token is a new system by Valve for managing Game servers.
+**Game Server Login Token is a new system by Valve for managing Game servers.**
 
-A token IS now required for running public CS:GO servers and TF2 is optional.
+_A token is now required for running public CS:GO servers and TF2 is optional._
 
 # Generate a token
 [http://steamcommunity.com/dev/managegameservers](http://steamcommunity.com/dev/managegameservers)
