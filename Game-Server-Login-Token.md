@@ -3,6 +3,8 @@
 _A token is now required for running public CS:GO servers and TF2 is optional._
 
 # Generate a token
+To generate a token follow this link. You will be required to login to a steam account. I recommend a separate account from your main steam account
+.
 [http://steamcommunity.com/dev/managegameservers](http://steamcommunity.com/dev/managegameservers)
 
 # What is the point of GSLT?
