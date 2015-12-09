@@ -3,9 +3,20 @@
 _A token is now required for running public CS:GO servers and TF2 is optional._
 
 # Generate a token
-To generate a token follow this link. You will be required to login to a steam account. I recommend a separate account from your main steam account
-.
+To generate a token follow this link. You will be required to login to a steam account. I recommend a separate account from your main steam account.
 [http://steamcommunity.com/dev/managegameservers](http://steamcommunity.com/dev/managegameservers)
+
+# New command line Parameter
+
+GSLTs can be registered on your server(s) by using the _sv_setsteamaccount_ command either in _autoexec.cfg_ or from an _+exec_ 
+
+on the server startup line.
+
+`+sv_setsteamaccount [token] `
+
+autoexec.cfg
+
+`sv_setsteamaccount [token] `
 
 # What is the point of GSLT?
 To fully understand the reasoning behind GSLTs, we need to back up a bit to July 2015. [Valve announced that running certain plugins would get your server blacklisted](http://dathost.net/blog/important-information-regarding-our-csgo-servers/), meaning it could not connect to the master servers and people wouldn’t be able to connect to the server.
