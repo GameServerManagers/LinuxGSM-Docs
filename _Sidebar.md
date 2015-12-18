@@ -1,8 +1,6 @@
 # Getting Started
-1. [[Dependencies]]
-2. [[Install]]
-3. [[Usage]]
-4. [[FAQ]]
+* [[Usage]]
+* [[FAQ]]
 
 # Features
 * [[Backup]]
