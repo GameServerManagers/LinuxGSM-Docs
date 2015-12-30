@@ -35,7 +35,7 @@ All FAQ can be found here.
 <h2>Donate</h2>
 If you want to donate to the project you can via PayPal, Flattr or Gratipay. I have had a may kind people show there support by sending me a donation. Any donations you send help cover my server costs and buy me a drink. Cheers!
 <ul>
-<li><a href="http://gameservermanagers.com/#donate">Donate</a></li>
+<li><a href="http://gameservermanagers.com/donate">Donate</a></li>
 </ul>
 <h2>Useful Links</h2>
 <ul>
