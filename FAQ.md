@@ -124,7 +124,7 @@ I found a bug how do I report it?
 
 If you find a bug or have a suggestion please submit a bug report on [GitHub issues][] page.
 
-<https://github.com/dgibbs64/linuxgameservers/issues>
+<https://github.com/dgibbs64/linuxgsm/issues>
 
 How can I install a non-steam version?
 ======================================
@@ -137,4 +137,4 @@ Non-steam versions of the games ARE pirated and this would be the only reason to
 Ignore the error, do not do anything to attempt to fix it. It is a known issue that has been happening ever since SteamPipe was introduced (this includes on Source1 games). It does not cause any issue and can be freely ignored.
 
   [dependencies]: dependencies "wikilink"
-  [GitHub issues]: https://github.com/dgibbs64/linuxgameservers/issues
+  [GitHub issues]: https://github.com/dgibbs64/linuxgsm/issues
