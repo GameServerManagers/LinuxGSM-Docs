@@ -17,6 +17,8 @@ Steam Guard is an additional level of security that can be applied to your Steam
 
 When Steam Guard is enabled on your account, when you login to your Steam account from an unrecognized device you'll need to provide a special access code to verify it's your account. Depending on your Steam Guard settings, you'll either receive an email with the special code or you'll get it from the Steam Mobile app on your smartphone.
 
+For more info visit: https://support.steampowered.com/kb_article.php?ref=4020-ALZM-5519
+
 ## Authentication Methods for SteamCMD
 
 1. Username and Password - No Steam Guard
