@@ -10,7 +10,8 @@ Some game servers require you login to SteamCMD using a steam login to allow dow
 
 It is recommended that you create a new Steam username just for the server for security reasons.
 
-## Plain Text Passwords
+For a list of which servers require logins and game purchases visit: http://gameservermanagers.com/list
+# Plain Text Passwords
 SteamCMD prints out passwords in plain text meaning that your Steam password is open for anyone to see on the server. LGSM saves logs and your password will be viewable on the logs.
 
 # Steam Guard
