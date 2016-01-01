@@ -1,3 +1,5 @@
+SteamCMD requires a login to use its services.
+
 ## Anonymous Login
 
 The majority of game servers though SteamCMD are freely available to download. These servers can be accessed by logging in to SteamCMD as _anonymous_.
