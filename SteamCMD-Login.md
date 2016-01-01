@@ -1,5 +1,7 @@
 SteamCMD requires a login to use its services.
 
+It is recommended that you [create a new Steam username](https://store.steampowered.com/login/) just for the server.
+
 ## Anonymous Login
 
 The majority of game servers though SteamCMD are freely available to download. These servers can be accessed by logging in to SteamCMD as _anonymous_.
