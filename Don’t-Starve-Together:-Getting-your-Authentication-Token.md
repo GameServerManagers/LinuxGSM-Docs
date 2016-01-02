@@ -1,3 +1,5 @@
+For further info on DST Dedicated servers visit this wiki http://dont-starve-game.wikia.com/wiki/Guides/Don%E2%80%99t_Starve_Together_Dedicated_Servers
+
 # Getting your Authentication Token
 You will need Don’t Starve Together installed on your personal computer to get your token.
 
