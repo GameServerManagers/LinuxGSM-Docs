@@ -3,6 +3,8 @@ Most servers require a specific version of Glibc installed. Newer distros normal
 
 Server Requirements
 ===================
+A more up to date list can be found here:
+http://gameservermanagers.com/list/
 
 A list of all the servers Glibc requirements
 
@@ -80,6 +82,9 @@ version `GLIBC_2.15′ not found
 
 Glibc Fix available
 -------------------
+A more up to date list can be found here:
+http://gameservermanagers.com/list/
+
 -   ARMA 3
 -   Blade Symphony
 -   Double Action: Boogaloo
