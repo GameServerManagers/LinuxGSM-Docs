@@ -47,9 +47,17 @@ or
 
 Can I run a server as root?
 ===========================
-The script will not run as root and will error if you try. This is for security and to stop permissions issues. For example, if you run update as root any changed files are then owned by root. This means the arma3server user will be unable to access the updated files causing the server to fail.
 
     [ FAIL ] Script will not run as root!
+
+The script will not run as root and will error if you try. This is done for the following good reasons:
+* So you or someone else don't accidentally damage your system. (rm -rf * anyone?).
+* So you don't mess up your game servers user permissions.
+* To help prevent someone potentially using your game server and gain root access (stealing your internets and stuff!).
+* Keeping the game server compartmentalised in its own directory away from your other stuff.
+* Its really bad practice to run scripts as root.
+* Would you really trust yourself as root after a 9 hour energy-drink fueled CS:GO session?
+* Did i mention so you don't accidentally break everything!?1
 
 How can I install [insert name] mod?
 ====================================
