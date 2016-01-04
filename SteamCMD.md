@@ -27,7 +27,7 @@ For a list of which servers require logins and game purchases visit: http://game
 SteamCMD prints out passwords in plain text meaning that your Steam password is open for anyone to see on the server. LGSM saves logs and your password will be viewable on the logs.
 
 # Steam Guard
-![Steam Guard](https://github.com/dgibbs64/linuxgsm/blob/master/images/screens/steamguard.png)
+![Steam Guard](https://github.com/dgibbs64/linuxgsm/blob/master/images/screens/steamguard.jpg)
 
 Steam Guard is an additional level of security that can be applied to your Steam account. The first level of security on your account is your login credentials: your Steam account name and password. With Steam Guard, a second level of security is applied to your account, making it harder for your Steam account to fall into the wrong hands.
 
