@@ -57,7 +57,7 @@ The script will not run as root and will error if you try. This is done for the 
 * Keeping the game server compartmentalised in its own directory away from your other stuff.
 * Its really bad practice to run scripts as root.
 * Would you really trust yourself as root after a 9 hour energy-drink fueled CS:GO session?
-* Did i mention so you don't accidentally break everything!?1
+* Did i mention so you don't break everything!?
 
 How can I install [insert name] mod?
 ====================================
