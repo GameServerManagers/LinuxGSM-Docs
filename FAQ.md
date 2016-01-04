@@ -61,7 +61,7 @@ The script will not run as root and will error if you try. This is done for the 
 
 How can I install [insert name] mod?
 ====================================
-I have no idea….Why not go and check out the mods official website for install instructions?
+LGSM installs a vanilla server by default. You can customise your server however you want. I reccomend you checkout add-on/mod installation guide.
 
 Here are a few useful resources for this.
 * [Metamod: Source](http://www.sourcemm.net/)
