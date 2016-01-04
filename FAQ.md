@@ -33,7 +33,8 @@ I received the following error
             * Please see the the following link.
             * http://gameservermanagers.com/tmux
 
-Tmux has not been installed. See the dependencies section of the instructions.
+Tmux has not been installed. 
+See the dependencies section of the installation instructions.
 
     apt-get install tmux
 
@@ -99,7 +100,8 @@ version \`GLIBC\_2.15′ not found
 
     version `GLIBC_2.15′ not found
 
-The correct version of Glibc is not installed. See the [dependencies][] section of the instructions.
+The correct version of Glibc is not installed.
+See the dependencies section of the installation instructions.
 
 write error: No space left on device
 ====================================
@@ -146,5 +148,4 @@ Non-steam versions of the games ARE pirated and this would be the only reason to
 
 Ignore the error, do not do anything to attempt to fix it. It is a known issue that has been happening ever since SteamPipe was introduced (this includes on Source1 games). It does not cause any issue and can be freely ignored.
 
-  [dependencies]: dependencies "wikilink"
   [GitHub issues]: https://github.com/dgibbs64/linuxgsm/issues
