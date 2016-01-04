@@ -5,6 +5,8 @@ This is very useful for servers, as this means it's significantly easier to keep
 
 **Note:** You can only download server files for the Operating System that you are using SteamCMD on.
 
+![SteamCMD Terminal](http://danielgibbs.co.uk/wp-content/uploads/2014/01/steamcmd-linux.png)
+
 # SteamCMD Login?
 SteamCMD requires a login to use its services.
 
