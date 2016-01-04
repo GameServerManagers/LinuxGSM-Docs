@@ -33,10 +33,6 @@ I received the following error
             * Please see the the following link.
             * http://gameservermanagers.com/tmux
 
-OR
-
-    tmux: command not found
-
 Tmux has not been installed. See the dependencies section of the instructions.
 
     apt-get install tmux
