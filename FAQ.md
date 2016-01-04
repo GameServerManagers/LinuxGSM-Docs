@@ -6,22 +6,22 @@ I'm having an issue can you help?
 ===============================================
 
 There are various ways to get help and support with LGSM.
-http://gameservermanagers.com/support/
+* http://gameservermanagers.com/support/
 
-[i]Remember to consider the best place to post your issue and search the internet for a solution before posting.[/i]
+_Remember to consider the best place to post your issue and search the internet for a solution before posting._
 
-[h1]Documentation[/h1]
+## Documentation
 The website and GitHub wiki is a useful resource for various LGSM related topics.
-http://gameservermanagers.com
-http://gameservermanagers.com/wiki
+* http://gameservermanagers.com
+* http://gameservermanagers.com/wiki
 
-[h1]General Support[/h1]
+## General Support
 LGSM has a Steam Group where you can get general support for LGSM related stuff.
-http://gameservermanagers.com/steam
+* http://gameservermanagers.com/steam
 
-[h1]Bugs/Feature Requests[/h1]
+## Bugs/Feature Requests
 LGSM has a GitHub issues page where you can submit any bugs and feature suggestions.
-http://gameservermanagers.com/issues
+* http://gameservermanagers.com/issues
 
 tmux: command not found
 =======================
