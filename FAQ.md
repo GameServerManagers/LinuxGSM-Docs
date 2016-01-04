@@ -5,17 +5,23 @@ FAQ section is to try to help with common problems with LGSM.
 I'm having an issue can you help?
 ===============================================
 
-We do want to help you with errors and issues you are having. However please only post an issue if you an issue with LGSM itself.
+There are various ways to get help and support with LGSM.
+http://gameservermanagers.com/support/
 
-**LGSM Scripts:** Yes we can provide assistance with LGSM related issues. This maybe such things as an error LGSM is returning or not doing what it is meant to do. Most common problem is that there is a bug in the code that needs to be resolved.
+[i]Remember to consider the best place to post your issue and search the internet for a solution before posting.[/i]
 
-**Game Server:** No we cannot provide assistance with game server related issues. This is because we did not create the game server and have no control of how the game server is developed. This was created by the developer of the game e.g Valve, Facepunch, Tripwire etc. We recommend you seek support from the Games official forums etc. or someone of the the LGSM Steam Group may be able to help  
+[h1]Documentation[/h1]
+The website and GitHub wiki is a useful resource for various LGSM related topics.
+http://gameservermanagers.com
+http://gameservermanagers.com/wiki
 
-**Server distro/OS:** No we cannot provide assistance with your servers distro. This is because we did not create the distro. This was created by the developer of the distro e.g Ubuntu, Debian, CentOS etc. You should seek support from the distros official forums etc.
+[h1]General Support[/h1]
+LGSM has a Steam Group where you can get general support for LGSM related stuff.
+http://gameservermanagers.com/steam
 
-**Unsure what the issue is related to?** If the issue is being generated in debug mode or the console it is likely a game server or distro related issue. 
-
-Remember posting an issue in the correct forum etc. will help you resolve your issue quickly and allows developers to spend more time on issues we can actually assist with.
+[h1]Bugs/Feature Requests[/h1]
+LGSM has a GitHub issues page where you can submit any bugs and feature suggestions.
+http://gameservermanagers.com/issues
 
 tmux: command not found
 =======================
