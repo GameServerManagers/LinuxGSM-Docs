@@ -68,6 +68,6 @@ Your Steam account must own the game for which you are creating a GSLT.
 Your Steam account may not have more than 1000 tokens.
 
 ## Can I run servers without GSLTs?
-No, you need to have a GSLT to run your CS:GO server.
+Yes CS:GO is the only server that requires GSLT currently.
 
 For further information see this useful blog post: [http://dathost.net/blog/important-information-regarding-our-csgo-servers/](http://dathost.net/blog/important-information-regarding-our-csgo-servers/)
