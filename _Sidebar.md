@@ -3,7 +3,7 @@
 * [[FAQ]]
 
 # Features
-* Installer (SteamCMD)
+* [[Installer]] (SteamCMD)
 * Start/Stop/Restart server
 * [[Monitor]] (including email notification)
 * [[Update]] (SteamCMD)
