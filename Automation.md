@@ -1,5 +1,5 @@
 # Using cronjobs
-You can set a scheduled task with cronjobs, to run any function at any given time.
+You can set scheduled tasks with cronjobs, to run any function at any given time.
 LGSM team advise you to use root cronjobs to manage everything in one place. Just login as root, then edit your cronjobs. 
 
 To edit your cronjobs, type : 
