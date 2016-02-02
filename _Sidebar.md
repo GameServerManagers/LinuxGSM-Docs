@@ -4,7 +4,7 @@
 
 # Features
 * [[Backup]]
-* Console
+* [[Console]]
 * [[Details]]
 * Installer (SteamCMD)
 * [[Monitor]] (including email notification)
