@@ -3,14 +3,16 @@
 * [[FAQ]]
 
 # Features
-* [[Backup]]
-* [[Console]]
-* [[Details]]
-* [GSLT](https://github.com/dgibbs64/linuxgsm/wiki/Game-Server-Login-Token)
 * Installer (SteamCMD)
+* Start/Stop/Restart server
 * [[Monitor]] (including email notification)
 * [[Update]] (SteamCMD)
-* Start/Stop/Restart server
+* [[Console]]
+* [[Backup]]
+* [[Details]]
+* [GSLT](https://github.com/dgibbs64/linuxgsm/wiki/Game-Server-Login-Token)
+* Workshop
+
 
 
 # Advanced
