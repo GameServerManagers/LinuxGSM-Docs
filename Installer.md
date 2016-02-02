@@ -25,7 +25,7 @@ If your connection to Steam servers is bad (which is very common...), SteamCMD d
 ### Missing packages
 
 Some of your don't install packages properly. You're gonna have some trouble. Install them. Just do it.
-Go on the desired server page of [http://gameservermanagers.com/](http://gameservermanagers.com/), then select your distro, and install all required packages.
+Go on the desired server page of [http://gameservermanagers.com/](http://gameservermanagers.com/), then select your distro, to know all packages you need to install.
 
 ### Not enough disk space
 This title is pretty self explanatory, check your remaining disk space.
