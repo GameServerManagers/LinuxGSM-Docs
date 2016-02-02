@@ -11,7 +11,7 @@
 * [[Backup]]
 * [[Details]]
 * [GSLT](https://github.com/dgibbs64/linuxgsm/wiki/Game-Server-Login-Token)
-* Workshop
+* [[Workshop]]
 
 
 
