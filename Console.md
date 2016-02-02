@@ -20,7 +20,7 @@ To exit the console and let the server running, two steps :
 
 Press **CTRL + b**, then, press **d**
 
-Note : This shortcut is inherent to TMUX that LGSM is using.
+Note : This shortcut is inherent to [TMUX that LGSM is using](https://github.com/dgibbs64/linuxgsm/wiki/Tmux).
 
 
 
