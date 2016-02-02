@@ -161,7 +161,7 @@ To exit the console press “CTRL+b d”.
 > Note: pressing “CTRL+c” will terminate the server.
 
 # Running on Boot
-To run a server on boot add the command in to the rc.local file.
+To run a server on boot, either use the monitor cronjob that will restart any server that was online before a reboot, or add a command in to the rc.local file that works with most distro : 
 
     nano /etc/rc.local
     su - csgoserver -c '/home/csgoserver/csgoserver start'
