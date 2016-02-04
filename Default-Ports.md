@@ -19,7 +19,11 @@ If you're running several servers, make sure you're using different ports on all
 
 If you plan on running more than 5 servers, you're probably want to make a table of your servers and ports in use.
 
-Also, you can use any port close to those. A good idea to be able to make 25 servers per hundred range, is to start with the first server that way : 
+Also, you can use any port you like in the 27000 range.
+
+**Method 1**
+
+A good idea to be able to make 25 servers per hundred range, is to start with the first server that way : 
 
     port="27025"
     sourcetvport="27050"
@@ -31,4 +35,16 @@ Then increment them  by 1 at any new server. After making 25 servers, if you nee
     sourcetvport="27150"
     clientport="27100"
 
-Note : You can also get new IP ranges and assign some servers to different IPs.
+
+**Method 2**
+
+You can use ports next to each other, like that, some people find it more convenient, and you'll be able to make more servers per hundred : 
+
+    port="27001"
+    sourcetvport="27002"
+    clientport="27000"
+
+
+**Method 3** 
+
+You can get new IPs for your dedicated server, and assign some servers to different IPs.
