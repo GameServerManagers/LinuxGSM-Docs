@@ -1,20 +1,20 @@
 <h1>Linux Game Server Managers_</h1>
 <a href="http://gameservermanagers.com"><img src="https://github.com/dgibbs64/linuxgsm/blob/master/images/logo/lgsm-full-light.png" alt="linux Game Server Managers" width="600" /></a>
 
-The Linux Game Server Managers are command line tools for quick, simple deployment and management of various dedicated game servers and voice comms servers.
+The [Linux Game Server Managers](http://gameservermanagers.com/) are command line tools for quick, simple deployment and management of various dedicated game and voice comm servers.
 
 <h2>Hassle Free Dedicated Servers</h2>
 Game servers traditionally are not easy to manage yourself. Admins often have to spend hours just messing around trying to get there server working. LGSM is designed to be a simple as possible allowing Admins to spend less time on management and more time on the fun stuff.
 
 <h2>Main features</h2>
 <ul>
-	<li>[[Backup]]</li>
-	<li>Console</li>
+	<li>[[Installer]]</li>
+	<li>Start/Stop/Restart functions</li>
+	<li>[[Monitor]], including email notification</li>
+	<li>[[Console]]</li>
+	<li>[[Update]]</li>
 	<li>[[Details]]</li>
-	<li>Installer (SteamCMD)</li>
-	<li>[[Monitor]] (including email notification)</li>
-	<li>[[Update]] (SteamCMD)</li>
-	<li>Start/Stop/Restart server</li>
+	<li>[[Backup]]</li>
 </ul>
 <h2>Compatibility</h2>
 The Linux Game Server Managers are tested to work on the following Linux distros.
