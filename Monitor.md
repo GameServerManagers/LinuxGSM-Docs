@@ -19,7 +19,7 @@ To enable them, edit your script accordingly :
 
 ## Automated monitoring
 
-To learn more about automation, see https://github.com/dgibbs64/linuxgsm/wiki/Automation
+To learn more about automation, see [[Automation]]
 
 
 The whole point of this monitor function is to automate it using cronjobs. LGSM team advise you to use root cronjobs.
