@@ -19,9 +19,6 @@ To enable them, edit your script accordingly :
 
 ## Automated monitoring
 
-To learn more about automation, see [[Automation]]
-
-
 The whole point of this monitor function is to automate it using cronjobs. LGSM team advise you to use root cronjobs.
 
 As a reminder, you can edit your cronjobs, typing : 
@@ -39,3 +36,6 @@ Here is an example of a user based cronjob to monitor your server every 3 minute
 Here is an example of a root based cronjob to monitor your server every 3 minutes : 
 
 `*/3 * * * *  su - username -c '/home/username/gameserver monitor' > /dev/null 2>&1`
+
+
+To learn more about automation, see [[Automation]]
