@@ -18,6 +18,7 @@
 # Advanced
 * [[Default Ports]]
 * [[Automation]] (Cronjobs)
+* [[Boot-Startup]]
 * [[Start-Parms]]
 * [[Multiple Servers]]
 * [[Glibc]]
