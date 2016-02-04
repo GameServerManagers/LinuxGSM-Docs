@@ -11,6 +11,8 @@ directory:
 
 Same Installation Different Config File (Advanced)
 ==================================================
+**Important note** : Database file (sv.db) and any other data file (such as garrysmod/data folder) will be shared by those servers, which can either be an advantage or an issue.
+
 directory:
 
     /home/username
