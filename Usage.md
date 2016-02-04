@@ -21,11 +21,7 @@ You can edit the config file with any linux text editor like nano or vi.
 
 Start Parameters
 ------------
-You probably want to change some of them. Servers commonly require start parameters that are command line options which are set with the servers executable when you start the server. These parameters can again be found in details. To alter them, you will need to edit the main script file.
-
-````vi gameserver````
-
-or 
+Servers commonly require start parameters that are command line options which are set with the servers executable when you start the server. These parameters can again be found in details. To alter them, which you probably want to do, you will need to edit the main script file using vi or nano.
 
 ````nano gameserver````
 
