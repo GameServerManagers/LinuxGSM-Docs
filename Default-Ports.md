@@ -38,12 +38,13 @@ Then increment them  by 1 at any new server. After making 25 servers, if you nee
 
 **Method 2**
 
-You can use ports next to each other, like that, some people find it more convenient, and you'll be able to make more servers per hundred : 
+You can use ports next to each other, like that, some people find it more convenient : 
 
     port="27001"
     sourcetvport="27002"
     clientport="27000"
 
+Note : You'll be able to make more servers per hundred of ports, but, this is a non-standard way. 
 
 **Method 3** 
 
