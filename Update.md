@@ -3,7 +3,7 @@
 LGSM comes with an update functions. All Steam games servers are supported, as well as some other servers such as Teamspeak.
 
 
-## Starting the automatic update process 
+## update
 
 Just run : 
 
