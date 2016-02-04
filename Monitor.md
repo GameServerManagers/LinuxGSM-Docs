@@ -23,7 +23,13 @@ To learn more about automation, see https://github.com/dgibbs64/linuxgsm/wiki/Au
 
 ### Every "x" time cronjobs
 
-**Replace the username and gameserver according to your case**
+The whole point of this monitor function is to automate it using cronjobs. LGSM team advise you to use root cronjobs.
+
+`crontab -e`
+
+
+**ATTENTION !** Replace the username and gameserver according to your case
+
 
 Here is an example of a user based cronjob to monitor your server every 3 minutes : 
 
