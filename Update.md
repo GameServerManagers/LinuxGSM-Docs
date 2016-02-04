@@ -46,3 +46,13 @@ So if your server isn't starting after an update, or if it's still at the same s
 `./gameserver validate`
 
 Note that if you modified server core server files, they will be restored to their original version. But who does that anyway ?
+
+
+
+# Updating your LGSM script
+LGSM has the ability to self update functions.
+
+update-functions
+-----
+
+    ./gameserver update-functions
