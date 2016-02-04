@@ -11,7 +11,7 @@ Configuration
 ==============
 Config Files
 ------------
-Most servers have a configuration file to alter the game server settings. This can be found by checking the server details. This command will also provide you several useful information about your game server and your machine.
+Most servers have a configuration file to alter the game server settings. This can be found by checking the server [details](https://github.com/dgibbs64/linuxgsm/wiki/Details).
 
 ````./gameserver details````
 
@@ -167,7 +167,7 @@ Server logs are available to monitor and diagnose your server. Script, console a
 # Details
 
 
-If you need to get all important server details you can use the following command.
+If you need to get all important game server and machine details you can use the following command.
 
     ./gameserver details
 
