@@ -184,6 +184,9 @@ To run a server on boot, either use the monitor cronjob that will restart any se
     nano /etc/rc.local
     su - username -c '/home/username/gameserver start'
 
+See [[Boot-Startup]] for more information.
+
+
 # Updating your LGSM script
 LGSM has the ability to self update functions.
 
