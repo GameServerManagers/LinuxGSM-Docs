@@ -18,6 +18,7 @@
 # Advanced
 * [[Default Ports]]
 * [[Automation]] (Cronjobs)
+* [[Start-Parms]]
 * [[Multiple Servers]]
 * [[Glibc]]
 * [[Tmux]]
