@@ -99,7 +99,7 @@ You can use cronjobs to automate the process of updating the server. We advise t
 Monitor
 =======
 
-[[Monitor]] will check the server to ensure it is online. Should the server go offline, the monitor will attempt to start it again and can report the issue via email. The whole point to this function is to be [automated with cronjobs](https://github.com/dgibbs64/linuxgsm/wiki/Automation). *Note: see gsquery.py for info on how monitor uses gsquery for improved monitoring.*
+[[Monitor]] will check the server to ensure it is online. Should the server go offline, the monitor will attempt to start it again and can report the issue via email. The whole point to this function is to be [automated with cronjobs](https://github.com/dgibbs64/linuxgsm/wiki/Automation). *Note: see [[gsquery.py]] for info on how [[Monitor]] uses gsquery for improved monitoring.*
 
 monitor
 -------
