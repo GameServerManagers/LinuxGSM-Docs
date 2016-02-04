@@ -14,6 +14,17 @@ For most games, you're gonna change these :
 
 If you're running several servers, make sure you're using different ports on all of your servers.
 
+## Useful notice for firewalls
+
+You can see your set ports and their types by running : 
+
+`./gameserver details`
+
+* "port" is inbound tcp/udp (used for Game/RCON)
+* "sourcetvport" is inbound udp (used for SourceTV)
+* "clientport" is outbound udp (used for Clients)
+
+All of them have to be set exclusively set for a single game server, no matter what.
 
 ### Protip for running many servers
 
