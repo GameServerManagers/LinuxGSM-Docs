@@ -31,15 +31,15 @@ or
 
 You will find most important variables such as : 
 
-````# Start Variables
-defaultmap="map_name"
-gamemode="game_mode"
-maxplayers="42"
-port="27015"
-sourcetvport="27020"
-clientport="27005"
-ip="0.0.0.0"
-updateonstart="off"````
+    # Start Variables
+    defaultmap="map_name"
+    gamemode="game_mode"
+    maxplayers="42"
+    port="27015"
+    sourcetvport="27020"
+    clientport="27005"
+    ip="0.0.0.0"
+    updateonstart="off"
 
 You may also configure the [GSLT](Game-Server-Login-Token) for some servers (required for CSGO, optional for others).
 
