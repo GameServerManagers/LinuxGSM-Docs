@@ -1,6 +1,6 @@
 Details allows you to access useful information about the game server.
 
-./csgoserver details
+./gameserver details
 
 You will be given the various details that are applicable to your game server:
 
