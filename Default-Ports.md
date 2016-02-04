@@ -19,7 +19,9 @@ If you're running several servers, make sure you're using different ports on all
 
 If you plan on running more than 5 servers, you're probably want to make a table of your servers and ports in use.
 
-Also, you can use any port you like in the 27000 range.
+### Ideas to set ports for multiple source servers
+
+You can use any port you like in the 27000 range. Other values may work too.
 
 **Method 1**
 
