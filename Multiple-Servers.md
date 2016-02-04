@@ -2,23 +2,23 @@ It is possible to run multiple server instances. There are a couple of methods d
 
 Separate Installation (Easy)
 ============================
-Repeat the installation process with a different username and change the ports within the script.
+Repeat the installation process with a different username and change the [[Default-Ports]] within the script.
 
 directory:
 
-    /home/csgoserver
-    /home/csgoserver2
+    /home/username1
+    /home/username2
 
 Same Installation Different Config File (Advanced)
 ==================================================
 directory:
 
-    /home/csgoserver
+    /home/username
 
 script:
 
-    ./csgoserver
-    ./csgoserver2
+    ./gameserver1
+    ./gameserver2
 
  cfg directory:
 
@@ -27,24 +27,25 @@ script:
 
 Copy and rename the script.
 
-    cp csgoserver csgoserver2
+    cp gameserver gameserver2
 
-Edit csgoserver2.
+Edit gameserver2.
 
-    nano csgoserver2
+    nano gameserver2
 
 Rename the servicename variable.
 
-    servicename="csgo-server2"
+    servicename="game-server2"
 
-Change the server ports.
+Change the server ports. See [[Default-Ports]]
 
-    serverport="2302"
-    steamport="2304"
-    steamqueryport="2303"
+    serverport="27115"
+    steamport="27150"
+    steamqueryport="27100"
 
 Copy and rename the server config file.
 
-    cp csgo-server.cfg csgo-server2.cfg
+    cd serverfiles/gamename/cfg
+    cp game-server.cfg game-server2.cfg
 
 Alter the new configuration file to suite your needs.
