@@ -21,9 +21,10 @@ To enable them, edit your script accordingly :
 
 To learn more about automation, see https://github.com/dgibbs64/linuxgsm/wiki/Automation
 
-### Every "x" time cronjobs
 
 The whole point of this monitor function is to automate it using cronjobs. LGSM team advise you to use root cronjobs.
+
+As a reminder, you can edit your cronjobs, typing : 
 
 `crontab -e`
 
