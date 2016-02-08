@@ -20,7 +20,8 @@ For CS GO : https://steamcommunity.com/workshop/browse/?section=collections&appi
 
 For Garry's Mod : https://steamcommunity.com/workshop/browse/?section=collections&appid=4000
 
-Add some addons to it, then publish it (very important !). Then, while being in your collection page, get the digits at the end of the URL : This is your collection ID. 
+Add some addons to it, then publish it. It won't work if you don't publish the collection.
+Then, while being in your collection page, get the digits at the end of the URL : This is your collection ID. 
 
 
 ## Configuration Variables
