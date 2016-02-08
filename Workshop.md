@@ -1,6 +1,6 @@
 # Workshop support
 
-Many Steam games now support the workshop. It's an easy way to share updated maps or addons between client and servers, without worrying about setting up any kind of FastDL. LGSM adds workshop pre-configuration to game server script as soon as possible.
+Many Steam games now support the workshop. It's an easy way to share updated maps or addons between client and servers, without worrying about setting up any kind of FastDL. LGSM adds workshop pre-configuration to game server scripts as soon as possible.
 
 You will have to get a Steam API, a collection to subscribe to (you can create one), and ultimately, edit a bunch a configuration variables in your main script.
 
