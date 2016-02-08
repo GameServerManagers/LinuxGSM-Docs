@@ -5,6 +5,8 @@ Here is a proper way to do it.
 
 ## Adding extra start parameters
 
+Example : 
+
 1. Edit your main script
 
 `nano gameserver`
