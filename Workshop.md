@@ -26,7 +26,7 @@ For CSGO, have a look at these lines in your "csgoserver" file :
 
 `# ws_start_map=""`
 
-( https://github.com/dgibbs64/linuxgsm/blob/master/CounterStrikeGlobalOffensive/csgoserver#L53-L55 )
+(https://github.com/dgibbs64/linuxgsm/blob/master/CounterStrikeGlobalOffensive/csgoserver#L53-L55)
 
 Remove the hashtags, then add your values. 
 
