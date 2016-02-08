@@ -40,7 +40,9 @@ Try not to share this key.
 ## Creating a collection and get the collection ID
 
 Go browse collections for your desired game, and click "Create a collection".
+
 For CS GO : https://steamcommunity.com/workshop/browse/?section=collections&appid=730
+
 For Garry's Mod : https://steamcommunity.com/workshop/browse/?section=collections&appid=4000
 
 Add some addons to it, then publish it (very important !). Then, while being in your collection page, get the digits at the end of the URL : This is your collection ID. 
