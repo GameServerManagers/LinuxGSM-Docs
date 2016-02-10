@@ -42,3 +42,7 @@ If not, use some chown commands. Login to root, then run those commands, replaci
 `cd /home`
 
 `chown -R username:username username`
+
+### DNS Issue
+
+Did you configure your DNS properly ? Installer can't work without access to DNS.
