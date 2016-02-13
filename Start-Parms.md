@@ -25,4 +25,4 @@ parms="-game gamename -strictportbind -ip ${ip} -port ${port} +clientport ${clie
 }`
 
 
-* Save and exit (with nano : ctrl + x, y, enter), restart your server, and enjoy your new parameters.
+Of course, save and exit (with nano : ctrl + x, y, enter), restart your server, and enjoy your new parameters.
