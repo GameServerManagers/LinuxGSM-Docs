@@ -26,7 +26,7 @@ Example :
 So you get something like this : 
 
 `fn_parms(){
-parms="-game gamename -strictportbind -ip ${ip} -port ${port} +host_workshop_collection ${workshopcollectionid} -authkey ${workshopauth} +clientport ${clientport} +tv_port ${sourcetvport} +gamemode ${gamemode} +map ${defaultmap} +sv_setsteamaccount ${gslt} +servercfgfile ${servercfg} -maxplayers ${maxplayers} ${command}"
+parms="-game gamename -strictportbind -ip ${ip} -port ${port} +host_workshop_collection ${workshopcollectionid} -authkey ${workshopauth} +clientport ${clientport} +tv_port ${sourcetvport} +gamemode ${gamemode} +map ${defaultmap} +sv_setsteamaccount ${gslt} +servercfgfile ${servercfg} -maxplayers ${maxplayers} ${commands}"
 }`
 
 5. Exit and save (with nano : ctrl + x, y, enter)
