@@ -20,4 +20,4 @@ Done.
 This function may become a more native function of LGSM.
 
 ### Known issue
-The only known limit noted to this function has been seen in Garry's Mod, where the server would sometimes be frozen, but still answer to queries, so 
+The only known limit noted to this function has been seen in Garry's Mod, where the server would sometimes be frozen, but still answer to queries.
