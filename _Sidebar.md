@@ -5,7 +5,8 @@
 # Features
 * [[Installer]]
 * Start/Stop/Restart server
-* [[Monitor]] (including email notification)
+* [[Monitor]]
+* [[Email-Notifications]]
 * [[Update]]
 * [[Console]]
 * [[Backup]]
