@@ -1,5 +1,5 @@
 # Running on Boot
-To run a server on boot, two ways are available. We advise you to use the monitor function
+To run a server on boot, at least two ways are available. We advise you to use the monitor function.
 
 
 ## Using monitor
