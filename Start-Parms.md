@@ -2,6 +2,8 @@ You may want to add some start parameters to your server.
 
 Here is a proper way to do it.
 
+**Don't be lazy, read the whole guide ! Don't mess up with your main script !**
+
 
 ## Adding extra start parameters
 
