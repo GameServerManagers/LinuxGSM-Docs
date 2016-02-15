@@ -5,18 +5,6 @@ The monitor function allows you to check if a server is up and running, and rest
 `./gameserver monitor`
 
 
-## Email Notifications
-
-Email notifications allow you to recieve an email if the server is monitored down and restarted. That notification will include some of the logs to help you diagnose what caused the crash. Make sure that you installed mailx and postfix.
-
-To enable them, edit your script accordingly : 
-
-`emailnotification="on"`
-
-`email="email@example.com"`
-
-
-
 ## Automated monitoring
 
 The whole point of this monitor function is to automate it using cronjobs. LGSM team advise you to use root cronjobs.
