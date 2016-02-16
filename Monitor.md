@@ -19,7 +19,7 @@ As a reminder, you can edit your cronjobs, typing :
 
 Here is an example of a user based cronjob to monitor your server every 3 minutes : 
 
-`*/3 * * * *  '/home/username/gameserver monitor' > /dev/null 2>&1`
+`*/3 * * * *  /home/username/gameserver monitor > /dev/null 2>&1`
 
 Here is an example of a root based cronjob to monitor your server every 3 minutes : 
 
