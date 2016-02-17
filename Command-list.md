@@ -64,13 +64,13 @@ For more info, see [[Start-Stop-Restart-commands]]
 # Specific commands
 
 
-## Teamspeak server
+### Teamspeak server
 
 `./ts3server change-password`
 
 Allows you to change the ServerAdmin password.
 
-## Unreal Tournament 99 & 2004
+### Unreal Tournament 99 & 2004
 
 `./ut99server map-compressor`
 
