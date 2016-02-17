@@ -1,6 +1,6 @@
 Backup will allow you to create a complete gzip archive of the whole server.
 
-<pre>./gameserverbackup</pre>
+<pre>./gameserver backup</pre>
 This is designed to allow you to backup before making changes to the server in case of issues.
 
 > Note: this is not designed to be an automated backup solution.
