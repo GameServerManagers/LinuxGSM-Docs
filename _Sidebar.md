@@ -1,6 +1,6 @@
 # Getting Started
 * [[Usage]]
-* [[Command-list]
+* [[Command-list]]
 * [[FAQ]]
 
 # Features
