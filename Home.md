@@ -9,7 +9,7 @@ Game servers traditionally are not easy to manage yourself. Admins often have to
 <h2>Main features</h2>
 <ul>
 	<li>[[Installer]]</li>
-	<li>Start/Stop/Restart functions</li>
+	<li>[[Start-Stop-Restart-commands]]</li>
 	<li>[[Monitor]], and [[Email-Notifications]]</li>
 	<li>[[Console]]</li>
 	<li>[[Update]]</li>
