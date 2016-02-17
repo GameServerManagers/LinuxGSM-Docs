@@ -4,7 +4,7 @@
 
 # Features
 * [[Installer]]
-* Start/Stop/Restart server
+* [[Start-Stop-Restart-commands]]
 * [[Monitor]]
 * [[Email-Notifications]]
 * [[Update]]
