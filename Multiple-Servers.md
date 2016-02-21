@@ -4,7 +4,7 @@ Running several servers is pretty easy as long as you follow this guide. There i
 
 * The first method is basically: Make a new user, repeat the install process, configure the server to use different ports, enjoy. It's the best and easiest way to do. It will use more disk space, but will avoid several problems by making these servers totally independent.
 
-* The second is basically: Re-use an already existing server and make a new instance of it. This is a bit more painful, a bit less reliable, and of course, those servers will share addons, databases and so on. The only thing you'll be able to customize from one server to another will eventually be the main config file, gamemode, and anything that you can configure in your "gameserver" script.
+* The second is basically: Re-use an already existing server and make a new instance of it (of course with different ports). This is a bit more painful, a bit less reliable, and of course, those servers will share addons, databases and so on. The only thing you'll be able to customize from one server to another will eventually be the main config file, gamemode, and anything that you can configure in your "gameserver" script.
 
 * The third is for jerks that wish to run several independent servers within the same user. See how "independent" and "same user" don't match together ? LGSM hasn't been designed in that philosophy, but you can manage to do it.
 
