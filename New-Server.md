@@ -8,7 +8,7 @@ Things to edit into the main script :
 * servicename=""
 * gamename=""
 * engine=""
-
+* githubuser/repo/branch="" (if you dev on your own github or a branch can help a lot)
 
 Functions to check and change if needed
 
