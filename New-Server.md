@@ -1,4 +1,4 @@
-This WILL help you on the making of a new server support for LGSM.
+This may help you on the making of a new server support for LGSM.
 
 Can be a good start to copy your main script from an existing game (preferably the same engine if it exists).
 
