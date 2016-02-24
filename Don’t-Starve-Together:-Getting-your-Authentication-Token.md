@@ -1,7 +1,26 @@
 For further info on DST Dedicated servers visit this wiki http://dont-starve-game.wikia.com/wiki/Guides/Don%E2%80%99t_Starve_Together_Dedicated_Servers
 
 # Getting your Authentication Token
-You will need Don’t Starve Together installed on your personal computer to get your token.
+
+1. Start Don't Starve Together from Steam and click on the "Play!" button.
+
+![DST Title](https://github.com/dgibbs64/linuxgsm/blob/master/images/screens/DST_title.png)
+
+2. Click on the "Acct Info" button.
+
+![DST Menu](https://github.com/dgibbs64/linuxgsm/blob/master/images/screens/DST_menu.png)
+
+3. Click on the "Generate Server Token" button, copy the token, and paste it into the file:
+
+~/.klei/DoNotStarveTogether/MyDediServer/cluster_token.txt 
+
+You can quickly do this by running the following command, replacing YourServerTokenHere with your server token (Keep the quotes around the token).
+
+echo 'YourServerTokenHere' > ~/.klei/DoNotStarveTogether/MyDediServer/cluster_token.txt
+ 
+
+***
+OLD INSTRUCTIONS
 
 1: Open up the game on your computer. Once you reach the main menu, press the backtick key (`) on your keyboard. You will see a screen similar to this one:
 
