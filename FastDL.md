@@ -1,6 +1,6 @@
 **NOT RELEASED YET !!**
 
-FastDl script will soon be available for Garry's Mod, then for other source games.
+FastDl script is now available for Garry's Mod only, but will be deployed for other source games as well.
 
 
 ## What is FastDL ?
