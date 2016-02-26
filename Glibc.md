@@ -55,6 +55,7 @@ http://distrowatch.com is also a great source to find this infomation.
 
 | Distro           | Glibc   |
 |------------------|---------|
+| CentOS 5         | 2.5    |
 | CentOS 6         | 2.12    |
 | CentOS 7         | 2.17    |
 | Debian 6         | 2.11.2  |
