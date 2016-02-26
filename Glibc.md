@@ -63,6 +63,8 @@ http://distrowatch.com is also a great source to find this infomation.
 | Ubuntu 12.04 LTS | 2.15    |
 | Ubuntu 14.04 LTS | 2.19    |
 
+Glibc Version history https://en.wikipedia.org/wiki/GNU_C_Library#Version_history
+
 Glibc fixes
 ===========
 
