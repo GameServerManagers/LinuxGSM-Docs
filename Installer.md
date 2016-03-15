@@ -37,11 +37,9 @@ Also, make sure the folder you're installing your game in actually belongs to th
 
 `ls -al`
 
-If not, use some chown commands. Login to root, then run those commands, replacing "username" by your actual username : 
+If not, use some chown commands. Login to root, then run this command, replacing "username" by your actual username : 
 
-`cd /home`
-
-`chown -R username:username username`
+`chown -R username:username /home/username`
 
 ### DNS Issue
 
