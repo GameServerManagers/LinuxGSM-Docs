@@ -36,27 +36,22 @@ That way, you can make another folder into the www folder if you need to, like w
 
 If using Apache2, simply make a new virtual host pointing to /home/youruser/www
 
-** Example ** with a subdomain (make sure it redirects to the right IP)
+** Example ** with a subdomain (make sure it redirects to the right IP). If you don't own a domain, then consider getting one, it starts for a few bucks a year. Otherwise, for more information about how to make a virtual hosts for a non-domain, please, refer to Apache documentation.
 
 `nano /etc/apache2/sites-available/yourvirtualhost.com.conf`
 
-Edit and paste this : 
+Edit everything between brackets {} (and remove the brackets) and paste this : 
 
 ````
 <VirtualHost *:80>
-        ServerAdmin adminemail@mail.com
-        ServerName subdomain.domain.com
-        ServerAlias subdomain.domain.com
-        DocumentRoot /home/youruser/www
-        <Directory />
-                Options FollowSymLinks
-                AllowOverride All
-        </Directory>
-        <Directory /home/youruser/www>
+        ServerAdmin {adminemail@mail.com}
+        ServerName {subdomain.domain.com}
+        ServerAlias {subdomain.domain.com}
+        DocumentRoot /home/{youruser}/www
+        <Directory /home/{youruser}/www>
                 Options Indexes FollowSymLinks MultiViews
                 AllowOverride All
-                Order allow,deny
-                allow from all
+                Require all granted
         </Directory>
         ErrorLog ${APACHE_LOG_DIR}/error.log
         # Possible values include: debug, info, notice, warn, error, crit, alert, emerg.
