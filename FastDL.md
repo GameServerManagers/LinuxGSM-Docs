@@ -32,21 +32,23 @@ This will create a new folder in your game server's directory : www/fastdl
 
 That way, you can make another folder into the www folder if you need to, like www/loadingurl
 
-#### 2) Share this content with an HTTP server
+#### 2) Share FastDL content with an HTTP server
 
 If you're used to Apache2 and running websites , then that step is pretty straight forward : 
 
-##### a) Make a new virtual host pointing to /home/youruser/www , using a domain or subdomain or userdir
-##### b) Go to step 3)
+**a)** Make a new virtual host pointing to /home/youruser/www , using a domain or subdomain
 
 Note : Apache2's mod "userdir" is a clever way if your server will run many game servers. Make it so that every "www" folder from every user has its website, which will be accessible with an address like http://yourwebsite.ltd/~username
 
-> **I'm no web admin !! HOWDOIDO ?!**
+**b)** Go to step 3
 
-##### Example with a subdomain. 
 
-**This works for Apache 2.4+ and when using a domain name. If you've got a different configuration, please, refer to Apache2's documentation. Remember to use google wisely before crying on github.**
+#### Help 
+> "I'm no web admin !! HOWDOIDO ?!"
 
+Here is an example using a subdomain. 
+
+**This works for Apache 2.4+ and when using a domain name. If you've got a different configuration, please, refer to Apache2's documentation. Remember to not be a dumbass and use google wisely before crying on github.**
 If you don't own a domain, then you should really consider getting one, it starts for a few bucks per year.
 
 Before anything, make sure your subdomain redirects to your game server and that Apache2 is correctly installed and started.
@@ -86,7 +88,7 @@ Test your address, you be able to access files with a link like that :
 
 http://subdomain.domain.com/fastdl
 
-#### 3) Edit your game config to use it
+#### 3) Edit your game config to use the FastDL Link
 
 `nano serverfiles/gamename/cfg/game-server.cfg`
 
