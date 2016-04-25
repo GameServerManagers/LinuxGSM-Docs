@@ -34,16 +34,20 @@ That way, you can make another folder into the www folder if you need to, like w
 
 #### 2) Share this content with an HTTP server
 
-If you're used to running websites and to Apache2, then that step is pretty straight forward : simply make a new virtual host pointing to /home/youruser/www
+If you're used to Apache2 and running websites , then that step is pretty straight forward : 
 
+##### a) Make a new virtual host pointing to /home/youruser/www , using a domain or subdomain or userdir
+##### b) Go to step 3)
+
+Note : Apache2's mod "userdir" is a clever way if your server will run many game servers. Make it so that every "www" folder from every user has its website, which will be accessible with an address like http://yourwebsite.ltd/~username
+
+> **I'm no web admin !! HOWDOIDO ?!**
 
 ##### Example with a subdomain. 
 
-Alternatively, you can use apache2's mod "usermod" which is a clever way if your server will run many game servers.
+**This works for Apache 2.4+ and when using a domain name. If you've got a different configuration, please, refer to Apache2's documentation. Remember to use google wisely before crying on github.**
 
-**This works for Apache 2.4+ and when using a domain name, if you got a different configuration, please, refer to Apache documentation.**
-
-If you don't own a domain, then you should really consider getting one, it starts for a few bucks a year.
+If you don't own a domain, then you should really consider getting one, it starts for a few bucks per year.
 
 Before anything, make sure your subdomain redirects to your game server and that Apache2 is correctly installed and started.
 First, create a virtual host in order to be able to host a website : 
