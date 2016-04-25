@@ -109,10 +109,11 @@ sv_allowdownload 0
 
 It's required to clear the old FastDL folder in 2 cases : 
 
-1) If you want to remove files that you removed from your server
+1) If you want to clean files that are no longer into the server content
+
 2) If some files changed and you're using bzip2 compression.
 
-Addon developer ? Changing sounds but keeping the same file name ? Note that clients won't download a file that they already downloaded unless its name changes.
+Important note for addons developers : Note that clients won't download a file that they already downloaded unless you rename it.
 
 ### bzip2 compression
 
