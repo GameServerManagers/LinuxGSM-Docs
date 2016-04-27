@@ -56,6 +56,8 @@ The script will not run as root and will error if you try. This is done for the 
 * Would you really trust yourself as root after a 9 hour energy-drink fueled CS:GO session?
 * Did i mention so you don't break everything!?
 
+![](http://truegif.com/pictures/gif/9281.gif)
+
 How can I install [insert name] mod?
 ====================================
 LGSM installs a vanilla server by default. You can customise your server however you want. I reccomend you checkout add-on/mod installation guide.
