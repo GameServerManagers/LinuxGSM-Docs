@@ -1,4 +1,5 @@
 Replace "gameserver" by your actual script name.
+Every command has a short version, also listed here.
 
 # Global command list
 
@@ -6,30 +7,30 @@ Replace "gameserver" by your actual script name.
 
 For more info, see [[Installer]]
 
-`./gameserver install`
+`./gameserver install` or `./gameserver i`
 
-`./gameserver auto-install`
+`./gameserver auto-install` or `./gameserver ai`
 
 
 ### Start/Stop/Restart
 
 For more info, see [[Start-Stop-Restart-commands]]
 
-`./gameserver start`
+`./gameserver start` or `./gameserver st`
 
-`./gameserver stop`
+`./gameserver stop` or `./gameserver sp`
 
-`./gameserver restart`
+`./gameserver restart` or `./gameserver r`
 
 ### Updating
 
 [[Update]]
 
-`./gameserver update`
+`./gameserver update` or `./gameserver u`
 
-`./gameserver validate` (SteamCMD games only)
+`./gameserver validate` or `./gameserver v` (SteamCMD games only)
 
-`./gameserver update-functions` (Updating LGSM)
+`./gameserver update-functions` or `./gameserver uf` (Updating LGSM)
 
 
 ### Monitoring
@@ -37,27 +38,28 @@ For more info, see [[Start-Stop-Restart-commands]]
 [[Monitor]] and [[Email-Notifications]]
 
 `./gameserver monitor`
+`./gameserver m`
 
-`./gameserver email-test`
+`./gameserver email-test` or `./gameserver et`
 
 
 ### Server info
 
 [[Details]]
 
-`./gameserver details`
+`./gameserver details` or `./gameserver d`
 
 ### Console
 
 [[Console]]
 
-`./gameserver console`
+`./gameserver console` or `./gameserver c`
 
 ### Backup
 
 [[Backup]]
 
-`./gameserver backup`
+`./gameserver backup` or `./gameserver b`
 
 
 
@@ -66,21 +68,21 @@ For more info, see [[Start-Stop-Restart-commands]]
 
 ### Teamspeak server
 
-`./ts3server change-password`
+`./ts3server change-password` or `./gameserver pw`
 
 Allows you to change the ServerAdmin password.
 
 ### Unreal Tournament 99 & 2004
 
-`./ut99server map-compressor`
+`./ut99server map-compressor` or `./ut99server mc`
 
-`./ut2k4server map-compressor`
+`./ut2k4server map-compressor` or `./ut2k4server mc`
 
 
 
 
 # Developer & debug commands
 
-`./gameserver depsdetect`
+`./gameserver depsdetect` or `./gameserver dd`
 
-`./gameserver dev-debug`
+`./gameserver dev-debug` or `./gameserver dev`
