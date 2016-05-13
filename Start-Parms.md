@@ -7,7 +7,7 @@ Here is a proper way to do it.
 
 ## Adding extra start parameters
 
-The point is not to mess up with fn_parms all the time, so we're gonna add a new variable into the script that will contain your extra start parameters, then add the content of that variable into the fn_parms once for all, so you never touch it again. In other words, first time you add start parameters, you tweak the script by adding a new variable, but next times, you only need to change that variable's value.
+The point is not to mess up with fn_parms all the time, so we're gonna add a new variables into the script that will contain your extra start parameters, then add the content of that variable into the fn_parms once for all, so you never touch it again. In other words, first time you add start parameters, you tweak the script by adding a new variable, but next times, you only need to change that variable's value.
 
 
 ### Example 
