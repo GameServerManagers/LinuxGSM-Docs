@@ -1,4 +1,4 @@
-Here are the Dont Starve Together install guides. A Linux one is included. The setup is quite complicated but should work with LGSM with some configuration.
+Here are the Dont Starve Together install guides. A Linux one is included. There is a step within the guide about Authentication Tokens.
 http://steamcommunity.com/id/ToNiO44/myworkshopfiles/?section=guides&appid=322330
 
 # The Below instructions are out of date.
