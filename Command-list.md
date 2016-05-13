@@ -47,7 +47,7 @@ For more info, see [[Start-Stop-Restart-commands]]
 
 [[Details]]
 
-`./gameserver details` or `./gameserver d`
+`./gameserver details` or `./gameserver dt`
 
 ### Console
 
