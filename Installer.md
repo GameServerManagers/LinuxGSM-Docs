@@ -16,6 +16,10 @@ And voilà !
 
 ## Failing installations
 
+### Permissions issues
+
+Did you make a dedicated user for that server ? Is your current directory owned by that user ? Did you chmod +x the script ?
+
 ### Bad network to Steam servers
 
 If your connection to Steam servers is bad (which is very common...), SteamCMD download can fail. That's why LGSM will always ask you if installation was successful to retry it if needed. If you have trouble getting it done, you can try :  
