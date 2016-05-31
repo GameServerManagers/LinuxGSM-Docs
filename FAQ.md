@@ -155,6 +155,6 @@ Ignore the error, do not do anything to attempt to fix it. It is a known issue t
 I'm getting 404 errors when running functions
 =========================================================================
 
-You're lacking the required function, and the function structure changed. You need the newer LGSM version. Just run the following command to get the update.
+You're lacking the required function, because you didn't run this command before the last huge LGSM update. The function structure changed, that's why you're getting a 404 error. You just need the newer LGSM version.
 
 `./gameserver update-functions`
