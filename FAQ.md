@@ -151,3 +151,10 @@ Non-steam versions of the games ARE pirated and this would be the only reason to
 Ignore the error, do not do anything to attempt to fix it. It is a known issue that has been happening ever since SteamPipe was introduced (this includes on Source1 games). It does not cause any issue and can be freely ignored.
 
   [GitHub issues]: https://github.com/dgibbs64/linuxgsm/issues
+
+I'm getting 404 errors when running functions
+=========================================================================
+
+You're lacking the required function, and the function structure changed. You need the newer LGSM version. Just run the following command to get the update.
+
+`./gameserver update-functions`
