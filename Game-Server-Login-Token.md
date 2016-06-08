@@ -34,8 +34,9 @@ An added benefit is that people who add your server to favorites will still be a
 GSLT creates a persistent token for your game server. This allows any users who have favorited your server to still find your server if you to change your servers IP details. This is very useful if you change your server/hosting provider. Allowing your regular players to easily connect to your new server.
 
 # Currently Supported Servers
-* Counter-Strike: Global Offensive 
-* Team Fortress 2 (GSLT not yet required for public servers)
+* Counter-Strike: Global Offensive
+* Team Fortress 2
+* No More Room in Hell
 
 # FAQ
 
