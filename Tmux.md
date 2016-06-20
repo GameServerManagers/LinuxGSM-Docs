@@ -16,7 +16,7 @@ tmux 1.8 has an issue that prevents console logging from working. This is becaus
 
 ### Upgrade Tmux CentOS (7)
 
-[Upgrading---installing-latest-tmux-from-source-(CentOS-7)]
+[Upgrade / install guide here](Upgrading---installing-latest-tmux-from-source-(CentOS-7))
 
 ### Upgrade Tmux Ubuntu
 
