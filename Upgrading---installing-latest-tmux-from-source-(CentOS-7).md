@@ -42,3 +42,12 @@ If you are on an older tmux version on CentOS you can upgrade to the latest vers
 
 1. yum install ncurses-devel
 2. yum install glibc-static
+
+## Note on live servers
+
+You can install tmux while the server are running, however restarting/stopping them will not be possible
+You can do either of the following possibilities
+
+* Stop all servers before upgrading tmux
+* Upgrade tmux while servers are running, but you must kill the tmux processes to be able to start a new one running the latest version
+* Manually attach the running tmux and manually shut it down.
