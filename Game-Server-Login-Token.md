@@ -48,7 +48,9 @@ GSLT creates a persistent token for your game server. This allows any users who 
 Yes, all of the tokens on your account will be blacklisted if one of your servers (tokens) is found to be running a blacklisted plugin. Make sure you read up on Valve’s plugin policies before running your servers so nothing unfortunate happens to your tokens.
 
 ## If my GSLTs get banned for running a blacklisted plugin, will my steam account be community and/or VAC banned?
-No one knows just yet what will happen to the steam account itself. Most likely, it won’t be VAC banned, but Valve’s requirement that anyone creating GSLTs is not community banned, you may be community banned for running blacklisted plugins.
+Depending on the game Valve will punish the account that generated the token,
+On CS:GO you get a global cooldown of 7 days (you cannot join any community/valve server)
+Most likely, it won’t be VAC banned, but Valve’s requirement that anyone creating GSLTs is not community banned, you may be community banned for running blacklisted plugins.
 
 ## Can I use the same GSLT for multiple servers?
 No. You must create a unique GSLT for each simultaneously running server.
