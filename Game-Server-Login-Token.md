@@ -1,6 +1,6 @@
 **Game Server Login Token is a new system by Valve for managing Game servers.**
 
-Games using GSLT'
+Games using GSLT
 
 * CS:GO (**required**)
 * TF2 (**optional**)
