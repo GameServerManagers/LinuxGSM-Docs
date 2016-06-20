@@ -12,13 +12,13 @@ Currently gsquery ships with the GSM install.
 
 ### Older released of GSM
 
-The [gsquery addon](https://github.com/dgibbs64/linuxgsm/blob/master/GameServerQuery/gsquery.py) is suggested when installing your game server. It provides a more reliable way to [[Monitor]] your server by querying it, instead of just checking if the server process is down. Said another way, it allows LGSM to detect a frozen server that nobody could join anymore and reboot it automatically.
+The [gsquery addon](https://gameservermanagers.com/dl/gsquery.py) is suggested when installing your game server. It provides a more reliable way to [[Monitor]] your server by querying it, instead of just checking if the server process is down. Said another way, it allows LGSM to detect a frozen server that nobody could join anymore and reboot it automatically.
 
 ## "I answered no to gsquery, and now i want it !"
 
 Just `cd` to your main script directory and run those two commands : 
 
-    wget https://raw.githubusercontent.com/dgibbs64/linuxgsm/master/GameServerQuery/gsquery.py
+    wget https://gameservermanagers.com/dl/gsquery.py
     chmod +x gsquery.py
 
 Done.
