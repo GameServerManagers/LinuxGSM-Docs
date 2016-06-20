@@ -1,18 +1,18 @@
 ## What is gsquery ?
 
+## How to use
+
+Simply use the [[Monitor]] function, and if gsquery is present, it will be used.
+
+
 ### Current state of GSM
 
 Currently gsquery ships with the GSM install.
 
-It can be accessed by using _monitor_
 
 ### Older released of GSM
 
 The [gsquery addon](https://github.com/dgibbs64/linuxgsm/blob/master/GameServerQuery/gsquery.py) is suggested when installing your game server. It provides a more reliable way to [[Monitor]] your server by querying it, instead of just checking if the server process is down. Said another way, it allows LGSM to detect a frozen server that nobody could join anymore and reboot it automatically.
-
-## How to use
-
-Simply use the [[Monitor]] function, and if gsquery is present, it will be used.
 
 ## "I answered no to gsquery, and now i want it !"
 
