@@ -35,6 +35,7 @@ If you are on an older tmux version on CentOS you can upgrade to the latest vers
 ## Possible problems
 
 * If you encounter 'libevent not found' during the tmux compiling/install.
+
 1. yum install libevent-devel
 
 * If you encounter 'curses not found' during the tmux compiling/install.
