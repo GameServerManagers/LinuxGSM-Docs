@@ -30,7 +30,7 @@ To edit your cronjobs, type :
 
 Here is an example of a user based cronjob for daily update at 5am (replace the username and gameserver according to your case) : 
 
-`0 5 * * *  '/home/username/gameserver update' > /dev/null 2>&1`
+`0 5 * * *  /home/username/gameserver update > /dev/null 2>&1`
 
 Here is an example of a root based cronjob for daily update at 5am : 
 
