@@ -75,4 +75,4 @@ External links
 
   [LGSM Console using tmux]: Tmux.PNG‎ "fig:LGSM Console using tmux"
   [screen]: http://en.wikipedia.org/wiki/GNU_Screen
-  [tmux Homepage]: http://tmux.sourceforge.net/
+  [tmux Homepage]: https://tmux.github.io/
