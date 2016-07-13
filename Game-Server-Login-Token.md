@@ -2,8 +2,9 @@
 
 Games using GSLT
 
-* CS:GO (**required**)
-* TF2 (**optional**)
+* Counter Strike: Global Offensive (**required**)
+* Team Fortress 2 (**optional**)
+* No more Room in Hell (**optional**)
 
 
 # Generate a token
@@ -36,11 +37,6 @@ An added benefit is that people who add your server to favorites will still be a
 
 # Advantages of using GSLT
 GSLT creates a persistent token for your game server. This allows any users who have favorited your server to still find your server if you to change your servers IP details. This is very useful if you change your server/hosting provider. Allowing your regular players to easily connect to your new server.
-
-# Currently Supported Servers
-* Counter-Strike: Global Offensive
-* Team Fortress 2
-* No More Room in Hell
 
 # FAQ
 
