@@ -112,7 +112,7 @@ Change the server ports. See [[Default-Ports]]
     steamport="27150"
     steamqueryport="27100"
 
-Rename the server config file to fit the 2nd servicename.
+Rename the server config file to fit the 2nd servicename. (for most of the games)
 
     cd /home/username/server2/serverfiles/gamename/cfg
     mv game-server.cfg game-server2.cfg
