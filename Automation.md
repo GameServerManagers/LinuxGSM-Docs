@@ -49,7 +49,7 @@ And every hour and 10 minutes will be : `*/10 */1 * * *`
 ### /dev/null 2>&1
 The ` >/dev/null 2>&1` means that it will mute the execution (don't save or send output)
 
-Example of a cron setup
+## Example of a cron setup
 ````
 0       0       *       *       0       su - nmrihserver -c '/home/nmrihserver/nmrihserver1 update-functions' > /dev/null 2>&1
 0       *       *       *       *       su - nmrihserver -c '/home/nmrihserver/nmrihserver1 update' > /dev/null 2>&1
