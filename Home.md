@@ -13,7 +13,7 @@ Game servers traditionally are not easy to manage yourself. Admins often have to
 	<li>[[Details]]</li>
 	<li>[[Installer]]</li>
 	<li>[[Monitor]]</li>
-	<li>[[Alerts]]</li>
+	<li>[[Alerts]] (Email, Pushbullet)</li>
 	<li>[[Update]]</li>
 	<li>[[Start-Stop-Restart-commands]]</li>
 </ul>
