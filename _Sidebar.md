@@ -7,7 +7,7 @@
 * [[Installer]]
 * [[Start-Stop-Restart-commands]]
 * [[Monitor]]
-* [[Email-Notifications]]
+* [[Alerts]]
 * [[Update]]
 * [[Console]]
 * [[Backup]]
