@@ -18,9 +18,9 @@
 
 
 # Advanced
-* [[Default Ports]]
 * [[Automation]] (Cronjobs)
 * [[Boot-Startup]]
+* [[Default Ports]]
 * [[Start-Parms]]
 * [[Multiple Servers]]
 * [[Glibc]]
@@ -29,8 +29,8 @@
 
 # Server Specific
 
-* [[TeamSpeak]]
 * [[Rust]]
+* [[TeamSpeak]]
 
 # Developers
 * [[New Server]]
