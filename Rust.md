@@ -271,3 +271,8 @@ Then update oxide once the new version is released. If you followed this guide e
 ```
 ./zip-updater/zip-updater
 ```
+
+Special Thanks :
+* Wulf and Oxide team
+* Daniel Gibbs, Founder and main dev from LGSM Daniel Gibbs https://twitter.com/dangibbsuk
+* CedarLUG, LGSM Support
