@@ -224,7 +224,8 @@ mount -o remount,rw,hidepid=2 /proc
 
 And to keep the changes upon machine reboot
 
-```nano /etc/fstab
+```
+nano /etc/fstab
 
 proc    /proc    proc    defaults,hidepid=2    0    0
 ```
