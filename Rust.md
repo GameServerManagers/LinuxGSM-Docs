@@ -217,14 +217,18 @@ moderatorid STEAMID64 "Nickname "Reason" ; to add a moderator
 By default, a user can see all started processes from other users, which is bad, but also their start parameters, which is pretty dangerous. Those start parameters can contain sensitive information, such as RCON password, Steam API keys, GSLTokens...
 Upon start, a Rust dedicated server is checking if the process name started in all users, and will prevent you from running it again if it finds it, displaying "Player is already running".
 To avoid that, run
+
 ```
 mount -o remount,rw,hidepid=2 /proc
 ```
+
 And to keep the changes upon machine reboot
+
 ```nano /etc/fstab
 
 proc    /proc    proc    defaults,hidepid=2    0    0
 ```
+
 Of course, you still need to make one user per server, change ports, and repeat the install process.
 
 11) Setup automated reboot or any task
@@ -232,12 +236,14 @@ You will need to use Linux Cronjobs. For more information, see https://github.co
 
 Basically, i advise you to setup root cronjobs.
 The syntax for root cronjobs is (replace things between <> by the actual value)
+
 ```
 0 5 * * * su - <username> -c '/home/<username>/rustserver <command>' > /dev/null 2>&1
 ```
 
 Example for a restart every day at 5 :
-Login to Root
+Login to Root, then do : 
+
 ```
 su
 crontab -e
