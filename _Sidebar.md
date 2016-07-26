@@ -27,5 +27,10 @@
 * [[Tmux]]
 * [[gsquery.py]]
 
+# Server Specific
+
+* [[TeamSpeak]]
+* [[Rust]]
+
 # Developers
 * [[New Server]]
