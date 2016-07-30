@@ -55,7 +55,7 @@ http://distrowatch.com is also a great source to find this infomation.
 
 | Distro           | Glibc   |
 |------------------|---------|
-| CentOS 5         | 2.5    |
+| CentOS 5         | 2.5     |
 | CentOS 6         | 2.12    |
 | CentOS 7         | 2.17    |
 | Debian 6         | 2.11.2  |
@@ -63,6 +63,8 @@ http://distrowatch.com is also a great source to find this infomation.
 | Debian 8         | 2.19    |
 | Ubuntu 12.04 LTS | 2.15    |
 | Ubuntu 14.04 LTS | 2.19    |
+| Ubuntu 16.04 LTS | 2.23    |
+
 
 Glibc Version history https://en.wikipedia.org/wiki/GNU_C_Library#Version_history
 
