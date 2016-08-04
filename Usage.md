@@ -17,25 +17,13 @@ Most servers have a configuration file to alter the game server settings. This c
 
 ````Config file:   /home/username/serverfiles/gamename/cfg/gamename-server.cfg````
 
-You can edit the config file with any linux text editor like nano or vi.
+You can edit the config file with any linux text editor like `nano` or `vi`.
 
 Start Parameters
 ------------
-Servers commonly require start parameters that are command line options which are set with the servers executable when you start the server. These parameters can again be found in details. To alter them, which you probably want to do, you will need to edit the main script file using vi or nano.
+Servers commonly require start parameters that are command line options which are set with the servers executable when you start the server. These parameters can again be found in details. To alter them, which you probably want to do, you will need to edit the main script file using `vi` or `nano`.
 
 ````nano gameserver````
-
-You will find most important variables such as : 
-
-    # Start Variables
-    defaultmap="map_name"
-    gamemode="game_mode"
-    maxplayers="42"
-    port="27015"
-    sourcetvport="27020"
-    clientport="27005"
-    ip="0.0.0.0"
-    updateonstart="off"
 
 You may also configure the [GSLT](Game-Server-Login-Token) for some servers (required for CSGO, optional for others).
 
@@ -67,13 +55,13 @@ Most servers can be updated automatically using the update feature which uses St
 update
 ------
 
-[[Update]] checks with SteamCMD if any updates are available for the server. The server will update and restart only if required.
+[[Update]] checks with if any updates are available for the server. The server will update and restart only if required.
 
     ./gameserver update
 
 validate
 --------
-You can use the [validate](https://github.com/dgibbs64/linuxgsm/wiki/Update#when-an-update-isnt-enough) option when updating the server.
+You can use the [validate](https://github.com/dgibbs64/linuxgsm/wiki/Update#when-an-update-isnt-enough) option when updating the server, this checks the integrity of the server files to make sure they exactly match the remote version.
 
     ./gameserver validate
 
