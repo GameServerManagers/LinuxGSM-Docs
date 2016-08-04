@@ -1,6 +1,6 @@
 ## Default start parameters
 
-LGSM comes with a bunch of start parameters that you can change withing your "gameserver" script. So have a look at options proposed before anything else, it could save you some time.
+LGSM comes with a bunch of start parameters that you can change within your "gameserver" script. So have a look at options proposed before anything else, it could save you some time.
 
 ## Extra start parameters
 
