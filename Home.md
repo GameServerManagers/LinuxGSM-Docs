@@ -4,7 +4,7 @@
 The [Linux Game Server Managers](http://gameservermanagers.com/) are command line tools for quick, simple deployment and management of various dedicated game and voice comm servers.
 
 <h2>Hassle Free Dedicated Servers</h2>
-Game servers traditionally are not easy to manage yourself. Admins often have to spend hours just messing around trying to get there server working. LGSM is designed to be a simple as possible allowing Admins to spend less time on management and more time on the fun stuff.
+Game servers traditionally are not easy to manage yourself. Admins often have to spend hours just messing around trying to get there server working. LGSM is designed to be a simple as possible allowing admins to spend less time on management and more time on the fun stuff.
 
 <h2>Main features</h2>
 <ul>
@@ -40,11 +40,17 @@ If you want to donate to the project you can via PayPal. I have had a may kind p
 </ul>
 <h2>Useful Links</h2>
 <ul>
-	<li><a href="http://gameservermanagers.com">Homepage</li>
+ 	<li><a href="https://gameservermanagers.com">Homepage</li>
 	<li><a href="https://github.com/dgibbs64/linuxgsm/wiki">Wiki</li>
 	<li><a href="https://github.com/dgibbs64/linuxgsm">GitHub Code</li>
 	<li><a href="https://github.com/dgibbs64/linuxgsm/issues">GitHub Issues</li>
-	<li><a href="http://steamcommunity.com/groups/linuxgsm">Steam Group</li>
+	<li><a href="https://waffle.io/dgibbs64/linuxgsm">Waffle (Github Dashboard)</li>
+	<li><a href="https://alternativeto.net/software/linux-game-server-managers/">alternativeTo.net</li>
+</ul>
+<h2>Social</h2>
+<ul>
+	<li><a href="https://steamcommunity.com/groups/linuxgsm">Steam Group</li>
+	<li><a href="https://discordapp.com/invite/0i9cmXVacvUEx040">Discord</li>
 	<li><a href="https://twitter.com/dangibbsuk">Twitter</li>
 	<li><a href="https://www.facebook.com/linuxgsm">Facebook</li>
 	<li><a href="https://plus.google.com/+Gameservermanagers1">Google+</li>
