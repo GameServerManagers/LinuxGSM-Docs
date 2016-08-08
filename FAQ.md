@@ -158,3 +158,12 @@ I'm getting 404 errors when running functions
 You're lacking the required function, because you didn't run this command before the last huge LGSM update. The function structure changed, that's why you're getting a 404 error. You just need the newer LGSM version.
 
 `./gameserver update-functions`
+
+I'm getting ownership issues
+=========================================================================
+
+The user that you're running LGSM with doesn't own all of its files. This can lead you to many issues, that's why LGSM warns you. Most of the time, it's caused by using an FTP server that logs as root. In the future, you'll have to re-consider the way you're adding or editing files so that they belong to the right user.
+
+You can simply fix those ownership issues by using a chown command as root.
+
+`chown -R username:username /home/username`
