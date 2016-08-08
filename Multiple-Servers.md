@@ -6,7 +6,7 @@ Running several servers is pretty easy as long as you follow this guide. There i
 
 * The second method: Re-use an already existing server and make a new instance of it (of course with different ports). This is a bit more painful, a bit less reliable, and of course, those servers will share addons, databases and so on. The only thing you'll be able to customize from one server to another will eventually be the main config file, gamemode, and anything that you can configure in your "gameserver" script.
 
-## Separate Installations (Advised)
+## Separate Installations
 
 Basically > Repeat the installation process with a different username and change the [[Default-Ports]] within the script.
 
