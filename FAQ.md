@@ -162,7 +162,7 @@ You're lacking the required function, because you didn't run this command before
 I'm getting ownership issues
 =========================================================================
 
-The user that you're running LGSM with doesn't own all of its files. This can lead you to many issues, that's why LGSM warns you. Most of the time, it's caused by using an FTP server that logs as root. In the future, you'll have to re-consider the way you're adding or editing files so that they belong to the right user.
+The user that you're running LGSM with doesn't own all of its files. This can lead you to many issues, that's why LGSM warns you. Most of the time, it is caused by uploading files as the root user. In the future, you'll have to re-consider the way you're adding or editing files so that they belong to the right user.
 
 You can simply fix those ownership issues by using a chown command as root.
 
