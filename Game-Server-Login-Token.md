@@ -1,11 +1,14 @@
 **Game Server Login Token is a new system by Valve for managing Game servers.**
 
-Games using GSLT
+# Games using GSLT
 
+* Brainbread 2 (**optional**)
+* Black Mesa: Deathmatch (**optional**)
 * Counter Strike: Global Offensive (**required**)
-* Team Fortress 2 (**optional**)
+* Empires Mod
+* Garry’s Mod
 * No more Room in Hell (**optional**)
-
+* Team Fortress 2 (**optional**)
 
 # Generate a token
 
