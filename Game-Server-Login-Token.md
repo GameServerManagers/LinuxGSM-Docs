@@ -2,13 +2,13 @@
 
 # Games using GSLT
 
-* Brainbread 2 (**optional**)
-* Black Mesa: Deathmatch (**optional**)
+* Brainbread 2
+* Black Mesa: Deathmatch
 * Counter Strike: Global Offensive (**required**)
 * Empires Mod
 * Garry’s Mod
-* No more Room in Hell (**optional**)
-* Team Fortress 2 (**optional**)
+* No more Room in Hell
+* Team Fortress 2
 
 # Generate a token
 
