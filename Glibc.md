@@ -61,6 +61,7 @@ http://distrowatch.com is also a great source to find this infomation.
 | Debian 6         | 2.11.2  |
 | Debian 7         | 2.13    |
 | Debian 8         | 2.19    |
+| Debian 9         | 2.23    |
 | Ubuntu 12.04 LTS | 2.15    |
 | Ubuntu 14.04 LTS | 2.19    |
 | Ubuntu 16.04 LTS | 2.23    |
