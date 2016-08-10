@@ -7,7 +7,7 @@ This is very useful for servers, as this means it's significantly easier to keep
 
 ![SteamCMD Terminal](https://github.com/dgibbs64/linuxgsm/blob/master/images/screens/steamcmd.png)
 
-# SteamCMD Login?
+# SteamCMD Login
 SteamCMD requires a login to use its services.
 
 It is recommended that you [create a new Steam username](https://store.steampowered.com/login/) just for the server.
