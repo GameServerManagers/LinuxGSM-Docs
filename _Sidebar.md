@@ -12,7 +12,7 @@
 * [[Console]]
 * [[Backup]]
 * [[Details]]
-* [GSLT](https://github.com/dgibbs64/linuxgsm/wiki/Game-Server-Login-Token)
+
 * [[Workshop]]
 * [[FastDL]]
 
@@ -24,6 +24,7 @@
 * [[Start-Parameters]]
 * [[Multiple Servers]]
 * [[Glibc]]
+* [GSLT](Game-Server-Login-Token)
 * [[Tmux]]
 * [[gsquery.py]]
 
