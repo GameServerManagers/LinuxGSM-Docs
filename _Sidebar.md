@@ -21,7 +21,7 @@
 * [[Automation]] (Cronjobs)
 * [[Boot-Startup]]
 * [[Default Ports]]
-* [[Start-Parms]]
+* [[Start-Parameters]]
 * [[Multiple Servers]]
 * [[Glibc]]
 * [[Tmux]]
