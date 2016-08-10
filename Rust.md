@@ -19,9 +19,9 @@ It will also use constantly 50-65% of  one core from a Xeon E5-1650V3 (6 cores 1
 ### Bandwidth
 Bandwidth shouldn't be an issue, aim for a 10-15mb/s+ connection minimum
 
-### Generalities
+### Other notes
 The server autosave can cause lags, depending on your CPU and disk speed.
-As always, VPS are not advised for game servers, especially for a Rust server that requires a lot and constant CPU power.
+It is highly recommended a dedicated server is used with Rust because of it's high system requirements.
 
 ### Conclusion
 Don't take a stupid server with 150 cores @1,2Ghz, prefer a quad/hexa core @3,3Ghz+, check benchmarks before choosing your server. CPU : good monothread performance ; RAM : 12-16GB and more ; avoid VPS.
