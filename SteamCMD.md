@@ -18,13 +18,13 @@ The majority of game servers through SteamCMD are freely available to download. 
 
 ## Steam User Login
 
-Some game servers require you login to SteamCMD using a steam login to allow download of the server. Some also require you to own a copy of the game on the steam accout.
+Some game servers require you login to SteamCMD using a steam login to allow download of the server. Some also require you to own a copy of the game on the steam account.
 
 It is recommended that you create a new Steam username just for the server for security reasons.
 
 For a list of which servers require logins and game purchases visit: http://gameservermanagers.com/list
 # Plain Text Passwords
-SteamCMD prints out passwords in plain text meaning that your Steam password is open for anyone to see on the server. LGSM saves logs and your password will be viewable on the logs.
+SteamCMD prints out passwords in plain text meaning that your Steam password is open for anyone to see on the server. LGSM saves logs and your password will be viewable in the logs.
 
 # Steam Guard
 ![Steam Guard](https://github.com/dgibbs64/linuxgsm/blob/master/images/screens/steamguard.jpg)
