@@ -3,7 +3,7 @@ Most servers require a specific version of Glibc installed. Newer distros normal
 
 Server Requirements
 ===================
-A complete List can be found here:
+A complete list can be found here:
 
 https://gameservermanagers.com/list/
 
