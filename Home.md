@@ -4,7 +4,7 @@
 [Linux Game Server Managers](http://gameservermanagers.com/) is a command line tool for quick, simple deployment and management of various dedicated game servers.
 
 <h2>Hassle Free Dedicated Servers</h2>
-Game servers traditionally are not easy to manage yourself. Admins often have to spend hours just messing around trying to get there server working. LGSM is designed to be a simple as possible allowing admins to spend less time on management and more time on the fun stuff.
+Game servers traditionally are not easy to manage yourself. Admins often have to spend hours just messing around trying to get there server working. LGSM is designed to be a simple as possible allowing Admins to spend less time on management and more time on the fun stuff.
 
 <h2>Main features</h2>
 <ul>
@@ -26,7 +26,7 @@ The Linux Game Server Managers are tested to work on the following Linux distros
 Other distros are likely to work but are not fully tested.
 <h3>Specific Requirements</h3>
 <ul>
-	<li><a href="https://github.com/dgibbs64/linuxgsm/wiki/Glibc">GLIBC</a> >= 2.15 recommended [<a href="https://github.com/dgibbs64/linuxgsm/wiki/Glibc#server-requirements">specific requirements</a>].</li>
+	<li><a href="https://github.com/dgibbs64/linuxgsm/wiki/glibc">glibc</a> >= 2.15 recommended [<a href="https://github.com/dgibbs64/linuxgsm/wiki/glibc#server-requirements">specific requirements</a>].</li>
 	<li><a href="https://github.com/dgibbs64/linuxgsm/wiki/Tmux">Tmux</a> >= 1.6 recommended (Avoid Tmux 1.8).</li>
 </ul>
 <h2>FAQ</h2>
