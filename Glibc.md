@@ -33,7 +33,7 @@ Glibc fixes
 
 > Many of the servers can work on distros with older _Glibc_ versions by using the _Glibc_ fixes that are available with LGSM. 
 
-If your distro does not meet the Glibc requiremenrs LGSM will download the glibc files to the lgsm/lib directory to be used by the game server. Becuase of this even if your dedicated server does not meet the Glibc requirements the game server should still work.
+If your distro does not meet the Glibc requirements LGSM will download the glibc files to the lgsm/lib directory to be used by the game server. Because of this even if your dedicated server does not meet the Glibc requirements the game server should still work.
 
 These fixes prevent errors similar to the following:
 ```
