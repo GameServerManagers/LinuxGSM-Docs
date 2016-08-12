@@ -47,11 +47,13 @@ version `GLIBC_2.15′ not found
 Glibc Fix available
 -------------------
 List of game servers with glibc fixes:
+
 http://gameservermanagers.com/list/
 
 No Glibc Fix available
 ----------------------
 Some game servers to not work with Glibc Fixes:
+
 http://gameservermanagers.com/list/
 
 External Links
