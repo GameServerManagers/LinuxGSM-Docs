@@ -5,7 +5,7 @@ Server Requirements
 ===================
 A complete List can be found here:
 
-http://gameservermanagers.com/list/
+https://gameservermanagers.com/list/
 
 Distro Glibc Versions
 ====================
@@ -49,13 +49,13 @@ Glibc Fix available
 -------------------
 List of game servers with glibc fixes:
 
-http://gameservermanagers.com/list/
+https://gameservermanagers.com/list/
 
 No Glibc Fix available
 ----------------------
 Some game servers to not work with Glibc Fixes:
 
-http://gameservermanagers.com/list/
+https://gameservermanagers.com/list/
 
 External Links
 ==============
