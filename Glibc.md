@@ -25,7 +25,7 @@ List of distros and there Glibc version.
 
 [distrowatch.com](http://distrowatch.com) is also a great source to find this information. 
 
-GLibc version history available on [Wikipedia](https://en.wikipedia.org/wiki/GNU_C_Library#Version_history).
+Glibc version history available on [Wikipedia](https://en.wikipedia.org/wiki/GNU_C_Library#Version_history).
 
 Glibc fixes
 ===========
