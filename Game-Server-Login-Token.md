@@ -5,6 +5,7 @@
 * Brainbread 2
 * Black Mesa: Deathmatch
 * Counter Strike: Global Offensive (**required**)
+* Counter Strike: Source (**required**)
 * Empires Mod
 * Garry’s Mod
 * No more Room in Hell
