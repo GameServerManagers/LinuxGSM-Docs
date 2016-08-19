@@ -83,6 +83,8 @@ Allows you to change the ServerAdmin password.
 
 # Developer & debug commands
 
-`./gameserver depsdetect` or `./gameserver dd`
+`./gameserver detect-deps` or `./gameserver dd`
+
+`./gameserver detect-glibc` or `./gameserver dg`
 
 `./gameserver dev-debug` or `./gameserver dev`
