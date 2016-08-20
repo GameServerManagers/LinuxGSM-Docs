@@ -1,6 +1,6 @@
 # Modded server with Oxide
 
-"Native" Linux support for Rust is back since February 2016 ! Garry Newman on Twitter
+"Native" Linux support for Rust is back since February 2016 ! https://twitter.com/garrynewman/status/700658567641231360
 
 That allowed us to add a Rust Server Script into the Linux Game Server Managers (LGSM) project.
 
