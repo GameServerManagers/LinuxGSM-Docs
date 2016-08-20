@@ -4,7 +4,7 @@
 [Linux Game Server Managers](http://gameservermanagers.com/) is a command line tool for quick, simple deployment and management of various dedicated game servers.
 
 <h2>Hassle Free Dedicated Servers</h2>
-Game servers traditionally are not easy to manage yourself. Admins often have to spend hours just messing around trying to get there server working. LGSM is designed to be a simple as possible allowing Admins to spend less time on management and more time on the fun stuff.
+Game servers traditionally are not easy to manage yourself. Admins often have to spend hours just messing around trying to get their server working. LGSM is designed to be a simple as possible allowing Admins to spend less time on management and more time on the fun stuff.
 
 <h2>Main features</h2>
 <ul>
