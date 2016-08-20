@@ -272,7 +272,8 @@ Then update oxide once the new version is released. If you followed this guide e
 ./zip-updater/zip-updater
 ```
 
-## Special Thanks :
-* Wulf and Oxide team
-* Daniel Gibbs, Founder and main dev from LGSM Daniel Gibbs https://twitter.com/dangibbsuk
-* CedarLUG, LGSM Support
+## Special Thanks : 
+* UltimateByte for Rust support into LGSM
+* Wulf and Oxide team for enlightening about Rust and Oxide
+* [Daniel Gibbs](https://twitter.com/dangibbsuk), Founder and main dev from LGSM Daniel Gibbs, for his help
+* CedarLUG, LGSM Support, for his help dealing with Rust's weirdness
