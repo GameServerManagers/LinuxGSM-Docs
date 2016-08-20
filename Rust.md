@@ -1,11 +1,9 @@
-# Modded server with Oxide
-
 "Native" Linux support for Rust is back since February 2016 ! https://twitter.com/garrynewman/status/700658567641231360
 
-That allowed us to add a Rust Server Script into the Linux Game Server Managers (LGSM) project.
+That allowed us to add a Rust Server Script into LGSM.
 
-As information is dispatched all around the web which is a pain, i'm trying to centralize it for you.
-If you need more information or have issues, just ask here http://oxidemod.org/threads/setting-up-a-rust-server-with-linux-and-lgsm.16528/ or in our Steam Group
+# Modded server with Oxide
+
 
 ## System requirements
 
@@ -43,9 +41,11 @@ So you need :
 ### LGSM Installation
 * If you wish to use LGSM, grab the script provided here : http://gameservermanagers.com/lgsm/rustserver/
 
+### Oxide Support
+http://oxidemod.org/threads/setting-up-a-rust-server-with-linux-and-lgsm.16528/
+
 ### LGSM Support
-* LGSM Wiki : https://github.com/dgibbs64/linuxgsm/wiki
-* General LGSM support : https://steamcommunity.com/groups/linuxgsm/discussions
+* General support : https://steamcommunity.com/groups/linuxgsm/discussions
 * Report a bug : https://github.com/dgibbs64/linuxgsm/issues
 
 ### Updater Script for Oxide
@@ -59,15 +59,15 @@ Rusty Rcon Tool
 
 ## Rust Server with LGSM Video tutorial
 
-https://www.youtube.com/watch?v=eFH9Qj-hUOM
-
 If you need some help, here is a video that shows how to use LGSM, it also explains the basics of a Rust Server, and other stuff, that's why it's 20 minutes long, otherwise, if you're experienced, you can get your server up and running in around 5 minutes without any mods.
+
+https://www.youtube.com/watch?v=eFH9Qj-hUOM
 
 
 # LGSM Tutorial
 
 0) Make sure you have all the dependencies
-And make sure you match the distro requirement by using your eyes and brain reading this : http://gameservermanagers.com/lgsm/rustserver/
+And make sure you match the distro requirement by carefully reading instructions at : https://gameservermanagers.com/lgsm/rustserver/
 
 1) Make a new user and login to it
 As root, do :
