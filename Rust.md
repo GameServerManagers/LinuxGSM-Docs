@@ -39,7 +39,7 @@ So you need :
 * If you wish to use the manual way, i updated the Valve Rust wiki (that still needs some work) : https://developer.valvesoftware.com/wiki/Rust_Dedicated_Server
 
 ### LGSM Installation
-* If you wish to use LGSM, grab the script provided here : http://gameservermanagers.com/lgsm/rustserver/
+* If you wish to use LGSM, grab the script provided here : https://gameservermanagers.com/lgsm/rustserver/
 
 ### Oxide Support
 http://oxidemod.org/threads/setting-up-a-rust-server-with-linux-and-lgsm.16528/
@@ -80,7 +80,7 @@ login rust
 
 2) Get LGSM and make it executable
 ```
-wget http://gameservermanagers.com/dl/rustserver
+wget https://gameservermanagers.com/dl/rustserver
 chmod +x rustserver
 ```
 
