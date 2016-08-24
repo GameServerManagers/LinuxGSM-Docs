@@ -159,7 +159,7 @@ You're lacking the required function, because you didn't run this command before
 
 `./gameserver update-functions`
 
-[ FAIL ] Starting game-server: Permissions issues found
+[ FAIL ] Starting game-server: Ownership issues found
 =========================================================================
 
 The user that you're running LGSM with doesn't own all of its files.
