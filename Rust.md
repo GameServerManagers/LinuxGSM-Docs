@@ -68,9 +68,11 @@ https://www.youtube.com/watch?v=eFH9Qj-hUOM
 # LGSM Tutorial
 
 0) Make sure you have all the dependencies
+
 And make sure you match the distro requirement by carefully reading instructions at : https://gameservermanagers.com/lgsm/rustserver/
 
 1) Make a new user and login to it
+
 As root, do :
 
 ```
@@ -80,6 +82,7 @@ login rust
 ```
 
 2) Get LGSM and make it executable
+
 ```
 wget https://gameservermanagers.com/dl/rustserver
 chmod +x rustserver
@@ -92,6 +95,7 @@ chmod +x rustserver
 ```
 
 4) Edit rustserver to fit your needs
+
 You'd better use nano or vim, but you could also use a text editor line notepad++, which is way less convenient. If you need help about what to configure, watch the video.
 
 ```
@@ -99,12 +103,14 @@ nano rustserver
 ```
 
 5) Edit server.cfg
+
 Located in 
 ```
 serverfiles/server/rust-server/cfg
 ```
 
 6) Make sure everything is allright
+
 Start your server
 
 ```
@@ -121,6 +127,7 @@ The log will be called game-{FULL-CURRENT-DATE}.log to not be erased on every re
 Upon a server start (or restart), this log will be moved to log/server and a new one will be created. This is a workaround for the crappy default log management in Rust.
 
 7) Install Oxide
+
 You just have to download Oxide and extract it in a temp folder, then copy to your serverfiles folder, and clean the temp folder.
 Of course, shut down the server first.
 A good idea is to run a "save" command using Rusty or RCON before stopping your server. See 9) for more info.
@@ -191,6 +198,7 @@ Better check your logs again and check that Oxide is loading properly
 
 
 8) Install Oxide addons
+
 Just put them into ````````serverfiles/server/rust-server/oxide/plugins````````
 They will load automatically.
 If you need to edit their configs, it will be located in : ````````serverfiles/server/rust-server/oxide/config````````
@@ -201,6 +209,7 @@ oxide.reload PluginName
 ```
 
 9) Connect in RCON using Rusty
+
 Grab it here Rusty - Server RCON administration tool | Oxide
 If you can't know your IP or domain name, you're a jerk.
 If you can't remember the RCON port you set or password (that you MUST change), just use :
@@ -215,6 +224,7 @@ moderatorid STEAMID64 "Nickname "Reason" ; to add a moderator
 ```
 
 10) Avoid a security breach and allow you to run multiple servers
+
 By default, a user can see all started processes from other users, which is bad, but also their start parameters, which is pretty dangerous. Those start parameters can contain sensitive information, such as RCON password, Steam API keys, GSLTokens...
 Upon start, a Rust dedicated server is checking if the process name started in all users, and will prevent you from running it again if it finds it, displaying "Player is already running".
 To avoid that, run
@@ -234,6 +244,7 @@ proc    /proc    proc    defaults,hidepid=2    0    0
 Of course, you still need to make one user per server, change ports, and repeat the install process.
 
 11) Setup automated reboot or any task
+
 You will need to use Linux Cronjobs. For more information, see https://github.com/dgibbs64/linuxgsm/wiki/Automation
 
 Basically, i advise you to setup root cronjobs.
@@ -260,6 +271,7 @@ You can run a monitor cronjob every few minutes to make sure your server is up a
 ```
 
 12) Updating Rust
+
 Just run
 ```
 ./rustserver update
