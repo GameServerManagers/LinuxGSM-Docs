@@ -164,11 +164,11 @@ You're lacking the required function, because you didn't run this command before
 
 The user that you're running LGSM with doesn't own all of its files.
 
-**Case 1)** You're uploading files as root or any other user that is not your gameserver user. If you're logging into your FTP as root, you must know that this is wrong on so many levels and must consider using a better method urgently. Here is an [example](https://gist.github.com/UltimateByte/229c17b3c48ca10080c5e56b5513e476) of a simple user based FTP set in 2 minutes with proftpd.
+**Case 1)** You've been uploading files as root or any other user that is not your gameserver user. If you're logging into your FTP as root, you must know that this is wrong on so many levels and must consider using a better method urgently. Here is an [example](https://gist.github.com/UltimateByte/229c17b3c48ca10080c5e56b5513e476) of a simple user based FTP set in 2 minutes with proftpd.
 
-**Case 2)** You're downloading/extracting/copying files as root instead of the appropriate user. Just don't, do it as the user, OR, if you're obstinate, then at least chown files afterwards.
+**Case 2)** You've been downloading/extracting/copying files as root instead of the appropriate user. Just don't, do it as the user, OR, if you're obstinate, then at least chown files afterwards.
 
-**Fixing it afterwards**
+**Fixing wrong ownership**
 
 You can simply fix those ownership issues by using a chown command as root.
 
