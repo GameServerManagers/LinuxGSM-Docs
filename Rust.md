@@ -4,6 +4,7 @@ That allowed us to add a Rust Server Script into LGSM.
 
 # Modded server with Oxide
 
+In this guide, we're going to go through the Rust install process, correcting your system to handle multiple Rust servers, installing Oxide and keeping it updated easily. 
 
 ## System requirements
 
