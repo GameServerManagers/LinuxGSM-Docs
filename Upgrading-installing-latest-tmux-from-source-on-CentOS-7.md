@@ -25,6 +25,7 @@ If you are on an older tmux version on CentOS you can upgrade to the latest vers
 3. sh autogen.sh
 4. ./configure
 5. make
+6. sudo make install
 
 ## Verify you are on the latest tmux.
 
