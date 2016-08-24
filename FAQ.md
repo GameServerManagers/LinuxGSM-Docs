@@ -159,14 +159,16 @@ You're lacking the required function, because you didn't run this command before
 
 `./gameserver update-functions`
 
-I'm getting ownership issues
+[ FAIL ] Starting game-server: Permissions issues found
 =========================================================================
 
-The user that you're running LGSM with doesn't own all of its files. This can lead you to many issues, which is why LGSM warns you. Most of the time, it is caused by uploading files as the root user. Other times, it's caused by downloading/extracting/copying files as root instead of the user. **This is wrong on so many levels** and you'll have to re-consider the way you're adding files so that they belong to the right user.
+The user that you're running LGSM with doesn't own all of its files.
 
-If you're logging into your FTP as root, consider using a different method as this is wrong in so many ways. Here is an [example](https://gist.github.com/UltimateByte/229c17b3c48ca10080c5e56b5513e476) of a simple user based FTP set in 2 minutes with proftpd.
+**Case 1)** You're uploading files as root or any other user that is not your gameserver user. If you're logging into your FTP as root, you must know that this is wrong on so many levels and must consider using a better method urgently. Here is an [example](https://gist.github.com/UltimateByte/229c17b3c48ca10080c5e56b5513e476) of a simple user based FTP set in 2 minutes with proftpd.
 
-If you're managing files as root, just don't, do it as the user, OR, if you're obstinate, think about chown afterwards.
+**Case 2)** You're downloading/extracting/copying files as root instead of the appropriate user. Just don't, do it as the user, OR, if you're obstinate, then at least chown files afterwards.
+
+**Fixing it afterwards**
 
 You can simply fix those ownership issues by using a chown command as root.
 
