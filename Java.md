@@ -33,5 +33,8 @@ Different Distros have different versions of Java. This page will outline the di
 | Ubuntu 14.04 LTS | YES | YES | NO  |
 | Ubuntu 16.04 LTS | NO  | NO  | YES |
 
+Distrowatch also contains details of JRE versions
+[https://distrowatch.com](https://distrowatch.com)
+
 <h1>Further Reading</h1>
 https://help.ubuntu.com/community/Java
