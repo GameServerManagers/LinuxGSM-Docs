@@ -1,4 +1,4 @@
-Some game servers run using Java Runtime Environment (JRE) such as Minecraft and Project Zomboid. 
+Some game servers require using Java Runtime Environment (JRE) such as Minecraft and Project Zomboid. 
 
 <h1>Installation of Java Runtime Environment</h1>
 
