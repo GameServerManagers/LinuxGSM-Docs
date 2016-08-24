@@ -19,7 +19,7 @@
 * [[Automation]] (Cronjobs)
 * [[Boot-Startup]]
 * [[Default Ports]]
-* [[Glibc]]
+* [[glibc]]
 * [GSLT](Game-Server-Login-Token)
 * [[gsquery.py]]
 * [[Multiple Servers]]
