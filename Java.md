@@ -7,7 +7,7 @@ To install the most up to date JRE for your distro run the following:
 
      apt install default-jre
 
-Or to select run the following changing the version number:
+Or to select openjdk, run the following changing the version number:
 
     apt install openjdk-8-jre
 
