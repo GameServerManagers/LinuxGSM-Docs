@@ -29,6 +29,7 @@
 
 # Server Specific
 
+* [[Arma3]]
 * [[Rust]]
 * [[TeamSpeak]]
 
