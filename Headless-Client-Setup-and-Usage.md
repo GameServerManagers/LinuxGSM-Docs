@@ -5,9 +5,9 @@ Starting up a headless client and having it connect to your server is easy, Crea
 2. Edit your new `arma3HC` with your prefered text editor. You will need to add 12 to the `port=`, 2302 becomes 2314 and so on. Under `params=` you will need to add the following `-client -connect=your.server.ip:port` do not use 127.0.0.1 for the ip. You can remove `-ip=${ip} -netlogs -bepath=${bepath}` Change `servicename="arma3-server"` to `servicename="arma3-HC"`.  
   
 3. Navigate to your `cfg` directory. `cd location-of-arma3server-script/serverfiles/cfg` by default. Edit your `arma3-server.server.cfg` with your preferred text editor. Add or edit the lines 
-`headlessClient[]={"xxx.xxx.xxx.xxx"};
-localClient[]={xxx.xxx.xxx.xxx};
-battleyeLicense=1;'  
+`headlessClient[]={"xxx.xxx.xxx.xxx"};  
+localClient[]={xxx.xxx.xxx.xxx};  
+battleyeLicense=1;`  
   
 Where xxx.xxx.xxx.xxx is the PUBLIC IP of the server, do not use 127.0.0.1. ***DO NOT USE `localClient[]=` UNLESS THE HEADLESS CLIENT AND SERVER ARE ON THE SAME MACHINE OR LAN***  
   
