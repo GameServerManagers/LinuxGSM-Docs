@@ -15,4 +15,4 @@ Where xxx.xxx.xxx.xxx is the PUBLIC IP of the server, do not use 127.0.0.1. ***D
   
 5. Start your server with `./arma3server start` Start your headless client with `./arma3HC start`.  
   
-Only a logged in admin can see the headless clients in the player menu on the server. The headless client will connect and automatically assume the first available headless client slot. ***In version 1.62 the PBO signature detection for headless clients is broken on linux, they will be kicked by the server. This is fixed in the dev branch update 1.65.138087.***
+Only a logged in admin can see the headless clients in the player menu on the server. The headless client will connect and automatically assume the first available headless client slot. ***In version 1.62 the PBO signature detection for headless clients is broken on linux, they will be kicked by the server. This is fixed in the dev branch update 1.65.138087. https://twitter.com/FoltynD/status/769181447907311616 ***
