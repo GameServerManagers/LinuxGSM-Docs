@@ -20,6 +20,7 @@
 * [[Start-Parameters]]
 
 # Game Info
+* [[Arma 3]]
 * [[Unreal Tournament 99]]
 * [[Unreal Tournament 2004]]
 * [[TeamSpeak 3]]
