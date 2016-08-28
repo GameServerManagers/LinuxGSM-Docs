@@ -1,45 +1,60 @@
-# Getting Started
-* [[Usage]]
+# Command List
 * [[Command-list]]
-* [[FAQ]]
 
-# Features
-* [[Installer]]
-* [[Start-Stop-Restart-commands]]
-* [[Monitor]]
-* [[Alerts]]
-* [[Update]]
-* [[Console]]
+## Standard Commands
 * [[Backup]]
+* [[Console]]
 * [[Details]]
-* [[FastDL]]
+* [[Install]]
+* [[Monitor]]
+* [[Start-Stop-Restart-commands]]
+* [[Update]]
 
+## Game Specific Commands
+* [[change-password]]
+* [[fastdl]]
+* [[map-compressor]]
 
-# Advanced
-* [[Automation]] (Cronjobs)
-* [[Boot-Startup]]
-* [[Default Ports]]
-* [[glibc]]
-* [GSLT](Game-Server-Login-Token)
-* [[gsquery.py]]
+# LinuxGSM
 * [[Multiple Servers]]
 * [[Start-Parameters]]
-* [[Tmux]]
-* [[Workshop]]
 
-# Server Specific
-
-* [[Arma3]]
+# Game Specific
+* [[Unreal Tournament 99]]
+* [[Unreal Tournament 2004]]
+* [[Teamspeak 3]]
 * [[Rust]]
-* [[TeamSpeak]]
+* [[Don't Starve Together]]
 
-# Linux good practice
+# SteamCMD
+* [[SteamCMD]]
+* [[Workshop]]
+* [[GSLT]]
 
-* [[Firewalls]]
-* [[FTP]]
-* [[Ownership]]
+# Automation
+* [[Cronjobs]]
+* [[On-Boot]]
+
+# Alerts
+* [[Email]]
+* [[Pushbullet]]
+
+# Requirements
+* [[Tmux]]
+* [[glibc]]
+* [[java]]
+
+# Linux
 * [[Permissions]]
-* [[Safety]]
+* [[File Ownership]]
+* [[FTP/SCP]]
 
 # Developers
+* [[LGSM Exit Codes]]
+* [[gsquery.py]]
 * [[New Server]]
+* command_stop.sh
+
+#Misc
+* [[Getting Started]]
+* [[Usage]]
