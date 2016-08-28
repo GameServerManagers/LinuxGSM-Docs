@@ -9,6 +9,25 @@ So during the install process, unless you need it, don't focus too hard on it, j
 
 You'll find some clues on how to use it here https://www.digitalocean.com/community/questions/setup-teamspeak-server-ubuntu-15-04
 
+### tsdns
+
+Tsdns is a system allowing you to redirect a domain name to a given TeamSpeak port. Note that if you're using the default port, you don't need to provide the port when you're giving your server address, you can use the IP or domain name directly. Tsdns is handy only if you're hosting multiple TeamSpeak servers on a single machine.
+
+You can display the documentation with
+````
+cat ~user/serverfiles/tsdns/tsdns_settings.ini.sample
+````
+
+You might find [additional information here](http://lastconnect.net/en/tsdnsdoc/).
+
+Then you can copy the sample, edit it accordingly and restart your ts3server to apply the changes.
+````
+cd serverfiles/tsdns/
+cp tsdns_settings.ini.sample tsdns_settings.ini
+nano tsdns_settings.ini
+cd ~
+./ts3server restart
+````
 
 ## Known issues
 
