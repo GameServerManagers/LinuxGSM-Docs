@@ -6,16 +6,24 @@
 <h2>Hassle Free Dedicated Servers</h2>
 Game servers traditionally are not easy to manage yourself. Admins often have to spend hours just messing around trying to get their server working. LGSM is designed to be a simple as possible allowing Admins to spend less time on management and more time on the fun stuff.
 
-<h2>Main features</h2>
+<h2>Features</h2>
 <ul>
 <li>Simple installer</li>
 <li>Monitor</li>
-<li>Server alerts</li>
-<li>Server updater</li>
+<li>Alerts (Email/Pushbullet)</li>
+<li>Updater</li>
 <li>Backups</li>
 <li>Console (tmux)</li>
 <li>Server details</li>
-<li>Simple controls</li>
+</ul>
+<h2>Benefits</h2>
+<ul>
+<li>Easy to install</li>
+<li>Simple CLI</li>
+<li>Well documented</li>
+<li>Automated</li>
+<li>Open source</li>
+<li>Compatible</li>
 </ul>
 
 <h2>Compatibility</h2>
