@@ -1,4 +1,4 @@
-# Command List
+# Commands
 * [[Command-list]]
 
 ## Standard Commands
@@ -10,7 +10,7 @@
 * [[start-stop-restart]]
 * [[update]]
 
-## Game Specific Commands
+## Game Commands
 * [[change-password]]
 * [[fastdl]]
 * [[map-compressor]]
