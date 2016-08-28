@@ -1,3 +1,4 @@
+# Headless Client Setup and Usage
 Starting up a headless client and having it connect to your server is easy, Creating a mission that uses the HC is not. This guide handles the setup and connection ONLY. ***All references to `arma3server` are referring to the script you use to start your server, not the server executable itself unless noted.***  
   
 1. Navigate to the directory containing your `arma3server` script. Create a copy of `arma3server` with a new name, in this example we will use `arma3HC`. `cp arma3server arma3HC`  
