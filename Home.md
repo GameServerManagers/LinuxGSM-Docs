@@ -11,7 +11,7 @@ Game servers traditionally are not easy to manage yourself. Admins often have to
 	<li>[[Backup]]</li>
 	<li>[[Console]]</li>
 	<li>[[Details]]</li>
-	<li> [Installer](install)</li>
+	<li>[[Install]]</li>
 	<li>[[Monitor]]</li>
 	<li>[[Alerts]] (Email, Pushbullet)</li>
 	<li>[[Update]]</li>
