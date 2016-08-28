@@ -17,6 +17,7 @@
 
 # LinuxGSM
 * [[Multiple Servers]]
+* [[Ports]]
 * [[Start-Parameters]]
 
 # Game Info
