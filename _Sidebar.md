@@ -22,7 +22,7 @@
 # Game Specific
 * [[Unreal Tournament 99]]
 * [[Unreal Tournament 2004]]
-* [[Teamspeak 3]]
+* [[TeamSpeak 3]]
 * [[Rust]]
 * [[Don't Starve Together]]
 
