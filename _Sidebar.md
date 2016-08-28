@@ -2,13 +2,13 @@
 * [[Command-list]]
 
 ## Standard Commands
-* [[Backup]]
-* [[Console]]
-* [[Details]]
-* [[Install]]
-* [[Monitor]]
-* [[Start-Stop-Restart-commands]]
-* [[Update]]
+* [[backup]]
+* [[console]]
+* [[details]]
+* [[install]]
+* [[monitor]]
+* [[start-stop-restart]]
+* [[update]]
 
 ## Game Specific Commands
 * [[change-password]]
