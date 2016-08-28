@@ -33,5 +33,13 @@
 * [[Rust]]
 * [[TeamSpeak]]
 
+# Linux good practice
+
+* [[Firewalls]]
+* [[FTP]]
+* [[Ownership]]
+* [[Permissions]]
+* [[Safety]]
+
 # Developers
 * [[New Server]]
