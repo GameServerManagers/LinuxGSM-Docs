@@ -8,15 +8,16 @@ Game servers traditionally are not easy to manage yourself. Admins often have to
 
 <h2>Main features</h2>
 <ul>
-	<li>[[Backup]]</li>
-	<li>[[Console]]</li>
-	<li>[[Details]]</li>
-	<li>[[Install]]</li>
-	<li>[[Monitor]]</li>
-	<li>[[Alerts]] (Email, Pushbullet)</li>
-	<li>[[Update]]</li>
-	<li>[[Start-Stop-Restart-commands]]</li>
+<li>Simple installer</li>
+<li>Monitor</li>
+<li>Server alerts</li>
+<li>Server updater</li>
+<li>Backups</li>
+<li>Console (tmux)</li>
+<li>Server details</li>
+<li>Simple controls</li>
 </ul>
+
 <h2>Compatibility</h2>
 The Linux Game Server Managers are tested to work on the following Linux distros.
 <ul>
