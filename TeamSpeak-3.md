@@ -22,8 +22,6 @@ Note : Your server ID is usually 1
 
 see [[change-password]]
 
-Your server will reboot and generate a new password.
-
 ## Database and MariaDB
 
 TeamSpeak's database contains all user information, groups, and statistics from your server. 
