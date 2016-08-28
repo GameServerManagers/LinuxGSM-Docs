@@ -2,7 +2,13 @@
 
 Firewalls are part of a very complex topic, but let's try to sum up their purposes, usages, and limits.
 
-The main idea is to prevent certain kind of connections to happen, whether it's incoming our outgoing, IP and port restriction, or requests quotas. The goal is to protect against some sorts of hacking and DDoS. However the main downside is that unless you're using a very restrictive firewall, you'll probably waste more time than protect yourself against anything. For example, say you disallow any incoming connection to everything that isn't important, and leave everything important open to any IP without any restrictions (which is a common practice), then you just wasted your time. In this case, you'd better make sure that what's listening is secured and "voilà". If your server gets popular, chances are some people will try to shutdown your services using DDoS. If your server provider doesn't have an efficient DDoS protection, a good practice is to drop their packets to prevent your services from being shut down. There are some good practices that might help getting your servers more reliable. Here are some of them. 
+The main idea is to prevent certain kind of connections to happen, whether it's incoming our outgoing, IP and port restriction, or requests quotas. The goal is to protect against some sorts of hacking and DDoS.  
+However the main downside is that unless you're using a very restrictive firewall, you'll probably just waste time rather than protect yourself against anything. For example, say you disallow any incoming connection to everything that isn't important, and leave everything important open to any IP without any restrictions (which is a common practice), then you just wasted your time. Why ? Because you didn't change anything compared to the previous behavior. In this case, you'd better make sure that what's listening is secured and "voilà".  
+On the other hand, if you're only allowing certain IPs on certain ports, then your server is secured as hell, but almost nobody can connect to it.
+
+If your server gets popular, chances are some people will try to interrupt your services using DDoS. If your server provider doesn't have an efficient DDoS protection, a good practice is to try detecting and drop their packets to prevent your services from being shut down.
+
+There are some good practices that might help getting your servers more reliable. Here are some of them. 
 
 
 ## iptables
