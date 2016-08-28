@@ -6,21 +6,23 @@ The main idea is to prevent certain kind of connections to happen, whether it's 
 However the main downside is that unless you're using a very restrictive firewall, you'll probably just waste time rather than protect yourself against anything. For example, say you disallow any incoming connection to everything that isn't important, and leave everything important open to any IP without any restrictions (which is a common practice), then you just wasted your time. Why ? Because you didn't change anything compared to the previous behavior. In this case, you'd better make sure that what's listening is secured and "voilà".  
 On the other hand, if you're only allowing certain IPs on certain ports, then your server is secured as hell, but almost nobody can connect to it.
 
-If your server gets popular, chances are some people will try to interrupt your services using DDoS. If your server provider doesn't have an efficient DDoS protection, a good practice is to try detecting and drop their packets to prevent your services from being shut down.
+Firewalls can be hardware or software. Here, we're only going to talk about software firewalls, and especially, iptables.
+
+When your server gets popular, chances are some people will try to interrupt your services using DDoS. If your server provider doesn't have an efficient hardware based anti-DDoS protection, a common solution is to try detecting DDoS with firewall rules and drop their packets to prevent your services from being shut down.
 
 There are some good practices that might help getting your servers more reliable. Here are some of them. 
 
 
 ## iptables
 
-[iptables](http://ipset.netfilter.org/iptables.man.html)is the most used and supported Linux firewall. You'll find plenty of documentations all over the web. Firewall settings usually gets reset on a reboot, which is a good thing, because if you mess around you can still reboot. People use to make very basic scripts to apply the firewall settings back easily, and eventually start it on server boot. But protip: Whatever you do, make sure to test a firewall setting before setting it on boot, because you might make an error preventing you from connecting back to your machine... Don't laugh, i'm pretty sure it's not a legend, it might happen to you.
+[iptables](http://ipset.netfilter.org/iptables.man.html)is the most used and supported Linux firewall. You'll find plenty of documentations all over the web. Firewall settings usually gets reset on a reboot, which is a good thing, because if you mess with your config and can't connect anymore, you can still "just" reboot your machine. People usually make very basic scripts to apply the firewall settings back easily, and eventually start it on server boot. But protip: Whatever you do, make sure to test a firewall setting before setting it on boot, because you might make an error, preventing you from connecting back to your machine... Don't laugh, i'm pretty sure it's not a legend, it might happen.
 
 
 # DDoS protection
 
-As a reminder, a [distributed denial-of-service](https://en.wikipedia.org/wiki/Denial-of-service_attack) is the most retarded attack you could be subjected to, yet it can be very annoying, as the idea is to flood your server enough with corrupted requests in order to prevent your server to answer properly to useful ones.
+As a reminder, a [distributed denial-of-service](https://en.wikipedia.org/wiki/Denial-of-service_attack) is the most retarded attack you could be subjected to, yet it can be very annoying, as the idea is to flood your server with enough  corrupted requests to prevent it from answering properly to useful ones.
 
-Server providers may offer DDoS protection, like Arbor, that will allow you to not even notice most DDoS, unless the attacker have a really huge attack force, which is unlikely. On the other hand, what's likely is that your server provider that you're paying a few bucks a month will provide a very inefficient DDoS protection, either because they don't have a good one, or because you have to pay for a good protection. Sometimes, a bad protection can even have more negative effects than a little DDoS that you received, filtering useful packages, sometimes, totally blocking UDP traffic. So, chose your server provider carefully, because chances are you'll get DDoSed at some point. However, you can still improve a bad protection with some firewall rules.
+Server providers may offer DDoS protections, like Arbor, that will allow you to not even notice most DDoS, unless the attacker have a really huge attack force, which is unlikely. On the other hand, what's likely is that your server provider that you're paying a few bucks a month will provide a very inefficient DDoS protection, either because they don't have a good one, or because you have to pay for a good protection. Sometimes, a bad protection can even have more negative effects than a little DDoS that you received, filtering useful packages, sometimes, totally blocking UDP traffic. So, chose your server provider carefully, because chances are you'll get DDoSed at some point. However, you can still improve a bad protection with some firewall rules.
 
 ## Monitor and DDoS
 If your server is set properly, chances are you're running a monitor cronjob.  
