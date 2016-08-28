@@ -29,7 +29,7 @@
 # SteamCMD
 * [[SteamCMD]]
 * [[Workshop]]
-* [[GSLT]]
+* [GSLT]([Game Server Login Token])
 
 # Automation
 * [[Cronjobs]]
