@@ -45,9 +45,10 @@
 * [[java]]
 
 # Linux
-* [[Permissions]]
 * [[File Ownership]]
+* [[Firewalls]]
 * [[FTP/SCP]]
+* [[Permissions]]
 
 # Developers
 * [[LGSM Exit Codes]]
