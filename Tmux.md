@@ -68,7 +68,7 @@ tty:x:5:csgoserver
 
 ![Tmux Terminal](https://github.com/dgibbs64/linuxgsm/blob/master/images/screens/Tmux.png)
 
-# Upgrading installing latest tmux from source on CentOS 7
+# Installing the latest tmux from source on CentOS 7
 ## Preamble
 If you are on an older tmux version on CentOS you can upgrade to the latest version following this guide.
 
