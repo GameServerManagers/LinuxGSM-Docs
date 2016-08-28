@@ -19,7 +19,7 @@
 * [[Multiple Servers]]
 * [[Start-Parameters]]
 
-# Game Specific
+# Game Info
 * [[Unreal Tournament 99]]
 * [[Unreal Tournament 2004]]
 * [[TeamSpeak 3]]
