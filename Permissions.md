@@ -1,5 +1,5 @@
 ## Introduction
-In Linux, files are owned by a user and a group. On top of that, this user, group, and other people ones, have different permissions on these files. That's what we call file permissions.  
+In Linux, files are owned by a user and a group. On top of that, this user, group, and other ones (groups and users), have different permissions on these files. That's what we call file permissions.  
 You might need to change them. Here are some useful commands.
 
 # Permissions
