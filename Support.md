@@ -10,7 +10,7 @@ Wether you chose Discord or Steam forums, you need to help us helping you. We're
 We need to know : 
 
 * Which **game server** you are running
-* Is it a **dedicated server** or a **home server**
+* Your server **provider**
 * Your basic server **hardware** (CPU/RAM/Storage/Bandwidth)
 * Your Linux **distro and version**
 * The **output of ./gameserver details** (**remove passwords**. Use pastebin or equivalent)
