@@ -14,7 +14,7 @@ We need to know :
 * Your basic server **hardware** (CPU/RAM/Storage/Bandwidth)
 * Your Linux **distro and version**
 * The **output of ./gameserver details** (**remove passwords**. Use pastebin or equivalent)
-* Any useful **logs/home/user/log** (**remove passwords**. Use pastebin or equivalent)
+* Any useful **log in /home/user/log** (**remove passwords**. Use pastebin or equivalent)
 * Any useful **screenshot** if needed
 * What you tried to solve the issue
 * Any recent event that may be related to your issue
