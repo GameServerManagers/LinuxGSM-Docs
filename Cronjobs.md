@@ -32,17 +32,20 @@ You can replace them by numerical values standing for
 
 #### Every "x" time
 In order to run a command, such as "monitor" every "x" time, there is a simple solution.  
-Replace `*` by `*/x`, "x" being the desired numerical value.
+Replace `*` by `*/x`, "x" being the desired numerical value.  
+Think about defining smaller amounts of time to a fixed value when using this. For example, 
 
 #### Temporal values examples
 Every single minute  
 `* * * * *`
+Every 30 minutes  
+`*/30 * * * *`
 
 Every day at 5:10 PM  
 `10 17 * * *`
 
-Every hour   
-`* */1 * * *`
+Every hour
+`0 * * * *`
 
 Every Wednesday at 1 AM   
 `* 1 * * * 3`
