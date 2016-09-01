@@ -20,6 +20,7 @@ All these things will help us to solve your problem. If you will not provide thi
 Where to get Support
 --------------------
 There are various ways to get help and support with LGSM.
+
 http://gameservermanagers.com/support
 
 Remember to consider the best place to post your issue and search the internet for a solution before posting.
@@ -36,20 +37,25 @@ https://google.com
 Documentation
 =============
 The website and GitHub wiki is a useful resource for various LGSM documentation and related topics.
+
 https://gameservermanagers.com
+
 https://gameservermanagers.com/wiki
 
 General Support
 ===============
 LGSM has a Steam Group where you can get general support for LGSM related stuff.
+
 https://gameservermanagers.com/steam
 
 Bugs/Feature Requests
 =====================
 LGSM has a GitHub issues page where you can submit any bugs and feature suggestions or submit code. However, this is not for general game server support.
+
 https://gameservermanagers.com/issues
 
 Discord
 =======
 LGSM has a Discord server you can use to talk about anything LGSM related.
+
 https://gameservermanagers.com/discord
