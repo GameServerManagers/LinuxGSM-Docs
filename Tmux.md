@@ -115,6 +115,11 @@ If you are on an older tmux version on CentOS you can upgrade to the latest vers
 1. yum install ncurses-devel
 2. yum install glibc-static
 
+* If you encounter `protocol version mismatch (client 8, server 7)`, you need to kill previously opened tmux sessions.
+
+1. pgrep tmux
+2. kill <pid-number>
+
 ## Note on live servers
 
 You can install tmux while the server are running, however restarting/stopping them will not be possible
