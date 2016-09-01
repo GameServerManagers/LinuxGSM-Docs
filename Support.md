@@ -9,12 +9,12 @@ Wether you chose Discord or Steam forums, you need to help us helping you. We're
 
 We need to know : 
 
+* Which **game server** you are running
 * Is it a **dedicated server** or a **home server**
 * Your basic server **hardware** (CPU/RAM/Storage/Bandwidth)
 * Your Linux **distro**
-* Which **game server** you are running
 * The **output of ./gameserver details** (**remove passwords**. Use pastebin or equivalent)
-* Any useful **logs**/home/user/log (use pastebin or equivalent)
+* Any useful **logs/home/user/log** (**remove passwords**. Use pastebin or equivalent)
 * Any useful **screenshot** if needed
 * What you tried to solve the issue
 * Any recent event that may be related to your issue
