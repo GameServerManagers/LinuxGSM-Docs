@@ -55,7 +55,7 @@ Every day at 5:10 PM
 Every Wednesday at 1 AM   
 `* 1 * * * 3`
 
-Every five days at 1 AM
+Every five days at 1 AM  
 `* 1 */5 * *`
 
 ### Cronjob generator
