@@ -120,7 +120,7 @@ Here is an example of a root based cronjob to monitor your server every 3 minute
 ####CRONJOBS####
 
 ###TeamSpeak###
-# TS3TeraGeek
+# TS3Community
 */1 * * * *  su - ts3server -c '/home/ts3server/ts3server monitor' > /dev/null 2>&1
 30 6 * * *  su - ts3server -c '/home/ts3server/ts3server update' > /dev/null 2>&1
 0 0 * * 0 su - ts3server -c '/home/ts3server/ts3server uf' > /dev/null 2>&1
