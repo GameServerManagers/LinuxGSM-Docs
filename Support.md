@@ -3,6 +3,7 @@ Find out the best way we can help you.
 Getting Support
 -----------
 We want to help out server admins as best we can. However, our time is limited which is best spent on developing LGSM. Patience is also wearing thin on unhelpful posts. So please help us by providing the following information when posting to help us to resolve YOUR issue.
+
 If you are a beginner and do not know how to provide those details, just tell us so that we can help you provide it.
 
 * Which **game server** you are running (e.g Rust/CS:GO).
