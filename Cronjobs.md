@@ -25,7 +25,7 @@ If you with to change crontab's text editor, you can run
 **Note**: The ` >/dev/null 2>&1` is required to mute the execution (don't save or send output)
 
 ### Temporal values 
-`*` can be considered as a "bypass" value.  
+`*` can be considered as "bypass" values.  
 You can replace them by numerical values standing for  
 **minutes** - **hours** (24h format) - **days** - **month** - **day of the week** (Sunday =0 to Saturday =6)
 
