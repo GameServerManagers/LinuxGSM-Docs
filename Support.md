@@ -6,9 +6,7 @@
 ## How to ask properly for support...
 ... and get your problem solved faster.
 
-Whether you chose Discord or Steam forums, you need to help us helping you by providing relevant info.  
-We're not wizards in any way, we don't have a crystal ball allowing us to solve any problem instantly.  
-If you don't bother providing information, why would anyone bother helping you ?  
+We want to help out server admins as best we can. However our time is limited and patience wearing thin on unhelpful posts. So please help us by providing the following infomation when posting to help us to resolve YOUR issue.
 
 **PLEASE, ELABORATE YOUR ISSUE**
 
