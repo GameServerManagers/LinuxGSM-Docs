@@ -1,4 +1,4 @@
-Find out the best way we can help you
+Find out the best way we can help you.
 
 Getting Support
 -----------
