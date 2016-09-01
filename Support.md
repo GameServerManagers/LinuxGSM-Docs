@@ -1,3 +1,5 @@
+Find out the best way we can help you
+
 Getting Support
 -----------
 We want to help out server admins as best we can. However, our time is limited which is best spent on developing LGSM. Patience is also wearing thin on unhelpful posts. So please help us by providing the following information when posting to help us to resolve YOUR issue.
