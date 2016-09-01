@@ -36,8 +36,9 @@ Replace `*` by `*/x`, "x" being the desired numerical value.
 Think about defining smaller amounts of time to a fixed value when using this. For example, 
 
 #### Temporal values examples
-Every single minute  
+Every single minute    
 `* * * * *`
+
 Every 30 minutes  
 `*/30 * * * *`
 
