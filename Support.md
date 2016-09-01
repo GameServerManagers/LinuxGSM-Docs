@@ -3,22 +3,35 @@
 1. Discord to chat with us directly https://discord.gg/0i9cmXVacvXicNl7
 2. The Steam group forum https://steamcommunity.com/groups/linuxgsm/discussions
 
-## PLEASE, ELABORATE YOUR ISSUE
+## How to ask properly for support...
+... and get your problem solved faster.
 
-Wether you chose Discord or Steam forums, you need to help us helping you. We're not wizards in any way, we don't have a crystal ball allowing us to solve any problem instantly.
+Whether you chose Discord or Steam forums, you need to help us helping you by providing relevant info.  
+We're not wizards in any way, we don't have a crystal ball allowing us to solve any problem instantly.  
+If you don't bother providing information, why would anyone bother helping you ?  
 
-We need to know : 
+**PLEASE, ELABORATE YOUR ISSUE**
 
-* Which **game server** you are running
-* Your server **provider**
+### Required information
+
+1. Which **game server** you are running
+2. Your **server type** (home server, dedicated, VPS, VM)
+3. Your Linux **distro and version**
+4. The **output of ./gameserver details** (**remove passwords**. Use pastebin or equivalent)
+5. Any useful **log in /home/user/log** (**remove passwords**. Use pastebin or equivalent)
+6. What is **your issue**
+
+If you're a beginner and don't know how to provide those details, just tell us so that wen can help you providing it.
+
+### Optional information
+
+* Your command-line **Linux level**
+* Your gameserver **main script** itself
 * Your basic server **hardware** (CPU/RAM/Storage/Bandwidth)
-* Your Linux **distro and version**
-* The **output of ./gameserver details** (**remove passwords**. Use pastebin or equivalent)
-* Any useful **log in /home/user/log** (**remove passwords**. Use pastebin or equivalent)
-* Any useful **screenshot** if needed
+* Any useful **screenshot**
 * What you tried to solve the issue
 * Any recent event that may be related to your issue
-* Any other relevent info you think will help
+* Any other relevant info you think will help
 
 
 
