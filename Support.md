@@ -1,44 +1,52 @@
-# How to get help and support
+Getting Support
+-----------
+We want to help out server admins as best we can. However, our time is limited which is best spent on developing LGSM. Patience is also wearing thin on unhelpful posts. So please help us by providing the following information when posting to help us to resolve YOUR issue.
+If you are a beginner and do not know how to provide those details, just tell us so that we can help you provide it.
 
-1. Discord to chat with us directly https://discord.gg/0i9cmXVacvXicNl7
-2. The Steam group forum https://steamcommunity.com/groups/linuxgsm/discussions
+* Which **game server** you are running (e.g Rust/CS:GO).
+* Your Linux **distro** and **version** (e.g Ubuntu 16.04).
+* Any useful **logs** in /home/gameserver/logs (use pastebin or equivalent).
+* The output of **./gameserver details** (remove passwords. Use pastebin or equivalent).
+* Any useful **screenshots**.
+* Your basic **server hardware** (CPU/RAM/Storage/Bandwidth).
+* Any **solutions** you have already tried.
+* Any other **useful** or **relevant information** you think will help.
 
-## How to ask properly for support...
-... and get your problem solved faster.
+All these things will help us to solve your problem. If you will not provide this information we are unable to help you. Thank you.
 
-We want to help out server admins as best we can. However our time is limited and patience wearing thin on unhelpful posts. So please help us by providing the following infomation when posting to help us to resolve YOUR issue.
+Where to get Support
+--------------------
+There are various ways to get help and support with LGSM.
+http://gameservermanagers.com/support/
 
-**PLEASE, ELABORATE YOUR ISSUE**
+Remember to consider the best place to post your issue and search the internet for a solution before posting.
 
-### Required information
+Google
+======
+We recommend ALWAYS using Google before posting at all. There are many people who have probably already had the same issue you have or asked the same questions. Putting your issue in to Google first could save yourself and us time if resolving your issue. Leaving us more time to develop LGSM.
 
-1. Which **game server** you are running
-2. Your **server type** (home server, dedicated, VPS, VM)
-3. Your Linux **distro and version**
-4. The **output of ./gameserver details** (**remove passwords**. Use pastebin or equivalent)
-5. Any useful **log in /home/user/log** (**remove passwords**. Use pastebin or equivalent)
-6. What is **your issue**
+> “Google is how I learnt and still learn to use BASH and develop LGSM”
+> – Daniel Gibbs
 
-If you're a beginner and don't know how to provide those details, just tell us so that wen can help you providing it.
+https://google.com
 
-### Optional information
+Documentation
+=============
+The website and GitHub wiki is a useful resource for various LGSM documentation and related topics.
+https://gameservermanagers.com
+https://gameservermanagers.com/wiki
 
-* Your command-line **Linux level**
-* Your gameserver **main script** itself
-* Your basic server **hardware** (CPU/RAM/Storage/Bandwidth)
-* Any useful **screenshot**
-* What you tried to solve the issue
-* Any recent event that may be related to your issue
-* Any other relevant info you think will help
+General Support
+===============
+LGSM has a Steam Group where you can get general support for LGSM related stuff.
+https://gameservermanagers.com/steam
 
+Bugs/Feature Requests
+=====================
+LGSM has a GitHub issues page where you can submit any bugs and feature suggestions or submit code. However, this is not for general game server support.
+https://gameservermanagers.com/issues
 
-
-# How to report a bug
-
-* Github issues FOR BUG REPORTING ONLY https://github.com/GameServerManagers/LinuxGSM/issues
-
-### Important note  
-Before posting to Github, make sure you read our documentation and you checked that the issue comes from LGSM or at least requires us to check the code if you're posting to Github.  
-We don't provide help about non-script issues on Github anymore.  
-
-If you're smart enough to find a bug, be smart enough to provide enough information for us to fully reproduce the issue and solve it. And since we're on Github, you can also make a pull request, it'll be examined, tested and probably merged if it's a good one.
+Discord
+=======
+LGSM has a Discord server you can use to talk about anything LGSM related.
+https://gameservermanagers.com/discord
