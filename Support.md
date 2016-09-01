@@ -20,7 +20,7 @@ All these things will help us to solve your problem. If you will not provide thi
 Where to get Support
 --------------------
 There are various ways to get help and support with LGSM.
-http://gameservermanagers.com/support/
+http://gameservermanagers.com/support
 
 Remember to consider the best place to post your issue and search the internet for a solution before posting.
 
