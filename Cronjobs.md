@@ -177,4 +177,5 @@ Here is an example of a root based cronjob to monitor your server every 3 minute
 * It's a good practice to comment cronjob lines of a server that you momentarily want to shutdown in order to add back cronjobs more easily afterwards.
 * Some servers crash more often, so it's a good idea to monitor them more frequently. However, you shouldn't monitor faster than once every 2 minutes, otherwise the monitor function might behave inconsistently, and your server might bootloop.
 * You can also sparingly run "every x time" update checks, for games getting updated a lot.
+* As you can see for the commented Rust server, you can also run your own custom scripts if the task is more complicated than just an LGSM command.
 * Ultimately, it's wise to add an "uf" cronjob (for "update-functions") in order to keep LGSM up to date.
