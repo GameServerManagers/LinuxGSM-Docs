@@ -97,8 +97,8 @@ Here is an example of a root based cronjob to monitor your server every 3 minute
 #Vanilla
 */5 * * * * su - gameserver -c '/home/gameserver/gameserver monitor' > /dev/null 2>&1
 */30 * * * * su - gameserver -c '/home/gameserver/gameserver update' > /dev/null 2>&1
-30 6 * * *  su - gameserver -c '/home/gameserver/gameserverfu' > /dev/null 2>&1
-0 0 * * 0 su - gameserver -c '/home/gameserver/gameserverupdate-functions' > /dev/null 2>&1
+30 6 * * *  su - gameserver -c '/home/gameserver/gameserver force-update' > /dev/null 2>&1
+0 0 * * 0 su - gameserver -c '/home/gameserver/gameserver update-functions' > /dev/null 2>&1
 ````
 
 ### Real life multiple servers example
@@ -110,66 +110,66 @@ Here is an example of a root based cronjob to monitor your server every 3 minute
 # TS3TeraGeek
 */1 * * * *  su - ts3server -c '/home/ts3server/ts3server monitor' > /dev/null 2>&1
 30 6 * * *  su - ts3server -c '/home/ts3server/ts3server update' > /dev/null 2>&1
-0 0 * * 0 su - ts3server -c '/home/ts3server/ts3server update-functions' > /dev/null 2>&1
+0 0 * * 0 su - ts3server -c '/home/ts3server/ts3server uf' > /dev/null 2>&1
 
 ###GMOD###
 ## BronySB
 */2 * * * *  su - gmodbronysb -c '/home/gmodbronysb/gmodserver monitor' > /dev/null 2>&1
 0 5 * * *  su - gmodbronysb -c '/home/gmodbronysb/gmodserver fu' > /dev/null 2>&1
-0 0 * * 0 su - gmodbronysb -c '/home/gmodbronysb/gmodserver update-functions' > /dev/null 2>&1
+0 0 * * 0 su - gmodbronysb -c '/home/gmodbronysb/gmodserver uf' > /dev/null 2>&1
 ## BronyRP
 */2 * * * *  su - gmodbronyrp -c '/home/gmodbronyrp/gmodserver monitor' > /dev/null 2>&1
 0 5 * * *  su - gmodbronyrp -c '/home/gmodbronyrp/gmodserver fu' > /dev/null 2>&1
-0 0 * * 0 su - gmodbronyrp -c '/home/gmodbronyrp/gmodserver update-functions' > /dev/null 2>&1
+0 0 * * 0 su - gmodbronyrp -c '/home/gmodbronyrp/gmodserver uf' > /dev/null 2>&1
 # ProBuild
 */2 * * * *  su - gmodprobuild -c '/home/gmodprobuild/gmodserver monitor' > /dev/null 2>&1
 0 5 * * *  su - gmodprobuild -c '/home/gmodprobuild/gmodserver fu' > /dev/null 2>&1
-0 0 * * 0 su - gmodprobuild -c '/home/gmodprobuild/gmodserver update-functions' > /dev/null 2>&1
+0 0 * * 0 su - gmodprobuild -c '/home/gmodprobuild/gmodserver uf' > /dev/null 2>&1
 # Prophunt
 */2 * * * *  su - gmodprophunt -c '/home/gmodprophunt/gmodserver monitor' > /dev/null 2>&1
 0 5 * * *  su - gmodprophunt -c '/home/gmodprophunt/gmodserver fu' > /dev/null 2>&1
-0 0 * * 0 su - gmodprophunt -c '/home/gmodprophunt/gmodserver update-functions' > /dev/null 2>&1
+0 0 * * 0 su - gmodprophunt -c '/home/gmodprophunt/gmodserver uf' > /dev/null 2>&1
 # Murder
 */2 * * * *  su - gmodmurder -c '/home/gmodmurder/gmodserver monitor' > /dev/null 2>&1
 0 5 * * *  su - gmodmurder -c '/home/gmodmurder/gmodserver fu' > /dev/null 2>&1
-0 0 * * 0 su - gmodmurder -c '/home/gmodmurder/gmodserver update-functions' > /dev/null 2>&1
+0 0 * * 0 su - gmodmurder -c '/home/gmodmurder/gmodserver uf' > /dev/null 2>&1
 # Fireworks
 */2 * * * *  su - gmodfireworks -c '/home/gmodfireworks/gmodserver monitor' > /dev/null 2>&1
 0 5 * * *  su - gmodfireworks -c '/home/gmodfireworks/gmodserver fu' > /dev/null 2>&1
-0 0 * * 0 su - gmodmurder -c '/home/gmodmurder/gmodserver update-functions' > /dev/null 2>&1
+0 0 * * 0 su - gmodmurder -c '/home/gmodmurder/gmodserver uf' > /dev/null 2>&1
 # SledBuild
 */2 * * * *  su - gmodsled -c '/home/gmodsled/gmodserver monitor' > /dev/null 2>&1
 0 5 * * *  su - gmodsled -c '/home/gmodsled/gmodserver fu' > /dev/null 2>&1
-0 0 * * 0 su - gmodsled -c '/home/gmodsled/gmodserver update-functions' > /dev/null 2>&1
+0 0 * * 0 su - gmodsled -c '/home/gmodsled/gmodserver uf' > /dev/null 2>&1
 
 ###CSS###
 # FFA
 */2 * * * *  su - cssffa -c '/home/cssffa/cssserver monitor' > /dev/null 2>&1
 30 5 * * *  su - cssffa -c '/home/cssffa/cssserver fu' > /dev/null 2>&1
-0 0 * * 0 su - cssffa -c '/home/cssffa/cssserver update-functions' > /dev/null 2>&1
+0 0 * * 0 su - cssffa -c '/home/cssffa/cssserver uf' > /dev/null 2>&1
 # GunGame
 */2 * * * *  su - cssgungame -c '/home/cssgungame/cssserver monitor' > /dev/null 2>&1
 30 5 * * *  su - cssgungame -c '/home/cssffa/cssserver fu' > /dev/null 2>&1
-0 0 * * 0 su - cssffa -c '/home/cssffa/cssserver update-functions' > /dev/null 2>&1
+0 0 * * 0 su - cssffa -c '/home/cssffa/cssserver uf' > /dev/null 2>&1
 
 ###RUST###
 # Modded
 ## Server stopped
 #*/5 * * * * su - rustmodded -c '/home/rustmodded/rustserver monitor' > /dev/null 2>&1
 #30 6 * * *  su - rustmodded -c '/home/rustmodded/zip-updater/zip-updater' > /dev/null 2>&1
-#0 0 * * 0 su - rustmodded -c '/home/rustmodded/rustserver update-functions' > /dev/null 2>&1
+#0 0 * * 0 su - rustmodded -c '/home/rustmodded/rustserver uf' > /dev/null 2>&1
 
 #Vanilla
 */5 * * * * su - rustvanilla -c '/home/rustvanilla/rustserver monitor' > /dev/null 2>&1
 */30 * * * * su - rustvanilla -c '/home/rustvanilla/rustserver update' > /dev/null 2>&1
 30 6 * * *  su - rustvanilla -c '/home/rustvanilla/rustserver fu' > /dev/null 2>&1
-0 0 * * 0 su - rustvanilla -c '/home/rustvanilla/rustserver update-functions' > /dev/null 2>&1
+0 0 * * 0 su - rustvanilla -c '/home/rustvanilla/rustserver uf' > /dev/null 2>&1
 
 ###ARK###
 */30 * * * * su - arkserver -c '/home/arkserver/arkserver monitor' > /dev/null 2>&1
 0 6 * * 5  su - arkserver -c '/home/arkserver/arkserver fu' > /dev/null 2>&1
 * */1 * * * su - arkserver -c '/home/arkserver/arkserver update' > /dev/null 2>&1
-0 0 * * 0 su - arkserver -c '/home/arkserver/arkserver update-functions' > /dev/null 2>&1
+0 0 * * 0 su - arkserver -c '/home/arkserver/arkserver uf' > /dev/null 2>&1
 ````
 
 ### Protips
@@ -177,3 +177,4 @@ Here is an example of a root based cronjob to monitor your server every 3 minute
 * It's a good practice to comment cronjob lines of a server that you momentarily want to shutdown in order to add back cronjobs more easily afterwards.
 * Some servers crash more often, so it's a good idea to monitor them more frequently. However, you shouldn't monitor faster than once every 2 minutes, otherwise the monitor function might behave inconsistently, and your server might bootloop.
 * You can also sparingly run "every x time" update checks, for games getting updated a lot.
+* Ultimately, it's wise to add an "uf" cronjob (for "update-functions") in order to keep LGSM up to date.
