@@ -149,8 +149,8 @@ Here is an example of a root based cronjob to monitor your server every 3 minute
 0 0 * * 0 su - cssffa -c '/home/cssffa/cssserver uf' > /dev/null 2>&1
 # GunGame
 */2 * * * *  su - cssgungame -c '/home/cssgungame/cssserver monitor' > /dev/null 2>&1
-30 5 * * *  su - cssgungame -c '/home/cssffa/cssserver fu' > /dev/null 2>&1
-0 0 * * 0 su - cssffa -c '/home/cssffa/cssserver uf' > /dev/null 2>&1
+30 5 * * *  su - cssgungame -c '/home/cssgungame/cssserver fu' > /dev/null 2>&1
+0 0 * * 0 su - cssgungame -c '/home/cssgungame/cssserver uf' > /dev/null 2>&1
 
 ###RUST###
 # Modded
