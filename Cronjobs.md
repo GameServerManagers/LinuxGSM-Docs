@@ -45,7 +45,7 @@ Every 30 minutes
 Every hour  
 `0 * * * *`
 
-Every two hours
+Every two hours  
 `0 */2 * * *`
 
 Every day at 5:10 PM  
