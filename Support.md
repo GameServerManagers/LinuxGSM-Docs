@@ -12,7 +12,7 @@ We need to know :
 * Which **game server** you are running
 * Is it a **dedicated server** or a **home server**
 * Your basic server **hardware** (CPU/RAM/Storage/Bandwidth)
-* Your Linux **distro**
+* Your Linux **distro and version**
 * The **output of ./gameserver details** (**remove passwords**. Use pastebin or equivalent)
 * Any useful **logs/home/user/log** (**remove passwords**. Use pastebin or equivalent)
 * Any useful **screenshot** if needed
