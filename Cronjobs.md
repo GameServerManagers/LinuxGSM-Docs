@@ -94,12 +94,17 @@ Here is an example of a root based cronjob to monitor your server every 3 minute
 ####CRONJOBS####
 
 ### Game Name
-#Vanilla
+#Server Name
 */5 * * * * su - gameserver -c '/home/gameserver/gameserver monitor' > /dev/null 2>&1
 */30 * * * * su - gameserver -c '/home/gameserver/gameserver update' > /dev/null 2>&1
 30 6 * * *  su - gameserver -c '/home/gameserver/gameserver force-update' > /dev/null 2>&1
 0 0 * * 0 su - gameserver -c '/home/gameserver/gameserver update-functions' > /dev/null 2>&1
 ````
+
+* Will monitor your server every 5 minutes
+* Will check for an update every 30 minutes, update and restart only if an update is detected.
+* Will restart and check for an update every day at 6:30 AM
+* Will update your LGSM functions every Sunday at midnight.
 
 ### Real life multiple servers example
 
