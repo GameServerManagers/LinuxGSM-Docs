@@ -61,3 +61,4 @@
 #Misc
 * [[Getting Started]]
 * [[Usage]]
+* [[Support]]
