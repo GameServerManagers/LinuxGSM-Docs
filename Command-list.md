@@ -5,7 +5,7 @@ Every command has a short version, also listed here.
 
 ### Installing
 
-For more info, see [[Installer]]
+For more info, see [[install]]
 
 `./gameserver install` or `./gameserver i`
 
