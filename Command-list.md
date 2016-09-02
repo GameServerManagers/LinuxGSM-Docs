@@ -45,19 +45,19 @@ For more info, see [[monitor]].
 
 ### Server info
 
-For more info, see [[details]]
+For more info, see [[details]].
 
 `./gameserver details` or `./gameserver dt`
 
 ### Console
 
-For more info, see [[console]]
+For more info, see [[console]].
 
 `./gameserver console` or `./gameserver c`
 
 ### Backup
 
-For more info, see [[backup]]
+For more info, see [[backup]].
 
 `./gameserver backup` or `./gameserver b`
 
@@ -68,18 +68,18 @@ For more info, see [[backup]]
 
 ### Teamspeak server
 
+For more info, see [[change-password]].
+
 `./ts3server change-password` or `./gameserver pw`
 
 Allows you to change the ServerAdmin password.
 
 ### Unreal Tournament 99 & 2004
+For more info, see [[map-compressor]].
 
 `./ut99server map-compressor` or `./ut99server mc`
 
 `./ut2k4server map-compressor` or `./ut2k4server mc`
-
-
-
 
 # Developer & debug commands
 
