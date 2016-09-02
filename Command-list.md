@@ -14,7 +14,7 @@ For more info, see [[install]]
 
 ### Start/Stop/Restart
 
-For more info, see [[Start-Stop-Restart-commands]]
+For more info, see [[Start-Stop-Restart]]
 
 `./gameserver start` or `./gameserver st`
 
