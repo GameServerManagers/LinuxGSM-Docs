@@ -5,7 +5,7 @@ Every command has a short version, also listed here.
 
 ### Installing
 
-For more info, see [[install]]
+For more info, see [[install]].
 
 `./gameserver install` or `./gameserver i`
 
@@ -24,7 +24,7 @@ For more info, see [[Start-Stop-Restart]]
 
 ### Updating
 
-[[Update]]
+For more info, see [[update]].
 
 `./gameserver update` or `./gameserver u`
 
@@ -35,7 +35,7 @@ For more info, see [[Start-Stop-Restart]]
 
 ### Monitoring
 
-[[Monitor]] and [[Email-Notifications]]
+For more info, see [[monitor]].
 
 `./gameserver monitor`
 `./gameserver m`
@@ -45,19 +45,19 @@ For more info, see [[Start-Stop-Restart]]
 
 ### Server info
 
-[[Details]]
+For more info, see [[details]]
 
 `./gameserver details` or `./gameserver dt`
 
 ### Console
 
-[[Console]]
+For more info, see [[console]]
 
 `./gameserver console` or `./gameserver c`
 
 ### Backup
 
-[[Backup]]
+For more info, see [[backup]]
 
 `./gameserver backup` or `./gameserver b`
 
