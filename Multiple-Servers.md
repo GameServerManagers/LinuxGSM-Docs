@@ -8,7 +8,7 @@ Running several servers is pretty easy as long as you follow this guide. There i
 
 ## Separate Installations
 
-Basically > Repeat the installation process with a different username and change the [[Default-Ports]] within the script.
+Basically > Repeat the installation process with a different username and change the [[Ports]] within the script.
 
 Here is an example of how you can do it.
 
@@ -20,7 +20,7 @@ Here is an example of how you can do it.
 
 4. Get your game script at http://gameservermanagers.com/
 
-5. Edit and configure your script to make sure your game server is using its own ports: `nano mygameserver` (For more information on how to configure ports, see [[Default-Ports]])
+5. Edit and configure your script to make sure your game server is using its own ports: `nano mygameserver` (For more information on how to configure ports, see [[Ports]])
 
 6. Install , and enjoy. 
 
@@ -59,7 +59,7 @@ Rename the servicename variable.
 
     servicename="game-server2"
 
-Change the server ports. See [[Default-Ports]]
+Change the server ports. See [[Ports]]
 
     serverport="27115"
     steamport="27150"
@@ -74,7 +74,7 @@ Alter the new configuration file to suite your needs.
 
 ## Same user, several installation folders
 
-If you're a jerk, and wish to install several servers within the same user... You can. However, it's not advised. You're probably gonna have to change the [[Default-Ports]], especially if those games are running the same engine. If you wish to run two servers for the same game, you're gonna have to change the servicename and config file names, just like for the previous method.
+If you're a jerk, and wish to install several servers within the same user... You can. However, it's not advised. You're probably gonna have to change the [[Ports]], especially if those games are running the same engine. If you wish to run two servers for the same game, you're gonna have to change the servicename and config file names, just like for the previous method.
 
 **What you're gonna end up with**
 Two directories:
@@ -93,7 +93,7 @@ Make sure that each server has its own folder.
     /home/username/server1
     /home/username/server2
 
-Go through the [[Installer]] process, being in each folder.
+Go through the [[install]] process, being in each folder.
 
 Edit your second server.
 
@@ -103,7 +103,7 @@ Rename the servicename variable.
 
     servicename="game-server2"
 
-Change the server ports. See [[Default-Ports]]
+Change the server ports. See [[Ports]]
 
     serverport="27115"
     steamport="27150"
