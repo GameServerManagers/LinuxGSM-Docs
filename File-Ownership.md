@@ -24,7 +24,7 @@ Change user and/or ownership for files and folders
 `chown`
 
 ### Syntax
-`chown -Args user /path/to/folder/or/file`
+`chown -Args user /path/to/folder/or/file`  
 `chown -Args user:group /path/to/folder/or/file`
 
 #### Recursive
