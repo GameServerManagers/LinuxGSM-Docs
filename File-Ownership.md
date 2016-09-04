@@ -1,7 +1,7 @@
 # Introduction
 
 Linux files and folders always belong to a user and group. That is what we call ownership.  
-Here are some commands to change them.
+Here are some commands to change them with elevated privileges (root/sudo).
 
 
 # Group ownership
