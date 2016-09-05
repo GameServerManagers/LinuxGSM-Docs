@@ -9,8 +9,8 @@ Note : A good practice, is to use a secured encryption key. Otherwise, it'd be t
 #### Advantages
 
 * Encrypted: less chances for your data to get stolen
-* Nothing to install. 
-* Works the like any other than FTP server
+* Nothing to install
+* Works like any other than FTP server
 * Compatible with the popular Filezilla  
 * You can login to users out of the box
 
