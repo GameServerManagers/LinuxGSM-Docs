@@ -1,9 +1,32 @@
+# SFTP
+
+SFTP is the transfer protocol included with SSH. Unlike FTP, it benefits from encryption.  
+We can only advise to use SFTP.  
+scp is the corresponding command that you can use to transfer files over SSH.
+
+Note : A good practice, is to use a secured encryption key. Otherwise, it'd be theorically possible sniff your network and decode your traffic.
+
+#### Advantages
+
+* Encrypted: less chances for your data to get stolen
+* Nothing to install. 
+* Works the like any other than FTP server
+* Compatible with the popular Filezilla  
+* You can login to users out of the box
+
+#### How to use SFTP 
+
+* Connect like any FTP except it's on your SSH port (default 22)
+* Use your username / password
+* You might need to set protocol to SFTP in your FTP client.
+
+
 # Bad practice to avoid
 
 ## By all means, you should never 
 
 1. Connect to an FTP server as root unless there is a very good reason and you know what you're doing.
-2. Use unsecured FTP. Prefer SFTP.
+2. Use FTP anymore. Prefer SFTP.
 
 ### Root login to an FTP
 
@@ -18,22 +41,3 @@ Here is why you shouldn't
 * If you need to edit system config files, then do like everyone else : use an SSH text editor like "nano" or "vi". 
 * Set your FTP so that you can login as users with a valid shell from the machine. Eventually, disable root FTP login.
 * Oh, one more thing... Don't use FTP, use SFTP, at the very least.
-
-
-# SFTP
-
-SFTP is the transfer protocol included with SSH. Unlike FTP, it benefits from encryption.  
-We can only advise to use SFTP.
-
-A good thing though, would be to use a secured encryption key. Otherwise, it'd be theorically possible sniff your network and decode your traffic. Still, it'd already be way harder than for an FTP server.
-
-#### Advantages
-
-* Encrypted: less chances for your data to get stolen
-* Nothing to install. It will work the exact same way than FTP, using Filezilla or whatever FTP client.  
-* You can login to user's FTP right out of the box
-
-#### How to use SFTP 
-
-* You might need to create a bookmark and tell it to connect as SFTP.  
-* Then just use your username / password, same IP than your FTP, and same port as your SSH connection.
