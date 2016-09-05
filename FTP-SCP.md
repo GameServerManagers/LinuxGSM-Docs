@@ -11,7 +11,7 @@ Note : A good practice, is to use a secured encryption key. Otherwise, it'd be t
 * Encrypted: less chances for your data to get stolen
 * Nothing to install
 * Works like any other than FTP server
-* Compatible with the popular Filezilla  
+* Compatible with the populars Filezilla & WinSCP
 * You can login to users out of the box
 
 #### How to use SFTP 
