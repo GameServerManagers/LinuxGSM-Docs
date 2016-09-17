@@ -63,13 +63,15 @@ port="11001"
 steamauthenticationport="8769"
 steammasterserverport="27019"
 
+# Server Details
+servicename="dst-server2"
 ```
 
 **Set all installation variables BEFORE running the `./dstserver1/2 install` commands.** You also should not change them afterwards. Feel free to change these settings but make sure that you set them to the same clusters. 
 
 For clarity reasons I recommend naming the master shard "Master".
 
-Lastly you have to start both servers. The order does not matter because the slave server will auto-retry to connect to the master server.
+Lastly you have to start both servers. The order does not matter because the slave server will auto-retry connecting to the master server.
 
 
 #### Guides / Documentations:
