@@ -44,6 +44,9 @@ cave="false"
 port="11000"
 steamauthenticationport="8768"
 steammasterserverport="27018"
+
+# Server Details
+servicename="dst-server1"
 ```
 
 dstserver2 (this will be the slave shard with a cave as level):
@@ -59,6 +62,7 @@ cave="true"
 port="11001"
 steamauthenticationport="8769"
 steammasterserverport="27019"
+
 ```
 
 **Set all installation variables BEFORE running the `./dstserver1/2 install` commands.** You also should not change them afterwards. Feel free to change these settings but make sure that you set them to the same clusters. 
