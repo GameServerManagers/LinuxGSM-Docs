@@ -32,3 +32,7 @@ To learn more about automation, see [[Automation]]
 ## Email notifications
 
 If you wish to get informed after a server was monitored down, see [[Email-Notifications]].
+
+## Boot startup
+
+You can use monitor to run your server at boot under certain conditions. See [[On-Boot]]
