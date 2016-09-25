@@ -36,7 +36,7 @@ If you're used to Apache2 and running websites , then that step is pretty straig
 
 **a)** Make a new virtual host pointing to /home/youruser/public_html, using a domain or subdomain
 
-Note : Apache2's mod "userdir" is a clever way if your server will run many game servers. Make it so that every "www" folder from every user has its website, which will be accessible with an address like http://yourwebsite.ltd/~username
+Note : Apache2's mod "userdir" is a clever way if your server will run many game servers. Make it so that every "public_html" folder from every user has its website, which will be accessible with an address like http://yourwebsite.ltd/~username
 
 **b)** Go to step 3
 
@@ -62,8 +62,8 @@ Edit everything between brackets {} (and remove the brackets) and paste this :
         ServerAdmin {adminemail@mail.com}
         ServerName {subdomain.domain.com}
         ServerAlias {subdomain.domain.com}
-        DocumentRoot /home/{youruser}/www
-        <Directory /home/{youruser}/www>
+        DocumentRoot /home/{youruser}/public_html
+        <Directory /home/{youruser}/public_html>
                 Options Indexes FollowSymLinks MultiViews
                 AllowOverride All
                 Require all granted
