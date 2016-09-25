@@ -26,15 +26,15 @@ Source engine games like TF2, HL2DM, CSS, CSGO, Garry's Mod (with more advanced 
 
 If you're using an older LGSM installation, run `./gameserver update-function`s or `./gameserver uf` to get the new FastDL feature.
 
-This will create a new folder in your game server's directory : www/fastdl
+This will create a new folder in your game server's directory : public_html/fastdl
 
-That way, you can make another folder into the www folder if you need to, like www/loadingurl
+That way, you can make another folder into the public_htmlfolder if you need to, like public_html/loadingurl
 
 #### 2) Share FastDL content with an HTTP server
 
 If you're used to Apache2 and running websites , then that step is pretty straight forward : 
 
-**a)** Make a new virtual host pointing to /home/youruser/www , using a domain or subdomain
+**a)** Make a new virtual host pointing to /home/youruser/public_html, using a domain or subdomain
 
 Note : Apache2's mod "userdir" is a clever way if your server will run many game servers. Make it so that every "www" folder from every user has its website, which will be accessible with an address like http://yourwebsite.ltd/~username
 
