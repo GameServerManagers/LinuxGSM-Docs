@@ -16,11 +16,11 @@ For that matter, LGSM warns you if you have less than 4GB available.
 It will also use constantly 50-65% of  one core from a Xeon E5-1650V3 (6 cores 12 threads, 3.8Ghz), regardless of the amount of people connected and with very few constructions on it. As most game servers, it seems like it's mainly monothread, so you'd better have some good monothread performance.
 
 ### Bandwidth
-Bandwidth shouldn't be an issue, aim for a 10-15mb/s+ connection minimum
+Bandwidth shouldn't be an issue, aim for a 10mb/s+ upload speed minimum
 
 ### Other notes
 The server autosave can cause lags, depending on your CPU and disk speed.
-It is highly recommended a dedicated server is used with Rust because of it's high system requirements.
+It is highly recommended a dedicated server is used with Rust because of its high system requirements.
 
 ### Conclusion
 Don't take a stupid server with 150 cores @1,2Ghz, prefer a quad/hexa core @3,3Ghz+, check benchmarks before choosing your server. CPU : good monothread performance ; RAM : 12-16GB and more ; avoid VPS.
@@ -37,7 +37,7 @@ So you need :
 ## Useful Links
 
 ### Manual Installation and general information
-* If you wish to use the manual way, i updated the Valve Rust wiki (that still needs some work) : https://developer.valvesoftware.com/wiki/Rust_Dedicated_Server
+* If you wish to use the manual way, i (UltimateByte) updated the Valve Rust wiki (that still needs some work) : https://developer.valvesoftware.com/wiki/Rust_Dedicated_Server
 
 ### LGSM Installation
 * If you wish to use LGSM, grab the script provided here : https://gameservermanagers.com/lgsm/rustserver/
@@ -125,6 +125,8 @@ cat serverfiles/game*.log
 
 The log will be called game-{FULL-CURRENT-DATE}.log to not be erased on every restart.
 Upon a server start (or restart), this log will be moved to log/server and a new one will be created. This is a workaround for the crappy default log management in Rust.
+
+Note : The Rust console is pretty useless under Linux. You'll have to use an RCON tool and/or watch your logs. 
 
 7) Install Oxide
 
