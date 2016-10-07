@@ -187,3 +187,22 @@ This can have numerous reasons. Here are some ways do diagnose this issue:
 * Do you have multiple interface ? Set the right IP within your "gameserver" script or the game config file
 * Is it a home server ? If you're behind a router, make sure your're listening to your local IP, then redirect appropriate ports to this local IP within your router settings.
 * Did you wait long enough ? Sometimes it's just a matter of time until your server shows up into the list
+
+Segmentation fault
+=========================================================================
+
+My server source server is displaying an error like  
+`./srcds_run: line 318: 31093 Segmentation fault `
+
+This kind of errors can happen at any time or be due to numerous reasons. However, most common ones are:
+
+If it happens upon start:  
+* Interpreter issue (glibc libstdc gcc libraries and so on) - check your versions, librarires, and game binary files.
+* Outdated or bugged addon - Update or remove the addon
+* Missing or revoked GSLT - Update your GSLT
+* Corrupted game server files - run ./gameserver validate
+* File version incompatibility - run ./gameserver validate
+
+If it happens after a while:  
+* Bug from the game server or an addon - Check your console logs, see if you can reproduce, and diagnose your addons
+* Unstable hardware - very unlikely, check your system stability
