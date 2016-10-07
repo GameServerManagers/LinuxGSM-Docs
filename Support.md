@@ -4,16 +4,17 @@ Getting Support
 -----------
 We want to help out server admins as best we can. However, our time is limited which is best spent on developing LGSM. Patience is also wearing thin on unhelpful posts. So please help us by providing the following information when posting to help us to resolve YOUR issue.
 
-If you are a beginner and do not know how to provide those details, tell us and we can help.
-
 * Which **game server** you are running (e.g Rust/CS:GO).
+* The outputted **link** of `./gameserver postdetails` command.
+* Any useful **log** in /home/gameserver/logs (use pastebin or equivalent).
 * Your Linux **distro** and **version** (e.g Ubuntu 16.04).
-* Any useful **logs** in /home/gameserver/logs (use pastebin or equivalent).
-* The output of **./gameserver details** (remove passwords. Use pastebin or equivalent).
-* Any useful **screenshots**.
+* Any useful **screenshot**.
 * Your basic **server hardware** (CPU/RAM/Storage/Bandwidth).
-* Any **solutions** you have already tried.
+* Any **test** you have already tried.
 * Any other **useful** or **relevant information** you think will help.
+
+Reminder: Make sure that your're running the latest LGSM version with:
+`./gameserver uf`
 
 All these things will help us to solve your problem. If you will not provide this information we are unable to help you. Thank you.
 
