@@ -58,7 +58,8 @@
 * [[New Server]]
 * command_stop.sh
 
-#Misc
+# Misc
 * [[Getting Started]]
 * [[Usage]]
+* [[FAQ]]
 * [[Support]]
