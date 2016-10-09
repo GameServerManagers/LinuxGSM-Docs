@@ -4,7 +4,7 @@ Default ports are most often set by start parameters. To alter them, which you p
 
 ````nano gameserver````
 
-For most games, you're gonna change these : 
+Example: for source games, you're gonna change these : 
 
     # Start Variables
     port="27015"
@@ -62,3 +62,8 @@ Some people find it more convenient. You'll be able to make more servers per hun
 **Method 3** 
 
 You can get new IPs for your dedicated server, and assign some servers to different IPs.
+
+## Note for home servers
+
+If your server is on a local network, you will need to make port redirections only for internet access.
+The "ip" setting always needs to be set to the interface IP, the one that you see with ifconfig. So if it's a home server, don't put your public IP address here, put your local IP instead, or just leave `0.0.0.0` if you're unsure.
