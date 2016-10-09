@@ -91,7 +91,7 @@ You can get new IPs for your dedicated server, and assign some servers to differ
 
 ## Diagnosing server accessibility
 
-1. Make sure your server is listening properly  
+1) **Make sure your server is listening properly**  
 Before anything else, you need to know if your sever is actually listening.
 Input : `./gameserver details` and look for this diagnose command:
 ````
@@ -101,8 +101,8 @@ netstat -atunp | grep srcds_linux
 Run it, and see if your server is actually listening.
 If not, then your server doesn't start or listen properly. Check that you're trying to listen to an actual interface IP, check that ports are not already in use by something else, check that your server don't crash  upon start, check your console logs, try starting your server with `./gameserver debug`
 
-2. Check the firewall  
+2) **Check the firewall**  
 [[Firewalls]] are source of many errors. When diagnosing stuff, disabling any firewall might help.
 
-3. Check port redirection (local network only)  
+3) **Check port redirection** (local network only)  
 Make sure that your router properly redirects the right ports displayed with `./gameserver details` with the right type (tcp and/or udp) to the right local IP. 
