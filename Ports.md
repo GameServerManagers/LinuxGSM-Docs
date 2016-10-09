@@ -43,7 +43,8 @@ ip="0.0.0.0"
 
 **Reminder**: If you're running several servers, make sure you're using different ports on all of your servers.
 
-**If there is no port settings** in your gameserver script, it means that you need to alter the config file to change them. Once again, the required file location will usually be displayed running `./gameserver details`
+**If there is no port settings** in your gameserver script, it means that you need to alter the config file to change them. Once again, the required file location will usually be displayed running `./gameserver details`  
+In some rare cases, you'll have to edit the script itself and the config file as well.
 
 **Home servers**: If your server is on a local network, you will need to make port redirections only for internet access.
 The "ip" setting always needs to be set to the a server's interface IP, one that you see with ifconfig. Usually something like 192.168.x.x. So if it's a home server, don't put your public IP address here, put your local IP instead, or just leave `0.0.0.0` if you're unsure.
