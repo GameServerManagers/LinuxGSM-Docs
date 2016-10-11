@@ -26,7 +26,7 @@ For a standard deployment, you will want to have your modules unpacked under `se
 [arma3server@localhost mods]$ ls 
 @ace @AdvancedTowing @CBA_A3 @RHSUSAF @AdvancedRappelling @AdvancedUrbanRappelling @RHSAFRF @AdvancedSlingLoading @Ares @RHSGREF
 ```
-The issue that makes this difficult is that, for some bizarre reason, the server demands that the modules possess all lowercase names.  The following code (run from the `serverfiles/mods` directory *as the arma3server user*) changes all files and folders to lowercase:
+The issue that makes this difficult is that, for some bizarre reason, the server demands that the modules possess all lowercase names.  The following code segments (run from the `serverfiles/mods` directory *as the arma3server user*) change all files and folders to lowercase:
 ```
 depth=0
 for x in $(find . -type d | sed "s/[^/]//g")
