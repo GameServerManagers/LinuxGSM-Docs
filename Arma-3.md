@@ -38,7 +38,7 @@ fi
 done
 echo "the depth is ${depth}"
 ```
-As a sanity check here, you should get a depth of 4 or so.  Proceed to iteratively rename the files and directory structure with (once again, run from the `serverfiles/mods` directory as the arma3server user) this code snippet:
+As a sanity check here, you should get a depth of 4 or so.  Proceed to iteratively rename the files and directory structure with this code snippet (once again, run from the `serverfiles/mods` directory as the arma3server user):
 ```
 for ((i=1;i<=${depth};i++))
 do
