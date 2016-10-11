@@ -48,7 +48,7 @@ do
   done
 done
 ```
-Now a simple directory listing should at least confirm the top-level files have all been adjusted:
+Now a simple directory listing should at least confirm the top-level folders have all been adjusted:
 ```
 arma3server@gamebox3:~/serverfiles/mods$ ls
 @ace  @advancedrappelling  @advancedslingloading  @advancedtowing  @advancedurbanrappelling  @ares  @cba_a3  @rhsafrf  @rhsusaf
