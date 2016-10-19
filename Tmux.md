@@ -5,6 +5,10 @@ Tmux is a key component of LGSM and replaced [screen] which was used on early ve
 
 LGSM requires _tmux =\> 1.6_ to enable console logging.
 
+tmuxception
+-----------
+You cannot run a tmux session inside another tmux session.
+
 Known Issues
 ------------
 
