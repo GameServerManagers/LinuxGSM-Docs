@@ -3,7 +3,7 @@
 * Port listening happens on a server
 * Port redirection happens on a router
 * Port opening happens on a firewall
-* ip variable always needs to be a server's interface IP.
+* ip variable or host ip always needs to be a server's interface IP.
 
 ## View current settings
 
