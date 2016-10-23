@@ -16,6 +16,7 @@
 * [[map-compressor]]
 
 # LinuxGSM
+* [[Logging]]
 * [[Multiple Servers]]
 * [[Ports]]
 * [[Start-Parameters]]
