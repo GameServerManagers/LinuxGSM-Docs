@@ -164,7 +164,7 @@ You're lacking the required function, because you didn't run this command before
 
 The user that you're running LGSM with doesn't own all of its files.
 
-More information, see [Ownership](https://github.com/GameServerManagers/LinuxGSM/wiki/Permissions)
+More information, see [Ownership](https://github.com/GameServerManagers/LinuxGSM/wiki/File-Ownership)
 
 **Getting rid of bad practice**
 
@@ -178,7 +178,7 @@ You can simply fix those ownership issues by using a chown command as root.
 
 `chown -R username:username /home/username`
 
-[ FAIL ] Starting game-server: Permissionissues found
+[ FAIL ] Starting game-server: Permission issues found
 =========================================================================
 
 It usually means some script or executable files are not actually executable.
