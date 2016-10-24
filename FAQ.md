@@ -164,6 +164,8 @@ You're lacking the required function, because you didn't run this command before
 
 The user that you're running LGSM with doesn't own all of its files.
 
+More information, see [Ownership](https://github.com/GameServerManagers/LinuxGSM/wiki/Permissions)
+
 **Getting rid of bad practice**
 
 **Case 1)** You've been uploading files as root or any other user than your gameserver user. If you're logging into your FTP as root, you must know that this is wrong on so many levels and must consider using a better method urgently. Here is an [example](https://gist.github.com/UltimateByte/229c17b3c48ca10080c5e56b5513e476) of a simple user based FTP set in 2 minutes with proftpd which would already be better. Otherwise, one way better practice is to use SFTP that comes with SSH. No need to install an FTP server as long as you've got an SSH server. Just setup your FTP client to use SFTP, and connect with the same port as your SSH server and with your username/password.
@@ -175,6 +177,18 @@ The user that you're running LGSM with doesn't own all of its files.
 You can simply fix those ownership issues by using a chown command as root.
 
 `chown -R username:username /home/username`
+
+[ FAIL ] Starting game-server: Permissionissues found
+=========================================================================
+
+It usually means some script or executable files are not actually executable.
+
+Useful command: 
+
+`chmod +x <filename>`
+
+To learn more about this, see [Permissions](https://github.com/GameServerManagers/LinuxGSM/wiki/Permissions)
+
 
 My server is not showing up over LAN or Internet
 =========================================================================
