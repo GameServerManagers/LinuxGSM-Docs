@@ -16,9 +16,24 @@ It is recommended that you [create a new Steam username](https://store.steampowe
 
 The majority of game servers through SteamCMD are freely available to download. These servers can be accessed by logging in to SteamCMD as _anonymous_.
 
+If the game server you are installing is anonymous it will already be selected within the script. Because of this no action is required.
+```
+## SteamCMD Login
+steamuser="anonymous"
+steampass=""
+```
+
 ## Steam User Login
 
 Some game servers require you login to SteamCMD using a steam login to allow download of the server. Some also require you to own a copy of the game on the steam account.
+
+If a game server requires a login you will be prompted on install to set a username and password within the script. It can be set by by editing the following settings.
+
+```
+## SteamCMD Login
+steamuser="username"
+steampass="password"
+```
 
 It is recommended that you create a new Steam username just for the server for security reasons.
 
