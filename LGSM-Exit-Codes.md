@@ -22,7 +22,7 @@ to see the exit code you can activate `./gameserver dev-debug`
 
 # Warning
 * **Code:** 3
-* **Description:** Warnings happen when there is somthing mis-configured or not setup correctly. LGSM may still work but not do as expected.
+* **Description:** Warnings happen when there is something mis-configured or not setup correctly. LGSM may still work but not do as expected.
 * **On Screen:** [ WARN ]
 * **Logfile:** WARN
 
