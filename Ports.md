@@ -94,7 +94,7 @@ You can get new IPs for your dedicated server, and assign some servers to differ
 
 1) **Make sure your server is listening properly**  
 Before anything else, you need to know if your sever is actually listening.
-Input : `./gameserver details` and look for this diagnose command:
+Input : `./gameserver details` and look for this kind of diagnose command:
 ````
 Useful port diagnostic command:
 netstat -atunp | grep srcds_linux
