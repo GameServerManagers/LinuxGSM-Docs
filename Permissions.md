@@ -5,6 +5,9 @@ You might need to change them. Here are some useful commands.
 # Permissions
 Change permissions for user, groups, and others on files and folders.
 
+## Check permissions
+`ls -al /path/to/file/or/folder`
+
 ## Permissions Command 
 `chmod `
 
