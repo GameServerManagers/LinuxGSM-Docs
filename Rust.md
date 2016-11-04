@@ -53,7 +53,7 @@ http://oxidemod.org/threads/setting-up-a-rust-server-with-linux-and-lgsm.16528/
 * https://github.com/UltimateByte/zip-updater
 
 ### Oxide for Linux
-* Oxide for linux : wget https://github.com/OxideMod/Snapshots/raw/master/Oxide-Rust_Linux.zip
+* Oxide for linux : wget https://github.com/OxideMod/Snapshots/raw/master/Oxide-Rust.zip
 Rusty Rcon Tool
 ### Rusty
 * Server RCON administration tool http://oxidemod.org/resources/rusty-server-rcon-administration-tool.53/
@@ -139,7 +139,7 @@ Manual Way
 ```
 ./rustserver stop
 mkdir temp && cd temp
-wget https://github.com/OxideMod/Snapshots/raw/master/Oxide-Rust_Linux.zip
+wget https://github.com/OxideMod/Snapshots/raw/master/Oxide-Rust.zip
 unzip Oxide-Rust_Linux.zip
 rm Oxide-Rust_Linux.zip
 cp * /home/rust/serverfiles
