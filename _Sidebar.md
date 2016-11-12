@@ -57,7 +57,7 @@
 * [[LGSM Exit Codes]]
 * [[gsquery.py]]
 * [[New Server]]
-* command_stop.sh
+* [[Branching]]
 
 # Misc
 * [[Getting Started]]
