@@ -1,4 +1,4 @@
-**_WORK IN PROGRESS (regarding dstserver branch)_**
+**_WORK IN PROGRESS (regarding dstserver-new branch)_**
 
 ## Introduction
 A Don't Starve Together server consists of **clusters** and **shards**. 
@@ -12,7 +12,7 @@ By default the cluster will be single-sharded. So you only need one server but y
 
 server script settings:
 ```bash
-multishard="false"
+sharding="false"
 ```
 
 ## Multi-Shard
@@ -34,8 +34,8 @@ First of all we need to scripts:
 dstserver1 (this will be the master shard with an overworld as level):
 ```bash
 # Installation Variables
-multishard="true"
-slave="false"
+sharding="true"
+master="true"
 shard="Master" 
 cluster="Cluster_1"
 cave="false"
@@ -52,8 +52,8 @@ servicename="dst-server1"
 dstserver2 (this will be the slave shard with a cave as level):
 ```bash
 # Installation Variables
-multishard="true"
-slave="true"
+sharding="true"
+master="false"
 shard="Caves" 
 cluster="Cluster_1"
 cave="true"
@@ -67,11 +67,11 @@ steammasterserverport="27019"
 servicename="dst-server2"
 ```
 
-**Set all installation variables BEFORE running the `./dstserver1/2 install` commands.** You also should not change them afterwards. Feel free to change these settings but make sure that you set them to the same clusters. 
+**Set all installation variables BEFORE running the `./dstserver1/2 install` commands.**  Feel free to change these settings but make sure that you set them to the same clusters. You also should not change them afterwards.
 
 For clarity reasons I recommend naming the master shard "Master".
 
-Lastly you have to start both servers. The order does not matter because the slave server will auto-retry connecting to the master server.
+Lastly you have to start both servers. The order does not matter because the slave server will auto-retry connecting to the master server which is listening.
 
 
 #### Guides / Documentations:
