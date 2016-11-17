@@ -140,8 +140,8 @@ Manual Way
 ./rustserver stop
 mkdir temp && cd temp
 wget https://github.com/OxideMod/Snapshots/raw/master/Oxide-Rust.zip
-unzip Oxide-Rust_Linux.zip
-rm Oxide-Rust_Linux.zip
+unzip Oxide-Rust.zip
+rm Oxide-Rust.zip
 cp * /home/rust/serverfiles
 cd ~
 ./rustserver start
@@ -157,7 +157,7 @@ Then edit zip-updater accordingly
 ```
 nano zip-updater
 targetdir="/home/rust/serverfiles"
-ziplinks="https://github.com/OxideMod/Snapshots/raw/master/Oxide-Rust_Linux.zip"
+ziplinks="https://github.com/OxideMod/Snapshots/raw/master/Oxide-Rust.zip"
 ```
 
 And ad the end, add after fn_prompt_continue : 
