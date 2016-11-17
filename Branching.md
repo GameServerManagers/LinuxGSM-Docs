@@ -16,6 +16,6 @@ Only Daniel Gibbs is designated to complete releases. Code can be merged in to d
 
 Any non-group developers please submit pull requests to the "develop" branch and use "develop" branch as a base.
 
-It is also a good idea to start using GitKracken as the git client. It is a little more complex that GitHub Desktop but will give you a much better understanding of the development process.
+It is also a good idea to start using [Git Kracken](https://www.gitkraken.com/) as the git client. It is a little more complex that GitHub Desktop but will give you a much better understanding of the development process.
 
 ![](http://nvie.com/img/git-model@2x.png)
