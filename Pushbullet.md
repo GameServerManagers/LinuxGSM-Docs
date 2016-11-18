@@ -1,13 +1,25 @@
-## Alerts
+Pushbullet alerts allow you to recieve messages if your monitored server goes down is restarted or updated (See [[Monitor]]).
 
-Alerts allow you to receive a Pushbullet message if the server is monitored down, restarted or updated (See [[Monitor]]).   That notification will include some of the logs to help you diagnose what caused the crash.
+![](https://gameservermanagers.com/wp-content/uploads/2016/05/lgsm-pushbullet.png)
 
-To enable them, edit your script accordingly : 
+# Enable alerts
+To enable Pushbullet alerts you will need to edit the gameserver script.
 
+Generate your access token here: https://www.pushbullet.com/#settings
 
-#### Pushbullet:
-`pushbulletalert="on"`
+```
+# Pushbullet Alerts | https://github.com/GameServerManagers/LinuxGSM/wiki/Pushbullet
+pushbulletalert="on"
+pushbullettoken="o.noWN6jpIeBUkLraw24saHKd7ksOkn7on"
+```
+# Enable Channels
 
-`pushbullettoken="accesstoken"`
+It is now possible to push to channels as well. Channels are push notifications feeds that can be subscribed to. Anything you push to a channel will instantly go to all of the channel's subscribers. Only the owner of a channel can push to it.
 
-_\* get your access token at https://www.pushbullet.com/#settings_
+Generate a channel here: https://www.pushbullet.com/my-channel
+
+Once you have created the access channel set in the script without using hash `#`. 
+e.g `channeltag="myepicserver"` would push to `#myepicserver`
+```
+channeltag=""
+```
