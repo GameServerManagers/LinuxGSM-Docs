@@ -15,6 +15,7 @@ pushbullettoken="o.noWN6jpIeBUkLraw24saHKd7ksOkn7on"
 # Enable Channels
 
 > note: leave blank if not in use
+
 It is now possible to push to channels as well. Channels are push notifications feeds that can be subscribed to. Anything you push to a channel will instantly go to all of the channel's subscribers. Only the owner of a channel can push to it.
 
 Generate a channel here: https://www.pushbullet.com/my-channel
