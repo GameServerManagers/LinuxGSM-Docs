@@ -123,10 +123,16 @@ Then check your logs
 cat serverfiles/game*.log
 ```
 
-The log will be called game-{FULL-CURRENT-DATE}.log to not be erased on every restart.
-Upon a server start (or restart), this log will be moved to log/server and a new one will be created. This is a workaround for the crappy default log management in Rust.
+To display the log in real time, use `tail -f` command
 
-Note : The Rust console is pretty useless under Linux. You'll have to use an RCON tool and/or watch your logs. 
+```
+tail -f serverfiles/game*.log
+```
+
+The log will be called game-{FULL-CURRENT-DATE}.log to not be erased on every restart.
+Since Rust don't allow setting a custom log location, this log will be moved to log/server upon any server start/restart and a new one will be created.
+
+Note: The Rust console is empty under Linux. You'll have to use an RCON tool and/or watch your logs. 
 
 7) Install Oxide
 
