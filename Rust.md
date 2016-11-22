@@ -96,7 +96,7 @@ chmod +x rustserver
 
 4) Edit rustserver to fit your needs
 
-You'd better use nano or vim, but you could also use a text editor line notepad++, which is way less convenient. If you need help about what to configure, watch the video.
+You'd better use nano or vim, but you could also use a text editor like notepad++, which is way less convenient. If you need help about what to configure, watch the video.
 
 ```
 nano rustserver
