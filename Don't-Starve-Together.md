@@ -79,8 +79,3 @@ Lastly you have to start both servers. The order does not matter because the sla
 * [Server Settings](http://forums.kleientertainment.com/topic/64552-dedicated-server-settings-guide/)
 * [Command Line Options](http://forums.kleientertainment.com/topic/64743-dedicated-server-command-line-options-guide/)
 * [Understanding Shards and Migration Portals](http://forums.kleientertainment.com/topic/59174-understanding-shards-and-migration-portals/)
-
-## OLD:
-Here are the Dont Starve Together install guides. A Linux one is included. The setup is quite complicated but should work with LGSM with some configuration. 
-
-http://steamcommunity.com/id/ToNiO44/myworkshopfiles/?section=guides&appid=322330
