@@ -1,5 +1,3 @@
-**_WORK IN PROGRESS (regarding dstserver-new branch)_**
-
 ## Introduction
 A Don't Starve Together server consists of **clusters** and **shards**. 
 
@@ -31,6 +29,8 @@ First of all we need to scripts:
 ./dstserver2
 ```
 
+### Server #1
+
 dstserver1 (this will be the master shard with an overworld as level):
 ```bash
 # Installation Variables
@@ -39,15 +39,19 @@ master="true"
 shard="Master" 
 cluster="Cluster_1"
 cave="false"
-
-# Start Variables
-port="11000"
-steamauthenticationport="8768"
-steammasterserverport="27018"
-
-# Server Details
-servicename="dst-server1"
 ```
+
+~/.klei/DoNotStarveTogether/Master/server.ini
+```ini
+[NETWORK]
+server_port = 11000
+
+[STEAM]
+authentication_port = 8768
+master_server_port = 27018
+```
+
+### Server #2
 
 dstserver2 (this will be the slave shard with a cave as level):
 ```bash
@@ -57,17 +61,20 @@ master="false"
 shard="Caves" 
 cluster="Cluster_1"
 cave="true"
-
-# Start Variables
-port="11001"
-steamauthenticationport="8769"
-steammasterserverport="27019"
-
-# Server Details
-servicename="dst-server2"
 ```
 
-**Set all installation variables BEFORE running the `./dstserver1/2 install` commands.**  Feel free to change these settings but make sure that you set them to the same clusters. You also should not change them afterwards.
+~/.klei/DoNotStarveTogether/Caves/server.ini
+```ini
+[NETWORK]
+server_port = 11001
+
+[STEAM]
+authentication_port = 8769
+master_server_port = 27019
+```
+
+**Set all installation variables BEFORE running the `./dstserver1/2 install` commands.**  Feel free to change these settings but make sure that you set them to the same clusters. You also should not change them afterwards. If you have multiple clusters on one machine with the same shard names, you have to modify the servicename because `servicename="dst-server-${shard}"`
+(The shard name is used to differentiate service names. e.g. `servicename="dst-server-${cluster}-${shard}"`).
 
 For clarity reasons I recommend naming the master shard "Master".
 
