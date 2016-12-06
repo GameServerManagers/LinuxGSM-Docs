@@ -1,17 +1,24 @@
 # Running on Boot
-To run a server on boot, at least two ways are available. We advise you to use the monitor function.
+To run a server on boot, at least two ways are available.
 
+## Using monitor (recommended)
 
-## Using monitor
+After a reboot, a gameserver that was started (even crashed) will be started back.
 
-Using a monitor cronjob, after a reboot, any server that had a "started" status, even if crashed, will be started back. Manually stopped servers won't restart after a reboot.
+Example (as root; replace "username" and "gameserver" accordingly):
+````bash
+crontab -e
+*/3 * * * * su - username -c '/home/username/gameserver monitor' > /dev/null 2>&1
+````
 
-To do so, use [monitor function as a cronjob](https://github.com/dgibbs64/linuxgsm/wiki/Monitor#automated-monitoring)
-
+To learn more, see [cronjobs](https://github.com/GameServerManagers/LinuxGSM/wiki/Cronjobs) and [automated monitoring](https://github.com/dgibbs64/linuxgsm/wiki/Monitor#automated-monitoring).
 
 ## Using rc.local
 
-Add a command in to the rc.local file. That works with most distro. Obviously, replace "username" and "gameserver" accordingly.
+Add a command in to the rc.local file. That works with most distro. 
 
-    nano /etc/rc.local
-    su - username -c '/home/username/gameserver start'
+Example (as root; replace "username" and "gameserver" accordingly):
+````bash
+nano /etc/rc.local
+su - username -c '/home/username/gameserver start'
+````
