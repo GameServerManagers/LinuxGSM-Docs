@@ -27,11 +27,11 @@ Here is an example of a root based cronjob to monitor your server every 3 minute
 
 ***
 
-To learn more about automation, see [[Automation]]
+To learn more about automation, see [[Cronjobs]]
 
 ## Email notifications
 
-If you wish to get informed after a server was monitored down, see [[Email-Notifications]].
+If you wish to get informed after a server was monitored down, see [[Email]] and [[Pushbullet]].
 
 ## Boot startup
 
