@@ -11,6 +11,8 @@ Just run :
 
 And voilà !
 
+Note: If there is no update available, your server won't be restarted.
+
 ## Automatic update
 
 ### Update on start
