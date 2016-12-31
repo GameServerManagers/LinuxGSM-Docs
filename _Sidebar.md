@@ -56,7 +56,7 @@
 # Developers
 * [[LGSM Exit Codes]]
 * [[gsquery.py]]
-* [[New Server]]
+* [[Developing LGSM]]
 * [[Branching]]
 
 # Misc
