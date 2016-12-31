@@ -1,7 +1,7 @@
 This page has been designed to help you learn how LGSM code works.
 
-As a user, it will allow you for a better understanding of LGSM and a better administration.
-As a developer, it will help you on the making of new servers support for LGSM, adding functionalities and fixing bugs.
+As a user, it will allow you for a better understanding of LGSM and a better administration.  
+As a developer, it will help you adding new servers for LGSM, adding functionalities and fixing bugs.
 
 # Generalities
 
