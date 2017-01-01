@@ -6,7 +6,7 @@ We want to help out server admins as best we can. However, our time is limited w
 
 * Which **game server** you are running (e.g Rust/CS:GO).
 * The outputted **link** of `./gameserver postdetails` command.
-* Any useful **log** in /home/gameserver/logs (use pastebin or equivalent).
+* Any useful **log** in /home/gameserver/log (use pastebin or equivalent).
 * Your Linux **distro** and **version** (e.g Ubuntu 16.04).
 * Any useful **screenshot**.
 * Your basic **server hardware** (CPU/RAM/Storage/Bandwidth).
