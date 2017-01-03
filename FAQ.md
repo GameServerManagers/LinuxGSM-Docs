@@ -205,7 +205,7 @@ This can have numerous reasons. Here are some ways do diagnose this issue:
 Segmentation fault
 =========================================================================
 
-My server source server is displaying an error like  
+My source server is displaying an error like  
 `./srcds_run: line 318: 31093 Segmentation fault `
 
 This kind of errors can happen at any time or be due to numerous reasons. However, most common ones are:
