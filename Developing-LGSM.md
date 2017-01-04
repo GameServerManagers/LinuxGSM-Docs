@@ -61,9 +61,13 @@ Note: You need to update those files with update-functions command after adding 
 ## Commands
 
 Here are the command functions you might need to alter when adding a new server:
-* command_install.sh
-* command_monitor.sh & monitor_gsquery.sh & gsquery.py (in GameServerQuery)
-* command_details.sh
+* command_install.sh - Server installation must work properly
+* command_update.sh - if the given game supports updates (might required to add a file for that matter, for now, we use to add a single file for install and update, like for TeamSpeak 3).
+* command_details.sh - Server details need to be displayed properly
+* command_monitor.sh & monitor_gsquery.sh, gsquery.py & gsquery.py - You'll need to read carefully and understand this code before altering it.
+* core_getopt.sh - You will define available commands in this one, displayed when the user runs `./gameserver` without an argument. Either use an existing opt or make a new one if needed.
+* command_start.sh & command_stop.sh - Of course, your server needs to be able to start and stop properly.
+* command_debug.sh & command_console.sh - Those commands usually work out of the box, but might require some more work. If not using tmux, then console should be disabled for this server in core_getopt.sh.
 
 ## Fixes
 
@@ -167,3 +171,45 @@ Installing a new server is mainly done through two scripts:
 * install_config.sh
 
 Sometimes, another script is required, such as for TeamSpeak 3: `update_ts3.sh`
+
+## Versioning
+
+At the moment, only the main "gameserver" script has a version number.
+Syntax is pretty easy, it's all incremental, based on the date:
+`version="YYMMDD"`
+
+
+# Testing and debugging your code
+
+## Working from your own github branch
+
+You will usually be developing onto your own repo. Using your own repo instead of the original one is quite easy.
+
+1. Display your main "gameserver" file on github, and select "Raw".
+2. Make a test user, login to it
+3. wget your Raw link and chmod +x the script.
+4. Edit your "gameserver" file by changing github information to your username and repo and branch.
+````bash
+## Github Branch Select
+# Allows for the use of different function files
+# from a different repo and/or branch.
+githubuser="YourUsername"
+githubrepo="YourRepository"
+githubbranch="YourBranchName"
+````
+
+Now, any command you run will get your own github files, and after any change you make on your repo, `./gameserver uf` will grab new files. If you make a change and that `./gameserver uf` don't get them, it means you were too quick, and that your curl still have old files in cache; in this case, you'll need to wait a few minutes to get your modifications.
+
+## How to test
+
+You need to make sure that all needed commands displayed in opt work properly.
+So just run `./gameserver` to show available commands, then try commands one by one.
+Common procedure is to first work on command_install, then start, then stop, then debug, then details, then monitor.
+
+## Oops, i found a bug !
+
+If your found a bug, either you'll instantly know how to fix it, or you won't. And either it will be a bug caused by your own code or a bug into LGSM itself. So let's address those cases.
+
+1. It's caused by your own code parts and you know how to fix it: Just go on and fix it.
+2. It's caused by your own code parts but you got no idea why: Use `./gameserver dev-debug` that will add a very detailed log into your rootdir that might help you figuring this out. To disable the dev-debug mode, just re-run the command. If you still can't find why it's not working, come get help on Discord's #gsm-development channel or Github issue that might have been created for this issue.
+3. You found a bug into LGSM itself. First, you need to be sure that it's really a bug that affects every game, by testing with another game onto the original repo, otherwise, if it only affects your game, you will usually just need to add a clever conditional check to fix the issue.
