@@ -16,7 +16,8 @@ OR
 
 ## Supported games : 
 
-Source engine games like TF2, HL2DM, CSS, CSGO, Garry's Mod (with more advanced features required).
+Any source engine game supports FastDL, including TF2, HL2DM, CSS, CSGO, Garry's Mod, etc.
+However, currently, only Garry's Mod's FastDL is supported by LGSM.
 
 ## Usage
 
