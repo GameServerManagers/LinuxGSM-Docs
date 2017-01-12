@@ -4,6 +4,7 @@
 ## Standard Commands
 * [[backup]]
 * [[console]]
+* [[debug]]
 * [[details]]
 * [[install]]
 * [[monitor]]
