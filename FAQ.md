@@ -196,11 +196,12 @@ My server is not showing up over LAN or Internet
 This can have numerous reasons. Here are some ways do diagnose this issue:
 
 * Check your game logs to see if it contains any clue
-* Is your server listening ? Input `./gameserver details` to get the corresponding command to know it  
-* Are you behind [[Firewalls]] ? Double check your rules, try to disable it for testing
-* Do you have multiple interface ? Set the right IP within your "gameserver" script or the game config file
-* Is it a home server ? If you're behind a router, make sure your're listening to your local IP, then redirect appropriate ports to this local IP within your router settings.
-* Did you wait long enough ? Sometimes it's just a matter of time until your server shows up into the list
+* Is your server listening? Input `./gameserver details` to get the corresponding command to know it  
+* Are you behind [[Firewalls]]? Double check your rules, try to disable it for testing
+* Do you have multiple interface? Set the right IP within your "gameserver" script or the game config file
+* Is it a home server? If you're behind a router, make sure your're listening to your local IP, then redirect appropriate ports to this local IP within your router settings.
+* Are the ports you're using free? See [[Ports]]
+* Did you wait long enough? Sometimes it's just a matter of time until your server shows up into the list
 
 Segmentation fault
 =========================================================================
