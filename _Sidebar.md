@@ -6,10 +6,12 @@
 * [[console]]
 * [[debug]]
 * [[details]]
+* [[force-update]]
 * [[install]]
 * [[monitor]]
 * [[start-stop-restart]]
 * [[update]]
+* [[validate]]
 
 ## Game Commands
 * [[change-password]]
