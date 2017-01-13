@@ -1,5 +1,7 @@
 **Game Server Login Token is a new system by Valve for managing Game servers.**
 
+Note: Every single server must use a unique GSLT.
+
 # Games using GSLT
 
 * Brainbread 2
