@@ -7,16 +7,15 @@ LGSM requires _tmux =\> 1.6_ to enable console logging.
 
 tmuxception
 -----------
-You cannot run a tmux session inside another tmux session.
+You cannot run a tmux session inside another tmux session or inside of a screen session.
 
 Known Issues
-------------
+========
 
 Tmux 1.8
 ========
 tmux 1.8 has an issue that prevents console logging from working. This is because the `pipe-pane` feature is broken in tmux 1.8 causing is not to output the console to the console log files. The only solution is to use another version of tmux.
 
-<http://sourceforge.net/p/tmux/mailman/message/32033641/>
 
 ### Upgrade Tmux CentOS (7)
 
