@@ -35,3 +35,4 @@ parms="-game nmrih -insecure -strictportbind -ip 91.121.72.41 -port 27015 +clien
 * 7 Days to Die: http://7daystodie.gamepedia.com/Server
 * Gold Source Servers: https://developer.valvesoftware.com/wiki/Command_Line_Options#Goldsource_Games
 * Source Dedicated Servers: https://developer.valvesoftware.com/wiki/Command_Line_Options#Source_Dedicated_Server
+* NS2 Server: http://wiki.unknownworlds.com/ns2/Dedicated_Server
