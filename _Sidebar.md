@@ -12,6 +12,7 @@
 * [[start-stop-restart]]
 * [[update]]
 * [[validate]]
+* [[update-functions]]
 
 ## Game Commands
 * [[change-password]]
