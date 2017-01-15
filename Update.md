@@ -3,13 +3,10 @@
 LGSM comes with an update functions. All Steam games servers are supported, as well as some other servers such as Teamspeak.
 
 
-## update
+## Commands
 
-Just run : 
-
-`./gameserver update`
-
-And voilà !
+`./gameserver update`  
+`./gameserver u`
 
 Note: If there is no update available, your server won't be restarted.
 
@@ -17,9 +14,11 @@ Note: If there is no update available, your server won't be restarted.
 
 ### Update on start
 
-You can update your server on start, just by editing your game main script.
+You can update your server on start, by editing your game main script.
 
 `updateonstart="on"`
+
+This has the inconvenience of making your server longer to start, but is a good solution if you're not too familiar with [[Cronjobs]] yet.
 
 ### Scheduled updates
 
@@ -45,16 +44,17 @@ Here is an example of a root based cronjob for daily update at 5am :
 Sometimes, SteamCMD can mess up, either failing to download files properly, or missing some important files to update.
 So if your server isn't starting after an update, or if it's still at the same server version, run the validate command.
 
-`./gameserver validate`
+`./gameserver validate`  
+`./gameserver v`
 
-Note that if you modified server core server files, they will be restored to their original version. But who does that anyway ?
+Note: if you modified core server files, they will be restored to their original version. But who does that anyway ?
 
 
 
 # Updating your LGSM script
 LGSM has the ability to self update functions.
 
-update-functions
------
+## update-functions
 
-    ./gameserver update-functions
+`./gameserver update-functions`  
+`./gameserver uf`
