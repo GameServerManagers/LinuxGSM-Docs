@@ -24,6 +24,7 @@
 * [[Multiple Servers]]
 * [[Ports]]
 * [[Start-Parameters]]
+* [[Configuration Files]]
 
 # Game Info
 * [[Arma 3]]
