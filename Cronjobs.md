@@ -1,5 +1,13 @@
 # Automation with cronjobs
 You can set scheduled tasks with cronjobs, to run any function at any given time.  
+
+Most used ones are:
+- Automatically check for updates (update command)
+- Automatically check for server crash and restart if needed (monitor command)
+- Automatically keep LGSM up to date (update-functions command)
+- Automatically restart the server at a given time (restart command)
+- Automatically update and restart the server (force-update command)
+
 LGSM team advise you to use root cronjobs to manage everything in one place. Just login as root, then edit your cronjobs. 
 
 ## Command
