@@ -139,7 +139,7 @@ Here is an example of a root based cronjob to monitor your server every 3 minute
 
 #### Root cronjobs
 ````bash
-* * * * * [/path/to/script] [command]  > /dev/null 2>&1
+* * * * * su - username -c [/path/to/script] [command]  > /dev/null 2>&1
 ````
 
 **Note**: The ` >/dev/null 2>&1` is required to mute the execution (don't save or send output)
