@@ -1,6 +1,6 @@
 # Updating your server
 
-LGSM comes with an update functions. All Steam games servers are supported, as well as some other servers such as Teamspeak.
+LGSM comes with an update functions. All SteamCMD games servers are supported, as well as some other servers such as Teamspeak.
 
 
 ## Commands
