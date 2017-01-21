@@ -1,5 +1,6 @@
 Find out the best way we can help you.
 
+
 Getting Support
 -----------
 We want to help out server admins as best we can. However, our time is limited which is best spent on developing LGSM. Patience is also wearing thin on unhelpful posts. So please help us by providing the following information when posting to help us to resolve YOUR issue.
@@ -20,11 +21,14 @@ All these things will help us to solve your problem. If you will not provide thi
 
 Where to get Support
 --------------------
+
 There are various ways to get help and support with LGSM.
 
-http://gameservermanagers.com/support
+Public places are the best and only way to get help: Many people can read your issue, providing more chances of being helped, and it will also help other people facing the same issue. For that matter, admins and developers do not accept friend requests and do not answer private messages about your personal issues.
 
-Remember to consider the best place to post your issue and search the internet for a solution before posting.
+Please, consider the best place to post your issue and search the internet for a solution before posting.
+
+http://gameservermanagers.com/support
 
 Google
 ======
