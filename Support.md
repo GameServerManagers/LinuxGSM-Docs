@@ -24,7 +24,7 @@ Where to get Support
 
 There are various ways to get help and support with LGSM.
 
-Public places are the best and only way to get help: Many people can read your issue, providing more chances of being helped, and it will also help other people facing the same issue. For that matter, admins and developers do not accept friend requests and do not answer private messages about your personal issues.
+Public places are the best and only way to get help: Many people can read your issue, providing more chances of being helped, and it will also help other people facing the same issue. For that matter, admins and developers do not accept friend requests and do not answer private messages about personal issues.
 
 Please, consider the best place to post your issue and search the internet for a solution before posting.
 
