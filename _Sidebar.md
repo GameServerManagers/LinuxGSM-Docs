@@ -65,6 +65,7 @@
 * [[Developing LGSM]]
 * [[Syntax & Conventions]]
 * [[Branching]]
+* [[Developer Commands]]
 
 # Misc
 * [[Getting Started]]
