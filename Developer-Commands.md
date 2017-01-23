@@ -12,7 +12,7 @@ LinuxGSM provides a few commands to help developers.
 
 ## deps-detect
 
-Detects dependencies the server binary requires using serverfiles content.
+- Detects dependencies the server binary requires using serverfiles content.
 
 ````bash
 ./gameserver detect-deps
@@ -21,7 +21,7 @@ Detects dependencies the server binary requires using serverfiles content.
 
 ## detect-glibc
 
-Automatically detects the version of GLIBC that is required.
+- Automatically detects the version of GLIBC that is required.
 
 ````bash
 ./gameserver detect-glibc
@@ -30,7 +30,7 @@ Automatically detects the version of GLIBC that is required.
 
 ## detect-ldd
 
-Automatically detects required deps using ldd.
+- Automatically detects required deps using ldd.
 
 ````bash
 ./gameserver detect-ldd
