@@ -33,6 +33,7 @@
 * [[TeamSpeak 3]]
 * [[Rust]]
 * [[Don't Starve Together]]
+* [[Multi Theft Auto]]
 
 # SteamCMD
 * [[SteamCMD]]
