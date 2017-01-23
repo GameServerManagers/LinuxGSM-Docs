@@ -62,6 +62,7 @@
 * [[LGSM Exit Codes]]
 * [[gsquery.py]]
 * [[Developing LGSM]]
+* [[Syntax & Conventions]]
 * [[Branching]]
 
 # Misc
