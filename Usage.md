@@ -29,7 +29,7 @@ Servers commonly require start parameters that are command line options which ar
 
 You may also configure the [GSLT](Game-Server-Login-Token) for some servers (required for CSGO, optional for others).
 
-LGSM does not provide specific information about configuring your server. There are however many websites that provide documentation and support on configuring your server. If you wish to add more start parameters, see [[Start-Parms]].
+LGSM does not provide specific information about configuring your server. There are however many websites that provide documentation and support on configuring your server. If you wish to add more start parameters, see [[Start-Parmameters]].
 
 Running
 =======
@@ -70,7 +70,7 @@ You can use the [validate](https://github.com/dgibbs64/linuxgsm/wiki/Update#when
 Automating Updates
 ------------------
 
-You can use cronjobs to automate the process of updating the server. We advise to use root cronjobs for convenience when running multiple servers, but you can run user cronjobs as well. See [[Automation]].
+You can use [Cronjobs]] to automate the process of updating the server. We advise to use root cronjobs for convenience when running multiple servers, but you can run user cronjobs as well.
 
 ### Root Cronjob
 
@@ -174,7 +174,7 @@ To run a server on boot, either use the monitor cronjob that will restart any se
     nano /etc/rc.local
     su - username -c '/home/username/gameserver start'
 
-See [[Boot-Startup]] for more information.
+See [[On-Boot]] for more information.
 
 
 # Updating your LGSM script
