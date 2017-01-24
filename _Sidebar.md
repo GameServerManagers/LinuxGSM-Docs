@@ -1,3 +1,8 @@
+# Getting Started
+* [[Usage]]
+* [[FAQ]]
+* [[Support]]
+
 # Commands
 * [[Command-list]]
 
@@ -66,9 +71,3 @@
 * [[Syntax & Conventions]]
 * [[Branching]]
 * [[Developer Commands]]
-
-# Misc
-* [[Getting Started]]
-* [[Usage]]
-* [[FAQ]]
-* [[Support]]
