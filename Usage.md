@@ -1,5 +1,7 @@
-Get your script and basic instructions [here](http://gameservermanagers.com/). Don't forget to install required packages.
-***
+# Installation
+
+Get your script and follow basic instructions [here](http://gameservermanagers.com/).  
+Don't forget to install required packages (dependencies).
 
 # General Usage
 
