@@ -29,7 +29,7 @@ Servers commonly require start parameters that are command line options which ar
 
 You may also configure the [GSLT](Game-Server-Login-Token) for some servers (required for CSGO, optional for others).
 
-LGSM does not provide specific information about configuring your server. There are however many websites that provide documentation and support on configuring your server. If you wish to add more start parameters, see [[Start-Parmameters]].
+LGSM does not provide specific information about configuring your server. There are however many websites that provide documentation and support on configuring your server. If you wish to add more start parameters, see [[Start-Parameters]].
 
 Running
 =======
