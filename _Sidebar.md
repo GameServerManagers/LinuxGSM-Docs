@@ -1,12 +1,15 @@
 # Getting Started
 * [[Usage]]
-* [[FAQ]]
-* [[Support]]
+* [[Start-Parameters]]
+* [[Configuration Files]]
+* [[On-Boot]]
+* [[Multiple Servers]]
+* [[Ports]]
 
 # Commands
 * [[Command-list]]
 
-## Standard Commands
+### Standard Commands
 * [[backup]]
 * [[console]]
 * [[debug]]
@@ -19,19 +22,27 @@
 * [[update-functions]]
 * [[validate]]
 
-## Game Commands
+### Game Commands
 * [[change-password]]
 * [[fastdl]]
 * [[map-compressor]]
 
 # LinuxGSM
-* [[Logging]]
-* [[Multiple Servers]]
-* [[Ports]]
-* [[Start-Parameters]]
-* [[Configuration Files]]
 
-# Game Info
+### Alerts
+* [[Email]]
+* [[Pushbullet]]
+
+### Requirements
+* [[Tmux]]
+* [[glibc]]
+* [[java]]
+
+### Other
+* [[Logging]]
+
+# Knowledge Base
+### Game Info
 * [[Arma 3]]
 * [[Unreal Tournament 99]]
 * [[Unreal Tournament 2004]]
@@ -40,34 +51,27 @@
 * [[Don't Starve Together]]
 * [[Multi Theft Auto]]
 
-# SteamCMD
-* [[SteamCMD]]
-* [[Workshop]]
-* [GSLT](Game Server Login Token)
-
-# Automation
+### Linux
 * [[Cronjobs]]
-* [[On-Boot]]
-
-# Alerts
-* [[Email]]
-* [[Pushbullet]]
-
-# Requirements
-* [[Tmux]]
-* [[glibc]]
-* [[java]]
-
-# Linux
 * [[File Ownership]]
 * [[Firewalls]]
 * [[FTP/SCP]]
 * [[Permissions]]
 
+### SteamCMD
+* [[SteamCMD]]
+* [[Workshop]]
+* [GSLT](Game Server Login Token)
+
 # Developers
-* [[LGSM Exit Codes]]
-* [[gsquery.py]]
 * [[Developing LGSM]]
 * [[Syntax & Conventions]]
+* [[LGSM Exit Codes]]
 * [[Branching]]
 * [[Developer Commands]]
+* [[gsquery.py]]
+
+# Support
+* [[FAQ]]
+* [[Diagnosing Protocol]]
+* [[Support]]
