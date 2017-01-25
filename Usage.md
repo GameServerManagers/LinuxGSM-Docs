@@ -1,186 +1,158 @@
-# Installation
+Here is an overview of how to use LGSM. For more advanced details on a feature see the feature page.
 
-Get your script and follow basic instructions [here](http://gameservermanagers.com/).  
-Don't forget to install required packages (dependencies).
+**Note**: Replace generic "gameserver", "gamename", and "username" from these examples by your actual script, game, and user names.
 
-# General Usage
+# Installing
 
-A basic overview of how to use LGSM. For more advanced details on a feature see the feature page.
+First visit the game server page of your choice [gameservermanagers.com](http://gameservermanagers.com/).
+Follow basic instructions from it:
+- Install required packages (dependencies) as shown onto the website.  
+- Make a new user and login into it.
+- Download the script, make it executable, then install the server with `./gameserver install`.
 
-**Note** : Replace generic "gameserver", "gamename", and "username" from these examples by your actual script, game, and user names.
+# Available commands
 
-Configuration
-==============
-Config Files
-------------
-Most servers have a configuration file to alter the game server settings. This can be found by checking the server [details](https://github.com/dgibbs64/linuxgsm/wiki/Details).
+To see a list of available commands, just execute your "gameserver" script with no argument.
 
-````./gameserver details````
+Example:
+````bash
+gameserver@game:~$ ./gameserver
+Usage: ./gameserver [option]
+GameName - Linux Game Server Manager - Version 170110
+https://gameservermanagers.com/gameserver
 
-````Config file:   /home/username/serverfiles/gamename/cfg/gamename-server.cfg````
+Commands
+start             st |Start the server.
+stop              sp |Stop the server.
+restart           r  |Restart the server.
+...
+````
 
-You can edit the config file with any linux text editor like `nano` or `vi`.
+You will find a wiki page for every single command if needed. We will go through some of them here anyways.
 
-Start Parameters
-------------
-Servers commonly require start parameters that are command line options which are set with the servers executable when you start the server. These parameters can again be found in details. To alter them, which you probably want to do, you will need to edit the main script file using `vi` or `nano`.
+# Running your server
 
-````nano gameserver````
+To [[start-stop-restart]] your server, use the following commands:
 
-You may also configure the [GSLT](Game-Server-Login-Token) for some servers (required for CSGO, optional for others).
+````bash
+./gameserver start
+./gameserver stop
+./gameserver restart
+````
 
-LGSM does not provide specific information about configuring your server. There are however many websites that provide documentation and support on configuring your server. If you wish to add more start parameters, see [[Start-Parameters]].
+# Getting server and machine information
 
-Running
-=======
+The [[details]] command will provide you with config file's location, start parameters settings, and many other information. Feel free to use it as much as needed!
 
-start
------
+````bash
+./gameserver details
+````
 
-    ./gameserver start
+# Configuring your server
 
-stop
-----
+Your server starts, great! You might now want to customize some settings.
 
-    ./gameserver stop
+## Config Files
 
-restart
--------
+Most servers use a configuration file to alter most settings.  
+Whenever possible, LinuxGSM provides an enhanced default config file from https://github.com/GameServerManagers/Game-Server-Configs
+If there is one, the [[details]] command will provide you with config file's location.
 
-    ./gameserver restart
+````bash
+./gameserver details
+````
+Sample output: 
+````
+Config file:   /home/username/serverfiles/gamename/cfg/gamename-server.cfg
+````
+You can edit this file with any Linux text editor like `nano` or `vi`.
 
-Updating
-========
+LGSM does not provide specific information about altering this configuration file except for some special games showed in "Game Info" section from the [wiki](https://github.com/GameServerManagers/LinuxGSM/wiki). There are also many websites that provide documentation and support on configuring your server.
+
+## Start Parameters & LGSM Settings
+
+Servers commonly require [[Start-Parameters]] to set some settings.
+Start parameters are command line options appended to server's executable when you start it.  
+These parameters can again be reviewed using the [[details]] command.  
+To alter them, you will need to edit the main `gameserver` script file using `vi` or `nano` and edit variables from the `## Server Start Settings` section.
+You will also find the `#### LinuxGSM Settings ####` section, allowing you to customize many different behaviors.
+
+````bash
+nano gameserver
+````
+
+There are many possible settings set through start parameters. The best thing to do is to check your script file and see if there are any that you'd like to alter. Whenever possible, a wiki link is provided to provide you with information about the command.
+
+# Updating your server
 
 Most servers can be updated automatically using the update feature which uses SteamCMD.
 
-update
-------
+## update command
 
-[[Update]] checks with if any updates are available for the server. The server will update and restart only if required.
+The [[update]] command checks if an update is available for the server. The server will update and restart only if required.
+````bash
+./gameserver update
+````
 
-    ./gameserver update
+## validate command
 
-validate
---------
-You can use the [validate](https://github.com/dgibbs64/linuxgsm/wiki/Update#when-an-update-isnt-enough) option when updating the server, this checks the integrity of the server files to make sure they exactly match the remote version.
+For SteamCMD servers (available from Steam), the [[validate]] command checks the integrity from server files to make sure they exactly match the remote version. It can be useful if an update fails or if files get corrupted for some reason.
 
-    ./gameserver validate
+````bash
+./gameserver validate
+````
 
-Automating Updates
-------------------
+# Automating tasks
 
-You can use [Cronjobs]] to automate the process of updating the server. We advise to use root cronjobs for convenience when running multiple servers, but you can run user cronjobs as well.
+You can use [[Cronjobs]] to automate any LGSM function.
+Most used ones are:
+* Automatically check for updates [[update]]
+* Automatically check for server crash and restart if needed [[monitor]]
+* Automatically keep LGSM up to date [[update-functions]]
+* Automatically restart the server at a given time [[start-stop-restart]
+* Automatically update and restart the server [[force-update]]
+* Automatically backup the server [[backup]]
 
-### Root Cronjob
+For more details, see [[Cronjobs]]
 
-    crontab -e
+## Running on Boot
+To run a server [[On-Boot]], we advise to use a monitor cronjob: any server that was online before a machine reboot will be restarted. 
 
+See [[On-Boot]] or [[Monitor#automated-monitoring]] for more information.
 
-    0 5 * * *  su - username -c '/home/username/gameserver update' > /dev/null 2>&1
+# Troubleshooting
 
-### User Cronjob
+## Logs
 
-    crontab -e
+Script (LGSM) and game console logs are available. They can help you checking for your server's health and diagnosing issues.
 
+Logs location: `/home/username/log/`
 
-    0 5 * * *  /home/username/gameserver update > /dev/null 2>&1
+## Console
 
-Monitor
-=======
+The [[console]] command allows you to view the live console of a running server and to enter commands. When the game offers a good console output, it might help diagnosing issues along with logs.
 
-[[Monitor]] will check the server to ensure it is online. Should the server go offline, the monitor will attempt to start it again and can report the issue via email. The whole point to this function is to be [automated with cronjobs](https://github.com/dgibbs64/linuxgsm/wiki/Automation). *Note: see [[gsquery.py]] for info on how [[Monitor]] uses gsquery for improved monitoring.*
-
-monitor
--------
-
-    ./csgoserver monitor
-
-### Email Notification
-
-Monitoring can [send you an email](https://github.com/dgibbs64/linuxgsm/wiki/Monitor#email-notifications), should the server go offline, and report details of the issue. To enable ths feature do the following.
-
-    nano csgoserver
-
-    # Notification Email
-    # (on|off)
-    emailnotification="on"
-    email="email@example.com"
-
-email-test
-----------
-
-You can test the email feature using `email-test`
-
-    ./gameserver email-test
-
-Automate Monitoring
--------------------
-
-You can use cronjobs to automate the process of monitoring the server. You can either run the cronjob as root or as the user.
-
-### Root Cronjob
-
-    crontab -e
-
-
-    */5 * * * *  su - username -c '/home/username/gameserver monitor' > /dev/null 2>&1
-
-### User Cronjob
-
-    crontab -e
-
-
-    */5 * * * *  /home/username/gameserver monitor > /dev/null 2>&1
-
-Debugging
-========
-
-debug
------
-
-Use debug mode to help you if you are having issues with the server. Debug allows you to see the output of the server directly to your terminal allowing you to diagnose any problems the server might be having.
-
-    ./gameserver debug
-
-Logs
-----
-
-Server logs are available to monitor and diagnose your server. Script, console and game server (if available) logs are created for the server
-
-    /home/username/logs
-
-# Details
-
-
-If you need to get all important game server and machine details you can use the following command.
-
-    ./gameserver details
-
-# Console
-console
------
-
-Console allows you to view the live console of a server as it is running and allow you to enter commands; if supported.
-
-    ./gameserver console
+````bash
+./gameserver console
+````
 
 To exit the console press “CTRL+b, then d”.
 > Note: pressing “CTRL+c” will terminate the server.
 
-# Running on Boot
-To run a server on boot, either use the monitor cronjob that will restart any server that was online before a reboot (advised, see [[Monitor#automated-monitoring]] ), or add a command in to the rc.local file that works with most distro : 
+## debug command
 
-    nano /etc/rc.local
-    su - username -c '/home/username/gameserver start'
+Use debug mode to help you if you are having issues with the server. Debug allows you to see the output of the server directly to your terminal allowing you to diagnose any problems the server might be having.
 
-See [[On-Boot]] for more information.
-
+````bash
+./gameserver debug
+````
 
 # Updating your LGSM script
-LGSM has the ability to self update functions.
+LGSM has the ability to self [update-functions].
 
-update-functions
------
+````bash
+./gameserver update-functions
+````
 
-    ./gameserver update-functions
+This will allow you to get various fixes and possibly new functionalities.  
+In some rare cases, you will need to update your main "gameserver" script as well in order to enjoy all new functionalities.
