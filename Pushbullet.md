@@ -26,6 +26,8 @@ e.g `channeltag="myepicserver"` would push to `#myepicserver`
 channeltag=""
 ```
 
+# Test alerts
+
 You can test the alert feature using `test-alert`
 ````bash
 ./gameserver test-alert
