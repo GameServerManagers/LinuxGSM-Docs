@@ -18,6 +18,7 @@
 * [[install]]
 * [[monitor]]
 * [[start-stop-restart]]
+* [[test-alert]]
 * [[update]]
 * [[update-functions]]
 * [[validate]]
