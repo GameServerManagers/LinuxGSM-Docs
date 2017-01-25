@@ -11,7 +11,7 @@ email="email@example.com" # Destination email
 emailfrom="" # Sender email, useful if you have an FQDN with proper email settings
 ````
 
-You can test the email feature using `email-test`
+You can test the email feature using `test-alert`
 ````bash
 ./gameserver test-alert
 ````
