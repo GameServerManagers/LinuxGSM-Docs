@@ -13,5 +13,5 @@ emailfrom="" # Sender email, useful if you have an FQDN with proper email settin
 
 You can test the email feature using `email-test`
 ````bash
-./gameserver email-test
+./gameserver test-alert
 ````
