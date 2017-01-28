@@ -67,6 +67,7 @@
 
 # Developers
 * [[Developing LGSM]]
+* [[Development Workflow]]
 * [[Syntax & Conventions]]
 * [[LGSM Exit Codes]]
 * [[Branching]]
