@@ -27,6 +27,7 @@
 * [[change-password]]
 * [[fastdl]]
 * [[map-compressor]]
+* [[mods install/update/remove]]
 
 # LinuxGSM
 
