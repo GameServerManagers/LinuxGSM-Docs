@@ -15,8 +15,10 @@ There are some good practices that might help getting your servers more reliable
 
 ## iptables
 
-[iptables](http://ipset.netfilter.org/iptables.man.html)is the most used and supported Linux firewall. You'll find plenty of documentations all over the web. Firewall settings usually gets reset on a reboot, which is a good thing, because if you mess with your config and can't connect anymore, you can still "just" reboot your machine. People usually make very basic scripts to apply the firewall settings back easily, and eventually start it on server boot. But protip: Whatever you do, make sure to test a firewall setting before setting it on boot, because you might make an error, preventing you from connecting back to your machine... Don't laugh, i'm pretty sure it's not a legend, it might happen.
+[iptables](http://ipset.netfilter.org/iptables.man.html) is the most used and supported Linux firewall. You'll find plenty of documentations all over the web. Firewall settings usually gets reset on a reboot, which is a good thing, because if you mess with your config and can't connect anymore, you can still "just" reboot your machine. People usually make very basic scripts to apply the firewall settings back easily, and eventually start it on server boot. But protip: Whatever you do, make sure to test a firewall setting before setting it on boot, because you might make an error, preventing you from connecting back to your machine... Don't laugh, i'm pretty sure it's not a legend, it might happen.
 
+To see iptables rules: `iptables -L`
+To flush (erase) iptables rules: `iptables -F`
 
 # DDoS protection
 
