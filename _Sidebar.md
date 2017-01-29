@@ -76,5 +76,5 @@
 
 # Support
 * [[FAQ]]
-* [[Diagnosing Protocol]]
+* [[Troubleshooting]]
 * [[Support]]
