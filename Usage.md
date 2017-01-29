@@ -1,6 +1,9 @@
-Here is an overview of how to use LGSM. For more advanced details on a feature see the feature page.
+# Introduction
 
-**Note**: Replace generic "gameserver", "gamename", and "username" from these examples by your actual script, game, and user names.
+Here is an overview of how to use LGSM.  
+For more advanced details on a feature see the feature page.
+
+**Note**: Generic "gameserver", "gamename" and "username" values are used for this guide; replace with your own ones.
 
 # Installing
 
@@ -102,6 +105,16 @@ For SteamCMD servers (available from Steam), the [[validate]] command checks the
 ./gameserver validate
 ````
 
+# Updating your LGSM script
+LGSM has the ability to self [[update-functions]].
+
+````bash
+./gameserver update-functions
+````
+
+This will allow you to get various fixes and possibly new functionalities.  
+In some rare cases, you will need to update your main "gameserver" script as well in order to enjoy all new functionalities.
+
 # Automating tasks
 
 You can use [[Cronjobs]] to automate any LGSM function.
@@ -109,7 +122,7 @@ Most used ones are:
 * Automatically check for updates [[update]]
 * Automatically check for server crash and restart if needed [[monitor]]
 * Automatically keep LGSM up to date [[update-functions]]
-* Automatically restart the server at a given time [[start-stop-restart]
+* Automatically restart the server at a given time [[start-stop-restart]]
 * Automatically update and restart the server [[force-update]]
 * Automatically backup the server [[backup]]
 
@@ -146,13 +159,3 @@ Use debug mode to help you if you are having issues with the server. Debug allow
 ````bash
 ./gameserver debug
 ````
-
-# Updating your LGSM script
-LGSM has the ability to self [update-functions].
-
-````bash
-./gameserver update-functions
-````
-
-This will allow you to get various fixes and possibly new functionalities.  
-In some rare cases, you will need to update your main "gameserver" script as well in order to enjoy all new functionalities.
