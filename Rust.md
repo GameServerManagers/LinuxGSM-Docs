@@ -6,7 +6,8 @@ That allowed us to add a Rust Server Script into LGSM.
 
 In this guide, we're going to go through the Rust install process, correcting your system to handle multiple Rust servers, installing Oxide and keeping it updated easily.
 
-UPDATE 2017-01-29: LGSM now supports downloading, updating, or removing Oxide!
+UPDATE 2017-01-29: LGSM now supports downloading, updating, or removing Oxide!  
+Run [[update-functions]] command to get the new feature!
 
 ## System requirements
 
