@@ -237,15 +237,26 @@ You can run a monitor cronjob every few minutes to make sure your server is up a
 */3 * * * *  su - rust -c '/home/rust/rustserver monitor' > /dev/null 2>&1
 ````
 
-12) Updating Rust
+## 12) Updating Rust
 
 Just run
 ````bash
 ./rustserver update
 ````
+
 If needed, run
 ````bash
 ./rustserver validate
+````
+
+To wipe the server run
+````bash
+./rustserver wipe
+````
+
+To update Oxide, that your previously installed with LGSM, run
+````bash
+./rustserver mods-update
 ````
 
 ## Special Thanks : 
