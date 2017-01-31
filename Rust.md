@@ -60,7 +60,11 @@ Rusty Rcon Tool
 
 ## Rust Server with LGSM Video tutorial
 
-If you need some help, here is a video that shows how to use LGSM, it also explains the basics of a Rust Server, and other stuff, that's why it's 20 minutes long, otherwise, if you're experienced, you can get your server up and running in around 5 minutes without any mods.
+Here is a quick tour of Rust special features, and install guide for Rust and Oxide.
+
+https://www.youtube.com/watch?v=6GaoyPeN71g
+
+If you need more help, here is a video that shows a bit more into depth how to use LGSM, how the directory structure works, it also explains the basics of a Rust Server and other stuff, that's why it's 20 minutes long, otherwise, if you're experienced, you can get your server up and running in around 5 minutes without any mods.
 
 https://www.youtube.com/watch?v=eFH9Qj-hUOM
 
