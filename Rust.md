@@ -190,6 +190,8 @@ ownerid STEAMID64 "Nickname" "Reason" ; to add an owner
 moderatorid STEAMID64 "Nickname "Reason" ; to add a moderator
 ```
 
+Note: append `server.writecfg` after adding an admin, and player needs to reconnect the server in order for it to be applied. 
+
 ## 10) Avoid a security breach and allow you to run multiple servers
 
 By default, a user can see all started processes from other users, which is bad, but also their start parameters, which is pretty dangerous. Those start parameters can contain sensitive information, such as RCON password, Steam API keys, GSLTokens...
