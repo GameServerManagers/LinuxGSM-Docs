@@ -8,8 +8,8 @@ One of the main advantages for LinuxGSM is that will install the game server for
 
 2. Run the install command:
 
-`./gameserver install`
-
+Standard: `./gameserver install`
+Short: `./gameserver i` 
 3. Follow on screen instructions
 And voilà !
 
