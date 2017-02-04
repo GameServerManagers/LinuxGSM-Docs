@@ -1,6 +1,6 @@
-# Installing your server
+One of the main advantages for LinuxGSM is that will install the game server for the admin. The installer will be the first thing an admin will run when getting started with a server.
 
-LGSM provides an automatic installer for every game server. The installer will be the first thing you run when getting started with your server.
+# Installation
 
 1. Make your script executable: 
 
@@ -10,21 +10,25 @@ LGSM provides an automatic installer for every game server. The installer will b
 
 `./gameserver install`
 
-Now simply follow instructions !
+3. Follow on screen instructions
 And voilà !
 
+# Common installation issues
 
-## Failing installations
+## Permissions issues
 
-### Permissions issues
+LinuxGSM may fail to run if the correct permissions have not been used. This fault commonly occurs if an admin has not correctly followed installation instructions found on https://gameservermanagers.com
 
-Did you make a dedicated user for that server? Is your current directory owned by that user? Did you `chmod +x` the script?
+Common faults include:
+* trying to install the LinuxGSM as root. 
+* Trying to install LinuxGSM in a directory not owned by the correct user
+* not making `gameserver` file executable using the `chmod +x` command.
 
-Make sure the directory you are installing your game in actually belongs to the right user: 
+if you try to run as root LinuxGSM will fail to run. See [FAQ](https://github.com/GameServerManagers/LinuxGSM/wiki/FAQ#can-i-run-a-server-as-root)
 
-`ls -al`
+To check the correct user owns the directory or `gameserver` file use `ls -al`
 
-Example
+**Example output**
 
 	drwxrwxr-x  5 nmrihserver nmrihserver 4096 Jul 17 20:25 lgsm
 	drwxr-xr-x  4 nmrihserver nmrihserver 4096 Aug 27  2015 log
@@ -35,27 +39,37 @@ Example
 	drwxrwxr-x  6 nmrihserver nmrihserver 4096 Aug 19 16:00 steamcmd
 
 
-If not, use some chown commands. Login to root, then run this command, replacing "username" by your actual username : 
+If some files/directorys are not owned use the `chown` command to correct this. 
+Login as root and use the following command; changing the details to match your server
 
-`chown -R username:username /home/username`
+`chown -R username:username /home/gameserver`
+
+`chown -R csgoserver:csgoserver /home/csgoserver`
 
 ### Bad network to Steam servers
 
-If your connection to Steam servers is bad (which is very common...), SteamCMD download can fail. That's why LGSM will always ask you if installation was successful to retry it if needed. If you have trouble getting it done, you can try :  
+If your connection to the Steam servers are bad (quite common), SteamCMD download can fail. This is why LinuxGSM will always ask you if installation was successful allowing admins to retry the download if it fails. 
+
+If you you are having issues downloading try the [[validate]] option.
 
 `./gameserver validate`
 
-### Missing packages
+If downloading is still failing it may be worth contacting your server provider to confirm steam servers are not being blocked for any reason.
 
-You may not of installed all the required dependencies to run the server.
-Go on the desired server page of [http://gameservermanagers.com/](http://gameservermanagers.com/), then select your distro, to know all packages you need to install.
+It is also worth searching the internet for issues relating to the error message you receive.
 
-### Not enough disk space
-Check your remaining disk space.
+## Not enough disk space
+Some game servers do use significant disk space. If you are having issues downloading check that your server has enough space available
+
 To check your disk remaining space, use: 
 
 `df -h` or `./gameserver details
 
 ### DNS Issue
 
-Did you configure your DNS properly ? Installer can't work without access to DNS.
+Make sure you can `ping` web addresses
+
+`ping google.com`
+
+should this fail your server may not have DNS lookup correctly configured.
+https://www.cyberciti.biz/faq/linux-setup-dns-lookup/
