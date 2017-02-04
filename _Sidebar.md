@@ -46,6 +46,7 @@
 # Knowledge Base
 ### Game Info
 * [[Arma 3]]
+* [[Call of Duty 4]]
 * [[Unreal Tournament 99]]
 * [[Unreal Tournament 2004]]
 * [[TeamSpeak 3]]
