@@ -1,7 +1,6 @@
 # Updating your server
 
-LinuxGSM comes with an update server feature. All SteamCMD games servers are supported, as well as some other servers such as Teamspeak.
-
+LinuxGSM comes with an update server feature. All SteamCMD games servers are supported, as well as some other servers such as Teamspeak, Minecraft, Mumble & Factorio.
 
 ## Commands
 
