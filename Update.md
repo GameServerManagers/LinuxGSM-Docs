@@ -10,12 +10,6 @@ LinuxGSM comes with an update server feature. All SteamCMD games servers are sup
 
 Update will check for an update. If there is an update it will download and apply it, restarting the server if already running. If there is no update LinuxGSM will take no action.
 
-`./gameserver force-update`
-
-`./gameserver fu`
-
-Force update (SteamCMD only) will simply bypass the check and run the SteamCMD update regardless pf if there is an update or not.
-
 ## Automatic update
 
 ### Update on start
