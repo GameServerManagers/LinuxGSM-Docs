@@ -1,9 +1,13 @@
-Previously known as `update-restart`, `force-update` is a command acting just like [[update]] except it will stop your server, start the update process even if no update appears to be available, then start it back.
 
-It's pretty useful if you're restarting your server on a daily basis with [[cronjobs]] for example, you can just check for updates at the same time without having issues with multiple cronjobs running at the same time.
 
+Force update ([[SteamCMD]] only) bypasses the [[update]] check and runs the [[SteamCMD]] update regardless of if there is an update or not. This will run a [[SteamCMD]] update and restart the game server.
+
+Force update is a useful feature for admins that restart there server on a daily with [[cronjobs]]. It allows LinuxGSM to check for updates while restarting the server.
 
 ## Commands
 
-`./gameserver force-update`
-`./gameserver fu`
+Standard: `./gameserver force-update`
+
+Short: `./gameserver fu`
+
+> note: force-update was previously known as `update-restart`,
