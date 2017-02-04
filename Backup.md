@@ -1,5 +1,7 @@
 The backup command will allow you to create .tar.gz archives of a gameserver. This can be used to transfer a server to another physical machine, to save your work before a risky change, to save the current state of the server and any many more.
 
+> Note: that the whole gameserver will be each time which can take up significant space. Please considure a backup policy to prevent your server from running our of disk space.
+
 **Commands**: 
 
 ````bash
@@ -19,33 +21,30 @@ Warning! mumble-server will be stopped during the backup.
 ```
 
 # Backup settings
-
 You can alter three settings by editing your `gameserver `file.
 
-1. How many backups to keep. If the amount of backups exceeds this value, then the oldest backups will be removed after a successful backup.
+Set the maximum backups you want to keep with `maxbackups`. If the number of backups exceeds this value, then the oldest backup will be removed after a successful backup.
 
 ````bash
 maxbackups="4" 
 ````
-Note: A value of 0 will mean don't keep any backup, even the one you just created.
+> Note: Setting the value to 0 will prevent any backups from being saved, including the one you just created.
 
-2. How long a backup should last. Older than `x` days backups will get removed upon successful backup.
+Set the maximum age of a backup using `maxbackupdays`. Any backups than X days will be removed after a successful backup.
 
 ````bash
 maxbackupdays="30"
 ````
+>Note: Setting the value to 0 will retain the backup for 24 hours.
 
-Note: A value of 0 stands for 24h.
-
-3. If the game server is started, then stop it before running the backup and restart it afterwards. This is useful to prevent any file change during compression that would result in a failure. 
+Set if the server should be stopped for a backup using `stoponbackup`. If the server is running it will be stopped while the backup is running and started again once complete. This is useful to prevent any file changes during compression that could result in a corrupt or failed backup. 
 
 ````bash
-stoponbackup="on" # on/off
+stoponbackup="on"
 ````
 
 # Automated backups
-
-You can now set automated backups using [cronjobs](https://github.com/GameServerManagers/LinuxGSM/wiki/Cronjobs). However, you should make sure that your backup settings and the cronjob frequency are set according to the size of the gameserver you want to backup and to your disk space.
+You can setup automated backups using [cronjobs](https://github.com/GameServerManagers/LinuxGSM/wiki/Cronjobs). It is recommended that you carefully consider how frequently you backup and your retention policy to prevent your server from running out of space.
 
 ## Root cronjob example
 
@@ -56,8 +55,7 @@ crontab -e
 ````
 
 # Backups Location
-
-By default backups are saved in the backup directory.
+By default backups are saved in the `backup` directory.
 
     ├── home
     ├── csgoserver 
@@ -68,8 +66,7 @@ By default backups are saved in the backup directory.
 
 
 # Checking Backups
-
-You can use /.gameserver [[details]] to get info about created backups. Example : 
+You can use ./gameserver [[details]] to get information about created backups.
 
     Backups
     ===============================================================================
@@ -84,3 +81,23 @@ You can use /.gameserver [[details]] to get info about created backups. Example 
     Disk available:  5.4G
     Serverfiles:     1.6G
     Backups:         6.2G
+
+# Alternative backup Methods
+Using the backup feature is not the only way to backup your server. There are other methods that have more features are are more powerful than the basic LinuxGSM backup feature. Below are are few applications that you can use instead of or with the LinuxGSM backup and are great tools for Linux command line backups.
+
+## rsync
+rsync is one of the most common ways to backup. It is a remote sync tool that is create for sending files/directory's to another location. Particularly good for syncing to another server.
+
+https://www.digitalocean.com/community/tutorials/how-to-use-rsync-to-sync-local-and-remote-directories-on-a-vps
+
+## Duplicity
+Is an incremental backup solution that allows to you backup to all sorts of different locations including many different Cloud storage solutions like BackBlaze B2 and Amazon S3. Once configured it can be a powerful and efficient backup solution.
+http://duplicity.nongnu.org/
+
+### duplicity-backup.sh 
+duplicity-backup.sh is a very useful bash wrapper to help automate duplicity. https://github.com/zertrin/duplicity-backup.sh
+
+## rclone
+Similar to rsync however you can easily sync to cloud storage solutions.
+
+http://rclone.org/
