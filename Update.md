@@ -45,7 +45,14 @@ It is not recommended you check for updates more than once per hour.
 If you want to make your own cronjob crontab.guru is a great resource to generate cronjobs.
 https://crontab.guru/
 
-## When an update isn't enough...
+## Force Update
+
+See [[force-update]]
+
+
+## Validate
+
+See [[validate]]
 
 Sometimes, things can go wrong SteamCMD can mess up, you can have corrupt files or files fail to download properly.
 So if your server isn't starting after an update, or if it's still at the same server version, run the validate command.
