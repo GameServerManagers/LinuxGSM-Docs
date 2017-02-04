@@ -1,45 +1,25 @@
 # Using server console
 
-Most game servers offers a console, in which you can monitor activity of your server, check errors in real time, and input some commands.
+The console feature allows to you access the output of the game server executable. Depending upon which server you are running it can allow you to monitor activity of your server, check errors in real time, and input commands.
 
-**IMPORTANT NOTE** : Replace **gameserver** by your actual script name, for example : **csgoserver** or **ts3server**
+> Note: different game servers provide different features in console, so results will vary. For example some allow user input and others do not. While some give a very verbose output and others next to nothing (looking at you rust!). 
 
 ## Accessing the console
+Run the following command to access console: 
 
-Run the following command : 
+Standard: `./gameserver console`
 
-`./gameserver console`
+Short: `./gameserver c`
 
-Answer **y** to the promp, and voilà !
+Answer **y** to the prompt, and voilà !
 
-
-
-## Exiting the console properly
-
-To exit the console and let the server running, two steps : 
-
+## Exiting the console
+To exit the console:
 Press **CTRL + b**, then, press **d**
+> Take your time with this as it does sometimes confuse admins.
 
-Note : This shortcut is inherent to [TMUX that LGSM is using](https://github.com/dgibbs64/linuxgsm/wiki/Tmux).
+## Naughty people exit the console using CTRL+c
+Pressing **CTRL + c** while in console will instantly kill the [[tmux]] session and kill the game server. 
+LinuxGSM will treat this as the server crashing and monitor will restart the server
 
-
-
-## Exiting the console and shutdown the server with a barbarian method
-
-To force close the server instantly your server while being into the console : 
-
-Press **CTRL + c** 
-
-Note that this doesn't remove the lockfile, so if a monitor cronjob is running it will still auto-restart the server.
-
-
-
-## Reminder
-
-### To shutdown your server properly while being into the console :
- 
-Exit the console with **CTRL + b**, then, press **d**
-
-Then simply run : 
-
-`./gameserver stop`
+To correctly shutdown a server use `./gameserver stop`
