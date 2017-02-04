@@ -18,7 +18,7 @@ You can update your server on start, by editing your game main script.
 
 `updateonstart="on"`
 
-This has the inconvenience of making your server longer to start, but is a good solution if you're not too familiar with [[Cronjobs]] yet.
+This has the inconvenience of making your server longer to start but can be useful for servers that are kept off most of the time such as match servers.
 
 ### Scheduled updates
 
