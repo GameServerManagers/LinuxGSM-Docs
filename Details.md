@@ -1,8 +1,12 @@
 Details allows you to access useful information about the game server.
 
-./gameserver details
+#Commands
+Standard: `./gameserver details`
 
-You will be given the various details that are applicable to your game server:
+Short:  `./gameserver dt`
+
+#Details provided
+You will be given various details that are relevent to your game server. These include:
 
 -   Distro Details
 -   Performance
@@ -15,8 +19,9 @@ You will be given the various details that are applicable to your game server:
 -   Backups
 -   WebAdmin Username
 -   WebAdmin Password
+-   Server parameters
 
-**Example output**
+#Example output
 
     Distro Details
     ===============================================================================================================================================================
