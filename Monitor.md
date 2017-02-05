@@ -36,3 +36,9 @@ If you wish to get informed after a server was monitored down, see [[Email]] and
 ## Boot startup
 
 You can use monitor to run your server at boot under certain conditions. See [[On-Boot]]
+
+# How does it work?
+
+Monitor, will first check if the server process (or tmux session) is properly started. If it is, it will then attempt to query the server using gsquery.py. If any of those results is negative, then if the lockfile created upon server start is found, then the server will be restarted after 30s of query attempts.
+
+Note: During server start, map change, workshop downloads, the server is unable to answer queries.
