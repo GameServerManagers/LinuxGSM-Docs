@@ -1,4 +1,4 @@
-LGSM makes config management easier in many different ways. However, some knowledge about it might be necessary.
+LinuxGSM makes config management easier in many different ways. However, some knowledge about it might be necessary.
 
 # Config file's location
 
