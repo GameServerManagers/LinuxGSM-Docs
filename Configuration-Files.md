@@ -43,9 +43,9 @@ LinuxGSM will always check a config file is present when starting a server.
 If a config file is missing, it will be simply re-download the default one.
 
 # Where are the settings I'm looking for?
-Game servers have many different ways of managing settings. Some are set within [[Start-Parameters]], inside the management script itself, while some are set within a configuration file.  
-One of the goals of LGSM is to sort it out for you as much as possible, by providing all important settings out of the box, wherever they are. 
-There is no general rule about where config files are set. For that matter, you should always edit your `gameserver` script first in order to see available settings, then edit your configuration file.  
+Game servers have many different ways of managing settings. Some are set within [[Start-Parameters]], inside the management script itself, while some are set within a configuration file.
+ 
+One of the goals of LinuxGSM is to make managing these as easy as possible, by providing all important settings out of the box, wherever they are. There is no general rule about where config files are set. For that matter, you should always edit your `gameserver` script first in order to see available settings, then edit your configuration file.  
 It is also a good idea to look for the official documentation of the game server that you're trying to run in order to find relevant information about settings.
 
 ### I found missing settings or an error with config files?
