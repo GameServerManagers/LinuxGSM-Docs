@@ -221,3 +221,4 @@ If it happens upon start:
 If it happens after a while:  
 * Bug from the game server or an addon - Check your console logs, see if you can reproduce, and diagnose your addons
 * Unstable hardware - very unlikely, check your system stability
+* Ulimit issue: Your system cannot open as many files as it should - See ulimit info from this page
