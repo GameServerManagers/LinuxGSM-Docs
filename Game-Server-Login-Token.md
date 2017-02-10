@@ -12,6 +12,7 @@ Note: Every single server must use a unique GSLT.
 * Garry’s Mod
 * No more Room in Hell
 * Team Fortress 2
+* Tower Unite
 
 # Generate a token
 
