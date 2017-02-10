@@ -37,7 +37,8 @@ autoexec.cfg
 
 Tower Unite has a command within its config file 
 
-```SteamLoginToken=```
+`SteamLoginToken=`
+
 
 # What is the point of GSLT?
 To fully understand the reasoning behind GSLTs, we need to back up a bit to July 2015. [Valve announced that running certain plugins would get your server blacklisted](http://dathost.net/blog/important-information-regarding-our-csgo-servers/), meaning it could not connect to the master servers and people wouldn’t be able to connect to the server.
