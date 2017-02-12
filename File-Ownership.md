@@ -31,3 +31,8 @@ Change user and/or ownership for files and folders
 
 #### Recursive
 `chown -R`
+
+## Example:
+
+chown -R myuser:myuser /home/myuser
+
