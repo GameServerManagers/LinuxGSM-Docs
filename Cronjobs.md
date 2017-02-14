@@ -10,13 +10,70 @@ Most used ones are:
 
 LGSM team advise you to use root cronjobs to manage everything in one place. Just login as root, then edit your cronjobs. 
 
+# Cronjobs generalities
+
 ## Command
 To access and edit your cronjobs, input  
 `crontab -e`
 
+Wether you do this command as root or as a user, will determine if it's a user or a root cronjob.  
 You may be prompted for choosing a text editor the first time.  
-If you with to change crontab's text editor, you can run:   
+If you wish to change crontab's text editor, you can run:   
 `export EDITOR=vim` or `export EDITOR=nano`
+
+## Syntax
+
+#### User cronjobs
+````bash
+* * * * * [/path/to/script] [command]  > /dev/null 2>&1
+````
+
+#### Root cronjobs
+````bash
+* * * * * su - username -c [/path/to/script] [command]  > /dev/null 2>&1
+````
+
+**Note**: The ` >/dev/null 2>&1` is required to mute the execution (don't save or send output)
+
+### Temporal values 
+`*` can be considered as "bypass" values.  
+You can replace them by numerical values standing for  
+**minutes** - **hours** (24h format) - **days** - **month** - **day of the week** (Sunday =0 to Saturday =6)
+
+
+#### Every "x" time
+In order to run a command, such as "monitor" every "x" time, there is a simple solution.  
+Replace `*` by `*/x`, "x" being the desired numerical value.  
+Think about defining smaller amounts of time to a fixed value when using this. For example, if you wish to have an "every two hours" cronjob, you'll need to set a fixed value for minutes.
+
+#### Temporal values examples
+Every single minute    
+`* * * * *`
+
+Every 30 minutes  
+`*/30 * * * *`
+
+Every hour  
+`0 * * * *`
+
+Every two hours  
+`0 */2 * * *`
+
+Every day at 5:10 PM  
+`10 17 * * *`
+
+Every Wednesday at 1 AM   
+`* 1 * * * 3`
+
+Every five days at 1 AM  
+`* 1 */5 * *`
+
+### Cronjob generator
+
+If you have any doubt about a particular syntax, you can use this generator : http://crontab-generator.org/
+
+
+# LGSM Cronjobs examples
 
 ## Daily cronjobs
 
@@ -127,56 +184,3 @@ Here is an example of a root based cronjob to monitor your server every 3 minute
 * You can also sparingly run "every x time" update checks, for games getting updated a lot.
 * As you can see for the commented Rust server, you can also run your own custom scripts if the task is more complicated than just an LGSM command.
 * Ultimately, it's wise to add an "uf" cronjob (for "update-functions") in order to keep LGSM up to date.
-
-# Cronjobs generalities
-
-### Syntax
-
-#### User cronjobs
-````bash
-* * * * * [/path/to/script] [command]  > /dev/null 2>&1
-````
-
-#### Root cronjobs
-````bash
-* * * * * su - username -c [/path/to/script] [command]  > /dev/null 2>&1
-````
-
-**Note**: The ` >/dev/null 2>&1` is required to mute the execution (don't save or send output)
-
-### Temporal values 
-`*` can be considered as "bypass" values.  
-You can replace them by numerical values standing for  
-**minutes** - **hours** (24h format) - **days** - **month** - **day of the week** (Sunday =0 to Saturday =6)
-
-
-#### Every "x" time
-In order to run a command, such as "monitor" every "x" time, there is a simple solution.  
-Replace `*` by `*/x`, "x" being the desired numerical value.  
-Think about defining smaller amounts of time to a fixed value when using this. For example, if you wish to have an "every two hours" cronjob, you'll need to set a fixed value for minutes.
-
-#### Temporal values examples
-Every single minute    
-`* * * * *`
-
-Every 30 minutes  
-`*/30 * * * *`
-
-Every hour  
-`0 * * * *`
-
-Every two hours  
-`0 */2 * * *`
-
-Every day at 5:10 PM  
-`10 17 * * *`
-
-Every Wednesday at 1 AM   
-`* 1 * * * 3`
-
-Every five days at 1 AM  
-`* 1 */5 * *`
-
-### Cronjob generator
-
-If you have any doubt about a particular syntax, you can use this generator : http://crontab-generator.org/
