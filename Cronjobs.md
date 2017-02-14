@@ -36,9 +36,14 @@ If you wish to change crontab's text editor, you can run:
 **Note**: The ` >/dev/null 2>&1` is required to mute the execution (don't save or send output)
 
 ### Temporal values 
-`*` can be considered as "bypass" values.  
+`*` can be considered as "bypass" values by some, but means "whatever the value is, do it".  
 You can replace them by numerical values standing for  
 **minutes** - **hours** (24h format) - **days** - **month** - **day of the week** (Sunday =0 to Saturday =6)
+
+A numerical `x` value would mean "when it is this value".  
+While a `*/x` means every `x` time.  
+
+Of course, you can combine those rules smartly to achieve what you want.
 
 
 #### Every "x" time
@@ -58,6 +63,9 @@ Every hour
 
 Every two hours  
 `0 */2 * * *`
+
+Every two hours when it's 30 minutes on the clock
+`30 */2 * * *`
 
 Every day at 5:10 PM  
 `10 17 * * *`
