@@ -1,6 +1,4 @@
-# LGSM Logs
-
-If your user is "gameserver", then LGSM logs are located in the following directory:
+If your user is "gameserver", then LinuxGSM logs are located in the following directory:
 
 `/home/gameserver/log`  
 
