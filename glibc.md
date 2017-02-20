@@ -16,10 +16,14 @@ List of distros and there glibc version.
 | CentOS 5         | 2.5     |
 | CentOS 6         | 2.12    |
 | CentOS 7         | 2.17    |
+| Fedora 17        | 2.15    |
+| Fedora 18        | 2.16    |
+| Fedora 19        | 2.17    |
+| Fedora 20        | 2.18    |
 | Debian 6         | 2.11.2  |
 | Debian 7         | 2.13    |
 | Debian 8         | 2.19    |
-| Debian 9         | 2.23    |
+| Debian 9         | 2.24    |
 | Ubuntu 12.04 LTS | 2.15    |
 | Ubuntu 14.04 LTS | 2.19    |
 | Ubuntu 16.04 LTS | 2.23    |
