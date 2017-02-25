@@ -1,4 +1,4 @@
-FastDl script is now available for Garry's Mod only, but will be deployed for other source games as well.
+FastDL script is now available for Garry's Mod only, but will be deployed for other source games as well.
 
 
 ## What is FastDL ?
