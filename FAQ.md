@@ -152,6 +152,17 @@ Ignore the error, do not do anything to attempt to fix it. It is a known issue t
 
   [GitHub issues]: https://github.com/dgibbs64/linuxgsm/issues
 
+What server do I need?
+=========================================================================
+
+If LinuxGSM have some dependencies, it doesn't have minimum hardware requirements on its own since it's only bash, and bash is very light and optimized.  
+However, game servers themselves do have hardware requirements. You need to be aware of these requirements in order to chose your a server that fits your needs. Here are a few generalities to help you:  
+
+* HDD: Most of the time, the server requires the same amount of free disk space than the game itself. So check how much space your game uses first or try to install the game server on a test machine that has a very high amount of free space, then check the size of the directory with `du -mh /path/to/server`. Also don't forget to think about space you might need for mods/addons, backups, FastDL, or any other application.
+* CPU: Almost every game server is monothreaded, which means it will only use one CPU core. For that matter, single threaded performance needs to be as good as possible, while multithreaded performance will only allow you to run more servers. It is not recommended to use single threaded servers, because you need some room for other system tasks. Every game has a different way of using CPU time. For example: Rust CPU usage will mostly depend on your map size, Counter-Strike will mainly depend on the tickrate and amount of bots, Garry's Mod will depend on the amount of connected players, addons, and props that are used. But in any case: You're almost always limited to the performance of one CPU core, so it has to be fast enough for the load you're going to need. Testing is usually the only way to know, but don't fool yourself: Unfortunately, a very cheap CPU will more likely not be able to run a game server properly.
+* RAM: If "Source" engine servers can be pretty light (a few hundred MB of RAM usage), some games like Rust can go up to around 12GB of RAM usage, depending on your configuration. Ark is in the middle and uses around 6GB of RAM. Some games, especially Unity3D engine games have high RAM requirements, while some others are very light. Get yourself informed before buying a server.
+* Network: Game servers are usually not very demanding in terms of bandwidth, (a few Mbit/s). However, this nework availability must be consistent for a game server, especially in terms of ping, routes, and packet loss, otherwise players will experience lags or latency. In that regard, server's location and interconnection are things you need to check before choosing a server. As usual for online services, a good DDoS protection is also very advised.  
+
 I'm getting 404 errors when running functions
 =========================================================================
 
@@ -203,7 +214,7 @@ This can have numerous reasons. Here are some ways do diagnose this issue:
 * Are the ports you're using free? See [[Ports]]
 * Did you wait long enough? Sometimes it's just a matter of time until your server shows up into the list
 
-Segmentation fault
+I get segmentation fault, how to solve this issue?
 =========================================================================
 
 My source server is displaying an error like  
