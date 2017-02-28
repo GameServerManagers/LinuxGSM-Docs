@@ -1,4 +1,5 @@
-LGSM now supports installing, updating, and removing some mods and addons for some games and engines.
+LGSM now supports installing, updating, and removing some mods and addons for some games and engines.  
+We currently support zip addons installations only. Other mods for other games are still to be installed manually.
 
 # Commands
 
