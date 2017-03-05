@@ -1,10 +1,7 @@
-## Alerts
+Email alerts allow you to receive an email if the server crashed or was updated (See [[Monitor]]). The email will include some of the logs to help you diagnose what caused the crash.
 
-Alerts allow you to receive an email if the server is monitored down, restarted or updated (See [[Monitor]]). That notification will include some of the logs to help you diagnose what caused the crash. Make sure that you installed mailx (mailutils) and postfix or any other mail server that can send mails.
+To enable email lalert, edit your `gameserver` script. 
 
-To enable them, edit your script accordingly : 
-
-#### Email:
 ````bash
 emailalert="on"
 email="email@example.com" # Destination email
