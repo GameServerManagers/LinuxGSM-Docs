@@ -1,11 +1,13 @@
-If your user is "gameserver", then LinuxGSM logs are located in the following directory:
+Logs are an important part of monitoring a server as it allows you to know what has been happening. Linux GSM has a log directory that allows you to track the gameserver, console and LinuxGSM itself.
+
+If your user is `gameserver`, then LinuxGSM logs are located in the following directory:
 
 `/home/gameserver/log`  
 
 This "log" directory contains two other directories:  
 * `script`, logs LinuxGSM script activity
 * `console`, logs gameserver [console](https://github.com/GameServerManagers/LinuxGSM/wiki/Console) output
-
+* `game`, is a redirect to the game server log files if available.
 # Settings
 
 You can alter these settings to change LinuxGSM behavior:  
