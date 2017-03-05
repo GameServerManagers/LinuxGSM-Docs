@@ -25,7 +25,7 @@ Here is an example of a root based cronjob to monitor your server every 5 minute
 
 To learn more about automation, see [[Cronjobs]]
 
-## Email notifications
+## Alert Notifications
 
 If you wish to get informed after a server was monitored down, see [[Email]] and [[Pushbullet]].
 
