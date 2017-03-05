@@ -1,11 +1,9 @@
-# Monitoring your server
-
 The monitor function allows you to check if a server is up and running, and restart it if it's down after several unsuccessful queries.
 
 `./gameserver monitor`
 
 
-## Automated monitoring
+# Automated monitoring
 
 The whole point of this monitor function is to automate it using cronjobs.
 
