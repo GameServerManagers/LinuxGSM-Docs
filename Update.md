@@ -60,7 +60,7 @@ So if your server isn't starting after an update, or if it's still at the same s
 `./gameserver validate`  
 `./gameserver v`
 
-Note: if you modified core server files, they will be restored to their original version.
+> Note: if you modified core server files, they will be restored to their original version.
 
 # Updating your LinuxGSM script
 LinuxGSM has the ability to self update functions. It is recommended that you regularly run this command to get the latest version of LinuxGSM.
