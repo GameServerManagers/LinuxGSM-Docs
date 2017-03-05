@@ -1,6 +1,4 @@
-LGSM provides an easy way to start, stop, or restart your game server.
-
-_Of course, install your server with the [[Installer]] first._
+LinuxGSM provides an easy way to start, stop, or restart your game server.
 
 ## Starting a server
 
@@ -12,10 +10,10 @@ Will start the server in a tmux occurrence.
 
 `./gameserver stop`
 
-Will stop a server with a proper way, and force close it after 30s if it doesn't close properly (graceful shutdown).
+Will attempt to correctly stop a server using (graceful shutdown). Should this fail it will be forced to stop after 30 seconds.
 
 ## Restarting a server
 
 `./gameserver restart`
 
-Will use the stop, then the start functions.
+Will use the stop, then the start the server.
