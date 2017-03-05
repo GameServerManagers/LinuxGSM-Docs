@@ -15,7 +15,7 @@ To learn more, see [cronjobs](https://github.com/GameServerManagers/LinuxGSM/wik
 
 ## Using rc.local
 
-Add a command in to the rc.local file. That works with most distro. 
+Add a command in to the rc.local file. That works with most distros. 
 
 Example (as root; replace "username" and "gameserver" accordingly):
 ````bash
