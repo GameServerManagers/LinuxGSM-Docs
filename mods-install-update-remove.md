@@ -1,19 +1,20 @@
-LGSM now supports installing, updating, and removing some mods and addons for some games and engines.  
+LinuxGSM now supports installing, updating, and removing some mods and addons for some games and engines.  
 We currently support zip addons installations only. Other mods for other games are still to be installed manually.
 
 # Commands
 
-````bash
-# Install mods
-./gameserver mods-install
-./gameserver mi
-# Update mods
-./gameserver mods-update
-./gameserver mu
-# Remove mods
-./gameserver mods-remove
-./gameserver mr
-````
+## Install mods
+`./gameserver mods-install`
+
+`./gameserver mi`
+## Update mods
+`./gameserver mods-update`
+
+`./gameserver mu`
+## Remove mods
+`./gameserver mods-remove`
+
+`./gameserver mr`
 
 # Supported mods/addons
 
@@ -46,7 +47,7 @@ We currently support zip addons installations only. Other mods for other games a
 * After the user selects a mod, the file gets downloaded, then extracted.  
 * A file containing mod's file list relative to extract dir is created: `lgsm/mods/modname-files.txt`. Those file lists are used in order to allow uninstalling a mod properly, while making our best to keep sensitive directories safe by removing them from the list, using `fn_mod_tidy_files_list` from `mods_core.sh`.
 * Then files and directories get copied to the destination using `cp -Rf`.
-* LGSM then creates a file containing a list of installed mods: `lgsm/mods/installed-mods.txt`, allowing to know: how many mods are installed; is the mod we're trying to install already installed; and what mods to update. 
+* LinuxGSM then creates a file containing a list of installed mods: `lgsm/mods/installed-mods.txt`, allowing to know: how many mods are installed; is the mod we're trying to install already installed; and what mods to update. 
 
 ### Update
 * The list `lgsm/mods/installed-mods.txt` is used to know what mods are installed. If a non-referenced mod is found, the updater will stop with an error.
@@ -66,7 +67,7 @@ We currently support zip addons installations only. Other mods for other games a
 As long as the archive can be found over the net and that the installation consists in extracting the file somewhere in serverfiles directory, then adding support for the mod should be quite easy. 
 
 ## Asking to add support for a mod
-If there is a mod you wish to see supported by LGSM, please, contact us on Discord or open a Pull-Request on Github with relevant information.
+If there is a mod you wish to see supported by LinuxGSM, please, contact us on Discord or open a Pull-Request on Github with relevant information.
 
 ## Developers
 
