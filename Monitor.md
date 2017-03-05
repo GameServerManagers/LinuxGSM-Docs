@@ -23,8 +23,6 @@ Here is an example of a root based cronjob to monitor your server every 5 minute
 
 `*/5 * * * *  su - username -c '/home/username/gameserver monitor' > /dev/null 2>&1`
 
-***
-
 To learn more about automation, see [[Cronjobs]]
 
 ## Email notifications
