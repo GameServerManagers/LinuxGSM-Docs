@@ -1,9 +1,9 @@
 
-LGSM uses tmux to run servers in the background so the instance is not lost when you close a terminal session.
+LinuxGSM uses tmux to run servers in the background so the instance is not lost when you close a terminal session.
 
-Tmux is a key component of LGSM and replaced [screen] which was used on early versions of LGSM. tmux has a few improvements over screen; mainly being better at handling of non root users which was a major issue when developing LGSM with screen. tmux allows LGSM to call up a game server running an the background so you can see what it is doing; this feature is available with console feature of LGSM.
+Tmux is a key component of LinuxGSM and replaced [screen] which was used on earlier versions. tmux has a few improvements over screen; mainly being better at handling of non root users which was a major issue when developing with screen. tmux allows LinuxGSM to call up a game server running in the background so you can see what it is doing; this feature is available with [[console]] feature.
 
-LGSM requires _tmux =\> 1.6_ to enable console logging.
+> LinuxGSM requires _tmux =\> 1.6_ to enable console logging.
 
 tmuxception
 -----------
@@ -13,9 +13,8 @@ Known Issues
 ========
 
 Tmux 1.8
-========
+--------
 tmux 1.8 has an issue that prevents console logging from working. This is because the `pipe-pane` feature is broken in tmux 1.8 causing is not to output the console to the console log files. The only solution is to use another version of tmux.
-
 
 ### Upgrade Tmux CentOS (7)
 
