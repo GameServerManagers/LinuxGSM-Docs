@@ -1,14 +1,5 @@
 "Native" Linux support for Rust is back since February 2016 ! https://twitter.com/garrynewman/status/700658567641231360
 
-That allowed us to add a Rust Server Script into LGSM.
-
-# Modded server with Oxide
-
-In this guide, we're going to go through the Rust install process, correcting your system to handle multiple Rust servers, installing Oxide and keeping it updated easily.
-
-UPDATE 2017-01-29: LGSM now supports downloading, updating, or removing Oxide!  
-Run [[update-functions]] command to get the new feature!
-
 ## System requirements
 
 ### RAM
@@ -28,8 +19,7 @@ It is highly recommended a dedicated server is used with Rust because of its hig
 ### Conclusion
 Don't take an inappropriate server with 150 cores @1,2Ghz, prefer a quad/hexa core @+3,3Ghz, check benchmarks before choosing your server. CPU: good monothread performance ;RAM: 12-16GB and more; avoid VPS.
 
-
-## Linux Distribution
+# Linux Distribution
 You will need Glibc greater or equal to v2.15 (more info https://github.com/dgibbs64/linuxgsm/wiki/Glibc )
 
 So you need:
@@ -37,18 +27,24 @@ So you need:
 * Ubuntu 12.04 LTS or greater
 * CentOS 7 or greater
 
+# Modded server with Oxide
+
+In this guide, we're going to go through the Rust install process, correcting your system to handle multiple Rust servers, installing Oxide and keeping it updated easily.
+
+> UPDATE 2017-01-29: LinuxGSM now supports downloading, updating, or removing Oxide! Run [[update-functions]] command to get the new feature!
+
 ## Useful Links
 
 ### Manual Installation and general information
 * If you wish to use the manual way, I (UltimateByte) updated the Valve Rust wiki (that still needs some work): https://developer.valvesoftware.com/wiki/Rust_Dedicated_Server
 
-### LGSM Installation
-* If you wish to use LGSM, grab the script provided here: https://gameservermanagers.com/lgsm/rustserver/
+### LinuxGSM Installation
+* If you wish to use LinuxGSM, grab the script provided here: https://gameservermanagers.com/lgsm/rustserver/
 
 ### Oxide Support
 http://oxidemod.org/threads/setting-up-a-rust-server-with-linux-and-lgsm.16528/
 
-### LGSM Support
+### LinuxGSM Support
 * See https://github.com/GameServerManagers/LinuxGSM/wiki/Support
 
 ### Oxide for Linux
@@ -58,18 +54,18 @@ Rusty Rcon Tool
 ### Rusty
 * Server RCON administration tool http://oxidemod.org/resources/rusty-server-rcon-administration-tool.53/
 
-## Rust Server with LGSM Video tutorial
+## Rust Server with LinuxGSM Video tutorial
 
 Here is a quick tour of Rust special features, and install guide for Rust and Oxide.
 
 https://www.youtube.com/watch?v=6GaoyPeN71g
 
-If you need more help, here is a video that shows a bit more into depth how to use LGSM, how the directory structure works, it also explains the basics of a Rust Server and other stuff, that's why it's 20 minutes long, otherwise, if you're experienced, you can get your server up and running in around 5 minutes without any mods.
+If you need more help, here is a video that shows a bit more into depth how to use LinuxGSM, how the directory structure works, it also explains the basics of a Rust Server and other stuff, that's why it's 20 minutes long, otherwise, if you're experienced, you can get your server up and running in around 5 minutes without any mods.
 
 https://www.youtube.com/watch?v=eFH9Qj-hUOM
 
 
-# LGSM Tutorial
+# LinuxGSM Tutorial
 
 ## 0) Make sure you have all the dependencies
 
@@ -85,7 +81,7 @@ adduser rust
 su - rust
 ````
 
-## 2) Get LGSM and make it executable
+## 2) Get LinuxGSM and make it executable
 
 ````bash
 wget https://gameservermanagers.com/dl/rustserver
@@ -139,7 +135,7 @@ Note: The Rust console is empty under Linux. You'll have to use an RCON tool and
 
 As a reminder, Oxide is an API allowing you to run mods for you Rust server.
 
-LGSM now handles Oxide for Rust natively, with mods-install and mods-update commands.
+LinuxGSM now handles Oxide for Rust natively, with mods-install and mods-update commands.
 
 ````bash
 ./rustserver mods-install
@@ -256,13 +252,13 @@ To wipe the server run
 ./rustserver wipe
 ````
 
-To update Oxide, that your previously installed with LGSM, run
+To update Oxide, that your previously installed with LinuxGSM, run
 ````bash
 ./rustserver mods-update
 ````
 
 ## Special Thanks : 
-* UltimateByte for Rust support into LGSM and documentation
+* UltimateByte for Rust support into LinuxGSM and documentation
 * Wulf and Oxide team for enlightening about Rust and Oxide
-* [Daniel Gibbs](https://twitter.com/dangibbsuk), Founder of LGSM, for his help making this work
-* CedarLUG, LGSM Support, for his help dealing with Rust's weirdness
+* [Daniel Gibbs](https://twitter.com/dangibbsuk), Founder of LinuxGSM, for his help making this work
+* CedarLUG, LinuxGSM Support, for his help dealing with Rust's weirdness
