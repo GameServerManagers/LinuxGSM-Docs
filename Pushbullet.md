@@ -1,13 +1,13 @@
-Pushbullet alerts allow you to recieve messages if your monitored server goes down is restarted or updated (See [[Monitor]]).
+Pushbullet alerts allow you to receive a push notification if the server crashed or was updated (See [[Monitor]]).
 
 ![](https://gameservermanagers.com/wp-content/uploads/2016/05/lgsm-pushbullet.png)
 
-# Enable alerts
+# Enable Pushbullet alerts
 To enable Pushbullet alerts you will need to edit the gameserver script.
 
 Generate your access token here: https://www.pushbullet.com/#settings
 
-```
+````bash
 # Pushbullet Alerts | https://github.com/GameServerManagers/LinuxGSM/wiki/Pushbullet
 pushbulletalert="on"
 pushbullettoken="o.noWN6jpIeBUkLraw24saHKd7ksOkn7on"
