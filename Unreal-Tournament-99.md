@@ -8,4 +8,4 @@ Unreal Tournament 99 Requires a few alterations from the official server downloa
 * UTBonusPack4.zip
 
 This can be downloaded here
-http://gameservermanagers.com/files/ut99/ut-server-451-complete.tar.bz2
+http://files.gameservermanagers.com/UnrealTournament99/ut99-server-451-ultimate-linux.tar.bz2
