@@ -12,7 +12,7 @@ As a reminder, you can edit your cronjobs, typing :
 `crontab -e`
 
 
-**ATTENTION !** Replace the username and gameserver according to your requirements
+> ATTENTION: Replace the username and gameserver according to your requirements
 
 
 Here is an example of a user based cronjob to monitor your server every 5 minutes : 
