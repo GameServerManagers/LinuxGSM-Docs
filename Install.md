@@ -78,7 +78,7 @@ To check your disk remaining space, use:
 
 ### DNS Issue
 
-Make sure you can `ping` web addresses
+Make sure you can `ping` using a hostname
 
 `ping google.com`
 
