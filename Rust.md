@@ -3,7 +3,7 @@
 ## System requirements
 
 ### RAM
-A Rust game server uses from 6 to 12GB RAM, depending on your map size.  
+A Rust game server uses from 3 to 12GB RAM, depending on your map size.  
 For that matter, LGSM warns you if you have less than 4GB available.
 
 ### CPU
