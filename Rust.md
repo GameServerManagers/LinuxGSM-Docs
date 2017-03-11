@@ -162,7 +162,7 @@ oxide.reload PluginName
 
 ## 9) Send RCON commands:
 
-You will need a tool to send RCON. Here are 3 of them:
+RCON is the protocol used to send commands to your server. You will need a tool to use it. Here are 3 of them:
 * Rusty: http://oxidemod.org/resources/rusty-server-rcon-administration-tool.53/
 * Rustadmin: https://www.rustadmin.com/
 * Facepunch web tool: http://facepunch.github.io/webrcon/#/home
@@ -181,9 +181,9 @@ If you can't remember the RCON port you set or password (that you MUST change), 
 ```
 save ; will save the server state (useful before a stop or restart)
 oxide.reload PluginName ; will reload a plugin after updating it
-server.writecfg ; to save config commands you ordered into Rusty, including new admins
 ownerid STEAMID64 "Nickname" "Reason" ; to add an owner
 moderatorid STEAMID64 "Nickname "Reason" ; to add a moderator
+server.writecfg ; will save config changes, including new admins
 ```
 
 Note: append `server.writecfg` after adding an admin, and player needs to reconnect the server in order for it to be applied. 
