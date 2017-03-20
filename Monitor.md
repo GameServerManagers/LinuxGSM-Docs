@@ -2,6 +2,7 @@ The monitor function allows you to check if a server is up and running, and rest
 
 `./gameserver monitor`
 
+Note: If the server was stopped manually, then `monitor` won't restart it.
 
 # Automated monitoring
 
