@@ -88,6 +88,8 @@ If you are on an older tmux version on CentOS you can upgrade to the latest vers
 3. ./configure
 4. make
 5. sudo make install
+6. sudo cp ./.libs/libevent-2.0.so.5 /usr/lib/libevent-2.0.so.5
+7. ldconfig -v
 
 ## Getting tmux source
 
@@ -98,7 +100,7 @@ If you are on an older tmux version on CentOS you can upgrade to the latest vers
 3. sh autogen.sh
 4. ./configure
 5. make
-6. sudo make install
+6. sudo cp tmux /usr/local/bin/tmux
 
 ## Verify you are on the latest tmux.
 
