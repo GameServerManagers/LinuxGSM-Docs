@@ -64,7 +64,7 @@
 ### SteamCMD
 * [[SteamCMD]]
 * [[Workshop]]
-* [GSLT](Game Server Login Token)
+* [GSLT](Game-Server-Login-Token)
 
 # Developers
 * [[Developing LGSM]]
