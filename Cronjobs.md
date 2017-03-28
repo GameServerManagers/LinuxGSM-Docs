@@ -71,10 +71,10 @@ Every day at 5:10 PM
 `10 17 * * *`
 
 Every Wednesday at 1 AM   
-`* 1 * * * 3`
+`0 1 * * * 3`
 
 Every five days at 1 AM  
-`* 1 */5 * *`
+`0 1 */5 * *`
 
 ### Cronjob generator
 
