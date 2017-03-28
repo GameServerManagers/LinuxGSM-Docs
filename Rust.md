@@ -164,10 +164,10 @@ oxide.reload PluginName
 
 RCON is the protocol used to send commands to your server. You will need a tool to use it. Here are 3 of them:
 * Rusty: http://oxidemod.org/resources/rusty-server-rcon-administration-tool.53/
-* Rustadmin: https://www.rustadmin.com/
+* Rustadmin: https://www.rustadmin.com/ (supports both rconweb=1 and rconweb=0)
 * Facepunch web tool: http://facepunch.github.io/webrcon/#/home
 
-To use an external software like Rusty or Rustadmin, you need to alter `rustserver` script with `rconweb="0"`. To use Facepunch tool, leave it at default `rconweb="1"`
+To use an external software like Rusty, you need to alter `rustserver` script with `rconweb="0"`. To use Facepunch tool or Rustadmin, you can leave it at default `rconweb="1"`
 
 Note: Facepunch web tool currently don't accept domain names, you need to enter server IP.
 
