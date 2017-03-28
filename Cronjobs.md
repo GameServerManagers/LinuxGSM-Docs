@@ -25,12 +25,12 @@ If you wish to change crontab's text editor, you can run:
 
 #### User cronjobs
 ````bash
-* * * * * [/path/to/script] [command]  > /dev/null 2>&1
+* * * * * [/path/to/script] [command] > /dev/null 2>&1
 ````
 
 #### Root cronjobs
 ````bash
-* * * * * su - username -c [/path/to/script] [command]  > /dev/null 2>&1
+* * * * * su - username -c '[/path/to/script] [command]' > /dev/null 2>&1
 ````
 
 **Note**: The ` >/dev/null 2>&1` is required to mute the execution (don't save or send output)
