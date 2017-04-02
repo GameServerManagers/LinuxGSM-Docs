@@ -11,7 +11,7 @@ FastDL for "fast download" is used for the client to download custom server cont
 
 OR 
 
-* FTP + HTTP server on a remote server
+* FTP||SCP||SFTP + HTTP server on a remote server
 
 
 ## Supported games : 
