@@ -11,7 +11,8 @@ Generate your access token here: https://www.pushbullet.com/#settings
 # Pushbullet Alerts | https://github.com/GameServerManagers/LinuxGSM/wiki/Pushbullet
 pushbulletalert="on"
 pushbullettoken="o.noWN6jpIeBUkLraw24saHKd7ksOkn7on"
-```
+````
+
 # Enable Channels
 
 > note: leave blank if not in use
