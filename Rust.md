@@ -117,14 +117,14 @@ cd ~
 ./rustserver start
 ````
 
-Then check your logs
+Then check your logs located in
 ````bash
-cat serverfiles/game*.log
+log/server/
 ````
 
 Since Rust have no console, you can use this workaround to display the log in real time:
 ````bash
-tail -f serverfiles/game*.log`
+tail -f log/server/rust-server*.log`
 ````
 
 Since Rust don't allow setting a custom log location, the log file will be called game-{FULL-CURRENT-DATE}.log to not be erased on every restart and will be moved to log/server upon any server start/restart and a new one will be created.
