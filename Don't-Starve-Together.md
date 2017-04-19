@@ -14,7 +14,7 @@ Default script settings:
 sharding="false"
 ```
 
-Also, on the file ~/.klei/DoNotStarveTogether/Cluster_1/cluster.ini set `shard_enabled` to `true`:
+If you want to Caves and Overworld to display in the same server, on the file ~/.klei/DoNotStarveTogether/Cluster_1/cluster.ini set `shard_enabled` to `true`:
 
 ```lua
 [SHARD]
