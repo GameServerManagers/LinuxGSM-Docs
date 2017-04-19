@@ -8,10 +8,20 @@ One cluster can contain multiple shards. A shard is basically a map/level. Multi
 ## Single-Shard
 By default the cluster will be single-sharded. So you only need one server but you will also only have one map.
 
-server script settings:
+Default script settings:
+
 ```bash
 sharding="false"
 ```
+
+On the file ~/.klei/DoNotStarveTogether/Cluster_1/cluster.ini set `shard_enabled` to `true`:
+
+```lua
+[SHARD]
+shard_enabled = true
+```
+
+
 
 ## Multi-Shard
 First of all take a look at [Multiple-Servers](https://github.com/GameServerManagers/LinuxGSM/wiki/Multiple-Servers) to get a general idea on how to create multiple game servers.
@@ -41,7 +51,7 @@ cluster="Cluster_1"
 cave="false"
 ```
 
-~/.klei/DoNotStarveTogether/Master/server.ini
+~/.klei/DoNotStarveTogether/Cluster_1/Master/server.ini
 ```ini
 [NETWORK]
 server_port = 11000
@@ -63,7 +73,7 @@ cluster="Cluster_1"
 cave="true"
 ```
 
-~/.klei/DoNotStarveTogether/Caves/server.ini
+~/.klei/DoNotStarveTogether/Cluster_1Caves/server.ini
 ```ini
 [NETWORK]
 server_port = 11001
