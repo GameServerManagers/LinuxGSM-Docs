@@ -14,7 +14,7 @@ Default script settings:
 sharding="false"
 ```
 
-On the file ~/.klei/DoNotStarveTogether/Cluster_1/cluster.ini set `shard_enabled` to `true`:
+Also, on the file ~/.klei/DoNotStarveTogether/Cluster_1/cluster.ini set `shard_enabled` to `true`:
 
 ```lua
 [SHARD]
