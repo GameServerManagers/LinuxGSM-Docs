@@ -13,17 +13,6 @@ Default script settings:
 ```bash
 sharding="false"
 ```
-
-If you want to Caves and Overworld to display on the same server, you also to change the cluster.ini, otherwise it will run two instances, one with the Overworld and another with the Caves:
-
-~/.klei/DoNotStarveTogether/Cluster_1/cluster.ini set `shard_enabled` to `true`:
-```lua
-[SHARD]
-shard_enabled = true
-```
-
-
-
 ## Multi-Shard
 First of all take a look at [Multiple-Servers](https://github.com/GameServerManagers/LinuxGSM/wiki/Multiple-Servers) to get a general idea on how to create multiple game servers.
 
@@ -82,6 +71,14 @@ server_port = 11001
 [STEAM]
 authentication_port = 8769
 master_server_port = 27019
+```
+
+If you want to Caves and Overworld to display on the same server, you also to change the cluster.ini, otherwise it will run two instances, one with the Overworld and another with the Caves:
+
+~/.klei/DoNotStarveTogether/Cluster_1/cluster.ini set `shard_enabled` to `true`:
+```lua
+[SHARD]
+shard_enabled = true
 ```
 
 **Set all installation variables BEFORE running the `./dstserver1/2 install` commands.**  Feel free to change these settings but make sure that you set them to the same clusters. You also should not change them afterwards. If you have multiple clusters on one machine with the same shard names, you have to modify the servicename because `servicename="dst-server-${shard}"`
