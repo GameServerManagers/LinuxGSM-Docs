@@ -19,6 +19,10 @@ It is likely that somebody already asked your question before. Save time to your
 
 ### Updates
 
+Make sure your LinuxGSM script is up to date.
+
+`./gameserver uf`
+
 # REQUIRED INFORMATION FOR SUPPORT
 Some details are required to help us solving your problem. If you will not provide this information we are unable to help you.  
 Thank you.
