@@ -1,66 +1,73 @@
-Find out the best way we can help you.
+# We want to help out server admins as best as we can...
+
+However, our time is limited which is best spent on developing LGSM. Patience is also wearing thin on unhelpful posts. So please help us by providing the following information when posting to help us to resolve YOUR issue.
+
+# Please, search before asking
+
+### LinuxGSM Wiki
+LinuxGSM website and Wiki will let you know almost anything you need about LinuxGSM
+
+- https://gameservermanagers.com  
+- https://gameservermanagers.com/wiki
+
+### Google
+It is likely that somebody already asked your question before. Save time to yourself and everyone else using Google first.
+
+> “Google is how I learnt and still learn to use BASH and develop LGSM.” - Daniel Gibbs
+
+- https://google.com
+
+### Updates
 
 
-Getting Support
------------
-We want to help out server admins as best we can. However, our time is limited which is best spent on developing LGSM. Patience is also wearing thin on unhelpful posts. So please help us by providing the following information when posting to help us to resolve YOUR issue.
+# INFORMATION TO PROVIDE WHEN ASKING FOR HELP
+Some details are required to help us solving your problem. If you will not provide this information we are unable to help you.  
+Thank you.
 
-* Which **game server** you are running (e.g Rust/CS:GO).
-* The outputted **link** of `./gameserver postdetails` command.
-* Any useful **log** in /home/gameserver/log (use pastebin or equivalent).
-* Your Linux **distro** and **version** (e.g Ubuntu 16.04).
-* Any useful **screenshot**.
-* Your basic **server hardware** (CPU/RAM/Storage/Bandwidth).
-* Any **test** you have already tried.
-* Any other **useful** or **relevant information** you think will help.
+## REQUIRED INFORMATION
 
-Reminder: Make sure that your're running the latest LGSM version with:
-`./gameserver uf`
+- Which **game server** you are running (e.g Rust/CS:GO).
+- The **outputted link** of `./gameserver postdetails` command.
 
-All these things will help us to solve your problem. If you will not provide this information we are unable to help you. Thank you.
+If for some reason, you cannot use postdetails, then provide:
+- Your Linux **distro** and **version** (e.g Ubuntu 16.04 x64).
+- Your **kernel** information ( `uname -a` )
+- Your versions for **glibc** ( `ldd --version` ) and **tmux** ( `tmux -v` )
 
-Where to get Support
---------------------
+## ADDITIONAL INFO
+_That might help_
 
-There are various ways to get help and support with LGSM.
+- Any useful **log** in /home/gameserver/log (use pastebin or equivalent).
+- Any useful **screenshot**.
+- Your basic **server hardware** (CPU/RAM/Storage/Bandwidth).
+- Any **test** you have already tried.
+- Any **relevant information** you think will help.
 
-Public places are the best and only way to get help: Many people can read your issue, providing more chances of being helped, and it will also help other people facing the same issue. For that matter, admins and developers do not accept friend requests and do not answer private messages about personal issues.
+# Where to get Support
 
 Please, consider the best place to post your issue and search the internet for a solution before posting.
 
+We set up multiple places where everyone can help each other, so don't DM or admins as friends. We read and answer these public places when we have time anyways.
+
 http://gameservermanagers.com/support
 
-Google
-======
-We recommend ALWAYS using Google before posting at all. There are many people who have probably already had the same issue you have or asked the same questions. Putting your issue in to Google first could save yourself and us time if resolving your issue. Leaving us more time to develop LGSM.
+## General Support
 
-> “Google is how I learnt and still learn to use BASH and develop LGSM”
-> – Daniel Gibbs
+### Discord
+LinuxGSM's Discord is now the place of choice to get support and to talk about anything LinuxGSM related.
 
-https://google.com
+https://gameservermanagers.com/discord
 
-Documentation
-=============
-The website and GitHub wiki is a useful resource for various LGSM documentation and related topics.
-
-https://gameservermanagers.com
-
-https://gameservermanagers.com/wiki
-
-General Support
-===============
-LGSM has a Steam Group where you can get general support for LGSM related stuff.
+### Steam group
+If you're more of a forum person, then you can use the Steam group.
 
 https://gameservermanagers.com/steam
 
-Bugs/Feature Requests
-=====================
-LGSM has a GitHub issues page where you can submit any bugs and feature suggestions or submit code. However, this is not for general game server support.
+
+# Bugs/Feature Requests
+
+LinuxGSM has a GitHub issues page where you can submit any bugs and feature suggestions or submit code. However, this is not for general game server support.
+
+**Issues for personal server issues on Github will be closed without warning.**
 
 https://gameservermanagers.com/issues
-
-Discord
-=======
-LGSM has a Discord server you can use to talk about anything LGSM related.
-
-https://gameservermanagers.com/discord
