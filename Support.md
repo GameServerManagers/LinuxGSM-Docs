@@ -1,6 +1,6 @@
 # We want to help out server admins as best as we can...
 
-However, our time is limited which is best spent on developing LGSM. Patience is also wearing thin on unhelpful posts. So please help us by providing the following information when posting to help us to resolve YOUR issue.
+However, our time is limited which is best spent on developing LinuxGSM. Patience is also wearing thin on unhelpful posts. So please help us by providing the following information when posting to help us to resolve YOUR issue.
 
 # Please, search before asking
 
@@ -13,7 +13,7 @@ LinuxGSM website and Wiki will let you know almost anything you need about Linux
 ### Google
 It is likely that somebody already asked your question before. Save time to yourself and everyone else using Google first.
 
-> “Google is how I learnt and still learn to use BASH and develop LGSM.” - Daniel Gibbs
+> “Google is how I learnt and still learn to use BASH and develop LinuxGSM.” - Daniel Gibbs
 
 - https://google.com
 
