@@ -4,7 +4,7 @@ However, our time is limited which is best spent on developing LGSM. Patience is
 
 # Please, search before asking
 
-### LinuxGSM Wiki
+### Official Documentation
 LinuxGSM website and Wiki will let you know almost anything you need about LinuxGSM
 
 - https://gameservermanagers.com  
@@ -19,12 +19,11 @@ It is likely that somebody already asked your question before. Save time to your
 
 ### Updates
 
-
-# INFORMATION TO PROVIDE WHEN ASKING FOR HELP
+# REQUIRED INFORMATION FOR SUPPORT
 Some details are required to help us solving your problem. If you will not provide this information we are unable to help you.  
 Thank you.
 
-## REQUIRED INFORMATION
+## Minimum information - _to get help_
 
 - Which **game server** you are running (e.g Rust/CS:GO).
 - The **outputted link** of `./gameserver postdetails` command.
@@ -34,8 +33,7 @@ If for some reason, you cannot use postdetails, then provide:
 - Your **kernel** information ( `uname -a` )
 - Your versions for **glibc** ( `ldd --version` ) and **tmux** ( `tmux -v` )
 
-## ADDITIONAL INFO
-_That might help_
+## Additional information - _that is usually useful_
 
 - Any useful **log** in /home/gameserver/log (use pastebin or equivalent).
 - Any useful **screenshot**.
@@ -43,31 +41,18 @@ _That might help_
 - Any **test** you have already tried.
 - Any **relevant information** you think will help.
 
-# Where to get Support
-
-Please, consider the best place to post your issue and search the internet for a solution before posting.
-
-We set up multiple places where everyone can help each other, so don't DM or admins as friends. We read and answer these public places when we have time anyways.
-
-http://gameservermanagers.com/support
+# Support Links
 
 ## General Support
 
-### Discord
-LinuxGSM's Discord is now the place of choice to get support and to talk about anything LinuxGSM related.
+- **Discord** https://gameservermanagers.com/discord
 
-https://gameservermanagers.com/discord
-
-### Steam group
-If you're more of a forum person, then you can use the Steam group.
-
-https://gameservermanagers.com/steam
+- **Steam group** https://gameservermanagers.com/steam
 
 
-# Bugs/Feature Requests
+## Bugs/Feature Requests
 
-LinuxGSM has a GitHub issues page where you can submit any bugs and feature suggestions or submit code. However, this is not for general game server support.
+You can submit any bug and feature suggestion or code to Github.  
+**Personal server issues on Github will be closed without a kiss.**
 
-**Issues for personal server issues on Github will be closed without warning.**
-
-https://gameservermanagers.com/issues
+- https://gameservermanagers.com/issues
