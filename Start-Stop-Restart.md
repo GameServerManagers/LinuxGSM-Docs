@@ -10,7 +10,7 @@ Will start the server in a tmux occurrence.
 
 `./gameserver stop`
 
-Will attempt to correctly stop a server using (graceful shutdown). Should this fail it will be forced to stop after 30 seconds.
+Will attempt to correctly stop a server properly, using graceful shutdown (sends "quit" command to Source servers for example) when possible. Should this fail it will be forced to stop after 30 seconds.
 
 ## Restarting a server
 
