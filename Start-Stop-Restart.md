@@ -6,7 +6,7 @@ LinuxGSM provides an easy way to start, stop, or restart your game server.
 
 Will start the server in a tmux occurrence. 
 
-### Stopping a server
+## Stopping a server
 
 `./gameserver stop`
 
