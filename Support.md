@@ -31,6 +31,7 @@ Thank you.
 
 - Which **game server** you are running (e.g Rust/CS:GO).
 - The **outputted link** of `./gameserver postdetails` command.
+- The context of your error and the exact outputs.
 
 If for some reason, you cannot use postdetails, then provide:
 - Your Linux **distro** and **version** (e.g Ubuntu 16.04 x64).
