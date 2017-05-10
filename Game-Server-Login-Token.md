@@ -16,7 +16,7 @@ Note: Every single server must use a unique GSLT.
 
 # Generate a token
 
-> note: CS:GO requires appid 730 (CS:GO Game) rather than appid 740 (CS:GO Server). Valve you so silly!
+> Use the app ID of the base game (e.g. 440 for TF2, 730 for CS:GO, 4000 for Garry's Mod) when generating a token
 
 To generate a token follow this link. You will be required to login to a steam account. I recommend a separate account from your main steam account.
 [http://steamcommunity.com/dev/managegameservers](http://steamcommunity.com/dev/managegameservers)
