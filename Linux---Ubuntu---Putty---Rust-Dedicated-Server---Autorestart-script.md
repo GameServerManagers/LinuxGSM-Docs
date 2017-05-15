@@ -89,5 +89,5 @@ We don't know what to do ? ( we are not pro with Linux ).
 
 Thanks in advance if you can give us some steps to follow. 
 
-
+/EDIT : SOLUTION WAS FOUND USING CRON JOBS !!!
 
