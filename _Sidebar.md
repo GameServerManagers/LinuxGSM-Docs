@@ -50,6 +50,7 @@
 * [[Call of Duty 4]]
 * [[Unreal Tournament 99]]
 * [[Unreal Tournament 2004]]
+* [[Unreal Tournament 3]]
 * [[TeamSpeak 3]]
 * [[Rust]]
 * [[Don't Starve Together]]
