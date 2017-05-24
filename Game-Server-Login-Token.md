@@ -10,6 +10,7 @@ Note: Every single server must use a unique GSLT.
 * Counter Strike: Source (**required**)
 * Empires Mod
 * Garry’s Mod
+* Insurgency
 * No more Room in Hell
 * Team Fortress 2
 * Tower Unite
