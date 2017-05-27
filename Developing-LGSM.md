@@ -68,6 +68,7 @@ Here are the command functions you might need to alter when adding a new server:
 * core_getopt.sh - You will define available commands in this one, displayed when the user runs `./gameserver` without an argument. Either use an existing opt or make a new one if needed.
 * command_start.sh & command_stop.sh - Of course, your server needs to be able to start and stop properly.
 * command_debug.sh & command_console.sh - Those commands usually work out of the box, but might require some more work. If not using tmux, then console should be disabled for this server in core_getopt.sh.
+* info_config.sh - You might need to read variables out of configuration files such as Rcon information in the case of Squad.
 
 ## Fixes
 
@@ -206,7 +207,7 @@ You need to make sure that all needed commands displayed in opt work properly.
 So just run `./gameserver` to show available commands, then try commands one by one.
 Common procedure is to first work on command_install, then start, then stop, then debug, then details, then monitor.
 
-## Oops, i found a bug !
+## Oops, I found a bug!
 
 If your found a bug, either you'll instantly know how to fix it, or you won't. And either it will be a bug caused by your own code or a bug into LGSM itself. So let's address those cases.
 
