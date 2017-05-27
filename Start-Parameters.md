@@ -38,3 +38,4 @@ parms="-game nmrih -insecure -strictportbind -ip 91.121.72.41 -port 27015 +clien
 * NS2 Server: http://wiki.unknownworlds.com/ns2/Dedicated_Server
 * Rust: https://developer.valvesoftware.com/wiki/Rust_Dedicated_Server
 * Serious Sam 3: https://raw.githubusercontent.com/GameServerManagers/Game-Server-Configs/master/SeriousSam3BFE/help/DedicatedServer_Readme.txt
+* Squad: http://squad.gamepedia.com/Server_Configuration#Command_Line
