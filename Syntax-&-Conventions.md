@@ -41,7 +41,7 @@ find "${executabledir}/bin"
 
 - The `if [ statement ]; then` should be a one-liner operation.
 - Signs comparators like ==; <; <=; etc. are prefered to -eq -le -lt.
-- Anything withing an if statement must be tabulated one step deeper.
+- Anything within an if statement must be tabulated one step deeper.
 
 Example:
 
