@@ -1,4 +1,5 @@
-LinuxGSM manages its configuration using multiple config files. It is important you understand how these config files work
+*** NEW RELEASE INFORMATION***
+LinuxGSM manages its configuration using multiple config files. It is important you understand how these config files work.
 
 Location
 
