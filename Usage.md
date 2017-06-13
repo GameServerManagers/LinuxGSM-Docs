@@ -1,6 +1,6 @@
 # Introduction
 
-Here is an overview of how to use LGSM.  
+Here is an overview of how to use LinuxGSM.  
 For more advanced details on a feature see the feature page.
 
 **Note**: Generic "gameserver", "gamename" and "username" values are used for this guide; replace with your own ones.
@@ -70,9 +70,9 @@ Config file:   /home/username/serverfiles/gamename/cfg/gamename-server.cfg
 ````
 You can edit this file with any Linux text editor like `nano` or `vi`.
 
-LGSM does not provide specific information about altering this configuration file except for some special games showed in "Game Info" section from the [wiki](https://github.com/GameServerManagers/LinuxGSM/wiki). There are also many websites that provide documentation and support on configuring your server.
+LinuxGSM does not provide specific information about altering this configuration file except for some special games showed in "Game Info" section from the [wiki](https://github.com/GameServerManagers/LinuxGSM/wiki). There are also many websites that provide documentation and support on configuring your server.
 
-## Start Parameters & LGSM Settings
+## Start Parameters & LinuxGSM Settings
 
 Servers commonly require [[Start-Parameters]] to set some settings.
 Start parameters are command line options appended to server's executable when you start it.  
@@ -105,8 +105,8 @@ For SteamCMD servers (available from Steam), the [[validate]] command checks the
 ./gameserver validate
 ````
 
-# Updating your LGSM script
-LGSM has the ability to self [[update-functions]].
+# Updating your LinuxGSM script
+LinuxGSM has the ability to self [[update-functions]].
 
 ````bash
 ./gameserver update-functions
@@ -117,11 +117,11 @@ In some rare cases, you will need to update your main "gameserver" script as wel
 
 # Automating tasks
 
-You can use [[Cronjobs]] to automate any LGSM function.
+You can use [[Cronjobs]] to automate any LinuxGSM function.
 Most used ones are:
 * Automatically check for updates [[update]]
 * Automatically check for server crash and restart if needed [[monitor]]
-* Automatically keep LGSM up to date [[update-functions]]
+* Automatically keep LinuxGSM up to date [[update-functions]]
 * Automatically restart the server at a given time [[start-stop-restart]]
 * Automatically update and restart the server [[force-update]]
 * Automatically backup the server [[backup]]
@@ -137,7 +137,7 @@ See [[On-Boot]] or [[Monitor#automated-monitoring]] for more information.
 
 ## Logs
 
-Script (LGSM) and game console logs are available. They can help you checking for your server's health and diagnosing issues.
+LinuxGSM and game console logs are available. They can help you checking for your server's health and diagnosing issues.
 
 Logs location: `/home/username/log/`
 
