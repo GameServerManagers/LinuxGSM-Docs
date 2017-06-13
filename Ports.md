@@ -1,11 +1,12 @@
-## Generalities
+# Generalities
  
-* Port listening happens on a server
-* Port redirection happens on a router
-* Port opening happens on a firewall
-* ip variable or host ip always needs to be a server's interface IP.
+* Port listening happens on a server.
+* Port redirection happens on a router.
+* Port opening happens on a firewall.
+* The IP variable `ip=` always needs to be the server interface IP, not your routers external IP.
+* Each game server instance has to have its own unique ports, this means they cannot share ports.
 
-## View current settings
+# View current settings
 
 To view your current server ports, input: 
 
@@ -23,16 +24,19 @@ DESCRIPTION  DIRECTION  PORT   PROTOCOL
 < Client     OUTBOUND   27002  udp
 ````
 
-Every single game server has to be the only one using any of these ports.
+# Changing default ports
 
+Default ports are set in either the start parameters or game config. 
+You can use `./gameserver details` to find out where to edit port settings
 
-## Changing default ports
+	# Ports
+	# =====================================
+	# Change ports by editing the parameters in:
+	# /home/lgsm/qlserver/serverfiles/baseq3/ql-server.cfg
 
-Default ports set in the start parameters or game config. To alter them, which you need to do if want to run multiple servers, you will need to edit the main script file using vi or nano.  
+To alter them you will need to edit the file using `nano`.
 
-```nano gameserver```
-
-Example: for source games, you need to alter the following : 
+Example: for source games, you need to alter the following: 
 ````bash
 # Start Variables
 port="27015"
@@ -41,17 +45,28 @@ clientport="27005"
 ip="0.0.0.0"
 ````
 
-**Reminder**: If you're running several servers, make sure you're using different ports on all of your servers.
+## What ports can be used?
 
-**If there are no port settings** in your gameserver script, it means that you need to alter the config file to change them. The required file location will usually be displayed running `./gameserver details`.
+You can use any port you like as long as it is not already in use. It is up to you how to setup your own port allocation. It is recommended that you keep your ports close together and sequential i.e 27016,27016,17017 to save confusion. Some servers ports by default are not sequential, however there is nothing stopping an admin from changing this. Example for source servers; you could set the port 27015, sourcetv port 27016, client port 27018. The next game server instance could simply follow on from this.
 
-**Home servers**: If your server is on a local network, you will need to make port redirections only for internet access.
-The "ip" setting always needs to be set to the a server's interface IP, one that you see with ifconfig. Usually something like 192.168.x.x. So if it's a home server, don't put your public IP address here, put your local IP instead, or just leave `0.0.0.0` if you're unsure.
+>Reminder: If you're running several servers, make sure you're using different ports on all of your servers.
 
-### Protip for running many servers
+# Multiple IP addresses
+If your server has multiple dedicated IP address allocated to your server it is possible for game servers to have the same ports but binded to the different IP addresses. You will need to set the specific ip address you want to use in the LinuxGSM or game config.
 
-You probably want to make a table of your servers and ports in use in an excel or txt file.  
-You probably will prefer a different port organization than the default one in order to make more servers more easily in a given port range.
+# Home Servers
+Home servers are a great way to experiment with game servers or can be used as a permanent option if you have the bandwidth. There are extra steps required on your home router to allow external access to your game server. This will normally involve opening ports on the router firewall and/or port forwarding. See your routers manual for specific instructions.
+
+https://www.howtogeek.com/66214/how-to-forward-ports-on-your-router/
+
+
+## ip= setting for home servers
+If your server has multiple interfaces you will be promoted to specify the server IP you want to use.
+
+You will need to set the IP address of the servers LAN interface (e.g 192.168.1.2), not your routers external IP. Setting this incorrectly will prevent the game server ports from binding and your server will not start.
+
+# Track your ports
+If you are running several game servers it is a good idea to create a spreadsheet of the ports you have used. Allowing you to keep track of what you have already used.
 
 ### Ideas to set ports for multiple source servers
 
@@ -99,10 +114,10 @@ Useful port diagnostic command:
 netstat -atunp | grep srcds_linux
 ````
 Run it, and see if your server is actually listening.
-If not, then your server doesn't start or listen properly. Check that you're trying to listen to an actual interface IP, check that ports are not already in use by something else, check that your server don't crash  upon start, check your console logs, try starting your server with `./gameserver debug`
+If not, then your server has not started or not listen properly. Check that you are trying to listen to an actual interface IP, check that ports are not already in use by something else, check that your server don't crash upon start, check your console logs, try starting your server with `./gameserver debug`
 
 2) **Check the firewall**  
-[[Firewalls]] are source of many errors. When diagnosing stuff, disabling any firewall might help.
+[[Firewalls]] are source of many errors. When diagnosing issues temporarily disabling any firewall might help.
 
-3) **Check port redirection** (local network only)  
+3) **Check port forwarding** (local network only)  
 Make sure that your router properly redirects the right ports displayed with `./gameserver details` with the right type (tcp and/or udp) to the right local IP. 
