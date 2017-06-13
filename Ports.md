@@ -28,11 +28,11 @@ Every single game server has to be the only one using any of these ports.
 
 ## Changing default ports
 
-Default ports are most often set by start parameters. To alter them, which you probably want to do if you plan to run multiple servers, you will need to edit the main script file using vi or nano.  
+Default ports set in the start parameters or game config. To alter them, which you need to do if want to run multiple servers, you will need to edit the main script file using vi or nano.  
 
-````nano gameserver````
+```nano gameserver```
 
-Example: for source games, you're gonna change these : 
+Example: for source games, you need to alter the following : 
 ````bash
 # Start Variables
 port="27015"
@@ -43,8 +43,7 @@ ip="0.0.0.0"
 
 **Reminder**: If you're running several servers, make sure you're using different ports on all of your servers.
 
-**If there is no port settings** in your gameserver script, it means that you need to alter the config file to change them. Once again, the required file location will usually be displayed running `./gameserver details`  
-In some rare cases, you'll have to edit the script itself and the config file as well.
+**If there are no port settings** in your gameserver script, it means that you need to alter the config file to change them. The required file location will usually be displayed running `./gameserver details`.
 
 **Home servers**: If your server is on a local network, you will need to make port redirections only for internet access.
 The "ip" setting always needs to be set to the a server's interface IP, one that you see with ifconfig. Usually something like 192.168.x.x. So if it's a home server, don't put your public IP address here, put your local IP instead, or just leave `0.0.0.0` if you're unsure.
