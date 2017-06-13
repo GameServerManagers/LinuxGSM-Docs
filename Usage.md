@@ -78,6 +78,9 @@ Servers commonly require [[Start-Parameters]] to set some settings.
 Start parameters are command line options appended to server's executable when you start it.  
 These parameters can again be reviewed using the [[details]] command.  
 To alter them, you will need to edit the main `gameserver` script file using `vi` or `nano` and edit variables from the `## Server Start Settings` section.
+***NEXT RELEASE***
+To alter them, you will need to edit the LinuxGSM config files using `vi` or `nano` and edit variables from the `## Server Start Settings` section.
+***NEXT RELEASE***
 You will also find the `#### LinuxGSM Settings ####` section, allowing you to customize many different behaviors.
 
 ````bash
