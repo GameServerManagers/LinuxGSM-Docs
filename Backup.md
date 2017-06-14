@@ -1,6 +1,6 @@
 The backup command will allow you to create .tar.gz archives of a gameserver. This can be used to transfer a server to another physical machine, to save your work before a risky change, to save the current state of the server and any many more.
 
-> Note: that the whole gameserver will be each time which can take up significant space. Please consider a backup policy to prevent your server from running our of disk space.
+> Note: The whole game server will be backed up each time, this can take up significant storage space. Consider a backup policy to prevent your server from running our of disk space.
 
 # Commands
 
