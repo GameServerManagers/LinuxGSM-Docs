@@ -1,11 +1,11 @@
 Details allows you to access useful information about the game server.
 
-#Commands
+# Commands
 Standard: `./gameserver details`
 
 Short:  `./gameserver dt`
 
-#Details provided
+# Details provided
 You will be given various details that are relevent to your game server. These include:
 
 -   Distro Details
@@ -21,7 +21,7 @@ You will be given various details that are relevent to your game server. These i
 -   WebAdmin Password
 -   Server parameters
 
-#Example output
+# Example output
 
     Distro Details
     ===============================================================================================================================================================
