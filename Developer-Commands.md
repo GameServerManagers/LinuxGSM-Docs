@@ -1,12 +1,14 @@
 LinuxGSM provides a few commands to help developers.
 
-## dev-debug
+## developer
 
 - Generates a lockfile activating the mode
-- Generates a full log of commands and tests that the whole script does which might help you debugging your work while coding.
+- Generates a full output log of everything the script does which can help with debugging.
+
+the log is located is called `dev-debug.log`
 
 ````bash
-./gameserver dev-debug
+./gameserver developer
 ./gameserver dev
 ````
 
