@@ -1,6 +1,6 @@
 One of the main advantages for LinuxGSM is that will install the game server for the admin. The installer will be the first thing an admin will run when getting started with a server.
 
-#Commands
+# Commands
 Normal Install
 -------------
 Standard: `./gameserver install`
