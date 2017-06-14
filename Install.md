@@ -1,13 +1,14 @@
 One of the main advantages for LinuxGSM is that will install the game server for the admin. The installer will be the first thing an admin will run when getting started with a server.
 
 # Commands
-Normal Install
--------------
+## Normal Install
+
 Standard: `./gameserver install`
 
 Short: `./gameserver i`
-Auto Install
--------------
+
+## Auto Install
+
 Standard: `./gameserver auto-install`
 
 Short: `./gameserver ai`
@@ -19,10 +20,9 @@ Short: `./gameserver ai`
 `chmod +x gameserver`
 
 2. Run the install command:
- `./gameserver install` or `./gameserver auto-install` to bypass any prompts
+ `./gameserver install` or `./gameserver auto-install` to bypass any prompts.
 
-3. Follow on screen instructions
-And voilà !
+3. Follow on screen instructions.
 
 # Common installation issues
 
