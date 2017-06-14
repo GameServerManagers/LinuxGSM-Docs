@@ -2,7 +2,7 @@ LinuxGSM provides a few commands to help developers.
 
 ## developer
 
-- Generates a lockfile activating the mode
+- Generates a lockfile activating developer mode. All developer options will now show in the list of commands.
 - Generates a full output log of everything the script does which can help with debugging.
 
 the log is located is called `dev-debug.log`
