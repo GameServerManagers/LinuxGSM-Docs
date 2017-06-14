@@ -9,7 +9,7 @@ Standard: `./gameserver console`
 
 Short: `./gameserver c`
 
-Answer **y** to the prompt, and voilà !
+Answer **y** to the prompt.
 
 # Exiting the console
 To exit the console:
