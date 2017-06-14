@@ -2,13 +2,13 @@ The backup command will allow you to create .tar.gz archives of a gameserver. Th
 
 > Note: that the whole gameserver will be each time which can take up significant space. Please consider a backup policy to prevent your server from running our of disk space.
 
-#Commands
+# Commands
 
 Standard: `./gameserver backup`
 
 Short: `./gameserver b`
 
-##Example output
+## Example output
 ```
 mumbleserver@game:~$ ./mumbleserver b
 [ INFO ] Backup mumble-server: A total of 34M will be compressed into the following backup:
@@ -21,7 +21,7 @@ Warning! mumble-server will be stopped during the backup.
 # Backup settings
 You can alter three settings by editing your `gameserver `file.
 
-##maxbackups
+## maxbackups
 Set the maximum backups you want to keep with `maxbackups`. If the number of backups exceeds this value, then the oldest backup will be removed after a successful backup.
 
 ````bash
