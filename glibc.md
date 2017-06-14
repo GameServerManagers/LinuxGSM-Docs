@@ -35,9 +35,9 @@ glibc version history available on [Wikipedia](https://en.wikipedia.org/wiki/GNU
 glibc fixes
 ===========
 
-> Many of the servers can work on distros with older _glibc_ versions by using the _glibc_ fixes that are available with LGSM. 
+> Many of the servers can work on distros with older _glibc_ versions by using the _glibc_ fixes that are available with LinuxGSM. 
 
-If your distro does not meet the glibc requirements LGSM will download the glibc files to the `lgsm/lib` directory to be used by the game server. Because of this even if your dedicated server does not meet the glibc requirements the game server should still work.
+If your distro does not meet the glibc requirements LinuxGSM will download the glibc files to the `lgsm/lib` directory to be used by the game server. Because of this even if your dedicated server does not meet the glibc requirements the game server should still work.
 
 These fixes prevent errors similar to the following:
 ```
