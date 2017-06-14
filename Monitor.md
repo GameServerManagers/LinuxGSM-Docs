@@ -1,8 +1,12 @@
-The monitor function allows you to check if a server is up and running, and restart it if it's down after several unsuccessful queries.
+The monitor function checks that a server is up and running, and restart the server should it not be responding after several unsuccessful queries.
 
-`./gameserver monitor`
+> Note: If the server was stopped manually, then `monitor` will not function until manually started.
 
-Note: If the server was stopped manually, then `monitor` won't restart it.
+# Commands
+
+Standard: `./gameserver monitor`
+
+Short: `./gameserver m`
 
 # Automated monitoring
 
