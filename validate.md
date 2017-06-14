@@ -1,10 +1,13 @@
-This is a command for servers downloaded via SteamCMD only.
+> note: This is a command for servers using SteamCMD only.
 
-For many reasons, servers might have some broken or missing files. This command allows you to repair or re-download missing core server files, using SteamCMD's validate function. This will reset any original server file that you might have altered, but shouldn't touch any mod or config file.
+Validate is a command that will check all the server files to make sure they match the SteamCMD files. This command is useful if you think that files may be missing or corrupted.
 
-Validate can also be used when server update doesn't work as it should for some reason.
+Validate command allows you to repair and re-download missing core server files, using the SteamCMD validate function. This will reset any original server file that you might have altered, but should not touch any mod or config file.
+
+Validate can also be used if a server update does not correctly update.
 
 ## Commands
 
-`./gameserver validate`  
-`./gameserver v`
+Standard: `./gameserver validate`
+
+Short: `./gameserver v`
