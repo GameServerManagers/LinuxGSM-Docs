@@ -1,4 +1,4 @@
-The monitor function checks that a server is up and running, and restart the server should it not be responding after several unsuccessful queries.
+The monitor function checks that a server is up and running and restarts the server should it not be responding after several unsuccessful queries.
 
 > Note: If the server was stopped manually, then `monitor` will not function until manually started.
 
