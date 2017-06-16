@@ -1,9 +1,10 @@
-FastDL is available for all source engine games.
+> FastDL is available for all source engine games.
 
+FastDL for "fast download" allows the client to download custom server content (maps, materials, models, particles, sounds, fonts, images) from a web server. 
 
-## What is FastDL ?
+It is used to offload content downloads to a web server instead of relying on source servers (SRCDS) that only allows 20KBps downloads to clients. Secondly content on the web server can be compressed to further speed up the download process. This means that custom content downloads much faster.
 
-FastDL for "fast download" is used for the client to download custom server content (maps, materials, models, particles, sounds, fonts, images). It's used as a workaround for Source (SRCDS) servers natively uploading at only 20KB/s to clients. It basically consists in sharing the required files with an HTTP server, that will allow clients to download those files much faster. But as the making of that shared folder is a pain to make manually, we developed a script to make it automatically.
+LinuxGSM FastDL automatically creates the web directories and compresses the content for you.
 
 ## Requirements
 
