@@ -63,7 +63,7 @@ cluster="Cluster_1"
 cave="true"
 ```
 
-~/.klei/DoNotStarveTogether/Cluster_1Caves/server.ini
+~/.klei/DoNotStarveTogether/Cluster_1/Caves/server.ini
 ```ini
 [NETWORK]
 server_port = 11001
