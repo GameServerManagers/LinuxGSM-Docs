@@ -42,7 +42,7 @@ the server will load `cs_office` as default map.
     common.cfg: NOT SET
     instance.cfg: NOT SET
 
-the server will load `cs_dust2` as default map.
+the server will load `de_dust2` as default map.
 
 ### Example 4
     _default.cfg: defaultmap="de_dust2"
