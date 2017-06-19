@@ -1,7 +1,8 @@
 # New Method for Configuring LinuxGSM
-With this update there is a big change in how LinuxGSM configurs itself. This has be done to allow the developers easily deploy new features, better manage multiple instances and allow the auto update of ./gameserver file (previously manual update was required)
 
-> note If you have a "legacy" (installed prior to 16.06.17) then you can continue to use the old method of updating your ./gameserver file. However to get new features it is a good idea to do a fresh install.
+With this update there is a big change in how LinuxGSM configures itself. This has be done to allow the developers easily deploy new features, better manage multiple instances and allow the auto update of ./gameserver file (previously manual update was required)
+
+> note: If you have a "legacy" (installed prior to 16.06.17) then you can continue to use the old method of updating your ./gameserver file. However to get new features it is a good idea to do a fresh install.
 
 LinuxGSM manages its configuration using multiple config files. It is important you understand how these config files work.
 
