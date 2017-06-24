@@ -1,7 +1,7 @@
 # Getting Started
 * [[Usage]]
 * [[Start-Parameters]]
-* [[Configuration Files]]
+* [[LinuxGSM Config Files]]
 * [[On-Boot]]
 * [[Multiple Servers]]
 * [[Ports]]
