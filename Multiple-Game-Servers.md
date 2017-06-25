@@ -1,8 +1,8 @@
 Most admins will normally want to run multiple game servers on there Linux server. There are a couple of ways to achieve this. Depending upon the circumstances you may choose a particular method of mixture of both.
 
-*Instance:* Each individual game server is referred too as an “instance” e.g `1.2.3.4:27015`.
+**Instance:** Each individual game server is referred too as an “instance” e.g `1.2.3.4:27015`.
 
-*Installation:* An installation refers to the location of the games “server files” e.g `/home/csgoserver/serverfiles`.
+**Installation:** An installation refers to the location of the games “server files” e.g `/home/csgoserver/serverfiles`.
 
 > note: Each instance must use its own dedicated ports to function or else an instance will fail to bind correctly to a port and fail to start.
 
