@@ -18,7 +18,7 @@ By default there are 3 main config files
     2. common.cfg
     3. instance.cfg
 
-When LinuxGSM is loading the configs they will load in the above order. First taking settings from `_default.cfg` then `command.cfg` and finally `filename.cfg`. This is not that different from and Access Control List in that settings load in order and newer settings can overwrite the old ones. 
+When LinuxGSM is loading the configs they will load in the above order. First taking settings from `_default.cfg` then `command.cfg` and finally `instance.cfg`. This is not that different from and Access Control List in that settings load in order and newer settings can overwrite the old ones. 
 
 If a setting is in both `_default.cfg` and `common.cfg` then `common.cfg` will overwrite `_default.cfg`.
 
