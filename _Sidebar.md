@@ -24,7 +24,7 @@
 * [[validate]]
 
 ### Game Commands
-* [[Change-Password]]
+* [[change-password]]
 * [[fastdl]]
 * [[map-compressor]]
 * [[mods install/update/remove]]
