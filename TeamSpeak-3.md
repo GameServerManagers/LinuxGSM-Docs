@@ -1,49 +1,55 @@
-# General information
+# Connect to Teamspeak 3 Server
 
-## Server Query
+You can a TeamSpeak 3 server to input commands without the need for a TeamSpeak 3 client. This can be done by connecting to the query port using telnet.
 
-You can query your server to input commands without being connected to it through the TeamSpeak client.
-To connect with Putty: Select telnet connection type and input your server query port (default is 10011).
+Using PuTTY or equivalent select a telnet connection and enter the server IP and TeamSpeak 3 query port (default:10011).
 
-#### Login
+## Useful Commands
+
+### Login
 ````
 login serveradmin <password>
 ````
 
-#### Generating a new Privilege key
+### Generating a new Privilege key
 
 ````
 use sid=<server-id>
 tokenadd tokentype=0 tokenid1=6 tokenid2=0
 ````
-Note : Your server ID is usually 1
+>Note: Your server ID is usually 1
 
 ### Reset your query password
 
-see [[change-password]]
+See [[change-password]].
 
-## Database and MariaDB
+# TeamSpeak 3 Databases
+The TeamSpeak 3 database contains all user information, groups, and statistics for your server.
+ 
+## SQLite Database
+By default, TeamSpeak 3 uses an SQLite database file, which allows good performance for most users, and easy server transfers from one server to another. This method is recommended for most admins as it is the simplest database method to use.
 
-TeamSpeak's database contains all user information, groups, and statistics from your server. 
-By default, TeamSpeak uses an SQLite database file, which allows good enough performance for most users, and easy server transfers from a machine to another.
+## MariaDB
+TeamSpeak 3 also allows admins to use MariaDB (MySQL alternative) manage the database. MariaDB is entirely optional and is not required so it is recommended that admins only use if they are comfortable.
 
-However, you have the possibility to use MariaDB which is an alternative to MySQL to handle the database.
-MariaDB is entirely optional and is not recommended unless you are comfortable.
+Information about installing TeamSpeak 3 with MariaDB  can be found [here](https://www.digitalocean.com/community/questions/setup-teamspeak-server-ubuntu-15-04).
 
-You'll find some clues on how to use it here https://www.digitalocean.com/community/questions/setup-teamspeak-server-ubuntu-15-04
+## TSDNS
 
-## tsdns
+TSDNS is a system allowing admins to redirect a domain name to a given TeamSpeak 3 port. 
 
-Tsdns is a system allowing you to redirect a domain name to a given TeamSpeak port. Note that if you're using the default port, you don't need to provide the port when you're giving your server address, you can use the IP or domain name directly. Tsdns is handy only if you're hosting multiple TeamSpeak servers on a single machine.
+If TeamSpeak 3 port is using the default port, you do not need to provide the port when you are giving your server address, you can use the IP or domain name directly.
 
-You can display the documentation with
+TSDNS is useful to admins that are hosting multiple TeamSpeak 3 servers on a single dedicated server.
+
+Further documentation can be found using the following command.
 ````
 cat ~user/serverfiles/tsdns/tsdns_settings.ini.sample
 ````
 
-You might find [additional information here](http://lastconnect.net/en/tsdnsdoc/).
+Additional information can be found [here](http://lastconnect.net/en/tsdnsdoc/).
 
-Then you can copy the sample, edit it accordingly and restart your ts3server to apply the changes.
+Then you can copy the sample, edit it accordingly and restart your TeamSpeak 3 server to apply the changes.
 ````
 cd serverfiles/tsdns/
 cp tsdns_settings.ini.sample tsdns_settings.ini
@@ -56,4 +62,4 @@ cd ~
 
 ## IPv6
 
-Some users with IPv6 enabled might encounter a server failing to start properly. The fix is to then edit your serverfiles/ts3-server.ini to add a standard IPv4 (voice_ip; filetransfer_ip; query_ip) and remove the ", ::" from IPv6. Then as the server failed to start at the installation, the privilege key hasn't been generated. So you'll need to use server query (ID/Password have been generated for them) to generate a new Server Admin privilege key.
+Some users with IPv6 enabled might encounter a server failing to start properly. To fix this edit `serverfiles/ts3-server.ini` to add a standard IPv4 (voice_ip; filetransfer_ip; query_ip) and remove the ", ::" from IPv6. Then as the server failed to start at the installation, the privilege key hasn't been generated. So you will need to use server query (ID/Password have been generated for them) to generate a new Server Admin privilege key.
