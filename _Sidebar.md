@@ -3,7 +3,7 @@
 * [[Start-Parameters]]
 * [[LinuxGSM Config Files]]
 * [[On-Boot]]
-* [[Multiple Servers]]
+* [[Multiple-Game-Servers]]
 * [[Ports]]
 
 # Commands
