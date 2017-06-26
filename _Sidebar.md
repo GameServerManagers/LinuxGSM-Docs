@@ -24,7 +24,7 @@
 * [[validate]]
 
 ### Game Commands
-* [[Change-Password-(TeamSpeak-3)]]
+* [[Change-Password]]
 * [[fastdl]]
 * [[map-compressor]]
 * [[mods install/update/remove]]
