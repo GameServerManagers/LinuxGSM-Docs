@@ -36,8 +36,8 @@ Each instance is managed using its own script. These can be called anything howe
 
 ## Example
 
-|Game	|User	|LinuxGSM Script location|	|notes|
-|--------|----|---------|-----|-------|
+|Game	|User	|LinuxGSM Script location|notes|
+|--------|----|---------|-----|
 |Garry’s Mod|gmodserver|/home/gmodserver/gmodserver|1.2.3.4:27015
 |Garry’s Mod|	gmodserver|	/home/gmodserver/gmodserver-1|	1.2.3.4:27018
 |Garry’s Mod|	gmodserver|	/home/gmodserver/gmodserver-2|	1.2.3.4:27021
