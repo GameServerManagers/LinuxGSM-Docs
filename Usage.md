@@ -3,7 +3,7 @@
 Here is an overview of how to use LinuxGSM.  
 For more advanced details on a feature see the feature page.
 
-**Note**: Generic "gameserver", "gamename" and "username" values are used for this guide; replace with your own ones.
+> Note: Generic "gameserver", "gamename" and "username" values are used for this guide; replace with your own ones.
 
 # Installing
 
