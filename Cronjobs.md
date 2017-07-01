@@ -4,38 +4,32 @@ You can set scheduled tasks with cronjobs, to run any function at any given time
 Most used ones are:
 - Automatically check for updates (update command)
 - Automatically check for server crash and restart if needed (monitor command)
-- Automatically keep LGSM up to date (update-functions command)
+- Automatically keep LinuxGSM up to date (update-functions command)
 - Automatically restart the server at a given time (restart command)
 - Automatically update and restart the server (force-update command)
 
-LGSM team advise you to use root cronjobs to manage everything in one place. Just login as root, then edit your cronjobs. 
-
-# Cronjobs generalities
-
-## Command
+# Command
 To access and edit your cronjobs, input  
 `crontab -e`
 
-Wether you do this command as root or as a user, will determine if it's a user or a root cronjob.  
-You may be prompted for choosing a text editor the first time.  
-If you wish to change crontab's text editor, you can run:   
-`export EDITOR=vim` or `export EDITOR=nano`
+# Cronjob as user or root
+When setting up cronjobs there is a choice of running them as a user or as root. If an admin runs several servers and wants to centrally manage cronjobs then using the root crontab is a good idea. If an admin wants them sep[orated the the user crontab is best.
 
-## Syntax
+# Crontab Syntax
 
-#### User cronjobs
+## User cronjobs
 ````bash
 * * * * * [/path/to/script] [command] > /dev/null 2>&1
 ````
 
-#### Root cronjobs
+## Root cronjobs
 ````bash
 * * * * * su - username -c '[/path/to/script] [command]' > /dev/null 2>&1
 ````
 
-**Note**: The ` >/dev/null 2>&1` is required to mute the execution (don't save or send output)
+> Note: ` >/dev/null 2>&1` is required to mute any output.
 
-### Temporal values 
+## Temporal values 
 `*` can be considered as "bypass" values by some, but means "whatever the value is, do it".  
 You can replace them by numerical values standing for  
 **minutes** - **hours** (24h format) - **days** - **month** - **day of the week** (Sunday =0 to Saturday =6)
@@ -44,7 +38,6 @@ A numerical `x` value would mean "when it is this value".
 While a `*/x` means every `x` time.  
 
 Of course, you can combine those rules smartly to achieve what you want.
-
 
 #### Every "x" time
 In order to run a command, such as "monitor" every "x" time, there is a simple solution.  
@@ -81,7 +74,7 @@ Every five days at 1 AM
 If you have any doubt about a particular syntax, you can use this generator : http://crontab-generator.org/
 
 
-# LGSM Cronjobs examples
+# LinuxGSM Cronjobs examples
 
 ## Daily cronjobs
 
@@ -135,7 +128,7 @@ Here is an example of a root based cronjob to monitor your server every 3 minute
 * Will monitor your server every 5 minutes
 * Will check for an update every 30 minutes, update and restart only if an update is detected.
 * Will restart and check for an update every day at 6:30 AM
-* Will update your LGSM functions every Sunday at midnight.
+* Will update your LinuxGSM functions every Sunday at midnight.
 
 ### Real life multiple servers example
 
@@ -190,5 +183,5 @@ Here is an example of a root based cronjob to monitor your server every 3 minute
 * It's a good practice to comment cronjob lines of a server that you momentarily want to shutdown in order to add back cronjobs more easily afterwards.
 * Some servers crash more often, so it's a good idea to monitor them more frequently. However, you shouldn't monitor faster than once every 2 minutes, otherwise the monitor function might behave inconsistently, and your server might bootloop.
 * You can also sparingly run "every x time" update checks, for games getting updated a lot.
-* As you can see for the commented Rust server, you can also run your own custom scripts if the task is more complicated than just an LGSM command.
-* Ultimately, it's wise to add an "uf" cronjob (for "update-functions") in order to keep LGSM up to date.
+* As you can see for the commented Rust server, you can also run your own custom scripts if the task is more complicated than just an LinuxGSM command.
+* Ultimately, it's wise to add an "uf" cronjob (for "update-functions") in order to keep LinuxGSM up to date.
