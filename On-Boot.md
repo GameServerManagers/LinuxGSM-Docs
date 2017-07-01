@@ -35,7 +35,6 @@ To learn more, see [Start-Stop-Restart](https://github.com/GameServerManagers/Li
 
 rc.local is another method to run scripts on boot. Any commands added to the rc.local file will run on boot. 
 
-Example (as root; replace "username" and "gameserver" accordingly):
 ````bash
 nano /etc/rc.local
 su - username -c '/home/username/gameserver start'
