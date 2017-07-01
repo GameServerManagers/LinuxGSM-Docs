@@ -30,7 +30,7 @@ Having a single installation running multiple instances is also possible. This m
 
 Each instance will share the same resources and add-ons meaning each instance will be affected the same by updates. This can be an advantage when updating but can also cause problems with multiple instances if add-ons break.
 
-Every time a new instance is created new default config files are also created. This allows each instance to have a different hostname, ports etc. The config files are by default the same name as the scipt e,g if the script is `./csgoserver-2` the config is `csgoserver-2.cfg` You can see the location of config files in `./gameserver details`. Also note there are two config files, LinuxGSM configs and a game server config.
+Every time a new instance is created new default config files are also created. This allows each instance to have a different hostname, ports etc. The config files are by default the same name as the script. For example if the script is `./csgoserver-2` the config is `csgoserver-2.cfg`. You can see the location of config files in `./gameserver details`. Also note there are two config files, LinuxGSM configs and a game server config.
 
 Each instance is managed using its own script. These can be called anything however the default will simply have an incremental number. Some admins may choose to use the server port instead of the incremental number.
 
@@ -41,10 +41,10 @@ Each instance is managed using its own script. These can be called anything howe
 |Garry’s Mod|gmodserver|/home/gmodserver/gmodserver|1.2.3.4:27015
 |Garry’s Mod|	gmodserver|	/home/gmodserver/gmodserver-1|	1.2.3.4:27018
 |Garry’s Mod|	gmodserver|	/home/gmodserver/gmodserver-2|	1.2.3.4:27021
-|Counter-Strike: Global Offensive	|csgoserver	|/home/csgoserver-zombies-27024	|1.2.3.4:27024
-Zombie Mod
-|Counter-Strike: Global Offensive	|csgoserver	|/home/csgoserver-zombies-27027	|1.2.3.4:27027
-Zombie Mod
+|Counter-Strike: Global Offensive	|csgoserver	|/home/csgoserver-zombies-27024	|1.2.3.4:27024 Zombie Mod
+
+|Counter-Strike: Global Offensive	|csgoserver	|/home/csgoserver-zombies-27027	|1.2.3.4:27027 Zombie Mod
+
 
 In this example you can see the scripts are located in the same installation but have different names. Each instance has had its port altered in the server config to prevent port clashes.
 
@@ -54,4 +54,4 @@ In this example you can see the scripts are located in the same installation but
 
 For example if you already use `./csgoserver` running `./linuxgsm.sh csgoserver` will generate `./csgoserver-2`
 
-On first run of `./gameserver-2` a new default LinuxGSM and game config will be created `gameserver-2.cfg`. These new configs will need to be altered with new ports and any other settings that are required.
+On first run of `./gameserver-2` a new default LinuxGSM and game config will be created (`gameserver-2.cfg`). These new configs will need to be altered with new ports and any other settings that are required.
