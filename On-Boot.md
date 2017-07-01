@@ -24,7 +24,6 @@ To learn more, see [cronjobs](https://github.com/GameServerManagers/LinuxGSM/wik
 
 Start a game server unconditionally, even if you manually stopped a server.
 
-Example (as root; replace "username" and "gameserver" accordingly):
 ````bash
 crontab -e
 @reboot su - username -c '/home/username/gameserver start' > /dev/null 2>&1
