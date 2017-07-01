@@ -13,7 +13,6 @@ The crontab will allow you to create [[cronjobs]] that allow you to run a comman
 
 After a reboot, any game server that has a "started" status will be started on boot. Servers that were manually stopped will remain stopped.
 
-Example (as root; replace "username" and "gameserver" accordingly):
 ````bash
 crontab -e
 @reboot su - username -c '/home/username/gameserver monitor' > /dev/null 2>&1
