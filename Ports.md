@@ -123,4 +123,4 @@ Running the command will bring up any ports that are listening. If not, the serv
 [[Firewalls]] are a regular source of connectivity issues. When diagnosing connection issues temporarily disabling a firewall will help identify if it is the source of the problem.
 
 3) Check Port Forwarding (local networks only)  
-Ensure that the router correctly redirects incoming traffic to the correct ports and local IPdisplayed with `./gameserver details` with the correct protocol (tcp and/or udp).
+Ensure that the router correctly redirects incoming traffic to the correct ports and local IP displayed with `./gameserver details` with the correct protocol (tcp and/or udp).
