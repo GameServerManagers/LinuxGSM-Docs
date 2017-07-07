@@ -1,31 +1,25 @@
 "Native" Linux support for Rust is back since February 2016 ! https://twitter.com/garrynewman/status/700658567641231360
 
-## System requirements
+# System requirements
 
-### RAM
-A Rust game server uses from 3 to 12GB RAM, depending on your map size.  
-For that matter, LGSM warns you if you have less than 4GB available.
+## RAM
+A Rust game server uses roughly 4GB to 12GB RAM, depending on the map size.  
+LinuxGSM will warn you if your server has less than 4GB RAM available.
 
-### CPU
-It will use constantly around 50% of one core from a Xeon E5-1650V3 (6 cores 12 threads, 3.8Ghz), or around 30% of one core from an I7 4870K, regardless of the amount of people connected and with very few constructions on it. As most game servers, it seems like it's mainly monothreaded, so you'd better have some good monothread performance.
+## CPU
+will constantly use around 50% of one core from a Xeon E5-1650V3 (6 cores 12 threads, 3.8Ghz), or around 30% of one core from an I7 4870K, regardless of the amount of people connected. As with most game servers, it seems like Rust is mono threaded.
 
-### Bandwidth
-Bandwidth shouldn't be an issue, aim for a 10mb/s+ upload speed minimum
+## Bandwidth
+10mbps upload is reccomended
 
-### Other notes
-The server autosave can cause lags, depending on your CPU and disk speed. An SSD server with a very good CPU can help.  
-It is highly recommended a dedicated server is used with Rust because of its high system requirements.
+## Other notes
+The server autosave can cause lag, depending on the CPU and disk speed. An server will a decent CPU and SSD can help.
 
-### Conclusion
-Don't take an inappropriate server with 150 cores @1,2Ghz, prefer a quad/hexa core @+3,3Ghz, check benchmarks before choosing your server. CPU: good monothread performance ;RAM: 12-16GB and more; avoid VPS.
+## Conclusion
+Rust does not require a server with a high amount of cores @1,2Ghz, prefer a quad/hexa core @+3,3Ghz, check benchmarks before choosing your server. CPU: good monothread performance ;RAM: 12-16GB and more; avoid VPS.
 
 # Linux Distribution
 You will need Glibc greater or equal to v2.15 (more info https://github.com/dgibbs64/linuxgsm/wiki/Glibc )
-
-So you need:
-* Debian 8 or greater (advised)
-* Ubuntu 12.04 LTS or greater
-* CentOS 7 or greater
 
 # Modded server with Oxide
 
@@ -33,28 +27,28 @@ In this guide, we're going to go through the Rust install process, correcting yo
 
 > UPDATE 2017-01-29: LinuxGSM now supports downloading, updating, or removing Oxide! Run [[update-functions]] command to get the new feature!
 
-## Useful Links
+# Useful Links
 
-### Manual Installation and general information
-* If you wish to use the manual way, I (UltimateByte) updated the Valve Rust wiki (that still needs some work): https://developer.valvesoftware.com/wiki/Rust_Dedicated_Server
+## Manual Installation and general information
+* If you wish to use the manual way, @UltimateByte has updated the Valve Rust wiki (that still needs some work): https://developer.valvesoftware.com/wiki/Rust_Dedicated_Server
 
-### LinuxGSM Installation
+## LinuxGSM Installation
 * If you wish to use LinuxGSM, grab the script provided here: https://gameservermanagers.com/lgsm/rustserver/
 
-### Oxide Support
+## Oxide Support
 http://oxidemod.org/threads/setting-up-a-rust-server-with-linux-and-lgsm.16528/
 
-### LinuxGSM Support
+## LinuxGSM Support
 * See https://github.com/GameServerManagers/LinuxGSM/wiki/Support
 
-### Oxide for Linux
+## Oxide for Linux
 * Oxide for linux : wget https://github.com/OxideMod/Snapshots/raw/master/Oxide-Rust.zip
 Rusty Rcon Tool
 
-### Rusty
+## Rusty
 * Server RCON administration tool http://oxidemod.org/resources/rusty-server-rcon-administration-tool.53/
 
-## Rust Server with LinuxGSM Video tutorial
+# Rust Server with LinuxGSM Video tutorial
 
 Here is a quick tour of Rust special features, and install guide for Rust and Oxide.
 
@@ -76,9 +70,9 @@ And make sure you match the distro requirement by carefully reading instructions
 As root, do:
 
 ````
-adduser rust
+adduser rustserver
 [...]
-su - rust
+su - rustserver
 ````
 
 ## 2) Get LinuxGSM and make it executable
@@ -135,7 +129,7 @@ Note: The Rust console is empty under Linux. You'll have to use an RCON tool and
 
 As a reminder, Oxide is an API allowing you to run mods for you Rust server.
 
-LinuxGSM now handles Oxide for Rust natively, with mods-install and mods-update commands.
+LinuxGSM now handles Oxide for Rust naively, with mods-install and mods-update commands.
 
 ````bash
 ./rustserver mods-install
