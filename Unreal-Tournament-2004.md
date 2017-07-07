@@ -2,7 +2,7 @@
 
 LinuxGSM uses the most recent version of UT2K4 server available for Linux.
 
-v3369.2
+> v3369.2
 
 This includes the various map packs such as the UT2004 Mega Pack.
 
