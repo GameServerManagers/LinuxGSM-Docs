@@ -42,7 +42,6 @@ Each instance is managed using its own script. These can be called anything howe
 |Garry’s Mod|	gmodserver|	/home/gmodserver/gmodserver-1|	1.2.3.4:27018
 |Garry’s Mod|	gmodserver|	/home/gmodserver/gmodserver-2|	1.2.3.4:27021
 |Counter-Strike: Global Offensive	|csgoserver	|/home/csgoserver-zombies-27024	|1.2.3.4:27024 Zombie Mod
-
 |Counter-Strike: Global Offensive	|csgoserver	|/home/csgoserver-zombies-27027	|1.2.3.4:27027 Zombie Mod
 
 
