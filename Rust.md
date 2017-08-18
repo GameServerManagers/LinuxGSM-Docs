@@ -245,6 +245,10 @@ To wipe the server run
 ````bash
 ./rustserver wipe
 ````
+**Note**: The above command requires user input to confirm the wipe action by sending the character "y" (for yes) when the command is executed. In order for this to work in a cronjob, the confirm character needs to be piped in to the command. This can be solved by instead of running the above command to wipe the server in a cronjob, you can add an echo and pipe to the string to make it work, like so
+````bash
+echo y | ./rustserver wipe
+````
 
 To update Oxide, that your previously installed with LinuxGSM, run
 ````bash
