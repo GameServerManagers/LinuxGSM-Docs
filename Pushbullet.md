@@ -1,35 +1,34 @@
-Pushbullet alerts allow you to receive a push notification if the server crashed or was updated (See [[Monitor]]).
+<a href="https://telegram.org/"><p align="center"><img src="http://i.imgur.com/ZF53pJT.png" alt="Pushbullet logo"/></p></a>
+<p align="center">Send LinuxGSM alerts to a Pushbullet user or channel.</p>
 
-![](https://gameservermanagers.com/wp-content/uploads/2016/05/lgsm-pushbullet.png)
+<p align="center"><img src="https://gameservermanagers.com/wp-content/uploads/2016/05/lgsm-pushbullet.png" alt="Pushbullet alert"/></p>
 
 # Enable Pushbullet alerts
-To enable Pushbullet alerts you will need to edit the gameserver script.
+To enable Telegram alerts you need to generate an Access Token.
 
-Generate your access token here: https://www.pushbullet.com/#settings
+Access Tokens are available from Pushbullet setting found [here](https://www.pushbullet.com/#settings).
 
+Once you have created a token insert it in to you LinuxGSM config.
 ````bash
 # Pushbullet Alerts | https://github.com/GameServerManagers/LinuxGSM/wiki/Pushbullet
 pushbulletalert="on"
 pushbullettoken="o.noWN6jpIeBUkLraw24saHKd7ksOkn7on"
+channeltag=""
 ````
 
 # Enable Channels
 
-> note: leave blank if not in use
+Alerts can also be sent to Pushbullet channels. Channels are push notification feeds that can be subscribed to. Anything you push to a channel will instantly go to all of the channel's subscribers. Only the owner of a channel can push to it.
 
-It is now possible to push to channels as well. Channels are push notifications feeds that can be subscribed to. Anything you push to a channel will instantly go to all of the channel's subscribers. Only the owner of a channel can push to it.
+Visit [here](https://www.pushbullet.com/my-channel) to generate a channel.
 
-Generate a channel here: https://www.pushbullet.com/my-channel
-
-Once you have created the access channel set in the script without using hash `#`. 
-e.g `channeltag="myepicserver"` would push to `#myepicserver`
+Once you have created the channel set the channeltag in the script without using hash `#`. 
 ```
-channeltag=""
+channeltag="myepicserver"
 ```
 
-# Test alerts
-
-You can test the alert feature using `test-alert`
-````bash
+# Send Test Alert
+Finally test that is correctly works by sending a test alert.
+```
 ./gameserver test-alert
-````
+```
