@@ -1,4 +1,4 @@
-Servers commonly require start parameters, these are command-line options that are set with the servers executable when you start the server. Your current parameters can be found in `./gameserver details`. To alter them, you will need to edit the main script file `nano gameserver`.
+Servers commonly require start parameters, these are command-line options that are set with the servers executable when you start the server. Your current parameters can be found in `./gameserver details`. To alter them, you will need to edit [LinuxGSM config files](https://github.com/GameServerManagers/LinuxGSM/wiki/LinuxGSM-Config-Files).
 
 # Pre-defined start parameters
 
