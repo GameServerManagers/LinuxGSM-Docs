@@ -22,6 +22,19 @@ When LinuxGSM is loading the configs they will load in the above order. First ta
 
 If a setting is in both `_default.cfg` and `common.cfg` then `common.cfg` will overwrite `_default.cfg`.
 
+## How to get started with the new config files system
+
+1) Browse to the `config-lgsm` directory.  
+cd `lgsm/config-lgsm/`  
+
+2) Use `ls` to view the content and find the name of your instance (typically the name of your LGSM server instance).  
+`ls`
+
+3) Copy the default config to your instance's config.  
+`cat _default.cfg >> instance.cfg` (replace "instance" by your actual file name).  
+
+Now you can edit your instance file that contains all of your LinuxGSM and start parameters configuration.
+
 ## Basic examples
 ### Example 1
     _default.cfg: defaultmap="de_dust2"
