@@ -34,6 +34,8 @@
 ### Alerts
 * [[Email]]
 * [[Pushbullet]]
+* [[Pushover]]
+* [[Telegram]]
 
 ### Requirements
 * [[Tmux]]
