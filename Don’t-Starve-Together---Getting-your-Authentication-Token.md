@@ -15,9 +15,10 @@ For further info on DST Dedicated servers visit this wiki http://dont-starve-gam
 ![DST Menu](images/dst/DST_menu.png)
 
 3. Click on the "Generate Server Token" button, copy the token, and paste it into the file:
-
+```
 ~/.klei/DoNotStarveTogether/MyDediServer/cluster_token.txt 
-
+```
 You can quickly do this by running the following command, replacing YourServerTokenHere with your server token (Keep the quotes around the token).
-
+```
 echo 'YourServerTokenHere' > ~/.klei/DoNotStarveTogether/MyDediServer/cluster_token.txt
+```
