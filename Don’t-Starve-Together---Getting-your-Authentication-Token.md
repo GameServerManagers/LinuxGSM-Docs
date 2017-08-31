@@ -8,11 +8,11 @@ For further info on DST Dedicated servers visit this wiki http://dont-starve-gam
 
 1. Start Don't Starve Together from Steam and click on the "Play!" button.
 
-![DST Title](https://github.com/dgibbs64/linuxgsm/blob/master/images/screens/DST_title.png)
+![DST Title](images/dst/DST_title.png)
 
 2. Click on the "Acct Info" button.
 
-![DST Menu](https://github.com/dgibbs64/linuxgsm/blob/master/images/screens/DST_menu.png)
+![DST Menu](images/dst/DST_menu.png)
 
 3. Click on the "Generate Server Token" button, copy the token, and paste it into the file:
 
@@ -28,7 +28,7 @@ OLD INSTRUCTIONS
 
 1: Open up the game on your computer. Once you reach the main menu, press the backtick key (`) on your keyboard. You will see a screen similar to this one:
 
-![DST Terminal](https://github.com/dgibbs64/linuxgsm/blob/master/images/screens/DSTconsole.png)
+![DST Terminal](images/dst/DSTconsole.png)
 DST Console.
 
 > note: If you’ve never before played the game, you first need to click on Play and create an account.
@@ -38,7 +38,7 @@ DST Console.
 `TheNet:GenerateServerToken()`
 
 It should look like this:
-![DST Console COmmand](https://github.com/dgibbs64/linuxgsm/blob/master/images/screens/DSTconsolecommand.png) 
+![DST Console Command](images/dst/DSTconsolecommand.png) 
 DST Console with command
 
 Once you have done this, press **ENTER** on your keyboard. The console will close, and you can exit the game. Locate the file that has been generated in one of the following directories, depending on your operating system.
