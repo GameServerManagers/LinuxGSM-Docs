@@ -33,6 +33,7 @@
 
 ### Alerts
 * [[Email]]
+* [[ITFFF]]
 * [[Pushbullet]]
 * [[Pushover]]
 * [[Telegram]]
