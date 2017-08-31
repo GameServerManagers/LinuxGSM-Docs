@@ -1,7 +1,6 @@
 <a href="https://telegram.org/"><p align="center"><img src="https://telegram.org/img/t_logo.png" alt="Telegram logo" width="200"/></p></a>
 
 <p align="center">Send LinuxGSM alerts to a Telegram Messenger user or group.</p>
-<p align="center"><img src="https://gameservermanagers.com/wp-content/uploads/2016/01/lgsm-monitor.png" alt="Email Alert"/></p>
 
 # Setup a Telegram Bot
 
