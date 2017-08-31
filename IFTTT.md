@@ -1,6 +1,7 @@
 <a href="https://ifttt.com/"><p align="center"><img src="images/ifttt/ifttt_logo.png" alt="IFTTT logo" width="400"/></a>
 <p align="center">Send LinuxGSM alerts to IFTTT.</p>
 
+There are hundreds in integrations available on IFTTT allowing you to receive alerts in all sorts of different ways from Simple notifications, logging data in spreadsheets to causing a smart device to react.
 # Setup IFTTT Webhook
 
 To enable IFTTT you will need to setup a Webhooks integration.
