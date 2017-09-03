@@ -9,9 +9,9 @@ A Pushover application is required to send messages to Pushover
 * icon: 
 * check box agreeing to TOS
 
-2. Once the application has been created get the API key
+2. Once the application has been created get the API key.
 
-3. Turn on Pushover alerts and paste in API key
+3. Turn on Pushover alerts and paste in API key in the LinuxGSM config.
 ```
 # Pushover Alerts | https://github.com/GameServerManagers/LinuxGSM/wiki/Pushover
 pushoveralert="on"
