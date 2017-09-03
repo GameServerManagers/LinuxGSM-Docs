@@ -8,8 +8,8 @@ A webhook is required to post alerts to a Discord text channel
 1. Right-click on the text channel you want to use and select `edit channel`.
 
 2. Select `Webhooks` > `Create Webhook`
-Name: LinuxGSM
-Icon:
+* Name: LinuxGSM
+* Icon:
 
 3. Copy the Webhook URL
 
