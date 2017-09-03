@@ -35,6 +35,7 @@
 * [[Discord]]
 * [[Email]]
 * [[IFTTT]]
+* [[Mailgun]]
 * [[Pushbullet]]
 * [[Pushover]]
 * [[Telegram]]
