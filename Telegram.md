@@ -1,4 +1,4 @@
-<a href="https://telegram.org/"><p align="center"><img src="images/telegram/telegram_logo.png" alt="Telegram logo" width="200"/></a>
+<a href="https://telegram.org/"><p align="center"><img src="images/telegram/telegram_logo.png" alt="Telegram logo" /></a>
 
 <p align="center">Send LinuxGSM alerts to a Telegram Messenger user or group.</p>
 
