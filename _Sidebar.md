@@ -32,6 +32,7 @@
 # LinuxGSM
 
 ### Alerts
+* [[Discord]]
 * [[Email]]
 * [[IFTTT]]
 * [[Pushbullet]]
