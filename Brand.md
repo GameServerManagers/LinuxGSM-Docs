@@ -18,7 +18,7 @@ Available in .svg and .png sizes 512px, 256px, 128px, 64px, 32px, 16px
 |Original|Colour Black|Colour White|Black|White|
 |[.svg](images/brand/colour/LinuxGSM_colour_logo_wordmark.svg) [.png](images/brand/colour/LinuxGSM_colour_logo_wordmark_512.png) |[.svg](images/brand/colour_black/LinuxGSM_colour_black_logo_wordmark.svg) [.png](images/brand/colour_black/LinuxGSM_colour_black_logo_wordmark_512.png) |[.svg](images/brand/colour_white/LinuxGSM_colour_white_logo_wordmark.svg) [.png](images/brand/colour_white/LinuxGSM_colour_white_logo_wordmark_512.png) |[.svg](images/brand/black/LinuxGSM_black_logo_wordmark.svg) [.png](images/brand/black/LinuxGSM_black_logo_wordmark_512.png) |[.svg](images/brand/white/LinuxGSM_white_logo_wordmark.svg) [.png](images/brand/white/LinuxGSM_white_logo_wordmark_512.png) |
 
-# Logo + Wordmark _Short
+# Logo + Wordmark Short
 
 > A variation of the "LinuxGSM" Logo with text
 
