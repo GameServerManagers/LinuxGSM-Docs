@@ -11,7 +11,7 @@ Note: Every single server must use a unique GSLT.
 * Empires Mod
 * Garry’s Mod
 * Insurgency
-* No more Room in Hell
+* No more Room in Hell (**required**)
 * Team Fortress 2
 * Tower Unite
 
