@@ -1,5 +1,5 @@
-4a. Start Don't Starve Together from Steam and click on the "Play!" button.
-4b. Click on the "Acct Info" button. (Down the bottom right hand side of the screen)
-4c. Click on the "Generate Server Token" button, copy the token, and paste it into the LinuxGSM installer when prompted.
+1. Start Don't Starve Together from Steam and click on the "Play!" button.
+2. Click on the "Acct Info" button. (Down the bottom right hand side of the screen)
+3. Click on the "Generate Server Token" button, copy the token, and paste it into the LinuxGSM installer when prompted.
 
 Source: https://forums.kleientertainment.com/topic/64441-dedicated-server-quick-setup-guide-linux/?tab=comments#comment-723419
