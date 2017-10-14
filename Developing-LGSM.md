@@ -19,12 +19,12 @@ An admin can also run the install again if they want multiple [[instances]] of t
 
 ### Directories
 All working directories are set through variables.
-* ${rootdir} | Directory containing the "gameserver" main script file
-* |_ ${lgsm} directory contains
-* |_____________________________ ${functionsdir} | functions | LGSM functions
-* |_____________________________ ${libdir} | lib | Library files for fixes (glibc and so on)
-* |_____________________________ ${tmpdir} | tmp | Temporary directory
-* |_ ${filesidr} | serverfiles | Contains actual server files
+* ${rootdir} | The top level directory for LinuxGSM
+* |__ ${lgsmdir} | lgsm |Contains all LinuxGSM related files
+* |____ ${functionsdir} | functions | All LinuxGSM script functions
+* |____ ${libdir} | lib | any lib files required for game servers
+* |____ ${tmpdir} | tmp | Temp directory
+* |_ ${serverfiles} | serverfiles | Contains actual server files
 * |_ ${backupdir} | backups | Contains server files backups if created
 * |_ ${scriptlogdir} | "${rootdir}/log/script" | Contains LGSM logs
 * |_ ${consolelogdir} | "${rootdir}/log/console" | Contains TMUX (console output) logs
