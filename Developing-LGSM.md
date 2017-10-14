@@ -24,9 +24,9 @@ All working directories are set through variables.
 * |____ ${functionsdir} | functions | All LinuxGSM script functions
 * |____ ${libdir} | lib | any lib files required for game servers
 * |____ ${tmpdir} | tmp | Temp directory
-* |_ ${serverfiles} | serverfiles | Contains actual server files
-* |_ ${backupdir} | backups | Contains server files backups if created
-* |_ ${scriptlogdir} | "${rootdir}/log/script" | Contains LGSM logs
+* |_ ${serverfiles} | serverfiles | the game server files (binary,maps, models etc)
+* |_ ${backupdir} | backups | Backups are saved here
+* |_ ${scriptlogdir} | "${rootdir}/log/script" | Contains LinuxGSM logs
 * |_ ${consolelogdir} | "${rootdir}/log/console" | Contains TMUX (console output) logs
 
 Developers note: you will need to have a closer look at `## Server Specific Directories`
