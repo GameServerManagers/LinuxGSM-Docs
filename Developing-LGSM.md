@@ -1,22 +1,21 @@
-This page has been designed to help you learn how LGSM code works.
+This page has been designed to help you learn how LinuxGSM code works.
 
-As a user, it will allow you for a better understanding of LGSM and a better administration.  
-As a developer, it will help you adding new servers for LGSM, adding functionalities and fixing bugs.
+As a user, it will allow you for a better understanding of how LinuxGSM workd.  
+As a developer, it will help you with adding new servers, fixing bugs and adding new features. 
 
 # Generalities
 
-LGSM's "gameserver" script is important but isn't the core script at all. The point is to keep it as simple as possible for users to be able to edit it (settings are located in this file) but get most actual functions into script files so that users can update them with `gameserver update-functions`. Most script routines are done through those functions. Some are global ones for all LGSM servers, while some others are a little more specific. Some checks are based on the "gamename", some others on the "engine". We will get through most of that into this guide.
+LinuxGSM `./gameserver` script is important but is not the core part of the script. The point is to keep it as simple as possible for users to be able to edit it (settings are located in this file) but get most actual functions into script files so that users can update them with `gameserver update-functions`. Most script routines are done through those functions. Some are global ones for all LGSM servers, while some others are a little more specific. Some checks are based on the "gamename", some others on the "engine". We will get through most of that into this guide.
 
-## Main script (gameserver)
+## Main Executable 
 
-Main scripts need to be clear and simple enough for users to edit them. They have several goals: 
-* Provide information about the scripts through comments into the header
-* Prevent starting as root (for safety and common sense reasons)
-* Set directories variables
-* Set Github repo and branch
-* Set LGSM preferences through variables
-* Set server's startup variables used in `fn_parms `and `parms=""`
-* Download LGSM core files (fn_fetch_core_dl)
+The main executable file `linuxgsm.sh` or `./gameserver.sh` is what the admin interacts with to run commands. This also used to be the location to configure LinuxGSM however has now changed.
+
+`linuxgsm.sh `is designed to used for installation of a specific game server. You can run `./linuxgsm.sh install` to get a menu of the available servers or `./linuxgsm.sh gameserver` to install the specific game server. 
+
+To install a specific server `linuxgsm.sh` first downloads a complete list of all available servers from `serverlist.csv`. This file contains variables required to identify the server; `$gamename`, `$shortname` and `$gameservername`. When installing a game server `linuxgsm.sh simply copies itself using the `$gameservername` variable as the script name and inserting the other variables in to the copied file. The added variables allow LinuxGSM to know which server the admin selected
+
+An admin can also run the install again if they want multiple [[instances]] of the same server. This will give and output of `gameserver-2`,`gameserver-3` etc as the file name.
 
 ### Directories
 All working directories are set through variables.
