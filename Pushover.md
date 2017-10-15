@@ -15,5 +15,6 @@ A Pushover application is required to send messages to Pushover.
 ```
 # Pushover Alerts | https://github.com/GameServerManagers/LinuxGSM/wiki/Pushover
 pushoveralert="on"
+pushoveruserkey="yourpuhoverid"
 pushovertoken="b5u24t1wua34gmh14kr1s3erkwi7tl"
 ```
