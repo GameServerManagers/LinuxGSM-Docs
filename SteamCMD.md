@@ -68,3 +68,11 @@ Both options 1 & 2 work with LGSM. You can either have Steam Guard disabled or h
 Steam Guard via Smartphone is not compatible because it requires a code every time you login to SteamCMD. This is problematic if you want your servers to auto update.
 
 If you have Steam Guard via email enabled the first time you start SteamCMD you will be prompt to enter a steam Guard code and receive an email with the code. Copy & Paste the code in to the prompt and press enter. You will not need to enter a code again.
+
+# Errors
+
+If you encounter an error like  
+    
+```Error! App '<app_number>' state is 0x202 after update job.```   
+   
+there is a good chance that you have run out of disk space. 
