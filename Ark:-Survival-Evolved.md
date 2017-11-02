@@ -37,12 +37,28 @@ R : To change map :
 
 Q : How to add mods on the serveur ?
 
-R : looking for
+          R : 
+          nano /home/arkserver/serverfiles/ShooterGame/Saved/Config/LinuxServer/GameUserSettings.ini
+
+          in [ServerSettings] add this line : 
+                    ActiveMods=835113702,679529026,764755314,609380111,639841665,558079412,731604991,768494420
+
+          and do : 
+
+          ./arkserver u
 
 
 Q : How to change map (not Official MAP)?
 
 R : looking for
+
+Q : Afficher des logs ?
+
+          R :  tail -f /home/arkserver/log/server/ShooterGame.log
+               tail -f /home/arkserver/log/console/arkserver-console.log
+               tail -f /home/arkserver/log/script/arkserver-script.log
+
+
 
 
 ...
