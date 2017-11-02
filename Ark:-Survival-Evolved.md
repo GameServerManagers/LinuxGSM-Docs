@@ -7,12 +7,20 @@ FAQ :
 Q : How to change map (Official MAP)?
 
 R : To change map :
-Go to the files : 
+         Modifie files : 
+         nano /home/arkserver/lgsm/config-lgsm/arkserver/common.cfg
 
-> nano ./lgsm/config-lgsm/arkserver/arkserver.cfg
-and add this line for map of u choice : 
+         add this : https://gist.github.com/gamersalpha/fee10317b768e3f7ada8186a4045df21
 
-Ragnarok or the Island : https://pastebin.com/j08MQaMG
+         and just change the name of the map : 
+                  ...
+                  parms=Ragnarok?
+                  ...
+
+         u can choose with official map :
+         Ragnarok
+         TheIsland
+
 
 Q : How to change map (not Official MAP)?
 
