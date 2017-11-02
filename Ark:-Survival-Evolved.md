@@ -75,13 +75,11 @@ Q : Afficher des logs ?
                tail -f /home/arkserver/log/console/arkserver-console.log
                tail -f /home/arkserver/log/script/arkserver-script.log
 
-
-
 -----
 Q : How to have to instance server on the same server ?
         R : found here --> https://github.com/GameServerManagers/LinuxGSM/wiki/Multiple-Game-Servers
------
-...
+
+
 
 
 
