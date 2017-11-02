@@ -4,7 +4,11 @@ https://gameservermanagers.com/lgsm/arkserver/
 
 FAQ : 
 
-Q : How to change map ?
+Q : How to change map (Official MAP)?
+
+R : looking for
+
+Q : How to change map (not Official MAP)?
 
 R : looking for
 
