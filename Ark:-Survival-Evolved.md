@@ -6,8 +6,10 @@ FAQ :
 
 Q : How to change map (Official MAP)?
 
-R : To change map :
+R : To change map : 
+
          Modifie files : 
+
          nano /home/arkserver/lgsm/config-lgsm/arkserver/common.cfg
 
          add this : https://gist.github.com/gamersalpha/fee10317b768e3f7ada8186a4045df21
