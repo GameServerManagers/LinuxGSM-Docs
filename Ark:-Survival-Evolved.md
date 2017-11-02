@@ -12,7 +12,7 @@ Go to the files :
 > nano ./lgsm/config-lgsm/arkserver/arkserver.cfg
 and add this line for map of u choice : 
 
-TheIsland : https://pastebin.com/70Pd6rkR
+Ragnarok or the Island : https://pastebin.com/j08MQaMG
 
 Q : How to change map (not Official MAP)?
 
