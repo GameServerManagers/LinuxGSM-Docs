@@ -77,6 +77,8 @@ Q : Afficher des logs ?
 
 -----
 Q : How to have to instance server on the same server ?
+
+
         R : found here --> https://github.com/GameServerManagers/LinuxGSM/wiki/Multiple-Game-Servers
 
 
