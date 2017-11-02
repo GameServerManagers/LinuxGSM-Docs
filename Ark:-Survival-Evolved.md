@@ -43,6 +43,12 @@ Q : How to add mods on the serveur ?
           in [ServerSettings] add this line : 
                     ActiveMods=835113702,679529026,764755314,609380111,639841665,558079412,731604991,768494420
 
+Q : how to know u server ARK is really ready to play : 
+          R : lunch this command and if u have the same result is OK, only one line and u have to wait
+                    root@server:~# netstat -tulpn | grep ShooterGameSe
+                    udp        0      0 0.0.0.0:27015           0.0.0.0:*                           23440/ShooterGameSe
+                    udp        0      0 0.0.0.0:7778            0.0.0.0:*                           23440/ShooterGameSe
+                    tcp        0      0 0.0.0.0:32330           0.0.0.0:*               LISTEN      23440/ShooterGameSe
           and do : 
 
           ./arkserver u
