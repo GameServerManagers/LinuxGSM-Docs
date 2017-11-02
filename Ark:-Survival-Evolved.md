@@ -12,6 +12,9 @@ R : go to the files :
          nano /home/arkserver/serverfiles/ShooterGame/Saved/Config/LinuxServer/GameUserSettings.ini
          and
          nano /home/arkserver/serverfiles/ShooterGame/Saved/Config/LinuxServer/Game.ini
+                  Exemple of files i using : 
+                           GameUserSettings.ini ---> Add it
+                           Game.ini ---> Add it
 
 Q : How to change map (Official MAP)?
 
