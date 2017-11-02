@@ -45,6 +45,7 @@ Q : How to add mods on the serveur ?
                     ActiveMods=835113702,679529026,764755314,609380111,639841665,558079412,731604991,768494420ls 
 
 /home/arkserver/Steam/steamapps/workshop/content/346110/
+
 /home/arkserver/serverfiles/ShooterGame/Content/Mods/
 
 
