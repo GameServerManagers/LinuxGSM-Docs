@@ -10,10 +10,12 @@ R : looking for
 Q : How to change settings for the map ?
 R : looking for
 
+Q : How to add mods on the serveur ?
+R : looking for
+
 ...
 
 
-Still looking a way to install mod :/
 
 
 
