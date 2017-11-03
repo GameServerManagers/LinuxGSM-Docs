@@ -76,6 +76,7 @@ Q : Afficher des logs ?
                tail -f /home/arkserver/log/script/arkserver-script.log
 
 -----
+
 Q : How to have to instance server on the same server ?
 
 
@@ -83,20 +84,32 @@ Q : How to have to instance server on the same server ?
 
 
 -----
+
 Q : How create a service for linux-gsm, and start my ark serveur automaticly when crashed or restart server ?
+
         R : 
 -----
+
 Q : How make a backup external ?
+
         R : 
 -----
+
 Q : How to restore an old backup ? 
+
         R : 
                 SpaceCat? - Aujourd'hui à 00:16
+
                 Backup shuts down the server, and compresses the root folder of the server instance.
+
                 and starts the server back up. Depending on the mods, it can get quite bulky.
+
                 I have a side project I need to start to try and reduce the size of backups
+
 -----
+
 Q : Rcon - I want create a php interface for it ? i found some code working in command line, now i have to make PHP page to interface it
+
         R : 
 
 
