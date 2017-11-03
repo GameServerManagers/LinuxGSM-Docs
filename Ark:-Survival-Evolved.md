@@ -82,8 +82,14 @@ Q : How to have to instance server on the same server ?
         R : found here --> https://github.com/GameServerManagers/LinuxGSM/wiki/Multiple-Game-Servers
 
 
-
-
+-----
+Q : How create a service for linux-gsm, and start my ark serveur automaticly when crashed or restart server ?
+-----
+Q : How make a backup external ?
+-----
+Q : How to restore an old backup ? u give me a response but i have to make it in real
+-----
+Q : Rcon - I want create a php interface for it ? i found some code working in command line, now i have to make PHP page to interface it
 
 
 
