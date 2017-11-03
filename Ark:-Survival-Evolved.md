@@ -93,6 +93,9 @@ Q : How create a service for linux-gsm, and start my ark serveur automaticly whe
 Q : How make a backup external ?
 
         R : 
+                SpaceCat? - Aujourd'hui à 10:29
+
+                With backups, you can create a symbolic link on the backup folder and direct it to the other drive.
 -----
 
 Q : How to restore an old backup ? 
