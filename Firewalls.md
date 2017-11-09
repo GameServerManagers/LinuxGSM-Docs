@@ -36,9 +36,6 @@ For a source server on default port 27015, the following rules will drop anyone 
 -A INPUT -p udp -m udp --dport 27015 -m state --state NEW -m recent --update --seconds 60 --hitcount 10 --name DEFAULT --rsource -j DROP
 ````
 
-
-#### More rules to come. Feel free to edit this wiki if you know more.
-
 ## Checking connectivity
 Once you have created your port forwards and want to see if the internet can access the ports, there is a website called [canyouseeme.org](http://www.canyouseeme.org). Simply change the port to your game port (27015 for example) and it will tell you if it can access it on your computer. This will help you verify your port forward was created successfully.
 
@@ -56,3 +53,5 @@ Some game servers (like Rust) register their external IP with steam when they st
 
 
 If your traffic is going out WAN0 you need to put the port forwards on the 71.2.5.23 address. If your outbound traffic is going out WAN1 you would need to put your port forwards on 65.13.29.46.
+
+#### More rules to come. Feel free to edit this wiki if you know more.
