@@ -38,3 +38,21 @@ For a source server on default port 27015, the following rules will drop anyone 
 
 
 #### More rules to come. Feel free to edit this wiki if you know more.
+
+## Checking connectivity
+Once you have created your port forwards and want to see if the internet can access the ports, there is a website called [canyouseeme.org](http://www.canyouseeme.org). Simply change the port to your game port (27015 for example) and it will tell you if it can access it on your computer. This will help you verify your port forward was created successfully.
+
+## Networks with multiple gateways
+Some game servers (like Rust) register their external IP with steam when they start up. When you create port forwards to the game server, you need to make sure the port forward is on the address the outbound traffic is on. For example, say you have a router with two IPs from different ISPs;
+
+
+    [eth0] 192.168.1.1 (LAN)
+         |  |
+    -----------------
+    |                | --[WAN0] 71.2.5.23 (ISP A)  
+    |                | --[WAN1] 65.13.29.46 (ISP B)  
+    ------------------
+
+
+
+If your traffic is going out WAN0 you need to put the port forwards on the 71.2.5.23 address. If your outbound traffic is going out WAN1 you would need to put your port forwards on 65.13.29.46.
