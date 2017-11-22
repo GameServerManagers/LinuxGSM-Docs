@@ -58,6 +58,15 @@ The script will not run as root and will error if you try. This is done for the 
 
 ![](http://truegif.com/pictures/gif/9281.gif)
 
+I can't download linuxgsm.sh (TLS/SSL Errors)
+====================================
+If your error looks like `Unable to establish SSL connection` you need to make sure you installed the `ca-certificates` package first as well as other dependencies showed on the website's documentation. 
+
+If you are using an "old" distribution, it is possible that your version of wget doesn't support redirections along with SSL/TLS. As a workaround, you can download the script using `--no-check-certificate`. Please note that you should only tolerate this practice if your trust your server network connection and the download source at 100%.
+
+Example: `wget -N --no-check-certificate https://gameservermanagers.com/dl/linuxgsm.sh`
+
+
 How can I install [insert name] mod?
 ====================================
 LGSM installs a vanilla server by default. You can customise your server however you want. I reccomend you checkout add-on/mod installation guide.
