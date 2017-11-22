@@ -36,7 +36,7 @@ Thank you.
 If for some reason, you cannot use postdetails, then provide:
 - Your Linux **distro** and **version** (e.g Ubuntu 16.04 x64).
 - Your **kernel** information ( `uname -a` )
-- Your versions for **glibc** ( `ldd --version` ) and **tmux** ( `tmux -v` )
+- Your versions for **glibc** ( `ldd --version` ) and **tmux** ( `tmux -V` )
 
 ## Additional information - _that is usually useful_
 
