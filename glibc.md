@@ -20,6 +20,8 @@ List of distros and there glibc version.
 | Fedora 18        | 2.16    |
 | Fedora 19        | 2.17    |
 | Fedora 20        | 2.18    |
+| Fedora 21        | 2.20    |
+| Fedora 27        | 2.26    |
 | Debian 6         | 2.11.2  |
 | Debian 7         | 2.13    |
 | Debian 8         | 2.19    |
