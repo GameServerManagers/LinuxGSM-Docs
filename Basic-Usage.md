@@ -64,7 +64,7 @@ LinuxGSM Configs are located in
 lgsm/config-lgsm/gameserver
 ```
 
-For more info see [[LinuxGSM Config Files]].
+For more info, see [[LinuxGSM Config Files]].
 
 ## Game Config
 Game servers have several methods of configuration. This means configuration will vary depending upon which game server is being setup.
@@ -99,6 +99,8 @@ These parameters can be reviewed using the [[details]] command.
 
 To alter them, edit the LinuxGSM config files using `vi` or `nano` and edit variables from the `## Server Start Settings` section. The `#### LinuxGSM Settings ####` section allows customising many different settings.
 
+For more info, see [[Start-Parameters]].
+ 
 # Updating a Game Server
 Most game servers receive regular updates the game developers. These servers can be updated automatically using the update feature.
 
@@ -108,6 +110,7 @@ The [[update]] command checks if an update is available for the server. The serv
 ````bash
 ./gameserver update
 ````
+For more info, see [[update]]
 
 ## validate command
 
@@ -116,13 +119,15 @@ For SteamCMD servers only, the [[validate]] command checks the integrity of serv
 ````bash
 ./gameserver validate
 ````
+For more info, see  [[validate]]
 
 # Updating LinuxGSM
-LinuxGSM is regularly updated with various enhancements and fixes; Because of this the LinxuGSM updater is available. See [[update-lgsm]].
+LinuxGSM is regularly updated with various enhancements and fixes; Because of this the LinxuGSM updater is available. For more info, see [[update-lgsm]].
 
 ````bash
 ./gameserver update-lgsm
 ````
+For more info, see [[update-lgsm]]
 
 # Automating tasks
 
@@ -135,12 +140,12 @@ Most commonly used are:
 * Automatically update and restart the server. [[force-update]]
 * Automatically backup the server. [[backup]]
 
-For more details, see [[Cronjobs]]
+For more details, see [[Cronjobs]].
 
 ## Running on Boot
 To run a server [[On-Boot]], using a monitor cronjob is recommended; any server that was online before a machine reboot will be restarted. 
 
-See [[On-Boot]] or [[Monitor#automated-monitoring]] for more information.
+For more info, see [[On-Boot]] or [[Monitor#automated-monitoring]].
 
 # Troubleshooting
 
@@ -150,7 +155,7 @@ Various logs are available. They can help you checking for your server's health 
 
 Logs location: `log/`
 
-See [[Logging]].
+For more info, see [[Logging]].
 
 ## console command
 
@@ -163,7 +168,7 @@ The [[console]] command allows you to view the live console of a running server 
 To exit the console press “CTRL+b, then d”.
 > Note: pressing “CTRL+c” will terminate the server.
 
-See [[console]].
+For more info, see [[console]].
 
 ## debug command
 
