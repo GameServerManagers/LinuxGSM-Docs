@@ -163,6 +163,8 @@ The [[console]] command allows you to view the live console of a running server 
 To exit the console press “CTRL+b, then d”.
 > Note: pressing “CTRL+c” will terminate the server.
 
+See [[console]].
+
 ## debug command
 
 Use debug mode to help you if you are having issues starting the server. Debug allows you to see the output of the server directly to your terminal allowing you to diagnose any problems the server might be having.
