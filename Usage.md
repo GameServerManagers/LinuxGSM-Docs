@@ -13,7 +13,7 @@ Follow basic instructions from it:
 - Make a new user and login into it.
 - Download the script, make it executable, then install the server with `./gameserver install`.
 
-# Available commands
+# Available Commands
 
 To see a list of available commands, just execute your "gameserver" script with no argument.
 
@@ -33,7 +33,7 @@ restart           r  |Restart the server.
 
 You will find a wiki page for every single command if needed. We will go through some of them here anyways.
 
-# Running your server
+# Running your Server
 
 To [[start-stop-restart]] your server, use the following commands:
 
@@ -43,7 +43,7 @@ To [[start-stop-restart]] your server, use the following commands:
 ./gameserver restart
 ````
 
-# Getting server and machine information
+# Getting Game Server and Hardware Information
 
 The [[details]] command will provide you with config file's location, start parameters settings, and many other information. Feel free to use it as much as needed!
 
@@ -51,13 +51,11 @@ The [[details]] command will provide you with config file's location, start para
 ./gameserver details
 ````
 
-# Configuring your server
-
-Your server starts, great! You might now want to customize some settings.
+# Configuring a Server
 
 ## Config Files
 
-Most servers use a configuration file to alter most settings.  
+Most servers use a configuration file to alter settings.  
 Whenever possible, LinuxGSM provides an enhanced default config file from https://github.com/GameServerManagers/Game-Server-Configs
 If there is one, the [[details]] command will provide you with config file's location.
 
@@ -68,30 +66,21 @@ Sample output:
 ````
 Config file:   /home/username/serverfiles/gamename/cfg/gamename-server.cfg
 ````
-You can edit this file with any Linux text editor like `nano` or `vi`.
+You can edit this file with any Linux text editor such as `nano` or `vi`.
 
-LinuxGSM does not provide specific information about altering this configuration file except for some special games showed in "Game Info" section from the [wiki](https://github.com/GameServerManagers/LinuxGSM/wiki). There are also many websites that provide documentation and support on configuring your server.
+LinuxGSM does not provide specific information about altering this configuration file except for some special games showed in "Game Info" section from the [wiki](https://github.com/GameServerManagers/LinuxGSM/wiki). There are many websites that provide documentation and support on configuring your server.
 
 ## Start Parameters & LinuxGSM Settings
 
 Servers commonly require [[Start-Parameters]] to set some settings.
 Start parameters are command line options appended to server's executable when you start it.  
 These parameters can again be reviewed using the [[details]] command.  
-To alter them, you will need to edit the main `gameserver` script file using `vi` or `nano` and edit variables from the `## Server Start Settings` section.
-***NEXT RELEASE***
 To alter them, you will need to edit the LinuxGSM config files using `vi` or `nano` and edit variables from the `## Server Start Settings` section.
-***NEXT RELEASE***
 You will also find the `#### LinuxGSM Settings ####` section, allowing you to customize many different behaviors.
-
-````bash
-nano gameserver
-````
-
-There are many possible settings set through start parameters. The best thing to do is to check your script file and see if there are any that you'd like to alter. Whenever possible, a wiki link is provided to provide you with information about the command.
 
 # Updating your server
 
-Most servers can be updated automatically using the update feature which uses SteamCMD.
+Most servers can be updated automatically using the update feature that uses SteamCMD.
 
 ## update command
 
