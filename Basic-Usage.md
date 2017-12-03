@@ -99,9 +99,8 @@ These parameters can be reviewed using the [[details]] command.
 
 To alter them, edit the LinuxGSM config files using `vi` or `nano` and edit variables from the `## Server Start Settings` section. The `#### LinuxGSM Settings ####` section allows customising many different settings.
 
-# Updating your server
-
-Most servers can be updated automatically using the update feature that uses SteamCMD.
+# Updating a Game Server
+Most game servers receive regular updates the game developers. These servers can be updated automatically using the update feature.
 
 ## update command
 
@@ -112,37 +111,34 @@ The [[update]] command checks if an update is available for the server. The serv
 
 ## validate command
 
-For SteamCMD servers (available from Steam), the [[validate]] command checks the integrity from server files to make sure they exactly match the remote version. It can be useful if an update fails or if files get corrupted for some reason.
+For SteamCMD servers only, the [[validate]] command checks the integrity of server files to make sure files are not corrupt and match the remote version. This can be useful if an update fails or the server is frequently crashing.
 
 ````bash
 ./gameserver validate
 ````
 
-# Updating your LinuxGSM script
-LinuxGSM has the ability to self [[update-functions]].
+# Updating LinuxGSM
+LinuxGSM is regularly updated with various enhancements and fixes; Because of this the LinxuGSM updater is available. See [[update-lgsm]].
 
 ````bash
-./gameserver update-functions
+./gameserver update-lgsm
 ````
-
-This will allow you to get various fixes and possibly new functionalities.  
-In some rare cases, you will need to update your main "gameserver" script as well in order to enjoy all new functionalities.
 
 # Automating tasks
 
-You can use [[Cronjobs]] to automate any LinuxGSM function.
-Most used ones are:
-* Automatically check for updates [[update]]
-* Automatically check for server crash and restart if needed [[monitor]]
-* Automatically keep LinuxGSM up to date [[update-functions]]
-* Automatically restart the server at a given time [[start-stop-restart]]
-* Automatically update and restart the server [[force-update]]
-* Automatically backup the server [[backup]]
+You can use [[Cronjobs]] to automate any LinuxGSM command.
+Most commonly used are:
+* Automatically check for updates. [[update]]
+* Automatically check for server crash and restart if needed. [[monitor]]
+* Automatically keep LinuxGSM up to date. [[update-lgsm]]
+* Automatically restart the server at a given time. [[start-stop-restart]]
+* Automatically update and restart the server. [[force-update]]
+* Automatically backup the server. [[backup]]
 
 For more details, see [[Cronjobs]]
 
 ## Running on Boot
-To run a server [[On-Boot]], we advise to use a monitor cronjob: any server that was online before a machine reboot will be restarted. 
+To run a server [[On-Boot]], using a monitor cronjob is recommended; any server that was online before a machine reboot will be restarted. 
 
 See [[On-Boot]] or [[Monitor#automated-monitoring]] for more information.
 
@@ -150,13 +146,15 @@ See [[On-Boot]] or [[Monitor#automated-monitoring]] for more information.
 
 ## Logs
 
-LinuxGSM and game console logs are available. They can help you checking for your server's health and diagnosing issues.
+Various logs are available. They can help you checking for your server's health and diagnosing issues.
 
-Logs location: `/home/username/log/`
+Logs location: `log/`
 
-## Console
+See [[Logging]].
 
-The [[console]] command allows you to view the live console of a running server and to enter commands. When the game offers a good console output, it might help diagnosing issues along with logs.
+## console command
+
+The [[console]] command allows you to view the live console of a running server and to enter commands (if available). If the game offers a good console output, it could help diagnose issues along with logs.
 
 ````bash
 ./gameserver console
@@ -167,8 +165,10 @@ To exit the console press “CTRL+b, then d”.
 
 ## debug command
 
-Use debug mode to help you if you are having issues with the server. Debug allows you to see the output of the server directly to your terminal allowing you to diagnose any problems the server might be having.
+Use debug mode to help you if you are having issues starting the server. Debug allows you to see the output of the server directly to your terminal allowing you to diagnose any problems the server might be having.
 
 ````bash
 ./gameserver debug
 ````
+
+See [[debug]].
