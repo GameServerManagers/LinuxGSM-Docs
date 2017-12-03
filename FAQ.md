@@ -1,26 +1,26 @@
 Below is a list of common questions that people ask about the Linux Game Server Managers.
 
-FAQ section is to try to help with common problems with LGSM.
+FAQ section is to try to help with common problems with LinuxGSM.
 
 I'm having an issue can you help?
 ===============================================
 
-There are various ways to get help and support with LGSM.
+There are various ways to get help and support with LinuxGSM.
 * http://gameservermanagers.com/support/
 
 _Remember to consider the best place to post your issue and search the internet for a solution before posting._
 
 ## Documentation
-The website and GitHub wiki is a useful resource for various LGSM related topics.
+The website and GitHub wiki is a useful resource for various LinuxGSM related topics.
 * http://gameservermanagers.com
 * http://gameservermanagers.com/wiki
 
 ## General Support
-LGSM has a Steam Group where you can get general support for LGSM related stuff.
+LinuxGSM has a Steam Group where you can get general support for LinuxGSM related stuff.
 * http://gameservermanagers.com/steam
 
 ## Bugs/Feature Requests
-LGSM has a GitHub issues page where you can submit any bugs and feature suggestions.
+LinuxGSM has a GitHub issues page where you can submit any bugs and feature suggestions.
 * http://gameservermanagers.com/issues
 
 tmux: command not found
@@ -69,7 +69,7 @@ Example: `wget -N --no-check-certificate https://gameservermanagers.com/dl/linux
 
 How can I install [insert name] mod?
 ====================================
-LGSM installs a vanilla server by default. You can customise your server however you want. I reccomend you checkout add-on/mod installation guide.
+LinuxGSM installs a vanilla server by default. You can customise your server however you want. I reccomend you checkout add-on/mod installation guide.
 
 Here are a few useful resources for this.
 * [Metamod: Source](http://www.sourcemm.net/)
@@ -78,11 +78,18 @@ Here are a few useful resources for this.
 * [AMX Mod X](http://www.amxmodx.org/)
 * [Alliedmodders](http://alliedmods.net/)
 
-Will LGSM run on Raspberry PI?
+Will LinuxGSM run on Raspberry PI?
 ==============================
 Short answer: No
 
 Raspberry PI uses ARM architecture whereas all the game servers will only run on x86 compatible architectures such as 32-bit and 64-bit versions of distros. Raspberry PI is not compatible with x86.
+
+Will LinuxGSM run on Linux for Windows?
+==============================
+Short answer: No.
+
+A new feature in Windows 10 was released allowing the installation of some Linux Distros in to Windows. We tested this feature although impressive it sadly does not yet support i386 architecture. The majority of servers run on i386 so because of this most servers will not work.
+
 
 [ WARN ] Multiple active network interfaces.
 ============================================
@@ -178,14 +185,14 @@ LinuxGSM itself has extremely low server requirements as it is written in BASH. 
 I'm getting 404 errors when running functions
 =========================================================================
 
-You're lacking the required function, because you didn't run this command before the last huge LGSM update. The function structure changed, that's why you're getting a 404 error. You just need the newer LGSM version.
+You're lacking the required function, because you didn't run this command before the last huge LinuxGSM update. The function structure changed, that's why you're getting a 404 error. You just need the newer LinuxGSM version.
 
 `./gameserver update-functions`
 
 [ FAIL ] Starting game-server: Ownership issues found
 =========================================================================
 
-The user that you're running LGSM with doesn't own all of its files.
+The user that you're running LinuxGSM with doesn't own all of its files.
 
 More information, see [Ownership](https://github.com/GameServerManagers/LinuxGSM/wiki/File-Ownership)
 
