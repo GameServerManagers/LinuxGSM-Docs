@@ -69,7 +69,7 @@ Example: `wget -N --no-check-certificate https://gameservermanagers.com/dl/linux
 
 How can I install [insert name] mod?
 ====================================
-LinuxGSM installs a vanilla server by default. You can customise your server however you want. I reccomend you checkout add-on/mod installation guide.
+LinuxGSM installs a vanilla server by default. There is now a mods-install feature with a limited selection of popular mods. All other mods will have to be install manually. It is recommend you visit the official add-on/mod installation guides for more info.
 
 Here are a few useful resources for this.
 * [Metamod: Source](http://www.sourcemm.net/)
