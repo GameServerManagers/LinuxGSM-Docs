@@ -1,7 +1,5 @@
 # Getting Started
 * [[Basic Usage]]
-* [[Start Parameters]]
-* [[LinuxGSM Config Files]]
 * [[On-Boot]]
 * [[Multiple Game Servers]]
 * [[Ports]]
@@ -28,6 +26,11 @@
 * [[fastdl]]
 * [[map-compressor]]
 * [[mods install/update/remove]]
+
+# Configuration
+* [[Game Server Config]]
+* [[Start Parameters]]
+* [[LinuxGSM Config]]
 
 # LinuxGSM
 
