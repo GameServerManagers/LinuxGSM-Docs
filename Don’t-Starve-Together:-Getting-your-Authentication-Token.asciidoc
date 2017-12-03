@@ -1,8 +1,7 @@
 # Getting your Authentication Token
 
 1. Start Don't Starve Together from Steam and click on the "Play!" button.
-
-![DST Title](images/dst/DST_title.png)
+[[images/dst/DST_title.png|alt=DST Title]]
 
 2. Click on the "Acct Info" button.
 
