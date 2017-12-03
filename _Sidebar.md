@@ -1,5 +1,5 @@
 # Getting Started
-* [[Usage]]
+* [[Basic Usage]]
 * [[Start-Parameters]]
 * [[LinuxGSM Config Files]]
 * [[On-Boot]]
