@@ -1,4 +1,10 @@
 # Headless Client Setup and Usage
+## Headless Client Overview
+* Headless Client is used to offload AI calculations from the server.
+* Headless Client is integrated into game client and dedicated server executable (Windows and Linux, use -client parameter).
+* The server doesn't allow arbitrary connections from headless clients if you do not define the headless clients IPs in the server.cfg.
+
+https://community.bistudio.com/wiki/Arma_3_Headless_Client
 Starting up a headless client and having it connect to your server is easy, Creating a mission that uses the HC is not. This guide handles the setup and connection ONLY. ***All references to `arma3server` are referring to the script you use to start your server, not the server executable itself unless noted.***  
   
 0. Have LGSM create a new instance script for you: `./linuxgsm.sh arma3server`. Then edit the config under `lgsm/config-lgsm/` you will want to edit the `[instance].cfg` (As of 2017-11. The rest of these instructions below may also need updating.)
