@@ -4,6 +4,7 @@ Note: Every single server must use a unique GSLT.
 
 # Games using GSLT
 
+* Ballistic Overkill
 * Brainbread 2
 * Black Mesa: Deathmatch
 * Counter Strike: Global Offensive (**required**)
@@ -14,6 +15,7 @@ Note: Every single server must use a unique GSLT.
 * No more Room in Hell (**required**)
 * Team Fortress 2
 * Tower Unite
+* Zombie Panic! Source
 
 # Generate a token
 
