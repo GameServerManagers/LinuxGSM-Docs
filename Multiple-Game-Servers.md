@@ -7,7 +7,7 @@ Most admins normally want to run multiple game servers on there Linux server. Th
 > note: Each instance must use its own dedicated ports to function or an instance will fail to bind correctly to a port and fail to start.
 
 # Single instance, multiple Installations
-The simplest method is to create a single installation for each instance. This will completely isolate each game server from each other. This method is useful if you run multiple game servers that have different mods or add-ons. The negatives of this include having to manage multiple installs and can take up a much larger amount of disk space.
+The simplest method is to create a single installation for each instance. This will completely isolate each game server from each other. This method is useful if you run multiple game servers that have different mods or add-ons. The negatives of this include having to manage multiple installs and taking up a much larger amount of disk space.
 
 If you are running game servers for different games you also require separate installations for each game.
 
