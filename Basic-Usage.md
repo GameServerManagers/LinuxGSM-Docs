@@ -177,4 +177,4 @@ Use debug mode to help you if you are having issues starting the server. Debug a
 ./gameserver debug
 ````
 
-For more info, see [[[debug]].
+For more info, see [[debug]].
