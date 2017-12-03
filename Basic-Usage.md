@@ -1,5 +1,5 @@
 # Introduction
-The basic usage of LinuxGSM to help with getting started.
+This basic usage of LinuxGSM will help with getting started.
 For more advanced usage see pages for a specific command.
 
 > Note: Generic "gameserver", "gamename" and "username" values are used for this guide; replace these with your own values.
