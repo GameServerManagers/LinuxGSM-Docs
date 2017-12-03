@@ -7,7 +7,7 @@
 * [[Ports]]
 
 # Commands
-* [[Command list]]
+* [[Command List]]
 
 ### Standard Commands
 * [[backup]]
