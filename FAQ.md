@@ -105,9 +105,7 @@ You will get the following message if your server has multiple IP addresses. The
     162.252.9.39
     162.252.9.41
 
-Edit the script file
-
-    vi csgoserver
+Edit the LinuxGSM config located in lgsm/config-lgsm/[servername]/
 
 Find and edit the following line and change it to the IP address you want to use.
 
@@ -143,11 +141,13 @@ Can you create a server script for a [insert name] game server?
 
 You can request a script is created for a particular server by submitting a feature request on the [GitHub issues] page. This does not guarantee it will be created but we will review it and decide if its possible and how much demand there is for it. Servers will be created when time permits.
 
-Please also check that the server can run on Linux before submitting. Servers that require WINE will not be considered.
+Please also check that the server can run on Linux before submitting. Servers that require WINE will not be considered. You can use SteamDB.info to find the server and check Linux comparability.
+
+If you have an interest in developing with BASH then you are also welcome to contribute and develop a game server in to LinuxGSM.
 
 Can you remote on to my server and help me set up my game server?
 =================================================================
-No! That takes all the fun out of it for you and I am not free tech support.
+No! That takes all the fun out of it for you and we are not free tech support.
 
 I found a bug how do I report it?
 =================================
@@ -165,8 +165,6 @@ Non-steam versions of the games ARE pirated and this would be the only reason to
 =========================================================================
 
 Ignore the error, do not do anything to attempt to fix it. It is a known issue that has been happening ever since SteamPipe was introduced (this includes on Source1 games). It does not cause any issue and can be freely ignored.
-
-  [GitHub issues]: https://github.com/dgibbs64/linuxgsm/issues
 
 What server do I need?
 =========================================================================
@@ -192,7 +190,7 @@ You're lacking the required function, because you didn't run this command before
 [ FAIL ] Starting game-server: Ownership issues found
 =========================================================================
 
-The user that you're running LinuxGSM with doesn't own all of its files.
+The user that you are running LinuxGSM with does not own all of its files.
 
 More information, see [Ownership](https://github.com/GameServerManagers/LinuxGSM/wiki/File-Ownership)
 
