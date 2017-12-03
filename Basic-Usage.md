@@ -13,7 +13,6 @@ Follow the basic instructions to install a game server.
 
 To see a list of available commands, execute `./gameserver` with no argument.
 
-Example:
 ````bash
 gameserver@game:~$ ./gameserver
 Usage: ./gameserver [option]
