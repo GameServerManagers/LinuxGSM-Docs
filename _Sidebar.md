@@ -1,13 +1,13 @@
 # Getting Started
 * [[Basic Usage]]
-* [[Start-Parameters]]
+* [[Start Parameters]]
 * [[LinuxGSM Config Files]]
 * [[On-Boot]]
-* [[Multiple-Game-Servers]]
+* [[Multiple Game Servers]]
 * [[Ports]]
 
 # Commands
-* [[Command-list]]
+* [[Command list]]
 
 ### Standard Commands
 * [[backup]]
