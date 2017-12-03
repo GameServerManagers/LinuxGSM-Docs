@@ -1,4 +1,4 @@
-LinuxGSM makes game serverconfig management easier in many different ways. However, some knowledge about it might be necessary.
+LinuxGSM makes game server config management easier in many different ways. However, some knowledge about it might be necessary.
 
 # Config file's location
 The "details" command will provide you some config files information.
