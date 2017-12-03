@@ -6,7 +6,7 @@ For more advanced usage see pages for a specific command.
 
 # Installation
 
-The full installation guide can be found at [gameservermanagers.com](https://gameservermanagers.com/)
+The full installation guide can be found at [gameservermanagers.com](https://gameservermanagers.com/).
 Follow the basic instructions to install a game server.
 
 # Available Commands
