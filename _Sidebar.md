@@ -23,7 +23,7 @@
 * [[change-password]]
 * [[fastdl]]
 * [[map-compressor]]
-* [[mods install/update/remove]]
+* [[mods]]
 
 # Configuration
 * [[Game Server Config]]
