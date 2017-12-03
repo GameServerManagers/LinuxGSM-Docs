@@ -1,33 +1,46 @@
-# Headless Client Setup and Usage
+# Headless Client
 ## Headless Client Overview
+https://community.bistudio.com/wiki/Arma_3_Headless_Client
+
 * Headless Client is used to offload AI calculations from the server.
 * Headless Client is integrated into game client and dedicated server executable (Windows and Linux, use -client parameter).
 * The server doesn't allow arbitrary connections from headless clients if you do not define the headless clients IPs in the server.cfg.
 
-https://community.bistudio.com/wiki/Arma_3_Headless_Client
-Starting up a headless client and having it connect to your server is easy, Creating a mission that uses the HC is not. This guide handles the setup and connection ONLY. ***All references to `arma3server` are referring to the script you use to start your server, not the server executable itself unless noted.***  
-  
-0. Have LGSM create a new instance script for you: `./linuxgsm.sh arma3server`. Then edit the config under `lgsm/config-lgsm/` you will want to edit the `[instance].cfg` (As of 2017-11. The rest of these instructions below may also need updating.)
+## Headless Client Setup and Usage
 
-1. Navigate to the directory containing your `arma3server` script. Create a copy of `arma3server` with a new name, in this example we will use `arma3HC`. `cp arma3server arma3HC`  
+Starting up a headless client and having it connect to your server is easy, Creating a mission that uses the Headless Client is not. 
+
+> note: This guide handles the setup and connection ONLY. 
+
+>note: All references to `arma3server` are referring the script you use to start your server, not the server executable itself unless noted.
   
-2. Edit your new `arma3HC` with your prefered text editor. You will need to add 12 to the `port=`, 2302 becomes 2314 and so on. Under `params=` you will need to add the following `-client -connect=your.server.ip:port` do not use 127.0.0.1 for the ip. You can remove `-ip=${ip} -netlogs -bepath=${bepath}` Change `servicename="arma3-server"` to `servicename="arma3-HC"`.  
-  
-3. Navigate to your `cfg` directory. `cd location-of-arma3server-script/serverfiles/cfg` by default. Edit your `arma3-server.server.cfg` with your preferred text editor. Add or edit the lines 
+1. Create a new server instance using LinuxGSM `./linuxgsm.sh arma3server`. This will become the headless client instance. Rename the new instance to `arma3server-hc`.
+
+Edit the config file `lgsm/config-lgsm/arma3server-hc.cfg`.
+
+Edit the `port=` increasing the number by a factor of 12 e.g 2303 becomes 2314.
+
+Edit `parms=` changing it to the following. 
+```
+parms="-client -connect=${ip}:${port} -password=CHANGEME"`
+```
+
+Edit the game server config for the ARMA 3 server (not the headless client) `arma3server.server.cfg`.
+Add the headless client IP address to `headlessClient[]=`. If the headless client is on the same physical server as the ARMA 3 server then also add the IP it to `localClient[]=`.
+
+> note: Do not use 127.0.0.1 as the IP address.
+
 `headlessClient[]={"xxx.xxx.xxx.xxx"};  
 localClient[]={xxx.xxx.xxx.xxx};  
-battleyeLicense=1;`  
+`
+Navigate to your profile directory. By default `cd ~/.local/share/Arma\ 3\ -\ Other\ Profiles` and edit `Player.Arma3Profile` adding the line `battleyeLicense=1;`.  
   
-Where xxx.xxx.xxx.xxx is the PUBLIC IP of the server, do not use 127.0.0.1. ***DO NOT USE `localClient[]=` UNLESS THE HEADLESS CLIENT AND SERVER ARE ON THE SAME MACHINE OR LAN***  
+Start your server with `./arma3server start` Start your headless client with `./arma3server-hc start`.  
   
-4. Navigate to your profile directory. By default `cd ~/.local/share/Arma\ 3\ -\ Other\ Profiles` and edit `Player.Arma3Profile` with your preferred text editor to include the line `battleyeLicense=1;`.  
-  
-5. Start your server with `./arma3server start` Start your headless client with `./arma3HC start`.  
-  
-Only a logged in admin can see the headless clients in the player menu on the server. The headless client will connect and automatically assume the first available headless client slot. ***In version 1.62 the PBO signature detection for headless clients is broken on linux, they will be kicked by the server. This is fixed in the dev branch update 1.65.138087. https://twitter.com/FoltynD/status/769181447907311616 ***
+Only a logged in admin can see the headless clients in the player menu on the server. The headless client will connect and automatically assume the first available headless client slot.
 
 # Loading mods
-Incorporating mods into the server is not supported by LGSM.  The following guide is a general process for getting modules to load with your server.  However, issues loading modules should be taken up with the mod developers.
+Incorporating mods into the server is not supported by LinuxGSM. The following guide is a general process for getting modules to load with your server.  However, issues loading modules should be taken up with the mod developers.
 
 For a standard deployment, you will want to have your modules unpacked under `serverfiles/mods`.  For example, your directory structure might have the following raw modules unpacked under `serverfiles/mods`:
 ```
