@@ -23,7 +23,7 @@
 * [[change-password]]
 * [[fastdl]]
 * [[map-compressor]]
-* [[mods]]
+* [[mods install/update/remove]]
 
 # Configuration
 * [[Game Server Config]]
@@ -50,7 +50,6 @@
 * [[Logging]]
 * [[On-Boot]]
 * [[Ports]]
-* [[Brand]]
 
 # Knowledge Base
 ### Game Info
@@ -77,6 +76,8 @@
 * [[Workshop]]
 * [GSLT](Game-Server-Login-Token)
 
+### Other
+* [[Seg Faults]]
 # Developers
 * [[Developing LGSM]]
 * [[Development Workflow]]
