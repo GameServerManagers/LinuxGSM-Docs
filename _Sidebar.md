@@ -1,7 +1,7 @@
 # Getting Started
 * [[Basic Usage]]
-* [[On-Boot]]
 * [[Multiple Game Servers]]
+* [[On-Boot]]
 * [[Ports]]
 
 # Commands
