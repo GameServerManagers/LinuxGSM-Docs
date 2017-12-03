@@ -18,7 +18,7 @@ If you are running game servers for different games you also require separate in
 | Garry’s Mod |gmodserver|/home/gmodserver|     |
 | Garry’s Mod |gmodserver|/home/gmodserver-slender|Slender Man Mod|
 | Counter-Strike: Global Offensive |csgoserver|/home/csgoserver|   |
-| Counter-Strike: Global Offensive |csgoserver-zombies|/home/csgoserver-zombies|   |
+| Counter-Strike: Global Offensive |csgoserver-zombies|/home/csgoserver-zombies|Zombie Mod|
 
 As you can see the installs are separated and isolated from each other. If Garry’s Mod was one installation the slender man add-on may interfere with the vanilla install. 
 
