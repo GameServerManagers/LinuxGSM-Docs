@@ -6,11 +6,9 @@ serverfiles/ShooterGame/Saved/Config/LinuxServer/Game.ini
 
 # Adding Mods
 
-1. Add `-automanagedmods` to the [[start parameters]]
+Add `-automanagedmods` to the [[start parameters]].
 
-2. Edit `GameUserSettings.ini`
-
-Add the following line under `[ServerSettings]`
+Next edit `GameUserSettings.ini`, adding the following line under `[ServerSettings]`.
 ```
 ActiveMods=[workshopID],[workshopID],[workshopID],[workshopID]
 ```
