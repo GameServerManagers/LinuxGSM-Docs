@@ -1,8 +1,6 @@
 # Getting Started
 * [[Basic Usage]]
 * [[Multiple Game Servers]]
-* [[On-Boot]]
-* [[Ports]]
 
 # Commands
 * [[Command List]]
@@ -50,6 +48,8 @@
 
 ### Other
 * [[Logging]]
+* [[On-Boot]]
+* [[Ports]]
 
 # Knowledge Base
 ### Game Info
