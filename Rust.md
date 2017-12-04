@@ -1,8 +1,8 @@
 # System requirements
 
-RAM: 4GB-12GB, Increases depending upon map size |
-CPU:Duel core 3.4GHz, ARMA 3 is monothread |
-Bandwidth: |10mbps upload
+* RAM: 4GB-12GB, Increases depending upon map size
+* CPU: Duel core 3.4GHz, ARMA 3 is monothread
+* Bandwidth: 10mbps upload
 
 > note The server autosave can cause lag, depending on the CPU and disk speed.
 
