@@ -16,7 +16,7 @@
 * [[start-stop-restart]]
 * [[test-alert]]
 * [[update]]
-* [[update-functions]]
+* [[update-lgsm]]
 * [[validate]]
 
 ### Game Commands
