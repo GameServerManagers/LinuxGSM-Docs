@@ -8,6 +8,6 @@ The `map-compressor` command is used to compress maps, allowing for faster uploa
 
 # Commands
 
-Standard: ./gameserver map-compressor
+Standard: `./gameserver map-compressor`
 
-Short: ./gameserver mc
+Short: `./gameserver mc`
