@@ -1,12 +1,13 @@
-> FastDL is available for all source engine games.
-
 FastDL for "fast download" allows the client to download custom server content (maps, materials, models, particles, sounds, fonts, images) from a web server. 
 
 It is used to offload content downloads to a web server instead of relying on source servers (SRCDS) that only allows 20KBps downloads to clients. Secondly content on the web server can be compressed to further speed up the download process. This means that custom content downloads much faster.
 
 LinuxGSM FastDL automatically creates the web directories and compresses the content for you.
 
-## Requirements
+# Supported Servers
+* All Source engine servers
+
+# Requirements
 
 * HTTP server onto the game server (easiest)
 
@@ -14,12 +15,7 @@ OR
 
 * FTP||SCP||SFTP + HTTP server on a remote server
 
-
-## Supported games : 
-
-Any source engine game supports FastDL, including TF2, HL2DM, CSS, CSGO, Garry's Mod, etc.
-
-## Usage
+# Usage
 
 #### 1) Run the FastDL command on your main LGSM script : 
 
