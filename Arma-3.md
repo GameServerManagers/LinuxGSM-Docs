@@ -39,7 +39,7 @@ Start your server with `./arma3server start` Start your headless client with `./
   
 Only a logged in admin can see the headless clients in the player menu on the server. The headless client will connect and automatically assume the first available headless client slot.
 
-# Loading mods
+# Adding Mods
 Incorporating mods into the server is not supported by LinuxGSM. The following guide is a general process for getting modules to load with your server.  However, issues loading modules should be taken up with the mod developers.
 
 For a standard deployment, you will want to have your modules unpacked under `serverfiles/mods`.  For example, your directory structure might have the following raw modules unpacked under `serverfiles/mods`:
@@ -47,9 +47,14 @@ For a standard deployment, you will want to have your modules unpacked under `se
 [arma3server@localhost mods]$ ls 
 @ace @AdvancedTowing @CBA_A3 @RHSUSAF @AdvancedRappelling @AdvancedUrbanRappelling @RHSAFRF @AdvancedSlingLoading @Ares @RHSGREF
 ```
-The issue that makes this difficult is that, for some bizarre reason, the server demands that the modules possess all lowercase names.  The following code segments (run from the `serverfiles/mods` directory *as the arma3server user*) change all files and folders to lowercase:
-```
-depth=0
+## Lower Case file names
+The server demands that the modules possess all lowercase names. Since not all mods do this all files with uppercase letters will need or be converted. This can be done my using the following script.
+
+Run the script from the `mods` directory.
+
+```bash
+#!/bin/bash
+depth=4
 for x in $(find . -type d | sed "s/[^/]//g")
 do
 if [ ${depth} -lt ${#x} ]
@@ -59,7 +64,8 @@ fi
 done
 echo "the depth is ${depth}"
 ```
-As a sanity check here, you should get a depth of 4 or so.  Proceed to iteratively rename the files and directory structure with this code snippet (once again, run from the `serverfiles/mods` directory as the arma3server user):
+
+
 ```
 for ((i=1;i<=${depth};i++))
 do
@@ -69,18 +75,20 @@ do
   done
 done
 ```
-Now a simple directory listing should at least confirm the top-level folders have all been adjusted:
+
+All mods should now be in lowercase
 ```
 arma3server@gamebox3:~/serverfiles/mods$ ls
 @ace  @advancedrappelling  @advancedslingloading  @advancedtowing  @advancedurbanrappelling  @ares  @cba_a3  @rhsafrf  @rhsusaf
 ```
-The next step will be to adjust the modules line in the top-level `arma3server` script.  The correct `mods=` line in the file that corresponds to the modules presented in the example above would read:
+
+Next ensure that all the mods are correctly named in the LinuxGSM config. Ensuring that that only the semicolons are escaped `\`.
 ```
 mods="mods/@ace\;mods/@advancedrappelling\;mods/@advancedslingloading\;mods/@advancedtowing\;mods/@advancedurbanrappelling\;mods/@ares\;mods/@cba_a3\;mods/@rhsafrf\;mods/@rhsusaf"
 ```
-Note that ONLY the semicolons are escaped.
 
-Start the server and check that your mods all have valid hashes.  You should see something similar to the following in your gameserver log file:
+Start the server and check that your mods all have valid hashes.  
+You should see something similar to the following in your gameserver log file:
 ```
 arma3server@gamebox3:~$ grep "List of mods" log/console/arma3-server-console.log  -A25
  1:21:05 ============================================================================================= List of mods ===============================================================================================
@@ -109,4 +117,3 @@ arma3server@gamebox3:~$ grep "List of mods" log/console/arma3-server-console.log
  1:21:05                                             Arma 3 |                   A3 |       true |            NOT FOUND |                                          |           | 
  1:21:05 ==========================================================================================================================================================================================================
 ```
-Good luck.
