@@ -17,7 +17,7 @@ Don't Starve Together server requires an Authentication Token.
 
 You can quickly do this by running the following command, replacing YourServerTokenHere with your server token (Keep the quotes around the token).
 
-````bash
+```bash
 echo 'YourServerTokenHere' > ~/.klei/DoNotStarveTogether/MyDediServer/cluster_token.txt
 ```
 
