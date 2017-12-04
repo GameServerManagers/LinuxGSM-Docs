@@ -1,4 +1,27 @@
-## Introduction
+# Authentication Token
+Don't Starve Together server requires an Authentication Token.
+
+1. Start Don't Starve Together from Steam and click on the "Play!" button.
+
+![DST Title](images/dst/DST_title.png)
+
+2. Click on the "Acct Info" button.
+
+![DST Menu](images/dst/DST_menu.png)
+
+3. Click on the "Generate Server Token" button, copy the token, and paste it into the file.
+
+````bash
+~/.klei/DoNotStarveTogether/MyDediServer/cluster_token.txt 
+```
+
+You can quickly do this by running the following command, replacing YourServerTokenHere with your server token (Keep the quotes around the token).
+
+````bash
+echo 'YourServerTokenHere' > ~/.klei/DoNotStarveTogether/MyDediServer/cluster_token.txt
+```
+
+# Clusters and Shards
 A Don't Starve Together server consists of **clusters** and **shards**. 
 
 One cluster can contain multiple shards. A shard is basically a map/level. Multiple shards are connected by cave entrances/exits found on the map. These are functioning as portals to allow players to travel between actual game servers. 
