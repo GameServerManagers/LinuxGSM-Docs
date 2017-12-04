@@ -1,5 +1,3 @@
-"Native" Linux support for Rust is back since February 2016 ! https://twitter.com/garrynewman/status/700658567641231360
-
 # System requirements
 
 ## RAM
@@ -19,7 +17,7 @@ The server autosave can cause lag, depending on the CPU and disk speed. An serve
 Rust does not require a server with a high amount of cores @1,2Ghz, prefer a quad/hexa core @+3,3Ghz, check benchmarks before choosing your server. CPU: good monothread performance ;RAM: 12-16GB and more; avoid VPS.
 
 # Linux Distribution
-You will need Glibc greater or equal to v2.15 (more info https://github.com/dgibbs64/linuxgsm/wiki/Glibc )
+You will need [[Glibc]] greater or equal to v2.15.
 
 # Modded server with Oxide
 
