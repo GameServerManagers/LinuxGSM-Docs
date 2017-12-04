@@ -1,5 +1,6 @@
 LinuxGSM provides an easy way to start, stop, or restart your game server.
 
+# Commands
 ## Starting a server
 
 `./gameserver start`
