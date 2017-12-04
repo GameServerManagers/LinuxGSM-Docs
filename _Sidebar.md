@@ -53,7 +53,7 @@
 
 # Knowledge Base
 ### Game Info
-* [[Ark: Survival Evolved]]
+* [[Ark Survival Evolved]]
 * [[Arma 3]]
 * [[Call of Duty 4]]
 * [[Unreal Tournament 99]]
