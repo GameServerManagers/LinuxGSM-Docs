@@ -1,6 +1,6 @@
 # Connect to Teamspeak 3 Server
 
-You can a TeamSpeak 3 server to input commands without the need for a TeamSpeak 3 client. This can be done by connecting to the query port using telnet.
+You can connect to a TeamSpeak 3 server to input commands without the need for a TeamSpeak 3 client. This can be done by connecting to the query port using telnet.
 
 Using PuTTY or equivalent select a telnet connection and enter the server IP and TeamSpeak 3 query port (default:10011).
 
