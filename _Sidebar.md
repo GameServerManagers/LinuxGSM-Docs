@@ -82,7 +82,7 @@
 * [[Developing LGSM]]
 * [[Development Workflow]]
 * [[Syntax & Conventions]]
-* [[LGSM Exit Codes]]
+* [[LinuxGSM Exit Codes]]
 * [[Branching]]
 * [[Developer Commands]]
 * [[gsquery.py]]
