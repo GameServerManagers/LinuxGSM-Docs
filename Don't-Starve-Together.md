@@ -3,7 +3,7 @@ A Don't Starve Together server consists of **clusters** and **shards**.
 
 One cluster can contain multiple shards. A shard is basically a map/level. Multiple shards are connected by cave entrances/exits found on the map. These are functioning as portals to allow players to travel between actual game servers. 
 
-**Each shard (level of the world) has to be run as an individual server instance.**
+>note: Each shard (level of the world) has to be run as an individual server instance.
 
 ## Single-Shard
 By default the cluster will be single-sharded. So you only need one server but you will also only have one map.
