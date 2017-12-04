@@ -1,4 +1,4 @@
-The Details command allows you to access useful information about the game server.
+The `details` command allows you to access useful information about the game server.
 
 # Commands
 Standard: `./gameserver details`
