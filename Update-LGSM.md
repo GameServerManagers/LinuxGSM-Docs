@@ -1,11 +1,12 @@
-The `update-functions` command allows you to get the latest functions released to the Github's master branch.
+The `update-lgsm` command allows you to get the latest functions released to the Github's master branch.
 
 The `./gameserver` script that you download in order to use LinuxGSM is actually a tool to download other LinuxGSM script files located in `lgsm/functions`, where all the actual work is done.
 
 ## Commands
 
-`./gameserver update-functions`
-`./gameserver uf`
+Standard: `./gameserver update-lgsm`
+
+Short: `./gameserver ul`
 
 ## Good to know
 
