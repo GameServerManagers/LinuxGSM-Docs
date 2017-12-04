@@ -2,9 +2,9 @@ LinuxGSM comes with an game server update feature. All SteamCMD games servers ar
 
 # Commands
 
-`./gameserver update`
+Standard: `./gameserver update`
 
-`./gameserver u`
+Short: `./gameserver u`
 
 Update will check for an update. If there is an update it will download and apply it, restarting the server if already running. If there is no update LinuxGSM will take no action.
 
