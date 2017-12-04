@@ -81,7 +81,7 @@
 # Developers
 * [[Developing LGSM]]
 * [[Development Workflow]]
-* [[Syntax & Conventions]]
+* [[Syntax and Conventions]]
 * [[LinuxGSM Exit Codes]]
 * [[Branching]]
 * [[Developer Commands]]
