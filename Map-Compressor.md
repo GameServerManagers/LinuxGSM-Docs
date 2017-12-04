@@ -1,4 +1,4 @@
-This command is used to compress maps, allowing for faster upload to clients.
+The `map-compressor` command is used to compress maps, allowing for faster upload to clients.
 
 # Supported Servers
 * Unreal Tournament 99
