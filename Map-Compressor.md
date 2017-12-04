@@ -8,7 +8,6 @@ The `map-compressor` command is used to compress maps, allowing for faster uploa
 
 # Commands
 
-````bash
-./ut99server map-compressor
-./ut99server mc
-````
+Standard: ./gameserver map-compressor
+
+Short: ./gameserver mc
