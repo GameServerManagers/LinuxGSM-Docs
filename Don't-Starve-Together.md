@@ -25,13 +25,13 @@ In this example we will only use two shards, one overworld shard and one cave sh
 First of all we need to scripts:
 
 ```
-./dstserver1
-./dstserver2
+./dstserver-1
+./dstserver-2
 ```
 
 ### Server #1
 
-dstserver1 (this will be the master shard with an overworld as level):
+dstserver-1 (this will be the master shard with an overworld as level):
 ```bash
 # Installation Variables
 sharding="true"
@@ -53,7 +53,7 @@ master_server_port = 27018
 
 ### Server #2
 
-dstserver2 (this will be the slave shard with a cave as level):
+dstserver-2 (this will be the slave shard with a cave as level):
 ```bash
 # Installation Variables
 sharding="true"
