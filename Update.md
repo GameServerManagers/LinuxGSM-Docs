@@ -1,8 +1,6 @@
-# Updating your server
-
 LinuxGSM comes with an update server feature. All SteamCMD games servers are supported, as well as some other servers such as Teamspeak, Minecraft, Mumble & Factorio.
 
-## Commands
+# Commands
 
 `./gameserver update`
 
@@ -10,9 +8,9 @@ LinuxGSM comes with an update server feature. All SteamCMD games servers are sup
 
 Update will check for an update. If there is an update it will download and apply it, restarting the server if already running. If there is no update LinuxGSM will take no action.
 
-## Automatic update
+# Automatic update
 
-### Update on start
+## Update on start
 
 You can update your server on start, by editing your game main script.
 
@@ -20,7 +18,7 @@ You can update your server on start, by editing your game main script.
 
 This will cause the server to take longer to start but can be useful for servers that are kept offline most of the time such as match servers.
 
-### Scheduled updates
+## Scheduled updates
 
 You can set a cronjob to run the update function at any given time.
 
@@ -50,7 +48,7 @@ https://crontab.guru/
 See [[force-update]]
 
 
-## Validate
+# Validate
 
 See [[validate]]
 
@@ -65,7 +63,7 @@ So if your server isn't starting after an update, or if it's still at the same s
 # Updating your LinuxGSM script
 LinuxGSM has the ability to self update functions. It is recommended that you regularly run this command to get the latest version of LinuxGSM.
 
-## update-functions
+# update-functions
 
 `./gameserver update-functions`  
 `./gameserver uf`
