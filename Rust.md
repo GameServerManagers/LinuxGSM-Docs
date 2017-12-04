@@ -1,8 +1,8 @@
 # System requirements
 
-|RAM   |4GB-12GB   |Increases depending upon map size |
-|CPU   |Duel core 3.4GHz   |ARMA 3 is monothread |
-|Bandwidth |10mbps |   |
+RAM: 4GB-12GB, Increases depending upon map size |
+CPU:Duel core 3.4GHz, ARMA 3 is monothread |
+Bandwidth: |10mbps upload
 
 > note The server autosave can cause lag, depending on the CPU and disk speed.
 
@@ -67,19 +67,20 @@ To update and addon without restarting the server, you'll need to reload the add
 ```
 oxide.reload PluginName
 ```
-
-# Send RCON commands:
+# RCON
+## Send RCON commands:
 
 RCON is the protocol used to send commands to your server. You will need a tool to use it. Here are 3 of them:
 * Rusty: http://oxidemod.org/resources/rusty-server-rcon-administration-tool.53/
 * Rustadmin: https://www.rustadmin.com/ (supports both rconweb=1 and rconweb=0)
 * Facepunch web tool: http://facepunch.github.io/webrcon/#/home
 
-To use an external software like Rusty, you need to alter `rustserver` script with `rconweb="0"`. To use Facepunch tool or Rustadmin, you can leave it at default `rconweb="1"`
+To use software like Rusty, you need to alter LinuxGSM config and change `rconweb="0"`. 
+To use Facepunch tool or Rustadmin, you can leave it at default `rconweb="1"`
 
-Note: Facepunch web tool currently don't accept domain names, you need to enter server IP.
+> Note: Facepunch web tool currently don't accept domain names, you need to enter server IP.
 
-#Essential commands
+## Essential RCON Commands
 
 ```
 save ; will save the server state (useful before a stop or restart)
@@ -89,9 +90,10 @@ moderatorid STEAMID64 "Nickname "Reason" ; to add a moderator
 server.writecfg ; will save config changes, including new admins
 ```
 
-Note: append `server.writecfg` after adding an admin, and player needs to reconnect the server in order for it to be applied. 
+> Note: append `server.writecfg` after adding an admin, and player needs to reconnect the server in order for it to be applied. 
 
-Avoid a security breach and allow you to run multiple servers
+
+# Avoid a security breach and allow you to run multiple servers
 
 By default, a user can see all started processes from other users, which is bad, but also their start parameters, which is pretty dangerous. Those start parameters can contain sensitive information, such as RCON password, Steam API keys, GSLTokens...
 Upon start, a Rust dedicated server is checking if the process name started by any user, and will prevent you from running it again if it finds it, displaying "Player is already running".
@@ -110,19 +112,15 @@ nano /etc/fstab
 proc    /proc    proc    defaults,hidepid=2    0    0
 ````
 
-Of course, you still need to make one user per server, change ports, and repeat the install process. (See https://github.com/GameServerManagers/LinuxGSM/wiki/Multiple-Servers for more info)
+You still need to make one user per server, change ports, and repeat the install process. (See https://github.com/GameServerManagers/LinuxGSM/wiki/Multiple-Servers for more info)
 
 
-To wipe the server run
+# Server Wipe
 ````bash
 ./rustserver wipe
 ````
-**Note**: The above command requires user input to confirm the wipe action by sending the character "y" (for yes) when the command is executed. In order for this to work in a cronjob, the confirm character needs to be piped in to the command. This can be solved by instead of running the above command to wipe the server in a cronjob, you can add an echo and pipe to the string to make it work, like so
+
+auto wipe
 ````bash
 echo y | ./rustserver wipe
-````
-
-To update Oxide, that your previously installed with LinuxGSM, run
-````bash
-./rustserver mods-update
 ````
