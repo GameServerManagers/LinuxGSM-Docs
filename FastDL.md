@@ -7,6 +7,12 @@ LinuxGSM FastDL automatically creates the web directories and compresses the con
 # Supported Servers
 * All Source engine servers
 
+# Commands
+
+Standard: .`/gameserver fastdl`
+
+Short: `./gameserver fd`
+
 # Requirements
 
 * HTTP server onto the game server (easiest)
