@@ -1,27 +1,14 @@
 # System requirements
 
-## RAM
-A Rust game server uses roughly 4GB to 12GB RAM, depending on the map size.  
-LinuxGSM will warn you if your server has less than 4GB RAM available.
+|RAM   |4GB-12GB   |Increases depending upon map size |
+|CPU   |Duel core 3.4GHz   |ARMA 3 is monothread |
+|Bandwidth |10mbps |   |
 
-## CPU
-will constantly use around 50% of one core from a Xeon E5-1650V3 (6 cores 12 threads, 3.8Ghz), or around 30% of one core from an I7 4870K, regardless of the amount of people connected. As with most game servers, it seems like Rust is mono threaded.
-
-## Bandwidth
-10mbps upload is reccomended
-
-## Other notes
-The server autosave can cause lag, depending on the CPU and disk speed. An server will a decent CPU and SSD can help.
-
-## Conclusion
-Rust does not require a server with a high amount of cores @1,2Ghz, prefer a quad/hexa core @+3,3Ghz, check benchmarks before choosing your server. CPU: good monothread performance ;RAM: 12-16GB and more; avoid VPS.
-
-# Linux Distribution
-You will need [[Glibc]] greater or equal to v2.15.
+> note The server autosave can cause lag, depending on the CPU and disk speed.
 
 # Modded server with Oxide
 
-LinuxGSM now supports downloading, updating, or removing Oxide.
+LinuxGSM supports downloading, updating, or removing Oxide.
 
 ```
 ./rustserver mods-install
@@ -29,18 +16,18 @@ LinuxGSM now supports downloading, updating, or removing Oxide.
 
 # Useful Links
 
-## Manual Installation and general information
-* If you wish to use the manual way, @UltimateByte has updated the Valve Rust wiki (that still needs some work): https://developer.valvesoftware.com/wiki/Rust_Dedicated_Server
+## General Information
+https://developer.valvesoftware.com/wiki/Rust_Dedicated_Server
 
 ## Oxide Support
 http://oxidemod.org/threads/setting-up-a-rust-server-with-linux-and-lgsm.16528/
 
 ## Rusty
-* Server RCON administration tool http://oxidemod.org/resources/rusty-server-rcon-administration-tool.53/
+* Server RCON administration tool 
+http://oxidemod.org/resources/rusty-server-rcon-administration-tool.53/
 
 # Rust Server with LinuxGSM Video tutorial
-
-Here is a quick tour of Rust special features, and install guide for Rust and Oxide.
+A quick tour of Rust special features, and install guide for Rust and Oxide.
 
 https://www.youtube.com/watch?v=6GaoyPeN71g
 
@@ -48,28 +35,20 @@ If you need more help, here is a video that shows a bit more into depth how to u
 
 https://www.youtube.com/watch?v=eFH9Qj-hUOM
 
-
-Since Rust have no console, you can use this workaround to display the log in real time:
+# Rust Console
+Rust has no console to display useful information. Instead you need to monitor the server logs or RCON login to display real time info.
 ````bash
 tail -f log/server/rust-server*.log`
 ````
 
-Since Rust don't allow setting a custom log location, the log file will be called game-{FULL-CURRENT-DATE}.log to not be erased on every restart and will be moved to log/server upon any server start/restart and a new one will be created.
-
-Note: The Rust console is empty under Linux. You'll have to use an RCON tool and/or watch your logs. 
-
 # Install Oxide
+Oxide is an API allowing you to run mods for you Rust server.
 
-As a reminder, Oxide is an API allowing you to run mods for you Rust server.
-
-LinuxGSM now handles Oxide for Rust naively, with mods-install and mods-update commands.
+LinuxGSM now handles the install of Oxide for Rust, with `mods-install` and `mods-update` commands.
 
 ````bash
 ./rustserver mods-install
-rustoxide
 ````
-
-Then you'd better check your logs again after restarting the server to check that Oxide is loading properly.
 
 If a Rust update has been released, then an Oxide update will soon follow. To update Oxide, you can then run:
 
@@ -79,10 +58,12 @@ If a Rust update has been released, then an Oxide update will soon follow. To up
 
 ## Install Oxide addons
 
-Just put them into `serverfiles/server/rust-server/oxide/plugins`
-They will load automatically.  
-If you need to edit their configs, it will be located in : `serverfiles/server/rust-server/oxide/config`  
-If you updated an addon and wish to reload it without restarting the server, you'll need to input it in an RCON tool. Once you've got it, run :
+To install Oxide addons place them into  the `serverfiles/server/rust-server/oxide/plugins` directory.
+This will cause them to load automatically when starting the server.
+
+If you need to edit any addon configs, they will be located in `serverfiles/server/rust-server/oxide/config`.
+
+To update and addon without restarting the server, you'll need to reload the addon with an RCON command.
 ```
 oxide.reload PluginName
 ```
