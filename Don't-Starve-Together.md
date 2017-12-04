@@ -112,7 +112,7 @@ For clarity reasons I recommend naming the master shard "Master".
 Lastly you have to start both servers. The order does not matter because the slave server will auto-retry connecting to the master server which is listening.
 
 
-#### Guides / Documentations:
+# Guides / Documentations:
 * [Quick Setup](http://forums.kleientertainment.com/topic/64441-dedicated-server-quick-setup-guide-linux/)
 * [Server Settings](http://forums.kleientertainment.com/topic/64552-dedicated-server-settings-guide/)
 * [Command Line Options](http://forums.kleientertainment.com/topic/64743-dedicated-server-command-line-options-guide/)
