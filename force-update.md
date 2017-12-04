@@ -4,7 +4,7 @@ Force update bypasses the [[update]] check and runs the [[SteamCMD]] update rega
 
 Force update is a useful feature for admins that restart there server on a daily with [[cronjobs]]. It allows LinuxGSM to check for updates while restarting the server.
 
-## Commands
+# Commands
 
 Standard: `./gameserver force-update`
 
