@@ -78,6 +78,8 @@
 
 ### Other
 * [[Seg Faults]]
+* [[Branding]]
+
 # Developers
 * [[Developing LGSM]]
 * [[Development Workflow]]
