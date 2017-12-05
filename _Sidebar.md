@@ -78,7 +78,7 @@
 
 ### Other
 * [[Seg Faults]]
-* [[Branding]]
+* [[Brand]]
 
 # Developers
 * [[Developing LGSM]]
