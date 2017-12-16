@@ -14,7 +14,7 @@ It is recommended that you [create a new Steam username](https://store.steampowe
 
 ## Anonymous Login
 
-The majority of game servers through SteamCMD are freely available for download. These servers can be accessed by logging in to SteamCMD as _anonymous_. In this case, Steam variables won't be present in LGSM and you have nothing to worry about. 
+The majority of game servers through SteamCMD are freely available for download. These servers can be accessed by logging in to SteamCMD as _anonymous_. In this case, Steam variables won't be present in LinuxGSM and you have nothing to worry about. 
 
 ## Steam User Login
 
@@ -32,7 +32,7 @@ It is recommended that you create a new Steam username just for the server for s
 
 For a list of which servers require logins and game purchases visit: http://gameservermanagers.com/list
 # Plain Text Passwords
-SteamCMD prints out passwords in plain text meaning that your Steam password is open for anyone to see on the server. LGSM saves logs and your password will be viewable in the logs.
+SteamCMD prints out passwords in plain text meaning that your Steam password is open for anyone to see on the server. LinuxGSM saves logs and your password will be view-able in the logs.
 
 # Steam Guard
 ![Steam Guard](images/steamcmd/steamguard.jpg)
@@ -47,7 +47,7 @@ For more info visit: https://support.steampowered.com/kb_article.php?ref=4020-AL
 
 1. Username and Password - No Steam Guard
 2. Username & Password - Steam Guard via Email (recommended)
-3. Username & Password - Steam Guard via Smartphone (not compatible with LGSM)
+3. Username & Password - Steam Guard via Smartphone (not compatible with LinuxGSM)
 
 ### Username & Password - No Steam Guard
 
@@ -57,13 +57,13 @@ Simply requires your Steam Username and Password.
 
 Requires your Steam Username & Password but also you will receive and email on first login to SteamCMD and be required to enter a code. Once the code is entered your server is authorized to use the steam account you entered.
 
-### Username & Password - Steam Guard via Smartphone (not compatible with LGSM)
+### Username & Password - Steam Guard via Smartphone (not compatible with LinuxGSM)
 
 Requires your Steam Username & Password but also requires you have the Steam app on your phone to use 2-factor Authentication
 
-## Using Steam Guard with LGSM
+## Using Steam Guard with LinuxGSM
 
-Both options 1 & 2 work with LGSM. You can either have Steam Guard disabled or have Steam Guard via email.
+Both options 1 & 2 work with LinuxGSM. You can either have Steam Guard disabled or have Steam Guard via email.
 
 Steam Guard via Smartphone is not compatible because it requires a code every time you login to SteamCMD. This is problematic if you want your servers to auto update.
 
