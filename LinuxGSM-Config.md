@@ -18,20 +18,20 @@ By default there are 3 main config files
     2. common.cfg
     3. instance.cfg
 
-When LinuxGSM is loading the configs they will load in the above order. First taking settings from `_default.cfg` then `common.cfg` and finally `instance.cfg`. This is not that different from an Access Control List in that settings load in order and newer settings can overwrite the previous settings. 
+When LinuxGSM is loading the configs they will load in the above order. First taking settings from `_default.cfg` then `common.cfg` and finally `instance.cfg`. This is not that different from an Access Control List in that settings load in order and newer settings can overwrite the previous settings.
 
 If a setting is in both `_default.cfg` and `common.cfg` then `common.cfg` will overwrite `_default.cfg`.
 
 ## How to get started with the new config files system
 
-1) Browse to the `config-lgsm` directory.  
-cd `lgsm/config-lgsm/`  
+1) Browse to the `config-lgsm` directory.
+cd `lgsm/config-lgsm/`
 
-2) Use `ls` to view the content and find the name of your instance (typically the name of your LGSM server instance).  
+2) Use `ls` to view the content and find the name of your instance (typically the name of your LinuxGSM server instance).
 `ls`
 
-3) Copy the default config to your instance's config.  
-`cat _default.cfg >> instance.cfg` (replace "instance" by your actual file name).  
+3) Copy the default config to your instance's config.
+`cat _default.cfg >> instance.cfg` (replace "instance" by your actual file name).
 
 Now you can edit your instance file that contains all of your LinuxGSM and start parameters configuration.
 

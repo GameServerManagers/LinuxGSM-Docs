@@ -2,7 +2,7 @@ This guide should cover a wide range of issues, but some might be more complicat
 
 # Installation issues
 
-Your game server might not install for many reasons, mainly user based ones, and some distro based.  
+Your game server might not install for many reasons, mainly user based ones, and some distro based.
 Make sure you answer "yes" to any of these questions.
 
 ## User and permissions
@@ -28,7 +28,7 @@ Make sure you answer "yes" to any of these questions.
 
 # Start issues
 
-LGSM servers are designed to work out of the box. However, if your server is unable to start, this can have multiple reasons. Some are user based, some are distro based. Here are some ways of diagnosing it.
+LinuxGSM servers are designed to work out of the box. However, if your server is unable to start, this can have multiple reasons. Some are user based, some are distro based. Here are some ways of diagnosing it.
 
 Note: (example) `./gameserver details` will provide you with relevant information and save you some time. See [[details]]
 
@@ -68,11 +68,11 @@ First off, you need to make sure that the server is started properly and listeni
 
 ### Is the server actually started?
 
-*  Start it with (example `./gameserver start` , then check server logs (see [[Logging]]) to see if everything seems OK. You can also try the [[details]] command and [[monitor]] command to see if it's online and if it's able to answer simple queries. If not, then follow the "Start issues" section. 
+*  Start it with (example `./gameserver start` , then check server logs (see [[Logging]]) to see if everything seems OK. You can also try the [[details]] command and [[monitor]] command to see if it's online and if it's able to answer simple queries. If not, then follow the "Start issues" section.
 
 ### Is the server actually listening?
 
-`./gameserver details` will provide you with the corresponding command to check if the server process is properly listening.  
+`./gameserver details` will provide you with the corresponding command to check if the server process is properly listening.
 Example sample output:
 ````
 Useful port diagnostic command:
@@ -80,7 +80,7 @@ netstat -atunp | grep srcds_linux
 ````
 Compare the output from this to expected ports displayed in the details command.
 
-If this isn't enough, then here are some keys: 
+If this isn't enough, then here are some keys:
 
 * Did you wait long enough? Sometimes it's just a matter of time until the server is fully started and listed into the master server list.
 * What does the logs say? See [[Logging]]

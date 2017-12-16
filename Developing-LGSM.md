@@ -1,17 +1,17 @@
 This page has been designed to help you learn how LinuxGSM code works.
 
-As a user, it will allow you for a better understanding of how LinuxGSM workd.  
-As a developer, it will help you with adding new servers, fixing bugs and adding new features. 
+As a user, it will allow you for a better understanding of how LinuxGSM workd.
+As a developer, it will help you with adding new servers, fixing bugs and adding new features.
 
 # Generalities
 
-LinuxGSM `./gameserver` script is important but is not the core part of the script. The point is to keep it as simple as possible for users to be able to edit it (settings are located in this file) but get most actual functions into script files so that users can update them with `gameserver update-functions`. Most script routines are done through those functions. Some are global ones for all LGSM servers, while some others are a little more specific. Some checks are based on the "gamename", some others on the "engine". We will get through most of that into this guide.
+LinuxGSM `./gameserver` script is important but is not the core part of the script. The point is to keep it as simple as possible for users to be able to edit it (settings are located in this file) but get most actual functions into script files so that users can update them with `gameserver update-functions`. Most script routines are done through those functions. Some are global ones for all LinuxGSM servers, while some others are a little more specific. Some checks are based on the "gamename", some others on the "engine". We will get through most of that into this guide.
 
-## Main Executable 
+## Main Executable
 
 The main executable file `linuxgsm.sh` or `./gameserver.sh` is what the admin interacts with to run commands. This also used to be the location to configure LinuxGSM however has now changed.
 
-`linuxgsm.sh `is designed to used for installation of a specific game server. You can run `./linuxgsm.sh install` to get a menu of the available servers or `./linuxgsm.sh gameserver` to install the specific game server. 
+`linuxgsm.sh `is designed to used for installation of a specific game server. You can run `./linuxgsm.sh install` to get a menu of the available servers or `./linuxgsm.sh gameserver` to install the specific game server.
 
 To install a specific server `linuxgsm.sh` first downloads a complete list of all available servers from `serverlist.csv`. This file contains variables required to identify the server; `$gamename`, `$shortname` and `$gameservername`. When installing a game server `linuxgsm.sh simply copies itself using the `$gameservername` variable as the script name and inserting the other variables in to the copied file. The added variables allow LinuxGSM to know which server the admin selected
 
@@ -77,7 +77,7 @@ Here are the command functions you might need to alter when adding a new server:
 
 ### core_dl.sh
 This is the first script to be run when `gameserver `is executed.
-This script allows for fetching LGSM core files, but also for downloading big files within kind of an API.
+This script allows for fetching LinuxGSM core files, but also for downloading big files within kind of an API.
 
 ### core_functions.sh
 This is the second script to be run when `gameserver `is executed.
@@ -126,10 +126,10 @@ If you want to replace the line afterwards, then reuse `fn_print_whatever`. If y
 * UPDATE | fn_print_update_eol | fn_print_update_eol_nl
 
 ### Logging
-Syntax: `fn_script_log "Message goes here."`  
+Syntax: `fn_script_log "Message goes here."`
 Output: `## Feb 28 14:56:58 ut99-server: Monitor: Message goes here.`
 
-* Simple action log | fn_script_log 
+* Simple action log | fn_script_log
 * PASS (a successful test) | fn_script_log_pass
 * FATAL (an error has interrupted LGSM) | fn_script_log_fatal
 * ERROR | fn_script_log_error
@@ -138,7 +138,7 @@ Output: `## Feb 28 14:56:58 ut99-server: Monitor: Message goes here.`
 
 ## Checks
 
-Any script file must run `check.sh` at some point.  
+Any script file must run `check.sh` at some point.
 Within `check.sh`, you will then chose what tests to run for a given function. The syntax of check.sh is a bit counter intuitive: `local allowed_commands_array=( )` is the variable where you will enter the functions into which you need to run the following check.
 
 There are several checks available:
@@ -155,8 +155,8 @@ There are several checks available:
 * check_system_requirements.sh checks RAM requirements (maybe more into the future)
 * check_tmuxception.sh checks and prevents server start from tmux or screen
 
-### core_exit.sh 
-This script allows for the use of exit codes which will print different outputs to LGSM logs.
+### core_exit.sh
+This script allows for the use of exit codes which will print different outputs to LinuxGSM logs.
 Running `core_exit.sh` defaults exitcode variable to 0 which stands for a proper exit
 * Normal exit: exitcode=0
 * FATAL  exitcode=1
@@ -208,8 +208,8 @@ Common procedure is to first work on command_install, then start, then stop, the
 
 ## Oops, I found a bug!
 
-If your found a bug, either you'll instantly know how to fix it, or you won't. And either it will be a bug caused by your own code or a bug into LGSM itself. So let's address those cases.
+If your found a bug, either you'll instantly know how to fix it, or you won't. And either it will be a bug caused by your own code or a bug into LinuxGSM itself. So let's address those cases.
 
 1. It's caused by your own code parts and you know how to fix it: Just go on and fix it.
 2. It's caused by your own code parts but you got no idea why: Use `./gameserver dev-debug` that will add a very detailed log into your rootdir that might help you figuring this out. To disable the dev-debug mode, just re-run the command. If you still can't find why it's not working, come get help on Discord's #gsm-development channel or Github issue that might have been created for this issue.
-3. You found a bug into LGSM itself. First, you need to be sure that it's really a bug that affects every game, by testing with another game onto the original repo, otherwise, if it only affects your game, you will usually just need to add a clever conditional check to fix the issue.
+3. You found a bug into LinuxGSM itself. First, you need to be sure that it's really a bug that affects every game, by testing with another game onto the original repo, otherwise, if it only affects your game, you will usually just need to add a clever conditional check to fix the issue.
