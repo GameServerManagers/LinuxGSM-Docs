@@ -11,7 +11,7 @@ LinuxGSM website and Wiki will let you know almost anything you need about Linux
 - https://gameservermanagers.com/wiki
 
 ### Google
-It is likely that somebody already asked your question before. Save time to yourself and everyone else using Google first.
+It is likely that somebody already asked your question before. Save time for yourself and everyone else using Google first.
 
 > “Google is how I learnt and still learn to use BASH and develop LinuxGSM.” - Daniel Gibbs
 
