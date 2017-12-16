@@ -56,6 +56,7 @@
 * [[Ark Survival Evolved]]
 * [[Arma 3]]
 * [[Call of Duty 4]]
+* [[Garry's Mod]]
 * [[Unreal Tournament 99]]
 * [[Unreal Tournament 2004]]
 * [[Unreal Tournament 3]]
