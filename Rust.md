@@ -86,7 +86,7 @@ To use Facepunch tool or Rustadmin, you can leave it at default `rconweb="1"`
 save ; will save the server state (useful before a stop or restart)
 oxide.reload PluginName ; will reload a plugin after updating it
 ownerid STEAMID64 "Nickname" "Reason" ; to add an owner
-moderatorid STEAMID64 "Nickname "Reason" ; to add a moderator
+moderatorid STEAMID64 "Nickname" "Reason" ; to add a moderator
 server.writecfg ; will save config changes, including new admins
 ```
 
