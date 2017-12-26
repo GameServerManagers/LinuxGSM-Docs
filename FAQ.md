@@ -84,6 +84,14 @@ Short answer: No
 
 Raspberry PI uses ARM architecture whereas all the game servers will only run on x86 compatible architectures such as 32-bit and 64-bit versions of distros. Raspberry PI is not compatible with x86.
 
+
+Can I bind game servers to a given CPU core?
+==============================
+Short answer: You should not.
+
+Experience proves Linux's embed CPU scheduler to work the best: Each server will freely use available CPU time, spread across multiple cores/threads in order to prevent adjacent processes from slowing down each other. This allows for equitable resources distribution for all processes; in the case of CPU saturation, all processes will be slowed down by just a bit. On the other hand, binding processes to CPU cores usually provides zero to low performance gains, while causing various issues including performance loss, most of the time for the following reason: A process that is not bound to specific CPU cores uses the core you bound your game server to, which slows it down more than if CPU usage was spread across the whole CPU.
+
+
 Will LinuxGSM run on Linux for Windows?
 ==============================
 Short answer: No.
