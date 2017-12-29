@@ -30,7 +30,7 @@ For more info, see [[update]].
 
 `./gameserver validate` or `./gameserver v` (SteamCMD games only)
 
-`./gameserver update-functions` or `./gameserver uf` (Updating LGSM)
+`./gameserver update-lgsm` or `./gameserver ul` (Updating LinuxGSM)
 
 
 ### Monitoring
