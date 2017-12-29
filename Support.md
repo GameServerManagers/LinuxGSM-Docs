@@ -5,7 +5,7 @@ However, our time is limited which is best spent on developing LinuxGSM. Patienc
 # Please, search before asking
 
 ### Official Documentation
-LinuxGSM website and Wiki will let you know almost anything you need about LinuxGSM
+LinuxGSM website and Wiki will let you know almost anything you need about LinuxGSM.
 
 - https://gameservermanagers.com  
 - https://gameservermanagers.com/wiki
