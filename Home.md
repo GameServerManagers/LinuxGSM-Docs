@@ -6,9 +6,6 @@
 [![Discord](https://discordapp.com/api/guilds/127498813903601664/widget.png?style=shield)](https://gameservermanagers.com/discord)
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://github.com/GameServerManagers/LinuxGSM/blob/master/LICENSE)
 [![made-with-bash](https://img.shields.io/badge/Made%20with-Bash-1f425f.svg)](https://www.gnu.org/software/bash/)
-[![GitHub release](https://img.shields.io/github/release/Naereen/StrapDown.js.svg)](https://GitHub.com/GameServerManagers/LinuxGSM/releases/)
-|GitHub contributors| image:: https://img.shields.io/github/contributors/Naereen/StrapDown.js.svg
-   :target: https://GitHub.com/Naereen/StrapDown.js/graphs/contributors/
 
 <a href="https://gameservermanagers.com">LinuxGSM</a> is the command line tool for quick, simple deployment and management of dedicated game servers.
 
