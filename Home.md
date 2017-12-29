@@ -5,6 +5,7 @@
 [![Under Development](https://badge.waffle.io/GameServerManagers/LinuxGSM.svg?label=Under%20Development&title=Under%20Development)](http://waffle.io/GameServerManagers/LinuxGSM)
 [![Discord](https://discordapp.com/api/guilds/127498813903601664/widget.png?style=shield)](https://gameservermanagers.com/discord)
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://github.com/GameServerManagers/LinuxGSM/blob/master/LICENSE)
+[![made-with-bash](https://img.shields.io/badge/Made%20with-Bash-1f425f.svg)](https://www.gnu.org/software/bash/)
 
 <a href="https://gameservermanagers.com">LinuxGSM</a> is the command line tool for quick, simple deployment and management of dedicated game servers.
 
