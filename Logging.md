@@ -1,4 +1,4 @@
-Logs are an important part of monitoring a server as it allows you to know what has been happening. Linux GSM has a log directory that allows you to track the gameserver, console and LinuxGSM itself.
+Logs are an important part of monitoring a server as it allows you to know what has been happening. LinuxGSM has a log directory that allows you to track the gameserver, console and LinuxGSM itself.
 
 If your user is `gameserver`, then LinuxGSM logs are located in the following directory:
 
