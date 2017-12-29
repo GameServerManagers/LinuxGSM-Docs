@@ -82,9 +82,10 @@ For more info, see [[map-compressor]].
 `./ut2k4server map-compressor` or `./ut2k4server mc`
 
 # Developer & debug commands
+For more info, see [[developer-commands]].
+
+`./gameserver developer` or `./gameserver dev`
 
 `./gameserver detect-deps` or `./gameserver dd`
 
 `./gameserver detect-glibc` or `./gameserver dg`
-
-`./gameserver dev-debug` or `./gameserver dev`
