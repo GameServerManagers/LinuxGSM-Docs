@@ -8,7 +8,7 @@ serverfiles/ShooterGame/Saved/Config/LinuxServer/Game.ini
 
 Add `-automanagedmods` to the [[start parameters]].
 
-Next edit `Game.ini`, adding the following line under `[ServerSettings]`.
+Next edit `Game.ini` and add the following section.
 ```
 [ModInstaller]
 ModIDS=764326117
