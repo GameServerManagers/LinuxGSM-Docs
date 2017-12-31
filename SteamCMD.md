@@ -3,7 +3,7 @@
 SteamCMD is a command-line based Steam client developed by Valve that is used to remotely download game files.
 This is very useful for servers, as this means it's significantly easier to keep them up-to-date, it's also very easy to use. Any game that supports dedicated servers will have their server files available on SteamCMD. All you need is the AppID which can be found on Valve's [wiki](https://developer.valvesoftware.com/wiki/Dedicated_Servers_List) or [SteamDB](https://steamdb.info/search/?a=app&q=server).
 
-**Note:** You can only download server files for the Operating System that you are using SteamCMD on.
+> Note: You can only download server files for the Operating System that you are using SteamCMD on.
 
 ![SteamCMD Terminal](images/steamcmd/steamcmd.png)
 
