@@ -12,6 +12,8 @@ Next edit `GameUserSettings.ini`, adding the following line under `[ServerSettin
 ```
 ActiveMods=[workshopID],[workshopID],[workshopID],[workshopID]
 ```
+
+Doing this will auto download mods.
 Next edit `Game.ini` and add the following section.
 ```
 [ModInstaller]
