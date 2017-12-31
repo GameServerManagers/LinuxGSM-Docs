@@ -14,13 +14,14 @@ ActiveMods=[workshopID],[workshopID],[workshopID],[workshopID]
 ```
 
 Doing this will auto download mods.
+
 Next edit `Game.ini` and add the following section.
 ```
 [ModInstaller]
-ModIDS=764326117
-ModIDS=774762563
-ModIDS=627340159
-ModIDS=554678442
+ModIDS=[workshopID]
+ModIDS=[workshopID]
+ModIDS=[workshopID]
+ModIDS=[workshopID]
 ```
 Replace `[workshopID]` with required workshop ID's.
 
