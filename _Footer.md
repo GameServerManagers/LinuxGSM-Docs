@@ -1,1 +1,1 @@
-![LGSM Logo Footer](https://raw.githubusercontent.com/wiki/GameServerManagers/LinuxGSM/images/brand/colour_black/LinuxGSM_colour_black_logo_32.png) [Linux Game Server Managers_](http://gameservermanagers.com)
+![LGSM Logo Footer](images/brand/colour_black/LinuxGSM_colour_black_logo_32.png) [Linux Game Server Managers_](http://gameservermanagers.com)
