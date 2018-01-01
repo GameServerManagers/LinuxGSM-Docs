@@ -27,7 +27,7 @@ OR
 
 `./gameserver fastdl` or the short version `./gameserver fd`
 
-If you're using an older LinuxGSM installation, run `./gameserver update-function`s or `./gameserver uf` to get the new FastDL feature.
+If you're using an older LinuxGSM installation, run `./gameserver update-lgsm` or `./gameserver ul` to get the new FastDL feature.
 
 This will create a new folder in your game server's directory : public_html/fastdl
 
