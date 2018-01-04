@@ -5,6 +5,13 @@ Standard: `./gameserver details`
 
 Short:  `./gameserver dt`
 
+To share your details on Hastebin, for support, while hiding sensitive information automatically:  
+
+Standard: `./gameserver postdetails`
+
+Short:  `./gameserver pd`
+
+
 # Details provided
 You will be given various details that are relevent to your game server. These include:
 
