@@ -19,3 +19,5 @@ A webhook is required to post alerts to a Discord text channel
 discordalert="on"
 discordwebhook="https://discordapp.com/api/webhooks/3539332633367897009/5t_K4GkuBaR2-69TsKqXmHIya1ck1tirnu_Fst-DUC00dye98eaa_I6uTIcHEsi7a17K"
 ```
+
+Note: You must have Discord User Settings > Text & Images > Link Preview: 'Show website preview...' enabled or you will just see blank messages from the alert bot.
