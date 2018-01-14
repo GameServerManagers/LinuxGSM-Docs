@@ -32,7 +32,7 @@ The Linux Game Server Managers are tested to work on the following Linux distros
 Other distros are likely to work but are not fully tested.
 <h3>Specific Requirements</h3>
 <ul>
-	<li><a href="https://github.com/GameServerManagers/LinuxGSM/wiki/Glibc">GLIBC</a> >= 2.15 recommended [<a href="https://github.com/GameServerManagers/LinuxGSM/wiki/Glibc#server-requirements">specific requirements</a>].</li>
+	<li><a href="https://github.com/GameServerManagers/LinuxGSM/wiki/Glibc">GLIBC</a> >= 2.18 recommended [<a href="https://github.com/GameServerManagers/LinuxGSM/wiki/Glibc#server-requirements">specific requirements</a>].</li>
 	<li><a href="https://github.com/GameServerManagers/LinuxGSM/wiki/Tmux">Tmux</a> >= 1.6 recommended (Avoid Tmux 1.8).</li>
 </ul>
 <h2>FAQ</h2>
