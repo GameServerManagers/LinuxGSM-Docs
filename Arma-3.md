@@ -54,7 +54,7 @@ Run the script from the `mods` directory.
 
 ```bash
 #!/bin/bash
-depth=4
+depth=0
 for x in $(find . -type d | sed "s/[^/]//g")
 do
 if [ ${depth} -lt ${#x} ]
