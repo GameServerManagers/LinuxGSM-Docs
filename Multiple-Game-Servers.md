@@ -1,4 +1,4 @@
-Most admins normally want to run multiple game servers on there Linux server. There are a couple of ways to achieve this. Depending upon the circumstances you may choose a particular method or mixture of both.
+Most admins normally want to run multiple game servers on their Linux server. There are a couple of ways to achieve this. Depending upon the circumstances you may choose a particular method or mixture of both.
 
 **Instance:** Each individual game server is referred too as an “instance” e.g `1.2.3.4:27015`.
 
