@@ -70,9 +70,14 @@ tty:x:5:csgoserver
 # Installing the latest tmux CentOS 7 using Ghettoforge
 If you are using an older version of tmux on CentOS you can upgrade to the latest version by installing the [Ghettoforge](http://ghettoforge.org) repository.
 
-1. ```wget http://mirror.ghettoforge.org/distributions/gf/gf-release-latest.gf.el7.noarch.```
-2. ```rpm -Uvh gf-release*rpm```
-3. ```yum --enablerepo=gf-plus install tmux```
+Install Ghettoforge with the following command.
+```
+yum install http://mirror.ghettoforge.org/distributions/gf/gf-release-latest.gf.el7.noarch
+```
+Install tmux using the Ghettoforge repo.
+```
+yum --enablerepo=gf-plus install tmux
+```
 
 
 ## Note on live servers
