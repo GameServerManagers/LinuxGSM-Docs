@@ -4,7 +4,7 @@
 <p align="center"><img src="https://gameservermanagers.com/wp-content/uploads/2016/05/lgsm-pushbullet.png" alt="Pushbullet alert"/></p>
 
 # Enable Pushbullet alerts
-To enable Telegram alerts you need to generate an Access Token.
+To enable Pushbullet alerts you need to generate an Access Token.
 
 Access Tokens are available from Pushbullet setting found [here](https://www.pushbullet.com/#settings).
 
