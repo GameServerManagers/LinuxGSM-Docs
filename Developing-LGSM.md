@@ -1,6 +1,6 @@
 This page has been designed to help you learn how LinuxGSM code works.
 
-As a user, it will allow you for a better understanding of how LinuxGSM workd.
+As a user, it will allow you for a better understanding of how LinuxGSM works.
 As a developer, it will help you with adding new servers, fixing bugs and adding new features.
 
 # Generalities
