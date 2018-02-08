@@ -37,7 +37,7 @@ Note: (example) `./gameserver details` will provide you with relevant informatio
 * Is the server properly installed? See the "Game server downloads" part
 * Are all packages installed properly? See "Dependencies" part
 * Is your Linux installation compatible? 32/64bit, distribution... Check command: `uname -a`
-* Are ports already used by another service? See [[Ports]] and [[Multiple Servers]]
+* Are ports already used by another service? See [[Ports]] and [[Multiple-Game-Servers]]
 * Is this a known tmux issue? See [[Tmux]]
 * Did you try to start with the `debug` command? See [[debug]]
 * What does the logs say? See [[Logging]]
