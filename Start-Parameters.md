@@ -41,3 +41,4 @@ parms="-game nmrih -insecure -strictportbind -ip 91.121.72.41 -port 27015 +clien
 * Rust: https://developer.valvesoftware.com/wiki/Rust_Dedicated_Server
 * Serious Sam 3: https://raw.githubusercontent.com/GameServerManagers/Game-Server-Configs/master/SeriousSam3BFE/help/DedicatedServer_Readme.txt
 * Squad: http://squad.gamepedia.com/Server_Configuration#Command_Line
+* Killing Floor 2: https://wiki.tripwireinteractive.com/index.php?title=Dedicated_Server_(Killing_Floor_2)#Advanced_Configuration
