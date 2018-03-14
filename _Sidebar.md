@@ -73,6 +73,7 @@
 * [[Permissions]]
 
 ### SteamCMD
+* [[LAN Discovery]]
 * [[SteamCMD]]
 * [[Workshop]]
 * [GSLT](Game-Server-Login-Token)
