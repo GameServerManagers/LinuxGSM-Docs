@@ -25,14 +25,15 @@ zip add-ons are currently the only supported installations. Other mods for other
 * sourcemod (1.8)
 
 ## For Garry's Mod
-* ULib
-* ULX
-* UTime
-* UClip
 * ACF
 * ACF Missiles
 * DarkRP
 * DarkRP Modification
+* PAC3
+* UClip
+* ULib
+* ULX
+* UTime
 
 ## For Unity3D (Rust/Hurtworld/7 Days To Die)
 * Oxide Mod
