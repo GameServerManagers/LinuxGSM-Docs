@@ -1,3 +1,11 @@
+# **GitHub issues are for LinuxGSM Development!**
+## Bugs/Feature Requests
+
+You can submit any bug and feature suggestion or code to Github.  
+**Personal server issues on Github will be closed without a kiss.**
+
+- https://linuxgsm.com/issues
+
 # We want to help out server admins as best as we can...
 
 However, our time is limited which is best spent on developing LinuxGSM. Patience is also wearing thin on unhelpful posts. So please help us by providing the following information when posting to help us to resolve YOUR issue.
@@ -7,8 +15,8 @@ However, our time is limited which is best spent on developing LinuxGSM. Patienc
 ### Official Documentation
 LinuxGSM website and Wiki will let you know almost anything you need about LinuxGSM.
 
-- https://gameservermanagers.com  
-- https://gameservermanagers.com/wiki
+- https://linuxgsm.com  
+- https://linuxgsm.com/wiki
 
 ### Google
 It is likely that somebody already asked your question before. Save time for yourself and everyone else using Google first.
@@ -50,14 +58,6 @@ If for some reason, you cannot use postdetails, then provide:
 
 ## General Support
 
-- **Discord** https://gameservermanagers.com/discord
+- **Discord** https://linuxgsm.com/discord
 
-- **Steam group** https://gameservermanagers.com/steam
-
-
-## Bugs/Feature Requests
-
-You can submit any bug and feature suggestion or code to Github.  
-**Personal server issues on Github will be closed without a kiss.**
-
-- https://gameservermanagers.com/issues
+- **Steam group** https://linuxgsm.com/steam
