@@ -2,7 +2,7 @@
 ## Bugs/Feature Requests
 
 You can submit any bug and feature suggestion or code to Github.  
-**Personal server issues on Github will be closed without a kiss.**
+**Personal server issues, questions, or anything that doesn't relate to LinuxGSM development posted on GitHub will be closed without a kiss.**
 
 - https://linuxgsm.com/issues
 
