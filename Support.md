@@ -1,39 +1,37 @@
-# **GitHub issues are for LinuxGSM Development!**
-## Bugs/Feature Requests
+# GitHub issues are for LinuxGSM Development only!
+* YES PLEASE: Submit any bug, feature suggestion or code contribution to Github.
+* NO THANK YOU: Game server issues (e.g CS:GO, TF2), Dedicated server issues (e.g Ubuntu, CentOS) or anything not directly related to LinuxGSM development. There are various volunteers that may be able to help with these on the Steam group.
 
-You can submit any bug and feature suggestion or code to Github.  
-**Personal server issues, questions, or anything that doesn't relate to LinuxGSM development posted on GitHub will be closed without a kiss.** If you have a doubt, ask on Discord first.
+Any issue that is suddenly closed by moderators has been deemed not suitable for the GitHub issues page. Please post elsewhere. If in doubt contact us on discord or post on the steam group.
 
-- https://linuxgsm.com/issues
+Don't worry its not that we don't like you, we just need to keep the issues page relevant to LinuxGSM code to assist with our workflow.
 
-# We want to help out server admins as best as we can...
+# Getting support
+We want to help out server admins as best as we can however, our time is limited and is best spent on developing LinuxGSM. Patience is also wearing thin on unhelpful posts. So please help us by providing the following information when posting to help us to resolve YOUR issue.
 
-However, our time is limited which is best spent on developing LinuxGSM. Patience is also wearing thin on unhelpful posts. So please help us by providing the following information when posting to help us to resolve YOUR issue.
+## Search Before Asking
 
-# Please, search before asking
-
-### Official Documentation
-LinuxGSM website and Wiki will let you know almost anything you need about LinuxGSM.
+## Official Documentation
+The LinuxGSM website and Wiki will tell you almost anything you need about LinuxGSM.
 
 - https://linuxgsm.com  
 - https://linuxgsm.com/wiki
 
-### Google
+## Google
 It is likely that somebody already asked your question before. Save time for yourself and everyone else using Google first.
 
 > “Google is how I learnt and still learn to use BASH and develop LinuxGSM.” - Daniel Gibbs
 
 - https://google.com
 
-### Updates
+## Updates
 
 Make sure your LinuxGSM script is up to date.
 
 `./gameserver update-lgsm`
 
-# REQUIRED INFORMATION FOR SUPPORT
-Some details are required to help us solving your problem. If you will not provide this information we are unable to help you.  
-Thank you.
+# Required Information for Support
+Some details are required to help us solve your problem. If you refuse to provide this information we are unable to help you.
 
 ## Minimum information - _to get help_
 
@@ -48,7 +46,7 @@ If for some reason, you cannot use postdetails, then provide:
 
 ## Additional information - _that is usually useful_
 
-- Any useful **log** in /home/gameserver/log (use pastebin or equivalent).
+- Any useful **log** in `/home/gameserver/log` (use pastebin or equivalent).
 - Any useful **screenshot**.
 - Your basic **server hardware** (CPU/RAM/Storage/Bandwidth).
 - Any **test** you have already tried.
