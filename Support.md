@@ -59,3 +59,6 @@ If for some reason, you cannot use postdetails, then provide:
 - **Discord** https://linuxgsm.com/discord
 
 - **Steam group** https://linuxgsm.com/steam
+
+# GitHub Labels Proposal
+Im am proposing an improvement to the labelling system on GitHub to better allow devs and end users to get good feedback on the status of an issue. I would also like to investigate any github issues bots allowing auto messaging to common problems like lack of info or being posted in the wrong forum 
