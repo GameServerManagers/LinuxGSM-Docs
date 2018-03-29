@@ -30,7 +30,7 @@ _Full Parms Example_
 ```
 ## Server Start Parameters | https://github.com/GameServerManagers/LinuxGSM/wiki/Start-Parameters
 fn_parms(){
-parms="-game nmrih -insecure -strictportbind -ip 91.121.72.41 -port 27015 +clientport 27017 +tv_port 27016 +map nmo_broadway +servercfgfile nmrih-server-1.cfg -maxplayers 8"
+parms="-game nmrih -strictportbind -ip 91.121.72.41 -port 27015 +clientport 27017 +tv_port 27016 +map nmo_broadway +servercfgfile nmrih-server-1.cfg -maxplayers 8"
 }
 ```
 ## Parameters reference
