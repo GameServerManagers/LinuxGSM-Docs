@@ -47,7 +47,7 @@ If for some reason, you cannot use postdetails, then provide:
 ## Additional information - _that is usually useful_
 
 - Any useful **log** in `/home/gameserver/log` (use pastebin or equivalent).
-- Any useful **screenshot**.
+- Any useful **screenshots**.
 - Your basic **server hardware** (CPU/RAM/Storage/Bandwidth).
 - Any **test** you have already tried.
 - Any **relevant information** you think will help.
