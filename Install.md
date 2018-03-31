@@ -15,7 +15,7 @@ Short: `./gameserver ai`
 
 # Installation
 
-1. Make your script executable: 
+1. Make your script executable:
 
 `chmod +x gameserver`
 
@@ -28,10 +28,10 @@ Short: `./gameserver ai`
 
 ## Permissions issues
 
-LinuxGSM may fail to run if the correct permissions have not been used. This fault commonly occurs if an admin has not correctly followed installation instructions found on https://gameservermanagers.com
+LinuxGSM may fail to run if the correct permissions have not been used. This fault commonly occurs if an admin has not correctly followed installation instructions found on https://linuxgsm.com
 
 Common faults include:
-* trying to install the LinuxGSM as root. 
+* trying to install the LinuxGSM as root.
 * Trying to install LinuxGSM in a directory not owned by the correct user
 * not making `gameserver` file executable using the `chmod +x` command.
 
@@ -50,7 +50,7 @@ To check the correct user owns the directory or `gameserver` file use `ls -al`
 	drwxrwxr-x  6 nmrihserver nmrihserver 4096 Aug 19 16:00 steamcmd
 
 
-If some files/directorys are not owned use the `chown` command to correct this. 
+If some files/directorys are not owned use the `chown` command to correct this.
 Login as root and use the following command; changing the details to match your server
 
 `chown -R username:username /home/gameserver`
@@ -59,7 +59,7 @@ Login as root and use the following command; changing the details to match your 
 
 ### Bad network to Steam servers
 
-If your connection to the Steam servers are bad (quite common), SteamCMD download can fail. This is why LinuxGSM will always ask you if installation was successful allowing admins to retry the download if it fails. 
+If your connection to the Steam servers are bad (quite common), SteamCMD download can fail. This is why LinuxGSM will always ask you if installation was successful allowing admins to retry the download if it fails.
 
 If you you are having issues downloading try the [[validate]] option.
 
@@ -72,7 +72,7 @@ It is also worth searching the internet for issues relating to the error message
 ## Not enough disk space
 Some game servers do use significant disk space. If you are having issues downloading check that your server has enough space available
 
-To check your disk remaining space, use: 
+To check your disk remaining space, use:
 
 `df -h` or `./gameserver details
 

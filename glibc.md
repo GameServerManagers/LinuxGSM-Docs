@@ -5,11 +5,11 @@ Server Requirements
 ===================
 A complete list can be found here:
 
-https://gameservermanagers.com/list/
+https://linuxgsm.com/list/
 
 Distro glibc Versions
 ====================
-List of distros and there glibc version. 
+List of distros and there glibc version.
 
 | Distro           | glibc   |
 |------------------|---------|
@@ -30,21 +30,21 @@ List of distros and there glibc version.
 | Ubuntu 14.04 LTS | 2.19    |
 | Ubuntu 16.04 LTS | 2.23    |
 
-[distrowatch.com](http://distrowatch.com) is also a great source to find this information. 
+[distrowatch.com](http://distrowatch.com) is also a great source to find this information.
 
 glibc version history available on [Wikipedia](https://en.wikipedia.org/wiki/GNU_C_Library#Version_history).
 
 glibc fixes
 ===========
 
-> Many of the servers can work on distros with older _glibc_ versions by using the _glibc_ fixes that are available with LinuxGSM. 
+> Many of the servers can work on distros with older _glibc_ versions by using the _glibc_ fixes that are available with LinuxGSM.
 
 If your distro does not meet the glibc requirements LinuxGSM will download the glibc files to the `lgsm/lib` directory to be used by the game server. Because of this even if your dedicated server does not meet the glibc requirements the game server should still work.
 
 These fixes prevent errors similar to the following:
 ```
 version `glibc_2.15′ not found
-```   
+```
 ```
 ./7DaysToDie.x86: /usr/lib/libstdc++.so.6: version glibcXX_3.4.15 not found (required by ./7DaysToDie.x86)
 ./7DaysToDie.x86: /lib/libc.so.6: version glibc_2.15 not found (required by ./7DaysToDie.x86)
@@ -55,10 +55,10 @@ glibc Fix available
 -------------------
 Some but not all game servers can use glibc fix. See the list below of game servers that can use glibc fixes:
 
-https://gameservermanagers.com/list/
+https://linuxgsm.com/list/
 
 External Links
 ==============
 
 * [distrowatch.com](http://distrowatch.com/)
-* [glibc Homepage](http://www.gnu.org/software/libc/) 
+* [glibc Homepage](http://www.gnu.org/software/libc/)

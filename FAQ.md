@@ -6,22 +6,22 @@ I'm having an issue can you help?
 ===============================================
 
 There are various ways to get help and support with LinuxGSM.
-* http://gameservermanagers.com/support/
+* http://linuxgsm.com/support/
 
 _Remember to consider the best place to post your issue and search the internet for a solution before posting._
 
 ## Documentation
 The website and GitHub wiki is a useful resource for various LinuxGSM related topics.
-* http://gameservermanagers.com
-* http://gameservermanagers.com/wiki
+* http://linuxgsm.com
+* http://linuxgsm.com/wiki
 
 ## General Support
 LinuxGSM has a Steam Group where you can get general support for LinuxGSM related stuff.
-* http://gameservermanagers.com/steam
+* http://linuxgsm.com/steam
 
 ## Bugs/Feature Requests
 LinuxGSM has a GitHub issues page where you can submit any bugs and feature suggestions.
-* http://gameservermanagers.com/issues
+* http://linuxgsm.com/issues
 
 tmux: command not found
 =======================
@@ -31,9 +31,9 @@ I received the following error
     [ FAIL ] Tmux not installed
         * Tmux is required to run this server.
             * Please see the the following link.
-            * http://gameservermanagers.com/tmux
+            * http://linuxgsm.com/tmux
 
-Tmux has not been installed. 
+Tmux has not been installed.
 See the dependencies section of the installation instructions.
 
     apt-get install tmux
@@ -60,11 +60,11 @@ The script will not run as root and will error if you try. This is done for the 
 
 I can't download linuxgsm.sh (TLS/SSL Errors)
 ====================================
-If your error looks like `Unable to establish SSL connection` you need to make sure you installed the `ca-certificates` package first as well as other dependencies showed on the website's documentation. 
+If your error looks like `Unable to establish SSL connection` you need to make sure you installed the `ca-certificates` package first as well as other dependencies showed on the website's documentation.
 
 If you are using an "old" distribution, it is possible that your version of wget doesn't support redirections along with SSL/TLS. As a workaround, you can download the script using `--no-check-certificate`. Please note that you should only tolerate this practice if your trust your server network connection and the download source at 100%.
 
-Example: `wget -N --no-check-certificate https://gameservermanagers.com/dl/linuxgsm.sh`
+Example: `wget -N --no-check-certificate https://linuxgsm.com/dl/linuxgsm.sh`
 
 
 How can I install [insert name] mod?
@@ -181,7 +181,7 @@ LinuxGSM itself has extremely low server requirements as it is written in BASH. 
 
 * Hard Disk: You will need to ensure you have enough disk space to install the game server. The space required varies drastically depending upon the game. Generally the older the game the smaller the size. If the server is on SteamCMD you can use SteamDB to find out the disk requirements. For example https://steamdb.info/app/403240/depots/. Also taken in to consideration any mods, addons, backups etc you might need.
 
-* CPU: Most game servers are mono threaded. This means it will only use one CPU core per instance, because of this it is worth looking at performance of an individual core. Every game server has different resource requirements with certain factors increasing CPU demand. For example, In Rust the map size greatly effects CPU usage. For Counter-Strike the tickrate and bots will make a difference. Whereas for Garry's Mod the number of connected players, addons, and props that are used and spawned increase server requirements. 
+* CPU: Most game servers are mono threaded. This means it will only use one CPU core per instance, because of this it is worth looking at performance of an individual core. Every game server has different resource requirements with certain factors increasing CPU demand. For example, In Rust the map size greatly effects CPU usage. For Counter-Strike the tickrate and bots will make a difference. Whereas for Garry's Mod the number of connected players, addons, and props that are used and spawned increase server requirements.
 
 * RAM: Again the specific game server will impact upon the RAM requirements. In general factors such as map size number of players, bots, addons can have an impact on the RAM required. For example a No More Room in Hell server has a much lower RAM requirement than ARK or Rust. The game engine also plays a massive role in RAM requirements, with Rust using aroumd 12GB and ARK using around 6GB, Unity3D engine games can also have higher requirements.
 
@@ -219,7 +219,7 @@ You can simply fix those ownership issues by using a chown command as root.
 
 It usually means some script or executable files are not actually executable.
 
-Useful command: 
+Useful command:
 
 `chmod +x <filename>`
 
@@ -232,7 +232,7 @@ My server is not showing up over LAN or Internet
 This can have numerous reasons. Here are some ways do diagnose this issue:
 
 * Check your game logs to see if it contains any clue
-* Is your server listening? Input `./gameserver details` to get the corresponding command to know it  
+* Is your server listening? Input `./gameserver details` to get the corresponding command to know it
 * Are you behind [[Firewalls]]? Double check your rules, try to disable it for testing
 * Do you have multiple interface? Set the right IP within your "gameserver" script or the game config file
 * Is it a home server? If you're behind a router, make sure your're listening to your local IP, then redirect appropriate ports to this local IP within your router settings.
@@ -242,19 +242,19 @@ This can have numerous reasons. Here are some ways do diagnose this issue:
 I get segmentation fault, how to solve this issue?
 =========================================================================
 
-My source server is displaying an error like  
+My source server is displaying an error like
 `./srcds_run: line 318: 31093 Segmentation fault `
 
 This kind of errors can happen at any time or be due to numerous reasons. However, most common ones are:
 
-If it happens upon start:  
+If it happens upon start:
 * Interpreter issue (glibc libstdc gcc libraries and so on) - check your versions, librarires, and game binary files.
 * Outdated or bugged addon - Update or remove the addon
 * Missing or revoked GSLT - Update your GSLT
 * Corrupted game server files - run ./gameserver validate
 * File version incompatibility - run ./gameserver validate
 
-If it happens after a while:  
+If it happens after a while:
 * Bug from the game server or an addon - Check your console logs, see if you can reproduce, and diagnose your addons
 * Unstable hardware - very unlikely, check your system stability
 * Ulimit issue: Your system cannot open as many files as it should - See ulimit info from this page

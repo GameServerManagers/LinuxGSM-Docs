@@ -14,7 +14,7 @@ Make sure you answer "yes" to any of these questions.
 
 ## Dependencies
 
-* Did you install required packages (dependencies) as game page on https://gameservermanagers.com/ requests?
+* Did you install required packages (dependencies) as game page on https://linuxgsm.com requests?
 * If sudo isn't installed, did you remove "sudo" from packages install commands?
 * If `lib32gcc1 libstdc++6 libstdc++6:i386` packages won't install, did you run `apt update` after `dpkg --add-architecture i386`?
 * If some dependencies are not available, did you check your /etc/apt/sources.list? (Debian based and apt only)

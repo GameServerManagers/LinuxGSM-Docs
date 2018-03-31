@@ -1,7 +1,7 @@
 <a href="https://telegram.org/"><p align="center"><img src="images/pushbullet/pushbullet_logo.png" alt="Pushbullet logo"/></p></a>
 <p align="center">Send LinuxGSM alerts to a Pushbullet user or channel.</p>
 
-<p align="center"><img src="https://gameservermanagers.com/wp-content/uploads/2016/05/lgsm-pushbullet.png" alt="Pushbullet alert"/></p>
+<p align="center"><img src="https://linuxgsm.com/wp-content/uploads/2016/05/lgsm-pushbullet.png" alt="Pushbullet alert"/></p>
 
 # Enable Pushbullet alerts
 To enable Pushbullet alerts you need to generate an Access Token.
@@ -22,7 +22,7 @@ Alerts can also be sent to Pushbullet channels. Channels are push notification f
 
 Visit [here](https://www.pushbullet.com/my-channel) to generate a channel.
 
-Once you have created the channel set the channeltag in the script without using hash `#`. 
+Once you have created the channel set the channeltag in the script without using hash `#`.
 ```
 channeltag="myepicserver"
 ```

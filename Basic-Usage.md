@@ -6,7 +6,7 @@ For more advanced usage see pages for a specific command.
 
 # Installation
 
-The full installation guide can be found at [gameservermanagers.com](https://gameservermanagers.com/).
+The full installation guide can be found at [linuxgsm.com](https://linuxgsm.com/).
 Follow the basic instructions to install a game server.
 
 # Available Commands
@@ -17,7 +17,7 @@ To see a list of available commands, execute `./gameserver` with no argument.
 gameserver@game:~$ ./gameserver
 Usage: ./gameserver [option]
 GameName - Linux Game Server Manager - Version 170110
-https://gameservermanagers.com/gameserver
+https://linuxgsm.com/gameserver
 
 Commands
 start             st |Start the server.
@@ -57,7 +57,7 @@ Configuring a game server requires altering settings in various locations. Confi
 ## LinuxGSM Config
 LinuxGSM configuration handles settings related to LinuxGSM and game server definitions. For example settings for alerts and backups. Definitions for game server name, location, Steam App ID, start parameters.
 
-LinuxGSM Configs are located in 
+LinuxGSM Configs are located in
 
 ```
 lgsm/config-lgsm/gameserver
@@ -74,7 +74,7 @@ There are two main methods a game server is configured, either with config files
 
 ## Config Files
 
-Most servers use a configuration file to alter settings.  
+Most servers use a configuration file to alter settings.
 Whenever possible, LinuxGSM provides an enhanced default config file from https://github.com/GameServerManagers/Game-Server-Configs.
 
 The [[details]] command will provide you with the config file location.
@@ -82,7 +82,7 @@ The [[details]] command will provide you with the config file location.
 ````bash
 ./gameserver details
 ````
-Sample output: 
+Sample output:
 ````
 Config file:   /home/username/serverfiles/gamename/cfg/gamename-server.cfg
 ````
@@ -99,7 +99,7 @@ These parameters can be reviewed using the [[details]] command.
 To alter them, edit the LinuxGSM config files using `vi` or `nano` and edit variables from the `## Server Start Settings` section. The `#### LinuxGSM Settings ####` section allows customising many different settings.
 
 For more info, see [[Start-Parameters]].
- 
+
 # Updating a Game Server
 Most game servers receive regular updates the game developers. These servers can be updated automatically using the update feature.
 
@@ -142,7 +142,7 @@ Most commonly used are:
 For more details, see [[Cronjobs]].
 
 ## Running on Boot
-To run a server [[On-Boot]], using a monitor cronjob is recommended; any server that was online before a machine reboot will be restarted. 
+To run a server [[On-Boot]], using a monitor cronjob is recommended; any server that was online before a machine reboot will be restarted.
 
 For more info, see [[On-Boot]] or [[Monitor#automated-monitoring]].
 

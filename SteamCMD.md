@@ -14,7 +14,7 @@ It is recommended that you [create a new Steam username](https://store.steampowe
 
 ## Anonymous Login
 
-The majority of game servers through SteamCMD are freely available for download. These servers can be accessed by logging in to SteamCMD as _anonymous_. In this case, Steam variables won't be present in LinuxGSM and you have nothing to worry about. 
+The majority of game servers through SteamCMD are freely available for download. These servers can be accessed by logging in to SteamCMD as _anonymous_. In this case, Steam variables won't be present in LinuxGSM and you have nothing to worry about.
 
 ## Steam User Login
 
@@ -30,7 +30,7 @@ steampass="password"
 
 It is recommended that you create a new Steam username just for the server for security reasons.
 
-For a list of which servers require logins and game purchases visit: http://gameservermanagers.com/list
+For a list of which servers require logins and game purchases visit: http://linuxgsm.com/list
 # Plain Text Passwords
 SteamCMD prints out passwords in plain text meaning that your Steam password is open for anyone to see on the server. LinuxGSM saves logs and your password will be view-able in the logs.
 
@@ -71,8 +71,8 @@ If you have Steam Guard via email enabled the first time you start SteamCMD you 
 
 # Errors
 
-If you encounter an error like  
-    
-```Error! App '<app_number>' state is 0x202 after update job.```   
-   
-there is a good chance that you have run out of disk space. 
+If you encounter an error like
+
+```Error! App '<app_number>' state is 0x202 after update job.```
+
+there is a good chance that you have run out of disk space.
