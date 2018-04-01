@@ -30,7 +30,7 @@ Add the headless client IP address to `headlessClient[]=`. If the headless clien
 
 > note: Do not use 127.0.0.1 as the IP address.
 
-`headlessClient[]={"xxx.xxx.xxx.xxx"};  
+`headlessClients[]={"xxx.xxx.xxx.xxx"};  
 localClient[]={xxx.xxx.xxx.xxx};  
 `
 Navigate to your profile directory. By default `cd ~/.local/share/Arma\ 3\ -\ Other\ Profiles` and edit `Player.Arma3Profile` adding the line `battleyeLicense=1;`.  
