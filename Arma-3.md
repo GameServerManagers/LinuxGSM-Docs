@@ -26,7 +26,7 @@ parms="-client -connect=${ip}:${port} -password=CHANGEME"`
 ```
 
 Edit the game server config for the ARMA 3 server (not the headless client) `arma3server.server.cfg`.
-Add the headless client IP address to `headlessClient[]=`. If the headless client is on the same physical server as the ARMA 3 server then also add the IP it to `localClient[]=`.
+Add the headless client IP address to `headlessClients[]=`. If the headless client is on the same physical server as the ARMA 3 server then also add the IP it to `localClient[]=`.
 
 > note: Do not use 127.0.0.1 as the IP address.
 
