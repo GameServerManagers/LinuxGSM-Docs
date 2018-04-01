@@ -45,7 +45,7 @@ There are two types of shards:
 2. **slave shard**: shard that will connect to the master (arbitrary number per cluster)
 
 In this example we will only use two shards, one overworld shard and one cave shard, on the same machine using the same installation. If you want to use more shards or run the shards on different machines, take a look at the guides mentioned at the bottom.
-First of all we need to scripts:
+First of all we need two scripts:
 
 ```
 ./dstserver-1
