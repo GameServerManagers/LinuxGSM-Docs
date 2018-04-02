@@ -65,9 +65,8 @@ Im am proposing an improvement to the labelling system on GitHub to better allow
 
 Labels are to be split in to several category's
 
-Component - What does the issue relate to. e.g ARMA 3, SteamCMD, LinuxGSM
-Distro - Which distro does the issue occur e.g Ubuntu, CentOS, Distro agnostic
-Issue Type - What type of issue is it. e.g bug, new feature, enhancement, new server
-Issue Status - Where in development the issue is. Used along side Waffle.io
-Priority - Is the issue high priority
-Outcome - When the issue is closed what was the outcome? e.g resolved, merged, wont fix
+Distro/Game/Platform: Details about what the issue relates to.
+Outcome: When an issue is closed what was the outcome.
+Status: What is currently happening to the issue.
+Type: What type of issue it is.
+Priority: Only the urgent issues.
