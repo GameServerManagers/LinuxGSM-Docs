@@ -65,8 +65,8 @@ Im am proposing an improvement to the labelling system on GitHub to better allow
 
 Labels are to be split in to several category's
 
-Distro/Game/Platform: Details about what the issue relates to.
-Outcome: When an issue is closed what was the outcome.
-Status: What is currently happening to the issue.
-Type: What type of issue it is.
-Priority: Only the urgent issues.
+* Distro/Game/Platform: Details about what the issue relates to.
+* Outcome: When an issue is closed what was the outcome.
+* Status: What is currently happening to the issue.
+* Type: What type of issue it is.
+* Priority: Only the urgent issues.
