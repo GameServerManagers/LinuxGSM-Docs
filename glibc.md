@@ -29,6 +29,7 @@ List of distros and there glibc version.
 | Ubuntu 12.04 LTS | 2.15    |
 | Ubuntu 14.04 LTS | 2.19    |
 | Ubuntu 16.04 LTS | 2.23    |
+| Ubuntu 18.04 LTS | 2.27    |
 
 [distrowatch.com](http://distrowatch.com) is also a great source to find this information.
 
