@@ -36,7 +36,7 @@ IFTTT allows 3 different values to be sent using the webhook; `Value1`, `Value2`
 
 * Value1: Sends the servicename of the server e.g csgoserver
 * Value2: Sends an alert subject e.g Alert - csgoserver - Test
-* Value2: Sends an alert summary 
+* Value3: Sends an alert summary 
 ```
 Message
 Testing LinuxGSM Alert. No action to be taken.
