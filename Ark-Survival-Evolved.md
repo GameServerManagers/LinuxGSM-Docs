@@ -24,3 +24,6 @@ ModIDS=[workshopID]
 Replace `[workshopID]` with required workshop ID's.
 
 All workshop mods can be found here http://steamcommunity.com/app/346110/workshop/.
+
+# Collections
+Collection Ids won't work directly. You need to have all the ids of the mods you want to use. One tool for getting the ids can be found here: https://tools.rusty.info/tools/stcolids/
