@@ -58,10 +58,10 @@ If a Rust update has been released, then an Oxide update will soon follow. To up
 
 ## Install Oxide addons
 
-To install Oxide addons place them into  the `serverfiles/server/rust-server/oxide/plugins` directory.
+To install Oxide addons place them into  the `serverfiles/oxide/plugins` directory.
 This will cause them to load automatically when starting the server.
 
-If you need to edit any addon configs, they will be located in `serverfiles/server/rust-server/oxide/config`.
+If you need to edit any addon configs, they will be located in `serverfiles/oxide/config`.
 
 To update and addon without restarting the server, you'll need to reload the addon with an RCON command.
 ```
