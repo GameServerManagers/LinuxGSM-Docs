@@ -9,6 +9,7 @@
 * Black Mesa: Deathmatch
 * Counter Strike: Global Offensive (**required**)
 * Counter Strike: Source (**required**)
+* Day of Defeat: Source
 * Empires Mod
 * Garry’s Mod
 * Insurgency
