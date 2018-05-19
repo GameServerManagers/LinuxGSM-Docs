@@ -1,64 +1,75 @@
-Most admins normally want to run multiple game servers on their Linux server. There are a couple of ways to achieve this. Depending upon the circumstances you may choose a particular method or mixture of both.
+There are a couple of ways to achieve running multiple game server on one physical server.  
+Depending upon the circumstances you may choose a particular method or mixture of both.
 
-**Instance:** Each individual game server is referred too as an “instance” e.g `1.2.3.4:27015`.
+# Prerequisite
 
-**Installation:** An installation refers to the location of the games “server files” e.g `/home/csgoserver/serverfiles`.
+### Vocabulary
 
-> note: Each instance must use its own dedicated ports to function or an instance will fail to bind correctly to a port and fail to start.
+**Installation:** An installation refers to the location of the games “server files” e.g `/home/csgo/serverfiles`.
 
-# Single instance, multiple Installations
-The simplest method is to create a single installation for each instance. This will completely isolate each game server from each other. This method is useful if you run multiple game servers that have different mods or add-ons. The negatives of this include having to manage multiple installs and taking up a much larger amount of disk space.
+**Instance:** Each individual game server is referred too as an “instance” e.g `/home/csgo/csgoserver` would be the script for the instance called "csgoserver".
 
-If you are running game servers for different games you also require separate installations for each game.
+**Multiple instances:** It is possible to run multiple instances out of one single installation and to run multiple instances out of multiple installations.
+
+### Principle of listening to an ip:port
+Each service running on a machine expecting connections from a network needs to listen on an IP and port dedicated to its communication with the network. It is not possible to have multiple services listening on the same port and IP, most programs will crash if you try to do so because it cannot "bind" to an IP and port already in use.  
+Therefore, each game server instance must use its own unique and dedicated [[Ports]] and/or IP to function.
+
+Useful resource: [[Ports]]
+
+# One instance per installation
+This method consists in creating a new user for each game server. It is useful if you run multiple game servers that have different mods or add-ons, or if you have plenty of disk space and just want the easiest and safest way to proceed.
+
+**Pros**
+* Easy to setup
+* Allows full customization
+* More secure and reliable
+
+**Cons**
+* Uses more disk space
 
 ## Example
 
-|Game |User|Directory|Notes|
-|--------|----|---------|-----|
-| Garry’s Mod |gmodserver|/home/gmodserver|     |
-| Garry’s Mod |gmodserver|/home/gmodserver-slender|Slender Man Mod|
-| Counter-Strike: Global Offensive |csgoserver|/home/csgoserver|   |
-| Counter-Strike: Global Offensive |csgoserver-zombies|/home/csgoserver-zombies|Zombie Mod|
+|Game Server|User|LinuxGSM Script location|
+|--------|----|---------|
+| Garry’s Mod |gmodserver|/home/gmodserver/gmodserver|
+| Garry’s Mod |gmodserver-slender|/home/gmodserver-slender/gmodserver|
+| Counter-Strike: Global Offensive |csgoserver|/home/csgoserver/csgoserver|
+| Counter-Strike: Global Offensive |csgoserver-zombies|/home/csgoserver-zombies/csgoserver|
 
-As you can see the installs are separated and isolated from each other. If Garry’s Mod was one installation the slender man add-on may interfere with the vanilla install. 
+As you can see the installs are separated and isolated from each other in each user's home directory.
 
 ## How to install
 
-Simply repeat the standard installation process using a different username and location, ensuring you change the [[Ports]].
+Simply repeat the standard installation process using a different username and location, ensuring you change the [[Ports]] and/or IP if your server has multiple IPs.
 
-In detail, login to your user, create a new folder and enter that folder:
-```SHELL
-su - gameservers
-mkdir rustserver
-cd rustserver
-```
 
-Now install the server as normal (Here we use the auto install command)
-```SHELL
-wget https://linuxgsm.com/dl/linuxgsm.sh && chmod +x linuxgsm.sh && bash linuxgsm.sh rustserver && ./rustserver ai
-```
+# Single Installation, multiple instances
 
-You will now have a new install under `/home/gameservers/rustserver/` Now you will need to configure the server and update [[ports]].
+This method is used when your game servers share a common base regarding mods or configuration.
 
-# Multiple Instances, Single Installation
-Having a single installation running multiple instances is also possible. This method is great if you are running multiple vanilla game servers (of the same game) or servers that share the same add-ons. It is not recommended for servers running different mods or add-ons.
+**Pros**
+* Uses less disk space
+* Makes less maintainance
+* Still able to use different config files in most cases
 
-Each instance will share the same resources and add-ons meaning each instance will be affected the same by updates. This can be an advantage when updating but can also cause problems with multiple instances if add-ons break.
+**Cons**
+* Each instance share the same files, so they share the same mods as well
+* If your game server gets broken, all of your instances are broken at the same time
 
 Every time a new instance is created new default config files is also created. This allows each instance to have a different hostname, ports etc. The config files are by default the same name as the script. For example, if the script is `./csgoserver-2` the config is `csgoserver-2.cfg`. You can see the location of config files in `./gameserver details`. Also note there are two config files, LinuxGSM configs and a game server config.
 
-Each instance is managed using its own script. These can be called anything, however, the default will simply have an incremental number. Some admins may choose to use the server port instead of the incremental number.
+Each instance is managed using its own script. These can be called anything, however, the default will simply have an incremental number. Some admins may choose to use the server port, the map or the gamemode instead of the incremental number.
 
 ## Example
 
-|Game	|User	|LinuxGSM Script location|notes|
+|Game|User|LinuxGSM Script location|notes|
 |--------|----|---------|-----|
-|Garry’s Mod|gmodserver|/home/gmodserver/gmodserver|1.2.3.4:27015
-|Garry’s Mod|	gmodserver|	/home/gmodserver/gmodserver-1|	1.2.3.4:27018
-|Garry’s Mod|	gmodserver|	/home/gmodserver/gmodserver-2|	1.2.3.4:27021
-|Counter-Strike: Global Offensive	|csgoserver	|/home/csgoserver-zombies-27024	|1.2.3.4:27024 Zombie Mod
-|Counter-Strike: Global Offensive	|csgoserver	|/home/csgoserver-zombies-27027	|1.2.3.4:27027 Zombie Mod
-
+|Garry’s Mod|gmodserver|/home/gmodserver/gmodserver|1.2.3.4:27015|
+|Garry’s Mod|gmodserver|/home/gmodserver/gmodserver-1|1.2.3.4:27018|
+|Garry’s Mod|gmodserver|/home/gmodserver/gmodserver-2|1.2.3.4:27021|
+|Counter-Strike: Global Offensive|csgoserver|/home/csgoserver/csgoserver-zombies-27024|1.2.3.4:27024 Zombie Mod|
+|Counter-Strike: Global Offensive|csgoserver|/home/csgoserver/csgoserver-zombies-27027|1.2.3.4:27027 Zombie Mod|
 
 In this example, you can see the scripts are located in the same installation but have different names. Each instance has had its port altered in the server config to prevent port clashes.
 
@@ -69,3 +80,11 @@ In this example, you can see the scripts are located in the same installation bu
 For example if you already use `./csgoserver` running `./linuxgsm.sh csgoserver` will generate `./csgoserver-2`
 
 On the first run of `./gameserver-2` a new default LinuxGSM and game config will be created (`gameserver-2.cfg`). These new configs will need to be altered with new ports and any other settings that are required.
+
+# Common mistakes
+
+### Forgetting to change ports and/or IP
+If your run multiple similar game servers, you have no choice to work on that. Read [[Port]].
+
+### Installing multiple game servers with the same script name under the same user
+You might be tempted to have one user with one subdirectory per game servers of the same name. This won't work because each game server has a servicename defined by its "gameserver" script name. So don't try to run two scripts called "csgoserver" under the same user, they will conflict.
