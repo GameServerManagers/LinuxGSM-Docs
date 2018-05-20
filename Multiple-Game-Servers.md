@@ -1,4 +1,4 @@
-There are a couple of ways to achieve running multiple game server on one physical server.  
+There are a couple of ways to achieve running multiple game servers on one physical server.  
 Depending upon the circumstances you may choose a particular method or mixture of both.
 
 # Prerequisite
