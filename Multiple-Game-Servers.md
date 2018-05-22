@@ -84,7 +84,7 @@ On the first run of `./gameserver-2` a new default LinuxGSM and game config will
 # Common mistakes
 
 ### Forgetting to change ports and/or IP
-If your run multiple similar game servers, you have no choice to work on that. Read [[Port]].
+If your run multiple similar game servers, you have no choice to work on that. Read [[Ports]].
 
 ### Installing multiple game servers with the same script name under the same user
 You might be tempted to have one user with one subdirectory per game servers of the same name. This won't work because each game server has a servicename defined by its "gameserver" script name. So don't try to run two scripts called "csgoserver" under the same user, they will conflict.
