@@ -9,9 +9,9 @@ Here are the most common ones:
  
 * `Port listening` is what a service like a game server does in order to receive packets from incoming connections: by listening to a port, the program waiting for incoming packets on a given port.
 * `Port redirection` happens on a router, in the NAT part (can also be done using iptables, but unlikely what you are looking for): it consists in forwarding incoming traffic on a given port to a specific local (regarding the router) IP.
-* Port opening happens on a firewall, it consists in allowing traffic to a port.
+* `Port opening` happens on a firewall, it consists in allowing traffic to a port.
 * The IP variable `ip=` always needs to be the server interface IP, not your routers external IP: a service on a server can only listen on a local IP that is present on an interface of the hosting machine.
-* In order to run multiple game servers on the same machine, you need to make sure they all use different ports, or if your server has multiple public IPs, that they are bound to different IPs.
+* In order to `run multiple game servers` on the same machine, you need to make sure they all use different ports, or if your server has multiple public IPs, that they are bound to different IPs.
 
 # Setting ports
 Listening ports are usually set within your start parameters, sometimes in the game server config file.  
