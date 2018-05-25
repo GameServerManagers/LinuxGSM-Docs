@@ -1,5 +1,8 @@
-There are a couple of ways to achieve running multiple game servers on one physical server.  
+**There are two recommended ways to run multiple game servers on one physical server**.  
 Depending upon the circumstances you may choose a particular method or mixture of both.
+
+It is best to make a proper plan for running multiple game servers at the earliest stage of your deployment.  
+Make sure that you examined this page carefully and understood all of its content before starting.
 
 # Prerequisite
 
@@ -17,16 +20,25 @@ Therefore, each game server instance must use its own unique and dedicated [[Por
 
 Useful resource: [[Ports]]
 
-# One instance per installation
-This method consists in creating a new user for each game server. It is useful if you run multiple game servers that have different mods or add-ons, or if you have plenty of disk space and just want the easiest and safest way to proceed.
+# One user for each installation and instance
 
-**Pros**
-* Easy to setup
-* Allows full customization
-* More secure and reliable
+This method is the most simple and will fit most use cases.  
+It consists in creating a new user for each game server.
 
-**Cons**
-* Uses more disk space
+## Use cases
+* You run various game servers: they don't share any content, so it's best to isolate them into their own user
+* You run multiple servers of the same game, but they need to have separate content and addons
+* You want your game servers to be totally independant in order to prevent breaking everything at once and you have pently of disk space
+
+### Pros
+* Easy to setup | Just repeat the install process under a new user
+* Allows full customization | Addons and server data are not shared in any way with other game servers
+* More secure | If one instance gets hacked somehow, others instances on other users are intact
+* More reliable | If you mess up with the game server, other ones remain untouched; in case of a game server update on one instance, you don't crash others at the same time because files changed
+
+### Cons
+* Uses more disk space | Each game server has all of the installation files
+* All instances are updated separately | It will us more resources upon update and require marginally more [[Cronjobs]]
 
 ## Example
 
@@ -41,25 +53,31 @@ As you can see the installs are separated and isolated from each other in each u
 
 ## How to install
 
-Simply repeat the standard installation process using a different username and location, ensuring you change the [[Ports]] and/or IP if your server has multiple IPs.
+Simply repeat the standard installation process using a different username and location, ensuring you change the [[Ports]] and/or IP if your server has multiple IPs. 
 
 
 # Single Installation, multiple instances
 
 This method is used when your game servers share a common base regarding mods or configuration.
 
-**Pros**
-* Uses less disk space
-* Makes less maintainance
-* Still able to use different config files in most cases
+## Use cases
+* You want to run the same game server on different maps or game modes, you have no mods at all and want to save some disk space
+* You have a server template, a common base with some mods or configuration that you want to slightly decline in different versions by using a different config file
+* You're on a budget and have very limited disk space, but you just want to run multiple instances of the same game
+* Your sever has a low bandwidth and you are running a lot of game servers off of it, this method will allow you to update multiple instances at once
 
-**Cons**
-* Each instance share the same files, so they share the same mods as well
-* If your game server gets broken, all of your instances are broken at the same time
+### Pros
+* Uses less disk space | Game server files, mods and addons are only installed once
+* Makes less maintainance | Update one, update all of them
+* Still customizable | You are able to use different config files in most cases
 
-Every time a new instance is created new default config files is also created. This allows each instance to have a different hostname, ports etc. The config files are by default the same name as the script. For example, if the script is `./csgoserver-2` the config is `csgoserver-2.cfg`. You can see the location of config files in `./gameserver details`. Also note there are two config files, LinuxGSM configs and a game server config.
+### Cons
+* Less versatile | Each instance share the same files, so they share the same mods as well unless your mods come from a workshop collection or you can chose what mods to load in start parameters
+* Less reliable | If your game server gets broken, all of your instances are down at the same time; if one instance updates, other ones might crash because files will be inconsistent regarding the expected ones
+* Less secure | If your game server gets hacked somehow, all of your instances are broken at the same time
 
-Each instance is managed using its own script. These can be called anything, however, the default will simply have an incremental number. Some admins may choose to use the server port, the map or the gamemode instead of the incremental number.
+## How it works
+
 
 ## Example
 
