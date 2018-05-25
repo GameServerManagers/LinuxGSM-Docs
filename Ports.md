@@ -5,6 +5,13 @@
 * Port opening happens on a firewall.
 * The IP variable `ip=` always needs to be the server interface IP, not your routers external IP.
 * Each game server instance has to have its own unique ports, this means they cannot share ports.
+* In order to run multiple game servers on the same machine, you need to make sure they all use different ports, or if your server has multiple public IPs, that they have a different IP.
+
+# Setting ports
+Listening ports are usually set within your start parameters, sometimes in the game server config file.  
+
+For info about start parameters, see [[Start Parameters]] and [[LinuxGSM Config]]
+For info about your game server config, see [[Game Server Config]]
 
 # View current settings
 
