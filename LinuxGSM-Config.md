@@ -15,14 +15,13 @@ The current config files management is meant to allow the users to more easily b
 ## Configuration files
 
 ### _default.cfg
-**Do not edit!**
-* `_default.cfg` is your template: you cannot edit this one. It is meant to always be defaulted and is automatically updated; this allows the addition of new features and provides default settings to start with.
-
+* `_default.cfg` is your template: you cannot edit this one. It is meant to always be defaulted and is automatically updated; this allows the addition of new features and provides default settings to start with.  
+**Do not edit this one!**  
 ### common.cfg
-* When running multiple instances of the same installation (see [[Multiple Game Servers]]), this configuration is shared for all instances; it is very handy to change all recurring settings at once.
+* `common.cfg` is used when running multiple instances of the same installation (see [[Multiple Game Servers]]). This configuration file is shared for all instances; it is very handy to change all recurring settings at once.
 
 ### instance.cfg
-* `instance.cfg` is the main configuration file: each game server's (instance) configuration file, named after your instance's name (for example `csgoserver.cfg`) that can override common.cfg settings, it takes the same name as your game server script name.
+* `instance.cfg` is the main configuration file: each game server's (instance) configuration file. This file takes the same name as your game server script name (instance name), for example `csgoserver.cfg`.
 
 ## Priority
 When LinuxGSM is loading the configs they will load in the above order. First taking settings from `_default.cfg` then `common.cfg` and finally `instance.cfg`. It means that any parameter set in `instance.cfg` will override that parameter in `common.cfg` which will override the parameter in `_default.cfg`.
