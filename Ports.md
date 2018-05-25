@@ -60,25 +60,25 @@ ip="0.0.0.0"
 
 ## Which ports can be used?
 
-You can use any port as long as it is not already in use and it is up to admins how to setup port allocation. It is recommended that ports are close together and sequential i.e 27016,27016,27017 to save confusion. Some servers ports by default are not sequential, however there is nothing stopping an admin from changing this. Example for source servers; you could set the port 27015, sourcetv port 27016, client port 27018. The next game server instance could simply follow on from this.
+You can use any port as long as it is not already in use and it is up to admins how to setup port allocation. It is recommended that ports are close together and sequential i.e 27016,27016,27017 to save confusion. Some servers ports by default are not sequential, however, there is nothing stopping an admin from changing this. Example for source servers; you could set the port 27015, sourcetv port 27016, client port 27018. The next game server instance could simply follow on from this.
 
 >Reminder: If you're running several servers, make sure you're using different ports on all of your servers.
 
 # Multiple IP addresses
-Should a server has multiple dedicated IP address allocated, it is possible for game servers to have the same ports but bound to the different IP addresses. Admins will need to set the specific IP address in the LinuxGSM config or game config.
+Should a server has multiple dedicated IP addresses allocated, it is possible for game servers to have the same ports but bound to the different IP addresses. Admins will need to set the specific IP address in the LinuxGSM config or game config.
 
 # Home Servers
-Home servers are a great way to experiment with game servers or can be used as a permanent option if you have the bandwidth. There are extra steps required on your home router to allow external access to your game server. This will normally involve opening ports on the router firewall and/or port forwarding. See your routers manual for specific instructions.
+Home servers are a great way to experiment with game servers or can be used as a permanent option if you have the bandwidth. There are extra steps required on your home router to allow external access to your game server. This will normally involve opening ports on the router firewall and/or port forwarding. See your router's manual for specific instructions.
 
 https://www.howtogeek.com/66214/how-to-forward-ports-on-your-router/
 
 ## ip= setting for home servers
-If your server has multiple interfaces you will be promoted to specify the server IP you want to use.
+If your server has multiple interfaces you will be prompted to specify the server IP you want to use.
 
 You will need to set the IP address of the servers LAN interface (e.g 192.168.1.2), not your routers external IP. Setting this incorrectly will prevent the game server ports from binding and your server will not start.
 
 # Port Allocation Scheme
-Each type of server has a default set of ports. This is fine to use if only one server is being setup. However if multiple servers are being used a port scheme needs to be considered. There is no requirement to stick to specific ports but it is recommended they are in a logical order. 
+Each type of server has a default set of ports. This is fine to use if only one server is being set up. However, if multiple servers are being used a port scheme needs to be considered. There is no requirement to stick to specific ports but it is recommended they are in a logical order. 
 
 Source Default Ports
 
@@ -116,7 +116,7 @@ clientport="27100"
 
 ## Separate IP Addresses
 
-You can get new IP addresses for your dedicated server, and assign each server a new IP. This scheme is quiet inefficient.
+You can get new IP addresses for your dedicated server, and assign each server a new IP. This scheme is quite inefficient.
 
 # Track your ports
 If you are running several game servers it is a good idea to create a spreadsheet of the ports you have used. Allowing you to keep track of what you have already used.
@@ -136,4 +136,4 @@ Running the command will bring up any ports that are listening. If not, the serv
 [[Firewalls]] are a regular source of connectivity issues. When diagnosing connection issues temporarily disabling a firewall will help identify if it is the source of the problem.
 
 3) Check Port Forwarding (local networks only)  
-Ensure that the router correctly redirects incoming traffic to the correct ports and local IP displayed with `./gameserver details` with the correct protocol (tcp and/or udp).
+Ensure that the router correctly redirects incoming traffic to the correct ports and local IP displayed with `./gameserver details` with the correct protocol (TCP and/or UDP).
