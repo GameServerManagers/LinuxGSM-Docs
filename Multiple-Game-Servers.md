@@ -8,27 +8,29 @@ Make sure that you examined this page carefully and understood all of its conten
 
 ### Vocabulary
 
-**Installation:** An installation refers to the location of the games “server files” e.g `/home/csgo/serverfiles`.
+You need some definitions to make this guide clear.
 
-**Instance:** Each individual game server is referred too as an “instance” e.g `/home/csgo/csgoserver` would be the script for the instance called "csgoserver".
+* **Installation:** An installation refers to the location of the games “server files” e.g `/home/csgo/serverfiles`.
+* **Instance:** Each individual game server is referred too as an “instance” e.g `/home/csgo/csgoserver` would be the script for the instance called "csgoserver".
+* **Multiple instances:** It is possible to run several instances out of one single installation and to run several instances out of multiple installations.
 
-**Multiple instances:** It is possible to run multiple instances out of one single installation and to run multiple instances out of multiple installations.
+### LinuxGSM Configuration
+You need to be comfortable with [[LinuxGSM Config]].
 
-### Principle of listening to an ip:port
-Each service running on a machine expecting connections from a network needs to listen on an IP and port dedicated to its communication with the network. It is not possible to have multiple services listening on the same port and IP, most programs will crash if you try to do so because it cannot "bind" to an IP and port already in use.  
-Therefore, each game server instance must use its own unique and dedicated [[Ports]] and/or IP to function.
-
+### Understand ports
+You need to understand how ports and service listening work in order to avoid port overlapping, otherwise your new instances won't start.
 Useful resource: [[Ports]]
+
 
 # One user for each installation and instance
 
 This method is the most simple and will fit most use cases.  
-It consists in creating a new user for each game server.
+It consists in creating a new user for each game server, repeat the install process and edit your [[LinuxGSM Config]] if needed.
 
 ## Use cases
 * You run various game servers: they don't share any content, so it's best to isolate them into their own user
 * You run multiple servers of the same game, but they need to have separate content and addons
-* You want your game servers to be totally independant in order to prevent breaking everything at once and you have pently of disk space
+* You want your game servers to be totally independent in order to prevent breaking everything at once, also, you have pently of free disk space
 
 ### Pros
 * Easy to setup | Just repeat the install process under a new user
@@ -53,12 +55,13 @@ As you can see the installs are separated and isolated from each other in each u
 
 ## How to install
 
-Simply repeat the standard installation process using a different username and location, ensuring you change the [[Ports]] and/or IP if your server has multiple IPs. 
-
+1) Create a new user with a home directory
+2) Repeat the standard installation process using this different user
+3) If your game server uses the same default [[Ports]] as a previously installed one, make sure you change them (and/or IP if your server has multiple IPs) in you [[LinuxGSM Config]] or in [[Game Server Config]] depending on the game server you run. 
 
 # Single Installation, multiple instances
 
-This method is used when your game servers share a common base regarding mods or configuration.
+This method is used when your game servers share a common base regarding mods or configuration. LinuxGSM is helping a lot with this kind of configuration with many useful features as you will see.
 
 ## Use cases
 * You want to run the same game server on different maps or game modes, you have no mods at all and want to save some disk space
@@ -76,8 +79,15 @@ This method is used when your game servers share a common base regarding mods or
 * Less reliable | If your game server gets broken, all of your instances are down at the same time; if one instance updates, other ones might crash because files will be inconsistent regarding the expected ones
 * Less secure | If your game server gets hacked somehow, all of your instances are broken at the same time
 
-## How it works
+## How it works: concept
 
+You have one game server installed, but you will have multiple scripts (called "instances") to start the same installation but with different config files.  
+Every time a new instance is created, new default config files are also created. This allows each instance to have different hostname, ports etc. The config files are by default the same name as the instance script. For example, if the script is `./csgoserver-2` the config is `csgoserver-2.cfg`. You can see the location of config files in `./instance details` (replace "instance" with your actual instance name).
+
+There are two types of config files: [[LinuxGSM Config]] and [[Game Server Config]].  
+And there are three levels of LinuxGSM config files, helping with managing multiple instances of the same installation. See [[LinuxGSM Config]] for more details.
+
+Each instance is managed using its own script which gives the config file names. These can be renamed how you like, however, the default will simply have an incremental number. Some admins may choose to name them after the server port, the map or the gamemode instead.
 
 ## Example
 
@@ -101,8 +111,8 @@ On the first run of `./gameserver-2` a new default LinuxGSM and game config will
 
 # Common mistakes
 
-### Forgetting to change ports and/or IP
+## Forgetting to change ports and/or IP
 If your run multiple similar game servers, you have no choice to work on that. Read [[Ports]].
 
-### Installing multiple game servers with the same script name under the same user
+## Installing multiple game servers with the same script name under the same user
 You might be tempted to have one user with one subdirectory per game servers of the same name. This won't work because each game server has a servicename defined by its "gameserver" script name. So don't try to run two scripts called "csgoserver" under the same user, they will conflict. If you are using whole different game server, it's best to isolate them under a different user, but if you have no choice (for example on a shared machine), then you should rename each game server script, and of course, make sure you are using different ports for each server, and that your desired ports are not in use by another user of the machine.
