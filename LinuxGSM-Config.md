@@ -10,7 +10,7 @@ Relative to your installation directory, config files are located in:
 `lgsm/config-lgsm/gameserver`
 
 # Configuration mechanism
-The current config files management is meant to allow the users to more easily benefit from new features, better manage multiple instances and allow the auto update of `./gameserver` script file (previously manual update was required).
+The current config files management is meant to allow the users to more easily benefit from new features, better manage multiple instances and allow the auto update of `./gameserver` script file (previously manual updating was required).
 
 ## Configuration files
 
@@ -26,7 +26,7 @@ The current config files management is meant to allow the users to more easily b
 ## Priority
 When LinuxGSM is loading the configs they will load in the above order. First taking settings from `_default.cfg` then `common.cfg` and finally `instance.cfg`. It means that any parameter set in `instance.cfg` will override that parameter in `common.cfg` which will override the parameter in `_default.cfg`.
 
-You can mix and match settings to suite your needs, using _default.cfg as a baseline.
+You can mix and match settings to suit your needs, using _default.cfg as a baseline.
 
 # How to use
 
@@ -57,7 +57,7 @@ Now you can edit your instance file that contains all of your LinuxGSM and start
 
 2) (Optional) Remove any part of the config of your `common.cfg` that you want defaulted to benefit from new default settings automatically added in `_default.cfg`
 
-3) Then edit your multiple `instance.cfg` files manually, copying manually parameters that you need customized. It's best to use two SSH windows to be more efficient. Usually, you will want to set individually the ip, ports, server name and map if applicable, and set the rest from `common.cfg` or from `_default.cfg`
+3) Then edit your multiple `instance.cfg` files manually, copying the parameters that you need to be customized. It's best to use two SSH windows to be more efficient. Usually, you will want to set individually the IP, ports, server name and map if applicable, and set the rest from `common.cfg` or from `_default.cfg`
 
 4) Then you can check that your servers work properly together, stop those you need to work on, and work on your [[Game Server Config]]
   
