@@ -1,11 +1,17 @@
-# Generalities
+You will need to give attention to ports in multiple cases.  
+
+Here are the most common ones:
+* When you want to run [[Multiple Game Servers]] on the same machine
+* When you have a strict firewall and you need to open the right ports in order to let people connect to your server (see [[Firewalls]])
+* When you need to forward ports on a NAT to the desired local IP in order for your server to be reachable from outside the local network (likely from the internet)
+
+# Generalities and vocabulary
  
-* Port listening happens on a server.
-* Port redirection happens on a router.
-* Port opening happens on a firewall.
-* The IP variable `ip=` always needs to be the server interface IP, not your routers external IP.
-* Each game server instance has to have its own unique ports, this means they cannot share ports.
-* In order to run multiple game servers on the same machine, you need to make sure they all use different ports, or if your server has multiple public IPs, that they have a different IP.
+* `Port listening` is what a service like a game server does in order to receive packets from incoming connections: by listening to a port, the program waiting for incoming packets on a given port.
+* `Port redirection` happens on a router, in the NAT part (can also be done using iptables, but unlikely what you are looking for): it consists in forwarding incoming traffic on a given port to a specific local (regarding the router) IP.
+* Port opening happens on a firewall, it consists in allowing traffic to a port.
+* The IP variable `ip=` always needs to be the server interface IP, not your routers external IP: a service on a server can only listen on a local IP that is present on an interface of the hosting machine.
+* In order to run multiple game servers on the same machine, you need to make sure they all use different ports, or if your server has multiple public IPs, that they are bound to different IPs.
 
 # Setting ports
 Listening ports are usually set within your start parameters, sometimes in the game server config file.  
