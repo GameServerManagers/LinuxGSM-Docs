@@ -1,76 +1,99 @@
-# New Method for Configuring LinuxGSM
-
-There has been a big change in how LinuxGSM configures itself. This has be done to allow the developers to easily deploy new features, better manage multiple instances and allow the auto update of `./gameserver` file (previously manual update was required).
-
-> note: If you have a "legacy" (installed prior to 16.06.17) then you can continue to use the old method of updating LinuxGSM. However to get new features it is a good idea to do a fresh install.
-
 LinuxGSM manages its configuration using multiple config files. It is important you understand how these config files work.
 
+> Note: If you have use the "legacy" LGSM (installed prior to 16.06.17), it is a good idea to backup and update your LinuxGSM scripts manually to benefit from new features and prevent from bogus upon script updates.
+
+> Note: For game server configuration, see [[Game Server Config]].
+
 # Location
-By default the config files are located in
+Relative to your installation directory, config files are located in:
 
-    lgsm/config-lgsm/gameserver
+`lgsm/config-lgsm/gameserver`
 
-# Config Files
-By default there are 3 main config files
+# Configuration mechanism
+The current config files management is meant to allow the users to more easily benefit from new features, better manage multiple instances and allow the auto update of `./gameserver` script file (previously manual update was required).
 
-    1. _default.cfg
-    2. common.cfg
-    3. instance.cfg
+## Configuration files
 
-When LinuxGSM is loading the configs they will load in the above order. First taking settings from `_default.cfg` then `common.cfg` and finally `instance.cfg`. This is not that different from an Access Control List in that settings load in order and newer settings can overwrite the previous settings.
+### _default.cfg
+**Do not edit!**
+* `_default.cfg` is your template: you cannot edit this one. It is meant to always be defaulted and is automatically updated; this allows the addition of new features and provides default settings to start with.
 
-If a setting is in both `_default.cfg` and `common.cfg` then `common.cfg` will overwrite `_default.cfg`.
+### common.cfg
+* When running multiple instances of the same installation (see [[Multiple Game Servers]]), this configuration is shared for all instances; it is very handy to change all recurring settings at once.
 
-## How to get started with the new config files system
+### instance.cfg
+* `instance.cfg` is the main configuration file: each game server's (instance) configuration file, named after your instance's name (for example `csgoserver.cfg`) that can override common.cfg settings, it takes the same name as your game server script name.
 
-1) Browse to the `config-lgsm` directory.
-cd `lgsm/config-lgsm/`
+## Priority
+When LinuxGSM is loading the configs they will load in the above order. First taking settings from `_default.cfg` then `common.cfg` and finally `instance.cfg`. It means that any parameter set in `instance.cfg` will override that parameter in `common.cfg` which will override the parameter in `_default.cfg`.
 
-2) Use `ls` to view the content and find the name of your instance (typically the name of your LinuxGSM server instance).
+You can mix and match settings to suite your needs, using _default.cfg as a baseline.
+
+# How to use
+
+## Simple configuration
+
+This fits most scenarios, where you have a simple installation with only one instance.
+
+1) Browse to the `config-lgsm` directory  
+`cd lgsm/config-lgsm/`
+
+2) Use `ls` to view the content and find the name of your instance (typically the name of your LinuxGSM server instance)  
 `ls`
 
-3) Copy the default config to your instance's config.
-`cat _default.cfg >> instance.cfg` (replace "instance" by your actual file name).
+3) Copy the default config to your instance's config  
+`cat _default.cfg >> instance.cfg`  
+(replace "instance.cfg" by your actual instance config name, for example "csgoserver.cfg" or "csgoserver-2.cfg")
 
 Now you can edit your instance file that contains all of your LinuxGSM and start parameters configuration.
 
-## Basic examples
-### Example 1
-    _default.cfg: defaultmap="de_dust2"
-    common.cfg: defaultmap="cs_office"
-    instance.cfg: defaultmap="de_nuke"
+4) (Optional) Remove any part of the config of your `instance.cfg` that you want defaulted to benefit from new default settings automatically added in `_default.cfg`.
 
-the server will load `de_nuke` as default map.
+## Multiple instances configuration
+
+> This is only useful when running multiple instances of this install as per [[Multiple Game Servers]].
+
+1) Start by copying `_default.cfg` to `common.cfg`  
+`cat _default.cfg >> common.cfg`
+
+2) (Optional) Remove any part of the config of your `common.cfg` that you want defaulted to benefit from new default settings automatically added in `_default.cfg`
+
+3) Then edit your multiple `instance.cfg` files manually, copying manually parameters that you need customized. It's best to use two SSH windows to be more efficient. Usually, you will want to set individually the ip, ports, server name and map if applicable, and set the rest from `common.cfg` or from `_default.cfg`
+
+4) Then you can check that your servers work properly together, stop those you need to work on, and work on your [[Game Server Config]]
+  
+
+## Examples
+
+Any setting listed in `instance.cfg` will override `common.cfg` which will override `_default.cfg`. And the other way around, any setting that is not listed in `instance.cfg` will take the value of the first parent config file where the value is set.
+
+### Example 1
+Load `de_nuke` as default map on "csgoserver":
+    _default.cfg: defaultmap="de_dust2"
+    common.cfg: NOT SET
+    csgoserver.cfg: defaultmap="de_nuke"
 
 ### Example 2
-    _default.cfg: defaultmap="de_dust2"
-    common.cfg: defaultmap="cs_office"
-    instance-2.cfg: NOT SET
-
-the server will load `cs_office` as default map.
+Load `cs_office` as default map on "csgoserver":
+```
+_default.cfg: defaultmap="de_dust2"
+common.cfg: defaultmap="cs_office"
+csgoserver.cfg: NOT SET
+```
 
 ### Example 3
-    _default.cfg: defaultmap="de_dust2"
-    common.cfg: NOT SET
-    instance.cfg: NOT SET
-
-the server will load `de_dust2` as default map.
+Load `de_dust2` as default map on "instance":
+```
+_default.cfg: defaultmap="de_dust2"
+common.cfg: NOT SET
+instance.cfg: NOT SET
+```
 
 ### Example 4
-    _default.cfg: defaultmap="de_dust2"
-    common.cfg: NOT SET
-    filename-3.cfg: defaultmap="de_nuke"
-
-the server will load `de_nuke` as default map.
-
-## _default.cfg
-*_default.cfg* keeps a default copy of the config file with all settings. Should developers add any new settings they will be made available here, making is easy to roll out new settings. This file is updated using the `./gameserver lgsm-update` command and will be automatically overwritten if any changes are made to it, so do not edit this file.
-
-## common.cfg
-*common.cfg* stores global settings for every server instance [[Multiple-Servers]]. So if you have multiple instances that require the same setting you can place it here.
-
-## instance.cfg
-*instance.cfg (e.g csgoserver.cfg)* are the instance specific settings. These settings will only apply to the server instance you are working with, they have no affect on other instances.
-
-You can mix and match settings to suite your needs, using _default.cfg as a baseline.
+Load `de_nuke` as default map on "myawesomeinstance" and `de_inferno` on "mynewserver":
+```
+_default.cfg: defaultmap="de_dust2"
+common.cfg: defaultmap="de_inferno"
+nukeonly.cfg: defaultmap="de_nuke"
+mynewserver.cfg: NOT SET
+```
