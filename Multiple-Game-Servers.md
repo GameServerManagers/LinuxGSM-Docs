@@ -25,12 +25,12 @@ Useful resource: [[Ports]]
 # One user for each installation and instance
 
 This method is the most simple and will fit most use cases.  
-It consists in creating a new user for each game server, repeat the install process and edit your [[LinuxGSM Config]] if needed.
+It consists of creating a new user for each game server, repeat the install process and edit your [[LinuxGSM Config]] if needed.
 
 ## Use cases
 * You run various game servers: they don't share any content, so it's best to isolate them into their own user
 * You run multiple servers of the same game, but they need to have separate content and addons
-* You want your game servers to be totally independent in order to prevent breaking everything at once, also, you have pently of free disk space
+* You want your game servers to be totally independent in order to prevent breaking everything at once, also, you have plenty of free disk space
 
 ### Pros
 * Easy to setup | Just repeat the install process under a new user
@@ -40,7 +40,7 @@ It consists in creating a new user for each game server, repeat the install proc
 
 ### Cons
 * Uses more disk space | Each game server has all of the installation files
-* All instances are updated separately | It will us more resources upon update and require marginally more [[Cronjobs]]
+* All instances are updated separately | It will use more resources upon update and require marginally more [[Cronjobs]]
 
 ## Example
 
@@ -67,15 +67,15 @@ This method is used when your game servers share a common base regarding mods or
 * You want to run the same game server on different maps or game modes, you have no mods at all and want to save some disk space
 * You have a server template, a common base with some mods or configuration that you want to slightly decline in different versions by using a different config file
 * You're on a budget and have very limited disk space, but you just want to run multiple instances of the same game
-* Your sever has a low bandwidth and you are running a lot of game servers off of it, this method will allow you to update multiple instances at once
+* Your server has a low bandwidth and you are running a lot of game servers off of it, this method will allow you to update multiple instances at once
 
 ### Pros
 * Uses less disk space | Game server files, mods and addons are only installed once
-* Makes less maintainance | Update one, update all of them
+* Makes less maintenance | Update one, update all of them
 * Still customizable | You are able to use different config files in most cases
 
 ### Cons
-* Less versatile | Each instance share the same files, so they share the same mods as well unless your mods come from a workshop collection or you can chose what mods to load in start parameters
+* Less versatile | Each instance share the same files, so they share the same mods as well unless your mods come from a workshop collection or you can choose what mods to load in start parameters
 * Less reliable | If your game server gets broken, all of your instances are down at the same time; if one instance updates, other ones might crash because files will be inconsistent regarding the expected ones
 * Less secure | If your game server gets hacked somehow, all of your instances are broken at the same time
 
@@ -112,7 +112,7 @@ On the first run of `./gameserver-2` a new default LinuxGSM and game config will
 # Common mistakes
 
 ## Forgetting to change ports and/or IP
-If your run multiple similar game servers, you have no choice to work on that. Read [[Ports]].
+If you run multiple similar game servers, you have no choice to work on that. Read [[Ports]].
 
 ## Installing multiple game servers with the same script name under the same user
 You might be tempted to have one user with one subdirectory per game servers of the same name. This won't work because each game server has a servicename defined by its "gameserver" script name. So don't try to run two scripts called "csgoserver" under the same user, they will conflict. If you are using whole different game server, it's best to isolate them under a different user, but if you have no choice (for example on a shared machine), then you should rename each game server script, and of course, make sure you are using different ports for each server, and that your desired ports are not in use by another user of the machine.
