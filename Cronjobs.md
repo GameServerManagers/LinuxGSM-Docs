@@ -13,7 +13,7 @@ To access and edit your cronjobs, input
 `crontab -e`
 
 # Cronjob as user or root
-When setting up cronjobs there is a choice of running them as a user or as root. If an admin runs several servers and wants to centrally manage cronjobs then using the root crontab is a good idea. If an admin wants them sep[orated the the user crontab is best.
+When setting up cronjobs there is a choice of running them as a user or as root. If an admin runs several servers and wants to centrally manage cronjobs then using the root crontab is a good idea. If an admin wants them separated, the user crontab is best.
 
 # Crontab Syntax
 
