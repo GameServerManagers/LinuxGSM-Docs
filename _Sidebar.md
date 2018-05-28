@@ -3,9 +3,9 @@
 * [[Multiple Game Servers]]
 
 ## Configuration
+* [[LinuxGSM Config]]
 * [[Game Server Config]]
 * [[Start Parameters]]
-* [[LinuxGSM Config]]
 
 # Commands
 * [[Command List]]
