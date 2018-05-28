@@ -2,6 +2,11 @@
 * [[Basic Usage]]
 * [[Multiple Game Servers]]
 
+## Configuration
+* [[Game Server Config]]
+* [[Start Parameters]]
+* [[LinuxGSM Config]]
+
 # Commands
 * [[Command List]]
 
@@ -24,11 +29,6 @@
 * [[fastdl]]
 * [[map-compressor]]
 * [[mods]]
-
-# Configuration
-* [[Game Server Config]]
-* [[Start Parameters]]
-* [[LinuxGSM Config]]
 
 # LinuxGSM
 
