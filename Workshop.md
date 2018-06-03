@@ -2,7 +2,7 @@
 
 Many Steam games now support the workshop. It's an easy way to share updated maps or addons between client and servers, without worrying about setting up any kind of FastDL. LinuxGSM adds workshop pre-configuration to game server scripts as soon as possible.
 
-You will have to get a Steam API, a collection to subscribe to (you can create one), and ultimately, edit a bunch a configuration variables in your main script.
+You will have to get a Steam API, a collection to subscribe to (you can create one), and ultimately, edit two or three configuration variables (start parameters) in your LinuxGSM config.
 
 
 ## Getting a Steam API Key
@@ -26,11 +26,11 @@ Then, while being in your collection page, get the digits at the end of the URL 
 
 ## Configuration Variables
 
-Simply edit your script accordingly
+Simply edit your [[LinuxGSM Config]]
 
 ### Garry's Mod
 
-For Garry's Mod, edit those 2 lines accordingly in your "gmodserver" script.
+For Garry's Mod, edit those 2 lines accordingly in your [[LinuxGSM Config]]: 
 
 `workshopauth="YOUR_STEAM_API_KEY"`
 
@@ -38,7 +38,7 @@ For Garry's Mod, edit those 2 lines accordingly in your "gmodserver" script.
 
 ### Counter-Strike Global Offensive
 
-For CSGO, have a look at these lines in your "csgoserver" file :
+For CSGO, have a look at these lines in your in your [[LinuxGSM Config]]: 
 
 ```
 # authkey=""
