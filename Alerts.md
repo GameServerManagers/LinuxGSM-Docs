@@ -1,1 +1,2 @@
 # More Info
+More info allows you to get further info about an alert using hastebin.com. Many alerts only give basic info, unlike email. More info displays the same output as email in a link within a basic alert.
