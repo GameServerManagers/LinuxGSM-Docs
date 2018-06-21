@@ -1,8 +1,8 @@
 # GitHub issues are for LinuxGSM Development only!
 * *YES PLEASE:* Submit any bug, feature suggestion or code contribution to Github.
-* *NO THANK YOU:* Game server issues (e.g CS:GO, TF2), Dedicated server issues (e.g Ubuntu, CentOS) or anything not directly related to LinuxGSM development. There are various volunteers that may be able to help with these on the Steam group.
+* *NO THANK YOU:* Game server issues (e.g CS:GO, TF2), Dedicated server issues (e.g Ubuntu, CentOS) or anything not directly related to LinuxGSM development. There are various volunteers that may be able to help with these on the Steam group and Discord.
 
-Any issue that is suddenly closed by moderators has been deemed not suitable for the GitHub issues page. Please post elsewhere. If in doubt contact us on discord or post on the steam group.
+Any issue that is suddenly closed by moderators has been deemed not suitable for the GitHub issues page. Please post elsewhere. If in doubt contact us on Discord or post on the Steam group.
 
 Don't worry its not that we don't like you, we just need to keep the issues page relevant to LinuxGSM code to assist with our workflow.
 
