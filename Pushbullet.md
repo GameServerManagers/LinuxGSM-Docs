@@ -1,4 +1,4 @@
-<a href="https://telegram.org/"><p align="center"><img src="images/pushbullet/pushbullet_logo.png" alt="Pushbullet logo"/></p></a>
+<a href="https://www.pushbullet.com"><p align="center"><img src="images/pushbullet/pushbullet_logo.png" alt="Pushbullet logo"/></p></a>
 <p align="center">Send LinuxGSM alerts to a Pushbullet user or channel.</p>
 
 <p align="center"><img src="https://linuxgsm.com/wp-content/uploads/2016/05/lgsm-pushbullet.png" alt="Pushbullet alert"/></p>
