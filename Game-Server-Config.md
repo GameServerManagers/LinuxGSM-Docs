@@ -1,3 +1,5 @@
+> Note: LinuxGSM and Gameserver configs are different. One is the config for LinuxGSM itself and the other is for the game server instance.
+
 LinuxGSM makes game server config management easier in many different ways. However, some knowledge about it might be necessary.
 
 # Config file's location
