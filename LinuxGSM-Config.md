@@ -1,3 +1,5 @@
+> Note: LinuxGSM and Gameserver configs are different. One is the config for LinuxGSM itself and the other is for the game server instance.
+
 LinuxGSM manages its configuration using multiple config files. It is important you understand how these config files work.
 
 > Note: If you have use the "legacy" LGSM (installed prior to 16.06.17), it is a good idea to backup and update your LinuxGSM scripts manually to benefit from new features and prevent from bogus upon script updates.
