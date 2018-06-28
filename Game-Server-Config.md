@@ -24,7 +24,7 @@ Config file:         /home/gmodserver/serverfiles/garrysmod/cfg/gmod-server.cfg
 ````
 
 # LinuxGSM custom config files
-Whenever possible, LinuxGSM provides basic easy to use configuration files.  
+Whenever possible, LinuxGSM provides basic easy to use game server configuration files.  
 A dedicated repository has been made so all server admins can benefit, even Windows admins.  
 > https://github.com/GameServerManagers/Game-Server-Configs
 
