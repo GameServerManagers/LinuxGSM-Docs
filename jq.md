@@ -1,5 +1,5 @@
 # jq on CentOS 6
-jq is not available in CentOS 6 to install run the following commands.
+`jq` is not available in CentOS 6 to install run the following commands.
 
 ```
 wget -O jq https://github.com/stedolan/jq/releases/download/jq-1.5/jq-linux64
