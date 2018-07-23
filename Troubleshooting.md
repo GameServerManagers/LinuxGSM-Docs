@@ -64,7 +64,11 @@ Note: (example) `./gameserver details` will provide you with relevant informatio
 
 ## Unable to connect or not showing up in server list
 
-First off, you need to make sure that the server is started properly and listening.
+This is a three part diagnosis:
+1) First off, you need to make sure that the server is started properly, take attention to any error messages in console or log output 
+2) Check that the server is listening, to the right IP
+3) Check for firewalls or ports redirections that could prevent useful network packets from passing through
+
 
 ### Is the server actually started?
 
@@ -80,12 +84,27 @@ netstat -atunp | grep srcds_linux
 ````
 Compare the output from this to expected ports displayed in the details command.
 
-If this isn't enough, then here are some keys:
+If the output differs or your think something is wrong, here are the things to check on:  
 
-* Did you wait long enough? Sometimes it's just a matter of time until the server is fully started and listed into the master server list.
-* What does the logs say? See [[Logging]]
-* Did you set an ip in your (example) gameserver script or config file? Double check for typo mistakes.
-* Are you listening to an actual interface IP? See [[Ports]]
+* Did you set an ip in your gameserver script or config file or are you listening to `0.0.0.0`?
+* Are the ports you're using free? See [[Ports]]
+* Are you listening to an actual interface IP? See [[Ports]] Also, double check for typo mistakes.
+
+### Isn't there a firewall or a missing NAT rule?
 * Are you behind [[Firewalls]]? See [[Firewalls]]
 * If it's a local server, are ports redirection done properly? See [[Ports]] and [[details]]
-* Are the ports you're using free? See [[Ports]]
+
+### Other keys to solving this:
+
+* As usual, first thing you have to ask yourself: What do the logs say? See [[Logging]]
+* Did you wait long enough? Sometimes it's just a matter of time until the server is fully started and listed into the master server list.
+
+# If none of these work
+**GitHub is only for bug reports regarding LinuxGSM, not resolving specific user issues.**
+
+These kind of install, start or accessibility issues are generally specific to your server or install or comprehension of Linux, so please, note that posting these on GitHub will only result in your issue being closed without an answer and developers' waste of time.  
+Instead, you should use the support methods offered to the community: **Discord** or **Steam Forum** as explained in the [[Support]] page. There are lot of nice and helpful users and devs follow them as well whenever they have free time.  
+
+If you ever confirm a global bug after this, LinuxGSM's developers will be happy to resolve it if you raise an issue on GitHub with as much elements as possible to help understanding, reproducing and resolving the bug quickly.
+
+To learn where and how to get support, see: [[Support]]
