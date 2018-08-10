@@ -32,6 +32,8 @@ You can mix and match settings to suit your needs, using _default.cfg as a basel
 
 # How to use
 
+**Warning**: When changing a variable that affects start parameters, or any other variable that is used later in the configuration file, you should always make sure that you copied the variable or function that is using it. For example, if changing `maxplayers=""`, you need to copy over the `fn_parms(){}` entirely as well so that it can take effect. If unsure, do as advised in the "Simple configuration" method and copy the whole template to your configuration file and you will be just fine.
+
 ## Simple configuration
 
 This fits most scenarios, where you have a simple installation with only one instance.
@@ -63,7 +65,6 @@ Now you can edit your instance file that contains all of your LinuxGSM and start
 
 4) Then you can check that your servers work properly together, stop those you need to work on, and work on your [[Game Server Config]]
   
-
 ## Examples
 
 Any setting listed in `instance.cfg` will override `common.cfg` which will override `_default.cfg`. And the other way around, any setting that is not listed in `instance.cfg` will take the value of the first parent config file where the value is set.
