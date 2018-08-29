@@ -1,10 +1,6 @@
 # Rust
 
-
-
-## Rust
-
-### System requirements
+## System requirements
 
 * RAM: 4GB-12GB, Increases depending upon map size
 * CPU: Duel core 3.4GHz, Rust is monothread
@@ -12,7 +8,7 @@
 
 > note The server autosave can cause lag, depending on the CPU and disk speed.
 
-### Modded server with Oxide
+## Modded server with Oxide
 
 LinuxGSM supports downloading, updating, or removing Oxide.
 
@@ -20,23 +16,23 @@ LinuxGSM supports downloading, updating, or removing Oxide.
 ./rustserver mods-install
 ```
 
-### Useful Links
+## Useful Links
 
-#### General Information
+### General Information
 
 [https://developer.valvesoftware.com/wiki/Rust\_Dedicated\_Server](https://developer.valvesoftware.com/wiki/Rust_Dedicated_Server)
 
-#### Oxide Support
+### Oxide Support
 
 [http://oxidemod.org/threads/setting-up-a-rust-server-with-linux-and-lgsm.16528/](http://oxidemod.org/threads/setting-up-a-rust-server-with-linux-and-lgsm.16528/)
 
-#### Rusty
+### Rusty
 
-* Server RCON administration tool
+* Server RCON administration tool 
 
   [http://oxidemod.org/resources/rusty-server-rcon-administration-tool.53/](http://oxidemod.org/resources/rusty-server-rcon-administration-tool.53/)
 
-### Rust Server with LinuxGSM Video tutorial
+## Rust Server with LinuxGSM Video tutorial
 
 A quick tour of Rust special features, and install guide for Rust and Oxide.
 
@@ -46,7 +42,7 @@ If you need more help, here is a video that shows a bit more into depth how to u
 
 [https://www.youtube.com/watch?v=eFH9Qj-hUOM](https://www.youtube.com/watch?v=eFH9Qj-hUOM)
 
-### Rust Console
+## Rust Console
 
 Rust has no console to display useful information. Instead you need to monitor the server logs or RCON login to display real time info.
 
@@ -54,7 +50,7 @@ Rust has no console to display useful information. Instead you need to monitor t
 tail -f log/server/rust-server*.log`
 ```
 
-### Install Oxide
+## Install Oxide
 
 Oxide is an API allowing you to run mods for you Rust server.
 
@@ -70,7 +66,7 @@ If a Rust update has been released, then an Oxide update will soon follow. To up
 ./rustserver mods-update
 ```
 
-#### Install Oxide addons
+### Install Oxide addons
 
 To install Oxide addons place them into the `serverfiles/oxide/plugins` directory. This will cause them to load automatically when starting the server.
 
@@ -82,9 +78,9 @@ To update and addon without restarting the server, you'll need to reload the add
 oxide.reload PluginName
 ```
 
-### RCON
+## RCON
 
-#### Send RCON commands:
+### Send RCON commands:
 
 RCON is the protocol used to send commands to your server. You will need a tool to use it. Here are 3 of them:
 
@@ -96,7 +92,7 @@ To use software like Rusty, you need to alter LinuxGSM config and change `rconwe
 
 > Note: Facepunch web tool currently don't accept domain names, you need to enter server IP.
 
-#### Essential RCON Commands
+### Essential RCON Commands
 
 ```text
 save ; will save the server state (useful before a stop or restart)
@@ -108,7 +104,7 @@ server.writecfg ; will save config changes, including new admins
 
 > Note: append `server.writecfg` after adding an admin, and player needs to reconnect the server in order for it to be applied.
 
-### Avoid a security breach and allow you to run multiple servers
+## Avoid a security breach and allow you to run multiple servers
 
 By default, a user can see all started processes from other users, which is bad, but also their start parameters, which is pretty dangerous. Those start parameters can contain sensitive information, such as RCON password, Steam API keys, GSLTokens... Upon start, a Rust dedicated server is checking if the process name started by any user, and will prevent you from running it again if it finds it, displaying "Player is already running".
 
@@ -128,7 +124,7 @@ proc    /proc    proc    defaults,hidepid=2    0    0
 
 You still need to make one user per server, change ports, and repeat the install process. \(See [https://github.com/GameServerManagers/LinuxGSM/wiki/Multiple-Servers](https://github.com/GameServerManagers/LinuxGSM/wiki/Multiple-Servers) for more info\)
 
-### Server Wipe
+## Server Wipe
 
 ```bash
 ./rustserver wipe
