@@ -3,7 +3,7 @@
 
 * [Games](games/README.md)
    * [Rust](games/rust.md)
-    * [Teamspeak 3](games/teamspeak-3.md)
+   * [Teamspeak 3](games/teamspeak-3.md)
 * [README](README.md)
 * [Unreal-Tournament-3](unreal-tournament-3.md)
 * [glibc](glibc.md)
