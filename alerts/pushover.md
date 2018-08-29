@@ -1,4 +1,4 @@
-# pushover
+# Pushover
 
 ![](../.gitbook/assets/pushover_logo.png)
 

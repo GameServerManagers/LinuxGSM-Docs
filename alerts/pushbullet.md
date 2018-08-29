@@ -1,4 +1,4 @@
-# pushbullet
+# Pushbullet
 
 [![Pushbullet logo](https://github.com/GameServerManagers/LinuxGSM-Docs/tree/8e94e0870b2134515a861b85f910435f47d4ae2b/Alerts/images/pushbullet/pushbullet_logo.png)](https://www.pushbullet.com)
 
