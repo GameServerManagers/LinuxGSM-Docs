@@ -1,4 +1,4 @@
-# Home
+# home
 
 [![linux Game Server Managers](https://raw.githubusercontent.com/wiki/GameServerManagers/LinuxGSM/images/brand/colour/LinuxGSM_colour_logo_wordmark_512.png)](https://linuxgsm.com)
 

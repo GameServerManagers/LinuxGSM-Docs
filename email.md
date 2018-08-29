@@ -1,4 +1,4 @@
-# Email
+# email
 
 ![Email icon](http://i.imgur.com/kP4Doap.png)
 

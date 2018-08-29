@@ -1,4 +1,4 @@
-# Multiple-Game-Servers
+# multiple-game-servers
 
 **There are two recommended ways to run multiple game servers on one physical server**.  
 Depending upon the circumstances you may choose a particular method or mixture of both.
