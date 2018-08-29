@@ -1,4 +1,4 @@
-# Introduction
+# README
 
 ![](.gitbook/assets/linuxgsm_colour_logo_wordmark_512-1.png)
 

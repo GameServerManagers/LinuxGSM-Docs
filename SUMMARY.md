@@ -1,10 +1,10 @@
 # Table of contents
-# Summary
 
+* [Introduction](README.md)
 * [Games](games/README.md)
-   * [Rust](games/rust.md)
-   * [Teamspeak 3](games/teamspeak-3.md)
-* [README](README.md)
+  * [Rust](games/rust.md)
+  * [Teamspeak 3](games/teamspeak-3.md)
+* [README](readme.md)
 * [Unreal-Tournament-3](unreal-tournament-3.md)
 * [glibc](glibc.md)
 * [Call-of-Duty-4](call-of-duty-4.md)
