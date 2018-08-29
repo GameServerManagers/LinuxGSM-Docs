@@ -1,6 +1,6 @@
 # pushover
 
-[![Pushover logo](https://github.com/GameServerManagers/LinuxGSM-Docs/tree/8e94e0870b2134515a861b85f910435f47d4ae2b/Alerts/images/pushover/pushover_logo.png)](https://pushover.net/)
+![](../.gitbook/assets/pushover_logo.png)
 
 Send LinuxGSM alerts to Pushover.
 

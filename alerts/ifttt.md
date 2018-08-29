@@ -1,3 +1,7 @@
+---
+description: Send LinuxGSM alerts to IFTTT
+---
+
 # ITFFF
 
 ![](../.gitbook/assets/ifttt_logo-1.png)
