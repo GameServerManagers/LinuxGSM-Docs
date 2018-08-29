@@ -16,7 +16,7 @@
   * [unreal-tournament-99](game-servers/unreal-tournament-99.md)
 * [Alerts](alerts/README.md)
   * [email](alerts/email.md)
-  * [ifttt](alerts/ifttt.md)
+  * [ITFFF](alerts/ifttt.md)
   * [telegram](alerts/telegram.md)
   * [Discord](alerts/discord.md)
   * [pushbullet](alerts/pushbullet.md)
