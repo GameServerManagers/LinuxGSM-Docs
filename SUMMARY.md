@@ -1,5 +1,9 @@
 # Table of contents
+# Summary
 
+* [Games](games/README.md)
+   * [Rust](games/rust.md)
+    * [Teamspeak 3](games/teamspeak-3.md)
 * [README](README.md)
 * [Unreal-Tournament-3](unreal-tournament-3.md)
 * [glibc](glibc.md)
@@ -8,7 +12,6 @@
 * [Server-Migration](server-migration.md)
 * [Permissions](permissions.md)
 * [Cronjobs](cronjobs.md)
-* [Rust](rust.md)
 * [Basic-Usage](basic-usage.md)
 * [Boot-Startup](boot-startup.md)
 * [Syntax-and-Conventions](syntax-and-conventions.md)
