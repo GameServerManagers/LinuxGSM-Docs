@@ -1,30 +1,39 @@
+# mods
+
 LinuxGSM supports installing, updating, and removing selected mods and add-ons for some games and engines.  
 zip add-ons are currently the only supported installations. Other mods for other games are still to be installed manually.
 
-# Commands
+## Commands
 
-## Install mods
+### Install mods
+
 `./gameserver mods-install`
 
 `./gameserver mi`
-## Update mods
+
+### Update mods
+
 `./gameserver mods-update`
 
 `./gameserver mu`
-## Remove mods
+
+### Remove mods
+
 `./gameserver mods-remove`
 
 `./gameserver mr`
 
-# Supported mods/add-ons
+## Supported mods/add-ons
 
-(This list was last updated on 2017-01-28)
+\(This list was last updated on 2017-01-28\)
 
-## For Source Engine Games
+### For Source Engine Games
+
 * metamod
-* sourcemod (1.8)
+* sourcemod \(1.8\)
 
-## For Garry's Mod
+### For Garry's Mod
+
 * ACF
 * ACF Missiles
 * DarkRP
@@ -35,13 +44,15 @@ zip add-ons are currently the only supported installations. Other mods for other
 * ULX
 * UTime
 
-## For Unity3D (Rust/Hurtworld/7 Days To Die)
+### For Unity3D \(Rust/Hurtworld/7 Days To Die\)
+
 * Oxide Mod
 
-# Technical Details
+## Technical Details
 
-## Install
-* All available mods are defined in the mods_list.sh.  
+### Install
+
+* All available mods are defined in the mods\_list.sh.  
 * Mods hosted on github use the latest archive link available. Others are scraped through a mods download mirrors in order to find the latest version.  
 * If some mods are already installed, a list of installed mods shows up. If a user tries to install a mod that is already installed, there will be a warning that any custom file will be overwritten.  
 * A list of available mods is displayed to the user, including the developers website.  
@@ -50,36 +61,41 @@ zip add-ons are currently the only supported installations. Other mods for other
 * Files and directories then get copied to the correct destination.
 * LinuxGSM updates a file containing a list of installed mods `lgsm/mods/installed-mods.txt`. 
 
-## Update
+### Update
+
 * The list `lgsm/mods/installed-mods.txt` is used to identify which mods are installed. If a non-referenced mod is found, the updater will stop with an error.
 * Three update types are available
-   * OVERWRITE will overwrite every one of the mods files. 
-   * NOUPDATE will prevent this mod from being updated. Useful for a framework that is designed to be entirely customized.
-   * RETAIN keeps the white listed files and updating everything else.
-
+  * OVERWRITE will overwrite every one of the mods files. 
+  * NOUPDATE will prevent this mod from being updated. Useful for a framework that is designed to be entirely customized.
+  * RETAIN keeps the white listed files and updating everything else.
 * As there is no easy way to check for mod versions, the update process will update every single installed mod every time the command is run.
 * The process is pretty similar as the installation, mod gets downloaded, extracted, files get removed. Removed files go to a temp file list, then file list list built and temp file list added to it. Finaly the mod gets copied to destination using `cp -Rf`.
 * If an admin wants to overwrite custom files, then he can either uninstall/reinstall the mod, or just install over it.
 
-## Remove
+### Remove
+
 * A list of installed mods is displayed, user has to pick one to remove.
 * Any file listed in `lgsm/mods/modname-files.txt` gets removed.
 * The file list gets removed, as well as the entry in `installed-mods.txt`.
 
-# Adding mod support
+## Adding mod support
 
-## What mods can be added
-Any as long as the archive can be found online and the installation consists of extracting and archive to the `serverfiles` directory. 
+### What mods can be added
 
-## Asking to add support for a mod
+Any as long as the archive can be found online and the installation consists of extracting and archive to the `serverfiles` directory.
+
+### Asking to add support for a mod
+
 If there is a mod you wish to see supported by LinuxGSM please raise a GitHub issue with any relevant info about the mod.
 
-## Developers
+### Developers
+
 If you wish to create a pull-request yourself for this, please make sure you read the "Developer" section at the bottom right of the wiki.
 
-Usually, editing mods_list.sh should be enough to add mod's support. This script contains comments helping you to understand how to use it.  
+Usually, editing mods\_list.sh should be enough to add mod's support. This script contains comments helping you to understand how to use it.
 
 Basically: Add an array variable containing mod info, then add the array to the global array.
 
-Long explanation: The list is based on arrays, used to define all mod properties. You need to make sure that every value is filled up and in the correct order, that mod commands are unique and that multiple choices values are ended with a semicolon (;), otherwise the last value will be ignored.  
+Long explanation: The list is based on arrays, used to define all mod properties. You need to make sure that every value is filled up and in the correct order, that mod commands are unique and that multiple choices values are ended with a semicolon \(;\), otherwise the last value will be ignored.  
 You might need to add an entry in `fn_mod_tidy_files_list` from `mods_core.sh` in order to remove lines from mod's file list so that they do not get wrongly removed with the mods-remove command. For further assistance on developing this contact UltimateByte who developed those functions and dgibbs that reworked it should be able to help.
+
