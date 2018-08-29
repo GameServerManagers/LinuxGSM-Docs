@@ -1,4 +1,4 @@
-# Game Server Login Token
+# Game Server Login Token \(GSLT\)
 
 **Game Server Login Token is a new system by Valve for managing Game servers.**
 

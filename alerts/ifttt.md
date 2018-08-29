@@ -1,6 +1,6 @@
-# IFTTT
+# ifttt
 
-[![IFTTT logo](https://github.com/GameServerManagers/LinuxGSM-Docs/tree/8e94e0870b2134515a861b85f910435f47d4ae2b/Alerts/images/ifttt/ifttt_logo.png)](https://ifttt.com/)
+![](../.gitbook/assets/ifttt_logo-1.png)
 
 Send LinuxGSM alerts to IFTTT.
 

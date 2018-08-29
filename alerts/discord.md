@@ -1,6 +1,6 @@
-# discord
+# Discord
 
-[![Discord logo](../.gitbook/assets/discord_logo.png)](https://discordapp.com)
+![](../.gitbook/assets/discord_logo-1.png)
 
 Send LinuxGSM alerts to a Discord server.
 
