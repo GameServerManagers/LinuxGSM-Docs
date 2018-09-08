@@ -42,6 +42,7 @@
   * [java](requirements/java.md)
   * [tmux](requirements/tmux.md)
   * [jq](requirements/jq.md)
+  * [gamedig](requirements/gamedig.md)  
   * [glibc](requirements/glibc.md)
 * [SteamCMD](steamcmd/README.md)
   * [Game Server Login Token \(GSLT\)](steamcmd/game-server-login-token.md)
