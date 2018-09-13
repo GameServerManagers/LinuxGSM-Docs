@@ -1,8 +1,10 @@
+---
+description: Send LinuxGSM alerts to IFTTT.
+---
+
 # ITFFF
 
 ![](../.gitbook/assets/ifttt_logo-1.png)
-
-Send LinuxGSM alerts to IFTTT.
 
 There are hundreds in integrations available on IFTTT allowing you to send alerts in all sorts of different ways to various services and devices.
 
@@ -37,25 +39,17 @@ iftttevent="linuxgsm_alert"
 
 IFTTT allows 3 different values to be sent using the webhook; `Value1`, `Value2` and `Value3`. LinuxGSM sends different data for each value as listed below.
 
-* Value1: Sends the servicename of the server e.g csgoserver
-* Value2: Sends an alert subject e.g Alert - csgoserver - Test
-* Value3: Sends an alert summary 
+* Value1: Sends the servicename of the server e.g `csgoserver`
+* Value2: Sends an alert subject e.g `Alert - csgoserver - Test`
+* Value3: Sends an alert summary message.
 
-  \`\`\`
-
-  Message
-
-  Testing LinuxGSM Alert. No action to be taken.
-
+```text
+Testing LinuxGSM Alert. No action to be taken.
 Game Squad
-
 Server name LinuxGSM Server 1
-
 Hostname ubuntu.example.com
-
 Server IP 1.2.3.4:27015
-
-\`\`\`
+```
 
 ## How to create an applet
 
