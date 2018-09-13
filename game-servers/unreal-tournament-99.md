@@ -1,4 +1,4 @@
-# unreal-tournament-99
+# Unreal Tournament 99
 
 Unreal Tournament 99 Requires a few alterations from the official server download. Because of this the LinuxGSM version of the server files includes the following.
 

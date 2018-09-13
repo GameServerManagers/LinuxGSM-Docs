@@ -1,6 +1,6 @@
-# teamspeak-3
+# TeamSpeak 3
 
-## Connect to Teamspeak 3 Server
+## Connect to TeamSpeak 3 Server
 
 You can connect to a TeamSpeak 3 server to input commands without the need for a TeamSpeak 3 client. This can be done by connecting to the query port using telnet.
 
@@ -25,7 +25,7 @@ tokenadd tokentype=0 tokenid1=6 tokenid2=0
 
 #### Reset your query password
 
-See \[\[change-password\]\].
+See [change password](../commands/change-password.md).
 
 ## TeamSpeak 3 Databases
 
@@ -71,5 +71,5 @@ cd ~
 
 ### IPv6
 
-Some users with IPv6 enabled might encounter a server failing to start properly. To fix this edit `serverfiles/ts3-server.ini` to add a standard IPv4 \(voice\_ip; filetransfer\_ip; query\_ip\) and remove the ", ::" from IPv6. Then as the server failed to start at the installation, the privilege key hasn't been generated. So you will need to use server query \(ID/Password have been generated for them\) to generate a new Server Admin privilege key.
+Some users with IPv6 enabled might encounter a server failing to start properly. To fix this edit `serverfiles/ts3-server.ini` to add a standard IPv4 \(`voice_ip; filetransfer_ip; query_ip`\) and remove the `, ::` from IPv6. Then as the server failed to start at the installation, the privilege key hasn't been generated. So you will need to use server query \(ID/Password have been generated for them\) to generate a new Server Admin privilege key.
 

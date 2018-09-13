@@ -1,4 +1,4 @@
-# killing-floor-2
+# Killing Floor 2
 
 ## Ports
 

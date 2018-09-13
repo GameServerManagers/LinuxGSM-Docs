@@ -1,4 +1,4 @@
-# rust
+# Rust
 
 ## System requirements
 
@@ -28,9 +28,8 @@ LinuxGSM supports downloading, updating, or removing Oxide.
 
 ### Rusty
 
-* Server RCON administration tool
-
-  [http://oxidemod.org/resources/rusty-server-rcon-administration-tool.53/](http://oxidemod.org/resources/rusty-server-rcon-administration-tool.53/)
+Server RCON administration tool  
+[http://oxidemod.org/resources/rusty-server-rcon-administration-tool.53/](http://oxidemod.org/resources/rusty-server-rcon-administration-tool.53/)
 
 ## Rust Server with LinuxGSM Video tutorial
 
@@ -106,7 +105,7 @@ server.writecfg ; will save config changes, including new admins
 
 ## Avoid a security breach and allow you to run multiple servers
 
-By default, a user can see all started processes from other users, which is bad, but also their start parameters, which is pretty dangerous. Those start parameters can contain sensitive information, such as RCON password, Steam API keys, GSLTokens... Upon start, a Rust dedicated server is checking if the process name started by any user, and will prevent you from running it again if it finds it, displaying "Player is already running".
+By default, a user can see all started processes from other users, which is bad, but also their start parameters, which is pretty dangerous. Those start parameters can contain sensitive information, such as RCON password, Steam API keys and GSLT upon start, a Rust dedicated server is checking if the process name started by any user, and will prevent you from running it again if it finds it, displaying "Player is already running".
 
 To avoid that, run:
 

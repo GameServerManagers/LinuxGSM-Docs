@@ -1,4 +1,4 @@
-# unreal-tournament-2004
+# Unreal Tournament 2004
 
 LinuxGSM uses the most recent version of UT2K4 server available for Linux.
 

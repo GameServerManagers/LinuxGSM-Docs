@@ -1,4 +1,4 @@
-# dont-starve-together
+# Dont Starve Together
 
 ## Authentication Token
 

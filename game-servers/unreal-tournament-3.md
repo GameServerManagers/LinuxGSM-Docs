@@ -1,4 +1,4 @@
-# unreal-tournament-3
+# Unreal Tournament 3
 
 ## Server files
 

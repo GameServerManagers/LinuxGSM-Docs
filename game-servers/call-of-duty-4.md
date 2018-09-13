@@ -1,4 +1,4 @@
-# call-of-duty-4
+# Call of Duty 4
 
 ## CoD4x
 
