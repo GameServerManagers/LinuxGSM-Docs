@@ -1,4 +1,4 @@
-# ark-survival-evolved
+# Ark Survival Evolved
 
 ## Config Files
 
@@ -9,7 +9,7 @@ serverfiles/ShooterGame/Saved/Config/LinuxServer/Game.ini
 
 ## Adding Mods
 
-Add `-automanagedmods` to the \[\[start parameters\]\].
+Add `-automanagedmods` to the [start parameters](../configuration/start-parameters.md).
 
 Next edit `GameUserSettings.ini`, adding the following line under `[ServerSettings]`.
 

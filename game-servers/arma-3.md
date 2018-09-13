@@ -1,4 +1,4 @@
-# arma-3
+# Arma 3
 
 ## Headless Client
 

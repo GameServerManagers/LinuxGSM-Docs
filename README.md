@@ -12,14 +12,14 @@ Game servers traditionally are not easy to manage yourself. Admins often have to
 
 ## Main features
 
-* Backup
-* Console
-* Details
-* Installer \(SteamCMD\)
-* Monitor
-* Alerts \(Email, Pushbullet\)
-* Update \(SteamCMD\)
-* Start/Stop/Restart server
+* [Backup](commands/backup.md)
+* [Console](commands/console.md)
+* [Details](commands/details.md)
+* [Installer](commands/install.md)
+* [Monitor](commands/monitor.md)
+* [Alerts](alerts/)
+* [Updater](commands/update.md)
+* [Start/Stop/Restart](commands/start-stop-restart.md) server
 
 ## Compatibility
 
@@ -32,18 +32,22 @@ Other distros are likely to work but are not fully tested.
 
 ### Specific Requirements
 
-* [GLIBC](https://github.com/GameServerManagers/LinuxGSM/wiki/Glibc) &gt;= 2.18 recommended \[[specific requirements](https://github.com/GameServerManagers/LinuxGSM/wiki/Glibc#server-requirements)\].
-* [Tmux](https://github.com/GameServerManagers/LinuxGSM/wiki/Tmux) &gt;= 1.6 recommended \(Avoid Tmux 1.8\).
+* [GLIBC](requirements/glibc.md) &gt;= 2.18 recommended \[[specific requirements](requirements/glibc.md#server-requirements)\].
+* [Tmux](requirements/tmux.md) &gt;= 1.6 recommended \([Avoid Tmux 1.8](requirements/tmux.md#tmux-1-8)\).
 
 ## FAQ
 
-All FAQ can be found here. [https://github.com/GameServerManagers/LinuxGSM/wiki/FAQ](https://github.com/GameServerManagers/LinuxGSM/wiki/FAQ)
+Check out the [FAQ](support/faq.md) for common questions
 
 ## Donate
 
-If you want to donate to the project you can via PayPal. I have had a may kind people show their support by sending me a donation. Any donations you send help cover my server costs and buy me a drink. Cheers!
+LinuxGSM accepts donations, you can donate several days. I have had a may kind people show their support by sending me a donation. Any donations you send help cover my server costs and buy me a drink. Cheers!
 
 * [Donate](https://linuxgsm.com/donate)
+
+## Support
+
+Looking for help? These docs are a great place to start. Support is also available on [Discord](https://linuxgsm.com/discord) and [Steam](https://steamcommunity.com/groups/linuxgsm).
 
 ## Useful Links
 
@@ -56,9 +60,11 @@ If you want to donate to the project you can via PayPal. I have had a may kind p
 
 ## Social
 
-* [Steam Group](http://steamcommunity.com/groups/linuxgsm)
+* [Steam Group](https://steamcommunity.com/groups/linuxgsm)
 * [Discord](https://linuxgsm.com/discord)
 * [Twitter](https://twitter.com/linuxgsm)
 * [Facebook](https://www.facebook.com/linuxgsm)
 * [Google+](https://plus.google.com/+Gameservermanagers1)
+
+
 
