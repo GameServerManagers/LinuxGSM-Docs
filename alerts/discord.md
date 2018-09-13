@@ -1,8 +1,12 @@
+---
+description: Send LinuxGSM alerts to a Discord server.
+---
+
 # Discord
 
-![](../.gitbook/assets/discord_logo-1.png)
 
-Send LinuxGSM alerts to a Discord server.
+
+![](../.gitbook/assets/discord_logo-1.png)
 
 ## Create a Discord Webhook
 
@@ -15,11 +19,15 @@ A webhook is required to post alerts to a Discord text channel
 5. Copy the Webhook URL
 6. Turn on discord alert and enter the URL in to the LinuxGSM settings. \(`~/lgsm/config-lgsm/<gameserver>/common.cfg`\)
 
-   ```text
-   # Discord Alerts | https://github.com/GameServerManagers/LinuxGSM/wiki/Discord
-   discordalert="on"
-   discordwebhook="https://discordapp.com/api/webhooks/3539332633367897009/5t_K4GkuBaR2-69TsKqXmHIya1ck1tirnu_Fst-DUC00dye98eaa_I6uTIcHEsi7a17K"
-   ```
+```text
+# Discord Alerts | https://github.com/GameServerManagers/LinuxGSM/wiki/Discord
+discordalert="on"
+discordwebhook="https://discordapp.com/api/webhooks/3539332633367897009/5t_K4GkuBaR2-69TsKqXmHIya1ck1tirnu_Fst-DUC00dye98eaa_I6uTIcHEsi7a17K"
+```
 
-_Note: You must have Discord User Settings &gt; Text & Images &gt; Link Preview: 'Show website preview...' enabled or you will just see blank messages from the alert bot._
+{% hint style="info" %}
+You must have Discord _User Settings &gt; Text & Images &gt; Link Preview: 'Show website preview...'_ enabled or you will just see blank messages from the alert bot.
+{% endhint %}
+
+\_\_
 

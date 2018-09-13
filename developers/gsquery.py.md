@@ -1,4 +1,4 @@
-# gsquery.py
+# monitor\_gsquery.py
 
 ## What is gsquery ?
 

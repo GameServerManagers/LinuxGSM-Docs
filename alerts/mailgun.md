@@ -1,4 +1,4 @@
-# mailgun
+# Mailgun
 
 [![Mailgun logo](../.gitbook/assets/mailgun_logo.png)](https://www.mailgun.com/)
 
