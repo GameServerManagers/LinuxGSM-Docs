@@ -71,6 +71,7 @@
   * [Workshop](steamcmd/workshop.md)
 * [Support](support/README.md)
   * [Troubleshooting](support/troubleshooting.md)
+  * [Game Server](support/game-server.md)
   * [FAQ](support/faq.md)
 * [to-do](to-do/README.md)
   * [multiple-game-servers](to-do/multiple-game-servers.md)
