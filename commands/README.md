@@ -2,7 +2,7 @@
 
 Replace `./gameserver` with your actual script name. Every command has a short version, also listed here.
 
-## Global command list
+## Global commands list
 
 | Command Name | Command | Short |
 | :--- | :--- | :--- |
@@ -27,27 +27,23 @@ Replace `./gameserver` with your actual script name. Every command has a short v
 
 ### Teamspeak server
 
-For more info, see \[\[change-password\]\].
-
-`./ts3server change-password` or `./gameserver pw`
-
-Allows you to change the ServerAdmin password.
+|Command Name|Command  |Short  |
+|--|--|--|
+|Change Password  |`./gameserver change-password`  |`./gameserver pw`  |
 
 ### Unreal Tournament 99 & 2004
 
-For more info, see \[\[map-compressor\]\].
+|Command Name|Command  |Short  |
+|--|--|--|
+|Map Compressor  |`./gameserver map-compressor`  |`./gameserver mc`  |
 
-`./ut99server map-compressor` or `./ut99server mc`
+## Developer & Debug commands
 
-`./ut2k4server map-compressor` or `./ut2k4server mc`
-
-## Developer & debug commands
-
-For more info, see \[\[developer-commands\]\].
-
-`./gameserver developer` or `./gameserver dev`
-
-`./gameserver detect-deps` or `./gameserver dd`
-
-`./gameserver detect-glibc` or `./gameserver dg`
-
+|Command Name|Command  |Short  |
+|--|--|--|
+|Map Compressor  |`./gameserver developer`  |`./gameserver dev`  |
+|Auto Install  |`./gameserver detect-deps`  |`./gameserver dd`  |
+|Detect Glibc  |`./gameserver detect-glibc`  |`./gameserver dg`  |
+|Detect ldd  |`./gameserver detect-ldd`  |`./gameserver dl`  |
+|Query Raw  |`./gameserver query-raw`  |`./gameserver qr`  |
+|Clear Functions  |`./gameserver clear-functions`  |`./gameserver cf`  |
