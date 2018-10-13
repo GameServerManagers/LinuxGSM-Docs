@@ -4,59 +4,26 @@ Replace `./gameserver` with your actual script name. Every command has a short v
 
 ## Global command list
 
-### Installing
+|Command Name|Command  |Short  |
+|--|--|--|
+|Install  |`./gameserver install`  |`./gameserver i`  |
+|Auto Install  |`./gameserver auto-install`  |`./gameserver ai`  |
+|Start  |`./gameserver start`  |`./gameserver st`  |
+|Stop  |`./gameserver stop`  |`./gameserver sp`  |
+|Restart  |`./gameserver restart`  |`./gameserver r`  |
+|Monitor |`./gameserver monitor`  |`./gameserver m`  |
+|Test Alert |`./gameserver test-alert`  |`./gameserver ta`  |
+|Details  |`./gameserver details`  |`./gameserver dt`  |
+|Post Details  |`./gameserver postdetails`  |`./gameserver pd`  |
+|Update LinuxGSM  |`./gameserver update-lgsm`  |`./gameserver ul`  |
+|Update  |`./gameserver update`  |`./gameserver u`  |
+|Force Update  |`./gameserver force-update`  |`./gameserver fu`  |
+|Validate  |`./gameserver validate`  |`./gameserver v`  |
+|Backup  |`./gameserver backup`  |`./gameserver b`  |
+|Console  |`./gameserver console`  |`./gameserver c`  |
+|Debug  |`./gameserver debug`  |`./gameserver d`  |
+|Update LinuxGSM  |`./gameserver update-lgsm`  |`./gameserver ul`  |
 
-For more info, see \[\[install\]\].
-
-`./gameserver install` or `./gameserver i`
-
-`./gameserver auto-install` or `./gameserver ai`
-
-### Start/Stop/Restart
-
-For more info, see \[\[Start-Stop-Restart\]\]
-
-`./gameserver start` or `./gameserver st`
-
-`./gameserver stop` or `./gameserver sp`
-
-`./gameserver restart` or `./gameserver r`
-
-### Updating
-
-For more info, see \[\[update\]\].
-
-`./gameserver update` or `./gameserver u`
-
-`./gameserver validate` or `./gameserver v` \(SteamCMD games only\)
-
-`./gameserver update-lgsm` or `./gameserver ul` \(Updating LinuxGSM\)
-
-### Monitoring
-
-For more info, see \[\[monitor\]\].
-
-`./gameserver monitor` `./gameserver m`
-
-`./gameserver email-test` or `./gameserver et`
-
-### Server info
-
-For more info, see \[\[details\]\].
-
-`./gameserver details` or `./gameserver dt`
-
-### Console
-
-For more info, see \[\[console\]\].
-
-`./gameserver console` or `./gameserver c`
-
-### Backup
-
-For more info, see \[\[backup\]\].
-
-`./gameserver backup` or `./gameserver b`
 
 ## Specific commands
 
