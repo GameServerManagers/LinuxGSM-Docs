@@ -3,7 +3,6 @@
 * [Home](README.md)
 * [Getting Started](getting-started.md)
 * [Commands](commands/README.md)
-  * [command-list](commands/command-list.md)
   * [install](commands/install.md)
   * [start-stop-restart](commands/start-stop-restart.md)
   * [monitor](commands/monitor.md)
