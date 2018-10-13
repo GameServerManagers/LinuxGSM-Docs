@@ -27,23 +27,26 @@ Replace `./gameserver` with your actual script name. Every command has a short v
 
 ### Teamspeak server
 
-|Command Name|Command  |Short  |
-|--|--|--|
-|Change Password  |`./gameserver change-password`  |`./gameserver pw`  |
+| Command Name | Command | Short |
+| :--- | :--- | :--- |
+| [Change Password](change-password.md) | `./gameserver change-password` | `./gameserver pw` |
 
 ### Unreal Tournament 99 & 2004
 
-|Command Name|Command  |Short  |
-|--|--|--|
-|Map Compressor  |`./gameserver map-compressor`  |`./gameserver mc`  |
+| Command Name | Command | Short |
+| :--- | :--- | :--- |
+| [Map Compressor](map-compressor.md) | `./gameserver map-compressor` | `./gameserver mc` |
 
 ## Developer & Debug commands
 
-|Command Name|Command  |Short  |
-|--|--|--|
-|Map Compressor  |`./gameserver developer`  |`./gameserver dev`  |
-|Auto Install  |`./gameserver detect-deps`  |`./gameserver dd`  |
-|Detect Glibc  |`./gameserver detect-glibc`  |`./gameserver dg`  |
-|Detect ldd  |`./gameserver detect-ldd`  |`./gameserver dl`  |
-|Query Raw  |`./gameserver query-raw`  |`./gameserver qr`  |
-|Clear Functions  |`./gameserver clear-functions`  |`./gameserver cf`  |
+| Command Name | Command | Short |
+| :--- | :--- | :--- |
+| [Developer](../developers/developer-commands.md) | `./gameserver developer` | `./gameserver dev` |
+| Detect Dependencies | `./gameserver detect-deps` | `./gameserver dd` |
+| [Detect Glibc](../developers/developer-commands.md#detect-glibc) | `./gameserver detect-glibc` | `./gameserver dg` |
+| [Detect ldd](../developers/developer-commands.md#detect-ldd) | `./gameserver detect-ldd` | `./gameserver dl` |
+| Query Raw | `./gameserver query-raw` | `./gameserver qr` |
+| Clear Functions | `./gameserver clear-functions` | `./gameserver cf` |
+
+
+
