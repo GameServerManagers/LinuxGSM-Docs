@@ -1,7 +1,3 @@
----
-description: Send LinuxGSM alerts to a Pushbullet user or channel.
----
-
 # Pushbullet
 
 ![](../.gitbook/assets/pushbullet_logo%20%281%29.png)

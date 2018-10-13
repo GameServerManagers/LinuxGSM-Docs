@@ -1,7 +1,3 @@
----
-description: Send LinuxGSM alerts to an email addresses.
----
-
 # Email
 
 ![](http://i.imgur.com/kP4Doap.png)

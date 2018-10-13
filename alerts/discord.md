@@ -1,7 +1,3 @@
----
-description: Send LinuxGSM alerts to a Discord server.
----
-
 # Discord
 
 

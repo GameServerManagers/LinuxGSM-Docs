@@ -1,7 +1,3 @@
----
-description: Send LinuxGSM alerts to a Telegram Messenger user or group.
----
-
 # Telegram
 
 

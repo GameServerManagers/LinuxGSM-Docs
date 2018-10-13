@@ -1,7 +1,6 @@
+# Home
 
-# README
-
->Note: We are currently migrating the docs from the GitHub [Wiki](http://linuxgsm.com/wiki) to a new [docs](https://docs.linuxgsm.com) plaform.
+> Note: We are currently migrating the docs from the GitHub [Wiki](http://linuxgsm.com/wiki) to a new [docs](https://docs.linuxgsm.com) plaform.
 
 ![](.gitbook/assets/linuxgsm_colour_logo_wordmark_512-1.png)
 
@@ -68,3 +67,4 @@ Looking for help? These docs are a great place to start. Support is also availab
 * [Twitter](https://twitter.com/linuxgsm)
 * [Facebook](https://www.facebook.com/linuxgsm)
 * [Google+](https://plus.google.com/+Gameservermanagers1)
+
