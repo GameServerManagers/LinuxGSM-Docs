@@ -25,7 +25,9 @@ Game servers traditionally are not easy to manage yourself. Admins often have to
 
 ## Compatibility
 
-The Linux Game Server Managers are tested to work on the following Linux distros.
+The Linux Game Server Managers are tested on the following Linux distros. 
+Compatibility vary's depending upon the game server.
+Other distros are likely to work but are not tested.
 
 * Debian based \(Ubuntu, Mint etc.\).
     * Ubuntu 16.04 or later
@@ -33,8 +35,8 @@ The Linux Game Server Managers are tested to work on the following Linux distros
 * Redhat based \(CentOS, Fedora etc.\).
     * CentOS 7 or later
     * Fedora 20 or later
-
-Other distros are likely to work but are not fully tested.
+    
+> Note: As a general rule, the newer the distro the better chance of compatability.
 
 ### Specific Requirements
 
