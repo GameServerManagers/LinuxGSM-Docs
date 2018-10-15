@@ -28,7 +28,7 @@ Game servers traditionally are not easy to manage yourself. Admins often have to
 The Linux Game Server Managers are tested to work on the following Linux distros.
 
 * Debian based \(Ubuntu, Mint etc.\).
-    * Ubuntu 16.04 or later reccomended
+    * Ubuntu 16.04 or later
     * Debian 8 or later
 * Redhat based \(CentOS, Fedora etc.\).
     * CentOS 7 or later
