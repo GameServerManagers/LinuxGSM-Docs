@@ -79,7 +79,7 @@ If you are using an older version of tmux on CentOS you can upgrade to the lates
 Install Ghettoforge with the following command.
 
 ```text
-yum install http://mirror.ghettoforge.org/distributions/gf/gf-release-latest.gf.el7.noarch
+yum install http://mirror.ghettoforge.org/distributions/gf/gf-release-latest.gf.el7.noarch.rpm
 ```
 
 Install tmux using the Ghettoforge repo.
