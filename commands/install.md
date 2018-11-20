@@ -79,7 +79,7 @@ If some files/directorys are not owned use the `chown` command to correct this. 
 
 `chown -R csgoserver:csgoserver /home/csgoserver`
 
-#### Poor Network to Steam servers
+#### Poor Network Connection to Steam servers
 
 If the connection to the Steam servers is poor \(quite common\), SteamCMD download can fail. This is why LinuxGSM will always ask you if installation was successful allowing admins to retry the download should it fail.
 
@@ -91,19 +91,19 @@ If downloading is still failing it may be worth contacting your server provider 
 
 It is also worth searching the internet for issues relating to the error message you receive.
 
-### Not enough disk space
+### Not Enough Disk Space
 
-Some game servers do use significant disk space. If you are having issues downloading check that your server has enough space available
+Some game servers take up a significant amount of disk space. If you are having issues downloading check that your server has enough space available.
 
-To check your disk remaining space, use:
+To check your available storage, use:
 
 `df -h` or \`./gameserver details
 
 #### DNS Issue
 
-Make sure you can `ping` using a hostname
+Make sure you can `ping` using a hostname.
 
 `ping google.com`
 
-should this fail your server may not have DNS lookup correctly configured. [https://www.cyberciti.biz/faq/linux-setup-dns-lookup/](https://www.cyberciti.biz/faq/linux-setup-dns-lookup/)
+Should this fail your server may not have DNS lookup correctly configured. [https://www.cyberciti.biz/faq/linux-setup-dns-lookup/](https://www.cyberciti.biz/faq/linux-setup-dns-lookup/)
 
