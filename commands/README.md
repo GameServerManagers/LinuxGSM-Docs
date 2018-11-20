@@ -1,6 +1,6 @@
 # Commands
 
-Replace `./gameserver` with your actual script name. Every command has a short version, also listed here.
+Replace `./gameserver` with the actual script name. Every command has a short version, also listed here.
 
 ## Global commands list
 
@@ -31,7 +31,7 @@ Replace `./gameserver` with your actual script name. Every command has a short v
 | :--- | :--- | :--- |
 | [Change Password](change-password.md) | `./gameserver change-password` | `./gameserver pw` |
 
-### Unreal Tournament 99 & 2004
+### Unreal & Unreal 2 Engine Games
 
 | Command Name | Command | Short |
 | :--- | :--- | :--- |
