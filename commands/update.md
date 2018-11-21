@@ -8,7 +8,7 @@ Standard: `./gameserver update`
 
 Short: `./gameserver u`
 
-Update will check for an update. If there is an update it will download and apply it, restarting the server if already running. If there is no update LinuxGSM will take no action.
+Update will check for any available update, taking no action if no update is available. If there is an update it will apply the update, restarting the server if already running. 
 
 ## Automatic update
 
