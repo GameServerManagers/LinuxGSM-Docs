@@ -1,14 +1,12 @@
 # start-parameters
 
-Servers commonly require start parameters, these are command-line options that are set with the servers executable when you start the server. Your current parameters can be found in `./gameserver details`. To alter them, you will need to edit [LinuxGSM config files](https://github.com/GameServerManagers/LinuxGSM/wiki/LinuxGSM-Config).
+Servers commonly require start parameters, these are command-line options that are set with the servers executable when you start the server. Current parameters can be found in `./gameserver details`. To alter them, you will need to edit [LinuxGSM config files](https://github.com/GameServerManagers/LinuxGSM/wiki/LinuxGSM-Config).
 
-> The LinuxGSM priority is to use config files over parameters. This is to allow consistency between servers and makes it easier to gathering server details. Only parameters that can not be set in config files are used.
+The LinuxGSM prefers to use config files over parameters as much as possible. Sometimes this is not possible if not possible and parameters or a mixture of both will be used. LinuxGSM also attempts to keep the same method between game servers of the same engine to allow consistency between game servers.
 
 ## Pre-defined start parameters
 
-LinuxGSM often comes with pre-defined parameters that you can edit. This is designed to make adjusting common settings a little easier.
-
-_Example of pre-defined parameters_
+LinuxGSM often comes with pre-defined parameters that can be edited. This makes adjusting common settings a easier and allow them to be displayed in `./gameserver details`.
 
 ```text
 ## Server Start Settings
@@ -24,9 +22,9 @@ clientport="27005"
 
 Additional command-line parameters can be added to the parms variable. Anything added will be appended to the server executable binary.
 
-_Parms Variable_ `parms="-game tf"`
+_Parms Variable_ `parms="-game nmrih"`
 
-_Executable_ `./srcds_run -game tf`
+_Executable_ `./srcds_run -game nmrih`
 
 _Full Parms Example_
 
