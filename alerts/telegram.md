@@ -1,4 +1,4 @@
-<a href="https://telegram.org/"><p align="center"><img src="images/telegram/telegram_logo.png" alt="Telegram logo" /></a>
+<a href="https://telegram.org/"><p align="center"><img src="../.gitbook/assets/telegram_logo.png" alt="Telegram logo" /></a>
 
 <p align="center">Send LinuxGSM alerts to a Telegram Messenger user or group.</p>
 
@@ -10,12 +10,12 @@ To enable Telegram alerts you need to create your own Telegram Bot.
 
 2. Click start to begin the chat. 
 
-![BotFather Chat](images/telegram/botfather_chat.png)
+![BotFather Chat](../.gitbook/assets/botfather_chat.png)
 
 
 3. Type `/newbot` and follow the instructions the create a bot.
 
-![new Bot](images/telegram/botfather_new_bot.png)
+![new Bot](../.gitbook/assets/botfather_new_bot.png)
 
 
 4. Once complete an API token will be given. Enter the token to the LinuxGSM config.
@@ -33,15 +33,15 @@ Use this step If you want to send alerts to a group. If not skip to _retrieve ch
 ## Setup a New Group
 1. Select `New Group`
 
-![New Group](images/telegram/telegram_new_group.png)
+![New Group](../.gitbook/assets/telegram_new_group.png)
 
 2. Give your group a name
 
-![Select Bot](images/telegram/telegram_select_bot.png)
+![Select Bot](../.gitbook/assets/telegram_select_bot.png)
 
 3. Select the Bot you just created by typing `@ExampleBot`.
 
-![Add Bot](images/telegram/telegram_add_bot.png)
+![Add Bot](../.gitbook/assets/telegram_add_bot.png)
 
 
 The bot will now be added to the group.
@@ -52,7 +52,7 @@ If you are using an existing group, invite the bot too the group.
 ```
 View group info>Add Members.
 ```
-![Add Bot](images/telegram/telegram_add_bot.png)
+![Add Bot](../.gitbook/assets/telegram_add_bot.png)
 
 # Retrieve the chat id
 
