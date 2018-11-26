@@ -1,9 +1,15 @@
 # server-migration
 
-You can migrate an exising server to LinuxGSM. You can also migrate an oldly installed server to a freshly LinuxGSM installed server.
+It is possible to migrate an exising game server to LinuxGSM.
 
-* Install your LinuxGSM blank server; see \[\[Basic-Usage\]\]
-* Edit its LinuxGSM configuration; see \[\[LinuxGSM-Config\]\]
-* Copy any relevant content in your server's data files. The LinuxGSM server files directory is `serverfiles`. Do not forget to apply proper files ownership if copying data using root; see \[\[File-Ownership\]\]
-* If applicable, rename your config files with the proper names \(example: csgoserver.cfg\); see \[\[Game-Server-Config\]\] for more information about how LinuxGSM handles config files.
-
+1. Install the LinuxGSM server of choice as normal.
+2. Once installed there will be a vanilla install in `servervfiles`
+3. Backup the serverfiles mv`serverfiles serverfilesbak`
+4. create a new serverfiles directory `mkdir serverfiles`
+5. Copy your existing server in to the empty serverfiles directory.
+6. Ensure that the file stucture matches that of `serverfilesbak` i.e the executable,maps etc. are in the same place.
+7. Ensure the correct user permissions are used `chown -r gameserver:gameserver serverfiles`
+8. Copy the game server config to the new config file location found in `./gameserver details`
+9. Run update to make sure you are up-to-date `./gameserver update`
+10. Test that the server works.
+11. Once complete delete `serverfilesbak`
