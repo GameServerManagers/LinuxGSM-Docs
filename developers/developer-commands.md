@@ -1,4 +1,4 @@
-# developer-commands
+# Developer Commands
 
 LinuxGSM provides a few commands to help developers.
 
