@@ -1,4 +1,4 @@
-# start-parameters
+# Start Parameters
 
 Servers commonly require start parameters, these are command-line options that are set with the servers executable when you start the server. Current parameters can be found in `./gameserver details`. To alter them, you will need to edit [LinuxGSM config files](https://github.com/GameServerManagers/LinuxGSM/wiki/LinuxGSM-Config).
 
@@ -35,7 +35,7 @@ parms="-game nmrih -strictportbind -ip 91.121.72.41 -port 27015 +clientport 2701
 }
 ```
 
-### Parameters reference
+## Parameters reference
 
 * 7 Days to Die: [http://7daystodie.gamepedia.com/Server](http://7daystodie.gamepedia.com/Server)
 * Gold Source Servers: [https://developer.valvesoftware.com/wiki/Command\_Line\_Options\#Goldsource\_Games](https://developer.valvesoftware.com/wiki/Command_Line_Options#Goldsource_Games)
