@@ -22,7 +22,6 @@ Replace `./gameserver` with the actual script name. Every command has a short ve
 | [Validate](validate.md) | `./gameserver validate` | `./gameserver v` |
 | [Console](console.md) | `./gameserver console` | `./gameserver c` |
 | [Debug](debug.md) | `./gameserver debug` | `./gameserver d` |
-| [Develop](devlop.md) | `./gameserver develop` | `./gameserver dev` |
 
 ## Specific commands
 
