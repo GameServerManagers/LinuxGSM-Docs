@@ -1,24 +1,28 @@
 # details
 
+## details
+
 The `details` command allows access various useful information about the game server.
 
 It gathers details from configs parameters and server querys.
 
-## Commands
+### Commands
 
-### details
+#### details
+
 Standard: `./gameserver details`
 
 Short: `./gameserver dt`
 
-# post-details
-`post-details` (using hastebin) is used to share server details, to help with support, while hiding sensitive information:
+## post-details
+
+`post-details` \(using hastebin\) is used to share server details, to help with support, while hiding sensitive information:
 
 Standard: `./gameserver postdetails`
 
 Short: `./gameserver pd`
 
-## Details Provided
+### Details Provided
 
 Various relevent details are provided including:
 
@@ -33,7 +37,7 @@ Various relevent details are provided including:
 * Backups
 * Server parameters
 
-## Example output
+### Example output
 
 ```text
 Distro Details
@@ -95,3 +99,4 @@ netstat -atunp | grep srcds_linux
 DESCRIPTION  DIRECTION  PORT   PROTOCOL
 > Game/RCON  INBOUND    27015  tcp/udp
 ```
+

@@ -8,7 +8,7 @@ Standard: `./gameserver update`
 
 Short: `./gameserver u`
 
-Update will check for any available update, taking no action if no update is available. If there is an update it will apply the update, restarting the server if already running. 
+Update will check for any available update, taking no action if no update is available. If there is an update it will apply the update, restarting the server if already running.
 
 ## Automatic update
 

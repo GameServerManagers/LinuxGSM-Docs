@@ -9,3 +9,4 @@ The `validate` command will check the server files to make sure they match the S
 Standard: `./gameserver validate`
 
 Short: `./gameserver v`
+

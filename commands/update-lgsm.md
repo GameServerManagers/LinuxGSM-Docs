@@ -9,3 +9,4 @@ It will automatically update LinuxGSM unclusing the `_default.cfg` config file t
 Standard: `./gameserver update-lgsm`
 
 Short: `./gameserver ul`
+

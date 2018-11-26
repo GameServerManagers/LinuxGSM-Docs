@@ -13,3 +13,4 @@ Change password resets the TeamSpeak 3 server query password. The server will re
 Standard: `./gameserver change-password`
 
 Short: `./gameserver pw`
+

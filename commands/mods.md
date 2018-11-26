@@ -30,7 +30,7 @@ Zip add-ons are currently the only supported installations.
 ### For Source Engine Games
 
 * metamod
-* sourcemod (1.8)
+* sourcemod \(1.8\)
 
 ### For Garry's Mod
 
@@ -52,7 +52,7 @@ Zip add-ons are currently the only supported installations.
 
 ### Install
 
-* All available mods are defined in the mods_list.sh.  
+* All available mods are defined in the mods\_list.sh.  
 * Mods hosted on github use the latest archive link available. Others are scraped through a mods download mirrors in order to find the latest version.  
 * If some mods are already installed, a list of installed mods shows up. If a user tries to install a mod that is already installed, there will be a warning that any custom file will be overwritten.  
 * A list of available mods is displayed to the user, including the developers website.  

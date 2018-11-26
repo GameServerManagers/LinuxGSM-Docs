@@ -5,16 +5,20 @@ LinuxGSM provides an easy way to start, stop and restart your game server. Linux
 ## Commands
 
 ### Starting a server
+
 Will start the server in a tmux session allowing the server to run in the background.
 
 `./gameserver start`
 
 ### Stopping a server
+
 Stop will do a graceful shutdown \(sends "quit" command to Source servers for example\) of a server when possible. Failing this it will force stop.
 
 `./gameserver stop`
 
 ### Restarting a server
+
 Will simply stop, then the start the server.
 
 `./gameserver restart`
+

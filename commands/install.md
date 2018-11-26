@@ -3,6 +3,7 @@
 LinuxGSM allows for the simple instalation of game servers. The installer is designed to get a game server to a working state allowing the game server to be started right away.
 
 The installer will:
+
 * Create required directorys
 * Install/advise on required dependencies
 * Download the game server files
@@ -12,6 +13,7 @@ The installer will:
 ## Commands
 
 ### Standard Install
+
 The standard installation is the default instalation method that required user interaction.
 
 Standard: `./gameserver install`
@@ -19,6 +21,7 @@ Standard: `./gameserver install`
 Short: `./gameserver i`
 
 ### Auto Install
+
 Auto install is useful for automatic server deployments as no user prompt is required.
 
 Standard: `./gameserver auto-install`
@@ -35,14 +38,17 @@ Short: `./gameserver ai`
 2. Follow on screen instructions.
 
 ## Install Dependencies
-Installation of dependencies requires either sudo or root access. LinuxGSM can automatically install dependencies if the user has `sudo` or using the `root` user. 
+
+Installation of dependencies requires either sudo or root access. LinuxGSM can automatically install dependencies if the user has `sudo` or using the `root` user.
 
 > note: If dependencies are not installed the server may not start.
 
 ### Dependencies as root
+
 As `root` run `./gameserver install` and the installer will complete a dependency installation only, missing out the other installation steps.
 
 ### Dependecies as sudo user
+
 If a user has sudo access the installer will prmopt to enter the sudo password to automaticly install dependencies. If sudo is not available the installer will advise on the command required to install dependecies.
 
 ## Common Installation Issues

@@ -25,17 +25,15 @@ Game servers traditionally are not easy to manage yourself. Admins often have to
 
 ## Compatibility
 
-LinuxGSM tested on the following Linux distros. 
-Compatibility vary's depending upon the game server.
-Other distros are likely to work but are not tested.
+LinuxGSM tested on the following Linux distros. Compatibility vary's depending upon the game server. Other distros are likely to work but are not tested.
 
 * Debian based \(Ubuntu, Mint etc.\).
-    * Ubuntu 16.04 or newer
-    * Debian 8 or newer
+  * Ubuntu 16.04 or newer
+  * Debian 8 or newer
 * Redhat based \(CentOS, Fedora etc.\).
-    * CentOS 7 or newer
-    * Fedora 20 or newer
-    
+  * CentOS 7 or newer
+  * Fedora 20 or newer
+
 > Note: As a general rule, the newer the distro the better chance of compatability.
 
 ### Specific Requirements

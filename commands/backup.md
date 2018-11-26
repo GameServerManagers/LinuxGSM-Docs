@@ -75,7 +75,7 @@ By default backups are saved in the `backup` directory.
     ├── ** backups **       
     ├── lgsm
     ├── log       
-    ├── serverfiles      
+    ├── serverfiles
 ```
 
 ## Checking Backups
@@ -121,3 +121,4 @@ duplicity-backup.sh is a very useful bash wrapper to help automate duplicity. [h
 Similar to rsync however can easily sync to cloud storage solutions.
 
 [http://rclone.org](http://rclone.org)
+

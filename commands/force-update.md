@@ -13,3 +13,4 @@ Standard: `./gameserver force-update`
 Short: `./gameserver fu`
 
 > note: force-update was previously known as `update-restart`,
+

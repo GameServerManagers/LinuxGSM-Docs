@@ -1,8 +1,8 @@
 # fastdl
 
-FastDL (Fast Download) allows the client to download custom server content (maps, materials, models, particles, sounds, fonts, images) from a web server.
+FastDL \(Fast Download\) allows the client to download custom server content \(maps, materials, models, particles, sounds, fonts, images\) from a web server.
 
-It is used to offload content downloads to a web server instead of relying on source servers (SRCDS) that only allows 20KBps downloads to clients. Content on the web server can be compressed to further speed up the download process. This means that custom content downloads much faster.
+It is used to offload content downloads to a web server instead of relying on source servers \(SRCDS\) that only allows 20KBps downloads to clients. Content on the web server can be compressed to further speed up the download process. This means that custom content downloads much faster.
 
 Valve now use steam workshop for most custom content however FastDL is still required in some cases.
 
@@ -30,19 +30,21 @@ Short: `./gameserver fd`
 
 ## Requirements
 
-* web server on the game server (Apache/Nginx).
-or
-* Access to a remote web server.
+* web server on the game server \(Apache/Nginx\).
 
+  or
+
+* Access to a remote web server.
 
 ## Usage
 
 ### Generate Compressed files
+
 Run the FastDL command on your main LinuxGSM script. This will create a new directory `/home/gameserver/public_html/fastdl`
 
 `./gameserver fastdl`
 
-### Create A virtual Host (local Apache web server) 
+### Create A virtual Host \(local Apache web server\)
 
 If Apache2 is being used a virtual host pointing to the newly created `public_html` directory can be used.
 
@@ -85,10 +87,10 @@ a2ensite yourvirtualhost.com.conf
 service apache2 reload
 ```
 
-Test the domain, to make sure it is working
-`http://subdomain.domain.com/fastdl`
+Test the domain, to make sure it is working `http://subdomain.domain.com/fastdl`
 
 ### Edit Game Server config
+
 The new url will need to be added to the game server config
 
 `nano serverfiles/gamename/cfg/game-server.cfg`
@@ -99,6 +101,7 @@ Make sure you have this :
 sv_downloadurl "http://subdomain.domain.com/fastdl"
 sv_allowdownload 1
 ```
+
 ### Re-generate FastDL
 
 If the custom server content is updated or removed re running the fastdl command is required to ensure that the webserver is in sync with the game server.

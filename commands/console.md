@@ -2,7 +2,7 @@
 
 The `console` command allows access the output of the game server executable. Depending upon which server you are running it can allow you to see the current activity of the game server, check errors in real time, and input commands.
 
-> Note: Different game servers provide different features in console, so results will vary. For example some allow user input and others do not. While some give a very verbose output and others next to nothing (looking at you rust!).
+> Note: Different game servers provide different features in console, so results will vary. For example some allow user input and others do not. While some give a very verbose output and others next to nothing \(looking at you rust!\).
 
 ## Commands
 
