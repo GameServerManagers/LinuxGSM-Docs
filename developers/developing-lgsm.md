@@ -6,7 +6,7 @@ As a user, it will allow you for a better understanding of how LinuxGSM works. A
 
 ## Generalities
 
-LinuxGSM `./gameserver` script is important but is not the core part of the script. The point is to keep it as simple as possible for users to be able to edit it (settings are located in this file) but get most actual functions into script files so that users can update them with `./gameserver update-functions`. Most script routines are done through those functions. Some are global ones for all LinuxGSM servers, while some others are a little more specific. Some checks are based on the "gamename", some others on the "engine". We will get through most of that into this guide.
+LinuxGSM `./gameserver` script is important but is not the core part of the script. The point is to keep it as simple as possible for users to be able to edit it \(settings are located in this file\) but get most actual functions into script files so that users can update them with `./gameserver update-functions`. Most script routines are done through those functions. Some are global ones for all LinuxGSM servers, while some others are a little more specific. Some checks are based on the "gamename", some others on the "engine". We will get through most of that into this guide.
 
 ### Main Executable
 
@@ -24,9 +24,9 @@ All working directories are set through variables.
 
 * ${rootdir} \| The top level directory for LinuxGSM
 * \|\_\_ ${lgsmdir} \| lgsm \|Contains all LinuxGSM related files
-* \|_\_\__ ${functionsdir} \| functions \| All LinuxGSM script functions
-* \|_\_\__ ${libdir} \| lib \| any lib files required for game servers
-* \|_\_\__ ${tmpdir} \| tmp \| Temp directory
+* \|_\_\_\_ ${functionsdir} \| functions \| All LinuxGSM script functions
+* \|_\_\_\_ ${libdir} \| lib \| any lib files required for game servers
+* \|_\_\_\_ ${tmpdir} \| tmp \| Temp directory
 * \|\_ ${serverfiles} \| serverfiles \| the game server files \(binary,maps, models etc\)
 * \|\_ ${backupdir} \| backups \| Backups are saved here
 * \|\_ ${scriptlogdir} \| "${rootdir}/log/script" \| Contains LinuxGSM logs

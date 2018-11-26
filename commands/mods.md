@@ -27,12 +27,12 @@ Zip add-ons are currently the only supported installations.
 
 \(This list was last updated on 2017-01-28\)
 
-### For Source Engine Games
+### Source Engine Games
 
 * metamod
 * sourcemod \(1.8\)
 
-### For Garry's Mod
+#### For Garry's Mod
 
 * ACF
 * ACF Missiles
@@ -44,7 +44,9 @@ Zip add-ons are currently the only supported installations.
 * ULX
 * UTime
 
-### For Unity3D \(Rust/Hurtworld/7 Days To Die\)
+### Unity3D Games
+
+Rust, Hurtworld, 7 Days To Die
 
 * Oxide Mod
 

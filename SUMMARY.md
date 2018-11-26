@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Home](README.md)
+* [LinuxGSM Documentation](README.md)
 * [Getting Started](getting-started.md)
 * [Commands](commands/README.md)
   * [install](commands/install.md)
@@ -20,7 +20,7 @@
   * [fastdl](commands/fastdl.md)
   * [change-password](commands/change-password.md)
 * [Configuration](configuration/README.md)
-  * [start-parameters](configuration/start-parameters.md)
+  * [Start Parameters](configuration/start-parameters.md)
   * [Game Server Config](configuration/game-server-config.md)
   * [LinuxGSM Config](configuration/linuxgsm-config.md)
 * [Game Servers](game-servers/README.md)

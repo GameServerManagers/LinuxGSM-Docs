@@ -15,3 +15,4 @@ After investigating this issue is was found that it is possible to run a server 
 ## Updating CoD4x
 
 CoD4x has its own update functionality. It will automatically check for updates and does not require LinuxGSM to check for updates.
+

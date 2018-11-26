@@ -1,6 +1,10 @@
-# Home
+---
+description: >-
+  This documentation covers the basics of using LinuxGSM. For more info on
+  LinuxGSM and the install guide visit linuxgsm.com
+---
 
-> Note: We are currently migrating the docs from the GitHub [Wiki](http://linuxgsm.com/wiki) to a new [docs](https://docs.linuxgsm.com) plaform.
+# LinuxGSM Documentation
 
 ![](.gitbook/assets/linuxgsm_colour_logo_wordmark_512-1.png)
 
@@ -34,7 +38,9 @@ LinuxGSM tested on the following Linux distros. Compatibility vary's depending u
   * CentOS 7 or newer
   * Fedora 20 or newer
 
-> Note: As a general rule, the newer the distro the better chance of compatability.
+{% hint style="info" %}
+As a general rule, the newer the distro the better chance of compatibility.
+{% endhint %}
 
 ### Specific Requirements
 

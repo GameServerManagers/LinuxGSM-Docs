@@ -1,6 +1,6 @@
 # backup
 
-The `backup` command will allows the creation of .tar.gz archives of a game server. This can be used to transfer a server to another Linux server, to backup the game server before a risky change, to save the current state of the game server.
+The `backup` command will allows the creation of `.tar.gz` archives of a game server. This can be used to transfer a game server to another Linux server, to backup the game server before a risky change, to save the current state of the game server.
 
 {% hint style="danger" %}
 Each time a backup runs the whole game server will be backed up, this can take up significant storage space. Consider a backup policy to prevent your Linux server from running out of storage.
@@ -23,7 +23,7 @@ Warning! mumble-server will be stopped during the backup.
 [  OK  ] Backup mumble-server: Backup created: mumble-server-2016-10-28-194346.tar.gz is 36M size
 ```
 
-## Backup settings
+## Backup Settings
 
 Alter these three settings by editing LinuxGSM configs.
 
@@ -35,7 +35,9 @@ Set the maximum number of backups with `maxbackups`. If the number of backups ex
 maxbackups="4"
 ```
 
-> Note: Setting the value to 0 will prevent any backups from being saved, including the one just created.
+{% hint style="info" %}
+Setting the value to 0 will prevent any backups from being saved, including the one just created.
+{% endhint %}
 
 ### maxbackupdays
 
@@ -45,7 +47,9 @@ Set the maximum age of a backup using `maxbackupdays`. Any backups older than X 
 maxbackupdays="30"
 ```
 
-> Note: Setting the value to 0 will retain the backup for 24 hours.
+{% hint style="info" %}
+Setting the value to 0 will retain the backup for 24 hours.
+{% endhint %}
 
 ### stoponbackup
 
@@ -55,16 +59,20 @@ Set if the server should be stopped for a backup using `stoponbackup`. If the se
 stoponbackup="on"
 ```
 
-## Automated backups
+## Automated Backups
 
-Automated backups can be set using cronjobs. It is recommended that frequently you backup and your retention policy to prevent your server is carefully considered to prevent storage issues.
+Automated backups can be set using [cronjobs](../to-do/cronjobs.md). It is recommended that frequently you backup and your retention policy to prevent your server is carefully considered to prevent storage issues.
 
-### Root cronjob example
+### cronjob example
+
+see [cronjobs](../to-do/cronjobs.md)
 
 ```bash
 crontab -e
+```
 
-0 5 * * *  su - username -c '/home/username/gameserver backup' > /dev/null 2>&1
+```bash
+0 5 * * *  /home/username/gameserver backup > /dev/null 2>&1
 ```
 
 ## Backups Location
@@ -100,7 +108,7 @@ Serverfiles:     1.6G
 Backups:         6.2G
 ```
 
-## Alternative backup Methods
+## Alternative Backup Methods
 
 Using the backup feature is not the only way to backup a game server. There are other methods that have more features are are more powerful than the basic LinuxGSM backup feature. Below are are few applications that can be used instead of, or with LinuxGSM backups.
 
@@ -108,19 +116,23 @@ Using the backup feature is not the only way to backup a game server. There are 
 
 rsync is one of the most common ways to backup. It is a remote sync tool that is created for sending files/directory's to another location. Particularly good for syncing to another server.
 
-[https://www.digitalocean.com/community/tutorials/how-to-use-rsync-to-sync-local-and-remote-directories-on-a-vps](https://www.digitalocean.com/community/tutorials/how-to-use-rsync-to-sync-local-and-remote-directories-on-a-vps)
+{% embed url="https://www.linode.com/docs/tools-reference/tools/introduction-to-rsync" %}
 
 ### Duplicity
 
-Is an incremental backup solution that allows backups to all sorts of different locations including many different cloud storage solutions like BackBlaze B2 and Amazon S3. Once configured it can be a powerful and efficient backup solution. [http://duplicity.nongnu.org](http://duplicity.nongnu.org)
+Is an incremental backup solution that allows backups to all sorts of different locations including many different cloud storage solutions like BackBlaze B2 and Amazon S3. Once configured it can be a powerful and efficient backup solution. 
+
+{% embed url="http://duplicity.nongnu.org" %}
 
 #### duplicity-backup.sh
 
-duplicity-backup.sh is a very useful bash wrapper to help automate duplicity. [https://github.com/zertrin/duplicity-backup.sh](https://github.com/zertrin/duplicity-backup.sh)
+duplicity-backup.sh is a very useful bash wrapper to help automate duplicity. 
+
+{% embed url="https://github.com/zertrin/duplicity-backup.sh" %}
 
 ### rclone
 
 Similar to rsync however can easily sync to cloud storage solutions.
 
-[http://rclone.org](http://rclone.org)
+{% embed url="http://rclone.org" %}
 

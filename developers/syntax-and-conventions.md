@@ -1,4 +1,4 @@
-# Syntax and Conventions
+# syntax-and-conventions
 
 In order to make LinuxGSM as coherent as possible, we adopted some code conventions to follow.  
 Here are some of them.

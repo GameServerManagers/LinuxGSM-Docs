@@ -55,7 +55,7 @@ If a user has sudo access the installer will prompt to enter the sudo password t
 
 ## Common Installation Issues
 
-### Permissions Issues
+### User Permission Issues
 
 LinuxGSM may fail to run if the correct permissions have not been used. This fault commonly occurs if an admin has not correctly followed installation instructions found on [https://linuxgsm.com](https://linuxgsm.com)
 
@@ -81,7 +81,7 @@ drwxrwxr-x  8 nmrihserver nmrihserver 4096 Aug 19 16:00 Steam
 drwxrwxr-x  6 nmrihserver nmrihserver 4096 Aug 19 16:00 steamcmd
 ```
 
-If some files/directorys are not owned use the `chown` command to correct this. Login as `root` and use the following command; changing the details to match your server
+If some files/directory's are not owned use the `chown` command to correct this. Login as `root` and use the following command; changing the details to match your server
 
 `chown -R username:username /home/gameserver`
 
@@ -99,15 +99,15 @@ If downloading is still failing it may be worth contacting your server provider 
 
 It is also worth searching the internet for issues relating to the error message you receive.
 
-### Not Enough Disk Space
+### Not Enough Storage
 
 Some game servers take up a significant amount of disk space. If you are having issues downloading check that your server has enough space available.
 
 To check your available storage, use:
 
-`df -h` or \`./gameserver details
+`df -h` or `./gameserver details`
 
-#### DNS Issue
+### DNS Issue
 
 Make sure you can `ping` using a hostname.
 

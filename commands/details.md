@@ -1,20 +1,16 @@
 # details
 
-## details
+The `details` command allows access various useful information about the game server. Details are gathered from configs, parameters and server queries.
 
-The `details` command allows access various useful information about the game server.
+## Commands
 
-It gathers details from configs parameters and server querys.
-
-### Commands
-
-#### details
+### details
 
 Standard: `./gameserver details`
 
 Short: `./gameserver dt`
 
-## post-details
+### post-details
 
 `post-details` \(using hastebin\) is used to share server details, to help with support, while hiding sensitive information:
 
@@ -22,9 +18,9 @@ Standard: `./gameserver postdetails`
 
 Short: `./gameserver pd`
 
-### Details Provided
+## Details Provided
 
-Various relevent details are provided including:
+Various relevant details are provided including:
 
 * Distro Details
 * Performance
@@ -37,7 +33,7 @@ Various relevent details are provided including:
 * Backups
 * Server parameters
 
-### Example output
+## Example output
 
 ```text
 Distro Details
