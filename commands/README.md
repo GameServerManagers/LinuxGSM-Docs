@@ -11,17 +11,18 @@ Replace `./gameserver` with the actual script name. Every command has a short ve
 | [Start](start-stop-restart.md#starting-a-server) | `./gameserver start` | `./gameserver st` |
 | [Stop](start-stop-restart.md#stopping-a-server) | `./gameserver stop` | `./gameserver sp` |
 | [Restart](start-stop-restart.md#restarting-a-server) | `./gameserver restart` | `./gameserver r` |
+| [Details](details.md) | `./gameserver details` | `./gameserver dt` |
+| [Post Details](details.md#post-details) | `./gameserver postdetails` | `./gameserver pd` |
+| [Backup](backup.md) | `./gameserver backup` | `./gameserver b` |
+| [Update LinuxGSM](update-lgsm.md) | `./gameserver update-lgsm` | `./gameserver ul` |
 | [Monitor](monitor.md) | `./gameserver monitor` | `./gameserver m` |
 | [Test Alert](test-alert.md) | `./gameserver test-alert` | `./gameserver ta` |
-| [Details](details.md) | `./gameserver details` | `./gameserver dt` |
-| Post Details | `./gameserver postdetails` | `./gameserver pd` |
-| [Update LinuxGSM](update-lgsm.md) | `./gameserver update-lgsm` | `./gameserver ul` |
 | [Update](update.md) | `./gameserver update` | `./gameserver u` |
 | [Force Update](force-update.md) | `./gameserver force-update` | `./gameserver fu` |
 | [Validate](validate.md) | `./gameserver validate` | `./gameserver v` |
-| [Backup](backup.md) | `./gameserver backup` | `./gameserver b` |
 | [Console](console.md) | `./gameserver console` | `./gameserver c` |
 | [Debug](debug.md) | `./gameserver debug` | `./gameserver d` |
+| [Develop](devlop.md) | `./gameserver develop` | `./gameserver dev` |
 
 ## Specific commands
 
