@@ -1,16 +1,25 @@
 # install
 
-One of the main advantages for LinuxGSM is that will install the game server for the admin. The installer will be the first thing an admin will run when getting started with a server.
+LinuxGSM allows for the simple instalation of game servers. The installer is designed to get a game server to a working state allowing the game server to be started right away.
+
+The installer will:
+* Create required directorys
+* Install/advise on required dependencies
+* Download the game server files
+* Load config files
+* Apply any fixes required to get the game server working
 
 ## Commands
 
-### Normal Install
+### Standard Install
+The standard installation is the default instalation method that required user interaction.
 
 Standard: `./gameserver install`
 
 Short: `./gameserver i`
 
 ### Auto Install
+Auto install is useful for automatic server deployments as no user prompt is required.
 
 Standard: `./gameserver auto-install`
 
@@ -25,19 +34,30 @@ Short: `./gameserver ai`
 1. Run the install command: `./gameserver install` or `./gameserver auto-install` to bypass any prompts.
 2. Follow on screen instructions.
 
-## Common installation issues
+## Install Dependencies
+Installation of dependencies requires either sudo or root access. LinuxGSM can automatically install dependencies if the user has `sudo` or using the `root` user. 
 
-### Permissions issues
+> note: If dependencies are not installed the server may not start.
+
+### Dependencies as root
+As `root` run `./gameserver install` and the installer will complete a dependency installation only, missing out the other installation steps.
+
+### Dependecies as sudo user
+If a user has sudo access the installer will prmopt to enter the sudo password to automaticly install dependencies. If sudo is not available the installer will advise on the command required to install dependecies.
+
+## Common Installation Issues
+
+### Permissions Issues
 
 LinuxGSM may fail to run if the correct permissions have not been used. This fault commonly occurs if an admin has not correctly followed installation instructions found on [https://linuxgsm.com](https://linuxgsm.com)
 
 Common faults include:
 
 * trying to install the LinuxGSM as root.
-* Trying to install LinuxGSM in a directory not owned by the correct user
+* Trying to install LinuxGSM in a directory not owned by the correct user.
 * not making `gameserver` file executable using the `chmod +x` command.
 
-if you try to run as root LinuxGSM will fail to run. See [FAQ](https://github.com/GameServerManagers/LinuxGSM/wiki/FAQ#can-i-run-a-server-as-root)
+if trying to run as root LinuxGSM will fail to run. See FAQ.
 
 To check the correct user owns the directory or `gameserver` file use `ls -al`
 
@@ -53,17 +73,17 @@ drwxrwxr-x  8 nmrihserver nmrihserver 4096 Aug 19 16:00 Steam
 drwxrwxr-x  6 nmrihserver nmrihserver 4096 Aug 19 16:00 steamcmd
 ```
 
-If some files/directorys are not owned use the `chown` command to correct this. Login as root and use the following command; changing the details to match your server
+If some files/directorys are not owned use the `chown` command to correct this. Login as `root` and use the following command; changing the details to match your server
 
 `chown -R username:username /home/gameserver`
 
 `chown -R csgoserver:csgoserver /home/csgoserver`
 
-#### Bad network to Steam servers
+#### Poor Network Connection to Steam servers
 
-If your connection to the Steam servers are bad \(quite common\), SteamCMD download can fail. This is why LinuxGSM will always ask you if installation was successful allowing admins to retry the download if it fails.
+If the connection to the Steam servers is poor \(quite common\), SteamCMD download can fail. This is why LinuxGSM will always ask you if installation was successful allowing admins to retry the download should it fail.
 
-If you you are having issues downloading try the \[\[validate\]\] option.
+If there are still issues downloading try the \[\[validate\]\] option.
 
 `./gameserver validate`
 
@@ -71,19 +91,19 @@ If downloading is still failing it may be worth contacting your server provider 
 
 It is also worth searching the internet for issues relating to the error message you receive.
 
-### Not enough disk space
+### Not Enough Disk Space
 
-Some game servers do use significant disk space. If you are having issues downloading check that your server has enough space available
+Some game servers take up a significant amount of disk space. If you are having issues downloading check that your server has enough space available.
 
-To check your disk remaining space, use:
+To check your available storage, use:
 
 `df -h` or \`./gameserver details
 
 #### DNS Issue
 
-Make sure you can `ping` using a hostname
+Make sure you can `ping` using a hostname.
 
 `ping google.com`
 
-should this fail your server may not have DNS lookup correctly configured. [https://www.cyberciti.biz/faq/linux-setup-dns-lookup/](https://www.cyberciti.biz/faq/linux-setup-dns-lookup/)
+Should this fail your server may not have DNS lookup correctly configured. [https://www.cyberciti.biz/faq/linux-setup-dns-lookup/](https://www.cyberciti.biz/faq/linux-setup-dns-lookup/)
 

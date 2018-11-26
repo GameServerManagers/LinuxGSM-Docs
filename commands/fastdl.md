@@ -1,8 +1,10 @@
 # fastdl
 
-FastDL for "fast download" allows the client to download custom server content \(maps, materials, models, particles, sounds, fonts, images\) from a web server.
+FastDL (Fast Download) allows the client to download custom server content (maps, materials, models, particles, sounds, fonts, images) from a web server.
 
-It is used to offload content downloads to a web server instead of relying on source servers \(SRCDS\) that only allows 20KBps downloads to clients. Secondly content on the web server can be compressed to further speed up the download process. This means that custom content downloads much faster.
+It is used to offload content downloads to a web server instead of relying on source servers (SRCDS) that only allows 20KBps downloads to clients. Content on the web server can be compressed to further speed up the download process. This means that custom content downloads much faster.
+
+Valve now use steam workshop for most custom content however FastDL is still required in some cases.
 
 LinuxGSM FastDL automatically creates the web directories and compresses the content for you.
 
@@ -16,57 +18,55 @@ Standard: .`/gameserver fastdl`
 
 Short: `./gameserver fd`
 
+## Supported file formats
+
+* Maps \(.bsp\)
+* Materials \(.vtf, .vmt\)
+* Models \(.vtx, .vvd, .mdl, .phy\)
+* Particles \(.pcf\)
+* Sounds \(.wav, .mp3, .ogg\)
+* Fonts \(.otf, .ttf\)
+* Images \(.png\)
+
 ## Requirements
 
-* HTTP server onto the game server \(easiest\)
+* web server on the game server (Apache/Nginx).
+or
+* Access to a remote web server.
 
-OR
-
-* FTP\|\|SCP\|\|SFTP + HTTP server on a remote server
 
 ## Usage
 
-**1\) Run the FastDL command on your main LinuxGSM script :**
+### Generate Compressed files
+Run the FastDL command on your main LinuxGSM script. This will create a new directory `/home/gameserver/public_html/fastdl`
 
-`./gameserver fastdl` or the short version `./gameserver fd`
+`./gameserver fastdl`
 
-If you're using an older LinuxGSM installation, run `./gameserver update-lgsm` or `./gameserver ul` to get the new FastDL feature.
+### Create A virtual Host (local Apache web server) 
 
-This will create a new folder in your game server's directory : public\_html/fastdl
+If Apache2 is being used a virtual host pointing to the newly created `public_html` directory can be used.
 
-That way, you can make another folder into the public\_htmlfolder if you need to, like public\_html/loadingurl
+Tip: Apache2 mod "userdir" is useful if the Linux erver is hosting multiple game servers, as it creates a url for the current user `http://yourwebsite.ltd/~username`.
 
-**2\) Share FastDL content with an HTTP server**
+#### Tutorial on setup of Apache2 server with Virtual Hosts
 
-If you're used to Apache2 and running websites , then that step is pretty straight forward :
+Here is an example of setting up Apache2 using a subdomain.
 
-**a\)** Make a new virtual host pointing to /home/youruser/public\_html, using a domain or subdomain
+This works for Apache 2.4+ and when using a domain name. If you have got a different configuration, refer to the Apache2 documentation.
 
-Note : Apache2's mod "userdir" is a clever way if your server will run many game servers. Make it so that every "public\_html" folder from every user has its website, which will be accessible with an address like [http://yourwebsite.ltd/~username](http://yourwebsite.ltd/~username)
-
-**b\)** Go to step 3
-
-**Help**
-
-> "I'm no web admin !! HOWDOIDO ?!"
-
-Here is an example using a subdomain.
-
-**This works for Apache 2.4+ and when using a domain name. If you've got a different configuration, please, refer to Apache2's documentation. Remember to not be a dumbass and use google wisely before crying on github.** If you don't own a domain, then you should really consider getting one, it starts for a few bucks per year.
-
-Before anything, make sure your subdomain redirects to your game server and that Apache2 is correctly installed and started. First, create a virtual host in order to be able to host a website :
+Firstly make sure your subdomain redirects to your game server and that Apache2 is correctly installed and started. Create a virtual host in order to be able to host a website :
 
 `nano /etc/apache2/sites-available/yourvirtualhost.com.conf`
 
-Edit everything between brackets {} \(and remove the brackets\) and paste this :
+See the example below and edit the relevent details.
 
 ```text
 <VirtualHost *:80>
-        ServerAdmin {adminemail@mail.com}
-        ServerName {subdomain.domain.com}
-        ServerAlias {subdomain.domain.com}
-        DocumentRoot /home/{youruser}/public_html
-        <Directory /home/{youruser}/public_html>
+        ServerAdmin adminemail@domain.com
+        ServerName subdomain.domain.com
+        ServerAlias subdomain.domain.com
+        DocumentRoot /home/gameserver/public_html
+        <Directory /home/gameserver/public_html>
                 Options Indexes FollowSymLinks MultiViews
                 AllowOverride All
                 Require all granted
@@ -78,18 +78,18 @@ Edit everything between brackets {} \(and remove the brackets\) and paste this :
 </VirtualHost>
 ```
 
-Then enable your website and restart apache2
+Enable your website by restarting Apache2
 
 ```text
 a2ensite yourvirtualhost.com.conf
 service apache2 reload
 ```
 
-Test your address, you be able to access files with a link like that :
+Test the domain, to make sure it is working
+`http://subdomain.domain.com/fastdl`
 
-[http://subdomain.domain.com/fastdl](http://subdomain.domain.com/fastdl)
-
-**3\) Edit your game config to use the FastDL Link**
+### Edit Game Server config
+The new url will need to be added to the game server config
 
 `nano serverfiles/gamename/cfg/game-server.cfg`
 
@@ -97,40 +97,19 @@ Make sure you have this :
 
 ```text
 sv_downloadurl "http://subdomain.domain.com/fastdl"
-sv_allowdownload 0
+sv_allowdownload 1
 ```
+### Re-generate FastDL
 
-`sv_allowdownload 0` disables client downloading using SRCDS which is slow, and which you want to do using FastDL.
+If the custom server content is updated or removed re running the fastdl command is required to ensure that the webserver is in sync with the game server.
 
-### Features and settings
+> Note for addons developers : Note that clients won't download a file that they already downloaded unless you rename it.
 
-#### Clear old FastDL files
+### Bzip2 Compression
 
-It's required to clear the old FastDL folder in 2 cases :
+Custom server content can be compressed using bzip2 which is supported by source games, allowing clients downloads will be faster. It is a must-have if you're hosting large files, as it will save you bandwidth, and speed up downloads for clients. However, using bzip2 on many small files can slow down client loading times.
 
-1\) If you want to clean files that are no longer into the server content
+#### Garry's Mod Download enforcer
 
-2\) If some files changed and you're using bzip2 compression.
-
-Important note for addons developers : Note that clients won't download a file that they already downloaded unless you rename it.
-
-#### bzip2 compression
-
-You can compress your files using bzip2 which is supported by source games. That way, clients downloads will be faster. It's a must-have if you're hosting big files, will save you some bandwidth, and will make downloads faster for your clients. Howerver, slow client's machine may be slowed down a bit if you're using it for small files only.
-
-#### Supported file formats
-
-* Maps \(.bsp\)
-* Materials \(.vtf, .vmt\)
-* Models \(.vtx, .vvd, .mdl, .phy\)
-* Particles \(.pcf\)
-* Sounds \(.wav, .mp3, .ogg\)
-* Fonts \(.otf, .ttf\)
-* Images \(.png\)
-
-#### Garry's Mod special features
-
-**Download enforcer**
-
-In order for a client to download files from a FastDL in Garry's Mod, the developer of an addon must put "resource.Addfile \( "/path/to/file.ext" \) for every file from his addon into its lua code. Some of them don't bother with that. So in order for clients to download the required files, it is then needed to generate a lua file for that to work, and this is what the lua enforcer feature does. The only possible downside is that clients may download non required files as well.
+In order for a client to download files from a FastDL in Garry's Mod, the developer of an addon must put very file from the addon into lua code `resource.Addfile ( "/path/to/file.ext" )`. However, some addon developers do not do this. In order for clients to download the required files, an lue file need to be generated for it to work, which is what the lua enforcer feature does. The only downside is that clients may download files that are not required on the server.
 

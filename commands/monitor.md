@@ -1,8 +1,10 @@
 # monitor
 
-The `monitor` command checks that a server is up and running and restarts the server should it not be responding after several unsuccessful queries.
+The `monitor` command checks that a server is up and running and restarts the server should it not be responding after several unsuccessful queries
 
-> Note: If the server was stopped manually, then `monitor` will not function until manually started.
+Monitor uses different checks to ensure the server is running, first checking the server proccess is running then using gamedig or gsquery to confirm the game server is responding.
+
+> Note: If the server was stopped manually, then `monitor` will not function until the server is manually started again.
 
 ## Commands
 
@@ -38,7 +40,7 @@ To learn more about automation, see \[\[Cronjobs\]\]
 
 ## Alert Notifications
 
-If you wish to be notified when a server fails you can setup alert notifications, see \[\[Email\]\] and \[\[Pushbullet\]\].
+To be notified when a server fails alert notifications can be setup , see \[\[Alerts\]\].
 
 ## Boot startup
 
@@ -46,9 +48,9 @@ You can use monitor to run your server at boot under certain conditions. See \[\
 
 ## How does monitor work?
 
-Monitor will first check if the server process \(or tmux session\) is running. If it is, it will then attempt to query the server using \[\[gsquery.py\]\]. Should this fail to query it will attempt to query every 15 seconds over 60 second period. Should this fail the server will be rebooted.
+Monitor will first check if the server process \(or tmux session\) is running. If it is, it will then attempt to query the server using \[\[gamedig\]\] or \[\[gsquery.py\]\]. Should this fail to query it will attempt to query every 15 seconds over 60 second period. Should this fail the server will be rebooted.
 
-The monitor will wait for 60 seconds because it is common for servers to stop responding to queries during a map change. This wait prevents monitor from rebooting a server that does not require it.
+The monitor will wait for 60 seconds as it is common for servers to stop responding to queries during a map change. This wait prevents monitor from rebooting a server that does not require it.
 
 > Note: During server start, map change, workshop downloads, the server is unable to answer queries.
 

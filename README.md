@@ -25,7 +25,7 @@ Game servers traditionally are not easy to manage yourself. Admins often have to
 
 ## Compatibility
 
-The Linux Game Server Managers are tested on the following Linux distros. 
+LinuxGSM tested on the following Linux distros. 
 Compatibility vary's depending upon the game server.
 Other distros are likely to work but are not tested.
 
@@ -40,16 +40,16 @@ Other distros are likely to work but are not tested.
 
 ### Specific Requirements
 
-* [GLIBC](requirements/glibc.md) &gt;= 2.18 recommended \[[specific requirements](requirements/glibc.md#server-requirements)\].
-* [Tmux](requirements/tmux.md) &gt;= 1.6 recommended \([Avoid Tmux 1.8](requirements/tmux.md#tmux-1-8)\).
+* [GLIBC](requirements/glibc.md)  2.18 or greater is recommended \[[specific requirements](requirements/glibc.md#server-requirements)\].
+* [Tmux](requirements/tmux.md) 1.6 or greater is recommended \([Avoid Tmux 1.8](requirements/tmux.md#tmux-1-8)\).
 
 ## FAQ
 
-Check out the [FAQ](support/faq.md) for common questions
+Check out the [FAQ](support/faq.md) for answers to common questions.
 
 ## Donate
 
-LinuxGSM accepts donations, you can donate several days. I have had a may kind people show their support by sending me a donation. Any donations you send help cover my server costs and buy me a drink. Cheers!
+If you would like to support LinuxGSM development, use the link below to send a donation.
 
 * [Donate](https://linuxgsm.com/donate)
 
@@ -72,5 +72,4 @@ Looking for help? These docs are a great place to start. Support is also availab
 * [Discord](https://linuxgsm.com/discord)
 * [Twitter](https://twitter.com/linuxgsm)
 * [Facebook](https://www.facebook.com/linuxgsm)
-* [Google+](https://plus.google.com/+Gameservermanagers1)
 
