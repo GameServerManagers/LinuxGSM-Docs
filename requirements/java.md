@@ -8,7 +8,7 @@ Some game servers require using Java Runtime Environment \(JRE\) such as Minecra
 
 To install the most up to date JRE for your distro run the following: `apt install default-jre` Or to select openjdk, run the following changing the version number: `apt install openjdk-8-jre` 
 
-Alternatively on Ubuntu you can use webupd8 PPA to download and install Oracle's Java. This is required for some Java profiling tools as those tools only use Oracle's JDK. You can view the instructions on how \[here\]\(http://www.webupd8.org/2012/09/install-oracle-java-8-in-ubuntu-via-ppa.html\) Debian can follow webupd8 guide \[here\]\(http://www.webupd8.org/2014/03/how-to-install-oracle-java-8-in-debian.html\)
+Alternatively on Ubuntu you can use webupd8 PPA to download and install Oracle's Java. This is required for some Java profiling tools as those tools only use Oracle's JDK. You can view the instructions on how [here](http://www.webupd8.org/2012/09/install-oracle-java-8-in-ubuntu-via-ppa.html) Debian can follow webupd8 guide [here](http://www.webupd8.org/2014/03/how-to-install-oracle-java-8-in-debian.html)
 
 ### CentOS/Fedora
 
