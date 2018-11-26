@@ -4,7 +4,9 @@ The `monitor` command checks that a server is up and running and restarts the se
 
 Monitor uses different checks to ensure the server is running, first checking the server process is running then using [gamedig](../requirements/gamedig.md) or [gsquery](../developers/gsquery.py.md) to confirm the game server is responding.
 
-> Note: If the server was stopped manually, then `monitor` will not function until the server is manually started again.
+{% hint style="info" %}
+If the server was stopped manually, then `monitor` will not function until the server is manually started again.
+{% endhint %}
 
 ## Commands
 

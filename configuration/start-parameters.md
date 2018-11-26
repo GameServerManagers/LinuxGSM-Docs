@@ -2,7 +2,7 @@
 
 Servers commonly require start parameters, these are command-line options that are set with the servers executable when you start the server. Current parameters can be found in `./gameserver details`. To alter them, you will need to edit [LinuxGSM config files](https://github.com/GameServerManagers/LinuxGSM/wiki/LinuxGSM-Config).
 
-The LinuxGSM prefers to use config files over parameters as much as possible. Sometimes this is not possible if not possible and parameters or a mixture of both will be used. LinuxGSM also attempts to keep the same method between game servers of the same engine to allow consistency between game servers.
+LinuxGSM prefers to use config files over parameters as much as possible. However sometimes this is not possible, win which case only parameters or a mixture of both config and parameters will be used. LinuxGSM also attempts to keep the same method between game servers of the same engine to allow consistency between game servers.
 
 ## Pre-defined start parameters
 
@@ -22,11 +22,11 @@ clientport="27005"
 
 Additional command-line parameters can be added to the parms variable. Anything added will be appended to the server executable binary.
 
-_Parms Variable_ `parms="-game nmrih"`
+Parms Variable `parms="-game nmrih"`
 
-_Executable_ `./srcds_run -game nmrih`
+Executable `./srcds_run -game nmrih`
 
-_Full Parms Example_
+Full Parms Example
 
 ```text
 ## Server Start Parameters | https://github.com/GameServerManagers/LinuxGSM/wiki/Start-Parameters

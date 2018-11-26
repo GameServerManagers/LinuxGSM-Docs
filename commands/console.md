@@ -2,7 +2,13 @@
 
 The `console` command allows access the output of the game server executable. Depending upon which server you are running it can allow you to see the current activity of the game server, check errors in real time, and input commands.
 
-> Note: Different game servers provide different features in console, so results will vary. For example some allow user input and others do not. While some give a very verbose output and others next to nothing \(looking at you rust!\).
+{% hint style="info" %}
+Some game servers provide a verbose output in console while others do not.
+{% endhint %}
+
+{% hint style="info" %}
+Some game servers can be managed from the console and others do not.
+{% endhint %}
 
 ## Commands
 
@@ -18,9 +24,13 @@ Answer **y** at the prompt.
 
 To exit the console: Press **CTRL + b**, then, press **d**
 
-> Take your time with this as it can be confusing at first.
+{% hint style="success" %}
+Take your time as this can be confusing at first.
+{% endhint %}
 
-### Do not exit the console using CTRL+c
+{% hint style="danger" %}
+Pressing `CTRL+c` while in console will kill the tmux session, stopping the game server.
+{% endhint %}
 
-Pressing `CTRL+c` while in console will instantly kill the tmux session, stopping the game server.
+
 

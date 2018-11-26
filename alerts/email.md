@@ -2,8 +2,6 @@
 
 ![](http://i.imgur.com/kP4Doap.png)
 
-![Email Alert](https://linuxgsm.com/wp-content/uploads/2016/01/lgsm-monitor.png)
-
 ## Sending emails
 
 LinuxGSM will send an email using the `mail` command.

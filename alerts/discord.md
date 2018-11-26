@@ -1,6 +1,8 @@
+---
+description: Receive alerts to a Discord channel
+---
+
 # Discord
-
-
 
 ![](../.gitbook/assets/discord_logo-1.png)
 

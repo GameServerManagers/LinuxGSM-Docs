@@ -1,10 +1,10 @@
 # install
 
-LinuxGSM allows for the simple instalation of game servers. The installer is designed to get a game server to a working state allowing the game server to be started right away.
+LinuxGSM allows for the simple installation of game servers. The installer is designed to get a game server to a working state allowing the game server to be started right away.
 
 The installer will:
 
-* Create required directorys
+* Create required directory's
 * Install/advise on required dependencies
 * Download the game server files
 * Load config files
@@ -14,7 +14,7 @@ The installer will:
 
 ### Standard Install
 
-The standard installation is the default instalation method that required user interaction.
+The standard installation is the default installation method that required user interaction.
 
 Standard: `./gameserver install`
 
@@ -39,17 +39,19 @@ Short: `./gameserver ai`
 
 ## Install Dependencies
 
-Installation of dependencies requires either sudo or root access. LinuxGSM can automatically install dependencies if the user has `sudo` or using the `root` user.
+Installation of dependencies requires either `sudo` or root access. LinuxGSM can automatically install dependencies if the user has `sudo` or using the `root` user.
 
-> note: If dependencies are not installed the server may not start.
+{% hint style="warning" %}
+If dependencies are not installed the server may not start.
+{% endhint %}
 
 ### Dependencies as root
 
 As `root` run `./gameserver install` and the installer will complete a dependency installation only, missing out the other installation steps.
 
-### Dependecies as sudo user
+### Dependencies as sudo user
 
-If a user has sudo access the installer will prmopt to enter the sudo password to automaticly install dependencies. If sudo is not available the installer will advise on the command required to install dependecies.
+If a user has sudo access the installer will prompt to enter the sudo password to automatically install dependencies. If sudo is not available the installer will advise on the command required to install dependencies.
 
 ## Common Installation Issues
 
@@ -109,7 +111,9 @@ To check your available storage, use:
 
 Make sure you can `ping` using a hostname.
 
-`ping google.com`
+```text
+ping google.com
+```
 
 Should this fail your server may not have DNS lookup correctly configured. [https://www.cyberciti.biz/faq/linux-setup-dns-lookup/](https://www.cyberciti.biz/faq/linux-setup-dns-lookup/)
 

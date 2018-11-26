@@ -6,9 +6,7 @@ Most servers require a specific version of glibc installed. Newer distros normal
 
 ## Server Requirements
 
-A complete list can be found here:
-
-[https://linuxgsm.com/list/](https://linuxgsm.com/list/)
+A complete list can be found [here](https://linuxgsm.com/data/glibc).
 
 ## Distro glibc Versions
 

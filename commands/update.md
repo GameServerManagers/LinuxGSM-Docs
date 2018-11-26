@@ -1,6 +1,6 @@
 # update
 
-LinuxGSM comes with an game server `update` command. All SteamCMD games servers are supported, as well as some other servers such as Teamspeak, Minecraft, Mumble & Factorio.
+LinuxGSM comes with an game server `update` command. All [SteamCMD](../steamcmd/) games servers are supported, as well as some other servers such as Teamspeak, Minecraft, Mumble & Factorio.
 
 ## Commands
 
@@ -14,11 +14,11 @@ Update will check for any available update, taking no action if no update is ava
 
 ### Update on start
 
-It is possible to update a game server on start, by editingthe LinuxGSM config.
+It is possible to update a game server on start, by editing the LinuxGSM config.
 
 `updateonstart="on"`
 
-This will take longer for teh game server to start but can be useful for servers that are kept offline most of the time.
+This will take longer for the game server to start but can be useful for servers that are kept offline most of the time.
 
 ### Scheduled updates
 
@@ -32,15 +32,21 @@ A cronjob can be run as the `gameserver user` or as `root`, this choice is down 
 
 Here is an example of a user based cronjob to check for an update once an hour.
 
-`0 * * * * /home/username/gameserver update > /dev/null 2>&1`
+```text
+0 * * * * /home/username/gameserver update > /dev/null 2>&1
+```
 
 Here is an example of a root based cronjob to check for an update once an hour.
 
-> Note the extra `su - username -c` this indicates which user to run the script as.
+{% hint style="info" %}
+The extra `su - username -c` indicates which user to run the script as.
+{% endhint %}
 
-`0 * * * * su - username -c '/home/username/gameserver update' > /dev/null 2>&1`
+```text
+0 * * * * su - username -c '/home/username/gameserver update' > /dev/null 2>&1
+```
 
-It isecommended to check for updates once per hour.
+It is recommended to check for updates once per hour.
 
 crontab.guru is a great resource to generate cronjobs. [https://crontab.guru/](https://crontab.guru/)
 

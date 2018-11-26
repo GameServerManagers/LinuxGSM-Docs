@@ -1,6 +1,6 @@
 # force-update
 
-> This is a command for servers using \[\[SteamCMD\]\] only.
+> This is a command for game servers using [SteamCMD](../steamcmd/) only.
 
 The `force-update` command bypasses the update check and runs the SteamCMD update regardless of if there is an update or not. This will run the SteamCMD update and restart the game server.
 
@@ -11,6 +11,4 @@ Force update is a useful feature for admins that restart there server on a daily
 Standard: `./gameserver force-update`
 
 Short: `./gameserver fu`
-
-> note: force-update was previously known as `update-restart`,
 
