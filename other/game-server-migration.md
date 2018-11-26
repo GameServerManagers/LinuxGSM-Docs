@@ -1,4 +1,4 @@
-# server-migration
+# Game Server Migration
 
 It is possible to migrate an exising game server to LinuxGSM.
 
