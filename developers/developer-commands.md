@@ -40,4 +40,17 @@ the log is located is called `dev-debug.log`
 ./gameserver detect-ldd
 ./gameserver dl
 ```
+# query-raw
+* querys both `gamedig` and `gsquery.py`.
 
+```bash
+./gameserver query-raw
+./gameserver qr
+```
+# clear-functions
+* deletes all functions in `lgsm/functions` and removes default LinxuGSM configs.
+
+```bash
+./gameserver clear-fuctions
+./gameserver cf
+```
