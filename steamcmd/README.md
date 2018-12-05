@@ -24,7 +24,7 @@ The majority of game servers using SteamCMD only require an _anonymous_ login. L
 
 Some game servers require you login to SteamCMD using a steam login to allow download of the server. Some also require you to own a copy of the game on the steam account.
 
-If this is the case LinuxGSM will prompt you on install to set a steam _username_ and _password._ This __can be set by editing the following settings within the [LinuxGSM config](../configuration/linuxgsm-config.md).
+If this is the case LinuxGSM will prompt you on install to set a steam _username_ and _password._ This \_\_can be set by editing the following settings within the [LinuxGSM config](../configuration/linuxgsm-config.md).
 
 ```text
 ## SteamCMD Login
@@ -33,7 +33,7 @@ steampass="password"
 ```
 
 {% hint style="danger" %}
- Do not use your own steam login. Create a new Steam login just for the game server. As the steam login password is stored in [plain text](./#plain-text-passwords).
+Do not use your own steam login. Create a new Steam login just for the game server. As the steam login password is stored in [plain text](./#plain-text-passwords).
 {% endhint %}
 
 {% hint style="info" %}
@@ -89,3 +89,4 @@ If you encounter an error like
 `Error! App '<app_number>' state is 0x202 after update job.`
 
 there is a good chance that you have run out of disk space.
+

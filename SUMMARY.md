@@ -62,7 +62,7 @@
   * [Game Server](support/game-server.md)
   * [FAQ](support/faq.md)
 * [SteamCMD](steamcmd/README.md)
-  * [Game Server Login Token \(GSLT\)](steamcmd/game-server-login-token.md)
+  * [Game Server Login Token](steamcmd/gslt.md)
   * [LAN Discovery](steamcmd/lan-discovery.md)
   * [Workshop](steamcmd/workshop.md)
 * [to-do](to-do/README.md)
