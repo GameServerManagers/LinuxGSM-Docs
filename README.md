@@ -1,9 +1,3 @@
----
-description: >-
-  This documentation covers the basics of using LinuxGSM. For more info on
-  LinuxGSM and the install guide visit linuxgsm.com
----
-
 # LinuxGSM Documentation
 
 ![](.gitbook/assets/linuxgsm_colour_logo_wordmark_512-1.png)
