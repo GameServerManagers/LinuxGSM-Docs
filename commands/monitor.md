@@ -46,7 +46,7 @@ To be notified when a server fails alert notifications can be setup , see [alert
 
 ## Boot startup
 
-You can use monitor to run your server at boot under certain conditions. See [On-Boot](../configuration/on-boot.md)
+You can use monitor to run your server at boot under certain conditions. See [On-Boot](../configuration/running-on-boot.md)
 
 ## How does monitor work?
 
