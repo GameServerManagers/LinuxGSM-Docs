@@ -1,8 +1,10 @@
-# Running on-boot
+---
+description: >-
+  Multiple options are available to run your servers on boot. Pick the one that
+  fits your configuration the best.
+---
 
-## Running on Boot
-
-Multiple options are available to run your servers on boot. Pick the one that fits your configuration the best.
+# Running on Boot
 
 ## Crontab
 
@@ -36,7 +38,7 @@ crontab -e
 
 To learn more, see [Start-Stop-Restart](https://github.com/GameServerManagers/LinuxGSM/wiki/Start-Stop-Restart)
 
-### Using `rc.local`
+## `rc.local`
 
 rc.local is another method to run scripts on boot. Any commands added to the rc.local file will run on boot.
 

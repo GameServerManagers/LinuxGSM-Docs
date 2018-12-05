@@ -23,7 +23,7 @@
   * [Start Parameters](configuration/start-parameters.md)
   * [Game Server Config](configuration/game-server-config.md)
   * [LinuxGSM Config](configuration/linuxgsm-config.md)
-  * [Running on-boot](configuration/on-boot.md)
+  * [Running on Boot](configuration/on-boot.md)
   * [Ports](configuration/ports.md)
 * [Game Servers](game-servers/README.md)
   * [Arma 3](game-servers/arma-3.md)
