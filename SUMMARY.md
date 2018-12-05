@@ -69,7 +69,6 @@
   * [multiple-game-servers](to-do/multiple-game-servers.md)
   * [support](to-do/support.md)
   * [command\_stop.sh](to-do/command_stop.sh.md)
-  * [linuxgsm-config-files](to-do/linuxgsm-config-files.md)
   * [cronjobs](to-do/cronjobs.md)
   * [boot-startup](to-do/boot-startup.md)
   * [basic-usage](to-do/basic-usage.md)
