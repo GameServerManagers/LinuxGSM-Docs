@@ -1,9 +1,3 @@
----
-description: >-
-  Multiple options are available to run your servers on boot. Pick the one that
-  fits your configuration the best.
----
-
 # Running on Boot
 
 ## Crontab
