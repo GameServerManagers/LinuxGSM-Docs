@@ -1,6 +1,8 @@
-# Game Server Login Token
+---
+description: Game Server Login Token is a system by Valve for managing game servers.
+---
 
-Game Server Login Token is a new system by Valve for managing game servers.
+# Game Server Login Token
 
 ## Games using GSLT
 
