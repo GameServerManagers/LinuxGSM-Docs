@@ -1,46 +1,52 @@
 # Workshop
 
-Many Steam games now support the workshop. It's an easy way to share updated maps or addons between client and servers, without worrying about setting up any kind of FastDL. LinuxGSM adds workshop pre-configuration to game server scripts as soon as possible.
+Many Steam games support the steam [workshop](https://steamcommunity.com/workshop). It is an easy way to share community maps and addons and is very useful for custom servers, without needing to worry about setting up [FastDL](../commands/fastdl.md). LinuxGSM adds workshop pre-configuration to game server scripts as when available.
 
-You will have to get a Steam API, a collection to subscribe to \(you can create one\), and ultimately, edit two or three configuration variables \(start parameters\) in your LinuxGSM config.
+You will need a Steam API key, a collection to subscribe to \(you can create one\), and some config parameters in your LinuxGSM config.
 
 ## Getting a Steam API Key
 
 Simply go to [https://steamcommunity.com/dev/apikey](https://steamcommunity.com/dev/apikey) and follow instructions.
 
+{% hint style="danger" %}
 Try not to share this key.
+{% endhint %}
 
 ## Creating a collection and get the collection ID
 
 Go browse collections for your desired game, and click "Create a collection".
 
-For CS GO : [https://steamcommunity.com/workshop/browse/?section=collections&appid=730](https://steamcommunity.com/workshop/browse/?section=collections&appid=730)
+* CS:GO : [https://steamcommunity.com/workshop/browse/?section=collections&appid=730](https://steamcommunity.com/workshop/browse/?section=collections&appid=730)
+* Garry's Mod : [https://steamcommunity.com/workshop/browse/?section=collections&appid=4000](https://steamcommunity.com/workshop/browse/?section=collections&appid=4000)
 
-For Garry's Mod : [https://steamcommunity.com/workshop/browse/?section=collections&appid=4000](https://steamcommunity.com/workshop/browse/?section=collections&appid=4000)
+Add some addons to the collection, then publish the completed collection. Then get the collection page id which can be found on the page URL. For example:
 
-Add some addons to it, then publish it. It won't work if you don't publish the collection. Then, while being in your collection page, get the digits at the end of the URL : This is your collection ID.
+```text
+https://steamcommunity.com/sharedfiles/filedetails/?id=274397080
+```
+
+The collection id would be `274397080`.
 
 ## Configuration Variables
 
-Simply edit your \[\[LinuxGSM Config\]\]
+Edit the [LinuxGSM config](../configuration/linuxgsm-config.md)
 
 ### Garry's Mod
 
-For Garry's Mod, edit those 2 lines accordingly in your \[\[LinuxGSM Config\]\]:
+For Garry's Mod, edit those 2 lines accordingly in your [LinuxGSM config](../configuration/linuxgsm-config.md)
 
-`workshopauth="YOUR_STEAM_API_KEY"`
-
-`workshopcollectionid="YOUR_COLLECTION_ID"`
+```text
+wsapikey="YOUR_STEAM_API_KEY"
+wscollectionid="YOUR_COLLECTION_ID"
+```
 
 ### Counter-Strike Global Offensive
 
-For CSGO, have a look at these lines in your in your \[\[LinuxGSM Config\]\]:
+For CSGO, have a look at these lines in your in your [LinuxGSM config](../configuration/linuxgsm-config.md)
 
 ```text
-# authkey=""
-# ws_collection_id=""
-# ws_start_map=""
+wsapikey="YOUR_STEAM_API_KEY"
+wscollectionid="YOUR_COLLECTION_ID"
+wsstartmap="
 ```
-
-Remove the hashtags, then add your values.
 
