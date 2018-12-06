@@ -1,33 +1,27 @@
-# ftp-scp
+# SFTP
 
-## SFTP
+SFTP (SSH File Transfer Protocol) is the transfer protocol to view and transfer files over SSH. SFTP works the same as FTP but is encrypted.
 
-SFTP is the transfer protocol included with SSH. Unlike FTP, it benefits from encryption.  
-We can only advise to use SFTP.  
-scp is the corresponding command that you can use to transfer files over SSH.
+## SFTP Advantages
 
-Note : A good practice, is to use a secured encryption key. Otherwise, it'd be theorically possible sniff your network and decode your traffic.
+* Encrypted
+* Nothing extra to install (such as FTP server)
+* Works like any other FTP server
+* Compatible with the popular clients such as Filezilla and WinSCP
+* You can login to any SSH accessable Linux user.
 
-**Advantages**
+## How to use SFTP
 
-* Encrypted: less chances for your data to get stolen
-* Nothing to install
-* Works like any other than FTP server
-* Compatible with the populars Filezilla & WinSCP
-* You can login to users out of the box
-
-**How to use SFTP**
-
-* Connect like any FTP except it's on your SSH port \(default 22\)
-* Use your username / password
+* Connect like any FTP except it uses the port (default 22)
+* Use your linux username / password
 * You might need to set protocol to SFTP in your FTP client.
 
 ## Bad practice to avoid
 
 ### By all means, you should never
 
-1. Connect to an FTP server as root unless there is a very good reason and you know what you're doing.
-2. Use FTP anymore. Prefer SFTP.
+1. Avoid Connecting to a server as root unless.
+2. Do not use FTP if SFTP is available.
 
 #### Root login to an FTP
 
