@@ -54,7 +54,7 @@
   * [glibc](requirements/glibc.md)
 * [Features](features/README.md)
   * [logging](features/logging.md)
-  * [multiple-game-servers](features/multiple-game-servers.md)
+  * [Multiple Game Servers](features/multiple-game-servers.md)
 * [Other](other/README.md)
   * [server-migration](other/server-migration.md)
   * [brand](other/brand.md)
