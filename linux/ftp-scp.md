@@ -1,18 +1,18 @@
-# SFTP
+# ftp-scp
 
-SFTP (SSH File Transfer Protocol) is the transfer protocol to view and transfer files over SSH. SFTP works the same as FTP but is encrypted.
+SFTP \(SSH File Transfer Protocol\) is the transfer protocol to view and transfer files over SSH. SFTP works the same as FTP but is encrypted.
 
 ## SFTP Advantages
 
 * Encrypted
-* Nothing extra to install (such as FTP server)
+* Nothing extra to install \(such as FTP server\)
 * Works like any other FTP server
 * Compatible with the popular clients such as Filezilla and WinSCP
 * You can login to any SSH accessable Linux user.
 
 ## How to use SFTP
 
-* Connect like any FTP except it uses the port (default 22)
+* Connect like any FTP except it uses the port \(default 22\)
 * Use your linux username / password
 * You might need to set protocol to SFTP in your FTP client.
 
