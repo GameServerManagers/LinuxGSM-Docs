@@ -21,7 +21,7 @@ The LinuxGSM config mechanism is designed to allow the users to benefit from new
 ### Configuration files
 
 {% hint style="info" %}
-An understanding of how LinuxGSM handles [multiple game server](../to-do/multiple-game-servers.md) instances helps. 
+An understanding of how LinuxGSM handles [multiple game server](../features/multiple-game-servers.md) instances helps. 
 {% endhint %}
 
 #### \_default.cfg

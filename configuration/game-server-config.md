@@ -43,7 +43,7 @@ This configuration file is automatically downloaded upon server installation.
 
 ## Config file naming
 
-Whenever possible, LinuxGSM uses a custom name for configuration files that contains the `${servicename}` variable in it in order to allow the running of [multiple game servers](../to-do/multiple-game-servers.md) with different config files. If the game does not allow for that, then the usual name will be used.
+Whenever possible, LinuxGSM uses a custom name for configuration files that contains the `${servicename}` variable in it in order to allow the running of [multiple game servers](../features/multiple-game-servers.md) with different config files. If the game does not allow for that, then the usual name will be used.
 
 ### Example
 
