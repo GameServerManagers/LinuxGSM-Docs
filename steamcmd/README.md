@@ -1,7 +1,5 @@
 # SteamCMD
 
-## SteamCMD
-
 SteamCMD is a command-line based Steam client developed by Valve that is used to remotely download game files. This is very useful for game servers, as it is significantly easier to keep them up-to-date. Any game that supports dedicated servers will have their server files available on SteamCMD. All you need is the AppID which can be found on Valve's [wiki](https://developer.valvesoftware.com/wiki/Dedicated_Servers_List) or [SteamDB](https://steamdb.info/search/?a=app&q=server).
 
 {% hint style="info" %}
@@ -10,7 +8,7 @@ You can only download server files for the operating system that you are using S
 
 ![SteamCMD Terminal](../.gitbook/assets/steamcmd.png)
 
-### SteamCMD Login
+## SteamCMD Login
 
 SteamCMD requires a login to download some game servers.
 
@@ -44,7 +42,7 @@ Check [here](https://linuxgsm.com/data/steamcmd) for a list of game servers that
 
 SteamCMD prints out passwords in plain text meaning that the Steam login password is visible to anyone on the server. LinuxGSM saves logs and the Steam login password will be view-able in the logs.
 
-### Steam Guard
+## Steam Guard
 
 ![Steam Guard](../.gitbook/assets/steamguard.jpg)
 
@@ -82,7 +80,7 @@ Steam Guard via Smartphone is not compatible because it requires a code every ti
 
 If you have Steam Guard via email enabled the first time you start SteamCMD you will be prompt to enter a steam Guard code and receive an email with the code. Copy and paste the code in to the prompt and press enter. You will not need to enter a code again.
 
-### Errors
+## Errors
 
 If you encounter an error like
 
