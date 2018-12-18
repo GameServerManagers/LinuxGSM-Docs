@@ -1,6 +1,6 @@
 # Table of contents
 
-* [LinuxGSM Documentation](README.md)
+* [Home](README.md)
 * [Getting Started](getting-started.md)
 * [Commands](commands/README.md)
   * [install](commands/install.md)

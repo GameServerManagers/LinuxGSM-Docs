@@ -1,4 +1,4 @@
-# LinuxGSM Documentation
+# Home
 
 ![](.gitbook/assets/linuxgsm_colour_logo_workmark_short_384.png)
 
