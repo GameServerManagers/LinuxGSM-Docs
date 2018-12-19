@@ -4,7 +4,7 @@ LinuxGSM allows for the simple installation of game servers. The installer is de
 
 The installer will:
 
-* Create required directory's
+* Create required directories
 * Install/advise on required dependencies
 * Download the game server files
 * Load config files
@@ -14,7 +14,7 @@ The installer will:
 
 ### Standard Install
 
-The standard installation is the default installation method that required user interaction.
+The standard installation is the default installation method that requires user interaction.
 
 Standard: `./gameserver install`
 
@@ -39,7 +39,7 @@ Short: `./gameserver ai`
 
 ## Install Dependencies
 
-Installation of dependencies requires either `sudo` or root access. LinuxGSM can automatically install dependencies if the user has `sudo` or using the `root` user.
+Installation of dependencies requires either `sudo` or root access. LinuxGSM can automatically install dependencies if the user has `sudo` or is `root`.
 
 {% hint style="warning" %}
 If dependencies are not installed the server may not start.
@@ -47,7 +47,7 @@ If dependencies are not installed the server may not start.
 
 ### Dependencies as root
 
-As `root` run `./gameserver install` and the installer will complete a dependency installation only, missing out the other installation steps.
+As `root` run `./gameserver install` and the installer will complete a dependency installation only, ignoring the other installation steps.
 
 ### Dependencies as sudo user
 
@@ -61,13 +61,13 @@ LinuxGSM may fail to run if the correct permissions have not been used. This fau
 
 Common faults include:
 
-* trying to install the LinuxGSM as root.
+* Trying to install the LinuxGSM as root.
 * Trying to install LinuxGSM in a directory not owned by the correct user.
-* not making `gameserver` file executable using the `chmod +x` command.
+* Not making `gameserver` file executable using the `chmod +x` command.
 
-if trying to run as root LinuxGSM will fail to run. See FAQ.
+If trying to run as `root` LinuxGSM will fail to run. See FAQ.
 
-To check the correct user owns the directory or `gameserver` file use `ls -al`
+To check if the correct user owns the directory or `gameserver` file, use `ls -al`
 
 **Example output**
 
@@ -81,7 +81,7 @@ drwxrwxr-x  8 nmrihserver nmrihserver 4096 Aug 19 16:00 Steam
 drwxrwxr-x  6 nmrihserver nmrihserver 4096 Aug 19 16:00 steamcmd
 ```
 
-If some files/directory's are not owned use the `chown` command to correct this. Login as `root` and use the following command; changing the details to match your server
+If some files/directories are not owned by the correct user, use the `chown` command. Login as `root` and use the following command, changing the details to match your server
 
 `chown -R username:username /home/gameserver`
 
