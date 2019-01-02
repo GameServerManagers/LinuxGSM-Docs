@@ -1,5 +1,40 @@
 # Running on Boot
 
+## Using systemd
+systemd is the default init system for most modern distros.
+
+You need to create a service file in `/etc/systemd/system/`
+
+Example `ts3.service`
+```
+[Unit]
+Description=Teamspeak3 Server utilizing Linux Game Server Manager
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=forking
+User=lgsm
+WorkingDirectory=/home/lgsm/ts3
+ExecStart=/home/lgsm/ts3/ts3server start
+ExecStop=/home/lgsm/ts3/ts3server stop
+
+[Install]
+WantedBy=multi-user.target
+```
+
+Replace the user and paths to fit your setup.
+
+You need to reload the systemd-daemon once to make it aware of the new service file by `systemctl daemon-reload`
+
+Now you can do
+```bash
+systemctl start ts3 # Start the server
+systemctl stop ts3  # Stop the server
+systemctl enable ts3 # Enable start on boot
+systemctl disable ts3 # Disable start on boot
+```
+
 ## Crontab
 
 The crontab will allow you to create \[\[cronjobs\]\] that allow you to run a command on a set time or on boot. The below examples uses `@reboot` that will run a command on boot.
@@ -10,7 +45,7 @@ The crontab will allow you to create \[\[cronjobs\]\] that allow you to run a co
 
 > note: Most admins will also have a timed monitor cronjob configured. If you do not want to have extra cronjobs the timed monitor will also start a server but with a timed delay.
 
-### Using `monitor` command \(recommended\)
+### Using `monitor` command
 
 After a reboot, any game server that has a "started" status will be started on boot. Servers that were manually stopped will remain stopped.
 
