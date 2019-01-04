@@ -5,19 +5,19 @@ systemd is the default init system for most modern distros.
 
 You need to create a service file in `/etc/systemd/system/`
 
-Example `ts3.service`
+Example `ts3server.service`
 ```
 [Unit]
-Description=Teamspeak3 Server utilizing Linux Game Server Manager
+Description=LinuxGSM Teamspeak3 Server
 After=network-online.target
 Wants=network-online.target
 
 [Service]
 Type=simple
-User=lgsm
-WorkingDirectory=/home/lgsm/ts3
-ExecStart=/home/lgsm/ts3/ts3server start
-ExecStop=/home/lgsm/ts3/ts3server stop
+User=ts3server
+WorkingDirectory=/home/ts3server
+ExecStart=/home/ts3server/ts3server start
+ExecStop=/home/ts3server/ts3server stop
 Restart=no
 RemainAfterExit=yes   #Assume that the service is running after main process exits with code 0
 
@@ -31,10 +31,10 @@ You need to reload the systemd-daemon once to make it aware of the new service f
 
 Now you can do
 ```bash
-systemctl start ts3 # Start the server
-systemctl stop ts3  # Stop the server
-systemctl enable ts3 # Enable start on boot
-systemctl disable ts3 # Disable start on boot
+systemctl start ts3server # Start the server
+systemctl stop ts3server  # Stop the server
+systemctl enable ts3server # Enable start on boot
+systemctl disable ts3server # Disable start on boot
 ```
 
 ## Crontab
@@ -77,4 +77,3 @@ rc.local is another method to run scripts on boot. Any commands added to the rc.
 nano /etc/rc.local
 su - username -c '/home/username/gameserver start'
 ```
-
