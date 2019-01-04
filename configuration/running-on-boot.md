@@ -13,11 +13,13 @@ After=network-online.target
 Wants=network-online.target
 
 [Service]
-Type=forking
+Type=simple
 User=lgsm
 WorkingDirectory=/home/lgsm/ts3
 ExecStart=/home/lgsm/ts3/ts3server start
 ExecStop=/home/lgsm/ts3/ts3server stop
+Restart=no
+RemainAfterExit=yes   #Assume that the service is running after main process exits with code 0
 
 [Install]
 WantedBy=multi-user.target
