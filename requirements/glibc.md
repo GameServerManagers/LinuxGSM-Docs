@@ -27,6 +27,7 @@ List of distros and there glibc version.
 | Debian 7 | 2.13 |
 | Debian 8 | 2.19 |
 | Debian 9 | 2.24 |
+| Debian 10 | 2.28 |
 | Ubuntu 12.04 LTS | 2.15 |
 | Ubuntu 14.04 LTS | 2.19 |
 | Ubuntu 16.04 LTS | 2.23 |
