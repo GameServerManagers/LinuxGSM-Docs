@@ -74,6 +74,7 @@
   * [boot-startup](to-do/boot-startup.md)
   * [basic-usage](to-do/basic-usage.md)
 * [Linux](linux/README.md)
+  * [distro](linux/distro.md)
   * [ftp-scp](linux/ftp-scp.md)
   * [file-ownership](linux/file-ownership.md)
   * [firewalls](linux/firewalls.md)

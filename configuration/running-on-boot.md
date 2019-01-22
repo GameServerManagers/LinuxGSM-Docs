@@ -1,12 +1,14 @@
 # Running on Boot
 
 ## Using systemd
+
 systemd is the default init system for most modern distros.
 
 You need to create a service file in `/etc/systemd/system/`
 
 Example `ts3server.service`
-```
+
+```text
 [Unit]
 Description=LinuxGSM Teamspeak3 Server
 After=network-online.target
@@ -30,6 +32,7 @@ Replace the user and paths to fit your setup.
 You need to reload the systemd-daemon once to make it aware of the new service file by `systemctl daemon-reload`
 
 Now you can do
+
 ```bash
 systemctl start ts3server # Start the server
 systemctl stop ts3server  # Stop the server
@@ -77,3 +80,4 @@ rc.local is another method to run scripts on boot. Any commands added to the rc.
 nano /etc/rc.local
 su - username -c '/home/username/gameserver start'
 ```
+

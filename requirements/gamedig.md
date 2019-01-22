@@ -8,31 +8,34 @@ Gamedig superseeds gsquery as the tool to monitor game servers. gamedig is curre
 
 Gamedig must have nodejs 10 installed to work. Run the following command to install nodejs.
 
-```
+```text
 curl -sL https://deb.nodesource.com/setup_10.x | sudo bash -
 ```
 
 once nodejs is installed use npm to install gamedig using the command below.
 
-```
+```text
 npm install gamedig -g
 ```
 
 ## Sample output
+
 ### Details
 
 Extra info becomes available for game server details.
-```
+
+```text
 Players:          0/8
 Current Map:      Outpost
 ```
+
 ## Raw output
 
-```
+```text
 gamedig --type "protocol-valve" --host "1.2.3.4" --port "27015"
 ```
 
-```
+```text
 {
   "name": "LinuxGSM Server",
   "map": "StationKappa",
@@ -77,3 +80,4 @@ gamedig --type "protocol-valve" --host "1.2.3.4" --port "27015"
   }
 }
 ```
+
