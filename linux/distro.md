@@ -8,7 +8,7 @@ LinuxGSM developers primarily use Ubuntu for development and attempt to support 
 
 ![](../.gitbook/assets/ubuntu_black-orange_hex_su.png)
 
-Ubuntu is a free and open-source Linux distribution based on Debian, and popular with game developers such as Valve. Game developers tend to prefer newer software when developing game servers, as Ubuntu regularly release updates and have an LTS \(Long-Term-Support \) release every 2 years it is very compatible with game servers. Ubuntu has generally been known to have a large community and get relatively forgiving to newer users. Ubuntu is also the main choice of for development of LinuxGSM. This means that Ubuntu is the recommended distro for LinuxGSM.
+Ubuntu is a free and open-source Linux distribution based on Debian, and popular with game developers such as Valve. Game developers tend to prefer newer software when developing game servers, as Ubuntu regularly release updates and have an LTS \(Long-Term-Support\) release every 2 years it is very compatible with game servers. Ubuntu has generally been known to have a large community and get relatively forgiving to newer users. Ubuntu is also the main choice of for development of LinuxGSM. This means that Ubuntu is the recommended distro for LinuxGSM.
 
 It is recommended that only Ubuntu LTS releases are used for game servers because of the longer support life span compared with standard releases \(6 months\). It is also recommended that the latest LTS is used when installing a server. If a server is currently running on an older LTS and the game server is functioning upgrading is optional.
 
@@ -26,7 +26,7 @@ Ubuntu 18.04 LTS is recommended
 
 ## Debian
 
-![](../.gitbook/assets/52d308e54298452b82c2474f43e48cce.gif)
+![](../.gitbook/assets/debian.png)
 
 Debian is another popular distro that sits upstream of Ubuntu that shares many of the same advantages of Ubuntu. The release cycle is every 2 years. Debian supports “backports”, this allows newer software to be installed on stable Debian releases. This is particularly useful for game servers and LinuxGSM that may require newer software.
 
@@ -41,6 +41,8 @@ Debian 9 "Stretch" is recommended
 | 10 | testing | Buster | Mid-2019 | TBA | TBA |
 
 ## CentOS
+
+![](../.gitbook/assets/centos.png)
 
 CentOS is a Linux distribution that provides a free, enterprise-class, community-supported computing platform functionally compatible with its upstream source, Red Hat Enterprise Linux. This means CentOS is considered a very stable enterprise grade distro and as such is very popular with server admins. CentOS also has a very long support cycle compared with other distros. The main downside to stability is that the latest software is not always available; this can be an issue when dealing with game servers.
 
@@ -67,7 +69,7 @@ EPEL is required to run LinuxGSM
 
 ## Fedora
 
-![](../.gitbook/assets/logo_fedoralogo.png)
+![](../.gitbook/assets/fedora.png)
 
 Fedora is a Linux distribution developed by the community-supported Fedora Project and sponsored by Red Hat. A new Fedora release occurs every 6 months with a short support cycle. It contains very up to date packages and software which becomes part of RHEL/CentOS.
 
