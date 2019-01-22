@@ -6,11 +6,43 @@ Gamedig superseeds gsquery as the tool to monitor game servers. gamedig is curre
 
 ## Install Gamedig
 
-Gamedig must have nodejs 10 installed to work. Run the following command to install nodejs.
+Gamedig must have nodejs installed to work. Run the following command to install nodejs.
+
+### Remove existing NodeJS
+
+You might already have an older version of nodejs installed or be having issues with node dependencies. Try fully removing nodejs first then following the instructions below to install 
 
 ```text
-curl -sL https://deb.nodesource.com/setup_10.x | sudo bash -
+sudo apt remove --purge nodejs npm
+sudo apt clean
+sudo apt autoclean
+sudo apt install -f
+sudo apt autoremove
 ```
+
+### Install NodeJS
+
+Installing nodejs can be problematic, however using the below should work well.
+
+#### Ubuntu/Debian
+
+```text
+sudo apt install curl
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+sudo apt install -y nodejs
+curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+sudo apt update && sudo apt install yarn
+```
+
+#### CentOS
+
+to-do
+
+#### Fedora
+
+to-do
+
+### Install Gamedig npm
 
 once nodejs is installed use npm to install gamedig using the command below.
 
