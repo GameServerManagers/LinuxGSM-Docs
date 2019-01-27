@@ -59,12 +59,6 @@ version `glibc_2.15′ not found
 ./7DaysToDie.x86: /lib/libm.so.6: version glibc_2.15 not found (required by ./7DaysToDie.x86)
 ```
 
-### glibc Fix available
-
-Some but not all game servers can use glibc fix. See the list below of game servers that can use glibc fixes:
-
-[https://linuxgsm.com/list/](https://linuxgsm.com/list/)
-
 ## External Links
 
 * [distrowatch.com](http://distrowatch.com/)
