@@ -2,7 +2,7 @@
 
 The `monitor` command checks that a server is up and running and restarts the server should it not be responding after several unsuccessful queries
 
-Monitor uses different checks to ensure the server is running, first checking the server process is running then using [gamedig](../requirements/gamedig.md) or [gsquery](../developers/gsquery.py.md) to confirm the game server is responding.
+Monitor uses different checks to ensure the server is running, first checking the server process is running then using [gamedig](../requirements/gamedig.md) or [gsquery]() to confirm the game server is responding.
 
 {% hint style="info" %}
 If the server was stopped manually, then `monitor` will not function until the server is manually started again.
@@ -38,7 +38,7 @@ Here is an example of a root based cronjob to monitor your server every 5 minute
 */5 * * * *  su - username -c '/home/username/gameserver monitor' > /dev/null 2>&1
 ```
 
-To learn more about automation, see [Cronjobs](../to-do/cronjobs.md)
+To learn more about automation, see [Cronjobs](../linux/cronjobs.md)
 
 ## Alert Notifications
 
@@ -50,7 +50,7 @@ You can use monitor to run your server at boot under certain conditions. See [On
 
 ## How does monitor work?
 
-Monitor will first check if the server process \(or tmux session\) is running. If it is, it will then attempt to query the server using [gamedig](../requirements/gamedig.md) or [gsquery.py](../developers/gsquery.py.md). Should this fail to query it will attempt to query every 15 seconds over 60 second period. Should this fail the server will be rebooted.
+Monitor will first check if the server process \(or tmux session\) is running. If it is, it will then attempt to query the server using [gamedig](../requirements/gamedig.md) or [gsquery.py](). Should this fail to query it will attempt to query every 15 seconds over 60 second period. Should this fail the server will be rebooted.
 
 The monitor will wait for 60 seconds as it is common for servers to stop responding to queries during a map change. This wait prevents monitor from rebooting a server that does not require it.
 
