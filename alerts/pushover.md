@@ -11,7 +11,7 @@ A Pushover application is required to send messages to Pushover. 1. Visit [here]
 * name: LinuxGSM
 * type: Script
 * icon: 
-* check box agreeing to TOS
+* check the box agreeing to the Terms Of Service. 
 * Once the application has been created get the API key.
 * Turn on Pushover alerts and paste in API key and user in the LinuxGSM config.
 
