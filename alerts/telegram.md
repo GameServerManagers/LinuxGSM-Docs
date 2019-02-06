@@ -27,7 +27,7 @@ To enable Telegram alerts you need to create your own Telegram Bot.
 
    telegramchatid=""
 
-```text
+```
 # Telegram Group
 Use this step If you want to send alerts to a group. If not skip to _retrieve chat id_.
 
