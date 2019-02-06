@@ -17,7 +17,7 @@ To enable Telegram alerts you need to create your own Telegram Bot.
 
 1. Once complete an API token will be given. Enter the token to the LinuxGSM config.
 
-   ```
+```
 
    **Telegram Alerts \|** [**https://github.com/GameServerManagers/LinuxGSM/wiki/Telegram**](https://github.com/GameServerManagers/LinuxGSM/wiki/Telegram)\*\*\*\*
 
