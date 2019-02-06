@@ -54,7 +54,7 @@ If you are using an existing group, invite the bot too the group.
 
 View group info&gt;Add Members.
 
-```text
+```
 ![Add Bot](../.gitbook/assets/telegram_add_bot.png)
 
 # Retrieve the chat id
@@ -70,13 +70,13 @@ To retrieve the chat id visit the following url, replacing the `XXXXX` with your
 
 [https://api.telegram.org/botXXXXXXXXX:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/getUpdates](https://api.telegram.org/botXXXXXXXXX:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/getUpdates)
 
-```text
+```
 Look for text `LINUXGSM` in the message and find the `chat id` part of that message.
 ```
 
 "chat":{"id":-191537238,
 
-```text
+```
 The number given is the chat id
 > note: A group number includes a dash in the chat id e.g `-191537238`
 
@@ -87,12 +87,12 @@ Add the chat id to the LinuxGSM config
 
 telegramalert="on" telegramtoken="401319987:AAGmgLWzYDprqkMHBjCT9qtzIRWCzqgoTLw" telegramchatid="-191537238"
 
-```text
+```
 # Send Test Alert
 Finally test that is correctly works by sending a test alert. You will now receive a message from the bot directly or to a chosen group.
 ```
 
 ./gameserver test-alert
 
-\`\`\`
+```
 
