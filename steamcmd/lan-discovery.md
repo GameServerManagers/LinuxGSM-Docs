@@ -1,6 +1,7 @@
 # LAN Discovery
 
 Most users who have tried it reported an impossibility to discover a local server from the LAN tab both from Steam and the game itself.
+![LAN Discovery](../.gitbook/assets/untitled.png)
 
 ## Workarounds
 
