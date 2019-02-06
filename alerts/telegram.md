@@ -6,12 +6,12 @@ Send LinuxGSM alerts to a Telegram Messenger user or group.
 
 To enable Telegram alerts you need to create your own Telegram Bot.
 
-1. Do do this you will need to speak to @BotFather by visiting [here](https://telegram.me/BotFather).
+1. To do this you will need to speak to @BotFather by visiting [here](https://telegram.me/BotFather).
 2. Click start to begin the chat.
 
 ![BotFather Chat](../.gitbook/assets/botfather_chat.png)
 
-1. Type `/newbot` and follow the instructions the create a bot.
+1. Type `/newbot` and follow the instructions to create a bot.
 
 ![new Bot](../.gitbook/assets/botfather_new_bot.png)
 
@@ -78,7 +78,7 @@ Look for text `LINUXGSM` in the message and find the `chat id` part of that mess
 
 ```text
 The number given is the chat id
-> note: That for a group the number includes a dash in the chat id e.g `-191537238`
+> note: A group number includes a dash in the chat id e.g `-191537238`
 
 Add the chat id to the LinuxGSM config
 ```
