@@ -34,28 +34,20 @@ Use this step If you want to send alerts to a group. If not skip to _retrieve ch
 ## Setup a New Group
 1. Select `New Group`
 
-![New Group](../.gitbook/assets/telegram_new_group.png)
-
 2. Give your group a name
 
-![Select Bot](../.gitbook/assets/telegram_select_bot.png)
-
 3. Select the Bot you just created by typing `@ExampleBot`.
-
-![Add Bot](../.gitbook/assets/telegram_add_bot.png)
-
 
 The bot will now be added to the group.
 
 # Use an Existing group
 
-If you are using an existing group, invite the bot too the group.
+If you are using an existing group, invite the bot to the group.
 ```
 
-View group info&gt;Add Members.
+View group info -> Add Members.
 
 ```
-![Add Bot](../.gitbook/assets/telegram_add_bot.png)
 
 # Retrieve the chat id
 
