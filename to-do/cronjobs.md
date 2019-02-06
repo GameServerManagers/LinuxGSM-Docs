@@ -6,11 +6,11 @@ You can set scheduled tasks with cronjobs, to run any function at any given time
 
 Most used ones are:
 
-* Automatically check for updates \(update command\)
-* Automatically check for server crash and restart if needed \(monitor command\)
-* Automatically keep LinuxGSM up to date \(update-functions command\)
-* Automatically restart the server at a given time \(restart command\)
-* Automatically update and restart the server \(force-update command\)
+* Automatically check for updates [\(update command\)](../commands/update.md)
+* Automatically check for server crash and restart if needed [\(monitor command\)](../commands/monitor.md)
+* Automatically keep LinuxGSM up to date [\(update-functions command\)](../commands/update-lgsm.md)
+* Automatically restart the server at a given time [\(restart command\)](../commands/start-stop-restart.md)
+* Automatically update and restart the server [\(force-update command\)](../commands/force-update.md)
 
 ## Command
 
@@ -189,7 +189,7 @@ Here is an example of a root based cronjob to monitor your server every 3 minute
 
 **Protips**
 
-* Note the "fu" \(for "force-update"\) which will check for an update and restart your server even though there is no update. It is a good alternative if you don't wish to use the updateonstart functionality.
+* Note the "fu" \(for "force-update"\) which will check for an update and restart your server even though there is no update. It is a good alternative if you don't wish to use the update on start functionality.
 * It's a good practice to comment cronjob lines of a server that you momentarily want to shutdown in order to add back cronjobs more easily afterwards.
 * Some servers crash more often, so it's a good idea to monitor them more frequently. However, you shouldn't monitor faster than once every 2 minutes, otherwise the monitor function might behave inconsistently, and your server might bootloop.
 * You can also sparingly run "every x time" update checks, for games getting updated a lot.
