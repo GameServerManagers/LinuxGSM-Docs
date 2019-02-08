@@ -4,11 +4,11 @@
 
 gsquery is a python module to LinuxGSM that can query a game server port to see if it responds.
 
-It is used by the \[\[Monitor\]\] function to make sure that your server is online and responding to queries.
+It is used by the [Monitor](../commands/monitor.md) function to make sure that your server is online and responding to queries.
 
 ## How to use
 
-Simply use the \[\[Monitor\]\] function, and if gsquery is present, it will be used.
+Simply use the [Monitor](../commands/monitor.md) function, and if gsquery is present, it will be used.
 
 ## Manual usage
 

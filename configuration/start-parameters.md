@@ -1,6 +1,6 @@
 # Start Parameters
 
-Servers commonly require _start parameters_, these are command-line options that are set with the servers executable when you start the server. Parameters being used by the game server can be found in `./gameserver details`. To alter them, you will need to edit [LinuxGSM config files](https://github.com/GameServerManagers/LinuxGSM/wiki/LinuxGSM-Config).
+Servers commonly require _start parameters_, these are command-line options that are set with the servers executable when you start the server. Parameters being used by the game server can be found in `./gameserver details`. To alter them, you will need to edit [LinuxGSM config files](linuxgsm-config.md).
 
 LinuxGSM prefers to use config files over parameters as much as possible. However sometimes this is not possible, win which case only parameters or a mixture of both config and parameters will be used. LinuxGSM also attempts to keep the same method between game servers of the same engine to allow consistency between game servers.
 

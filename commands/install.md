@@ -91,7 +91,7 @@ If some files/directories are not owned by the correct user, use the `chown` com
 
 If the connection to the Steam servers is poor \(quite common\), SteamCMD download can fail. This is why LinuxGSM will always ask you if installation was successful allowing admins to retry the download should it fail.
 
-If there are still issues downloading try the \[\[validate\]\] option.
+If there are still issues downloading try the [validate](../commands/validate.md) option.
 
 `./gameserver validate`
 

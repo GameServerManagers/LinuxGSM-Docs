@@ -16,7 +16,7 @@ The main executable file `linuxgsm.sh` or `gameserver.sh` is what the admin inte
 
 To install a specific server `linuxgsm.sh` first downloads a complete list of all available servers from `serverlist.csv`. This file contains variables required to identify the server; `${gamename}`, `${shortname}` and `${servername}`. When installing a game server `linuxgsm.sh` simply copies itself using the`${servername}` variable as the script name and inserting the other variables in to the copied file. The added variables allow LinuxGSM to know which server the admin selected.
 
-An admin can also run the install again if they want multiple \[\[instances\]\] of the same server. This will give and output of `gameserver-2`,`gameserver-3` etc as the file name.
+An admin can also run the install again if they want multiple [instances](../features/multiple-game-servers.md) of the same server. This will give and output of `gameserver-2`,`gameserver-3` etc as the file name.
 
 #### Directories
 
@@ -25,9 +25,9 @@ All working directories are set through variables.
 * ${rootdir} \| The top level directory for LinuxGSM
 * \|\_\_ ${lgsmdir} \| lgsm \|Contains all LinuxGSM related files
 * \|_\_\_\_ ${functionsdir} \| functions \| All LinuxGSM script functions
-* \|_\_\_\_ ${libdir} \| lib \| any lib files required for game servers
+* \|_\_\_\_ ${libdir} \| lib \| Any lib files required for game servers
 * \|_\_\_\_ ${tmpdir} \| tmp \| Temp directory
-* \|\_ ${serverfiles} \| serverfiles \| the game server files \(binary,maps, models etc\)
+* \|\_ ${serverfiles} \| serverfiles \| The game server files \(binary,maps, models etc\)
 * \|\_ ${backupdir} \| backups \| Backups are saved here
 * \|\_ ${scriptlogdir} \| "${rootdir}/log/script" \| Contains LinuxGSM logs
 * \|\_ ${consolelogdir} \| "${rootdir}/log/console" \| Contains TMUX \(console output\) logs
@@ -64,7 +64,7 @@ Note: You need to update those files with update-functions command after adding 
 Here are the command functions you might need to alter when adding a new server:
 
 * command\_install.sh - Server installation must work properly
-* command\_update.sh - if the given game supports updates \(might required to add a file for that matter, for now, we use to add a single file for install and update, like for TeamSpeak 3\).
+* command\_update.sh - if the given game supports updates \(might be required to add a file for that matter, for now, we use to add a single file for install and update, like for TeamSpeak 3\).
 * command\_details.sh - Server details need to be displayed properly
 * command\_monitor.sh & monitor\_gsquery.sh, gsquery.py & gsquery.py - You'll need to read carefully and understand this code before altering it.
 * core\_getopt.sh - You will define available commands in this one, displayed when the user runs `./gameserver` without an argument. Either use an existing opt or make a new one if needed.

@@ -61,11 +61,11 @@ stoponbackup="on"
 
 ## Automated Backups
 
-Automated backups can be set using [cronjobs](../to-do/cronjobs.md). It is recommended that frequently you backup and your retention policy to prevent your server is carefully considered to prevent storage issues.
+Automated backups can be set using [cronjobs](../configuration/cronjobs.md). It is recommended that frequently you backup and your retention policy to prevent your server is carefully considered to prevent storage issues.
 
 ### cronjob example
 
-see [cronjobs](../to-do/cronjobs.md)
+see [cronjobs](../configuration/cronjobs.md)
 
 ```bash
 crontab -e

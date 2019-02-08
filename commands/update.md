@@ -22,7 +22,7 @@ This will take longer for the game server to start but can be useful for servers
 
 ### Scheduled updates
 
-A cronjob can be set to run `update` at any given time.
+A [cronjob](../configuration/cronjobs.md) can be set to run `update` at any given time.
 
 To edit cronjobs, type:
 

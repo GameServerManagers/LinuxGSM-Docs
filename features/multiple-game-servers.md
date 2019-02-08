@@ -18,16 +18,16 @@ You need some definitions to make this guide clear.
 
 #### LinuxGSM Configuration
 
-You need to be comfortable with \[\[LinuxGSM Config\]\].
+You need to be comfortable with [LinuxGSM Config](../configuration/linuxgsm-config.md).
 
 #### Understand ports
 
-You need to understand how ports and service listening work in order to avoid port overlapping, otherwise your new instances won't start. Useful resource: \[\[Ports\]\]
+You need to understand how ports and service listening work in order to avoid port overlapping, otherwise your new instances won't start. Useful resource: [Ports](../configuration/ports.md).
 
 ## One user for each installation and instance
 
 This method is the most simple and will fit most use cases.  
-It consists of creating a new user for each game server, repeat the install process and edit your \[\[LinuxGSM Config\]\] if needed.
+It consists of creating a new user for each game server, repeat the install process and edit your [LinuxGSM Config](../configuration/linuxgsm-config.md) if needed.
 
 ### Use cases
 
@@ -45,7 +45,7 @@ It consists of creating a new user for each game server, repeat the install proc
 #### Cons
 
 * Uses more disk space \| Each game server has all of the installation files
-* All instances are updated separately \| It will use more resources upon update and require marginally more \[\[Cronjobs\]\]
+* All instances are updated separately \| It will use more resources upon update and require marginally more [Cronjobs](../configuration/cronjobs.md)
 
 ### Example
 
@@ -60,7 +60,9 @@ As you can see the installs are separated and isolated from each other in each u
 
 ### How to install
 
-1\) Create a new user with a home directory 2\) Repeat the standard installation process using this different user 3\) If your game server uses the same default \[\[Ports\]\] as a previously installed one, make sure you change them \(and/or IP if your server has multiple IPs\) in you \[\[LinuxGSM Config\]\] or in \[\[Game Server Config\]\] depending on the game server you run.
+1\) Create a new user with a home directory.
+2\) Repeat the standard installation process using this different user.
+3\) If your game server uses the same default [Ports](../configuration/ports.md) as a previously installed one, make sure you change them \(and/or IP if your server has multiple IPs\) in you [LinuxGSM Config](../configuration/linuxgsm-config.md) or in [Game Server Config](../configuration/game-server-config.md) depending on the game server you run.
 
 ## Single Installation, multiple instances
 
@@ -90,8 +92,8 @@ This method is used when your game servers share a common base regarding mods or
 You have one game server installed, but you will have multiple scripts \(called "instances"\) to start the same installation but with different config files.  
 Every time a new instance is created, new default config files are also created. This allows each instance to have different hostname, ports etc. The config files are by default the same name as the instance script. For example, if the script is `./csgoserver-2` the config is `csgoserver-2.cfg`. You can see the location of config files in `./instance details` \(replace "instance" with your actual instance name\).
 
-There are two types of config files: \[\[LinuxGSM Config\]\] and \[\[Game Server Config\]\].  
-And there are three levels of LinuxGSM config files, helping with managing multiple instances of the same installation. See \[\[LinuxGSM Config\]\] for more details.
+There are two types of config files: [LinuxGSM Config](../configuration/linuxgsm-config.md) and [Game Server Config](../configuration/game-server-config.md).  
+And there are three levels of LinuxGSM config files, helping with managing multiple instances of the same installation. See [LinuxGSM Config](../configuration/linuxgsm-config.md) for more details.
 
 Each instance is managed using its own script which gives the config file names. These can be renamed how you like, however, the default will simply have an incremental number. Some admins may choose to name them after the server port, the map or the gamemode instead.
 
@@ -119,7 +121,7 @@ On the first run of `./gameserver-2` a new default LinuxGSM and game config will
 
 ### Forgetting to change ports and/or IP
 
-If you run multiple similar game servers, you have no choice to work on that. Read \[\[Ports\]\].
+If you run multiple similar game servers, you have no choice to work on that. Read [Ports](../configuration/ports.md).
 
 ### Installing multiple game servers with the same script name under the same user
 
