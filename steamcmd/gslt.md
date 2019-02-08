@@ -20,7 +20,7 @@ Game Server Login Token is a new system by Valve for managing game servers.
 
 ## What is GSLT?
 
-GSLT creates a persistent token for a game server. This allows any users who added your server to favorites to join, even if you change your ip address. This is very useful if you change your server/hosting provider. 
+GSLT creates a persistent token for a game server. This allows any users who added your server to favorites to join, even if you change your ip address. This is very useful if you change your server/hosting provider.
 
 To fully understand the reasoning behind GSLT, we need to back up a bit to July 2015. [Valve announced that running certain plugins would get your server blacklisted](http://dathost.net/blog/important-information-regarding-our-csgo-servers/), meaning it could not connect to the master servers and people wouldn’t be able to connect to the server.
 
@@ -100,5 +100,4 @@ Your Steam account must not be currently community banned or locked. Your Steam 
 
 Yes CS:GO is the only internet connected server that requires GSLT currently.
 
-For further information see this useful blog post: [http://dathost.net/blog/important-information-regarding-our-csgo-servers/](http://dathost.net/blog/important-information-regarding-our-csgo-servers/)
-
+For further information, see [this useful blog post](http://dathost.net/blog/important-information-regarding-our-csgo-servers/).

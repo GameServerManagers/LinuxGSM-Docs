@@ -1,6 +1,6 @@
 # SteamCMD
 
-SteamCMD is a command-line based Steam client developed by Valve that is used to remotely download game files. This is very useful for game servers, as it is significantly easier to keep them up-to-date. Any game that supports dedicated servers will have their server files available on SteamCMD. All you need is the AppID which can be found on Valve's [wiki](https://developer.valvesoftware.com/wiki/Dedicated_Servers_List) or [SteamDB](https://steamdb.info/search/?a=app&q=server).
+SteamCMD is a command-line based Steam client developed by Valve, that is used to remotely download game files. This is very useful for game servers, as it is significantly easier to keep them up-to-date. Any game that supports dedicated servers will have their server files available on SteamCMD. All you need is the AppID which can be found on Valve's [wiki](https://developer.valvesoftware.com/wiki/Dedicated_Servers_List) or [SteamDB](https://steamdb.info/search/?a=app&q=server).
 
 {% hint style="info" %}
 You can only download server files for the operating system that you are using SteamCMD on.
@@ -87,4 +87,3 @@ If you encounter an error like
 `Error! App '<app_number>' state is 0x202 after update job.`
 
 there is a good chance that you have run out of disk space.
-

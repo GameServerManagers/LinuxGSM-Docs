@@ -9,7 +9,7 @@ You will need a Steam API key, a collection to subscribe to \(you can create one
 Simply go to [https://steamcommunity.com/dev/apikey](https://steamcommunity.com/dev/apikey) and follow instructions.
 
 {% hint style="danger" %}
-Try not to share this key.
+Don't share this key.
 {% endhint %}
 
 ## Creating a collection and get the collection ID
@@ -29,7 +29,7 @@ The collection id would be `274397080`.
 
 ## Configuration Variables
 
-Edit the [LinuxGSM config](../configuration/linuxgsm-config.md)
+Edit the [LinuxGSM config](../configuration/linuxgsm-config.md).
 
 ### Garry's Mod
 
@@ -49,4 +49,3 @@ wsapikey="YOUR_STEAM_API_KEY"
 wscollectionid="YOUR_COLLECTION_ID"
 wsstartmap="
 ```
-
