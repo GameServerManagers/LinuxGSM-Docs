@@ -2,9 +2,9 @@
 
 Below is a list of common questions that people ask about the Linux Game Server Managers.
 
-FAQ section is to try to help with common problems with LinuxGSM.
+FAQ section tries to help with common problems with LinuxGSM.
 
-## I'm having an issue can you help?
+## I'm having an issue, can you help?
 
 There are various ways to get help and support with LinuxGSM.
 
@@ -68,7 +68,7 @@ The script will not run as root and will error if you try. This is done for the 
 * Keeping the game server compartmentalised in its own directory away from your other stuff.
 * Its really bad practice to run scripts as root.
 * Would you really trust yourself as root after a 9 hour energy-drink fueled CS:GO session?
-* Did i mention so you don't break everything!?
+* Did i mention, so you don't break everything!?
 
 ![](http://truegif.com/pictures/gif/9281.gif)
 
@@ -82,7 +82,7 @@ Example: `wget -N --no-check-certificate https://linuxgsm.com/dl/linuxgsm.sh`
 
 ## How can I install \[insert name\] mod?
 
-LinuxGSM installs a vanilla server by default. There is now a mods-install feature with a limited selection of popular mods. All other mods will have to be install manually. It is recommend you visit the official add-on/mod installation guides for more info.
+LinuxGSM installs a vanilla server by default. There is now a [mods-install](../commands/mods.md) feature with a limited selection of popular mods. All other mods will have to be install manually. It is recommend you visit the official add-on/mod installation guides for more info.
 
 Here are a few useful resources for this.
 
@@ -147,7 +147,7 @@ The correct version of Glibc is not installed. See the dependencies section of t
 write error: No space left on device
 ```
 
-The script cannot write to the server because there is no disk space available on your server. Free up some space to resolve.
+The script cannot write to the server, because there is no disk space available on your server. Free up some space to resolve.
 
 ## ulimit SteamCMD startup error
 
@@ -175,9 +175,7 @@ No! That takes all the fun out of it for you and we are not free tech support.
 
 ## I found a bug how do I report it?
 
-If you find a bug or have a suggestion please submit a bug report on \[GitHub issues\]\[\] page.
-
-[https://github.com/dgibbs64/linuxgsm/issues](https://github.com/dgibbs64/linuxgsm/issues)
+If you find a bug or have a suggestion please submit a bug report on [GitHub issues](https://github.com/dgibbs64/linuxgsm/issues) page.
 
 ## How can I install a non-steam version?
 
@@ -206,7 +204,7 @@ You're lacking the required function, because you didn't run this command before
 
 The user that you are running LinuxGSM with does not own all of its files.
 
-More information, see [Ownership](https://github.com/GameServerManagers/LinuxGSM/wiki/File-Ownership)
+More information, see [Ownership](../linux/file-ownership.md)
 
 **Getting rid of bad practice**
 
@@ -228,7 +226,7 @@ Useful command:
 
 `chmod +x <filename>`
 
-To learn more about this, see [Permissions](https://github.com/GameServerManagers/LinuxGSM/wiki/Permissions)
+To learn more about this, see [Permissions](../linux/permissions.md)
 
 ## My server is not showing up over LAN or Internet
 
@@ -236,10 +234,10 @@ This can have numerous reasons. Here are some ways do diagnose this issue:
 
 * Check your game logs to see if it contains any clue
 * Is your server listening? Input `./gameserver details` to get the corresponding command to know it
-* Are you behind \[\[Firewalls\]\]? Double check your rules, try to disable it for testing
+* Are you behind [Firewalls](../linux/firewalls.md)? Double check your rules, try to disable it for testing
 * Do you have multiple interface? Set the right IP within your "gameserver" script or the game config file
 * Is it a home server? If you're behind a router, make sure your're listening to your local IP, then redirect appropriate ports to this local IP within your router settings.
-* Are the ports you're using free? See \[\[Ports\]\]
+* Are the ports you're using free? See [Ports](../configuration/ports.md)
 * Did you wait long enough? Sometimes it's just a matter of time until your server shows up into the list
 
 ## I get segmentation fault, how to solve this issue?
@@ -261,4 +259,3 @@ If it happens after a while:
 * Bug from the game server or an addon - Check your console logs, see if you can reproduce, and diagnose your addons
 * Unstable hardware - very unlikely, check your system stability
 * Ulimit issue: Your system cannot open as many files as it should - See ulimit info from this page
-

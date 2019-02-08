@@ -5,9 +5,9 @@
 * _YES PLEASE:_ Submit any bug, feature suggestion or code contribution to Github.
 * _NO THANK YOU:_ Game server issues \(e.g CS:GO, TF2\), Dedicated server issues \(e.g Ubuntu, CentOS\) or anything not directly related to LinuxGSM development. There are various volunteers that may be able to help with these on the Steam group and Discord.
 
-Any issue that is suddenly closed by moderators has been deemed not suitable for the GitHub issues page. Please post elsewhere. If in doubt contact us on Discord or post on the Steam group.
+Any issue that is suddenly closed by moderators has been deemed not suitable for the GitHub issues page. Please post elsewhere. If in doubt, contact us on Discord or post on the Steam group.
 
-Don't worry its not that we don't like you, we just need to keep the issues page relevant to LinuxGSM code to assist with our workflow.
+Don't worry it's not that we don't like you, we just need to keep the issues page relevant to LinuxGSM code to assist with our workflow.
 
 ## Getting support
 
@@ -24,7 +24,7 @@ The LinuxGSM website and Wiki will tell you almost anything you need about Linux
 
 ### Google
 
-It is likely that somebody already asked your question before. Save time for yourself and everyone else using Google first.
+It is likely that somebody already asked your question before. Save time for yourself and everyone else by using Google first.
 
 > “Google is how I learnt and still learn to use BASH and develop LinuxGSM.” - Daniel Gibbs
 
@@ -78,4 +78,3 @@ Labels are to be split in to several category's
 * Status: What is currently happening to the issue.
 * Type: What type of issue it is.
 * Priority: Only the urgent issues.
-
