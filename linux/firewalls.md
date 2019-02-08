@@ -4,8 +4,8 @@
 
 Firewalls are part of a very complex topic, but let's try to sum up their purposes, usages, and limits.
 
-The main idea is to prevent certain kind of connections to happen, whether it's incoming our outgoing, IP and port restriction, or requests quotas. The goal is to protect against some sorts of hacking and DDoS.  
-However the main downside is that unless you're using a very restrictive firewall, you'll probably just waste time rather than protect yourself against anything. For example, say you disallow any incoming connection to everything that isn't important, and leave everything important open to any IP without any restrictions \(which is a common practice\), then you just wasted your time. Why ? Because you didn't change anything compared to the previous behavior. In this case, you'd better make sure that what's listening is secured and "voilà".  
+The main idea is to prevent certain kind of connections to happen, whether it's incoming or outgoing, IP and port restriction, or requests quotas. The goal is to protect against some sorts of hacking and DDoS.  
+However the main downside is that unless you're using a very restrictive firewall, you'll probably just waste time rather than protect yourself against anything. For example, say you disallow any incoming connection to everything that isn't important, and leave everything important open to any IP without any restrictions \(which is a common practice\), then you just wasted your time. Why? Because you didn't change anything compared to the previous behavior. In this case, you'd better make sure that what's listening is secured and "voilà".  
 On the other hand, if you're only allowing certain IPs on certain ports, then your server is secured as hell, but almost nobody can connect to it.
 
 Firewalls can be hardware or software. Here, we're only going to talk about software firewalls, and especially, iptables.
@@ -58,4 +58,3 @@ Some game servers \(like Rust\) register their external IP with steam when they 
 If your traffic is going out WAN0 you need to put the port forwards on the 71.2.5.23 address. If your outbound traffic is going out WAN1 you would need to put your port forwards on 65.13.29.46.
 
 #### More rules to come. Feel free to edit this wiki if you know more.
-
