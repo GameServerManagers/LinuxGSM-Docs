@@ -57,12 +57,11 @@ version `glibc_2.15′ not found
 
 ### glibc Fix available
 
-Some but not all game servers can use glibc fix. See the list below of game servers that can use glibc fixes:
+Some but not all game servers can use glibc fix. See [this list](https://linuxgsm.com/list/) of game servers that can use glibc fixes.
 
-[https://linuxgsm.com/list/](https://linuxgsm.com/list/)
+
 
 ## External Links
 
 * [distrowatch.com](http://distrowatch.com/)
 * [glibc Homepage](http://www.gnu.org/software/libc/)
-

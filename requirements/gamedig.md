@@ -6,7 +6,7 @@ Gamedig super-seeds gsquery as the tool to monitor game servers. gamedig is curr
 
 ## Install Gamedig
 
-Gamedig must have nodejs installed to work. Run the following command to install nodejs.
+Gamedig must have nodejs installed to work.
 
 ### Remove existing NodeJS
 
@@ -48,7 +48,7 @@ Work in progress
 
 ### Install Gamedig npm
 
-once nodejs is installed use npm to install gamedig using the following command.
+Once nodejs is installed, use npm to install gamedig using the following command.
 
 ```text
 npm install gamedig -g
@@ -116,4 +116,3 @@ gamedig --type "protocol-valve" --host "1.2.3.4" --port "27015"
   }
 }
 ```
-
