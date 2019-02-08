@@ -6,11 +6,11 @@ Don't Starve Together server requires an Authentication Token.
 
 1. Start Don't Starve Together from Steam and click on the "Play!" button.
 
-![DST Title](https://github.com/GameServerManagers/LinuxGSM-Docs/tree/08d994c888c65f0bb5ac3297591c768b92d47dac/games/.gitbook/assets/dst_title.png)
+![DST Title](../.gitbook/assets/dst_title.png)
 
 1. Click on the "Acct Info" button.
 
-![DST Menu](https://github.com/GameServerManagers/LinuxGSM-Docs/tree/08d994c888c65f0bb5ac3297591c768b92d47dac/games/.gitbook/assets/dst_menu.png)
+![DST Menu](,,/.gitbook/assets/dst_menu.png)
 
 1. Click on the "Generate Server Token" button, copy the token, and paste it into the file.
 
@@ -44,7 +44,7 @@ sharding="false"
 
 ### Multi-Shard
 
-First of all take a look at [Multiple-Servers](https://github.com/GameServerManagers/LinuxGSM/wiki/Multiple-Servers) to get a general idea on how to create multiple game servers.
+First of all take a look at [Multiple-Servers](../features/multiple-game-servers.md) to get a general idea on how to create multiple game servers.
 
 There are two types of shards:
 
@@ -66,7 +66,7 @@ dstserver-1 \(this will be the master shard with an overworld as level\):
 # Installation Variables
 sharding="true"
 master="true"
-shard="Master" 
+shard="Master"
 cluster="Cluster_1"
 cave="false"
 ```
@@ -90,7 +90,7 @@ dstserver-2 \(this will be the slave shard with a cave as level\):
 # Installation Variables
 sharding="true"
 master="false"
-shard="Caves" 
+shard="Caves"
 cluster="Cluster_1"
 cave="true"
 ```
@@ -127,4 +127,3 @@ Lastly you have to start both servers. The order does not matter because the sla
 * [Server Settings](http://forums.kleientertainment.com/topic/64552-dedicated-server-settings-guide/)
 * [Command Line Options](http://forums.kleientertainment.com/topic/64743-dedicated-server-command-line-options-guide/)
 * [Understanding Shards and Migration Portals](http://forums.kleientertainment.com/topic/59174-understanding-shards-and-migration-portals/)
-

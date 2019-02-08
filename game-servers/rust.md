@@ -3,7 +3,7 @@
 ## System requirements
 
 * RAM: 4GB-12GB, Increases depending upon map size
-* CPU: Duel core 3.4GHz, Rust is monothread
+* CPU: Dual core 3.4GHz, Rust is monothread
 * Bandwidth: 10mbps upload
 
 > note The server autosave can cause lag, depending on the CPU and disk speed.
@@ -33,20 +33,18 @@ Server RCON administration tool
 
 ## Rust Server with LinuxGSM Video tutorial
 
-A quick tour of Rust special features, and install guide for Rust and Oxide.
+[A quick tour](https://www.youtube.com/watch?v=6GaoyPeN71g) of Rust special features, and install guide for Rust and Oxide.
 
-[https://www.youtube.com/watch?v=6GaoyPeN71g](https://www.youtube.com/watch?v=6GaoyPeN71g)
+If you need more help, [here is a video](https://www.youtube.com/watch?v=eFH9Qj-hUOM) that shows a bit more into depth how to use LinuxGSM, how the directory structure works, it also explains the basics of a Rust Server and other stuff, that's why it's 20 minutes long, otherwise, if you're experienced, you can get your server up and running in around 5 minutes without any mods.
 
-If you need more help, here is a video that shows a bit more into depth how to use LinuxGSM, how the directory structure works, it also explains the basics of a Rust Server and other stuff, that's why it's 20 minutes long, otherwise, if you're experienced, you can get your server up and running in around 5 minutes without any mods.
 
-[https://www.youtube.com/watch?v=eFH9Qj-hUOM](https://www.youtube.com/watch?v=eFH9Qj-hUOM)
 
 ## Rust Console
 
 Rust has no console to display useful information. Instead you need to monitor the server logs or RCON login to display real time info.
 
 ```bash
-tail -f log/server/rust-server*.log`
+tail -f log/server/rust-server*.log
 ```
 
 ## Install Oxide
@@ -89,7 +87,7 @@ RCON is the protocol used to send commands to your server. You will need a tool 
 
 To use software like Rusty, you need to alter LinuxGSM config and change `rconweb="0"`. To use Facepunch tool or Rustadmin, you can leave it at default `rconweb="1"`
 
-> Note: Facepunch web tool currently don't accept domain names, you need to enter server IP.
+> Note: Facepunch web tool currently doesn't accept domain names, you need to enter server IP.
 
 ### Essential RCON Commands
 
@@ -121,7 +119,7 @@ nano /etc/fstab
 proc    /proc    proc    defaults,hidepid=2    0    0
 ```
 
-You still need to make one user per server, change ports, and repeat the install process. \(See [https://github.com/GameServerManagers/LinuxGSM/wiki/Multiple-Servers](https://github.com/GameServerManagers/LinuxGSM/wiki/Multiple-Servers) for more info\)
+You still need to make one user per server, change ports, and repeat the install process. \(See [this](../features/multiple-game-servers.md) for more info\)
 
 ## Server Wipe
 
@@ -129,9 +127,8 @@ You still need to make one user per server, change ports, and repeat the install
 ./rustserver wipe
 ```
 
-auto wipe
+auto wipe:
 
 ```bash
 echo y | ./rustserver wipe
 ```
-

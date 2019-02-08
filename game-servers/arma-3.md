@@ -48,13 +48,13 @@ Incorporating mods into the server is not supported by LinuxGSM. The following g
 For a standard deployment, you will want to have your modules unpacked under `serverfiles/mods`. For example, your directory structure might have the following raw modules unpacked under `serverfiles/mods`:
 
 ```text
-[arma3server@localhost mods]$ ls 
+[arma3server@localhost mods]$ ls
 @ace @AdvancedTowing @CBA_A3 @RHSUSAF @AdvancedRappelling @AdvancedUrbanRappelling @RHSAFRF @AdvancedSlingLoading @Ares @RHSGREF
 ```
 
 ### Lower Case file names
 
-The server demands that the modules possess all lowercase names. Since not all mods do this all files with uppercase letters will need or be converted. This can be done my using the following script.
+The server demands that the modules possess all lowercase names. Since not all mods do this all, files with uppercase letters will need to be converted. This can be done by using the following script.
 
 Run the script from the `mods` directory.
 
@@ -64,7 +64,7 @@ depth=0
 for x in $(find . -type d | sed "s/[^/]//g")
 do
 if [ ${depth} -lt ${#x} ]
-then 
+then
    let depth=${#x}
 fi
 done
@@ -75,7 +75,7 @@ echo "the depth is ${depth}"
 for ((i=1;i<=${depth};i++))
 do
   for x in $(find . -maxdepth $i | grep [A-Z])
-  do 
+  do
     mv $x $(echo $x | tr 'A-Z' 'a-z')
   done
 done
@@ -116,13 +116,12 @@ arma3server@gamebox3:~$ grep "List of mods" log/console/arma3-server-console.log
  1:21:05                             Advanced Sling Loading | @advancedslingloading |      false |             GAME DIR | 1af4c6ff7f351b09ad5ef4513f3038d44a375117 |  9f2e7c81 | /home/arma3server/serverfiles/mods/@advancedslingloading
  1:21:05                                Advanced Rappelling |  @advancedrappelling |      false |             GAME DIR | 35c56daaba7164fbaadb24b5715caf9216189348 |  7029c1d8 | /home/arma3server/serverfiles/mods/@advancedrappelling
  1:21:05                  Advanced Combat Environment 3.7.0 |                 @ace |      false |             GAME DIR | 1251197941f4565b6fddb807ccc6c88bfbb61113 |  a66ef771 | /home/arma3server/serverfiles/mods/@ace
- 1:21:05                                  Arma 3 DLC Bundle |            dlcbundle |       true |            NOT FOUND |                                          |           | 
+ 1:21:05                                  Arma 3 DLC Bundle |            dlcbundle |       true |            NOT FOUND |                                          |           |
  1:21:05                                        Arma 3 Apex |            expansion |       true |             GAME DIR | ec40f8295ae63a8b823ae3fb2700b9118ff69072 |  231d7bbe | /home/arma3server/serverfiles/expansion
  1:21:05                                    Arma 3 Marksmen |                 mark |       true |             GAME DIR | a6ae777fb084f739dbdc84cb8a58c864e8fd5ad0 |  f71c9869 | /home/arma3server/serverfiles/mark
  1:21:05                                 Arma 3 Helicopters |                 heli |       true |             GAME DIR | 5b05f65505b7a14ab34754fd014590de8a287023 |  e55c01d5 | /home/arma3server/serverfiles/heli
  1:21:05                                       Arma 3 Karts |                 kart |       true |             GAME DIR | 18cd569ec6fa46f3db80faf3aa51a852874b2028 |  4a0232e1 | /home/arma3server/serverfiles/kart
  1:21:05                                        Arma 3 Zeus |              curator |       true |             GAME DIR | 20a9850c01e340b360399c169fc3bb1cb8bf4dc7 |  ee9ab146 | /home/arma3server/serverfiles/curator
- 1:21:05                                             Arma 3 |                   A3 |       true |            NOT FOUND |                                          |           | 
+ 1:21:05                                             Arma 3 |                   A3 |       true |            NOT FOUND |                                          |           |
  1:21:05 ==========================================================================================================================================================================================================
 ```
-

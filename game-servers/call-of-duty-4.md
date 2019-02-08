@@ -4,7 +4,7 @@
 
 Many tutorials state that the game disk is required to install a CoD4 server. This is because the server is built in to the client. This made it difficult to distribute and create a CoD4 server.
 
-After investigating this issue is was found that it is possible to run a server with most of the client files removed. This greatly reduces the file size and prevents the client from being used. Because of this LinuxGSM provides a download to only the files required to run the server. Preventing the use of the client and the opportunity to use the server to pirate the game.
+After investigating this issue it was found that it is possible to run a server with most of the client files removed. This greatly reduces the file size and prevents the client from being used. Because of this LinuxGSM provides a download to only the files required to run the server. Preventing the use of the client and the opportunity to use the server to pirate the game.
 
 ## CoD4x
 
@@ -60,7 +60,7 @@ To start the server with a mod set the fs\_game variable accordingly.
 
 ## Custom Maps
 
-Modded CoD4 servers have the ability to run with user created maps. To run a server with a custom map, it has to first be placed in the usermaps folder. In case that folder does not yet exist in your server directory just create it. Just like mods, connecting clients will have to download these maps first before playing them. As the CoD4 servers download speed is quite low, setting up a fast download server is recommended.
+Modded CoD4 servers have the ability to run user created maps. To run a server with a custom map, it has to first be placed in the usermaps folder. In case that folder does not yet exist in your server directory, just create it. Just like mods, connecting clients will have to download these maps first before playing them. As the CoD4 servers download speed is quite low, setting up a fast download server is recommended.
 
 ```text
     ├── usermaps
@@ -111,4 +111,3 @@ An example directory tree for a served folder may look as blow:
     │   │   ├── mp_nuketown.iwd
     │   │   ├── mp_nuketown_load.ff
 ```
-
