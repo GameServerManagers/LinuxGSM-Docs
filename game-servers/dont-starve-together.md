@@ -4,7 +4,7 @@
 
 Don't Starve Together server requires an Authentication Token.
 
-1. Go to the Klei website https://accounts.klei.com
+1. Go to the Klei website <https://accounts.klei.com>
 2. After logging into your account visit [this](https://accounts.klei.com/account/game/servers?game=DontStarveTogether) page to get your authentication token
 3. Enter a friendly name for your server and copy the access token
 
