@@ -4,8 +4,8 @@ You will need to give attention to ports in multiple cases.
 
 Here are the most common ones:
 
-* When you want to run \[\[Multiple Game Servers\]\] on the same machine
-* When you have a strict firewall and you need to open the right ports in order to let people connect to your server \(see \[\[Firewalls\]\]\)
+* When you want to run [Multiple Game Servers](../features/multiple-game-servers.md) on the same machine
+* When you have a strict firewall and you need to open the right ports in order to let people connect to your server \(see [Firewalls](../linux/firewalls.md)\)
 * When you need to forward ports on a NAT to the desired local IP in order for your server to be reachable from outside the local network \(likely from the internet\)
 
 ## Generalities and vocabulary
@@ -20,7 +20,7 @@ Here are the most common ones:
 
 Listening ports are usually set within your start parameters, sometimes in the game server config file.
 
-For info about start parameters, see \[\[Start Parameters\]\] and \[\[LinuxGSM Config\]\] For info about your game server config, see \[\[Game Server Config\]\]
+For info about start parameters, see [Start Parameters](../configuration/start-parameters.md) and [LinuxGSM Config](../configuration/linuxgsm-config.md) For info about your game server config, see [Game Server Config](../configuration/game-server-config.md).
 
 ## View current settings
 
@@ -75,9 +75,9 @@ Should a server has multiple dedicated IP addresses allocated, it is possible fo
 
 ## Home Servers
 
-Home servers are a great way to experiment with game servers or can be used as a permanent option if you have the bandwidth. There are extra steps required on your home router to allow external access to your game server. This will normally involve opening ports on the router firewall and/or port forwarding. See your router's manual for specific instructions.
+Home servers are a great way to experiment with game servers or can be used as a permanent option if you have the bandwidth. There are extra steps required on your home router to allow external access to your game server. This will normally involve opening ports on the router firewall and/or port forwarding. See [this link](https://www.howtogeek.com/66214/how-to-forward-ports-on-your-router/) for basic instuctions. See your router's manual for specific instructions.
 
-[https://www.howtogeek.com/66214/how-to-forward-ports-on-your-router/](https://www.howtogeek.com/66214/how-to-forward-ports-on-your-router/)
+
 
 ### ip= setting for home servers
 
@@ -147,7 +147,7 @@ netstat -atunp | grep srcds_linux
 Running the command will bring up any ports that are listening. If not, the server has not started or not correcting binding to its allocated ports. Check that ports are not already in use by something else. Check that you are trying to listen to an actual interface IP, check that ports are not already in use by another application, check that the server does not crash upon start by checking console logs or try starting the server with `./gameserver debug`
 
 2\) Check the Firewall  
-\[\[Firewalls\]\] are a regular source of connectivity issues. When diagnosing connection issues temporarily disabling a firewall will help identify if it is the source of the problem.
+[Firewalls](../linux/firewalls.md) are a regular source of connectivity issues. When diagnosing connection issues temporarily disabling a firewall will help identify if it is the source of the problem.
 
 3\) Check Port Forwarding \(local networks only\)  
 Ensure that the router correctly redirects incoming traffic to the correct ports and local IP displayed with `./gameserver details` with the correct protocol \(TCP and/or UDP\).
