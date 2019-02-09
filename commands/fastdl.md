@@ -4,7 +4,7 @@ FastDL \(Fast Download\) allows the client to download custom server content \(m
 
 It is used to offload content downloads to a web server instead of relying on source servers \(SRCDS\) that only allows 20KBps downloads to clients. Content on the web server can be compressed to further speed up the download process. This means that custom content downloads much faster.
 
-Valve now use steam workshop for most custom content however FastDL is still required in some cases.
+Valve now use steam workshop for most custom content, however FastDL is still required in some cases.
 
 LinuxGSM FastDL automatically creates the web directories and compresses the content for you.
 
@@ -30,7 +30,7 @@ Short: `./gameserver fd`
 
 ## Requirements
 
-* web server on the game server \(Apache/Nginx\).
+* Web server on the game server \(Apache/Nginx\).
 
   or
 
@@ -56,7 +56,7 @@ Here is an example of setting up Apache2 using a subdomain.
 
 This works for Apache 2.4+ and when using a domain name. If you have got a different configuration, refer to the Apache2 documentation.
 
-Firstly make sure your subdomain redirects to your game server and that Apache2 is correctly installed and started. Create a virtual host in order to be able to host a website :
+Firstly, make sure your subdomain redirects to your game server and that Apache2 is correctly installed and started. Create a virtual host in order to be able to host a website:
 
 `nano /etc/apache2/sites-available/yourvirtualhost.com.conf`
 
@@ -91,11 +91,11 @@ Test the domain, to make sure it is working `http://subdomain.domain.com/fastdl`
 
 ### Edit Game Server config
 
-The new url will need to be added to the game server config
+The new url will need to be added to the [game server config](../configuration/game-server-config.md):
 
 `nano serverfiles/gamename/cfg/game-server.cfg`
 
-Make sure you have this :
+Make sure you have this:
 
 ```text
 sv_downloadurl "http://subdomain.domain.com/fastdl"
@@ -104,7 +104,7 @@ sv_allowdownload 1
 
 ### Re-generate FastDL
 
-If the custom server content is updated or removed re running the fastdl command is required to ensure that the webserver is in sync with the game server.
+If the custom server content is updated or removed, rerunning the fastdl command is required to ensure that the webserver is in sync with the game server.
 
 > Note for addons developers : Note that clients won't download a file that they already downloaded unless you rename it.
 
@@ -114,5 +114,4 @@ Custom server content can be compressed using bzip2 which is supported by source
 
 #### Garry's Mod Download enforcer
 
-In order for a client to download files from a FastDL in Garry's Mod, the developer of an addon must put file from the addon into lua code `resource.Addfile ( "/path/to/file.ext" )`. However, some addon developers do not do this. In order for clients to download the required files, an lua file needs to be generated for it to work, which is what the lua enforcer feature does. The only downside is that clients may download files that are not required on the server.
-
+In order for a client to download files from a FastDL in Garry's Mod, the developer of an addon must put files from the addon into lua code `resource.Addfile ( "/path/to/file.ext" )`. However, some addon developers do not do this. In order for clients to download the required files, an lua file needs to be generated for it to work, which is what the lua enforcer feature does. The only downside is that clients may download files that are not required on the server.

@@ -14,7 +14,7 @@ Update will check for any available update, taking no action if no update is ava
 
 ### Update on start
 
-It is possible to update a game server on start, by editing the LinuxGSM config.
+It is possible to update a game server on start, by editing the [LinuxGSM config](../configuration/linuxgsm-config.md).
 
 `updateonstart="on"`
 
@@ -48,5 +48,4 @@ The extra `su - username -c` indicates which user to run the script as.
 
 It is recommended to check for updates once per hour.
 
-crontab.guru is a great resource to generate cronjobs. [https://crontab.guru/](https://crontab.guru/)
-
+[crontab.guru](https://crontab.guru/) is a great resource to generate cronjobs.

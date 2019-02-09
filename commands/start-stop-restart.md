@@ -1,6 +1,6 @@
 # start-stop-restart
 
-LinuxGSM provides an easy way to start, stop and restart your game server. LinuxGSM knows the location of the server binarys inserts the start parameters to allow the server to start. LinuxGSM will also run various checks to prevent issues and apply any required server fixes to get the game server running.
+LinuxGSM provides an easy way to start, stop and restart your game server. LinuxGSM knows the location of the server binaries inserts the start parameters to allow the server to start. LinuxGSM will also run various checks to prevent issues and apply any required server fixes to get the game server running.
 
 ## Commands
 
@@ -21,4 +21,3 @@ Stop will do a graceful shutdown \(sends "quit" command to Source servers for ex
 Will simply stop, then the start the server.
 
 `./gameserver restart`
-

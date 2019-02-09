@@ -12,7 +12,7 @@ To enable Pushbullet alerts you need to generate an Access Token.
 
 Access Tokens are available from Pushbullet setting found [here](https://www.pushbullet.com/#settings).
 
-Once you have created a token insert it in to you LinuxGSM config.
+Once you have created a token insert it in to your [LinuxGSM config](../configuration/linuxgsm-config.md).
 
 ```bash
 # Pushbullet Alerts | https://github.com/GameServerManagers/LinuxGSM/wiki/Pushbullet
@@ -35,9 +35,8 @@ channeltag="myepicserver"
 
 ## Send Test Alert
 
-Finally test that is correctly works by sending a test alert.
+Finally test that everything correctly works by sending a test alert.
 
 ```text
 ./gameserver test-alert
 ```
-

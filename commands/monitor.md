@@ -16,7 +16,7 @@ Short: `./gameserver m`
 
 ## Automated Monitoring
 
-Monitor is designed to be used automatically with cronjobs to allow a game server to be frequently checked.
+Monitor is designed to be used automatically with [cronjobs](../to-do/cronjobs.md) to allow a game server to be frequently checked.
 
 As a reminder, you can edit your cronjobs, typing :
 
@@ -59,4 +59,3 @@ The monitor will wait for 60 seconds as it is common for servers to stop respond
 ## Lockfile
 
 LinuxGSM creates a lock file when `./gameserver start` is run. Monitor uses this lock file to confirm if an admin wants the server to be started. Should the lock file not be present monitor will not take any action. This is to prevent the scenario of an admin stopping the server only to have monitor start it up again a few minutes later.
-

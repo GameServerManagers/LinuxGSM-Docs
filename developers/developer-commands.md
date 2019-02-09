@@ -54,10 +54,9 @@ the log is located is called `dev-debug.log`
 
 ## clear-functions
 
-* deletes all functions in `lgsm/functions` and removes default LinxuGSM configs.
+* deletes all functions in `lgsm/functions` and removes default [LinxuGSM configs](../commands/update-lgsm.md).
 
 ```bash
 ./gameserver clear-fuctions
 ./gameserver cf
 ```
-

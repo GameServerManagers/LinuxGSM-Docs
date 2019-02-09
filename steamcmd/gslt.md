@@ -34,10 +34,8 @@ An added benefit is that people who add your server to favourite will still be a
 
 To generate a token follow this [link](http://steamcommunity.com/dev/managegameservers)
 
-[http://steamcommunity.com/dev/managegameservers](http://steamcommunity.com/dev/managegameservers)
-
 {% hint style="info" %}
-GSLT requires the app ID of the base game \(e.g. 440 for TF2, 730 for CS:GO, 4000 for Garry's Mod\) when generating a token, not the server appid
+GSLT requires the app ID of the base game \(e.g. 440 for TF2, 730 for CS:GO, 4000 for Garry's Mod\) when generating a token, not the server appid.
 {% endhint %}
 
 {% hint style="info" %}
@@ -46,7 +44,7 @@ Every single server must use a unique GSLT.
 
 ## GSLT Server Parameter
 
-GSLT can be registered on your server\(s\) by using the `sv_setsteamaccount` command either in _autoexec.cfg_ or from a _start parameter_.
+GSLT can be registered on your server\(s\) by using the `sv_setsteamaccount` command either in _autoexec.cfg_ or from a [_start parameter_](../configuration/start-parameters.md).
 
 start parameter
 
@@ -58,7 +56,7 @@ autoexec.cfg
 
 ### Tower Unite
 
-Tower Unite has a command within its config file
+Tower Unite has a command within it's [config file](../configuration/game-server-config.md):
 
 `SteamLoginToken=`
 

@@ -61,13 +61,13 @@ Rust, Hurtworld, 7 Days To Die
 * After the user selects a mod, the file gets downloaded and extracted to a temporary directory.  
 * A list of the mod files is created at `lgsm/mods/modname-files.txt`. This list allows the mod to be removed if required. LinuxGSM developers have whitelisted important customisable files such as mod config files that will not be removed. If there are any important files that have been missed please raise an issue.
 * Files and directories then get copied to the correct destination.
-* LinuxGSM updates a file containing a list of installed mods `lgsm/mods/installed-mods.txt`. 
+* LinuxGSM updates a file containing a list of installed mods `lgsm/mods/installed-mods.txt`.
 
 ### Update
 
 * The list `lgsm/mods/installed-mods.txt` is used to identify which mods are installed. If a non-referenced mod is found, the updater will stop with an error.
-* Three update types are available
-  * OVERWRITE will overwrite all mod files. 
+* Three update types are available:
+  * OVERWRITE will overwrite all mod files.
   * NOUPDATE will prevent this mod from being updated. Useful for a framework that is designed to be entirely customized.
   * RETAIN keeps the whitelisted files and updating everything else.
 * As there is no easy way to check for mod versions, the update process will update every single installed mod every time the command is run.
@@ -94,10 +94,9 @@ If there is a mod you wish to see supported by LinuxGSM please raise a GitHub is
 
 If you wish to create a pull-request yourself for this, please make sure you read the "Developer" section at the bottom right of the wiki.
 
-Usually, editing mods\_list.sh should be enough to add mod's support. This script contains comments helping you to understand how to use it.
+Usually, editing mods\_list.sh should be enough to add mod support. This script contains comments helping you to understand how to use it.
 
 Basically: Add an array variable containing mod info, then add the array to the global array.
 
 Long explanation: The list is based on arrays, used to define all mod properties. You need to make sure that every value is filled up and in the correct order, that mod commands are unique and that multiple choices values are ended with a semicolon \(;\), otherwise the last value will be ignored.  
 You might need to add an entry in `fn_mod_tidy_files_list` from `mods_core.sh` in order to remove lines from mod's file list so that they do not get wrongly removed with the mods-remove command. For further assistance on developing this contact UltimateByte who developed those functions and dgibbs that reworked it should be able to help.
-

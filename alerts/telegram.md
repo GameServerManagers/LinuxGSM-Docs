@@ -4,18 +4,18 @@ Send LinuxGSM alerts to a Telegram Messenger user or group.
 
 ## Setup a Telegram Bot
 
-To enable Telegram alerts you need to create your own Telegram Bot.
+To enable Telegram alerts you will need to create your own Telegram Bot.
 
 1. To do this you will need to speak to @BotFather by visiting [here](https://telegram.me/BotFather).
 2. Click start to begin the chat.
 
 ![BotFather Chat](../.gitbook/assets/botfather_chat.png)
 
-1. Type `/newbot` and follow the instructions to create a bot.
+3. Type `/newbot` and follow the instructions to create a bot.
 
 ![new Bot](../.gitbook/assets/botfather_new_bot.png)
 
-1. Once complete an API token will be given. Enter the token to the LinuxGSM config.
+4. Once complete an API token will be given. Enter the token to the [LinuxGSM config](../configuration/linuxgsm-config.md).
 
 ```
 
@@ -29,7 +29,7 @@ To enable Telegram alerts you need to create your own Telegram Bot.
 
 ```
 # Telegram Group
-Use this step If you want to send alerts to a group. If not skip to _retrieve chat id_.
+Use this step if you want to send alerts to a group. If not, skip to _retrieve chat id_.
 
 ## Setup a New Group
 1. Select `New Group`
@@ -60,7 +60,7 @@ To obtain the chat id a message must be received by the bot. This will allow it 
 To retrieve the chat id visit the following url, replacing the `XXXXX` with your bot token from earlier.
 ```
 
-[https://api.telegram.org/botXXXXXXXXX:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/getUpdates](https://api.telegram.org/botXXXXXXXXX:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/getUpdates)
+https://api.telegram.org/botXXXXXXXXX:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/getUpdates
 
 ```
 Look for text `LINUXGSM` in the message and find the `chat id` part of that message.
@@ -72,7 +72,7 @@ Look for text `LINUXGSM` in the message and find the `chat id` part of that mess
 The number given is the chat id
 > note: A group number includes a dash in the chat id e.g `-191537238`
 
-Add the chat id to the LinuxGSM config
+Add the chat id to the [LinuxGSM config](../configuration/linuxgsm-config.md)
 ```
 
 ## Telegram Alerts \| [https://github.com/GameServerManagers/LinuxGSM/wiki/Telegram](https://github.com/GameServerManagers/LinuxGSM/wiki/Telegram)
@@ -81,10 +81,9 @@ telegramalert="on" telegramtoken="401319987:AAGmgLWzYDprqkMHBjCT9qtzIRWCzqgoTLw"
 
 ```
 # Send Test Alert
-Finally test that is correctly works by sending a test alert. You will now receive a message from the bot directly or to a chosen group.
+Finally test that everything correctly works by sending a test alert. You will now receive a message from the bot directly or to a chosen group.
 ```
 
 ./gameserver test-alert
 
 ```
-
