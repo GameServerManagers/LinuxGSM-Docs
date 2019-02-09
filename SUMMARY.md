@@ -70,7 +70,6 @@
   * [LAN Discovery](steamcmd/lan-discovery.md)
   * [Workshop](steamcmd/workshop.md)
 * [Linux](linux/README.md)
-  * [cronjobs](linux/cronjobs.md)
   * [distro](linux/distro.md)
   * [ftp-scp](linux/ftp-scp.md)
   * [file-ownership](linux/file-ownership.md)
