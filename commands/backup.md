@@ -1,6 +1,6 @@
 # backup
 
-The `backup` command will allows the creation of `.tar.gz` archives of a game server. This can be used to transfer a game server to another Linux server, to backup the game server before a risky change, to save the current state of the game server.
+The `backup` command allows the creation of `.tar.gz` archives of a game server. This can be used to transfer a game server to another Linux server, to backup the game server before a risky change, to save the current state of the game server.
 
 {% hint style="danger" %}
 Each time a backup runs the whole game server will be backed up, this can take up significant storage space. Consider a backup policy to prevent your Linux server from running out of storage.
@@ -61,11 +61,11 @@ stoponbackup="on"
 
 ## Automated Backups
 
-Automated backups can be set using [cronjobs](../linux/cronjobs.md). It is recommended that frequently you backup and your retention policy to prevent your server is carefully considered to prevent storage issues.
+Automated backups can be set using [cronjobs](../configuration/cronjobs.md). It is recommended that frequently you backup and your retention policy to prevent your server is carefully considered to prevent storage issues.
 
 ### cronjob example
 
-see [cronjobs](../linux/cronjobs.md)
+see [cronjobs](../configuration/cronjobs.md)
 
 ```bash
 crontab -e

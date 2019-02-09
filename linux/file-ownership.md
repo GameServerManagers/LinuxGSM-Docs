@@ -3,7 +3,7 @@
 ## Introduction
 
 Linux files and directories always belong to a user and group. That is what we call ownership.  
-If this can be boring to new users, remember that this is a huge part of what makes Linux as secured as it is.
+If this can be boring to new users, remember that this is a huge part of what makes Linux as secure as it is.
 
 ## Check current ownership
 

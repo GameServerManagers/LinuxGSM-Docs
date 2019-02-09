@@ -48,7 +48,7 @@ Run the FastDL command on your main LinuxGSM script. This will create a new dire
 
 If Apache2 is being used a virtual host pointing to the newly created `public_html` directory can be used.
 
-Tip: Apache2 mod "userdir" is useful if the Linux erver is hosting multiple game servers, as it creates a url for the current user `http://yourwebsite.ltd/~username`.
+Tip: Apache2 mod "userdir" is useful if the Linux server is hosting multiple game servers, as it creates a url for the current user `http://yourwebsite.ltd/~username`.
 
 #### Tutorial on setup of Apache2 server with Virtual Hosts
 
@@ -114,5 +114,5 @@ Custom server content can be compressed using bzip2 which is supported by source
 
 #### Garry's Mod Download enforcer
 
-In order for a client to download files from a FastDL in Garry's Mod, the developer of an addon must put very file from the addon into lua code `resource.Addfile ( "/path/to/file.ext" )`. However, some addon developers do not do this. In order for clients to download the required files, an lue file need to be generated for it to work, which is what the lua enforcer feature does. The only downside is that clients may download files that are not required on the server.
+In order for a client to download files from a FastDL in Garry's Mod, the developer of an addon must put file from the addon into lua code `resource.Addfile ( "/path/to/file.ext" )`. However, some addon developers do not do this. In order for clients to download the required files, an lua file needs to be generated for it to work, which is what the lua enforcer feature does. The only downside is that clients may download files that are not required on the server.
 

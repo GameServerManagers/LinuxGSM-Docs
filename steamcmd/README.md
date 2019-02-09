@@ -22,7 +22,7 @@ The majority of game servers using SteamCMD only require an _anonymous_ login. L
 
 Some game servers require you login to SteamCMD using a steam login to allow download of the server. Some also require you to own a copy of the game on the steam account.
 
-If this is the case LinuxGSM will prompt you on install to set a steam _username_ and _password._ This \_\_can be set by editing the following settings within the [LinuxGSM config](../configuration/linuxgsm-config.md).
+If this is the case LinuxGSM will prompt you on install to set a steam _username_ and _password._ This can be set by editing the following settings within the [LinuxGSM config](../configuration/linuxgsm-config.md).
 
 ```text
 ## SteamCMD Login
@@ -31,7 +31,7 @@ steampass="password"
 ```
 
 {% hint style="danger" %}
-Do not use your own steam login. Create a new Steam login just for the game server. As the steam login password is stored in [plain text](./#plain-text-passwords).
+**Do not** use your own steam login. Create a new Steam login just for the game server. As the steam login password is stored in [plain text](./#plain-text-passwords).
 {% endhint %}
 
 {% hint style="info" %}
@@ -78,7 +78,7 @@ Both options 1 & 2 work with LinuxGSM.
 
 Steam Guard via Smartphone is not compatible because it requires a code every time you login to SteamCMD. This is problematic if you want your servers to auto update.
 
-If you have Steam Guard via email enabled the first time you start SteamCMD you will be prompt to enter a steam Guard code and receive an email with the code. Copy and paste the code in to the prompt and press enter. You will not need to enter a code again.
+If you have Steam Guard via email enabled the first time you start SteamCMD you will be prompted to enter a steam Guard code and you will receive an email with the code. Copy and paste the code in to the prompt and press enter. You will not need to enter a code again.
 
 ## Errors
 
