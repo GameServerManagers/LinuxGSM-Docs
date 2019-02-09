@@ -14,11 +14,11 @@ SteamCMD requires a login to download some game servers.
 
 It is recommended that you [create a new Steam username](https://store.steampowered.com/login/) just for the server.
 
-#### Anonymous Login
+### Anonymous Login
 
 The majority of game servers using SteamCMD only require an _anonymous_ login. LinuxGSM will not require any configuration if this is the case.
 
-#### Steam User Login
+### Steam User Login
 
 Some game servers require you login to SteamCMD using a steam login to allow download of the server. Some also require you to own a copy of the game on the steam account.
 
@@ -38,7 +38,7 @@ steampass="password"
 Check [here](https://linuxgsm.com/data/steamcmd) for a list of game servers that require a login.
 {% endhint %}
 
-#### Plain Text Passwords
+### Plain Text Passwords
 
 SteamCMD prints out passwords in plain text meaning that the Steam login password is visible to anyone on the server. LinuxGSM saves logs and the Steam login password will be view-able in the logs.
 
@@ -54,7 +54,7 @@ When Steam Guard is enabled on an account, when a login to from an unrecognized 
 For more info visit [steam support](https://support.steampowered.com/kb_article.php?ref=4020-ALZM-5519).
 {% endhint %}
 
-#### Authentication Methods for SteamCMD
+### Authentication Methods for SteamCMD
 
 1. Username and password - No Steam Guard
 2. Username and password - Steam Guard via Email \(recommended\)
@@ -72,7 +72,7 @@ Requires your Steam username and password but also you will receive and email on
 
 Requires your Steam Username & Password but also requires you have the Steam app on your phone to use 2-factor Authentication
 
-#### Using Steam Guard with LinuxGSM
+### Using Steam Guard with LinuxGSM
 
 Both options 1 & 2 work with LinuxGSM.
 

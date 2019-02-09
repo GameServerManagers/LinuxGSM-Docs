@@ -22,7 +22,7 @@ This will take longer for the game server to start but can be useful for servers
 
 ### Scheduled updates
 
-A [cronjob](../configuration/cronjobs.md) can be set to run `update` at any given time.
+A [cronjob](https://github.com/GameServerManagers/LinuxGSM-Docs/tree/88afc2c547969df2885aa9e148762ad5091478d2/configuration/cronjobs.md) can be set to run `update` at any given time.
 
 To edit cronjobs, type:
 

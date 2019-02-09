@@ -61,11 +61,11 @@ stoponbackup="on"
 
 ## Automated Backups
 
-Automated backups can be set using [cronjobs](../configuration/cronjobs.md). It is recommended that frequently you backup and your retention policy to prevent your server is carefully considered to prevent storage issues.
+Automated backups can be set using [cronjobs](https://github.com/GameServerManagers/LinuxGSM-Docs/tree/88afc2c547969df2885aa9e148762ad5091478d2/configuration/cronjobs.md). It is recommended that frequently you backup and your retention policy to prevent your server is carefully considered to prevent storage issues.
 
 ### cronjob example
 
-see [cronjobs](../configuration/cronjobs.md)
+see [cronjobs](https://github.com/GameServerManagers/LinuxGSM-Docs/tree/88afc2c547969df2885aa9e148762ad5091478d2/configuration/cronjobs.md)
 
 ```bash
 crontab -e
@@ -116,23 +116,23 @@ Using the backup feature is not the only way to backup a game server. There are 
 
 rsync is one of the most common ways to backup. It is a remote sync tool that is created for sending files/directory's to another location. Particularly good for syncing to another server.
 
-{% embed url="https://www.linode.com/docs/tools-reference/tools/introduction-to-rsync" %}
+{% embed url="https://www.linode.com/docs/tools-reference/tools/introduction-to-rsync" caption="" %}
 
 ### Duplicity
 
-Is an incremental backup solution that allows backups to all sorts of different locations including many different cloud storage solutions like BackBlaze B2 and Amazon S3. Once configured it can be a powerful and efficient backup solution. 
+Is an incremental backup solution that allows backups to all sorts of different locations including many different cloud storage solutions like BackBlaze B2 and Amazon S3. Once configured it can be a powerful and efficient backup solution.
 
-{% embed url="http://duplicity.nongnu.org" %}
+{% embed url="http://duplicity.nongnu.org" caption="" %}
 
 #### duplicity-backup.sh
 
-duplicity-backup.sh is a very useful bash wrapper to help automate duplicity. 
+duplicity-backup.sh is a very useful bash wrapper to help automate duplicity.
 
-{% embed url="https://github.com/zertrin/duplicity-backup.sh" %}
+{% embed url="https://github.com/zertrin/duplicity-backup.sh" caption="" %}
 
 ### rclone
 
 Similar to rsync however can easily sync to cloud storage solutions.
 
-{% embed url="http://rclone.org" %}
+{% embed url="http://rclone.org" caption="" %}
 
