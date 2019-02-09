@@ -70,20 +70,18 @@ Look for text `LINUXGSM` in the message and find the `chat id` part of that mess
 
 ```
 The number given is the chat id
+
 > note: A group number includes a dash in the chat id e.g `-191537238`
 
 Add the chat id to the [LinuxGSM config](../configuration/linuxgsm-config.md)
 ```
-
 ## Telegram Alerts \| [https://github.com/GameServerManagers/LinuxGSM/wiki/Telegram](https://github.com/GameServerManagers/LinuxGSM/wiki/Telegram)
 
 telegramalert="on" telegramtoken="401319987:AAGmgLWzYDprqkMHBjCT9qtzIRWCzqgoTLw" telegramchatid="-191537238"
-
 ```
 # Send Test Alert
 Finally test that everything correctly works by sending a test alert. You will now receive a message from the bot directly or to a chosen group.
 ```
-
 ./gameserver test-alert
 
 ```
