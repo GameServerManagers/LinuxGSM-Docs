@@ -1,6 +1,6 @@
 # map-compressor
 
-The `map-compressor` command is used to compress maps for some unreal engine servers, allowing for faster maps downloads to clients.
+The `map-compressor` command is used to compress maps for some Unreal engine servers, allowing for faster maps downloads to clients.
 
 ## Supported Servers
 

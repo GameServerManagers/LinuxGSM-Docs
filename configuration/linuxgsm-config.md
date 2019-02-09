@@ -85,7 +85,7 @@ Now you can edit your instance file that contains all of your LinuxGSM and start
 
 3\) Then edit your multiple `instance.cfg` files manually, copying the parameters that you need to be customized. It's best to use two SSH windows to be more efficient. Usually, you will want to set individually the IP, ports, server name and map if applicable, and set the rest from `common.cfg` or from `_default.cfg`
 
-4\) Then you can check that your servers work properly together, stop those you need to work on, and work on your \[\[Game Server Config\]\]
+4\) Then you can check that your servers work properly together, stop those you need to work on, and work on your [Game Server Config](game-server-config.md)
 
 ### Examples
 
@@ -93,7 +93,12 @@ Any setting listed in `instance.cfg` will override `common.cfg` which will overr
 
 #### Example 1
 
-Load `de_nuke` as default map on "csgoserver": \_default.cfg: defaultmap="de\_dust2" common.cfg: NOT SET csgoserver.cfg: defaultmap="de\_nuke"
+Load `de_nuke` as default map on "csgoserver": 
+```text
+_default.cfg: defaultmap="de_dust2"
+common.cfg: NOT SET
+csgoserver.cfg: defaultmap="de_nuke"
+```
 
 #### Example 2
 

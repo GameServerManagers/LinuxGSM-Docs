@@ -1,6 +1,6 @@
 # test-alert
 
-The `test-alert` command is used to send a test alert. To ensure that configured alerts are functioning and being recieved.
+The `test-alert` command is used to send a test alert that is used to ensure that configured alerts are functioning and being recieved.
 
 ## Commands
 

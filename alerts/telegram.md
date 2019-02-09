@@ -6,18 +6,18 @@ Send LinuxGSM alerts to a Telegram Messenger user or group.
 
 To enable Telegram alerts you need to create your own Telegram Bot.
 
-1. Do do this you will need to speak to @BotFather by visiting [here](https://telegram.me/BotFather).
+1. To do this you will need to speak to @BotFather by visiting [here](https://telegram.me/BotFather).
 2. Click start to begin the chat.
 
 ![BotFather Chat](../.gitbook/assets/botfather_chat.png)
 
-1. Type `/newbot` and follow the instructions the create a bot.
+1. Type `/newbot` and follow the instructions to create a bot.
 
 ![new Bot](../.gitbook/assets/botfather_new_bot.png)
 
 1. Once complete an API token will be given. Enter the token to the LinuxGSM config.
 
-   \`\`\`
+```
 
    **Telegram Alerts \|** [**https://github.com/GameServerManagers/LinuxGSM/wiki/Telegram**](https://github.com/GameServerManagers/LinuxGSM/wiki/Telegram)\*\*\*\*
 
@@ -27,35 +27,27 @@ To enable Telegram alerts you need to create your own Telegram Bot.
 
    telegramchatid=""
 
-```text
+```
 # Telegram Group
 Use this step If you want to send alerts to a group. If not skip to _retrieve chat id_.
 
 ## Setup a New Group
 1. Select `New Group`
 
-![New Group](../.gitbook/assets/telegram_new_group.png)
-
 2. Give your group a name
 
-![Select Bot](../.gitbook/assets/telegram_select_bot.png)
-
 3. Select the Bot you just created by typing `@ExampleBot`.
-
-![Add Bot](../.gitbook/assets/telegram_add_bot.png)
-
 
 The bot will now be added to the group.
 
 # Use an Existing group
 
-If you are using an existing group, invite the bot too the group.
+If you are using an existing group, invite the bot to the group.
 ```
 
-View group info&gt;Add Members.
+View group info -> Add Members.
 
-```text
-![Add Bot](../.gitbook/assets/telegram_add_bot.png)
+```
 
 # Retrieve the chat id
 
@@ -70,29 +62,26 @@ To retrieve the chat id visit the following url, replacing the `XXXXX` with your
 
 [https://api.telegram.org/botXXXXXXXXX:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/getUpdates](https://api.telegram.org/botXXXXXXXXX:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/getUpdates)
 
-```text
+```
 Look for text `LINUXGSM` in the message and find the `chat id` part of that message.
 ```
 
 "chat":{"id":-191537238,
 
-```text
+```
 The number given is the chat id
-> note: That for a group the number includes a dash in the chat id e.g `-191537238`
+
+> note: A group number includes a dash in the chat id e.g `-191537238`
 
 Add the chat id to the LinuxGSM config
 ```
-
 ## Telegram Alerts \| [https://github.com/GameServerManagers/LinuxGSM/wiki/Telegram](https://github.com/GameServerManagers/LinuxGSM/wiki/Telegram)
 
 telegramalert="on" telegramtoken="401319987:AAGmgLWzYDprqkMHBjCT9qtzIRWCzqgoTLw" telegramchatid="-191537238"
-
-```text
+```
 # Send Test Alert
 Finally test that is correctly works by sending a test alert. You will now receive a message from the bot directly or to a chosen group.
 ```
-
 ./gameserver test-alert
 
-\`\`\`
-
+```

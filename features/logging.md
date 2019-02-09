@@ -9,7 +9,7 @@ If your user is `gameserver`, then LinuxGSM logs are located in the following di
 This "log" directory contains two other directories:
 
 * `script`, logs LinuxGSM script activity
-* `console`, logs gameserver [console](https://github.com/GameServerManagers/LinuxGSM/wiki/Console) output
+* `console`, logs gameserver `[console](../commands/console.md)` output
 * `game`, is a redirect to the game server log files if available.
 
   **Settings**

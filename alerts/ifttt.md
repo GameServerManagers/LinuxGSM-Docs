@@ -53,6 +53,6 @@ Server IP 1.2.3.4:27015
 2. Select the `Webhooks` service
 3. Choose `Receive a web request`
 4. Enter your `Event Name` and click `Create Trigger`
-5. Select an action service. And customise however required.
+5. Select an action service.
 6. Give the applet a name and save.
 

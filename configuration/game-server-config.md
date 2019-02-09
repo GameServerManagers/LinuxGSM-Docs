@@ -4,11 +4,11 @@
 \_\_[_LinuxGSM Configs_](linuxgsm-config.md) and _Game Server Configs_ are different. One is the config for LinuxGSM itself and the other is for the game server instance.
 {% endhint %}
 
-Game server config files are the configuration files used by the game server to store various game server settings, such as the server name, maximum players, map cycle etc. These settings can be edited to customise a game server. Different game server configs can use different syntax and work slightly differently but all to the same basic job of editing a game server
+Game server config files are the configuration files used by the game server to store various game server settings, such as the server name, maximum players, map cycle, etc. These settings can be edited to customise a game server. Different game server configs can use different syntax and work slightly differently, but all do the same basic job of editing a game server
 
 ## Config file's location
 
-The `details` command will provide you some config file information. However some servers do use multiple config files.
+The `details` command will provide you with some config file information. However, some servers do use multiple config files.
 
 ### Command
 
@@ -34,7 +34,7 @@ Config file:         /home/gmodserver/serverfiles/garrysmod/cfg/gmod-server.cfg
 
 ## LinuxGSM Custom Config's
 
-Whenever possible, LinuxGSM provides basic easy to use game server configuration files.  
+Whenever possible, LinuxGSM provides basic easy-to-use game server configuration files.  
 A dedicated repository has been made so all server admins can benefit, even Windows admins.
 
 {% embed url="https://github.com/GameServerManagers/Game-Server-Configs" %}
