@@ -6,11 +6,11 @@ You can set scheduled tasks with cronjobs, to run any function at any given time
 
 Most used ones are:
 
-* Automatically check for updates [\(update command\)](../commands/update.md)
-* Automatically check for server crash and restart if needed [\(monitor command\)](../commands/monitor.md)
-* Automatically keep LinuxGSM up to date [\(update-functions command\)](../commands/update-lgsm.md)
-* Automatically restart the server at a given time [\(restart command\)](../commands/start-stop-restart.md)
-* Automatically update and restart the server [\(force-update command\)](../commands/force-update.md)
+* Automatically check for updates \([update command](../commands/update.md)\)
+* Automatically check for server crash and restart if needed \([monitor command](../commands/monitor.md)\)
+* Automatically keep LinuxGSM up to date \([update-functions command](../commands/update-lgsm.md)\)
+* Automatically restart the server at a given time \([restart command](../commands/start-stop-restart.md)\)
+* Automatically update and restart the server \([force-update command](../commands/force-update.md)\)
 
 ## Command
 
@@ -81,7 +81,7 @@ Every five days at 1 AM
 
 #### Cronjob generator
 
-If you have any doubt about a particular syntax, you can use this generator : [http://crontab-generator.org/](http://crontab-generator.org/)
+If you have any doubt about a particular syntax, you can use this generator : [http://crontab-generator.org](http://crontab-generator.org/)
 
 ## LinuxGSM Cronjobs examples
 
