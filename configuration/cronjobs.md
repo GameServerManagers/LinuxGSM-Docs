@@ -81,7 +81,7 @@ Every five days at 1 AM
 
 #### Cronjob generator
 
-If you have any doubt about a particular syntax, you can use [this generator](../(http://crontab-generator.org/).
+If you have any doubt about a particular syntax, you can use [this generator](http://crontab-generator.org/).
 
 ## LinuxGSM Cronjobs examples
 
