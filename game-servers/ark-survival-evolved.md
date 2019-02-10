@@ -9,7 +9,7 @@ serverfiles/ShooterGame/Saved/Config/LinuxServer/Game.ini
 
 ## Change Map
 
-You can change the map by editing the instance config `lgsm/config-lgsm/arkserver.cfg`.
+You can change the map by editing the [instance config](../configuration/linuxgsm-config.md) `lgsm/config-lgsm/arkserver.cfg`.
 
 Simply add the line `defaultmap="MAP_NAME_HERE"`. You can find a official map list right below.
 
@@ -24,7 +24,7 @@ Simply add the line `defaultmap="MAP_NAME_HERE"`. You can find a official map li
 
 ## Adding Mods
 
-Add `-automanagedmods` to the \[\[start parameters\]\].
+Add `-automanagedmods` to the [start parameters](../configuration/start-parameters.md).
 
 Next edit `GameUserSettings.ini`, adding the following line under `[ServerSettings]`.
 
@@ -52,13 +52,9 @@ Collection Ids won't work directly. You need to have all the ids of the mods you
 
 ## Clusters
 
-First you need multiple server instances. Please follow this guide if you don't know how:
+First you need multiple server instances. Please follow [this guide](https://docs.linuxgsm.com/features/multiple-game-servers) if you don't know how:
 
-[https://docs.linuxgsm.com/features/multiple-game-servers](https://docs.linuxgsm.com/features/multiple-game-servers)
-
-Follow this guide to create server clusters:
-
-[https://survivetheark.com/index.php?/forums/topic/87419-guide-cluster-setup/](https://survivetheark.com/index.php?/forums/topic/87419-guide-cluster-setup/)
+Follow [this guide](https://survivetheark.com/index.php?/forums/topic/87419-guide-cluster-setup/) to create server clusters:
 
 To change command-line parameters for your server edit your '_/lgsm/config-lgsm/arkserver/YourServerInstance.cfg_' file. Examle:
 
@@ -69,4 +65,3 @@ fn_parms(){
 ```
 
 **Additional Notes:** Servers which are running on local networks sometimes have trouble traveling to other arks. A fix I have found for this is adding '?MultiHome=0.0.0.0' to your command-line parameters.
-

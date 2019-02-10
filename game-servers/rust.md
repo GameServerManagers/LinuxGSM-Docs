@@ -3,7 +3,7 @@
 ## System requirements
 
 * RAM: 4GB-12GB, Increases depending upon map size
-* CPU: Duel core 3.4GHz, Rust is monothread
+* CPU: Dual core 3.4GHz, Rust is monothread
 * Bandwidth: 10mbps upload
 
 > note The server autosave can cause lag, depending on the CPU and disk speed.
@@ -121,7 +121,7 @@ nano /etc/fstab
 proc    /proc    proc    defaults,hidepid=2    0    0
 ```
 
-You still need to make one user per server, change ports, and repeat the install process. \(See [https://github.com/GameServerManagers/LinuxGSM/wiki/Multiple-Servers](https://github.com/GameServerManagers/LinuxGSM/wiki/Multiple-Servers) for more info\)
+You still need to make one user per server, change ports, and repeat the install process. \(See [this](../features/multiple-game-servers.md) for more info\)
 
 ## Server Wipe
 
@@ -129,9 +129,8 @@ You still need to make one user per server, change ports, and repeat the install
 ./rustserver wipe
 ```
 
-auto wipe
+Auto wipe
 
 ```bash
 echo y | ./rustserver wipe
 ```
-
