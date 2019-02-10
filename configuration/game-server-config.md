@@ -56,7 +56,7 @@ If a config file is missing, it will re-download the default one or give a warni
 
 ## Where are the settings I'm looking for?
 
-Game servers have many different ways of managing settings. Some are set within [start parameters](start-parameters.md), while some are set within a [configuration](game-server-config.md) file.
+Game servers have many different ways of managing settings. Some are set within [start parameters](start-parameters.md), while some are set within a configuration file.
 
 One of the goals of LinuxGSM is to make managing these as easy as possible, by providing all important settings out of the box, wherever they are. There is no general rule about where config files are set. It is a good idea to look for the official documentation of the game server that you're trying to run in order to find relevant information about settings.
 
@@ -65,4 +65,3 @@ One of the goals of LinuxGSM is to make managing these as easy as possible, by p
 If you found settings that are absent from the default configuration file provided by LinuxGSM that would be a useful addition, then you can open an issue or a pull request.
 
 {% embed url="https://github.com/GameServerManagers/Game-Server-Configs" caption="" %}
-

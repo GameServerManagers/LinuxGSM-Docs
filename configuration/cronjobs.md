@@ -8,7 +8,7 @@ Most used ones are:
 
 * Automatically check for updates \([update command](../commands/update.md)\)
 * Automatically check for server crash and restart if needed \([monitor command](../commands/monitor.md)\)
-* Automatically keep LinuxGSM up to date \([update-functions command](../commands/update-lgsm.md)\)
+* Automatically keep LinuxGSM up to date \([update-lgsm command](../commands/update-lgsm.md)\)
 * Automatically restart the server at a given time \([restart command](../commands/start-stop-restart.md)\)
 * Automatically update and restart the server \([force-update command](../commands/force-update.md)\)
 
@@ -81,7 +81,7 @@ Every five days at 1 AM
 
 #### Cronjob generator
 
-If you have any doubt about a particular syntax, you can use this generator : [http://crontab-generator.org](http://crontab-generator.org/)
+If you have any doubt about a particular syntax, you can use [this generator](../(http://crontab-generator.org/).
 
 ## LinuxGSM Cronjobs examples
 
@@ -195,4 +195,3 @@ Here is an example of a root based cronjob to monitor your server every 3 minute
 * You can also sparingly run "every x time" update checks, for games getting updated a lot.
 * As you can see for the commented Rust server, you can also run your own custom scripts if the task is more complicated than just an LinuxGSM command.
 * Ultimately, it's wise to add an "uf" cronjob \(for "update-functions"\) in order to keep LinuxGSM up to date.
-
