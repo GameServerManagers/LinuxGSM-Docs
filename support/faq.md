@@ -242,7 +242,7 @@ This can have numerous reasons. Here are some ways do diagnose this issue:
 * Are the ports you're using free? See \[\[Ports\]\]
 * Did you wait long enough? Sometimes it's just a matter of time until your server shows up into the list
 
-## I get segmentation fault, how to solve this issue?
+## How do I  solve a  segmentation fault?
 
 My source server is displaying an error like `./srcds_run: line 318: 31093 Segmentation fault`
 

@@ -54,7 +54,7 @@ Collection Ids won't work directly. You need to have all the ids of the mods you
 
 First you need multiple server instances. Please follow this guide if you don't know how:
 
-[https://github.com/GameServerManagers/LinuxGSM/wiki/Multiple-Game-Servers](https://github.com/GameServerManagers/LinuxGSM/wiki/Multiple-Game-Servers)
+[https://docs.linuxgsm.com/features/multiple-game-servers](https://docs.linuxgsm.com/features/multiple-game-servers)
 
 Follow this guide to create server clusters:
 

@@ -45,7 +45,7 @@ It consists of creating a new user for each game server, repeat the install proc
 #### Cons
 
 * Uses more disk space \| Each game server has all of the installation files
-* All instances are updated separately \| It will use more resources upon update and require marginally more [Cronjobs](../configuration/cronjobs.md)
+* All instances are updated separately \| It will use more resources upon update and require marginally more [Cronjobs](https://github.com/GameServerManagers/LinuxGSM-Docs/tree/88afc2c547969df2885aa9e148762ad5091478d2/configuration/cronjobs.md)
 
 ### Example
 
@@ -60,9 +60,7 @@ As you can see the installs are separated and isolated from each other in each u
 
 ### How to install
 
-1\) Create a new user with a home directory.
-2\) Repeat the standard installation process using this different user.
-3\) If your game server uses the same default [Ports](../configuration/ports.md) as a previously installed one, make sure you change them \(and/or IP if your server has multiple IPs\) in you [LinuxGSM Config](../configuration/linuxgsm-config.md) or in [Game Server Config](../configuration/game-server-config.md) depending on the game server you run.
+1\) Create a new user with a home directory. 2\) Repeat the standard installation process using this different user. 3\) If your game server uses the same default [Ports](../configuration/ports.md) as a previously installed one, make sure you change them \(and/or IP if your server has multiple IPs\) in you [LinuxGSM Config](../configuration/linuxgsm-config.md) or in [Game Server Config](../configuration/game-server-config.md) depending on the game server you run.
 
 ## Single Installation, multiple instances
 

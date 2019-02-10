@@ -37,62 +37,83 @@ Various relevant details are provided including:
 
 ```text
 Distro Details
-===============================================================================================================================================================
-Distro:    Debian 7.7
+===============================================================================================================================================================================================================
+Distro:    Ubuntu 18.04.1 LTS
 Arch:      x86_64
-Kernel:    2.6.32-042stab102.9
-Hostname:  vps86887.ovh.net
-tmux:      tmux 1.6
-GLIBC:     2.13
+Kernel:    4.15.0-38-generic
+Hostname:  arkserver.linuxgsm.com
+tmux:      tmux 2.6
+glibc:     2.27
 
 Performance
-===============================================================================================================================================================
-Uptime:    0d, 17h, 36m
-Avg Load:  0.00, 0.02, 0.00
+Uptime:    24d, 16h, 17m
+Avg Load:  0.20, 0.10, 0.09
 
-Mem:       total   used   free
-Physical:  1.0G    1.0G   17M
-Swap:      128M    25M    102M
+CPU Model:      Intel(R) Xeon(R) CPU E5-2680 v3 @ 2.50GHz
+CPU Cores:      2
+CPU Frequency:  2499.998 MHz
 
-Disk Usage
-===============================================================================================================================================================
-Disk available:  5.4G
-Serverfiles:     1.6G
-Backups:         4.8M
+Mem:       total  used   free   cached  available
+Physical:  3.9GB  2.1GB  1.6GB  1.5GB   1.6GB
+Swap:      512MB  780KB  512MB
 
-Fistful of Frags Server Details
-===============================================================================================================================================================
-Server name:  Fistful of Frags Server
-Server IP:    192.168.1.1:27015
-RCON password:  rconpassword
+Storage
+===============================================================================================================================================================================================================
+Filesystem:      /dev/sda
+Total:           79G
+Used:            61G
+Available:       14G
+LinuxGSM Total:  7.9G
+Serverfiles:     7.8G
+Backups:         20K
+
+ARK: Survival Evolved Server Details
+===============================================================================================================================================================================================================
+Server name:  LinuxGSM
+Server IP:    1.2.3.4:7777
+Maxplayers:   70
+Default Map:  TheIsland
 Status:       OFFLINE
 
-Service name:  fof-server
-User:          fofserver
-Location:      /home/fofserver
-Config file:   /home/fofserver/serverfiles/fof/cfg/fof-server.cfg
+arkserver Script Details
+===============================================================================================================================================================================================================
+Service name:           arkserver
+arkserver version:      190106
+User:                   lgsm
+glibc required:         2.15
+Discord alert:          off
+Email alert:            off
+Pushbullet alert:       off
+IFTTT alert:            off
+Mailgun (email) alert:  off
+Pushover alert:         off
+Telegram alert:         off
+Update on start:        off
+Location:               /home/arkserver
+Config file:            /home/arkserver/serverfiles/ShooterGame/Saved/Config/LinuxServer/GameUserSettings.ini
 
 Backups
-===============================================================================================================================================================
-No. of backups:    1
-Latest backup:
-    date:          Fri Jan 23 15:54:52 CET 2015
-    file:          /home/fofserver/backups/fof-server-2015-01-23-155447.tar.gz
-    size:          4.8M
+===============================================================================================================================================================================================================
+No Backups created
 
 Command-line Parameters
-===============================================================================================================================================================
-./srcds_run -game fof -strictportbind -ip 192.168.1.1 -port 27015 +clientport 27005 +tv_port 27020 +map fof_depot +servercfgfile fof-server.cfg -maxplayers 16
+===============================================================================================================================================================================================================
+./ShooterGameServer "TheIsland?AltSaveDirectoryName=TheIsland?listen?MultiHome=1.2.3.4?MaxPlayers=70?QueryPort=27015?RCONPort=27020?Port=7777 -automanagedmods"
 
 Ports
-===============================================================================================================================================================
-Change ports by editing the command-line
-parameters in ./fofserver.
+===============================================================================================================================================================================================================
+Change ports by editing the parameters in:
+/home/lgsm/arkserver/lgsm/config-lgsm/arkserver
 
 Useful port diagnostic command:
-netstat -atunp | grep srcds_linux
+netstat -atunp | grep ShooterGame
 
 DESCRIPTION  DIRECTION  PORT   PROTOCOL
-> Game/RCON  INBOUND    27015  tcp/udp
+> Game       INBOUND    7777   udp
+> RAW        INBOUND    7778   udp
+> Query      INBOUND    27015  udp
+> RCON       INBOUND    27020  tcp
+
+Status: OFFLINE
 ```
 

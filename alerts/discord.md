@@ -23,5 +23,3 @@ discordwebhook="https://discordapp.com/api/webhooks/3539332633367897009/5t_K4Gku
 You must have Discord _User Settings &gt; Text & Images &gt; Link Preview: 'Show website preview...'_ enabled or you will just see blank messages from the alert bot.
 {% endhint %}
 
-\_\_
-

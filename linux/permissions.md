@@ -1,7 +1,5 @@
 # permissions
 
-### Introduction
-
 In Linux, files and directories are owned by a user and a group \(see \[\[File Ownership\]\]\). On top of that, this user, group, and other ones \(groups and users\), have different permissions on these files. That's what we call file permissions.  
 You might need to change them.  
 If this can be boring to new users, remember that this is a huge part of what makes Linux as secured as it is, and you are required to know this if you wish to do anything serious with Linux.
@@ -19,7 +17,7 @@ ultimatebyte@game:~$ ls -al twserver
 -rwxr-x--- 1 ultimatebyte ultimatebyte 5691 Jan 30 01:14 twserver
 ```
 
-Explaination:
+Explanation:
 
 * First character is a a `-` for files, or a `d` for directories
 * Three next ones are owner permissions: `rwx`
@@ -39,13 +37,13 @@ Change permissions from files or directories
 
 `chmod`
 
-#### Recursive syntax \(include sub files and directories\)
+### Recursive syntax \(include sub files and directories\)
 
 Append `-R` to your chmod
 
 `chmod -R`
 
-### Syntax 1\)
+### Syntax 1
 
 Set all permissions at once
 
@@ -73,7 +71,7 @@ Default permissions are 755. If you wish to prevent other users from interacting
 
 `chmod -R 750 /home/userdir`
 
-### Syntax 2\)
+### Syntax 2
 
 We used `rwx` for these, but of course, you should pick the permissions you wish to add or remove.
 
@@ -103,34 +101,32 @@ Note : root user is the only exception.
 
 Of course, you can replace `+rwx` by anything previously mentioned
 
-### Set GUID and GID
+## Set GUID and GID
 
 Advanced permissions management, you will likely not need this for game servers.
 
-#### Set GUID
-
-No GUID
+### No GUID
 
 `chmod -R a-s /path/to/dir`  
 `chmod -R 0xxx /path/to/dir`
 
 Example : `chmod -R 0640 /home/user/website`
 
-**Set UID**
+### **Set UID**
 
 Files will run as the user
 
 `chmod -R u+s /path/to/dir/`  
 `chmod -R 2xxx /path/to/dir`
 
-**Set GID**
+### **Set GID**
 
 Any subdir and subfile will have the same group
 
 `chmod -R g+s /path/to/dir/`  
 `chmod -R 4xxx /path/to/dir`
 
-**Set GUID**
+### **Set GUID**
 
 Set both UID and GID
 

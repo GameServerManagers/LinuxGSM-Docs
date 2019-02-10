@@ -32,5 +32,3 @@ Take your time as this can be confusing at first.
 Pressing `CTRL+c` while in console will kill the tmux session, stopping the game server.
 {% endhint %}
 
-
-
