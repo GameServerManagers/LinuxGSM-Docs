@@ -28,7 +28,7 @@ Server providers may offer DDoS protections, like Arbor, that will allow you to 
 
 ### Monitor and DDoS
 
-If your server is set properly, chances are you're running a monitor cronjob.  
+If your server is set properly, chances are you're running a [monitor](../commands/monitor.md) [cronjob](../configuration/cronjobs.md).  
 The monitor function uses server query to make sure your server is online. But if you're under a DDoS, the server won't be able to answer queries properly, even locally, and the monitor function will detect your server as crashed and will reboot it constantly until the DDoS ends.
 
 For a source server on default port 27015, the following rules will drop anyone who sends more than 10 requests in less than 60 seconds. Those numbers are not mandatory and you're free to adapt them for your needs.
@@ -58,4 +58,3 @@ Some game servers \(like Rust\) register their external IP with steam when they 
 If your traffic is going out WAN0 you need to put the port forwards on the 71.2.5.23 address. If your outbound traffic is going out WAN1 you would need to put your port forwards on 65.13.29.46.
 
 #### More rules to come. Feel free to edit this wiki if you know more.
-
