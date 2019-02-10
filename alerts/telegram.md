@@ -13,19 +13,17 @@ To enable Telegram alerts you need to create your own Telegram Bot.
 
 ![BotFather Chat](../.gitbook/assets/botfather_chat.png)
 
-1. Type `/newbot` and follow the instructions to create a bot.
+3. Type `/newbot` and follow the instructions to create a bot.
 
 ![new Bot](../.gitbook/assets/botfather_new_bot.png)
 
-1. Once complete an API token will be given. Enter the token to the LinuxGSM config.
+4. Once complete an API token will be given. Enter the token to the [LinuxGSM config](../configuration/linuxgsm-config.md).
 
 ```text
-   **Telegram Alerts \|** [**https://github.com/GameServerManagers/LinuxGSM/wiki/Telegram**](https://github.com/GameServerManagers/LinuxGSM/wiki/Telegram)\*\*\*\*
+   #Telegram Alerts | https://github.com/GameServerManagers/LinuxGSM/wiki/Telegram
 
    telegramalert="on"
-
    telegramtoken="401319987:AAGmgLWzYDprqkMHBjCT9qtzIRWCzqgoTLw"
-
    telegramchatid=""
 ```
 
@@ -61,7 +59,7 @@ To obtain the chat id a message must be received by the bot. This will allow it 
 To retrieve the chat id visit the following url, replacing the `XXXXX` with your bot token from earlier.
 
 ```text
-[https://api.telegram.org/botXXXXXXXXX:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/getUpdates](https://api.telegram.org/botXXXXXXXXX:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/getUpdates)
+https://api.telegram.org/botXXXXXXXXX:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/getUpdates
 ```
 
 Look for text `LINUXGSM` in the message and find the `chat id` part of that message.
@@ -74,19 +72,20 @@ The number given is the chat id
 
 > note: A group number includes a dash in the chat id e.g `-191537238`
 
-Add the chat id to the LinuxGSM config
+Add the chat id to the [LinuxGSM config](../configuration/linuxgsm-config.md).
 
 ```text
-## Telegram Alerts \| [https://github.com/GameServerManagers/LinuxGSM/wiki/Telegram](https://github.com/GameServerManagers/LinuxGSM/wiki/Telegram)
+## Telegram Alerts | https://github.com/GameServerManagers/LinuxGSM/wiki/Telegram
 
-telegramalert="on" telegramtoken="401319987:AAGmgLWzYDprqkMHBjCT9qtzIRWCzqgoTLw" telegramchatid="-191537238"
+telegramalert="on"
+telegramtoken="401319987:AAGmgLWzYDprqkMHBjCT9qtzIRWCzqgoTLw"
+telegramchatid="-191537238"
 ```
 
 ## Send Test Alert
 
-Finally test that is correctly works by sending a test alert. You will now receive a message from the bot directly or to a chosen group.
+Finally test that everything correctly works by sending a test alert. You will now receive a message from the bot directly or to a chosen group.
 
 ```text
 ./gameserver test-alert
 ```
-
