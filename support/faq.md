@@ -175,9 +175,7 @@ No! That takes all the fun out of it for you and we are not free tech support.
 
 ## I found a bug how do I report it?
 
-If you find a bug or have a suggestion please submit a bug report on \[GitHub issues\]\[\] page.
-
-[https://github.com/dgibbs64/linuxgsm/issues](https://github.com/dgibbs64/linuxgsm/issues)
+If you find a bug or have a suggestion please submit a bug report on [GitHub issues](https://github.com/dgibbs64/linuxgsm/issues) page.
 
 ## How can I install a non-steam version?
 
@@ -236,10 +234,10 @@ This can have numerous reasons. Here are some ways do diagnose this issue:
 
 * Check your game logs to see if it contains any clue
 * Is your server listening? Input `./gameserver details` to get the corresponding command to know it
-* Are you behind \[\[Firewalls\]\]? Double check your rules, try to disable it for testing
+* Are you behind [Firewalls](../linux/firewalls.md)? Double check your rules, try to disable it for testing
 * Do you have multiple interface? Set the right IP within your "gameserver" script or the game config file
 * Is it a home server? If you're behind a router, make sure your're listening to your local IP, then redirect appropriate ports to this local IP within your router settings.
-* Are the ports you're using free? See \[\[Ports\]\]
+* Are the ports you're using free? See [Ports](../configuration/ports.md)
 * Did you wait long enough? Sometimes it's just a matter of time until your server shows up into the list
 
 ## How do I  solve a  segmentation fault?
@@ -261,4 +259,3 @@ If it happens after a while:
 * Bug from the game server or an addon - Check your console logs, see if you can reproduce, and diagnose your addons
 * Unstable hardware - very unlikely, check your system stability
 * Ulimit issue: Your system cannot open as many files as it should - See ulimit info from this page
-
