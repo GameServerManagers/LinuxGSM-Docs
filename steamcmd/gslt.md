@@ -32,9 +32,7 @@ An added benefit is that people who add your server to favourite will still be a
 
 ## Generate a Token
 
-To generate a token follow this [link](http://steamcommunity.com/dev/managegameservers)
-
-[http://steamcommunity.com/dev/managegameservers](http://steamcommunity.com/dev/managegameservers)
+To generate a token follow this [link](http://steamcommunity.com/dev/managegameservers).
 
 {% hint style="info" %}
 GSLT requires the app ID of the base game \(e.g. 440 for TF2, 730 for CS:GO, 4000 for Garry's Mod\) when generating a token, not the server appid
@@ -46,7 +44,7 @@ Every single server must use a unique GSLT.
 
 ## GSLT Server Parameter
 
-GSLT can be registered on your server\(s\) by using the `sv_setsteamaccount` command either in _autoexec.cfg_ or from a _start parameter_.
+GSLT can be registered on your server\(s\) by using the `sv_setsteamaccount` command either in [_autoexec.cfg_](../configuration/game-server-config.md) or from a [_start parameter_](../configuration/start-parameters.md).
 
 start parameter
 
@@ -58,7 +56,7 @@ autoexec.cfg
 
 ### Tower Unite
 
-Tower Unite has a command within its config file
+Tower Unite has a command within its [config file](../configuration/game-server-config.md)
 
 `SteamLoginToken=`
 
@@ -101,4 +99,3 @@ Your Steam account must not be currently community banned or locked. Your Steam 
 Yes CS:GO is the only internet connected server that requires GSLT currently.
 
 For further information see this useful blog post: [http://dathost.net/blog/important-information-regarding-our-csgo-servers/](http://dathost.net/blog/important-information-regarding-our-csgo-servers/)
-

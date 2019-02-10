@@ -1,6 +1,6 @@
 # permissions
 
-In Linux, files and directories are owned by a user and a group \(see \[\[File Ownership\]\]\). On top of that, this user, group, and other ones \(groups and users\), have different permissions on these files. That's what we call file permissions.  
+In Linux, files and directories are owned by a user and a group \(see [File Ownership](../linux/file-ownership.md)). On top of that, this user, group, and other ones \(groups and users\), have different permissions on these files. That's what we call file permissions.  
 You might need to change them.  
 If this can be boring to new users, remember that this is a huge part of what makes Linux as secured as it is, and you are required to know this if you wish to do anything serious with Linux.
 
@@ -132,4 +132,3 @@ Set both UID and GID
 
 `chmod -R a+s /path/to/dir/`  
 `chmod -R 6xxx /path/to/dir`
-

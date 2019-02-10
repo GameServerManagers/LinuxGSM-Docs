@@ -22,7 +22,7 @@ This will take longer for the game server to start but can be useful for servers
 
 ### Scheduled updates
 
-A [cronjob](https://github.com/GameServerManagers/LinuxGSM-Docs/tree/88afc2c547969df2885aa9e148762ad5091478d2/configuration/cronjobs.md) can be set to run `update` at any given time.
+A [cronjob](../configuration/cronjobs.md) can be set to run `update` at any given time.
 
 To edit cronjobs, type:
 
@@ -48,5 +48,4 @@ The extra `su - username -c` indicates which user to run the script as.
 
 It is recommended to check for updates once per hour.
 
-crontab.guru is a great resource to generate cronjobs. [https://crontab.guru/](https://crontab.guru/)
-
+[crontab.guru](https://crontab.guru/) is a great resource to generate cronjobs.

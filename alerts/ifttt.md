@@ -11,7 +11,7 @@ To enable IFTTT you will need to setup a Webhooks integration.
 1. Visit [https://ifttt.com/maker\_webhooks](https://ifttt.com/maker_webhooks)
 2. Login and connect the Webhooks intergration
 3. Select `Documentation` to get your IFTTT API key.
-4. Paste the API key in to LinuxGSM settings.
+4. Paste the API key in to [LinuxGSM settings](../configuration/linuxgsm-config.md).
 
 ```text
 # IFTTT Alerts | https://github.com/GameServerManagers/LinuxGSM/wiki/IFTTT
@@ -49,10 +49,9 @@ Server IP 1.2.3.4:27015
 
 ## How to create an applet
 
-1. Create a `new applet`
+1. Create a `New applet`
 2. Select the `Webhooks` service
 3. Choose `Receive a web request`
 4. Enter your `Event Name` and click `Create Trigger`
 5. Select an action service.
 6. Give the applet a name and save.
-

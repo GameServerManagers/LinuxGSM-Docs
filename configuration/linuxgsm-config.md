@@ -76,7 +76,7 @@ Now you can edit your instance file that contains all of your LinuxGSM and start
 
 ### Multiple instances configuration
 
-> This is only useful when running multiple instances of this install as per \[\[Multiple Game Servers\]\].
+> This is only useful when running multiple instances of this install as per [Multiple Game Servers](../features/multiple-game-servers.md).
 
 1\) Start by copying `_default.cfg` to `common.cfg`  
 `cat _default.cfg >> common.cfg`
@@ -131,4 +131,3 @@ common.cfg: defaultmap="de_inferno"
 nukeonly.cfg: defaultmap="de_nuke"
 mynewserver.cfg: NOT SET
 ```
-

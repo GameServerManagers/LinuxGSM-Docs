@@ -6,12 +6,14 @@
 
 A webhook is required to post alerts to a Discord text channel
 
-1. Right-click on the text channel you want to use and select `edit channel`.
+1. Right-click on the text channel you want to use and select `Edit channel`.
 2. Select `Webhooks` &gt; `Create Webhook`
-3. Name: LinuxGSM
-4. Icon:
-5. Copy the Webhook URL
-6. Turn on discord alert and enter the URL in to the LinuxGSM settings. \(`~/lgsm/config-lgsm/<gameserver>/common.cfg`\)
+
+* Name: LinuxGSM
+* Icon:
+
+3. Copy the Webhook URL
+4. Turn on discord alert and enter the URL in to the [LinuxGSM settings](../configuration/linuxgsm-config.md). \(`~/lgsm/config-lgsm/<gameserver>/common.cfg`\)
 
 ```text
 # Discord Alerts | https://github.com/GameServerManagers/LinuxGSM/wiki/Discord
@@ -22,4 +24,3 @@ discordwebhook="https://discordapp.com/api/webhooks/3539332633367897009/5t_K4Gku
 {% hint style="info" %}
 You must have Discord _User Settings &gt; Text & Images &gt; Link Preview: 'Show website preview...'_ enabled or you will just see blank messages from the alert bot.
 {% endhint %}
-
