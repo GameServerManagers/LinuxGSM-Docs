@@ -1,6 +1,6 @@
 # console
 
-The `console` command allows access the output of the game server executable. Depending on which server you are running it can allow you to see the current activity of the game server, check errors in real time, and input commands.
+The `console` command allows access the output of the game server executable. Depending on which server you are running it allows you to see the current activity of the game server, check errors in real time, and input commands.
 
 {% hint style="info" %}
 Some game servers provide a verbose output in console.
@@ -29,6 +29,5 @@ Take your time as this can be confusing at first.
 {% endhint %}
 
 {% hint style="danger" %}
-Pressing `CTRL+c` while in console will kill the tmux session, stopping the game server.
+Pressing `CTRL+c` while in console will kill the [tmux](../requirements/tmux.md) session, stopping the game server.
 {% endhint %}
-

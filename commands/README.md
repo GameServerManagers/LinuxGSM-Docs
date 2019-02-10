@@ -41,10 +41,9 @@ Replace `./gameserver` with the actual script name. Every command has a short ve
 
 | Command Name | Command | Short |
 | :--- | :--- | :--- |
-| [Developer]() | `./gameserver developer` | `./gameserver dev` |
+| Developer| `./gameserver developer` | `./gameserver dev` |
 | Detect Dependencies | `./gameserver detect-deps` | `./gameserver dd` |
-| [Detect Glibc]() | `./gameserver detect-glibc` | `./gameserver dg` |
-| [Detect ldd]() | `./gameserver detect-ldd` | `./gameserver dl` |
+| Detect Glibc | `./gameserver detect-glibc` | `./gameserver dg` |
+| Detect ldd | `./gameserver detect-ldd` | `./gameserver dl` |
 | Query Raw | `./gameserver query-raw` | `./gameserver qr` |
 | Clear Functions | `./gameserver clear-functions` | `./gameserver cf` |
-
