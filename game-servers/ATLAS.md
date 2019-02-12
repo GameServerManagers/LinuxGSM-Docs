@@ -12,11 +12,12 @@ serverfiles/ShooterGame/Saved/Config/LinuxServer/Game.ini
 ```text
 sudo apt install redis-server && redis-server
 ```
+
 The default should work fine but custom password is recommended.
 
 ## Map
 
-You can edit the map with the ServerGridEditor that can be found here [https://github.com/GrapeshotGames/ServerGridEditor]
+You can edit the map with the ServerGridEditor that can be found here [https://github.com/GrapeshotGames/ServerGridEditor](https://github.com/GrapeshotGames/ServerGridEditor)
 
 More info on multiple Grids at the end of the page.
 
