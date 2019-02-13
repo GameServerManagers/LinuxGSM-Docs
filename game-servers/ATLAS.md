@@ -87,7 +87,7 @@ Some Atlas Server ini values
 
 ## Game.ini
 
-[/Script/ShooterGame.ShooterGameMode]
+```[/Script/ShooterGame.ShooterGameMode]```
 
 * bDontUseClaimFlags -- set this to disable claimflags entirely, on any grid
 * NoClaimFlagDecayPeriodMultiplier -- set this value to scale-up the auto decay of any structures that are not witin a claimflag
