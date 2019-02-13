@@ -97,6 +97,10 @@ Some Atlas Server ini values
 * bClampHomeServerXP -- limit levelling to a certain amount on a homeserver (requires that the server is also a homeserver)
 * ClampHomeServerXPLevel -- what level to limit XP to on this homeserver.
 
+## Notes:
+### Changing ServerGrid.json - Warning
+#### Please note that if you edit your map after playing on it, it may cause issues in the server. For example, moving islands, the structures and players will not move with the change. We only recommend changing parts of the grid that haven't been played on yet.
+
 ## Current Gotchas
 
 You must explicitly File->Save to save the project. Exporting does not save the project as is. This is likely to change in the future
