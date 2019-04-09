@@ -21,3 +21,4 @@ Stop will do a graceful shutdown \(sends "quit" command to Source servers for ex
 Will simply stop, then the start the server.
 
 `./gameserver restart`
+

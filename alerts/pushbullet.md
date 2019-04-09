@@ -2,8 +2,6 @@
 
 ![](../.gitbook/assets/pushbullet_logo%20%281%29.png)
 
-
-
 ![Pushbullet alert](https://linuxgsm.com/wp-content/uploads/2016/05/lgsm-pushbullet.png)
 
 ## Enable Pushbullet alerts
@@ -40,3 +38,4 @@ Finally test that everything correctly works by sending a test alert.
 ```text
 ./gameserver test-alert
 ```
+

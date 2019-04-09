@@ -65,3 +65,4 @@ One of the goals of LinuxGSM is to make managing these as easy as possible, by p
 If you found settings that are absent from the default configuration file provided by LinuxGSM that would be a useful addition, then you can open an issue or a pull request.
 
 {% embed url="https://github.com/GameServerManagers/Game-Server-Configs" caption="" %}
+

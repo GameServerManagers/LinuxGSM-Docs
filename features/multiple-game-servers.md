@@ -60,9 +60,7 @@ As you can see the installs are separated and isolated from each other in each u
 
 ### How to install
 
-1\) Create a new user with a home directory.
-2\) Repeat the standard installation process using this different user.
-3\) If your game server uses the same default [Ports](../configuration/ports.md) as a previously installed one, make sure you change them \(and/or IP if your server has multiple IPs\) in you [LinuxGSM Config](../configuration/linuxgsm-config.md) or in [Game Server Config](../configuration/game-server-config.md) depending on the game server you run.
+1\) Create a new user with a home directory. 2\) Repeat the standard installation process using this different user. 3\) If your game server uses the same default [Ports](../configuration/ports.md) as a previously installed one, make sure you change them \(and/or IP if your server has multiple IPs\) in you [LinuxGSM Config](../configuration/linuxgsm-config.md) or in [Game Server Config](../configuration/game-server-config.md) depending on the game server you run.
 
 ## Single Installation, multiple instances
 
@@ -126,3 +124,4 @@ If you run multiple similar game servers, you have no choice to work on that. Re
 ### Installing multiple game servers with the same script name under the same user
 
 You might be tempted to have one user with one subdirectory per game servers of the same name. This won't work because each game server has a servicename defined by its "gameserver" script name. So don't try to run two scripts called "csgoserver" under the same user, they will conflict. If you are using whole different game server, it's best to isolate them under a different user, but if you have no choice \(for example on a shared machine\), then you should rename each game server script, and of course, make sure you are using different ports for each server, and that your desired ports are not in use by another user of the machine.
+

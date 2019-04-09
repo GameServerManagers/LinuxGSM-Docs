@@ -55,3 +55,4 @@ Server IP 1.2.3.4:27015
 4. Enter your `Event Name` and click `Create Trigger`
 5. Select an action service.
 6. Give the applet a name and save.
+

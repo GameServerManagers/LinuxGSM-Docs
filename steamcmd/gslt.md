@@ -7,6 +7,7 @@ Game Server Login Token is a new system by Valve for managing game servers.
 * Ballistic Overkill
 * Brainbread 2
 * Black Mesa: Deathmatch
+* Blade Symphony \(**required**\)
 * Counter Strike: Global Offensive \(**required**\)
 * Counter Strike: Source \(**required**\)
 * Day of Defeat: Source
@@ -99,3 +100,4 @@ Your Steam account must not be currently community banned or locked. Your Steam 
 Yes CS:GO is the only internet connected server that requires GSLT currently.
 
 For further information see this useful blog post: [http://dathost.net/blog/important-information-regarding-our-csgo-servers/](http://dathost.net/blog/important-information-regarding-our-csgo-servers/)
+

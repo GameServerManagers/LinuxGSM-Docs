@@ -131,3 +131,4 @@ common.cfg: defaultmap="de_inferno"
 nukeonly.cfg: defaultmap="de_nuke"
 mynewserver.cfg: NOT SET
 ```
+

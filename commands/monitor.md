@@ -2,7 +2,7 @@
 
 The `monitor` command checks that a server is up and running and restarts the server should it not be responding after several unsuccessful queries
 
-Monitor uses different checks to ensure the server is running, first checking the server process is running then using [gamedig](../requirements/gamedig.md) or [gsquery]() to confirm the game server is responding.
+Monitor uses different checks to ensure the server is running, first checking the server process is running then using [gamedig](../requirements/gamedig.md) or [gsquery](monitor.md) to confirm the game server is responding.
 
 {% hint style="info" %}
 If the server was stopped manually, then `monitor` will not function until the server is manually started again.
@@ -50,7 +50,7 @@ You can use monitor to run your server at boot under certain conditions. See [On
 
 ## How does monitor work?
 
-Monitor will first check if the server process \(or [tmux](../requirements/tmux.md) session\) is running. If it is, it will then attempt to query the server using [gamedig](../requirements/gamedig.md) or [gsquery.py](). Should this fail to query it will attempt to query every 15 seconds over 60 second period. Should this fail the server will be rebooted.
+Monitor will first check if the server process \(or [tmux](../requirements/tmux.md) session\) is running. If it is, it will then attempt to query the server using [gamedig](../requirements/gamedig.md) or [gsquery.py](monitor.md). Should this fail to query it will attempt to query every 15 seconds over 60 second period. Should this fail the server will be rebooted.
 
 The monitor will wait for 60 seconds as it is common for servers to stop responding to queries during a map change. This wait prevents monitor from rebooting a server that does not require it.
 
@@ -59,3 +59,4 @@ The monitor will wait for 60 seconds as it is common for servers to stop respond
 ## Lockfile
 
 LinuxGSM creates a lock file when `./gameserver start` is run. Monitor uses this lock file to confirm if an admin wants the server to be started. Should the lock file not be present monitor will not take any action. This is to prevent the scenario of an admin stopping the server only to have monitor start it up again a few minutes later.
+

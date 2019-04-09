@@ -115,3 +115,4 @@ Custom server content can be compressed using bzip2 which is supported by source
 #### Garry's Mod Download enforcer
 
 In order for a client to download files from a FastDL in Garry's Mod, the developer of an addon must put files from the addon into lua code `resource.Addfile ( "/path/to/file.ext" )`. However, some addon developers do not do this. In order for clients to download the required files, an lua file needs to be generated for it to work, which is what the lua enforcer feature does. The only downside is that clients may download files that are not required on the server.
+

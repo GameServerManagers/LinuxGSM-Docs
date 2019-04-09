@@ -29,7 +29,7 @@ restart           r  |Restart the server.
 
 A wiki page for every command is available. Basic tasks and commands are detailed below.
 
-See [Command List](../commands/README.md) for a full list of commands.
+See [Command List](../commands/) for a full list of commands.
 
 ## Running your Server
 
@@ -167,7 +167,7 @@ Various logs are available. They can help you checking for your server's health 
 
 Logs location: `log/`
 
-For more info, see [[Logging](../features/logging.md).
+For more info, see \[[Logging](../features/logging.md).
 
 ### console command
 
@@ -192,3 +192,4 @@ Use debug mode to help you if you are having issues starting the server. Debug a
 ```
 
 For more info, see [debug](../commands/debug.md).
+

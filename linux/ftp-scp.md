@@ -36,3 +36,4 @@ Here is why you shouldn't
 * If you need to edit system config files, then do like everyone else : use an SSH text editor like "nano" or "vi".
 * Set your FTP so that you can login as users with a valid shell from the machine. Eventually, disable root FTP login.
 * Oh, one more thing... Did we talk about SFTP ?
+

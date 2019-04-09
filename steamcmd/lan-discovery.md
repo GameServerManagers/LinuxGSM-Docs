@@ -16,7 +16,7 @@ There are two easy workarounds for this:
 
 * Add the server to the server browser's favorites. If ingame, then go to the legacy browser if applicable to find it. The syntax to use is the same as for the console connection.
 
-_Note: Make sure your server actually works and is reachable on LAN, otherwise what you need is rather [Troubleshooting](../support/troubleshooting.md) first ._
+_Note: Make sure your server actually works and is reachable on LAN, otherwise what you need is rather_ [_Troubleshooting_](../support/troubleshooting.md) _first ._
 
 ## Attempt at fixing the issue
 

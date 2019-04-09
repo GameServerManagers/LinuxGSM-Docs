@@ -13,3 +13,4 @@ It is possible to migrate an exising game server to LinuxGSM.
 9. Run update to make sure you are up-to-date `./gameserver update`
 10. Test that the server works.
 11. Once complete delete `serverfilesbak`
+

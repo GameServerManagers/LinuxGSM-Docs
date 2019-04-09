@@ -1,6 +1,6 @@
 # Troubleshooting
 
-This guide should cover a wide range of issues, but some might be more complicated than that. If you need further assistance, please make sure you read the [Support](../support) to know the right place to reach us and what information to provide in order for us to be able to help you.
+This guide should cover a wide range of issues, but some might be more complicated than that. If you need further assistance, please make sure you read the [Support](./) to know the right place to reach us and what information to provide in order for us to be able to help you.
 
 ## Installation issues
 
@@ -41,13 +41,13 @@ Note: \(example\) `./gameserver details` will provide you with relevant informat
 * Are ports already used by another service? See [Ports](../configuration/ports.md) and [Multiple-Game-Servers](../features/multiple-game-servers.md)
 * Is this a known tmux issue? See [Tmux](../requirements/tmux.md)
 * Did you try to start with the `debug` command? See [debug](../commands/debug.md)
-* What does the logs say? See [[Logging](../features/logging.md)
+* What does the logs say? See \[[Logging](../features/logging.md)
 * Do you have enough RAM? If not, do you have enough swap? Check command: `free -mh`
 * Did you set an ip in your \(example\) gameserver script or config file?
 
 ### Modded servers start issues
 
-* What does the logs say? See [[Logging](../features/logging.md)
+* What does the logs say? See \[[Logging](../features/logging.md)
 * Did you try to start with the `debug` command? See [debug](../commands/debug.md)
 * Did you wrongly append start parameters? See [Start-Parameters](../configuration/start-parameters.md)
 * Did you try temporarily removing mods, and adding them one by one?
@@ -55,7 +55,7 @@ Note: \(example\) `./gameserver details` will provide you with relevant informat
 
 ### Server start issues after updates
 
-* What does the logs say? See [[Logging](../features/logging.md)
+* What does the logs say? See \[[Logging](../features/logging.md)
 * Did you try to start with the `debug` command? See [debug](../commands/debug.md)
 * Did you try to validate your game files? \(SteamCMD servers only\) See [validate](../commands/validate.md)
 * Is a mod no longer compatible? Try temporarily removing mods, and adding them one by one.
@@ -65,14 +65,11 @@ Note: \(example\) `./gameserver details` will provide you with relevant informat
 
 ### Unable to connect or not showing up in server list
 
-This is a three part diagnosis:
-1\) First off, you need to make sure that the server is started properly, take attention to any error messages in console or log output.
-2\) Check that the server is listening, to the right IP.
-3\) Check for firewalls or ports redirections that could prevent useful network packets from passing through.
+This is a three part diagnosis: 1\) First off, you need to make sure that the server is started properly, take attention to any error messages in console or log output. 2\) Check that the server is listening, to the right IP. 3\) Check for firewalls or ports redirections that could prevent useful network packets from passing through.
 
 #### Is the server actually started?
 
-* Start it with \(example `./gameserver start` , then check server logs \(see [[Logging](../features/logging.md)\) to see if everything seems OK. You can also try the [details](../commands/details.md) command and [monitor](../commands/monitor.md) command to see if it's online and if it's able to answer simple queries. If not, then follow the "Start issues" section.
+* Start it with \(example `./gameserver start` , then check server logs \(see \[[Logging](../features/logging.md)\) to see if everything seems OK. You can also try the [details](../commands/details.md) command and [monitor](../commands/monitor.md) command to see if it's online and if it's able to answer simple queries. If not, then follow the "Start issues" section.
 
 #### Is the server actually listening?
 
@@ -98,7 +95,7 @@ If the output differs or your think something is wrong, here are the things to c
 
 #### Other keys to solving this:
 
-* As usual, first thing you have to ask yourself: What do the logs say? See [[Logging](../features/logging.md)
+* As usual, first thing you have to ask yourself: What do the logs say? See \[[Logging](../features/logging.md)
 * Did you wait long enough? Sometimes it's just a matter of time until the server is fully started and listed into the master server list.
 
 ## If none of these work
@@ -106,8 +103,9 @@ If the output differs or your think something is wrong, here are the things to c
 **GitHub is only for bug reports regarding LinuxGSM, not resolving specific user issues.**
 
 These kind of install, start or accessibility issues are generally specific to your server or install or comprehension of Linux, so please, note that posting these on GitHub will only result in your issue being closed without an answer and developers' waste of time.  
-Instead, you should use the support methods offered to the community: **Discord** or **Steam Forum** as explained in the [Support](../support) page. There are lot of nice and helpful users and devs follow them as well whenever they have free time.
+Instead, you should use the support methods offered to the community: **Discord** or **Steam Forum** as explained in the [Support](./) page. There are lot of nice and helpful users and devs follow them as well whenever they have free time.
 
 If you ever confirm a global bug after this, LinuxGSM's developers will be happy to resolve it if you raise an issue on GitHub with as much elements as possible to help understanding, reproducing and resolving the bug quickly.
 
-To learn where and how to get support, see: [Support](../support)
+To learn where and how to get support, see: [Support](./)
+

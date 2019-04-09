@@ -26,3 +26,4 @@ Finally test that everything correctly works by sending a test alert.
 ```text
 ./gameserver test-alert
 ```
+

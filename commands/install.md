@@ -34,8 +34,8 @@ Short: `./gameserver ai`
 
 `chmod +x gameserver`
 
-2. Run the install command: `./gameserver install` or `./gameserver auto-install` to bypass any prompts.
-3. Follow on screen instructions.
+1. Run the install command: `./gameserver install` or `./gameserver auto-install` to bypass any prompts.
+2. Follow on screen instructions.
 
 ## Install Dependencies
 
@@ -116,3 +116,4 @@ ping google.com
 ```
 
 Should this fail your server may not have DNS lookup correctly configured. [https://www.cyberciti.biz/faq/linux-setup-dns-lookup/](https://www.cyberciti.biz/faq/linux-setup-dns-lookup/)
+

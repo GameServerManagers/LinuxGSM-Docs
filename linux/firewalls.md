@@ -58,3 +58,4 @@ Some game servers \(like Rust\) register their external IP with steam when they 
 If your traffic is going out WAN0 you need to put the port forwards on the 71.2.5.23 address. If your outbound traffic is going out WAN1 you would need to put your port forwards on 65.13.29.46.
 
 #### More rules to come. Feel free to edit this wiki if you know more.
+

@@ -49,3 +49,4 @@ The extra `su - username -c` indicates which user to run the script as.
 It is recommended to check for updates once per hour.
 
 [crontab.guru](https://crontab.guru/) is a great resource to generate cronjobs.
+

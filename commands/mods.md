@@ -100,3 +100,4 @@ Basically: Add an array variable containing mod info, then add the array to the 
 
 Long explanation: The list is based on arrays, used to define all mod properties. You need to make sure that every value is filled up and in the correct order, that mod commands are unique and that multiple choices values are ended with a semicolon \(;\), otherwise the last value will be ignored.  
 You might need to add an entry in `fn_mod_tidy_files_list` from `mods_core.sh` in order to remove lines from mod's file list so that they do not get wrongly removed with the mods-remove command. For further assistance on developing this contact UltimateByte who developed those functions and dgibbs that reworked it should be able to help.
+

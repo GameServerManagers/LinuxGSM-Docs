@@ -49,3 +49,4 @@ wsapikey="YOUR_STEAM_API_KEY"
 wscollectionid="YOUR_COLLECTION_ID"
 wsstartmap="
 ```
+

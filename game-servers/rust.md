@@ -134,3 +134,4 @@ Auto wipe
 ```bash
 echo y | ./rustserver wipe
 ```
+

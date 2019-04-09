@@ -13,11 +13,11 @@ To enable Telegram alerts you need to create your own Telegram Bot.
 
 ![BotFather Chat](../.gitbook/assets/botfather_chat.png)
 
-3. Type `/newbot` and follow the instructions to create a bot.
+1. Type `/newbot` and follow the instructions to create a bot.
 
 ![new Bot](../.gitbook/assets/botfather_new_bot.png)
 
-4. Once complete an API token will be given. Enter the token to the [LinuxGSM config](../configuration/linuxgsm-config.md).
+1. Once complete an API token will be given. Enter the token to the [LinuxGSM config](../configuration/linuxgsm-config.md).
 
 ```text
    #Telegram Alerts | https://github.com/GameServerManagers/LinuxGSM/wiki/Telegram
@@ -89,3 +89,4 @@ Finally test that everything correctly works by sending a test alert. You will n
 ```text
 ./gameserver test-alert
 ```
+
