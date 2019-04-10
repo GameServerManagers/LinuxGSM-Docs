@@ -15,6 +15,7 @@ Game Server Login Token is a new system by Valve for managing game servers.
 * Garry’s Mod
 * Insurgency
 * No more Room in Hell \(**required**\)
+* Nuclear Dawn
 * Team Fortress 2
 * Tower Unite
 * Zombie Panic! Source
