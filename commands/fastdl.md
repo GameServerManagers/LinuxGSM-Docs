@@ -26,7 +26,7 @@ Short: `./gameserver fd`
 * Particles \(.pcf\)
 * Sounds \(.wav, .mp3, .ogg\)
 * Fonts \(.otf, .ttf\)
-* Images \(.png\)
+* Images \(.png, .svg\)
 
 ## Requirements
 
