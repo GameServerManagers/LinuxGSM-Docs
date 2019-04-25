@@ -117,7 +117,7 @@ sourcetvport="27021"
 clientport="27006"
 ```
 
-Then increment those port by 1 for every new server. 25 servers are using 75 ports. After making 25 servers, if you need more it is a good idea is to ad +100 to this 27000 range.
+Then increment those port by 1 for every new server. 25 servers are using 75 ports. After making 25 servers, if you need more it is a good idea is to add +100 to this 27000 range.
 
 ```bash
 port="27125"
