@@ -65,7 +65,7 @@ ip="0.0.0.0"
 
 ### Which ports can be used?
 
-You can use any port as long as it is not already in use and it is up to admins how to setup port allocation. It is recommended that ports are close together and sequential i.e 27016,27016,27017 to save confusion. Some servers ports by default are not sequential, however, there is nothing stopping an admin from changing this. Example for source servers; you could set the port 27015, sourcetv port 27016, client port 27018. The next game server instance could simply follow on from this.
+You can use any port as long as it is not already in use and it is up to admins how to setup port allocation. It is recommended that ports are close together and sequential i.e 27015,27016,27017 to save confusion. Some servers ports by default are not sequential, however, there is nothing stopping an admin from changing this. Example for source servers; you could set the port 27015, sourcetv port 27016, client port 27018. The next game server instance could simply follow on from this.
 
 > Reminder: If you're running several servers, make sure you're using different ports on all of your servers.
 
