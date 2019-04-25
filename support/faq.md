@@ -204,7 +204,7 @@ You're lacking the required function, because you didn't run this command before
 
 The user that you are running LinuxGSM with does not own all of its files.
 
-More information, see [Ownership](https://github.com/GameServerManagers/LinuxGSM/wiki/File-Ownership)
+More information, see [Ownership](https://docs.linuxgsm.com/linux/file-ownership)
 
 **Getting rid of bad practice**
 
@@ -226,7 +226,7 @@ Useful command:
 
 `chmod +x <filename>`
 
-To learn more about this, see [Permissions](https://github.com/GameServerManagers/LinuxGSM/wiki/Permissions)
+To learn more about this, see [Permissions](https://docs.linuxgsm.com/linux/permissions)
 
 ## My server is not showing up over LAN or Internet
 
