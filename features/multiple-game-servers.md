@@ -60,7 +60,11 @@ As you can see the installs are separated and isolated from each other in each u
 
 ### How to install
 
-1\) Create a new user with a home directory. 2\) Repeat the standard installation process using this different user. 3\) If your game server uses the same default [Ports](../configuration/ports.md) as a previously installed one, make sure you change them \(and/or IP if your server has multiple IPs\) in you [LinuxGSM Config](../configuration/linuxgsm-config.md) or in [Game Server Config](../configuration/game-server-config.md) depending on the game server you run.
+1. Create a new user with a home directory.
+
+2. Repeat the standard installation process using this different user.
+
+3. If your game server uses the same default [Ports](../configuration/ports.md) as a previously installed one, make sure you change them \(and/or IP if your server has multiple IPs\) in you [LinuxGSM Config](../configuration/linuxgsm-config.md) or in [Game Server Config](../configuration/game-server-config.md) depending on the game server you run.
 
 ## Single Installation, multiple instances
 
@@ -68,7 +72,7 @@ This method is used when your game servers share a common base regarding mods or
 
 ### Use cases
 
-* You want to run the same game server on different maps or game modes, you have no mods at all and want to save some disk space
+* You want to run the same game server on different maps or game modes and you want to save some disk space
 * You have a server template, a common base with some mods or configuration that you want to slightly decline in different versions by using a different config file
 * You're on a budget and have very limited disk space, but you just want to run multiple instances of the same game
 * Your server has a low bandwidth and you are running a lot of game servers off of it, this method will allow you to update multiple instances at once
@@ -109,11 +113,11 @@ In this example, you can see the scripts are located in the same installation bu
 
 ### How to install
 
-`linuxgsm.sh` allows you to generate as many instances as you want by running `./linuxgsm.sh install`. It will generate a new LinuxGSM script using an incremental number.
+1. `linuxgsm.sh` allows you to generate as many instances as you want by running `./linuxgsm.sh install`. It will generate a new LinuxGSM script using an incremental number.
 
-For example if you already use `./csgoserver` running `./linuxgsm.sh csgoserver` will generate `./csgoserver-2`
+2. For example if you already use `./csgoserver` running `./linuxgsm.sh csgoserver` will generate `./csgoserver-2`
 
-On the first run of `./gameserver-2` a new default LinuxGSM and game config will be created \(`gameserver-2.cfg`\). These new configs will need to be altered with new ports and any other settings that are required.
+3. On the first run of `./gameserver-2` a new default LinuxGSM and game config will be created \(`gameserver-2.cfg`\). These new configs will need to be altered with new ports and any other settings that are required.
 
 ## Common mistakes
 
