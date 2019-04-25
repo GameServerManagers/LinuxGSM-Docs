@@ -69,7 +69,7 @@ If for some reason, you cannot use postdetails, then provide:
 
 ## GitHub Labels Proposal
 
-Im am proposing an improvement to the labelling system on GitHub to better allow devs and end users to get good feedback on the status of an issue. I would also like to investigate any github issues bots \(discord bots are great\) allowing auto messaging to common problems like lack of info or being posted in the wrong forum. Auto label bot would also be useful.
+I'm proposing an improvement to the labelling system on GitHub to better allow devs and end users to get good feedback on the status of an issue. I would also like to investigate any github issues bots \(discord bots are great\) allowing auto messaging to common problems like lack of info or being posted in the wrong forum. Auto label bot would also be useful.
 
 Labels are to be split in to several category's
 
