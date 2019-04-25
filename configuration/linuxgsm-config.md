@@ -128,7 +128,7 @@ Load `de_nuke` as default map on "myawesomeinstance" and `de_inferno` on "mynews
 ```text
 _default.cfg: defaultmap="de_dust2"
 common.cfg: defaultmap="de_inferno"
-nukeonly.cfg: defaultmap="de_nuke"
+myawesomeinstance.cfg: defaultmap="de_nuke"
 mynewserver.cfg: NOT SET
 ```
 
