@@ -21,12 +21,12 @@ Short: `./gameserver fd`
 ## Supported file formats
 
 * Maps \(.bsp\)
-* Materials \(.vtf, .vmt\)
+* Materials \(.vtf, .vmt, .png, .svg\)
 * Models \(.vtx, .vvd, .mdl, .phy\)
 * Particles \(.pcf\)
 * Sounds \(.wav, .mp3, .ogg\)
 * Fonts \(.otf, .ttf\)
-* Images \(.png\)
+* Images \(.png, .svg\)
 
 ## Requirements
 
