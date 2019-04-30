@@ -98,7 +98,5 @@ Yes, you can have a maximum of 1000 GSLTs on your account.
 
 Your Steam account must not be currently community banned or locked. Your Steam account must not be limited. Your Steam account must have a qualifying registered phone. Your Steam account must own the game for which you are creating a GSLT. Your Steam account may not have more than 1000 tokens.
 
-Yes CS:GO is the only internet connected server that requires GSLT currently.
-
 For further information see this useful blog post: [http://dathost.net/blog/important-information-regarding-our-csgo-servers/](http://dathost.net/blog/important-information-regarding-our-csgo-servers/)
 
