@@ -12,6 +12,8 @@ Gamedig must have nodejs installed to work. Run the following command to install
 
 You might already have an older version of nodejs installed or be having issues with node dependencies. Try fully removing nodejs first then following the instructions below to install.
 
+#### Ubuntu/Debian
+
 ```text
 sudo apt remove --purge nodejs npm
 sudo apt clean
@@ -20,6 +22,18 @@ sudo apt install -f
 sudo apt autoremove
 ```
 
+#### CentOS
+
+{% hint style="warning" %}
+Work in progress
+{% endhint %}
+
+### Fedora
+
+{% hint style="warning" %}
+Work in progress
+{% endhint %}
+
 ### Install NodeJS
 
 Installing nodejs can be problematic, however using the below should work well.
@@ -27,24 +41,28 @@ Installing nodejs can be problematic, however using the below should work well.
 #### Ubuntu/Debian
 
 ```text
-sudo apt install curl
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
-sudo apt install -y nodejs
 curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-sudo apt update && sudo apt install yarn
+sudo apt update && sudo apt install -y nodejs yarn
 ```
 
 #### CentOS
 
-{% hint style="danger" %}
-Work in progress
-{% endhint %}
+```text
+curl -sL https://rpm.nodesource.com/setup_10.x | bash -
+curl -sL https://dl.yarnpkg.com/rpm/yarn.repo -o /etc/yum.repos.d/yarn.repo
+yum install nodejs
+yum install yarn
+```
 
 #### Fedora
 
-{% hint style="danger" %}
-Work in progress
-{% endhint %}
+```text
+curl -sL https://rpm.nodesource.com/setup_10.x | bash -
+curl -sL https://dl.yarnpkg.com/rpm/yarn.repo -o /etc/yum.repos.d/yarn.repo
+dnf install nodejs
+dnf install yarn
+```
 
 ### Install Gamedig npm
 
