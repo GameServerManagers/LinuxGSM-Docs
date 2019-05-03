@@ -12,7 +12,7 @@ Traditionally game servers are not easy to manage yourself. Admins often have to
 
 ## Main features
 
-80+ game servers supported
+90+ game servers supported
 
 * Installer 
 * Monitor 
