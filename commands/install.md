@@ -65,7 +65,7 @@ Common faults include:
 * Trying to install LinuxGSM in a directory not owned by the correct user.
 * Not making `gameserver` file executable using the `chmod +x` command.
 
-If trying to run as `root` LinuxGSM will fail to run. See FAQ.
+If trying to run as `root` LinuxGSM will fail to run. See [FAQ](../support/faq.md).
 
 To check if the correct user owns the directory or `gameserver` file, use `ls -al`
 
@@ -115,5 +115,5 @@ Make sure you can `ping` using a hostname.
 ping google.com
 ```
 
-Should this fail your server may not have DNS lookup correctly configured. [https://www.cyberciti.biz/faq/linux-setup-dns-lookup/](https://www.cyberciti.biz/faq/linux-setup-dns-lookup/)
+Should this fail, your server may not have DNS lookup correctly configured. [https://www.cyberciti.biz/faq/linux-setup-dns-lookup/](https://www.cyberciti.biz/faq/linux-setup-dns-lookup/)
 
