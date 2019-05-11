@@ -60,7 +60,7 @@ To change command-line parameters for your server edit your '_/lgsm/config-lgsm/
 
 ```text
 fn_parms(){
-  parms="\"TheIsland?SessionName=MyServerName1?AltSaveDirectoryName=Save1?Port=7777?QueryPort=27015" -NoTransferFromFiltering -clusterid=cluster1"
+  parms="\"TheIsland?SessionName=MyServerName1?AltSaveDirectoryName=Save1?Port=7777?QueryPort=27015" -NoTransferFromFiltering -clusterid=cluster1\""
 }
 ```
 
