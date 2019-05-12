@@ -61,9 +61,7 @@ As you can see the installs are separated and isolated from each other in each u
 ### How to install
 
 1. Create a new user with a home directory.
-
 2. Repeat the standard installation process using this different user.
-
 3. If your game server uses the same default [Ports](../configuration/ports.md) as a previously installed one, make sure you change them \(and/or IP if your server has multiple IPs\) in you [LinuxGSM Config](../configuration/linuxgsm-config.md) or in [Game Server Config](../configuration/game-server-config.md) depending on the game server you run.
 
 ## Single Installation, multiple instances
@@ -114,9 +112,7 @@ In this example, you can see the scripts are located in the same installation bu
 ### How to install
 
 1. `linuxgsm.sh` allows you to generate as many instances as you want by running `./linuxgsm.sh install`. It will generate a new LinuxGSM script using an incremental number.
-
 2. For example if you already use `./csgoserver` running `./linuxgsm.sh csgoserver` will generate `./csgoserver-2`
-
 3. On the first run of `./gameserver-2` a new default LinuxGSM and game config will be created \(`gameserver-2.cfg`\). These new configs will need to be altered with new ports and any other settings that are required.
 
 ## Common mistakes
