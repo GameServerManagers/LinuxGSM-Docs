@@ -1,4 +1,4 @@
-# logging
+# Log Management
 
 Logs are an important part of monitoring a server as it allows you to know what has been happening. LinuxGSM has a log directory that allows you to track the gameserver, console and LinuxGSM itself.
 
