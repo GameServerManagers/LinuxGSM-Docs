@@ -63,7 +63,7 @@
   * [FAQ](support/faq.md)
 * [SteamCMD](steamcmd/README.md)
   * [Game Server Login Token](steamcmd/gslt.md)
-  * [Branches](steamcmd/branches.md)
+  * [Branch](steamcmd/branches.md)
   * [LAN Discovery](steamcmd/lan-discovery.md)
   * [Workshop](steamcmd/workshop.md)
 * [Linux](linux/README.md)

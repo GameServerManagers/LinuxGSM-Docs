@@ -1,8 +1,8 @@
 ---
-description: Allows the selection of specific builds of a game server on Steam
+description: Allows the selection of specific builds of a game server in SteamCMD
 ---
 
-# Branches
+# Branch
 
 Game developers sometimes make available several builds of the game server on Steam, often to allow beta testing of new releases. These builds are made available via branches \(betas\) and can be entered in the [LinuxGSM Config](../configuration/linuxgsm-config.md).
 
