@@ -62,6 +62,7 @@
   * [Game Server](support/game-server.md)
   * [FAQ](support/faq.md)
 * [SteamCMD](steamcmd/README.md)
+  * [Steam Master Server](steamcmd/steam-master-server.md)
   * [Game Server Login Token](steamcmd/gslt.md)
   * [Branch](steamcmd/branch.md)
   * [LAN Discovery](steamcmd/lan-discovery.md)
