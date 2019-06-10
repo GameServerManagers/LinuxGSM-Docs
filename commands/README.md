@@ -48,3 +48,5 @@ Replace `./gameserver` with the actual script name. Every command has a short ve
 | Query Raw | `./gameserver query-raw` | `./gameserver qr` |
 | Clear Functions | `./gameserver clear-functions` | `./gameserver cf` |
 
+
+
