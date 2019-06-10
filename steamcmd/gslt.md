@@ -1,21 +1,5 @@
 # Game Server Login Token
 
-* Ballistic Overkill
-* Brainbread 2
-* Black Mesa: Deathmatch
-* Blade Symphony \(**required**\)
-* Counter Strike: Global Offensive \(**required**\)
-* Counter Strike: Source \(**required**\)
-* Day of Defeat: Source
-* Dystopia
-* Empires Mod
-* Garry’s Mod
-* Insurgency
-* No more Room in Hell \(**required**\)
-* Team Fortress 2
-* Tower Unite
-* Zombie Panic! Source
-
 Game Server Login Token is a new system by Valve for managing game servers.
 
 ## Games using GSLT
