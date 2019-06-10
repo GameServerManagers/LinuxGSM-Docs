@@ -9,7 +9,7 @@ serverfiles/ShooterGame/Saved/Config/LinuxServer/Game.ini
 
 ## Change Map
 
-You can change the map by editing the [instance config](../configuration/linuxgsm-config.md) `lgsm/config-lgsm/arkserver.cfg`.
+You can change the map by editing the [instance config](../configuration/linuxgsm-config.md) `lgsm/config-lgsm/arkserver/arkserver.cfg`.
 
 Simply add the line `defaultmap="MAP_NAME_HERE"`. You can find a official map list right below.
 
