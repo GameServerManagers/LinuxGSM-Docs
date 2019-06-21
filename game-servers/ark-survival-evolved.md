@@ -11,7 +11,7 @@ serverfiles/ShooterGame/Saved/Config/LinuxServer/Game.ini
 
 You can change the map by editing the [instance config](../configuration/linuxgsm-config.md) `lgsm/config-lgsm/arkserver/arkserver.cfg`.
 
-Simply add the line `defaultmap="MAP_NAME_HERE"`. You can find a official map list right below.
+Add the line `defaultmap="MAP_NAME_HERE"`. You can find a official map list right below.
 
 ### Official Map Names:
 
@@ -21,6 +21,13 @@ Simply add the line `defaultmap="MAP_NAME_HERE"`. You can find a official map li
 * ScorchedEarth\_P
 * Aberration\_P
 * Extinction
+* Valguero\_P
+
+## Change maximum players
+
+You can change the number of maximum players by editing the [instance config](../configuration/linuxgsm-config.md) `lgsm/config-lgsm/arkserver/arkserver.cfg`.
+
+Add the line `maxplayers=70`.
 
 ## Adding Mods
 
