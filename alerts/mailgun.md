@@ -2,9 +2,16 @@
 
 [![Mailgun logo](../.gitbook/assets/mailgun_logo.png)](https://www.mailgun.com/)
 
-Send LinuxGSM alerts to your inbox via Mailgun.
+[Mailgun](https://www.mailgun.com) is an email service that allows LinuxGSM to send emails via an API, bypassing the need to use postfix. This method of sending email notifications is generaly more reliable.
 
-## About Mailgun
+An option to setup Mailgun as an email relay in postfix is also available. The free package allows sending 10,000 emails per month.
 
-[Mailgun](https://mailgun.com) uses an API allowing email to be sent from LinuxGSM more reliability. It is also possible to use Mailgun as an email relay in postfix if you prefer. The free package allows sending 10,000 emails per month.
+```text
+# Mailgun Email Alerts | https://docs.linuxgsm.com/alerts/mailgun
+mailgunalert="off"
+mailguntoken="accesstoken"
+mailgundomain="example.com"
+mailgunemailfrom="alert@example.com"
+mailgunemail="email@myemail.com"
+```
 

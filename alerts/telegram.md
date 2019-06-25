@@ -1,8 +1,6 @@
 # Telegram
 
-## Telegram
-
-Send LinuxGSM alerts to a Telegram Messenger user or group.
+[Telegram](https://telegram.org) is an instant messenger app  that allows other applications to send messages via a webhook.  This functionality is used to allow users to recieve alerts about LinuxGSM.
 
 ### Setup a Telegram Bot
 

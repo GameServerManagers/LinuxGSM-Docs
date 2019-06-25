@@ -43,7 +43,7 @@
 * [Alerts](alerts/README.md)
   * [Discord](alerts/discord.md)
   * [Email](alerts/email.md)
-  * [ITFFF](alerts/ifttt.md)
+  * [IFTTT](alerts/ifttt.md)
   * [Mailgun](alerts/mailgun.md)
   * [Pushbullet](alerts/pushbullet.md)
   * [Pushover](alerts/pushover.md)

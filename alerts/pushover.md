@@ -2,7 +2,7 @@
 
 ![](../.gitbook/assets/pushover_logo.png)
 
-Send LinuxGSM alerts to Pushover.
+[Pushover](https://pushover.net) allows the sending of push notifications to various devices such a PC, phone and tablet. This functionality is used to allow users to recieve alerts about LinuxGSM.
 
 ## Setup Pushover Alerts
 

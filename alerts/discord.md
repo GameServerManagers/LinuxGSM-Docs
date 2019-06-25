@@ -2,6 +2,8 @@
 
 ![](../.gitbook/assets/discord_logo-1.png)
 
+[Discord](https://discordapp.com) is a VoIP app that allows other applications to send messages via a webhook. This functionality is used to allow users to recieve alerts about LinuxGSM.
+
 ## Create a Discord Webhook
 
 A webhook is required to post alerts to a Discord text channel

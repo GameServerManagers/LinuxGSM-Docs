@@ -2,13 +2,11 @@
 
 ![](../.gitbook/assets/pushbullet_logo%20%281%29.png)
 
-![Pushbullet alert](https://linuxgsm.com/wp-content/uploads/2016/05/lgsm-pushbullet.png)
+[Pushbullet](https://www.pushbullet.com) allows the sending of push notifications to various devices such a PC, phone and tablet. This functionality is used to allow users to recieve alerts about LinuxGSM.
 
 ## Enable Pushbullet alerts
 
-To enable Pushbullet alerts you need to generate an Access Token.
-
-Access Tokens are available from Pushbullet setting found [here](https://www.pushbullet.com/#settings).
+To enable Pushbullet alerts an _Access Token_ needs to be generated. Access Tokens are available from Pushbullet setting found [here](https://www.pushbullet.com/#settings).
 
 Once you have created a token insert it in to you [LinuxGSM config](../configuration/linuxgsm-config.md).
 
@@ -29,13 +27,5 @@ Once you have created the channel set the channeltag in the script without using
 
 ```text
 channeltag="myepicserver"
-```
-
-## Send Test Alert
-
-Finally test that everything correctly works by sending a test alert.
-
-```text
-./gameserver test-alert
 ```
 
