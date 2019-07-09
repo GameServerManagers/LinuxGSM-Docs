@@ -31,7 +31,7 @@ Ubuntu 18.04 LTS is recommended
 Debian is another popular distro that sits upstream of Ubuntu that shares many of the same advantages of Ubuntu. The release cycle is every 2 years. Debian supports “backports”, this allows newer software to be installed on stable Debian releases. This is particularly useful for game servers and LinuxGSM that may require newer software.
 
 {% hint style="info" %}
-Debian 9 "Stretch" is recommended
+Debian 10 "Buster" is recommended
 {% endhint %}
 
 | **Version** | **Status** | **Code name** | **Release date** | **Security support until** | **LTS until** |
