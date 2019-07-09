@@ -1,6 +1,6 @@
 # jq
 
-`jq` allows LinuxGSM to filter json files to extract specific useful data
+`jq` allows LinuxGSM to filter json files to extract specific useful data.
 
 | Distro | Version |
 | :--- | :--- |
@@ -14,5 +14,4 @@
 | CentOS 7 | 1.5 |
 | Fedora 27 | 1.5 |
 | Fedora 28 | 1.5 |
-| Fedora 19 | 1.5 |
-
+| Fedora 29 | 1.5 |
