@@ -36,9 +36,9 @@ Debian 9 "Stretch" is recommended
 
 | **Version** | **Status** | **Code name** | **Release date** | **Security support until** | **LTS until** |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 8 | oldstable | Jessie | 25–26 April 2015 | 17 June 2018 | 30 June 2020 |
-| **9** | **stable** | Stretch | 17 June 2017 | 2020 | June 2022 |
-| 10 | testing | Buster | Mid-2019 | TBA | TBA |
+| 8 | oldoldstable | Jessie | 25–26 April 2015 | 17 June 2018 | 30 June 2020 |
+| 9 | oldstable | Stretch | 17 June 2017 | 2020 | June 2022 |
+| **10** | **stable** | Buster | 6 July 2019 | 2022 | 2024 |
 
 ## CentOS
 
@@ -56,8 +56,9 @@ CentOS 7 is recommended
 
 | **CentOS version** | Release date | Full updates | Maintenance updates |
 | :--- | :--- | :--- | :--- |
-| **6** | 10 July 2011 | 10 May 2017 | 30 November 2020 |
+| 6 | 10 July 2011 | 10 May 2017 | 30 November 2020 |
 | **7** | 7 July 2014 | Q4 2020 | 30 June 2024 |
+| 8 | 2019 | TBA | TBA |
 
 ### EPEL
 
@@ -76,6 +77,6 @@ Fedora is a Linux distribution developed by the community-supported Fedora Proje
 | **Version** | Release Date |
 | :--- | :--- |
 | 28 | 2018-05-01 |
-| **29** | 2018-10-30 |
-| 30 | 2019-04-30 |
+| 29 | 2018-10-30 |
+| **30** | 2019-04-30 |
 
