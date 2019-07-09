@@ -38,16 +38,11 @@ JRE Availability Table Different Distros have different versions of Java. This p
 
 | Distro | JRE 6 | JRE 7 | JRE 8 |
 | :--- | :--- | :--- | :--- |
-| CentOS 5 | YES | YES | NO |
-| CentOS 6 | YES | YES | YES |
 | CentOS 7 | YES | YES | YES |
-| Debian 6 | YES | NO | NO |
-| Debian 7 | YES | YES | NO |
+| CentOS 8 | NO | NO | YES |
 | Debian 8 | NO | YES | YES \(backport\) |
 | Debian 9 | NO | NO | YES |
 | Debian 10 | NO | NO | YES |
-| Ubuntu 12.04 LTS | YES | YES | NO |
-| Ubuntu 14.04 LTS | YES | YES | NO |
 | Ubuntu 16.04 LTS | NO | NO | YES |
 | Ubuntu 18.04 LTS | NO | NO | YES |
 
