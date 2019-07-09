@@ -66,7 +66,7 @@ Install tmux using the Ghettoforge repo.
 yum --enablerepo=gf-plus install tmux
 ```
 
-Once installed restart the server to .
+Once installed restart the server to complete the upgrade.
 
 ```text
 restart
