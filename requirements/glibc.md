@@ -17,6 +17,7 @@ List of distros and there glibc version.
 | CentOS 5 | 2.5 |
 | CentOS 6 | 2.12 |
 | CentOS 7 | 2.17 |
+| CentOS 8 | 2.28 |
 | Fedora 17 | 2.15 |
 | Fedora 18 | 2.16 |
 | Fedora 19 | 2.17 |
