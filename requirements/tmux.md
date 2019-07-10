@@ -3,7 +3,7 @@
 LinuxGSM uses [tmux](https://tmux.github.io) to run servers in the background so the server instance is not terminated when you close a terminal session.
 
 {% hint style="info" %}
-LinuxGSM requires _tmux =&gt; 1.6_ 
+LinuxGSM requires _tmux =&gt; 1.6_
 {% endhint %}
 
 Tmux is a key component of LinuxGSM and replaced [screen](http://en.wikipedia.org/wiki/GNU_Screen) which was used on earlier versions. tmux has a few improvements over screen; mainly being better at handling standard Linux users, this was a major issue when developing with screen. tmux allows LinuxGSM to call up a game server running in the background so you can see what it is doing; this feature is available with [console](../commands/console.md) feature.

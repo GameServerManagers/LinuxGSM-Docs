@@ -15,3 +15,4 @@
 | Fedora 27 | 1.5 |
 | Fedora 28 | 1.5 |
 | Fedora 29 | 1.5 |
+
