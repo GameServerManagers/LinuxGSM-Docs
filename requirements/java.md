@@ -24,12 +24,20 @@ For `openjdk`, run the following changing the version number:
 apt install openjdk-8-jre
 ```
 
+```text
+apt install openjdk-11-jre
+```
+
 ### CentOS/Fedora
 
 Run the following command, changing the version number:
 
 ```text
 yum install java-1.8.0-openjdk
+```
+
+```text
+yum install java-11-openjdk
 ```
 
 ## JRE Availability Table
