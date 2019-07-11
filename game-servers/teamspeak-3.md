@@ -73,3 +73,10 @@ cd ~
 
 Some users with IPv6 enabled might encounter a server failing to start properly. To fix this edit `serverfiles/ts3-server.ini` to add a standard IPv4 \(`voice_ip; filetransfer_ip; query_ip`\) and remove the `, ::` from IPv6. Then as the server failed to start at the installation, the privilege key hasn't been generated. So you will need to use server query \(ID/Password have been generated for them\) to generate a new Server Admin privilege key.
 
+
+### Accounting failed to register
+
+If you find the following in the log you may need to remove a file that was created by teamspeak in /var/shm/
+`ERROR   |Accounting    |   |failed to register local accounting service: File exists`
+The file is named "7gbhujb54g8z9hu43jre8" that is the problem for teamspeak.
+You need remove the file that is owned by another user and then try again to start the teamspeak server.
