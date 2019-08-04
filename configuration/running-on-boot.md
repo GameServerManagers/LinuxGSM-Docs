@@ -15,7 +15,7 @@ After=network-online.target
 Wants=network-online.target
 
 [Service]
-Type=simple
+Type=forking
 User=ts3server
 WorkingDirectory=/home/ts3server
 ExecStart=/home/ts3server/ts3server start
