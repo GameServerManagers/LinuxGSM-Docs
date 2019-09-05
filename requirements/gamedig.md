@@ -28,12 +28,6 @@ sudo apt autoremove
 Work in progress
 {% endhint %}
 
-### Fedora
-
-{% hint style="warning" %}
-Work in progress
-{% endhint %}
-
 ### Install NodeJS
 
 Installing nodejs can be problematic, however using the below should work well.
@@ -53,15 +47,6 @@ curl -sL https://rpm.nodesource.com/setup_10.x | bash -
 curl -sL https://dl.yarnpkg.com/rpm/yarn.repo -o /etc/yum.repos.d/yarn.repo
 yum install nodejs
 yum install yarn
-```
-
-#### Fedora
-
-```text
-curl -sL https://rpm.nodesource.com/setup_10.x | bash -
-curl -sL https://dl.yarnpkg.com/rpm/yarn.repo -o /etc/yum.repos.d/yarn.repo
-dnf install nodejs
-dnf install yarn
 ```
 
 ### Install Gamedig npm
