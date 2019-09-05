@@ -16,10 +16,6 @@ List of distros and there glibc version.
 | :--- | :--- |
 | CentOS 7 | 2.17 |
 | CentOS 8 | 2.28 |
-| Fedora 27 | 2.26 |
-| Fedora 28 | 2.27 |
-| Fedora 29 | 2.28 |
-| Fedora 30 | 2.29 |
 | Debian 8 | 2.19 |
 | Debian 9 | 2.24 |
 | Debian 10 | 2.28 |
