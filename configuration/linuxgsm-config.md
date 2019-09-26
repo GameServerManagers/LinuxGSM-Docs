@@ -32,7 +32,7 @@ An understanding of how LinuxGSM handles [multiple game server](../features/mult
 Do not edit \_default.cfg any changes to this file will be overwritten
 {% endhint %}
 
-**common.cfg**
+#### common.cfg
 
 `common.cfg` is used for common settings that apply to all game server instances of the same installation. This saves having to apply the same settings multiple times.
 
