@@ -67,3 +67,4 @@ LinuxGSM uses packages that are not available by default in CentOS because of th
 {% hint style="info" %}
 EPEL is required to run LinuxGSM
 {% endhint %}
+

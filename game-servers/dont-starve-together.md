@@ -1,5 +1,40 @@
 # Dont Starve Together
 
+1. Go to the Klei website [https://accounts.klei.com](https://accounts.klei.com)
+2. After logging into your account visit [this](https://accounts.klei.com/account/game/servers?game=DontStarveTogether) page to get your game server authentication token.
+3. Enter a friendly name for your server and copy the access token and paste it into the file `cluster_token.txt`.
+
+You can quickly do this by running the following command, replacing `[AUTHTOKEN]` with your authentication token.
+
+```bash
+echo '[AUTHTOKEN]' > ~/.klei/DoNotStarveTogether/[CLUSTER]/cluster_token.txt
+```
+
+By default the cluster will contain a single shard. So you only need one server but you will also only have one map.
+
+{% hint style="info" %}
+Each shard \(level of the world\) has to be run as an individual server instance.
+{% endhint %}
+
+1. **master shard**: the shard you enter when joining the server \(**one** per cluster\).
+2. **slave shard**: shard that will connect to the master shard.
+
+In this example we will only use two shards, one overworld shard and one cave shard, on the same server using the same installation. If you want to use more shards or run the shards on different servers, take a look at the guides mentioned at the bottom. First of all we need two scripts:
+
+#### Multi-Shard Example
+
+~/.klei/DoNotStarveTogether/\[cluster\]/Master/server.ini
+
+`~/.klei/DoNotStarveTogether/[cluster]/Caves/server.ini`
+
+If you want Caves and Overworld to display on the same server, you also to change the cluster.ini, otherwise it will run two instances, one with the Overworld and another with the Caves:
+
+`~/.klei/DoNotStarveTogether/[cluster]/cluster.ini`
+
+**Set all installation variables BEFORE running the** `./dstserver-[1,2] install` **commands.** Feel free to change these settings but make sure that you set them to the same clusters. You also should not change them afterwards.
+
+For clarity it is recommended recommend naming the master shard _**Master**_.
+
 ## Authentication Token
 
 Don't Starve Together server requires an Authentication Token.

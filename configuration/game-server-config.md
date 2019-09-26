@@ -37,7 +37,7 @@ Config file:         /home/gmodserver/serverfiles/garrysmod/cfg/gmod-server.cfg
 Whenever possible, LinuxGSM provides basic easy-to-use game server configuration files.  
 A dedicated repository has been made so all server admins can benefit, even Windows admins.
 
-{% embed url="https://github.com/GameServerManagers/Game-Server-Configs" %}
+{% embed url="https://github.com/GameServerManagers/Game-Server-Configs" caption="" %}
 
 This configuration file is automatically downloaded upon server installation.
 
@@ -62,9 +62,7 @@ One of the goals of LinuxGSM is to make managing these as easy as possible, by p
 
 ### I found missing settings or an error with config files?
 
-If you found settings that are absent from the default configuration file provided by LinuxGSM that would be a useful addition, then you can open an issue or a pull request. 
+If you found settings that are absent from the default configuration file provided by LinuxGSM that would be a useful addition, then you can open an issue or a pull request.
 
-{% embed url="https://github.com/GameServerManagers/Game-Server-Configs" %}
-
-
+{% embed url="https://github.com/GameServerManagers/Game-Server-Configs" caption="" %}
 

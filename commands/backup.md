@@ -116,22 +116,23 @@ Using the backup feature is not the only way to backup a game server. There are 
 
 [rsync](https://www.linode.com/docs/tools-reference/tools/introduction-to-rsync) is one of the most common ways to backup. It is a remote sync tool that is created for sending files/directory's to another location. Particularly good for syncing to another server.
 
-{% embed url="https://www.linode.com/docs/tools-reference/tools/introduction-to-rsync" %}
+{% embed url="https://www.linode.com/docs/tools-reference/tools/introduction-to-rsync" caption="" %}
 
 ### Duplicity
 
-Is an incremental backup solution that allows backups to all sorts of different locations including many different cloud storage solutions like BackBlaze B2 and Amazon S3. Once configured it can be a powerful and efficient backup solution. 
+Is an incremental backup solution that allows backups to all sorts of different locations including many different cloud storage solutions like BackBlaze B2 and Amazon S3. Once configured it can be a powerful and efficient backup solution.
 
-{% embed url="http://duplicity.nongnu.org" %}
+{% embed url="http://duplicity.nongnu.org" caption="" %}
 
 #### duplicity-backup.sh
 
-duplicity-backup.sh is a very useful bash wrapper to help automate duplicity. 
+duplicity-backup.sh is a very useful bash wrapper to help automate duplicity.
 
-{% embed url="https://github.com/zertrin/duplicity-backup.sh" %}
+{% embed url="https://github.com/zertrin/duplicity-backup.sh" caption="" %}
 
 ### rclone
 
 [rclone](http://rclone.org) is similar to rsync however can easily sync to cloud storage solutions.
 
-{% embed url="http://rclone.org" %}
+{% embed url="http://rclone.org" caption="" %}
+

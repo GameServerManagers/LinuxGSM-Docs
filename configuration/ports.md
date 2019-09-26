@@ -20,7 +20,7 @@ Here are the most common ones:
 
 Listening ports are usually set within your start parameters, sometimes in the game server config file.
 
-For info about start parameters, see [Start Parameters](../configuration/start-parameters.md) and [LinuxGSM Config](../configuration/linuxgsm-config.md) For info about your game server config, see [Game Server Config](../configuration/game-server-config.md).
+For info about start parameters, see [Start Parameters](start-parameters.md) and [LinuxGSM Config](linuxgsm-config.md) For info about your game server config, see [Game Server Config](game-server-config.md).
 
 ## View current settings
 
@@ -76,8 +76,6 @@ Should a server has multiple dedicated IP addresses allocated, it is possible fo
 ## Home Servers
 
 Home servers are a great way to experiment with game servers or can be used as a permanent option if you have the bandwidth. There are extra steps required on your home router to allow external access to your game server. This will normally involve opening ports on the router firewall and/or port forwarding. See [this link](https://www.howtogeek.com/66214/how-to-forward-ports-on-your-router/) for basic instuctions. See your router's manual for specific instructions.
-
-
 
 ### ip= setting for home servers
 

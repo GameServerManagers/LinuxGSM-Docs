@@ -24,11 +24,11 @@ consolelogging="on" # Turning this to off will disable console logging
 
 _Note:_ `logdays="0"` _means logs will be removed if older than 24h._
 
-### Log clearing
+## Log clearing
 
 LinuxGSM clears outdated logs according to `logdays` variable setting. This will affect `script` and `console` logs, as well as common game logs.
 
-#### Gamelogs management
+### Gamelogs management
 
 LinuxGSM also clears logs from common locations to prevent them from using gigabytes of disk space, including:
 

@@ -41,12 +41,10 @@ Replace `./gameserver` with the actual script name. Every command has a short ve
 
 | Command Name | Command | Short |
 | :--- | :--- | :--- |
-| [Developer](../developers/developer-commands.md) | `./gameserver developer` | `./gameserver dev` |
+| [Developer](https://github.com/GameServerManagers/LinuxGSM-Docs/tree/0412348decd8889d020851076f6435bca490a773/developers/developer-commands.md) | `./gameserver developer` | `./gameserver dev` |
 | Detect Dependencies | `./gameserver detect-deps` | `./gameserver dd` |
-| [Detect Glibc](../developers/developer-commands.md#detect-glibc) | `./gameserver detect-glibc` | `./gameserver dg` |
-| [Detect ldd](../developers/developer-commands.md#detect-ldd) | `./gameserver detect-ldd` | `./gameserver dl` |
+| [Detect Glibc](https://github.com/GameServerManagers/LinuxGSM-Docs/tree/0412348decd8889d020851076f6435bca490a773/developers/developer-commands.md#detect-glibc) | `./gameserver detect-glibc` | `./gameserver dg` |
+| [Detect ldd](https://github.com/GameServerManagers/LinuxGSM-Docs/tree/0412348decd8889d020851076f6435bca490a773/developers/developer-commands.md#detect-ldd) | `./gameserver detect-ldd` | `./gameserver dl` |
 | Query Raw | `./gameserver query-raw` | `./gameserver qr` |
 | Clear Functions | `./gameserver clear-functions` | `./gameserver cf` |
-
-
 

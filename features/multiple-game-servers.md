@@ -60,9 +60,7 @@ As you can see the installs are separated and isolated from each other in each u
 
 ### How to install
 
-1\) Create a new user with a home directory.
-2\) Repeat the standard installation process using this different user.
-3\) If your game server uses the same default [Ports](../configuration/ports.md) as a previously installed one, make sure you change them \(and/or IP if your server has multiple IPs\) in you [LinuxGSM Config](../configuration/linuxgsm-config.md) or in [Game Server Config](../configuration/game-server-config.md) depending on the game server you run.
+1\) Create a new user with a home directory. 2\) Repeat the standard installation process using this different user. 3\) If your game server uses the same default [Ports](../configuration/ports.md) as a previously installed one, make sure you change them \(and/or IP if your server has multiple IPs\) in you [LinuxGSM Config](../configuration/linuxgsm-config.md) or in [Game Server Config](../configuration/game-server-config.md) depending on the game server you run.
 
 ## Single Installation, multiple instances
 
