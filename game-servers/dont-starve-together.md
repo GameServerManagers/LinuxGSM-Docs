@@ -1,5 +1,9 @@
 # Dont Starve Together
 
+## Authentication Token
+
+Don't Starve Together server requires an Authentication Token.
+
 1. Go to the Klei website [https://accounts.klei.com](https://accounts.klei.com)
 2. After logging into your account visit [this](https://accounts.klei.com/account/game/servers?game=DontStarveTogether) page to get your game server authentication token.
 3. Enter a friendly name for your server and copy the access token and paste it into the file `cluster_token.txt`.
@@ -8,49 +12,6 @@ You can quickly do this by running the following command, replacing `[AUTHTOKEN]
 
 ```bash
 echo '[AUTHTOKEN]' > ~/.klei/DoNotStarveTogether/[CLUSTER]/cluster_token.txt
-```
-
-By default the cluster will contain a single shard. So you only need one server but you will also only have one map.
-
-{% hint style="info" %}
-Each shard \(level of the world\) has to be run as an individual server instance.
-{% endhint %}
-
-1. **master shard**: the shard you enter when joining the server \(**one** per cluster\).
-2. **slave shard**: shard that will connect to the master shard.
-
-In this example we will only use two shards, one overworld shard and one cave shard, on the same server using the same installation. If you want to use more shards or run the shards on different servers, take a look at the guides mentioned at the bottom. First of all we need two scripts:
-
-#### Multi-Shard Example
-
-~/.klei/DoNotStarveTogether/\[cluster\]/Master/server.ini
-
-`~/.klei/DoNotStarveTogether/[cluster]/Caves/server.ini`
-
-If you want Caves and Overworld to display on the same server, you also to change the cluster.ini, otherwise it will run two instances, one with the Overworld and another with the Caves:
-
-`~/.klei/DoNotStarveTogether/[cluster]/cluster.ini`
-
-**Set all installation variables BEFORE running the** `./dstserver-[1,2] install` **commands.** Feel free to change these settings but make sure that you set them to the same clusters. You also should not change them afterwards.
-
-For clarity it is recommended recommend naming the master shard _**Master**_.
-
-## Authentication Token
-
-Don't Starve Together server requires an Authentication Token.
-
-1. Start Don't Starve Together from Steam and click on the "Play!" button.
-
-![DST Title](https://github.com/GameServerManagers/LinuxGSM-Docs/tree/08d994c888c65f0bb5ac3297591c768b92d47dac/games/.gitbook/assets/dst_title.png)
-
-1. Click on the "Acct Info" button.
-
-![DST Menu](https://github.com/GameServerManagers/LinuxGSM-Docs/tree/08d994c888c65f0bb5ac3297591c768b92d47dac/games/.gitbook/assets/dst_menu.png)
-
-1. Click on the "Generate Server Token" button, copy the token, and paste it into the file.
-
-```bash
-~/.klei/DoNotStarveTogether/MyDediServer/cluster_token.txt
 ```
 
 You can quickly do this by running the following command, replacing YourServerTokenHere with your server token \(Keep the quotes around the token\).
@@ -79,7 +40,7 @@ sharding="false"
 
 ### Multi-Shard
 
-First of all take a look at [Multiple-Servers](https://github.com/GameServerManagers/LinuxGSM/wiki/Multiple-Servers) to get a general idea on how to create multiple game servers.
+First of all take a look at [Multiple-Servers](https://docs.linuxgsm.com/features/multiple-game-servers) to get a general idea on how to create multiple game servers.
 
 There are two types of shards:
 
@@ -150,9 +111,9 @@ If you want to Caves and Overworld to display on the same server, you also to ch
 shard_enabled = true
 ```
 
-**Set all installation variables BEFORE running the** `./dstserver1/2 install` **commands.** Feel free to change these settings but make sure that you set them to the same clusters. You also should not change them afterwards. If you have multiple clusters on one machine with the same shard names, you have to modify the servicename because `servicename="dst-server-${shard}"` \(The shard name is used to differentiate service names. e.g. `servicename="dst-server-${cluster}-${shard}"`\).
+**Set all installation variables BEFORE running the** `./dstserver-[1,2] install` **commands.** Feel free to change these settings but make sure that you set them to the same clusters. You also should not change them afterwards.
 
-For clarity reasons I recommend naming the master shard "Master".
+For clarity it is recommended recommend naming the master shard _**Master**_.
 
 Lastly you have to start both servers. The order does not matter because the slave server will auto-retry connecting to the master server which is listening.
 
@@ -162,4 +123,3 @@ Lastly you have to start both servers. The order does not matter because the sla
 * [Server Settings](http://forums.kleientertainment.com/topic/64552-dedicated-server-settings-guide/)
 * [Command Line Options](http://forums.kleientertainment.com/topic/64743-dedicated-server-command-line-options-guide/)
 * [Understanding Shards and Migration Portals](http://forums.kleientertainment.com/topic/59174-understanding-shards-and-migration-portals/)
-
