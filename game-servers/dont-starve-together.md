@@ -4,9 +4,11 @@
 
 Don't Starve Together server requires an Authentication Token.
 
-1. Go to the Klei website [https://accounts.klei.com](https://accounts.klei.com)
-2. After logging into your account visit [this](https://accounts.klei.com/account/game/servers?game=DontStarveTogether) page to get your authentication token
-3. Enter a friendly name for your server and copy the access token
+1. Start Don't Starve Together from Steam and click on the "Play!" button.
+
+![DST Title](https://github.com/GameServerManagers/LinuxGSM-Docs/tree/08d994c888c65f0bb5ac3297591c768b92d47dac/games/.gitbook/assets/dst_title.png)
+
+1. Click on the "Acct Info" button.
 
 ![DST Menu](https://github.com/GameServerManagers/LinuxGSM-Docs/tree/08d994c888c65f0bb5ac3297591c768b92d47dac/games/.gitbook/assets/dst_menu.png)
 
@@ -42,7 +44,7 @@ sharding="false"
 
 ### Multi-Shard
 
-First of all take a look at [Multiple-Servers](https://docs.linuxgsm.com/features/multiple-game-servers) to get a general idea on how to create multiple game servers.
+First of all take a look at [Multiple-Servers](https://github.com/GameServerManagers/LinuxGSM/wiki/Multiple-Servers) to get a general idea on how to create multiple game servers.
 
 There are two types of shards:
 

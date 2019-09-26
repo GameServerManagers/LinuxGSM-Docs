@@ -23,49 +23,51 @@ To enable Telegram alerts you need to create your own Telegram Bot.
    telegramalert="on"
    telegramtoken="401319987:AAGmgLWzYDprqkMHBjCT9qtzIRWCzqgoTLw"
    telegramchatid=""
+
 ```
-
-## Telegram Group
-
+# Telegram Group
 Use this step If you want to send alerts to a group. If not skip to _retrieve chat id_.
 
-### Setup a New Group
-
+## Setup a New Group
 1. Select `New Group`
+
 2. Give your group a name
+
 3. Select the Bot you just created by typing `@ExampleBot`.
 
 The bot will now be added to the group.
 
-## Use an Existing group
+# Use an Existing group
 
 If you are using an existing group, invite the bot to the group.
-
-```text
-View group info -> Add Members.
 ```
 
-## Retrieve the chat id
+View group info -> Add Members.
+
+```
+
+# Retrieve the chat id
 
 The chat id is used to identify where the alert is being sent. Each user and group has its own ID.
 
 To obtain the chat id a message must be received by the bot. This will allow it to pick up the chat id
-
 * users: send the message `LINUXGSM` directly to the bot
 * groups: send the message `LINUXGSM` to the group
 
 To retrieve the chat id visit the following url, replacing the `XXXXX` with your bot token from earlier.
+```
 
 ```text
 https://api.telegram.org/botXXXXXXXXX:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/getUpdates
 ```
 
+```
 Look for text `LINUXGSM` in the message and find the `chat id` part of that message.
-
-```text
-"chat":{"id":-191537238,
 ```
 
+"chat":{"id":-191537238,
+
+```
 The number given is the chat id
 
 > note: A group number includes a dash in the chat id e.g `-191537238`
@@ -86,5 +88,5 @@ Finally test that everything correctly works by sending a test alert. You will n
 
 ```text
 ./gameserver test-alert
-```
 
+```

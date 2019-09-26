@@ -61,7 +61,7 @@ Collection Ids won't work directly. You need to have all the ids of the mods you
 
 First you need multiple server instances. Please follow [this guide](https://docs.linuxgsm.com/features/multiple-game-servers) if you don't know how:
 
-Follow [this guide](https://survivetheark.com/index.php?/forums/topic/87419-guide-cluster-setup/) to create server clusters:
+[https://github.com/GameServerManagers/LinuxGSM/wiki/Multiple-Game-Servers](https://github.com/GameServerManagers/LinuxGSM/wiki/Multiple-Game-Servers)
 
 To change command-line parameters for your server edit your '_/lgsm/config-lgsm/arkserver/YourServerInstance.cfg_' file. Examle:
 

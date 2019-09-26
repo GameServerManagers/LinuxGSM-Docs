@@ -4,7 +4,7 @@ Servers commonly require _start parameters_, these are command-line options that
 
 LinuxGSM prefers to use config files over parameters as much as possible. However sometimes this is not possible, win which case only parameters or a mixture of both config and parameters will be used. LinuxGSM also attempts to keep the same method between game servers of the same engine to allow consistency between game servers.
 
-## Predefined Start Parameters
+##  Predefined Start Parameters
 
 LinuxGSM often comes with predefined parameters that can be edited. This makes adjusting common settings a easier and allow them to be displayed in `./gameserver details`.
 
@@ -28,7 +28,7 @@ Additional command-line parameters can be added to the `parms` variable. Anythin
 | :--- | :--- |
 | `parms="-game nmrih"` | `./srcds_run -game nmrih` |
 
-### Full Example
+###  Full Example
 
 ```text
 ## Server Start Parameters | https://github.com/GameServerManagers/LinuxGSM/wiki/Start-Parameters

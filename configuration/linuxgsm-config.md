@@ -6,7 +6,7 @@ _LinuxGSM Configs_ and [_Game Server Configs_](game-server-config.md) are differ
 
 LinuxGSM configuration is managed using multiple config files loaded in a set order. It is important to understand how these config files work to make sure settings are placed in the correct config files.
 
-## Config Files Location
+##  Config Files Location
 
 Relative to your installation directory, config files are located in:
 
@@ -21,7 +21,7 @@ The LinuxGSM config mechanism is designed to allow the users to benefit from new
 ### Configuration files
 
 {% hint style="info" %}
-An understanding of how LinuxGSM handles [multiple game server](../features/multiple-game-servers.md) instances helps.
+An understanding of how LinuxGSM handles [multiple game server](../features/multiple-game-servers.md) instances helps. 
 {% endhint %}
 
 #### \_default.cfg
@@ -34,7 +34,7 @@ Do not edit \_default.cfg any changes to this file will be overwritten
 
 **common.cfg**
 
-`common.cfg` is used for common settings that apply to all game server instances of the same installation. This saves having to apply the same settings multiple times.
+`common.cfg` is used for common settings that apply to all game server instances of the same installation. This saves having to apply the same settings multiple times. 
 
 #### instance.cfg
 
@@ -93,8 +93,7 @@ Any setting listed in `instance.cfg` will override `common.cfg` which will overr
 
 #### Example 1
 
-Load `de_nuke` as default map on "csgoserver":
-
+Load `de_nuke` as default map on "csgoserver": 
 ```text
 _default.cfg: defaultmap="de_dust2"
 common.cfg: NOT SET
