@@ -28,7 +28,7 @@ apt install openjdk-8-jre
 apt install openjdk-11-jre
 ```
 
-### CentOS/Fedora
+### CentOS
 
 Run the following command, changing the version number:
 

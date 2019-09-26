@@ -67,16 +67,3 @@ LinuxGSM uses packages that are not available by default in CentOS because of th
 {% hint style="info" %}
 EPEL is required to run LinuxGSM
 {% endhint %}
-
-## Fedora
-
-![](../.gitbook/assets/fedora.png)
-
-Fedora is a Linux distribution developed by the community-supported Fedora Project and sponsored by Red Hat. A new Fedora release occurs every 6 months with a short support cycle. It contains very up to date packages and software which becomes part of RHEL/CentOS.
-
-| **Version** | Release Date |
-| :--- | :--- |
-| 28 | 2018-05-01 |
-| 29 | 2018-10-30 |
-| **30** | 2019-04-30 |
-
