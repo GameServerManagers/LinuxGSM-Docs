@@ -26,28 +26,6 @@ List of distros and there glibc version.
 
 glibc version history available on [Wikipedia](https://en.wikipedia.org/wiki/GNU_C_Library#Version_history).
 
-## glibc fixes
-
-{% hint style="warning" %}
-glibc fixes has now been deprecated. Due to the small number of game servers supporting it.
-{% endhint %}
-
-> Many of the servers can work on distros with older _glibc_ versions by using the _glibc_ fixes that are available with LinuxGSM.
-
-If your distro does not meet the glibc requirements LinuxGSM will download the glibc files to the `lgsm/lib` directory to be used by the game server. Because of this even if your dedicated server does not meet the glibc requirements the game server should still work.
-
-These fixes prevent errors similar to the following:
-
-```text
-version `glibc_2.15′ not found
-```
-
-```text
-./7DaysToDie.x86: /usr/lib/libstdc++.so.6: version glibcXX_3.4.15 not found (required by ./7DaysToDie.x86)
-./7DaysToDie.x86: /lib/libc.so.6: version glibc_2.15 not found (required by ./7DaysToDie.x86)
-./7DaysToDie.x86: /lib/libm.so.6: version glibc_2.15 not found (required by ./7DaysToDie.x86)
-```
-
 ## External Links
 
 * [distrowatch.com](http://distrowatch.com/)
