@@ -57,8 +57,8 @@ CentOS 7 is recommended
 | **CentOS version** | Release date | Full updates | Maintenance updates |
 | :--- | :--- | :--- | :--- |
 | 6 | 10 July 2011 | 10 May 2017 | 30 November 2020 |
-| **7** | 7 July 2014 | Q4 2020 | 30 June 2024 |
-| 8 | 2019 | TBA | TBA |
+| **7** | 7 July 2014 | 6 August 2020 | 30 June 2024 |
+| 8 | 24 September 2019 | 1 May 2024 | 31 May 2029 |
 
 ### EPEL
 
