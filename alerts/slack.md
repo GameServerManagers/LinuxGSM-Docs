@@ -4,7 +4,7 @@
 
 [Slack](https://slack.com) is a cloud-based set of proprietary team collaboration software tools and online services.
 
-## Create a Discord Webhook
+## Create a Slack Webhook
 
 A webhook is required to post alerts to a slack.
 
