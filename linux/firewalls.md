@@ -5,7 +5,7 @@ Firewalls can also assist in rate limiting traffic to prevent too much traffic b
 Firewalls can be physical hardware devices that sit on a network, or software that sits on a server or desktop device. This page will focus mainly on software firewalls.
 
 ## DDoS protection
-A [distributed denial-of-service](https://en.wikipedia.org/wiki/Denial-of-service_attack (DDoS) attack occurs when multiple systems flood the bandwidth or resources of a targeted system, usually one or more web servers. Such an attack is often the result of multiple compromised systems (for example, a botnet) flooding the targeted system with traffic. A botnet is a network of zombie computers programmed to receive commands without the owners' knowledge.
+A [distributed denial-of-service](https://en.wikipedia.org/wiki/Denial-of-service_attack) (DDoS) attack occurs when multiple systems flood the bandwidth or resources of a targeted system, usually one or more web servers. Such an attack is often the result of multiple compromised systems (for example, a botnet) flooding the targeted system with traffic. A botnet is a network of zombie computers programmed to receive commands without the owners' knowledge.
 Server providers may offer DDoS protection, such as Arbor, that will mitigate such attacks before it reaches a server. However this feature is often provided as a premium feature meaning often only available on more expensive servers. Some providers may also provided sub-standard protection that may incorrectly filter traffic. So be aware of what protection if any a server provider has to protect your server.
 
 ### iptables
