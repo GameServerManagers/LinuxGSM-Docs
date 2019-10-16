@@ -1,12 +1,12 @@
-# gamedig
+# GameDig
 
-[Gamedig](https://github.com/sonicsnes/node-gamedig) is a tool that queries game servers and returns outputs data from a query in to json format. It can return not only if the game server is online but various data such as current maps and players. This allows `./gameserver details` to display live information.
+[GameDig](https://github.com/sonicsnes/node-gamedig) is a tool that queries game servers and returns outputs data from a query in to json format. It can return not only if the game server is online but various data such as current maps and players. This allows `./gameserver details` to display live information.
 
-Gamedig super-seeds gsquery as the tool to monitor game servers. gamedig is currently optional and gsquery is kept to ensure compatibility because of gamedig requiring Node.js to be installed.
+GameDig super-seeds gsquery as the tool to monitor game servers. gamedig is currently optional and gsquery is kept to ensure compatibility because of gamedig requiring Node.js to be installed.
 
 ## Install Node.js
 
-Gamedig requires [Node.js](https://nodejs.org) a JavaScript runtime environment installed to work. Use the following instuctions to install Node.js.
+GameDig requires [Node.js](https://nodejs.org) a JavaScript runtime environment installed to work. Use the following instuctions to install Node.js.
 
 ### Remove existing NodeJS
 
@@ -49,7 +49,7 @@ yum install nodejs
 yum install yarn
 ```
 
-### Install Gamedig npm
+### Install GameDig npm
 
 Once nodejs is installed use npm to install gamedig with the following command.
 
