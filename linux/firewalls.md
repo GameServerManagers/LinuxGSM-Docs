@@ -1,6 +1,6 @@
 # Firewalls
 A firewall is a security device that blocks or allows network traffic on to a system or network to prevent unauthorised access and help protect from malicious attack.
-Firewalls can also assist in rate limiting traffic to prevent too much traffic being sent to a system. This is useful for game servers to help prevent a DDoS (Distributed Denial of Service) attack that can overwhelm a game server.
+Firewalls can also assist in rate limiting traffic to prevent too much traffic being sent to a system. This is useful for game servers to help prevent a DDoS (Distributed Denial-of-Service) attack that can overwhelm a game server.
 
 Firewalls can be physical hardware devices that sit on a network, or software that sits on a server or desktop device. This page will focus mainly on software firewalls.
 
