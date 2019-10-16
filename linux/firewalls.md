@@ -1,6 +1,4 @@
 # Firewalls
-
-## What is a Firewall?
 A firewall is a security device that blocks or allows network traffic on to a system or network to prevent unauthorised access and help protect from malicious attack.
 Firewalls can also assist in rate limiting traffic to prevent too much traffic being sent to a system. This is useful for game servers to help prevent a DoS (Denial of Service) attack that can overwhelm a game server.
 
