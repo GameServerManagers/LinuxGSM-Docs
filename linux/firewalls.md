@@ -1,22 +1,22 @@
-# Firewalls
-A firewall is a security device that blocks or allows network traffic on to a system or network to prevent unauthorised access and help protect from malicious attack.
-Firewalls can also assist in rate limiting traffic to prevent too much traffic being sent to a system. This is useful for game servers to help prevent a DDoS (Distributed Denial-of-Service) attack that can overwhelm a game server.
+# firewalls
+
+A firewall is a security device that blocks or allows network traffic on to a system or network to prevent unauthorised access and help protect from malicious attack. Firewalls can also assist in rate limiting traffic to prevent too much traffic being sent to a system. This is useful for game servers to help prevent a DDoS \(Distributed Denial-of-Service\) attack that can overwhelm a game server.
 
 Firewalls can be physical hardware devices that sit on a network, or software that sits on a server or desktop device. This page will focus mainly on software firewalls.
 
 ## DDoS protection
-A [distributed denial-of-service](https://en.wikipedia.org/wiki/Denial-of-service_attack) (DDoS) attack occurs when multiple systems flood the bandwidth or resources of a targeted system, usually one or more web servers. Such an attack is often the result of multiple compromised systems (for example, a botnet) flooding the targeted system with traffic. A botnet is a network of zombie computers programmed to receive commands without the owners' knowledge.
-Server providers may offer DDoS protection, such as Arbor, that will mitigate such attacks before it reaches a server. However this feature is often provided as a premium feature meaning often only available on more expensive servers. Some providers may also provided sub-standard protection that may incorrectly filter traffic. So be aware of what protection if any a server provider has to protect your server.
+
+A [distributed denial-of-service](https://en.wikipedia.org/wiki/Denial-of-service_attack) \(DDoS\) attack occurs when multiple systems flood the bandwidth or resources of a targeted system, usually one or more web servers. Such an attack is often the result of multiple compromised systems \(for example, a botnet\) flooding the targeted system with traffic. A botnet is a network of zombie computers programmed to receive commands without the owners' knowledge. Server providers may offer DDoS protection, such as Arbor, that will mitigate such attacks before it reaches a server. However this feature is often provided as a premium feature meaning often only available on more expensive servers. Some providers may also provided sub-standard protection that may incorrectly filter traffic. So be aware of what protection if any a server provider has to protect your server.
 
 ### iptables
-[iptables](http://ipset.netfilter.org/iptables.man.html) is the most commonly used and supported Linux firewall utility, with many other tools interfacing with it
-To see iptables rules: `iptables -L` To flush \(erase\) iptables rules: `iptables -F`
+
+[iptables](http://ipset.netfilter.org/iptables.man.html) is the most commonly used and supported Linux firewall utility, with many other tools interfacing with it To see iptables rules: `iptables -L` To flush \(erase\) iptables rules: `iptables -F`
 
 ### Protecting a game server
-One way to protect a game server is to rate limit incoming connections to the game server. Iptables will do this by dropping packets from a connection if it is sending too much traffic.
-This is particularly important if using the LinuxGSM monitor feature, as monitor relies on the query port being available. Should the query port be flooded with traffic it may become unavailable and LinuxGSM will assume the game server has crashed and reboot. 
-The below example will rate limit traffic on port 27015 (the default for source engine games) to 10 requests every 60 seconds. Different game servers may require different rate limits, so it may be important to adjust the limits to ensure legitimate traffic does not get blocked.
-```
+
+One way to protect a game server is to rate limit incoming connections to the game server. Iptables will do this by dropping packets from a connection if it is sending too much traffic. This is particularly important if using the LinuxGSM monitor feature, as monitor relies on the query port being available. Should the query port be flooded with traffic it may become unavailable and LinuxGSM will assume the game server has crashed and reboot. The below example will rate limit traffic on port 27015 \(the default for source engine games\) to 10 requests every 60 seconds. Different game servers may require different rate limits, so it may be important to adjust the limits to ensure legitimate traffic does not get blocked.
+
+```text
 iptables -A INPUT -p udp -m udp --dport 27015 -m state --state NEW -m recent --set --name DEFAULT --rsource
 iptables -A INPUT -p udp -m udp --dport 27015 -m state --state NEW -m recent --update --seconds 60 --hitcount 10 --name DEFAULT --rsource -j DROP
 ```
