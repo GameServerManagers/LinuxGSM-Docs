@@ -1,6 +1,6 @@
 # Slack
 
-![](https://github.com/GameServerManagers/LinuxGSM-Docs/tree/96cd096d595a3256b47f16e002134c54fb2162dd/.gitbook/assets/slack_logo.png)
+![](../.gitbook/assets/slack_logo.png)
 
 [Slack](https://slack.com) is a cloud-based set of proprietary team collaboration software tools and online services.
 
