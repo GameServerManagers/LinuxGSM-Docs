@@ -12,7 +12,7 @@ Will start the server in a [tmux](../requirements/tmux.md) session allowing the 
 
 ### Stopping a server
 
-Stop will do a graceful shutdown \(sends "quit" command to Source servers for example\) of a server when possible. Failing this it will force stop.
+Stop will attempt a [graceful shutdown](../features/stop-mode.md) of a game server. Failing this it will kill the tmux session.
 
 `./gameserver stop`
 

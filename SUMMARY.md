@@ -57,6 +57,7 @@
   * [gamedig](requirements/gamedig.md)
   * [glibc](requirements/glibc.md)
 * [Features](features/README.md)
+  * [Stop Mode](features/stop-mode.md)
   * [Log Management](features/logging.md)
   * [Multiple Game Servers](features/multiple-game-servers.md)
 * [Support](support/README.md)
