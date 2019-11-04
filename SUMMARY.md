@@ -58,6 +58,7 @@
   * [gamedig](requirements/gamedig.md)
   * [glibc](requirements/glibc.md)
 * [Features](features/README.md)
+  * [ANSI Colors](features/ansi-colors.md)
   * [Stop Mode](features/stop-mode.md)
   * [Log Management](features/logging.md)
   * [Multiple Game Servers](features/multiple-game-servers.md)
