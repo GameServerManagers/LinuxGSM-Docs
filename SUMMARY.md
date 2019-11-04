@@ -61,6 +61,7 @@
   * [ANSI Colors](features/ansi-colors.md)
   * [Stop Mode](features/stop-mode.md)
   * [Log Management](features/logging.md)
+  * [Message Display Time](features/message-display-time.md)
   * [Multiple Game Servers](features/multiple-game-servers.md)
 * [Support](support/README.md)
   * [Troubleshooting](support/troubleshooting.md)
