@@ -44,13 +44,13 @@ Do not edit \_default.cfg any changes to this file will be overwritten
 
 When LinuxGSM is loading the configs they will load in order. First taking settings from `_default.cfg` then `common.cfg` and finally `instance.cfg`. This means that any setting set in `instance.cfg` will override that setting in `common.cfg` which in turn will override the setting in `_default.cfg`.
 
-{% code-tabs %}
-{% code-tabs-item title="LinuxGSM config load order" %}
+{% tabs %}
+{% tab title="LinuxGSM config load order" %}
 ```text
 _default.cfg -> common.cfg -> instance.cfg
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 ## How to use
 

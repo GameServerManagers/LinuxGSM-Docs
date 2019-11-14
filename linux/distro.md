@@ -38,7 +38,7 @@ Debian 10 "Buster" is recommended
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 8 | oldoldstable | Jessie | 25–26 April 2015 | 17 June 2018 | 30 June 2020 |
 | 9 | oldstable | Stretch | 17 June 2017 | 2020 | June 2022 |
-| **10** | **stable** | Buster | 6 July 2019 | 2022 | 2024 |
+| 10 | stable | Buster | 6 July 2019 | 2022 | 2024 |
 
 ## CentOS
 
@@ -51,7 +51,7 @@ CentOS 6 is not supported by LinuxGSM
 {% endhint %}
 
 {% hint style="info" %}
-CentOS 7 is recommended
+CentOS 8 is recommended
 {% endhint %}
 
 | **CentOS version** | Release date | Full updates | Maintenance updates |
