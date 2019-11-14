@@ -20,7 +20,7 @@
   * [fastdl](commands/fastdl.md)
   * [change-password](commands/change-password.md)
 * [Configuration](configuration/README.md)
-  * [LinuxGSM Analytics](configuration/linuxgsm-analytics.md)
+  * [LinuxGSM Stats](configuration/linuxgsm-stats.md)
   * [cronjobs](configuration/cronjobs.md)
   * [Start Parameters](configuration/start-parameters.md)
   * [Game Server Config](configuration/game-server-config.md)
