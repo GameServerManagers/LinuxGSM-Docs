@@ -16,13 +16,11 @@ A list of all available branches for a game server are listed on SteamDB under t
 
 ## Select a Branch
 
-In LinuxGSM is it possible to specify a branch by entering the `branch` setting in the [LinuxGSM Config](../configuration/linuxgsm-config.md). To correctly enter a branch enter `-beta <branch name>`.
-
-If the branch is password protected enter `-beta <branch name> -betapassword <pwd>` .
+In LinuxGSM is it possible to specify a branch by entering the `branch` setting in the [LinuxGSM Config](../configuration/linuxgsm-config.md). 
 
 ```text
 # Steam App Branch Select
-# Example: "-beta latest_experimental"
+# Example: "latest_experimental"
 branch=""
 ```
 
