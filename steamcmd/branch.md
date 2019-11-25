@@ -4,7 +4,7 @@ description: Allows the selection of specific builds of a game server in SteamCM
 
 # Branch
 
-Game developers sometimes make available several builds of the game server on Steam, often to allow beta testing of new releases. These builds are made available via branches \(betas\) and can be entered in the [LinuxGSM Config](../configuration/linuxgsm-config.md).
+Game developers sometimes make available several builds of the game server on Steam, often to allow beta testing of new releases. These builds are made available via _branches \(betas\)_ and can be entered in the [LinuxGSM Config](../configuration/linuxgsm-config.md).
 
 ## Find Branches
 
@@ -16,11 +16,11 @@ A list of all available branches for a game server are listed on SteamDB under t
 
 ## Select a Branch
 
-In LinuxGSM is it possible to specify a branch by entering the `branch` setting in the [LinuxGSM Config](../configuration/linuxgsm-config.md).
+The default SteamCMD branch is `public`. However it is posible to use use other builds by entering a branch name in the branch setting in your [LinuxGSM config](../configuration/linuxgsm-config.md). 
 
 ```text
 # Steam App Branch Select
 # Example: "latest_experimental"
-branch=""
+branch="staging"
 ```
 
