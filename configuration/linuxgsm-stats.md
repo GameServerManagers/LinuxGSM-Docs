@@ -55,7 +55,7 @@ Data is sent every time the monitor runs as this is the only way send regularly 
 
 ## How can i enable this feature?
 
-To enable LinuxGSM Stats simply add the `stats="3"` setting to the `common.cfg` file. This can also be enabled on install.
+To enable LinuxGSM Stats simply add the `stats="on"` setting to the `common.cfg` file. This can also be enabled on install.
 
 
 
