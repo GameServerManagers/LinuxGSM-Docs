@@ -14,6 +14,7 @@ Below is a list of types of data collected
 
 * Game Server - Knowing the game server you are running gives insights in to which servers are popular and can help shape development priorities.
 * Distro - It is useful to know which distros LinuxGSM is being used on to help focus development.
+* LinuxGSM Version - The currently installed version of LInuxGSM.
 
 ### Game Server Usage
 
