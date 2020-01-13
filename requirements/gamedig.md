@@ -2,7 +2,7 @@
 
 [GameDig](https://github.com/sonicsnes/node-gamedig) is a tool that queries game servers and returns outputs data from a query in to json format. It can return not only if the game server is online but various data such as current maps and players. This allows `./gameserver details` to display live information.
 
-GameDig super-seeds gsquery as the tool to monitor game servers. gamedig is currently optional and gsquery is kept to ensure compatibility because of gamedig requiring Node.js to be installed.
+GameDig super-seeds gsquery as the tool to monitor game servers. GameDig is currently optional but reccomended and gsquery is kept to ensure compatibility because of gamedig requiring Node.js to be installed.
 
 ## Install Node.js
 
@@ -35,7 +35,7 @@ Installing nodejs can be problematic, however using the below should work well.
 #### Ubuntu/Debian
 
 ```text
-curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 sudo apt update && sudo apt install -y nodejs yarn
 ```
@@ -43,7 +43,7 @@ sudo apt update && sudo apt install -y nodejs yarn
 #### CentOS
 
 ```text
-curl -sL https://rpm.nodesource.com/setup_10.x | bash -
+curl -sL https://rpm.nodesource.com/setup_12.x | bash -
 curl -sL https://dl.yarnpkg.com/rpm/yarn.repo -o /etc/yum.repos.d/yarn.repo
 yum install nodejs
 yum install yarn
