@@ -9,6 +9,6 @@
 | Debian 8 | 1.4 |
 | Debian 9 | 1.5 |
 | Debian 10 | 1.5 |
-| CentOS 7 | 1.5 |
+| CentOS 7 | 1.6 |
 | CentOS 8 | 1.5 |
 
