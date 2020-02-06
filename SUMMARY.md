@@ -66,7 +66,6 @@
   * [Multiple Game Servers](features/multiple-game-servers.md)
 * [Support](support/README.md)
   * [Troubleshooting](support/troubleshooting.md)
-  * [Game Server](support/game-server.md)
   * [FAQ](support/faq.md)
 * [SteamCMD](steamcmd/README.md)
   * [Steam Master Server](steamcmd/steam-master-server.md)
