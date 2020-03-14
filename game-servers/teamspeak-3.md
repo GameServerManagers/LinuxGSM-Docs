@@ -75,5 +75,5 @@ Some users with IPv6 enabled might encounter a server failing to start properly.
 
 ### Accounting failed to register
 
-If you find the following in the log you may need to remove a file that was created by teamspeak in /var/shm/ `ERROR |Accounting | |failed to register local accounting service: File exists` The file is named "7gbhujb54g8z9hu43jre8" that is the problem for teamspeak. You need remove the file that is owned by another user and then try again to start the teamspeak server.
+If you find the following in the log you may need to remove a file that was created by teamspeak in /dev/shm/ `ERROR |Accounting | |failed to register local accounting service: File exists` The file is named "7gbhujb54g8z9hu43jre8" that is the problem for teamspeak. You need remove the file that is owned by another user and then try again to start the teamspeak server.
 
