@@ -18,9 +18,10 @@ Ubuntu 18.04 LTS is recommended
 
 | **Version** | **Code name** | **Release date** | **Supported until** |
 | :--- | :--- | :--- | :--- |
-| [14.04 LTS](https://en.wikipedia.org/wiki/List_of_Ubuntu_releases#Ubuntu_14.04_LTS_%28Trusty_Tahr%29) | Trusty Tahr | 2014-04-17 | 2019-04 |
+| ~~~~[~~14.04 LTS~~](https://en.wikipedia.org/wiki/List_of_Ubuntu_releases#Ubuntu_14.04_LTS_%28Trusty_Tahr%29)~~~~ | ~~Trusty Tahr~~ | ~~2014-04-17~~ | ~~2019-04~~ |
 | [16.04 LTS](https://en.wikipedia.org/wiki/List_of_Ubuntu_releases#Ubuntu_16.04_LTS_%28Xenial_Xerus%29) | Xenial Xerus | 2016-04-21 | 2021-04 |
 | [18.04 LTS](https://en.wikipedia.org/wiki/List_of_Ubuntu_releases#Ubuntu_18.04_LTS_%28Bionic_Beaver%29) | Bionic Beaver | 2018-04-26 | 2028-04 |
+| 20.04 LTS | Focal Fossa | 2020-04-23 | 2025-04 |
 
 [https://en.wikipedia.org/wiki/Ubuntu\#Releases](https://en.wikipedia.org/wiki/Ubuntu#Releases)
 
@@ -36,7 +37,7 @@ Debian 10 "Buster" is recommended
 
 | **Version** | **Status** | **Code name** | **Release date** | **Security support until** | **LTS until** |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 8 | oldoldstable | Jessie | 25–26 April 2015 | 17 June 2018 | 30 June 2020 |
+| ~~8~~ | ~~oldoldstable~~ | ~~Jessie~~ | ~~25–26 April 2015~~ | ~~17 June 2018~~ | ~~30 June 2020~~ |
 | 9 | oldstable | Stretch | 17 June 2017 | 2020 | June 2022 |
 | 10 | stable | Buster | 6 July 2019 | 2022 | 2024 |
 
