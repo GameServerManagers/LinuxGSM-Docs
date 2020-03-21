@@ -278,5 +278,9 @@ githubbranch="master"
 
 ```
 
+once the file is edited you will need to delete the functions directory by running the following.
 
+`./gameserver dev`
+
+`./gameserver clear-functions`
 
