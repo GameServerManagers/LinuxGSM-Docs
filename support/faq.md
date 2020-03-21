@@ -260,3 +260,23 @@ If it happens after a while:
 * Unstable hardware - very unlikely, check your system stability
 * Ulimit issue: Your system cannot open as many files as it should - See ulimit info from this page
 
+## How do I change the LinuxGSM branch?
+
+To change the LinuxGSM branch from the default `master` edit the LinuxGSM executable file.
+
+either `linuxgsm.sh` or `gameserver` e.g `csgoserver`
+
+edit the following lines as required.
+
+```text
+## GitHub Branch Select
+# Allows for the use of different function files
+# from a different repo and/or branch.
+githubuser="GameServerManagers"
+githubrepo="LinuxGSM"
+githubbranch="master"
+
+```
+
+
+
