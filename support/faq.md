@@ -284,3 +284,5 @@ once the file is edited you will need to delete the functions directory by runni
 
 `./gameserver clear-functions`
 
+Yo revert back to the master branch run `./gameserver update-lgsm`
+
