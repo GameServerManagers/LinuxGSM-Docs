@@ -22,5 +22,5 @@ description: Information for Sven Co-op servers
 
 **Sven Co-op Guides**
 
-Make FastDL Webserver Case Insensitive
+[Make FastDL Webserver Case Insensitive](make-webserver-case-insensitive.md)
 
