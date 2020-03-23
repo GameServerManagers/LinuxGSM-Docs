@@ -28,6 +28,8 @@
   * [Running on Boot](configuration/running-on-boot.md)
   * [Ports](configuration/ports.md)
 * [Game Servers](game-servers/README.md)
+  * [Sven Co-op](game-servers/sven-co-op/README.md)
+    * [Make Webserver Case Insensitive](game-servers/sven-co-op/make-webserver-case-insensitive.md)
   * [7 Days to Die](game-servers/7-days-to-die.md)
   * [Arma 3](game-servers/arma-3.md)
   * [Ark Survival Evolved](game-servers/ark-survival-evolved.md)
