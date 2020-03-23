@@ -32,11 +32,13 @@ If players are kicked shortly after joining, make sure sourcemod does not have a
 
 **How to manually install sourcemod:** 
 
-Unpack the sourcemod and metamod archives in your /home/user/serverfiles/csgo/ folder or unpack the archives locally and copy the files to the server with ftp. 
+Unpack the sourcemod and metamod archives in the /home/user/serverfiles/csgo/ folder or unpack the archives locally and copy the files to the server with ftp. 
 
-This will unpack files inside the /csgo/addons/ and /csgo/cfg/ folders 
+This will unpack files inside the /csgo/addons/ and /csgo/cfg/ folders, and should only require a server restart for sourcemod to work.
 
-Plugins: 
+
+
+**Sourcemod Plugins:** 
 
 Plugins can be downloaded from Alliedmodders website: 
 
@@ -44,9 +46,11 @@ Plugins can be downloaded from Alliedmodders website:
 
 [https://forums.alliedmods.net/forumdisplay.php?f=153](https://forums.alliedmods.net/forumdisplay.php?f=153) 
 
+
+
 Sourcemod plugins are located in /home/user/serverfiles/csgo/addons/sourcemod/plugins/ 
 
-To disable plugins, move them to the disabled folder. 
+To disable plugins, move them to the disabled folder or delete the plugin.
 
-Check plugin archives before unpacking for correct folder hierarchy.
+Be sure to check plugin archives before unpacking for correct folder hierarchy, not every plugin creator organizes their archive the same.
 
