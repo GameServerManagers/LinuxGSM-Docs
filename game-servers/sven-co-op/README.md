@@ -4,7 +4,9 @@ description: Information for Sven Co-op servers
 
 # Sven Co-op
 
-**Official Sven Co-op Resources**
+## **Server Resources**
+
+**Official Resources**
 
 [Sven Co-op Forums](https://forums.svencoop.com/)
 
@@ -12,13 +14,9 @@ description: Information for Sven Co-op servers
 
 [Sven Co-op Map Database](http://scmapdb.com/)
 
-
-
 **Sven Co-op LinuxGSM Resources**
 
 [Sven Co-op LinuxGSM Install](https://linuxgsm.com/lgsm/svenserver/)
-
-
 
 **Sven Co-op Guides**
 
