@@ -36,7 +36,7 @@ Add `-automanagedmods` to the [start parameters](../configuration/start-paramete
 Next edit `GameUserSettings.ini`, adding the following line under `[ServerSettings]`.
 
 ```text
-ActiveMods=[workshopID],[workshopID],[workshopID],[workshopID]
+ActiveMods=[workshopID],924619115,924619116,924619117
 ```
 
 Next edit `Game.ini` and add the following section. &lt;-- Doing this will auto download mods.
@@ -44,9 +44,9 @@ Next edit `Game.ini` and add the following section. &lt;-- Doing this will auto 
 ```text
 [ModInstaller]
 ModIDS=[workshopID]
-ModIDS=[workshopID]
-ModIDS=[workshopID]
-ModIDS=[workshopID]
+ModIDS=924619115
+ModIDS=924619116
+ModIDS=924619117
 ```
 
 Replace `[workshopID]` with required workshop ID's.
@@ -59,11 +59,9 @@ Collection Ids won't work directly. You need to have all the ids of the mods you
 
 ## Clusters
 
-First you need multiple server instances. Please follow [this guide](https://docs.linuxgsm.com/features/multiple-game-servers) if you don't know how:
+First you need to setup [multiple ARK game server instances](../features/multiple-game-servers.md).
 
-[https://github.com/GameServerManagers/LinuxGSM/wiki/Multiple-Game-Servers](https://github.com/GameServerManagers/LinuxGSM/wiki/Multiple-Game-Servers)
-
-To change command-line parameters for your server edit your '_/lgsm/config-lgsm/arkserver/YourServerInstance.cfg_' file. Examle:
+To change command-line parameters for your server edit  `lgsm/config-lgsm/arkserver/arkserver-2.cfg`_'_. Example:
 
 ```text
 fn_parms(){
@@ -71,5 +69,5 @@ fn_parms(){
 }
 ```
 
-**Additional Notes:** Servers which are running on local networks sometimes have trouble traveling to other arks. A fix I have found for this is adding '?MultiHome=0.0.0.0' to your command-line parameters.
+**Additional Notes:** Servers which are running on local networks sometimes have trouble travelling to other arks. A potential fix for this is adding `?MultiHome=0.0.0.0` to your command-line parameters.
 
