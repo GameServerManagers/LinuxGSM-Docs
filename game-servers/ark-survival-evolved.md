@@ -1,4 +1,4 @@
-# Ark Survival Evolved
+# ARK: Survival Evolved
 
 ![](../.gitbook/assets/header-1.jpg)
 
@@ -17,10 +17,6 @@ serverfiles/ShooterGame/Saved/Config/LinuxServer/Game.ini
 ## Change Map
 
 You can change the map by editing the parameters in the [LinuxGSM config](../configuration/linuxgsm-config.md).
-
-```text
-lgsm/config-lgsm/arkserver/arkserver.cfg
-```
 
 Add the line `defaultmap="MAP_NAME_HERE"`. You can find a official map list right below.
 
