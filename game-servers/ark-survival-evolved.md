@@ -141,17 +141,29 @@ To get individual item ids from collections you can use the [Steam Collection ID
 
 ## Clusters
 
-A cluster allows an admin to group ARK servers usually on different maps. This allows the transfer characters between the different servers.
+A cluster allows an admin to group ARK servers together, usually servers on different maps. Allowing the transfer characters between the different servers.
 
-First you need to setup [multiple ARK game server instances](../features/multiple-game-servers.md).
+### Adding Servers to Clusters
 
-To change command-line parameters for your server edit  `lgsm/config-lgsm/arkserver/arkserver-2.cfg`_'_. Example:
+Firstly, setup [multiple ARK game server instances](../features/multiple-game-servers.md).
+
+Change the command-line parameters for your server instances by editing the instance configs:
+
+**arkserver.cfg**
 
 ```text
-fn_parms(){
-  parms="\"TheIsland?SessionName=MyServerName1?AltSaveDirectoryName=Save1?Port=7777?QueryPort=27015" -NoTransferFromFiltering -clusterid=cluster1\""
-}
+ScorchedEarth_P?SessionName=Session1?AltSaveDirectoryName=Save1 -NoTransferFromFiltering -clusterid=cluster1
 ```
 
-**Additional Notes:** Servers which are running on local networks sometimes have trouble travelling to other arks. A potential fix for this is adding `?MultiHome=0.0.0.0` to your command-line parameters.
+**arkserver-2.cfg**
+
+```text
+TheIsland?SessionName=Session2?AltSaveDirectoryName=Save2 -NoTransferFromFiltering -clusterid=cluster1
+```
+
+{% hint style="warning" %}
+Servers which are running on _local networks_ sometimes have trouble travelling to other arks. A potential fix for this is adding `?MultiHome=0.0.0.0` to your command-line parameters.
+{% endhint %}
+
+
 
