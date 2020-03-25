@@ -6,6 +6,7 @@
 
 * [ARK: Survival Evolved Wiki Dedicated Server guide](https://ark.gamepedia.com/Dedicated_Server_Setup)
 * [ARK: Survival Evolved Steam Workshop](https://steamcommunity.com/app/346110/workshop/)
+* [Official ARK: Survival Evolved Server Administration forum](https://survivetheark.com/index.php?/forums/forum/39-server-administration/)
 
 ## Config Files
 
