@@ -10,7 +10,7 @@
 
 ## Workshop Map Warning!
 
-There is a possible bug with KF2 dedicated servers using the steam workshop to host content that causes the server to constantly read/write and disk IO to be %100 This will severely increase hardware degredation. This was apparently fixed late 2019 but seems to have resurfaced with the recent Neon Nightmares 2020 update.
+There is a possible bug with KF2 dedicated servers using the steam workshop to host content that causes the server to constantly read/write and disk IO to be %100. This will severely increase hardware degradation. This was apparently fixed late 2019 but seems to have resurfaced with the recent Neon Nightmares 2020 update.
 
 Disk IO can be monitored with the linux command:
 
