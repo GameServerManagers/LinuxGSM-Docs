@@ -8,6 +8,8 @@
 
 [Killing Floor 2 Official Server Wiki](https://wiki.tripwireinteractive.com/index.php?title=Dedicated_Server_%28Killing_Floor_2%29)
 
+[Killing floor 2 Official Forums](https://forums.tripwireinteractive.com/index.php?categories/killing-floor-2.25/)
+
 ## Server Config Information
 
 Default linuxgsm installs have configSubDir=servername set in the command line which will set your priority config files to be in /home/user/serverfiles/KFGame/Config/kf2server directory, use these files to change settings on your server.
