@@ -8,6 +8,20 @@
 
 [Killing Floor 2 Official Server Wiki](https://wiki.tripwireinteractive.com/index.php?title=Dedicated_Server_%28Killing_Floor_2%29)
 
+## Workshop Map Warning!
+
+There is a possible bug with KF2 dedicated servers using the steam workshop to host content that causes the server to constantly read/write and disk IO to be %100 This will severely increase hardware degredation. This was apparently fixed late 2019 but seems to have resurfaced with the recent Neon Nightmares 2020 update.
+
+Disk IO can be monitored with the linux command:
+
+iotop
+
+References:
+
+[https://forums.tripwireinteractive.com/index.php?threads/twi-you-destroyed-my-kf2-servers-ssd.2334936/](https://forums.tripwireinteractive.com/index.php?threads/twi-you-destroyed-my-kf2-servers-ssd.2334936/)
+
+[https://forums.tripwireinteractive.com/index.php?threads/server-is-going-disk-drive-crazy.2333489/](https://forums.tripwireinteractive.com/index.php?threads/server-is-going-disk-drive-crazy.2333489/)
+
 
 
 
