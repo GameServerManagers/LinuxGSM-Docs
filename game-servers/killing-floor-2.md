@@ -14,8 +14,6 @@
 
 Default linuxgsm installs have configSubDir=servername set in the command line which will set your priority config files to be in /home/user/serverfiles/KFGame/Config/kf2server directory, use these files to change settings on your server.
 
-There is a reported issue where using configSubDir will cause config files to be overwritten on server update, this is being looked into.
-
 ## Workshop Content Information
 
 KF2 servers as of March 2020 will check workshop files at server start AND when map changes occur.
