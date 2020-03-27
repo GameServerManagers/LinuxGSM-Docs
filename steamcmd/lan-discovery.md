@@ -1,8 +1,8 @@
 # LAN Discovery
 
-Most users who have tried it reported an impossibility to discover a local server from the LAN tab both from Steam and the game itself. ![LAN Discovery](../.gitbook/assets/untitled.png)
+Many admins who have tried, reported a local server does not appear on the LAN tab in the steam browser.
 
-## Workarounds
+![LAN Discovery](../.gitbook/assets/untitled.png)
 
 There are two easy workarounds for this:
 
@@ -14,9 +14,11 @@ There are two easy workarounds for this:
 
   Examples: `connect 192.168.1.10:27025` ; `connect 192.168.1.10`
 
-* Add the server to the server browser's favorites. If ingame, then go to the legacy browser if applicable to find it. The syntax to use is the same as for the console connection.
+* Add the server to the server browser's favourites. If in-game, then go to the legacy browser if applicable to find it. The syntax to use is the same as for the console connection.
 
-_Note: Make sure your server actually works and is reachable on LAN, otherwise what you need is rather_ [_Troubleshooting_](../support/troubleshooting.md) _first ._
+{% hint style="danger" %}
+Make sure your server actually works and is reachable on LAN, otherwise what you need is rather [Troubleshooting](../support/troubleshooting.md) first.
+{% endhint %}
 
 ## Attempt at fixing the issue
 
