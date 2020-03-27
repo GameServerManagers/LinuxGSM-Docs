@@ -80,11 +80,5 @@ Steam Guard via Smartphone is not compatible because it requires a code every ti
 
 If you have Steam Guard via email enabled the first time you start SteamCMD you will be prompted to enter a steam Guard code and you will receive an email with the code. Copy and paste the code in to the prompt and press enter. You will not need to enter a code again.
 
-## Errors
-
-If you encounter an error like
-
-`Error! App '<app_number>' state is 0x202 after update job.`
-
-there is a good chance that you have run out of disk space.
+## 
 
