@@ -20,6 +20,8 @@ description: Information for Sven Co-op servers
 
 ## Sven Co-op Tips
 
+Survival Mode settings, can be set in server.cfg
+
 ```text
 //Default Survival state (enabled by default) 1=on 2=off
 mp_survival_mode 
