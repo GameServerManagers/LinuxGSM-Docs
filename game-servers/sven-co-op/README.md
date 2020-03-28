@@ -20,6 +20,8 @@ description: Information for Sven Co-op servers
 
 ## Sven Co-op Tips
 
+Reminder: Sven Co-op is incompatible with both CentOS and Fedora as libssl.so.1.0.0 is not available
+
 Survival Mode settings, can be set in server.cfg
 
 ```text
