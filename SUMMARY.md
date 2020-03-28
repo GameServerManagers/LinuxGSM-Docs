@@ -34,7 +34,7 @@
   * [Call of Duty 4](game-servers/call-of-duty-4.md)
   * [Dont Starve Together](game-servers/dont-starve-together.md)
   * [Counter-Strike: Global Offensive](game-servers/counter-strike-global-offensive/README.md)
-    * [Installing Sourcemod on CS:GO Server](game-servers/counter-strike-global-offensive/installing-sourcemod-on-cs-go-server.md)
+    * [Sourcemod on CS:GO Server](game-servers/counter-strike-global-offensive/installing-sourcemod-on-cs-go-server.md)
   * [Garrys Mod](game-servers/garrys-mod.md)
   * [Killing Floor 2](game-servers/killing-floor-2.md)
   * [Factorio](game-servers/factorio.md)
