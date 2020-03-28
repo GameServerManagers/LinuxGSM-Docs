@@ -32,7 +32,7 @@ Plugins can be downloaded from Alliedmodders website:
 
 ## **CS:GO Sourcemod Tips** 
 
-If the server keeps changing to dust or mirage instead of the chosen map, disable the nextmap plugin. 
+If the server changes to dust or mirage instead of the chosen map, disable the nextmap plugin. 
 
 If players are kicked after joining, make sure Sourcemod does not have any errors and is up to date 
 
