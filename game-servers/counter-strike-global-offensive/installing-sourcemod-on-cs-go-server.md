@@ -18,7 +18,7 @@ Sourcemod is a plugin for source games that can add functionality such as new vo
 
 **Note: Linuxgsm includes a command that is able to install sourcemod automatically.**  
 
-[LinuxGSM Mod Com](https://docs.linuxgsm.com/commands/mods)[mand](https://docs.linuxgsm.com/commands/mods) 
+[LinuxGSM Mod Command](https://docs.linuxgsm.com/commands/mods)
 
 
 
@@ -48,7 +48,7 @@ Plugins can be downloaded from Alliedmodders website:
 
 
 
-Sourcemod plugins are located in /home/user/serverfiles/csgo/addons/sourcemod/plugins/ 
+Sourcemod plugins are located in /csgo/addons/sourcemod/plugins/ 
 
 To disable plugins, move them to the disabled folder or delete the plugin.
 
