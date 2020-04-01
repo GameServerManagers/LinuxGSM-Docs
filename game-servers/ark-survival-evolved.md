@@ -149,13 +149,25 @@ Change the command-line parameters for your server instances by editing the inst
 **arkserver.cfg**
 
 ```text
-ScorchedEarth_P?SessionName=Session1?AltSaveDirectoryName=Save1 -NoTransferFromFiltering -clusterid=cluster1
+port="7777"
+queryport="27015"
+rconport="27020"
+```
+
+```text
+TheIsland?SessionName=LinuxGSM Session 1?AltSaveDirectoryName=${defaultmap}?listen?MultiHome=${ip}?MaxPlayers=${maxplayers}?QueryPort=${queryport}?RCONPort=${rconport}?Port=${port} -automanagedmods -NoTransferFromFiltering -clusterid=cluster1
 ```
 
 **arkserver-2.cfg**
 
 ```text
-TheIsland?SessionName=Session2?AltSaveDirectoryName=Save2 -NoTransferFromFiltering -clusterid=cluster1
+port="7779"
+queryport="27017"
+rconport="27022"
+```
+
+```text
+Ragnarok?SessionName=LinuxGSM Session 2?AltSaveDirectoryName=?ScorchedEarth_P?listen?MultiHome=${ip}?MaxPlayers=${maxplayers}?QueryPort=${queryport}?RCONPort=${rconport}?Port=${port} -automanagedmods -NoTransferFromFiltering -clusterid=cluster1
 ```
 
 {% hint style="warning" %}
