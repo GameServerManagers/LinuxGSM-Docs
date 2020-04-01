@@ -140,6 +140,10 @@ To get individual item ids from collections you can use the [Steam Collection ID
 
 A cluster allows an admin to group ARK servers together, usually servers on different maps. Allowing the transfer characters between the different servers.
 
+### Multi Instance
+
+ARK will work with LinuxGSM [multi instances ](../features/multiple-game-servers.md)in the same directory. 
+
 ### Adding Servers to Clusters
 
 Firstly, setup [multiple ARK game server instances](../features/multiple-game-servers.md).
