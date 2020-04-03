@@ -12,7 +12,7 @@ Stop mode allows a game server to gracefully shutdown by sending a stop signal t
 # 6: q
 # 7: exit
 # 8: 7 Days to Die
-# 9: Gold Source
+# 9: GoldSrc
 # 10: Teamspeak 3
 stopmode="7"
 ```
