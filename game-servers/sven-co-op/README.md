@@ -24,7 +24,7 @@ The discord contains information for Sven Co-op under the information tab includ
 
 Reminder: Sven Co-op is incompatible with both CentOS and Fedora as libssl.so.1.0.0 is not available
 
-Survival Mode settings, can be set in server.cfg
+Survival Mode settings, can be set in svenserver.cfg
 
 ```text
 //Default Survival state (enabled by default) 1=on 2=off
