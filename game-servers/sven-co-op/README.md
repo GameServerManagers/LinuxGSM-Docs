@@ -12,6 +12,8 @@ description: Information for Sven Co-op servers
 
 [Sven Co-op Official Discord](https://discordapp.com/invite/svencoop)
 
+The discord contains information for Sven Co-op under the information tab including mapping guides, server config information, and angelscript documentation.
+
 [Sven Co-op Map Database](http://scmapdb.com/)
 
 ## **Sven Co-op Guides**
