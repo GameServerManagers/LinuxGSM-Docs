@@ -2,7 +2,7 @@
 description: Common
 ---
 
-# Troubleshooting
+# Errors
 
 ## Errors
 
