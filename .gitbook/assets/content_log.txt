@@ -1,0 +1,20 @@
+[2020-04-03 22:48:41] Loaded 0 apps from install folder "/home/arkserver/.steam/steamapps\appmanifest_*.acf".
+[2020-04-03 22:48:42] Loaded 1 apps from install folder "/home/arkserver/serverfiles/steamapps\appmanifest_*.acf".
+[2020-04-03 22:48:44] AppID 376030 scheduler update : Priority First, legacy=no, restore="", timeSinceLastPlayed=1585954124, appDisableSecondsRemaining=0
+[2020-04-03 22:48:44] AppID 376030 state changed : Update Required,Update Queued,
+[2020-04-03 22:48:44] AppID 376030 state changed : Update Required,Update Queued,Update Running,
+[2020-04-03 22:48:44] AppID 376030 update changed : Running,
+[2020-04-03 22:48:44] AppID 376030 update changed : Running,Reconfiguring,
+[2020-04-03 22:48:45] AppID 376030 update changed : Running,
+[2020-04-03 22:48:45] AppID 376030 update changed : Running,Validating,
+[2020-04-03 22:48:45] Validating files (new target,full) ...
+[2020-04-03 22:48:54] File validation finished: 92349 files (11530459441 bytes) total, 92349 files (11530459441 bytes) mismatched (8417 msec).
+[2020-04-03 22:48:54] AppID 376030 update changed : Running,
+[2020-04-03 22:48:54] AppID 376030 update changed : Running,Preallocating,
+[2020-04-03 22:48:54] AppID 376030 update canceled : Failed to preallocate (Not enough disk quota) "11.5 GB"
+[2020-04-03 22:48:54] AppID 376030 update changed : Running,Preallocating,Stopping,
+[2020-04-03 22:48:54] AppID 376030 update changed : Running,Stopping,
+[2020-04-03 22:48:54] AppID 376030 update changed : None
+[2020-04-03 22:48:54] AppID 376030 state changed : Update Required,Update Queued, (Not enough disk quota)
+[2020-04-03 22:48:54] AppID 376030 state changed : Update Required,Update Paused,
+[2020-04-03 22:48:54] AppID 376030 scheduler finished : removed from schedule
