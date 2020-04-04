@@ -45,7 +45,7 @@ Error! App '<appid_number>' state is 0x206 after update job.
 | Decimal/StateFlags | 518 |
 
 {% hint style="info" %}
-Missing content\_log.txt if you have it please let us know.
+Missing content\_log.txt if you have experienced this error and have a log it please let us know.
 {% endhint %}
 
 ### Error 0x402
@@ -63,7 +63,7 @@ Error! State is 0x402 after update job.
 | Decimal/StateFlags | 1026 |
 
 {% hint style="info" %}
-Missing content\_log.txt if you have it please let us know.
+Missing content\_log.txt if you have experienced this error and have a log it please let us know.
 {% endhint %}
 
 ### Error 0x602
@@ -83,7 +83,7 @@ Error! State is 0x602 after update job.
 | Decimal/StateFlags | 1538 |
 
 {% hint style="info" %}
-Missing content\_log.txt if you have it please let us know.
+Missing content\_log.txt if you have experienced this error and have a log it please let us know.
 {% endhint %}
 
 ### Error 0x606
@@ -103,7 +103,7 @@ Error! App '<appid_number>' state is 0x606 after update job.
 | Decimal/StateFlags | 1542 |
 
 {% hint style="info" %}
-Missing content\_log.txt if you have it please let us know.
+Missing content\_log.txt if you have experienced this error and have a log it please let us know.
 {% endhint %}
 
 ### Error 0x2
