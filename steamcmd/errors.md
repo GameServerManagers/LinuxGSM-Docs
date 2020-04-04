@@ -12,7 +12,7 @@ SteamCMD uses hexadecimal numbers to give its current "state". Every time SteamC
 
 ## Codes
 
-### 0x202
+### Error 0x202
 
 Not enough disk space.
 
@@ -28,7 +28,11 @@ Error! App '<appid_number>' state is 0x202 after update job.
 
 {% file src="../.gitbook/assets/content\_log.txt" caption="content\_log.txt 0x202 example" %}
 
-### 0x206
+### Error 0x206
+
+{% hint style="info" %}
+Unknown error, if you have any details please let us know
+{% endhint %}
 
 ```text
 Error! App '<appid_number>' state is 0x206 after update job.
@@ -40,7 +44,11 @@ Error! App '<appid_number>' state is 0x206 after update job.
 | Hex | 0x206 |
 | Decimal/StateFlags | 518 |
 
-### 0x402
+{% hint style="info" %}
+Missing content\_log.txt if you have it please let us know.
+{% endhint %}
+
+### Error 0x402
 
 Connection issue with steam, you will need to wait for the steam servers to recover.
 
@@ -54,7 +62,15 @@ Error! State is 0x402 after update job.
 | Hex | 0x402 |
 | Decimal/StateFlags | 1026 |
 
-### 0x602
+{% hint style="info" %}
+Missing content\_log.txt if you have it please let us know.
+{% endhint %}
+
+### Error 0x602
+
+{% hint style="info" %}
+Unknown error, if you have any details please let us know
+{% endhint %}
 
 ```text
 Error! State is 0x602 after update job.
@@ -66,7 +82,15 @@ Error! State is 0x602 after update job.
 | Hex | 0x602 |
 | Decimal/StateFlags | 1538 |
 
-### 0x606
+{% hint style="info" %}
+Missing content\_log.txt if you have it please let us know.
+{% endhint %}
+
+### Error 0x606
+
+{% hint style="info" %}
+Unknown error, if you have any details please let us know
+{% endhint %}
 
 ```text
 Error! App '<appid_number>' state is 0x606 after update job.
@@ -78,7 +102,11 @@ Error! App '<appid_number>' state is 0x606 after update job.
 | Hex | 0x606 |
 | Decimal/StateFlags | 1542 |
 
-### 0x2
+{% hint style="info" %}
+Missing content\_log.txt if you have it please let us know.
+{% endhint %}
+
+### Error 0x2
 
 ```text
 Error! App '<appid_number>' state is is 0x2 after update job.
@@ -89,6 +117,10 @@ Error! App '<appid_number>' state is is 0x2 after update job.
 | Reason |  |
 | Hex | 0x2 |
 | Decimal/StateFlags | 2 |
+
+{% hint style="info" %}
+Missing content\_log.txt if you have it please let us know.
+{% endhint %}
 
 ### 0x3
 
