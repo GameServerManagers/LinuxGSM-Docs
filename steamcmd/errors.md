@@ -195,5 +195,23 @@ SteamCMD uses hex error codes such as `0x202` which can be converted in to decim
 
 This table is from 2015 and is probably out dated now but its the best we currently have.
 
-[https://github.com/lutris/lutris/blob/master/docs/steam.rst](https://github.com/lutris/lutris/blob/master/docs/steam.rst)
+{% embed url="https://github.com/lutris/lutris/blob/master/docs/steam.rst" %}
+
+
+
+## ulimit SteamCMD startup error
+
+```text
+./steamcmd.sh: line 17: ulimit: open files: cannot modify limit: Operation not permitted
+```
+
+Some users may get a ulimit error \(no permission/cannot open file\) while script is starting up. This error caused by a low setting of the -n parameter \(number of file descriptors\) of ulimit. Some servers forbid increasing ulimit values after startup \(or beyond a limit set by root\). This can be fixed by changing the file descriptor number ulimit:
+
+```text
+ulimit -n 2048
+```
+
+## \[S\_API FAIL\] SteamAPI\_Init\(\) failed; SteamAPI\_IsSteamRunning\(\) failed.
+
+Ignore the error, do not do anything to attempt to fix it. It is a known error that has been happening ever since SteamPipe was introduced \(this includes on Source1 games\). It does not cause any issue and can be ignored.
 

@@ -157,18 +157,6 @@ write error: No space left on device
 
 The script cannot write to the server because there is no disk space available on your server. Free up some space to resolve.
 
-## ulimit SteamCMD startup error
-
-```text
-./steamcmd.sh: line 17: ulimit: open files: cannot modify limit: Operation not permitted
-```
-
-Some users may get a ulimit error \(no permission/cannot open file\) while script is starting up. This error caused by a low setting of the -n parameter \(number of file descriptors\) of ulimit. Some servers forbid increasing ulimit values after startup \(or beyond a limit set by root\). This can be fixed by changing the file descriptor number ulimit:
-
-```text
-ulimit -n 2048
-```
-
 ## Can you create a server script for a \[insert name\] game server?
 
 You can request a script is created for a particular server by submitting a feature request on the \[GitHub issues\] page. This does not guarantee it will be created but we will review it and decide if its possible and how much demand there is for it. Servers will be created when time permits.
@@ -179,7 +167,7 @@ If you have an interest in developing with BASH then you are also welcome to con
 
 ## Can you remote on to my server and help me set up my game server?
 
-No! That takes all the fun out of it for you and we are not free tech support.
+In general we do not remote on to users servers, unless it is to assist in development.
 
 ## I found a bug how do I report it?
 
@@ -188,10 +176,6 @@ If you find a bug or have a suggestion please submit a bug report on [GitHub iss
 ## How can I install a non-steam version?
 
 Non-steam versions of the games ARE pirated and this would be the only reason to use non-steam versions. Simply purchase the game via steam. Steam has two massive sales a year with 75% of most of there titles there is really no excuse for pirating these games. [http://steampowered.com](http://steampowered.com)
-
-## \[S\_API FAIL\] SteamAPI\_Init\(\) failed; SteamAPI\_IsSteamRunning\(\) failed.
-
-Ignore the error, do not do anything to attempt to fix it. It is a known issue that has been happening ever since SteamPipe was introduced \(this includes on Source1 games\). It does not cause any issue and can be freely ignored.
 
 ## What server do I need?
 
@@ -206,7 +190,9 @@ LinuxGSM itself has extremely low server requirements as it is written in BASH. 
 
 You're lacking the required function, because you didn't run this command before the last huge LinuxGSM update. The function structure changed, that's why you're getting a 404 error. You just need the newer LinuxGSM version.
 
-`./gameserver update-functions`
+```text
+./gameserver update-lgsm
+```
 
 ## \[ FAIL \] Starting game-server: Ownership issues found
 
@@ -224,7 +210,9 @@ More information, see [Ownership](../linux/file-ownership.md)
 
 You can simply fix those ownership issues by using a chown command as root.
 
-`chown -R username:username /home/username`
+```text
+chown -R username:username /home/username
+```
 
 ## \[ FAIL \] Starting game-server: Permission issues found
 
@@ -232,7 +220,9 @@ It usually means some script or executable files are not actually executable.
 
 Useful command:
 
-`chmod +x <filename>`
+```text
+chmod +x <filename>
+```
 
 To learn more about this, see [Permissions](../linux/permissions.md)
 
@@ -256,7 +246,7 @@ This kind of errors can happen at any time or be due to numerous reasons. Howeve
 
 If it happens upon start:
 
-* Interpreter issue \(glibc libstdc gcc libraries and so on\) - check your versions, librarires, and game binary files.
+* Interpreter issue \(glibc libstdc gcc libraries and so on\) - check your versions, libraries, and game binary files.
 * Outdated or bugged addon - Update or remove the addon
 * Missing or revoked GSLT - Update your GSLT
 * Corrupted game server files - run ./gameserver validate
@@ -288,9 +278,14 @@ githubbranch="master"
 
 once the file is edited you will need to delete the functions directory by running the following.
 
-`./gameserver dev`
+```text
+./gameserver dev
+./gameserver clear-functions
+```
 
-`./gameserver clear-functions`
+Yo revert back to the master branch run 
 
-Yo revert back to the master branch run `./gameserver update-lgsm`
+```text
+./gameserver update-lgsm
+```
 
