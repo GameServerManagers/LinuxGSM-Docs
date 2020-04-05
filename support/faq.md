@@ -8,28 +8,30 @@ FAQ section is to try to help with common problems with LinuxGSM.
 
 There are various ways to get help and support with LinuxGSM.
 
-* [http://linuxgsm.com/support/](http://linuxgsm.com/support/)
+* [http://linuxgsm.com/support](https://linuxgsm.com/support)
 
-_Remember to consider the best place to post your issue and search the internet for a solution before posting._
+{% hint style="warning" %}
+Remember to consider the best place to post your issue and search the internet for a solution before posting.
+{% endhint %}
 
 ### Documentation
 
 The website and GitHub wiki is a useful resource for various LinuxGSM related topics.
 
-* [http://linuxgsm.com](http://linuxgsm.com)
-* [http://linuxgsm.com/wiki](http://linuxgsm.com/wiki)
+* [https://linuxgsm.com](https://linuxgsm.com)
+* [https://docs.linuxgsm.com](https://docs.linuxgsm.com)
 
 ### General Support
 
-LinuxGSM has a Steam Group where you can get general support for LinuxGSM related stuff.
+LinuxGSM has a discord server where you can get general support for LinuxGSM related stuff.
 
-* [http://linuxgsm.com/steam](http://linuxgsm.com/steam)
+* [https://linuxgsm.com/discord](https://linuxgsm.com/discord)
 
 ### Bugs/Feature Requests
 
 LinuxGSM has a GitHub issues page where you can submit any bugs and feature suggestions.
 
-* [http://linuxgsm.com/issues](http://linuxgsm.com/issues)
+* [https://linuxgsm.com/issues](https://linuxgsm.com/issues)
 
 ## tmux: command not found
 
@@ -62,23 +64,23 @@ yum install tmux
 
 The script will not run as root and will error if you try. This is done for the following good reasons:
 
-* So you or someone else don't accidentally damage your system. \(rm -rf \* anyone?\).
+* So you or someone else don't accidentally damage your system. \(`rm -rf *` anyone?\).
 * So you don't mess up your game servers user permissions.
-* To help prevent someone potentially using your game server and gain root access \(stealing your internets and stuff!\).
+* To help prevent someone potentially using your game server and gain root access.
 * Keeping the game server compartmentalised in its own directory away from your other stuff.
 * Its really bad practice to run scripts as root.
-* Would you really trust yourself as root after a 9 hour energy-drink fueled CS:GO session?
+* Would you really trust yourself as root after a 9 hour energy-drink fuelled CS:GO session?
 * Did i mention so you don't break everything!?
-
-![](http://truegif.com/pictures/gif/9281.gif)
 
 ## I can't download linuxgsm.sh \(TLS/SSL Errors\)
 
 If your error looks like `Unable to establish SSL connection` you need to make sure you installed the `ca-certificates` package first as well as other dependencies showed on the website's documentation.
 
-If you are using an "old" distribution, it is possible that your version of wget doesn't support redirections along with SSL/TLS. As a workaround, you can download the script using `--no-check-certificate`. Please note that you should only tolerate this practice if your trust your server network connection and the download source at 100%.
+If you are using an "old" distribution, it is possible that your version of wget doesn't support redirects along with SSL/TLS. As a workaround, you can download the script using `--no-check-certificate`. Please note that you should only tolerate this practice if your trust your server network connection and the download source at 100%.
 
-Example: `wget -N --no-check-certificate https://linuxgsm.com/dl/linuxgsm.sh`
+```text
+wget -N --no-check-certificate https://linuxgsm.sh
+```
 
 ## How can I install \[insert name\] mod?
 
@@ -106,9 +108,13 @@ Experience proves Linux's embed CPU scheduler to work the best: Each server will
 
 ## Will LinuxGSM run on Linux for Windows?
 
-Short answer: No.
+Short answer: Yes.
 
-A new feature in Windows 10 was released allowing the installation of some Linux Distros in to Windows. We tested this feature although impressive it sadly does not yet support i386 architecture. The majority of servers run on i386 so because of this most servers will not work.
+A new feature in Windows 10 called **WSL2** was released allowing the installation of some Linux Distros in to Windows. WSL initially did not work as it did not support i386 binary's however with WSL2 it works. So you can now run LInuxGSM on your Windows 10 PC.
+
+For more info see this useful video on the subject.
+
+[https://www.youtube.com/watch?v=loC7VfgRT-I](https://www.youtube.com/watch?v=loC7VfgRT-I)
 
 ## \[ WARN \] Multiple active network interfaces.
 
