@@ -12,23 +12,34 @@ Depending upon the circumstances you may choose a particular method or mixture o
 It is best to make a proper plan for running multiple game servers at the earliest stage of your deployment.  
 Make sure that you examined this page carefully and understood all of its content before starting.
 
-## Prerequisite
+## Prerequisites
 
 #### Vocabulary
 
 You need some definitions to make this guide clear.
 
-* **Installation:** An installation refers to the location of the games “server files” e.g `/home/csgo/serverfiles`.
-* **Instance:** Each individual game server is referred too as an “instance” e.g `/home/csgo/csgoserver` would be the script for the instance called "csgoserver".
-* **Multiple instances:** It is possible to run several instances out of one single installation and to run several instances out of multiple installations.
+* **Installation:** An _installation_ refers to the base directory of a game server. This is where the files required to run a game server is stored.
+
+```text
+/home/gameserver/serverfiles
+```
+
+* **Instance:** Each individual game server is referred too as an _instance._ There might be multiple instances running per installation. An instance is started by running the `./gameserver` script
+
+```text
+/home/gameserver/gameserver
+/home/gameserver/gameserver-2
+```
+
+* **User:** Each game server installation should run using its own _Linux user_. Although it is possible to have multiple _installations_ per user.
 
 #### LinuxGSM Configuration
 
-You need to be comfortable with [LinuxGSM Config](../configuration/linuxgsm-config.md).
+You should be familiar with how [LinuxGSM Configs](../configuration/linuxgsm-config.md) work.
 
 #### Understand ports
 
-You need to understand how ports and service listening work in order to avoid port overlapping, otherwise your new instances won't start. Useful resource: [Ports](../configuration/ports.md).
+You need to understand how ports work in order to avoid port overlapping, otherwise your new instances won't start. Useful resource: [Ports](../configuration/ports.md).
 
 ## Single Instance per Installation
 
