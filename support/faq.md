@@ -114,7 +114,9 @@ A new feature in Windows 10 called **WSL2** was released allowing the installati
 
 For more info see this useful video on the subject.
 
-[https://www.youtube.com/watch?v=loC7VfgRT-I](https://www.youtube.com/watch?v=loC7VfgRT-I)
+{% embed url="https://www.youtube.com/watch?v=loC7VfgRT-I" %}
+
+
 
 ## \[ WARN \] Multiple active network interfaces.
 
