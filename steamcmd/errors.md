@@ -215,3 +215,19 @@ ulimit -n 2048
 
 Ignore the error, do not do anything to attempt to fix it. It is a known error that has been happening ever since SteamPipe was introduced \(this includes on Source1 games\). It does not cause any issue and can be ignored.
 
+## [S_API FAIL] SteamAPI_Init() failed; SteamAPI_IsSteamRunning() failed.
+
+Ignore the error, do not do anything to attempt to fix it. It is a known error that has been happening ever since SteamPipe was introduced (this includes on Source1 games). It does not cause any issue and can be ignored.
+
+##Loading Steam API...Failed to init SDL priority manager: SDL not found
+
+Ignore the error, do not do anything to attempt to fix it. It does not cause any issue and can be ignored.
+
+## CWorkThreadPool::~CWorkThreadPool: work processing queue not empty: 2 items discarded.
+
+Ignore the error, do not do anything to attempt to fix it. It does not cause any issue and can be ignored.
+
+## Failed to set thread priority: per-thread setup failed
+
+Ignore the error, do not do anything to attempt to fix it. It does not cause any issue and can be ignored.
+
