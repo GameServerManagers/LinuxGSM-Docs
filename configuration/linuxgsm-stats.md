@@ -1,6 +1,6 @@
 # LinuxGSM Stats
 
-LinuxGSM Stats is an `opt in` voluntary feature that allows you to provide selected information about your game server to the lead developer of LinuxGSM \(Daniel Gibbs\) by enabling the `stats` setting.
+LinuxGSM Stats is an `opt in` voluntary feature that allows you to provide selected information about your game server to be displayed on [linuxgsm.com](https://linuxgsm.com) by enabling the `stats` setting.
 
 ## How is the information used?
 
@@ -52,7 +52,7 @@ The UUID is located in`lgsm/data/uuid.txt`,if this file is deleted a new UUID wi
 
 ## How frequently is the data sent?
 
-Data is sent every time the monitor runs as this is the only way send regularly send data.
+Data is sent every time the monitor runs as this is the only way to regularly send data.
 
 ## How can i enable this feature?
 
