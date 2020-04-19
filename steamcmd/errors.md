@@ -154,7 +154,7 @@ Update state (0x61) downloading, progress: 1.11 (127644881 / 11530459441)
 
 ## SteamCMD Logs
 
-To get more info and output see the SteamCMD logs in `~/.steam/logs`. The most useful log is `content_log.txt` that will provide more information of errors. 
+To get more info and output see the SteamCMD logs in `~/.steam/logs`. The most useful log is `content_log.txt` that will provide more information of errors.
 
 {% hint style="success" %}
 If you have experienced an error we don't have logs for please can you provide them to us to assist in diagnosing the issue.
@@ -162,7 +162,7 @@ If you have experienced an error we don't have logs for please can you provide t
 
 ## SteamCMD Hex Codes
 
-SteamCMD uses hex error codes such as `0x202` which can be converted in to decimal `514`. Using the table below you can work out that the status messages. By doing a calculation. Find the highest number below the state `512` which if the first error. Then take the number away from the total `514-512=2`  which gives you the last error. This can be done for any error
+SteamCMD uses hex error codes such as `0x202` which can be converted in to decimal `514`. Using the table below you can work out that the status messages. By doing a calculation. Find the highest number below the state `512` which if the first error. Then take the number away from the total `514-512=2` which gives you the last error. This can be done for any error
 
 `514-512-2=0`
 
@@ -195,9 +195,7 @@ SteamCMD uses hex error codes such as `0x202` which can be converted in to decim
 
 This table is from 2015 and is probably out dated now but its the best we currently have.
 
-{% embed url="https://github.com/lutris/lutris/blob/master/docs/steam.rst" %}
-
-
+{% embed url="https://github.com/lutris/lutris/blob/master/docs/steam.rst" caption="" %}
 
 ## ulimit SteamCMD startup error
 
@@ -215,11 +213,11 @@ ulimit -n 2048
 
 Ignore the error, do not do anything to attempt to fix it. It is a known error that has been happening ever since SteamPipe was introduced \(this includes on Source1 games\). It does not cause any issue and can be ignored.
 
-## [S_API FAIL] SteamAPI_Init() failed; SteamAPI_IsSteamRunning() failed.
+## \[S\_API FAIL\] SteamAPI\_Init\(\) failed; SteamAPI\_IsSteamRunning\(\) failed.
 
-Ignore the error, do not do anything to attempt to fix it. It is a known error that has been happening ever since SteamPipe was introduced (this includes on Source1 games). It does not cause any issue and can be ignored.
+Ignore the error, do not do anything to attempt to fix it. It is a known error that has been happening ever since SteamPipe was introduced \(this includes on Source1 games\). It does not cause any issue and can be ignored.
 
-##Loading Steam API...Failed to init SDL priority manager: SDL not found
+## Loading Steam API...Failed to init SDL priority manager: SDL not found
 
 Ignore the error, do not do anything to attempt to fix it. It does not cause any issue and can be ignored.
 
