@@ -38,3 +38,5 @@ If players are kicked after joining, make sure Sourcemod does not have any error
 
 Check folder hierarchy in archives before unpacking, each plugin creator organizes their archives differently.
 
+The server may need to be set to sv\_pure 0 in some cases.
+
