@@ -8,3 +8,5 @@ To disable autorefresh, add `-disableluarefresh` to parms.
  -disableluarefresh
 ```
 
+When adding a loading screen with `sv_loadingurl`, most guides will tell you to add it in command line, server.cfg, or autoexec.cfg. Check gmodserver.cfg first, it is defined in this file by default as `sv_loadingurl ""`and this file will override everything else.
+
