@@ -87,7 +87,7 @@
   * [network-interfaces](linux/network-interfaces.md)
   * [permissions](linux/permissions.md)
 * [Other](other/README.md)
-  * [Save Space With Symlinking](other/save-space-with-symlinking.md)
+  * [Symlinking and ln command](other/save-space-with-symlinking.md)
   * [server-migration](other/server-migration.md)
   * [basic-usage](other/basic-usage.md)
   * [brand](other/brand.md)
