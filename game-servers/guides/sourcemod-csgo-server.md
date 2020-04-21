@@ -6,7 +6,7 @@ description: Sourcemod Resources and Known Problems
 
 Sourcemod is a plugin for source games that can add functionality like voting systems, minigames, and server utilities. Sourcemod requires Metamod to run.
 
-Note: LinuxGSM includes a[ command](../../commands/mods.md) that is able to install Sourcemod automatically.  
+LinuxGSM includes a[ command](../../commands/mods.md) that is able to install Sourcemod automatically.  
 
 [LinuxGSM Mod Command](../../commands/mods.md)
 

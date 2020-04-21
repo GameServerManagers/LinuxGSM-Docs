@@ -40,6 +40,16 @@ wsapikey="YOUR_STEAM_API_KEY"
 wscollectionid="YOUR_COLLECTION_ID"
 ```
 
+On Garry's Mod adding a workshop collection does not make players download the workshop content on joining, they will only download workshop maps automatically. Workshop files must be set in the workshop.lua file at
+
+`/home/gmod/serverfiles/garrysmod/lua/autorun/server/`
+
+```text
+resource.AddWorkshop( "2059235478" ) --example entry
+```
+
+If each individual item is specified instead of a collection, this is useful if there is server only content in a collection, and stops all maps from downloading when a player joins.
+
 ### Counter-Strike Global Offensive
 
 For CSGO, have a look at these lines in your in your [LinuxGSM config](../configuration/linuxgsm-config.md)
