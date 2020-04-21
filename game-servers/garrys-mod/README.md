@@ -20,5 +20,5 @@ When adding a loading screen with `sv_loadingurl`, most guides will tell you to 
 
 [Mounting Game Content To Garry's Mod Server](mounting-game-content.md)
 
-
+[Install Sourcemod on Gmod Server](../guides/sourcemod-csgo-server.md)
 
