@@ -27,36 +27,51 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=274397080
 
 The collection id would be `274397080`.
 
-## Configuration Variables
-
-Edit the [LinuxGSM config](../configuration/linuxgsm-config.md)
+## Server Configurations
 
 ### Garry's Mod
 
-For Garry's Mod, edit those 2 lines accordingly in your [LinuxGSM config](../configuration/linuxgsm-config.md)
+For Garry's Mod, edit these lines in your [LinuxGSM config](../configuration/linuxgsm-config.md)
 
 ```text
 wsapikey="YOUR_STEAM_API_KEY"
 wscollectionid="YOUR_COLLECTION_ID"
 ```
 
-On Garry's Mod adding a workshop collection does not make players download the workshop content on joining, they will only download workshop maps automatically. Workshop files must be set in the workshop.lua file at
+Setting the workshop collection ID only adds content to the server, and players will only download maps from the collection. This is because workshop files must be set in the workshop.lua file in:
 
 `/home/gmod/serverfiles/garrysmod/lua/autorun/server/`
 
+Example line:
+
 ```text
-resource.AddWorkshop( "2059235478" ) --example entry
+resource.AddWorkshop( "workshop_ID_#_here" ) --comment
+resource.AddWorkshop( "1728099077" ) --Rick Roll SENT
 ```
 
-If each individual item is specified instead of a collection, this is useful if there is server only content in a collection, and stops all maps from downloading when a player joins.
+I do not recommend putting a collection ID in this file if you are hosting a server with a large map list, this will cause players to download every map on their first connection. Instead it is recommended to put every individual workshop item except maps in this file.
 
 ### Counter-Strike Global Offensive
 
-For CSGO, have a look at these lines in your in your [LinuxGSM config](../configuration/linuxgsm-config.md)
+For CSGO, edit these lines in your [LinuxGSM config](../configuration/linuxgsm-config.md)
 
 ```text
 wsapikey="YOUR_STEAM_API_KEY"
 wscollectionid="YOUR_COLLECTION_ID"
 wsstartmap="
 ```
+
+### **Killing Floor 2**
+
+For KF2 Server using LinuxGSM, workshop content is added in `LinuxServer-KFEngine.ini` under:
+
+/home/user/serverfiles/KFGame/Config/kf2server
+
+[Official Guide Here](https://wiki.killingfloor2.com/index.php?title=Dedicated_Server_%28Killing_Floor_2%29#Setting_Up_Steam_Workshop_For_Servers)
+
+While following the guide, remember `PCServer-KFEngine.ini` is instead `LinuxServer-KFEngine.ini`
+
+[Killing floor 2 has a known workshop problem.](../game-servers/killing-floor-2.md)
+
+
 

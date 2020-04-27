@@ -16,26 +16,24 @@ To disable autorefresh, add `-disableluarefresh` to parms.
 
 Loading screens are added by defining a website with `sv_loadingurl`, which is in gmodserver.cfg by default.  This file overrides other files. 
 
-Links should not have `http://` or an ending`/` and should look like 
+Links should not have `http://` or an ending`/` . 
+
+Example:
 
 ```text
 sv_loadingurl "www.website.com/loading/screen"
 ```
 
-Server gamemode is changed by editing start parameters in the file:
-
-/home/user/linuxgsm/config-linuxgsm/gmodserver/gmodserver.cfg
-
-On a new server, default settings are in default.cfg
+Gamemode is changed by editing start parameters in the LinuxGSM config file.
 
 ```text
-Default gamemodes- for use in command line
+Default gamemodes:
 
 TTT     gamemode="terrortown"
 Sandbox gamemode="sandbox"
 ```
 
-Other gamemodes like Zombie Survival can be found in the [steam workshop](../../steamcmd/workshop.md).
+Other gamemodes like Zombie Survival can be found on the [steam workshop](../../steamcmd/workshop.md).
 
 ## Guides
 

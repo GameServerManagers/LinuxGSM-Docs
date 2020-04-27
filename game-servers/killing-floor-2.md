@@ -23,11 +23,11 @@ Killing Floor 2 supports [Steam Workshop](../steamcmd/workshop.md).
 
 ### High disk IO using Steam Workshop
 
-As of March 2020 Killing Floor 2 servers will check workshop files at server start and when map changes occur.
+As of March 2020 Killing Floor 2 will check workshop files at server start and when map changes occur.
 
-There is a potential problem with Killing Floor 2 dedicated servers using the steam workshop to host content that causes the server disk usage to constantly read/write at 100% and could damage hardware.
+There is a potential problem with Killing Floor 2 servers using the steam workshop that causes server disk usage to constantly read/write at 100% and could damage hardware.
 
-To avoid this problem try to keep the amount of workshop content as low as possible. Alternatively, it is possible to convert workshop files to [fastd](../commands/fastdl.md)l. However, [fastd](../commands/fastdl.md)l is no longer supported by Tripwire and files are not compressed, which increases download times. 
+To avoid this problem keep the amount of workshop content as low as possible. It is possible to convert workshop files to [fastd](../commands/fastdl.md)l by downloading them off of the steam workshop and putting them on your own server. However, [fastd](../commands/fastdl.md)l is not officially supported by Tripwire and files are not compressed, which increases download times. 
 
 Disk IO can be monitored with the `ioptop` command.
 

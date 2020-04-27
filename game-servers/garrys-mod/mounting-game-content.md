@@ -1,6 +1,6 @@
 # Mounting Game Content
 
-Some Garry's Mod addons use other game's content, this content must be mounted server-side otherwise players will be able to walk through props and other issues. The easiest way to add this content is to install a server with linuxgsm and copy the files over. This guide focuses on CS:S but should work for any game that can be mounted.
+Some Garry's Mod addons like TTT use content from other games. This guide is for installing another game with linuxgsm, copying that game's files, and mounting the game to Garry's Mod. This guide is for CS:S but should work for any other game.
 
 First install a Counter-Strike:Source server, if you already have a server installed this step can be skipped. If the server will be deleted after copying files, the GSLT step is skippable. 
 
@@ -8,7 +8,7 @@ First install a Counter-Strike:Source server, if you already have a server insta
 
 ## Mounting one server
 
-**Change the usernames in these commands to match yours.** 
+**Change the usernames in to match yours.** 
 
 Copy the cstrike folder to the Gmod folder.
 
@@ -16,7 +16,7 @@ Copy the cstrike folder to the Gmod folder.
 cp -R /home/cssuser/serverfiles/cstrike/ /home/gmoduser/serverfiles/cstrike/
 ```
 
-Recursively claim ownership of moved files for the gmod install.
+Recursively claim ownership of files for the gmod user.
 
 ```text
 chown -R gmoduser /home/gmoduser/
@@ -28,7 +28,7 @@ Open mount.cfg file.
 nano /home/gmoduser/serverfiles/garrysmod/cfg/mount.cfg
 ```
 
-Add link to the files being mounted.
+Mount game and save.
 
 ```text
 "mountcfg"
@@ -37,7 +37,11 @@ Add link to the files being mounted.
 }
 ```
 
-Restart the server, and the content should now be mounted.
+Restart the server. Check if the mount was successful by changing level to a mounted map with console or rcon.
+
+```text
+changelevel cs_italy
+```
 
 If the CS:S user and install is no longer needed, it can be removed with userdel. **This command will remove the user and it's /home/ directory.**
 
