@@ -8,7 +8,7 @@ First install a Counter-Strike:Source server, if you already have a server insta
 
 ## Mounting one server
 
-**Change the usernames in to match yours.** 
+**Change the usernames to match yours.** 
 
 Copy the cstrike folder to the Gmod folder.
 
@@ -28,7 +28,7 @@ Open mount.cfg file.
 nano /home/gmoduser/serverfiles/garrysmod/cfg/mount.cfg
 ```
 
-Mount game and save.
+Add game to mount.cfg
 
 ```text
 "mountcfg"

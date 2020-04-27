@@ -4,7 +4,9 @@
 
 [Mailgun](https://www.mailgun.com) is an email service that allows LinuxGSM to send emails via an API, bypassing the need to use postfix. This method of sending email notifications is generaly more reliable.
 
-An option to setup Mailgun as an email relay in postfix is also available. The free package allows sending 10,000 emails per month.
+An option to setup Mailgun as an email relay in postfix is also available. 
+
+Mailgun's Flex Package allows 3 free months up to 5000 emails then turns into a pay-as-you-go plan afterwards.
 
 ```text
 # Mailgun Email Alerts | https://docs.linuxgsm.com/alerts/mailgun
