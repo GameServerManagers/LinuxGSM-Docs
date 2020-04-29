@@ -59,7 +59,7 @@ This is a list of the valid mutators shipped with the retail version:
 | Weapon Replacement | UTGame.UTMutator\_WeaponReplacement |
 | Weapon Respawn | UTGame.UTMutator\_WeaponsRespawn |
 
-### **Common Variables**
+## **Common Variables**
 
 |  |  |
 | :--- | :--- |
@@ -76,34 +76,21 @@ This is a list of the valid mutators shipped with the retail version:
 | bUsesStats=\[True\|False\] | Report stats or not? |
 | TimeLimit=&lt;number&gt; | Sets the timelimit in minutes for each map. |
 
-Most of these can be set in the server's INI file, so there's no need to clutter up the command line.
+Most of these can be set in the server's `UTGame.ini`, so there's no need to clutter up the command line.
 
-### **Server Logins**
+## **Server GameSpy Login**
 
-ATM all servers need a **unique** login, as in no two servers can use the same login. Doing so will mean that one of those servers will not show in the list. This login has to be created via the client "Create Profile". You can create multiple profiles under the same email address but you must use the same password for each if you do so.\[[edit](http://wiki.unrealadmin.org/index.php?title=FAQ:UT3&action=edit&section=6)\]
+All servers require a **unique** login to allow a server to show in the master server list. This login has to be created via the client "Create Profile". You can create multiple profiles under the same email address but you must use the same password for each if you do so.
 
-### **Multiple Servers on One Machine**
+## **Server Names**
 
-Each server process needs to run under a different gamespy account \(can be created in the game\). Important things to note are:
+Server names can be specified in the server's `UTGame.ini`
 
-* The `-nohomedir` command forces the servers to use the install directory instead of My Documents...
-* The `-configsubdir=<serverfoldername>` will create a folder under `..\UTGame\config\` so each server instance can have it's own ini files
-* `-login=<login>` and `-password=<password>` as these must be unique
-* The servers port is changed with `-Port=<port>` in the URL, or via the setting in `UTEngine.ini`
-* The servers query port is changed with -QueryPort=&lt;port&gt;
-* You must specify -unattended as without it you will get prompted to confirm the upgrade of the server's configuration files. This option needs to be last in the command line.
+The `ServerDescription` field isn't in plain ascii or text as you and I know it. Instead its in UCS2 \(UTF-16\) which is then serialised as numeric strings.
 
-Note: `-configsubdir=` does not work unless `-nohomedir` is specified.
+## **Enable Mapvote**
 
-### **Server Names**
-
-Server names can be specified in the server's INI file, as of patch 1.1.
-
-The ServerDescription field isn't in plain ascii or text as you and I know it. Instead its in UCS2 aka UTF-16 which is then serialized as numeric strings. It is possible to generate the server description code here: \[[Cruz's UT3 Server Description Generator](http://www.penetrate.nl/UT3ServerDesc.php)\]\[[edit](http://wiki.unrealadmin.org/index.php?title=FAQ:UT3&action=edit&section=9)\]
-
-### **Enable Mapvote**
-
-Edit the ...\UTGame\Config\UTGame.ini. Under the \[UTGame.UTGame\] section, be sure to have this:
+Edit the `UTGame.ini`. Under the `[UTGame.UTGame]` section, be sure to have this:
 
 ```text
 bAllowMapVoting=True
@@ -116,7 +103,7 @@ GameSpecificMapCycles=(GameClassName="UTOnslaughtGame_Content",Maps=("WAR-Avalan
 GameSpecificMapCycles=(GameClassName="UTDuelGame",Maps=("DM-Arsenal","DM-Biohazard","DM-CarbonFire","DM-Deck","DM-Defiance","DM-Deimos","DM-Diesel","DM-Fearless","DM-Gateway","DM-HeatRay","DM-RisingSun","DM-Sanctuary","DM-Sentinel","DM-ShangriLa"))
 ```
 
-### **Admin Commands**
+## **Admin Commands**
 
 You meant to be able to admin the game using rcon but when we tried it although adminlogin worked none of the subsequent commands did.
 
