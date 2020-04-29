@@ -1,5 +1,7 @@
 # Unreal Tournament 3
 
+![](../.gitbook/assets/unreal-tournament-3.jpg)
+
 ## Server files
 
 LinuxGSM uses the most recent version of UT3 server available for Linux.
@@ -19,27 +21,7 @@ Unreal Tournament 3 Requires a few alterations from the official server download
 * Query port 6500 UDP handled by parms \(does not work\)
 * Web Admin 8080 TCP handled by UTWeb.ini
 
-## Running a dedicated server
-
-The basic format of running server start command line is:-
-
-```text
-UT3.exe Server <map>?<variable1>=<value1>?<variable2>=<value2>.... -login=<login> -password=<password> -unattended
-
-```
-
-Examples of this would be:-
-
-```text
-UT3.exe Server DM-ShangriLa?game=UTGame.UTDuelGame -login=<login> -password=<password> -unattended
-
-UT3.exe Server VCTF-Suspense -login=<login> -password=<password> -unattended
-
-```
-
-NOTE: To launch multiple servers on a machine you must use the ut3.exe binary, not the ut3.com binary. The result of using the .com was, among others, the inability to stop a single instance without killing all the running instances.\[[edit](http://wiki.unrealadmin.org/index.php?title=FAQ:UT3&action=edit&section=2)\]
-
-### **Game Types & Mutators**
+## **Game Types**
 
 This is a list of the valid gametypes:
 
@@ -52,11 +34,15 @@ This is a list of the valid gametypes:
 | Team Deathmatch | UTGame.UTTeamGame |
 | Duel | UTGame.UTDuelGame |
 
-For mutators you need to set the variable of each mutator:-
+## **Mutators**
 
-1. Mutator=&lt;MutatorIdentifier&gt;
+**I**f you want to run more than one mutator separate them with commas.
 
-Here is a list of Mutators shipped with the Retail Version:
+```text
+ ?mutator=UTGame.UTMutator_Instagib,UTGame.UTMutator_LowGrav
+```
+
+This is a list of the valid mutators shipped with the retail version:
 
 | Name | MutatorIdentifier |
 | :--- | :--- |
@@ -73,52 +59,28 @@ Here is a list of Mutators shipped with the Retail Version:
 | Weapon Replacement | UTGame.UTMutator\_WeaponReplacement |
 | Weapon Respawn | UTGame.UTMutator\_WeaponsRespawn |
 
-if you want to run more than one mutator separate them with commas:
-
-```text
- ?mutator=UTGame.UTMutator_Instagib,UTGame.UTMutator_LowGrav
-```
-
-\[[edit](http://wiki.unrealadmin.org/index.php?title=FAQ:UT3&action=edit&section=3)\]
-
 ### **Common Variables**
 
-* MaxPlayers=&lt;number&gt; Maximum number of players on the server \(overrides ini setting\)
-* MinNetPlayers=&lt;number&gt; Minimum number of players before a match starts \(real players not bots\)
-* bShouldAdvertise=\[True\|False\] Show the server in the server browser \(default: true\)
-* bIsLanMatch=\[True\|False\] Is this a LAN only game? \(default: false\)
-* bIsDedicated=\[True\|False\] Changes dedicated server flag \(default: false, even if started as dedicated\)
-* GamePassword=&lt;password&gt; Sets a game password
-* AdminPassword=&lt;password&gt; Sets an admin password
-* Port=&lt;port&gt; Sets the server game port \(default: 7777; can also be changed via the INI file\)
-* QueryPort=&lt;port&gt; Sets the server query port \(default: 6500\)
-* GoalScore=&lt;number&gt; Sets the max frags / max caps before the server will change maps.
-* bUsesStats=\[True\|False\] Report stats or not?
-* TimeLimit=&lt;number&gt; Sets the timelimit in minutes for each map.
+|  |  |
+| :--- | :--- |
+| MaxPlayers=&lt;number&gt; | Maximum number of players on the server \(overrides ini setting\) |
+| MinNetPlayers=&lt;number&gt; | Minimum number of players before a match starts \(real players not bots\) |
+| bShouldAdvertise=\[True\|False\] | Show the server in the server browser \(default: true\) |
+| bIsLanMatch=\[True\|False\] | Is this a LAN only game? \(default: false\) |
+| bIsDedicated=\[True\|False\] | Changes dedicated server flag \(default: false, even if started as dedicated\) |
+| GamePassword=&lt;password&gt; | Sets a game password |
+| AdminPassword=&lt;password&gt; | Sets an admin password |
+| Port=&lt;port&gt; |  Sets the server game port \(default: 7777; can also be changed via the INI file\) |
+| QueryPort=&lt;port&gt; | Sets the server query port \(default: 6500\) |
+| GoalScore=&lt;number&gt; | Sets the max frags / max caps before the server will change maps. |
+| bUsesStats=\[True\|False\] | Report stats or not? |
+| TimeLimit=&lt;number&gt; | Sets the timelimit in minutes for each map. |
 
-Most of these can be set in the server's INI file, so there's no need to clutter up the command line.\[[edit](http://wiki.unrealadmin.org/index.php?title=FAQ:UT3&action=edit&section=4)\]
-
-### **Running Behind a Router/Firewall**
-
-1. Setup port forwarding for three ports \(all UDP only\): 13000, 7777 and 6500 \(or whatever port/queryport your server is running on; 7777/6500 are the defaults\).
+Most of these can be set in the server's INI file, so there's no need to clutter up the command line.
 
 ### **Server Logins**
 
 ATM all servers need a **unique** login, as in no two servers can use the same login. Doing so will mean that one of those servers will not show in the list. This login has to be created via the client "Create Profile". You can create multiple profiles under the same email address but you must use the same password for each if you do so.\[[edit](http://wiki.unrealadmin.org/index.php?title=FAQ:UT3&action=edit&section=6)\]
-
-### **Query Protocol**
-
-The server uses the GameSpy query Protocol \( v4 \) which can be queried with qstat e.g.
-
-```text
-qstat -R -gs4 <ip>:<port>
-```
-
-#### **Notes**
-
-* If you want the map you must currently request server rules with -R as the server doesnt currently return the map in the basic query.
-
-For more details about the query protocol \(including the PHP code to do web-based querying and details on the query variables\) check out the [UT3\_query\_protocol](http://wiki.unrealadmin.org/UT3_query_protocol) page.
 
 ### **Multiple Servers on One Machine**
 
@@ -156,7 +118,7 @@ GameSpecificMapCycles=(GameClassName="UTDuelGame",Maps=("DM-Arsenal","DM-Biohaza
 
 ### **Admin Commands**
 
-You ment to be able to admin the game using rcon but when we tried it although adminlogin worked none of the subsiquent commands did.
+You meant to be able to admin the game using rcon but when we tried it although adminlogin worked none of the subsequent commands did.
 
 First off login with: AdminLogin &lt;password&gt;
 

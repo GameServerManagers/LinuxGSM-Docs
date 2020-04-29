@@ -28,6 +28,7 @@
   * [Running on Boot](configuration/running-on-boot.md)
   * [Ports](configuration/ports.md)
 * [Game Servers](game-servers/README.md)
+  * [Untitled](game-servers/untitled.md)
   * [7 Days to Die](game-servers/7-days-to-die.md)
   * [Arma 3](game-servers/arma-3.md)
   * [ARK: Survival Evolved](game-servers/ark-survival-evolved.md)
