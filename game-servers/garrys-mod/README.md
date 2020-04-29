@@ -39,5 +39,5 @@ Other gamemodes like Zombie Survival can be found on the [steam workshop](../../
 
 [Mounting Game Content To Garry's Mod Server](mounting-game-content.md)
 
-[Install Sourcemod on Gmod Server](../guides/sourcemod-csgo-server.md)
+[Install Sourcemod on Gmod Server](../../guides/sourcemod-csgo-server.md)
 

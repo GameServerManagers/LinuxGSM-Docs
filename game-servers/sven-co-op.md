@@ -39,5 +39,5 @@ mp_survival_minplayers
 
 ## **Sven Co-op Guides**
 
-[Make FastDL Webserver Case Insensitive](guides/make-webserver-case-insensitive.md)
+[Make FastDL Webserver Case Insensitive](../guides/make-webserver-case-insensitive.md)
 
