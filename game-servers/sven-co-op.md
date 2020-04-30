@@ -4,6 +4,8 @@ description: Information for Sven Co-op servers
 
 # Sven Co-op
 
+![](../.gitbook/assets/svenbanner.jpg)
+
 ## **Server Resources**
 
 **Official Resources**

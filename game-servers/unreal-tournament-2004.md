@@ -1,5 +1,9 @@
 # Unreal Tournament 2004
 
+![](../.gitbook/assets/ut2004banner.jpg)
+
+## Server Files
+
 LinuxGSM uses the most recent version of UT2K4 server available for Linux.
 
 > v3369.2

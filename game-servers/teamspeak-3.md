@@ -1,5 +1,7 @@
 # TeamSpeak 3
 
+![](../.gitbook/assets/teamspeakbanner.jpg)
+
 ## Connect to TeamSpeak 3 Server
 
 You can connect to a TeamSpeak 3 server to input commands without the need for a TeamSpeak 3 client. This can be done by connecting to the query port using telnet.
