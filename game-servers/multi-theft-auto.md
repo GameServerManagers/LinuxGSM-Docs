@@ -1,5 +1,9 @@
 # Multi Theft Auto
 
+![](../.gitbook/assets/mtabanner.jpg)
+
+## Server Information
+
 An MTA server comes in two parts. MTA itself and then the resources you install. There is the option to install the default MTA resources to your server within LinuxGSM on install or using the `./mtaserver install-default-resources` option. There are many resources available so it is recommended that you take a look at the MTA community resources page [Community](https://community.mtasa.com)
 
 ## Resources

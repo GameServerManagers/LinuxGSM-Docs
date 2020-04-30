@@ -1,5 +1,9 @@
 # Factorio
 
+![](../.gitbook/assets/factoriobanner.jpg)
+
+## Server Information
+
 ### World Generation Settings
 
 #### Overview

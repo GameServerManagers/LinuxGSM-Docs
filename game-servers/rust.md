@@ -1,5 +1,7 @@
 # Rust
 
+![](../.gitbook/assets/rustbanner.jpg)
+
 ## System requirements
 
 * RAM: 4GB-12GB, Increases depending upon map size
