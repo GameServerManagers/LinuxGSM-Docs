@@ -10,19 +10,19 @@
 
 ## Ports
 
-**Game Port*** Default:7777
-**Beacon Port*** Default:15000
+* **Game Port*** Default:7777
+* **Beacon Port*** Default:15000
 
 
 ## Required server config items
-1. ServerName >> This is the server name that you will find the server under in thein-game Server Browser or in the Steam Server Browser.
-2. ServerID >> By changing this, you can switch between different versions of the database (see section on database management).
+* ServerName >> This is the server name that you will find the server under in thein-game Server Browser or in the Steam Server Browser.
+* ServerID >> By changing this, you can switch between different versions of the database (see section on database management).
 
 ## Command line arguments
-1. Port >> The port on which players connect. Make sure that this port is open in order for players to connect. Defaults to 7777.
-2. BeaconPort >> The port used for beacons for initial connection. Make sure that this port is open in order for players to connect over the internet. Defaults to 15000.
-3. MULTIHOME >> Overrides the IP address the server is running on. The server will use one of the available IP addresses but will not ascertain that this is a publicly reachable IP address. Used in Multi-IP environments.
-4. MaxPlayers >> Maximal number of players for the server. Default is 2.
+* Port >> The port on which players connect. Make sure that this port is open in order for players to connect. Defaults to 7777.
+* BeaconPort >> The port used for beacons for initial connection. Make sure that this port is open in order for players to connect over the internet. Defaults to 15000.
+* MULTIHOME >> Overrides the IP address the server is running on. The server will use one of the available IP addresses but will not ascertain that this is a publicly reachable IP address. Used in Multi-IP environments.
+* MaxPlayers >> Maximal number of players for the server. Default is 2.
 
 # Database management
 The files for the database will be stored in the following folder: Game/Saved/DB/{ServerID}/{SeasonID}.
