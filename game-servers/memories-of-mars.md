@@ -10,8 +10,8 @@
 
 ## Ports
 
-* **Game Port*** Default:7777
-* **Beacon Port*** Default:15000
+* **Game Port** Default:7777
+* **Beacon Port** Default:15000
 
 
 ## Required server config items
