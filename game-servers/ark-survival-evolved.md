@@ -30,6 +30,8 @@ Add the line `defaultmap="MAP_NAME_HERE"`. You can find a official map list righ
 * Aberration\_P
 * Extinction
 * Valguero\_P
+* Genesis
+* CrystalIsles
 
 ## Change maximum players
 
