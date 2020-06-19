@@ -55,7 +55,7 @@ yum install yarn
 Once nodejs is installed use npm to install gamedig with the following command.
 
 ```text
-npm install gamedig -g
+yarn global add gamedig
 ```
 
 ## Sample output
