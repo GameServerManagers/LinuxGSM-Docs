@@ -79,7 +79,7 @@ Some users with IPv6 enabled might encounter a server failing to start properly.
 
 If you find the following in the log you may need to remove a file that was created by teamspeak in /dev/shm/ `ERROR |Accounting | |failed to register local accounting service: File exists` The file is named "7gbhujb54g8z9hu43jre8" that is the problem for teamspeak. You need remove the file that is owned by another user and then try again to start the teamspeak server.
 
-### Server Crashed after a while (outdated and no licence)
-If the following message apprears in the log of the Teamspeak 3 Linux Server
-`Error creating ephemeral license: EXPIRED`
-You need to upgrade the version of the Teamspeak Server to a more up2date version.
+### Server Crashed after a while \(outdated and no licence\)
+
+If the following message apprears in the log of the Teamspeak 3 Linux Server `Error creating ephemeral license: EXPIRED` You need to upgrade the version of the Teamspeak Server to a more up2date version.
+

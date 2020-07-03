@@ -45,7 +45,7 @@ ARK server mods are managed using the [Steam Workshop](https://steamcommunity.co
 
 ### Adding Mods
 
-Firstly, you need to select the mods you want to use from the [steam workshop](https://steamcommunity.com/app/346110/workshop/). 
+Firstly, you need to select the mods you want to use from the [steam workshop](https://steamcommunity.com/app/346110/workshop/).
 
 {% hint style="warning" %}
 Mods can cause your server to become unstable or may not be compatible with each other. It is a good idea to read the mods docs and/or speak with other experienced ARK admins.
@@ -89,7 +89,7 @@ UpdateInterval=24
 
 For more config options for WBUI see this [link](https://steamcommunity.com/workshop/filedetails/discussion/924619115/129069130858283275).
 
-Start the server and the mods will be automatically downloaded by the server. To check that this has worked open the console `./arkserver console`. In the console you will see a message similar to the following. 
+Start the server and the mods will be automatically downloaded by the server. To check that this has worked open the console `./arkserver console`. In the console you will see a message similar to the following.
 
 {% hint style="info" %}
 Large mods may take several minutes to download to the server.
@@ -122,7 +122,7 @@ If you join before the server or your client has fully downloaded the mod you mi
 
 ![](../.gitbook/assets/gpwwd19-1.png)
 
-Once you have connected to the server you will be able to see that the mod has loaded by seeing the _Mod Name_ in the game menu `Esc`. 
+Once you have connected to the server you will be able to see that the mod has loaded by seeing the _Mod Name_ in the game menu `Esc`.
 
 ![](../.gitbook/assets/image.png)
 
@@ -132,7 +132,7 @@ The example mod can be activated by pressing `F1`.
 
 ### Mod Collections
 
-Steam workshop has a feature that allows mods to be grouped in collections. Currently steam workshop collection ids won't work directly with ARK. Instead, you need to have all the individual ids of the mods you want to use. 
+Steam workshop has a feature that allows mods to be grouped in collections. Currently steam workshop collection ids won't work directly with ARK. Instead, you need to have all the individual ids of the mods you want to use.
 
 {% hint style="success" %}
 To get individual item ids from collections you can use the [Steam Collection ID Grabber](https://tools.rusty.info/tools/stcolids/).
@@ -142,9 +142,9 @@ To get individual item ids from collections you can use the [Steam Collection ID
 
 A cluster allows an admin to group ARK servers together, usually servers on different maps. Allowing the transfer characters between the different servers.
 
-### Multi Instance
+### Multi-Instance
 
-ARK will work with LinuxGSM [multi instances ](../features/multiple-game-servers.md)in the same directory. 
+ARK will not work with LinuxGSM [multi instances ](../features/multiple-game-servers.md)in the same directory.
 
 ### Adding Servers to Clusters
 
@@ -179,6 +179,4 @@ Ragnarok?SessionName=LinuxGSM Session 2?AltSaveDirectoryName=?ScorchedEarth_P?li
 {% hint style="warning" %}
 Servers which are running on _local networks_ sometimes have trouble travelling to other arks. A potential fix for this is adding `?MultiHome=0.0.0.0` to your command-line parameters.
 {% endhint %}
-
-
 
