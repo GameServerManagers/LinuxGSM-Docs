@@ -19,7 +19,11 @@ serverfiles/ShooterGame/Saved/Config/LinuxServer/Game.ini
 
 You can change the map by editing the parameters in the [LinuxGSM config](../configuration/linuxgsm-config.md).
 
-Add the line `defaultmap="MAP_NAME_HERE"`. You can find a official map list right below.
+Add the line `defaultmap="MAP_NAME_HERE"`. You can find an official map list right below.
+
+## Alt Saved Directory
+
+By default, the default save directory is the default map name. However with the `altsavedirectoryname=` setting you can customise this if required.
 
 ### Official Map Names:
 
@@ -144,7 +148,7 @@ A cluster allows an admin to group ARK servers together, usually servers on diff
 
 ### Multi-Instance
 
-ARK will not work with LinuxGSM [multi instances ](../features/multiple-game-servers.md)in the same directory.
+ARK will not work with LinuxGSM [multi instances ](../features/multiple-game-servers.md)in the same directory. This is due to its reliance on `GameUserSettings.ini` meaning multiple instances must use the same settings.
 
 ### Adding Servers to Clusters
 
@@ -177,6 +181,6 @@ Ragnarok?SessionName=LinuxGSM Session 2?AltSaveDirectoryName=?ScorchedEarth_P?li
 ```
 
 {% hint style="warning" %}
-Servers which are running on _local networks_ sometimes have trouble travelling to other arks. A potential fix for this is adding `?MultiHome=0.0.0.0` to your command-line parameters.
+Servers which are running on _local networks_ sometimes have trouble travelling to other arks. A potential fix for this is adding `MultiHome=0.0.0.0` to your command-line parameters.
 {% endhint %}
 
