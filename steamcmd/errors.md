@@ -209,9 +209,9 @@ Some users may get a ulimit error \(no permission/cannot open file\) while scrip
 ulimit -n 2048
 ```
 
-## \[S\_API FAIL\] SteamAPI\_Init\(\) failed; SteamAPI\_IsSteamRunning\(\) failed.
+## ERROR! Failed to install app '&lt;appid\_number&gt;' \(No subscription\)
 
-Ignore the error, do not do anything to attempt to fix it. It is a known error that has been happening ever since SteamPipe was introduced \(this includes on Source1 games\). It does not cause any issue and can be ignored.
+The Steam account being used does not have a license for the required game.
 
 ## \[S\_API FAIL\] SteamAPI\_Init\(\) failed; SteamAPI\_IsSteamRunning\(\) failed.
 
