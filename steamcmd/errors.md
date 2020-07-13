@@ -213,6 +213,10 @@ ulimit -n 2048
 
 The Steam account being used does not have a license for the required game.
 
+## ERROR! Password check for AppId &lt;appid\_number&gt; returned error Failure.
+
+The password for the branch is incorrect.
+
 ## \[S\_API FAIL\] SteamAPI\_Init\(\) failed; SteamAPI\_IsSteamRunning\(\) failed.
 
 Ignore the error, do not do anything to attempt to fix it. It is a known error that has been happening ever since SteamPipe was introduced \(this includes on Source1 games\). It does not cause any issue and can be ignored.
