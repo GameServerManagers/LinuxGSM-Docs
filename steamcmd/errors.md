@@ -6,7 +6,7 @@ description: Common
 
 ## SteamCMD
 
-SteamCMD can sometimes output errors when something goes wrong. Sadly Valve have never released an official list of what the error messages mean. Because of this, a lot of guess work has been needed to figure it out. This page will highlight what we already know and info on researching what the error might mean in the hope that you can contribute to understanding SteamCMD errors.
+SteamCMD can sometimes output errors when something goes wrong. Sadly Valve has never released an official list of what the error messages mean. Because of this, a lot of guess work has been needed to figure it out. This page will highlight what we already know and info on researching what the error might mean in the hope that you can contribute to understanding SteamCMD errors.
 
 SteamCMD uses hexadecimal numbers to give its current "state". Every time SteamCMD does something it changes its state. When SteamCMD fails it will output its has hexadecimal state, for example `0x202`.
 
@@ -130,7 +130,7 @@ Error! App '<appid_number>' state is 0x6 after update job.
 
 |  |  |
 | :--- | :--- |
-| Reason |  |
+| Reason | No connection to content servers |
 | Hex | 0x6 |
 | Decimal/StateFlags | 6 |
 
