@@ -122,6 +122,20 @@ Error! App '<appid_number>' state is is 0x2 after update job.
 Missing content\_log.txt if you have it please let us know.
 {% endhint %}
 
+### Error 0x6
+
+```text
+Error! App '<appid_number>' state is 0x6 after update job.
+```
+
+|  |  |
+| :--- | :--- |
+| Reason |  |
+| Hex | 0x6 |
+| Decimal/StateFlags | 6 |
+
+{% file src="../.gitbook/assets/content\_log \(1\).txt" caption="0x6 example" %}
+
 ### 0x3
 
 ```text
