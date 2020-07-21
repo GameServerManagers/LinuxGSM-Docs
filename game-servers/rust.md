@@ -125,15 +125,35 @@ proc    /proc    proc    defaults,hidepid=2    0    0
 
 You still need to make one user per server, change ports, and repeat the install process. \(See [this](../features/multiple-game-servers.md) for more info\)
 
-## Server Wipe
+## Wipe
+
+A server wipe is used to reset a Rust server by deleting certain types of data about the map and players.
+
+### Map Wipe
+
+A map wipe is when the game server deletes \(wipes\) all the entity information by players interacting with the server, for example, buildings and objects, map resources are also reset. Individual player data however, is kept.
+
+To do a _Map wipe_ with LinuxGSM use the command:
 
 ```bash
 ./rustserver wipe
 ```
 
-Auto wipe
+### Blueprint Wipe
+
+A blueprint wipe is where player data is deleted \(wiped\). This includes player blueprints, entries, positions and inventories. Generally, a blueprint wipe only happens alongside a map wipe.
+
+To do a _Map+Blueprint wipe_ with LinuxGSM use the command:
 
 ```bash
-echo y | ./rustserver wipe
+./rustserver full-wipe
+```
+
+### Automated Wipe
+
+Using [cron](../configuration/cronjobs.md) it is possible to automate your server wipes. The below example will wipe the server every Sunday night at midnight.
+
+```bash
+0 0 * * 0 /home/rustserver/rustserver wipe > /dev/null 2>&1
 ```
 
