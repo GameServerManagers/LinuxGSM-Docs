@@ -42,7 +42,11 @@ The server then needs to be restarted to allow the game server to be listed.
 
 [source](https://cod4x.me/index.php?/forums/topic/2814-new-requirement-for-cod4-x-servers-to-get-listed-on-masterserver/)
 
-## Mods
+## Mod Support
+
+Mods for Call of Duty 4 have to be manually added to the game server.
+
+### Adding Mods
 
 To run a mod the servers `fs_game` variable must be set correctly. Mods reside in the `mods` folder inside `fs_homepath`. Example directory tree:
 
