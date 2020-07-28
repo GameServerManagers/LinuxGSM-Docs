@@ -46,6 +46,7 @@
   * [Unreal Tournament 2004](game-servers/unreal-tournament-2004.md)
   * [Unreal Tournament 3](game-servers/unreal-tournament-3.md)
 * [Guides](guides/README.md)
+  * [Security](guides/security.md)
   * [Make Webserver Case Insensitive](guides/make-webserver-case-insensitive.md)
   * [Sourcemod and Metamod:Source](guides/sourcemod-csgo-server.md)
 * [Alerts](alerts/README.md)
