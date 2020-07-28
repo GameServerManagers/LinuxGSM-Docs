@@ -2,7 +2,7 @@
 
 [![Mailgun logo](../.gitbook/assets/mailgun_logo.png)](https://www.mailgun.com/)
 
-[Mailgun](https://www.mailgun.com) is an email service that allows LinuxGSM to send emails via an API, bypassing the need to use postfix. This method of sending email notifications is generaly more reliable.
+[Mailgun](https://www.mailgun.com) is a paid-for email service that allows LinuxGSM to send emails via an API, bypassing the need to use postfix. This method of sending email notifications is generally more reliable.
 
 An option to setup Mailgun as an email relay in postfix is also available. 
 
