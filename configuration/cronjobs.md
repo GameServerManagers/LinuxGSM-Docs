@@ -1,25 +1,26 @@
 # cronjobs
 
-## Automation with cronjobs
+To automate LinuxGSM you can set scheduled tasks with cronjobs, to run any command at any given time.
 
-You can set scheduled tasks with cronjobs, to run any function at any given time.
-
-Most used ones are:
+Commonly used scheduled tasks are:
 
 * Automatically check for updates [\(update command\)](../commands/update.md)
 * Automatically check for server crash and restart if needed [\(monitor command\)](../commands/monitor.md)
-* Automatically keep LinuxGSM up to date [\(update-functions command\)](../commands/update-lgsm.md)
+* Automatically keep LinuxGSM up to date [\(update-lgsm command\)](../commands/update-lgsm.md)
 * Automatically restart the server at a given time [\(restart command\)](../commands/start-stop-restart.md)
 * Automatically update and restart the server [\(force-update command\)](../commands/force-update.md)
 
 ## Command
 
-To access and edit your cronjobs, input  
-`crontab -e`
+To access and edit your cronjobs use the following command.
 
-## Cronjob as user or root
+```bash
+crontab -e
+```
 
-When setting up cronjobs there is a choice of running them as a user or as root. If an admin runs several servers and wants to centrally manage cronjobs then using the root crontab is a good idea. If an admin wants them separated, the user crontab is best.
+## Cronjob as a user or root
+
+It is possible to set up cronjobs as any user including root. The recommended way is to set up cronjobs using the game servers user account. However, If you run several game server installations on your server you may want to centrally manage cronjobs then using the root. 
 
 ## Crontab Syntax
 
@@ -39,7 +40,7 @@ When setting up cronjobs there is a choice of running them as a user or as root.
 
 ### Temporal values
 
-`*` can be considered as "bypass" values by some, but means "whatever the value is, do it".  
+`*` can be considered as a "bypass" value by some, but means "whatever the value is, do it".  
 You can replace them by numerical values standing for  
 **minutes** - **hours** \(24h format\) - **days** - **month** - **day of the week** \(Sunday =0 to Saturday =6\)
 
@@ -48,13 +49,13 @@ While a `*/x` means every `x` time.
 
 Of course, you can combine those rules smartly to achieve what you want.
 
-**Every "x" time**
+#### **Every "x" time**
 
 In order to run a command, such as "monitor" every "x" time, there is a simple solution.  
 Replace `*` by `*/x`, "x" being the desired numerical value.  
 Think about defining smaller amounts of time to a fixed value when using this. For example, if you wish to have an "every two hours" cronjob, you'll need to set a fixed value for minutes.
 
-**Temporal values examples**
+#### **Temporal values examples**
 
 Every single minute  
 `* * * * *`
@@ -79,42 +80,46 @@ Every Wednesday at 1 AM
 Every five days at 1 AM  
 `0 1 */5 * *`
 
-#### Cronjob generator
+## Cronjob generator
 
-If you have any doubt about a particular syntax, you can use this generator : [http://crontab-generator.org/](http://crontab-generator.org/)
+If you are not used to setting up cronjobs you can use [crontab.guru](https://crontab.guru) as a great reference to get started.
 
 ## LinuxGSM Cronjobs examples
 
 ### Daily cronjobs
 
-**Replace the username and gameserver according to your case**
+{% hint style="info" %}
+Replace username and gameserver with your own details.
+{% endhint %}
 
-Here is an example of a user based cronjob for daily restart at 5am :
+Here is an example of a user based cronjob for a daily restart at 5 am
 
 ```bash
 0 5 * * *  /home/username/gameserver restart > /dev/null 2>&1
 ```
 
-Here is an example of a root based cronjob for daily restart at 5am :
+Here is an example of a root based cronjob for a daily restart at 5 am
 
 ```bash
 0 5 * * *  su - username -c '/home/username/gameserver restart' > /dev/null 2>&1
 ```
 
-### Every x time cronjobs
+### Every X Time cronjobs
 
-**Replace the username and gameserver according to your case**
+{% hint style="info" %}
+Replace username and gameserver with your own details.
+{% endhint %}
 
-Here is an example of a user based cronjob to monitor your server every 3 minutes :
+Here is an example of a user based cronjob to monitor your server every 3 minutes
 
 ```bash
-*/3 * * * *  /home/username/gameserver monitor > /dev/null 2>&1
+*/5 * * * *  /home/username/gameserver monitor > /dev/null 2>&1
 ```
 
-Here is an example of a root based cronjob to monitor your server every 3 minutes :
+Here is an example of a root based cronjob to monitor your server every 3 minutes
 
 ```bash
-*/3 * * * *  su - username -c '/home/username/gameserver monitor' > /dev/null 2>&1
+*/5 * * * *  su - username -c '/home/username/gameserver monitor' > /dev/null 2>&1
 ```
 
 ## Full examples
