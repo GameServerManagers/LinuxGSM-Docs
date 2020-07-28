@@ -12,7 +12,7 @@ Game Server Login Token is a new system by Valve for managing game servers.
 * Counter Strike: Source \(**required**\)
 * Day of Defeat: Source
 * Empires Mod
-* Garry’s Mod
+* Garry’s Mod \(**required**\)
 * Insurgency
 * No more Room in Hell \(**required**\)
 * Nuclear Dawn
