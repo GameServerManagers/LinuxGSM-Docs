@@ -1,14 +1,14 @@
 # distro
 
-Picking a distro to run a game server is a personal choice and different admins have different preferences. There is no correct answer to which distro an individual chooses. However there are some recommended choices when using LinuxGSM.
+Picking a distro to run a game server is a personal choice and different admins have different preferences. There is no correct answer to which distro an individual chooses. However, there are some recommended choices when using LinuxGSM.
 
-LinuxGSM developers primarily use Ubuntu for development and attempt to support the ones listed below. While LinuxGSM developers will attempt to support other distros there is no guarantee everything will work as expected, but should an issue occur, submitting github issues is welcome.
+LinuxGSM developers primarily use Ubuntu for development and attempt to support the ones listed below. While LinuxGSM developers will attempt to support other distros there is no guarantee everything will work as expected, but should an issue occur, submitting GitHub issues is welcome.
 
 ## Ubuntu
 
 ![](../.gitbook/assets/ubuntu_black-orange_hex_su.png)
 
-Ubuntu is a free and open-source Linux distribution based on Debian, and popular with game developers such as Valve. Game developers tend to prefer newer software when developing game servers, as Ubuntu regularly release updates and have an LTS \(Long-Term-Support\) release every 2 years it is very compatible with game servers. Ubuntu has generally been known to have a large community and get relatively forgiving to newer users. Ubuntu is also the main choice of for development of LinuxGSM. This means that Ubuntu is the recommended distro for LinuxGSM.
+Ubuntu is a free and open-source Linux distribution based on Debian, and popular with game developers such as Valve. Game developers tend to prefer newer software when developing game servers, as Ubuntu regularly release updates and have an LTS \(Long-Term-Support\) release every 2 years it is very compatible with game servers. Ubuntu has generally been known to have a large community and get relatively forgiving to newer users. Ubuntu is also the main choice of for the development of LinuxGSM. This means that Ubuntu is the recommended distro for LinuxGSM.
 
 It is recommended that only Ubuntu LTS releases are used for game servers because of the longer support life span compared with standard releases \(6 months\). It is also recommended that the latest LTS is used when installing a server. If a server is currently running on an older LTS and the game server is functioning upgrading is optional.
 
@@ -41,11 +41,13 @@ Debian 10 "Buster" is recommended
 | 9 | oldstable | Stretch | 17 June 2017 | 2020 | June 2022 |
 | 10 | stable | Buster | 6 July 2019 | 2022 | 2024 |
 
+[https://en.wikipedia.org/wiki/Debian\_version\_history\#Release\_table](https://en.wikipedia.org/wiki/Debian_version_history#Release_table)
+
 ## CentOS
 
 ![](../.gitbook/assets/centos.png)
 
-CentOS is a Linux distribution that provides a free, enterprise-class, community-supported computing platform functionally compatible with its upstream source, Red Hat Enterprise Linux. This means CentOS is considered a very stable enterprise grade distro and as such is very popular with server admins. CentOS also has a very long support cycle compared with other distros. The main downside to stability is that the latest software is not always available; this can be an issue when dealing with game servers.
+CentOS is a Linux distribution that provides a free, enterprise-class, community-supported computing platform functionally compatible with its upstream source, Red Hat Enterprise Linux. This means CentOS is considered a very stable enterprise-grade distro and as such is very popular with server admins. CentOS also has a very long support cycle compared with other distros. The main downside to stability is that the latest software is not always available; this can be an issue when dealing with game servers.
 
 {% hint style="warning" %}
 CentOS 6 is not supported by LinuxGSM
