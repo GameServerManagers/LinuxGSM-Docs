@@ -1,12 +1,12 @@
 # gamedig
 
-[GameDig](https://github.com/sonicsnes/node-gamedig) is a tool that queries game servers and returns outputs data from a query into json format. It can not only check if the game server is online but also return various data such as current maps and players. This allows `./gameserver details` to display live information.
+[GameDig](https://github.com/sonicsnes/node-gamedig) is a tool that queries game servers and returns outputs data from a query in to json format. It can return not only if the game server is online but various data such as current maps and players. This allows `./gameserver details` to display live information.
 
-GameDig super-seeds gsquery as the tool to monitor game servers. GameDig is currently optional but recommended and gsquery is kept to ensure compatibility as gamedig requires Node.js to be installed.
+GameDig super-seeds gsquery as the tool to monitor game servers. GameDig is currently optional but recommended and gsquery is kept to ensure compatibility because of gamedig requiring Node.js to be installed.
 
 ## Install Node.js
 
-GameDig requires [Node.js](https://nodejs.org) a JavaScript runtime environment installed to work. Use the following instructions to install Node.js.
+GameDig requires [Node.js](https://nodejs.org) a JavaScript runtime environment installed to work. Use the following instuctions to install Node.js.
 
 ### Remove existing NodeJS
 
@@ -30,20 +30,24 @@ Work in progress
 
 ### Install NodeJS
 
-Installing nodejs can be problematic, however, using the below should work well.
+Installing nodejs can be problematic, however using the below should work well.
 
 #### Ubuntu/Debian
 
 ```text
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
-sudo apt update && sudo apt install -y nodejs
+curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt update && sudo apt install -y nodejs yarn
 ```
 
 #### CentOS
 
 ```text
 curl -sL https://rpm.nodesource.com/setup_12.x | bash -
+curl -sL https://dl.yarnpkg.com/rpm/yarn.repo -o /etc/yum.repos.d/yarn.repo
 yum install nodejs
+yum install yarn
 ```
 
 ### Install GameDig npm
@@ -51,7 +55,7 @@ yum install nodejs
 Once nodejs is installed use npm to install gamedig with the following command.
 
 ```text
-npm install gamedig -g
+yarn global add gamedig
 ```
 
 ## Sample output
