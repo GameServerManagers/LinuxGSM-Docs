@@ -4,6 +4,58 @@
 
 ## Server Information
 
+### General Server Configuration
+
+Not all configuration can be done in the Game Server Config. Additional Configuration has to be done in the Factorio files.
+Path and file names might differ. It is assumed the server was set up according to [Facotrio Install docs](https://linuxgsm.com/lgsm/fctrserver/).
+
+#### Game Server Config (/lgsm/config-lgsm/fctrserver/fctrserver.cfg)
+
+you can adjust most settings in your Game Server Settings:
+
+```text
+## Server Start Settings | https://docs.linuxgsm.com/configuration/start-parameters
+ip="0.0.0.0"
+port="34197"
+rconport="34198"
+rconpassword="Change_Me"
+# (stable|experimental)
+branch="experimental"
+```
+check [Game Server Config Docs](https://docs.linuxgsm.com/configuration/game-server-config) for more information on how to use this.
+
+#### Factorio Server Config (/serverfiles/data/fctrserver.json)
+
+important settings are:
+```text
+{
+  "name": "Name of the game as it will appear in the game listing",
+  "description": "Description of the game that will appear in the listing",
+  "tags": ["game", "tags"],
+
+  "_comment_max_players": "Maximum number of players allowed, admins can join even a full server. 0 means unlimited.",
+  "max_players": 0,
+
+  ...
+
+  "_comment_credentials": "Your factorio.com login credentials. Required for games with visibility public",
+  "username": "",
+  "password": "",
+
+  "_comment_token": "Authentication token. May be used instead of 'password' above.",
+  "token": "",
+
+  "game_password": "",
+  ...
+    "_comment_autosave_interval": "Autosave interval in minutes",
+  "autosave_interval": 10,
+
+  "_comment_autosave_slots": "server autosave slots, it is cycled through when the server autosaves.",
+  "autosave_slots": 5,
+  ...
+  ```
+Enter your values on the right side of the :. Get your credentials from your profile from [Facotorio Website](www.Factorio.com). Either use username and token or username and password. This will show your game in the public server browser.
+
 ### World Generation Settings
 
 #### Overview
