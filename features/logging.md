@@ -19,7 +19,6 @@ You can alter these settings to change LinuxGSM behavior:
 ```bash
 logdays="7" # How long logs are kept
 consolelogging="on" # Turning this to off will disable console logging
-`
 ```
 
 _Note:_ `logdays="0"` _means logs will be removed if older than 24h._
