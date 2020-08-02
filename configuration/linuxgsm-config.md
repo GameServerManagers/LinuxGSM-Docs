@@ -44,11 +44,11 @@ Do not edit \_default.cfg any changes to this file will be overwritten.
 
 When LinuxGSM is loading the configs they will load in order. First taking settings from `_default.cfg` then `common.cfg` and finally `instance.cfg`. This means that any setting set in `instance.cfg` will override that setting in `common.cfg` which in turn will override the setting in `_default.cfg`.
 
-{% code title="LinuxGSM config load order" %}
+#### LinuxGSM config load order
+
 ```text
 _default.cfg -> common.cfg -> instance.cfg
 ```
-{% endcode %}
 
 ## How to Use
 
@@ -76,40 +76,38 @@ cat _default.cfg
 It is recommended you only copy settings you want to change from `_default.cfg` into `instance.cfg`. If any settings in \_default.cfg are updated with a new release of LinuxGSM they may not be picked up if all the settings have been copied.
 {% endhint %}
 
-When changing settings, copy individual settings from  `_default.cfg` into `common.cfg` or `instance.cfg` as required
+### Multiple Instances Configuration
 
+This configuration is useful for [multiple instances](../features/multiple-game-servers.md#single-installation-with-multiple-instances).
 
+1. Browse to the `config-lgsm` directory
 
+```text
+cd lgsm/config-lgsm/
+```
 
+2. Use `ls` to list the directory contents.
 
-3\) Copy the default config to your instance's config  
-`cat _default.cfg >> instance.cfg`  
-\(replace "instance.cfg" by your actual instance config name, for example "csgoserver.cfg" or "csgoserver-2.cfg"\)
+3. Use `cat` or `nano` to see the contents of `_default.cfg` .
 
-Now you can edit your instance file that contains all of your LinuxGSM and start parameters configuration.
+4. Copy any settings you want to apply to _all_ instances to `common.cfg`.
 
-4\) \(Optional\) Remove any part of the config of your `instance.cfg` that you want defaulted to benefit from new default settings automatically added in `_default.cfg`.
+{% hint style="info" %}
+It is recommended you only copy settings you want to change from `_default.cfg` into `instance.cfg`. If any settings in \_default.cfg are updated with a new release of LinuxGSM they may not be picked up if all the settings have been copied.
+{% endhint %}
 
-### Multiple instances configuration
+5. Copy any settings you want to apply to a specific instance to its `instance.cfg`.
 
-> This is only useful when running multiple instances of this install as per [Multiple Game Servers](../features/multiple-game-servers.md).
+```text
+csgoserver.cfg
+csgoserver-2.cfg
+```
 
-1\) Start by copying `_default.cfg` to `common.cfg`  
-`cat _default.cfg >> common.cfg`
-
-2\) \(Optional\) Remove any part of the config of your `common.cfg` that you want defaulted to benefit from new default settings automatically added in `_default.cfg`
-
-3\) Then edit your multiple `instance.cfg` files manually, copying the parameters that you need to be customized. It's best to use two SSH windows to be more efficient. Usually, you will want to set individually the IP, ports, server name and map if applicable, and set the rest from `common.cfg` or from `_default.cfg`
-
-4\) Then you can check that your servers work properly together, stop those you need to work on, and work on your [Game Server Config](game-server-config.md)
-
-### Examples
-
-Any setting listed in `instance.cfg` will override `common.cfg` which will override `_default.cfg`. And the other way around, any setting that is not listed in `instance.cfg` will take the value of the first parent config file where the value is set.
+## Examples
 
 #### Example 1
 
-Load `de_nuke` as default map on "csgoserver":
+Load `de_nuke` as default map on `csgoserver`:
 
 ```text
 _default.cfg: defaultmap="de_dust2"
@@ -119,7 +117,7 @@ csgoserver.cfg: defaultmap="de_nuke"
 
 #### Example 2
 
-Load `cs_office` as default map on "csgoserver":
+Load `cs_office` as default map on `csgoserver`:
 
 ```text
 _default.cfg: defaultmap="de_dust2"
@@ -129,22 +127,33 @@ csgoserver.cfg: NOT SET
 
 #### Example 3
 
-Load `de_dust2` as default map on "instance":
+Load `de_dust2` as default map on `csgoserver`:
 
 ```text
 _default.cfg: defaultmap="de_dust2"
 common.cfg: NOT SET
-instance.cfg: NOT SET
+csgoserver.cfg: NOT SET
 ```
 
 #### Example 4
 
-Load `de_nuke` as default map on "myawesomeinstance" and `de_inferno` on "mynewserver":
+Load `de_nuke` as default map on `csgoserver` instance and `de_inferno` on `csgoserver-2` instance:
 
 ```text
 _default.cfg: defaultmap="de_dust2"
 common.cfg: defaultmap="de_inferno"
-myawesomeinstance.cfg: defaultmap="de_nuke"
-mynewserver.cfg: NOT SET
+csgoserver.cfg: defaultmap="de_nuke"
+csgoserver-2.cfg: NOT SET
+```
+
+#### Example 5
+
+Load `de_nuke` as default map on `csgoserver` instance and `cs_office` on `csgoserver-2` instance:
+
+```text
+_default.cfg: defaultmap="de_dust2"
+common.cfg: NOT SET
+csgoserver.cfg: defaultmap="de_nuke"
+csgoserver-2.cfg: defaultmap="cs_office"
 ```
 
