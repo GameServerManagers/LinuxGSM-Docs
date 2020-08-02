@@ -1,15 +1,17 @@
 # Start Parameters
 
-Servers commonly require _start parameters_, these are command-line options that are set with the servers executable when you start the server. Parameters being used by the game server can be found in `./gameserver details`. To alter them, you will need to edit [LinuxGSM config files](linuxgsm-config.md).
+Many game servers require _start parameters_, these are command-line options that are set with the servers executable when the server starts. 
 
-LinuxGSM prefers to use config files over parameters as much as possible. However, sometimes this is not possible, win which case only parameters or a mixture of both config and parameters will be used. LinuxGSM also attempts to keep the same method between game servers of the same engine to allow consistency between game servers.
+Using [game server configs](game-server-config.md) over parameters is prefered, however, sometimes this is not an option. When this is the case only parameters or a mixture of game server config and parameters will be used.
 
-## Predefined Start Parameters
+Parameters being used by the game server can be found in `./gameserver details`. To alter them, you will need to edit [LinuxGSM config files](linuxgsm-config.md).
 
-LinuxGSM often comes with predefined parameters that can be edited. This makes adjusting common settings easier and allows them to be displayed in `./gameserver details`.
+## Predefined Parameters
+
+LinuxGSM often uses predefined parameters that can be edited. This makes adjusting common settings easier and allows them to be displayed in `./gameserver details`.
 
 ```text
-## Server Start Settings
+## Predefined Parameters | https://docs.linuxgsm.com/configuration/start-parameters
 defaultmap="map_name"
 gamemode="game_mode"
 maxplayers="42"
@@ -20,7 +22,9 @@ clientport="27005"
 
 ## Additional Parameters
 
-Additional command-line parameters can be added to the `parms` variable. Anything added will be appended to the server executable binary.
+Additional command-line parameters can be added to the `parms` setting. 
+
+Anything added will be appended to the server executable binary.
 
 ### Basic Example
 
@@ -31,7 +35,7 @@ Additional command-line parameters can be added to the `parms` variable. Anythin
 ### Full Example
 
 ```text
-## Server Start Parameters | https://github.com/GameServerManagers/LinuxGSM/wiki/Start-Parameters
+## Server Parameters | https://docs.linuxgsm.com/configuration/start-parameters#additional-parameters
 fn_parms(){
 parms="-game nmrih -strictportbind -ip 91.121.72.41 -port 27015 +clientport 27017 +tv_port 27016 +map nmo_broadway +servercfgfile nmrih-server-1.cfg -maxplayers 8"
 }

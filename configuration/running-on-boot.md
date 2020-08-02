@@ -42,15 +42,13 @@ systemctl disable ts3server # Disable start on boot
 
 ## Crontab
 
-The crontab will allow you to create [cronjobs](cronjobs.md) that allow you to run a command on a set time or on boot. The below example uses `@reboot` that will run a command on boot.
+The crontab will allow you to create [cronjobs](cronjobs.md) that allow you to run a command on a set time or on boot. The below examples uses `@reboot` that will run a command on boot.
 
 ```bash
     @reboot '/home/username/gameserver monitor' > /dev/null 2>&1
 ```
 
-{% hint style="info" %}
-Most admins will also have a timed monitor cronjob configured. If you do not want to have extra cronjobs the timed monitor will also start a server but with a timed delay.
-{% endhint %}
+> note: Most admins will also have a timed monitor cronjob configured. If you do not want to have extra cronjobs the timed monitor will also start a server but with a timed delay.
 
 ### Using `monitor` command
 
@@ -65,7 +63,7 @@ To learn more, see [cronjobs](cronjobs.md) and [automated monitoring](../command
 
 ### Using `start` command
 
-Start a game server unconditionally, even if you manually stop a server.
+Start a game server unconditionally, even if you manually stopped a server.
 
 ```bash
 crontab -e
