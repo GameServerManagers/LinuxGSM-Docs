@@ -7,7 +7,7 @@
 ### General Server Configuration
 
 Not all configuration can be done in the Game Server Config. Additional Configuration has to be done in the Factorio files.
-Path and file names might differ. It is assumed the server was set up according to [Facotrio Install docs](https://linuxgsm.com/lgsm/fctrserver/).
+Path and file names might differ. It is assumed the server was set up according to [Factorio Install docs](https://linuxgsm.com/lgsm/fctrserver/).
 
 #### Game Server Config (/lgsm/config-lgsm/fctrserver/fctrserver.cfg)
 
