@@ -15,11 +15,17 @@ serverfiles/ShooterGame/Saved/Config/LinuxServer/GameUserSettings.ini
 serverfiles/ShooterGame/Saved/Config/LinuxServer/Game.ini
 ```
 
+## Change Map
+
+You can change the map by editing the parameters in the [LinuxGSM config](../configuration/linuxgsm-config.md).
+
+Add the line `defaultmap="MAP_NAME_HERE"`. You can find an official map list right below.
+
 ## Alt Saved Directory
 
-The default save directory is the default map name. However with the `altsavedirectoryname=` setting you can customise this if required.
+By default, the default save directory is the default map name. However with the `altsavedirectoryname=` setting you can customise this if required.
 
-## Official Map Names
+### Official Map Names:
 
 * TheIsland
 * TheCenter
@@ -31,9 +37,15 @@ The default save directory is the default map name. However with the `altsavedir
 * Genesis
 * CrystalIsles
 
+## Change maximum players
+
+You can change the number of maximum players by editing the [instance config](../configuration/linuxgsm-config.md) `lgsm/config-lgsm/arkserver/arkserver.cfg`.
+
+Add the line `maxplayers=70`.
+
 ## Mod Support
 
-ARK server mods are managed using the [Steam Workshop](https://steamcommunity.com/app/346110/workshop/), this allows the auto-install and update of mods.
+ARK server mods are managed using the [Steam Workshop](https://steamcommunity.com/app/346110/workshop/), this allows the auto install and update of mods.
 
 ### Adding Mods
 
@@ -56,7 +68,7 @@ Edit `GameUserSettings.ini`, adding the following line under `[ServerSettings]`.
 ActiveMods=924619115
 ```
 
-Next, edit or create `Game.ini` and add the following section, this will enable auto-download of mods. To add multiple mods add another `ModIDS=` line underneath the first.
+Next edit or create `Game.ini` and add the following section, this will enable auto download of mods. To add multiple mods add another `ModIDS=` line underneath the first.
 
 ```text
 [ModInstaller]
@@ -81,7 +93,7 @@ UpdateInterval=24
 
 For more config options for WBUI see this [link](https://steamcommunity.com/workshop/filedetails/discussion/924619115/129069130858283275).
 
-Start the server and the mods will be automatically downloaded by the server. To check that this has worked open the console `./arkserver console`. In the console, you will see a message similar to the following.
+Start the server and the mods will be automatically downloaded by the server. To check that this has worked open the console `./arkserver console`. In the console you will see a message similar to the following.
 
 {% hint style="info" %}
 Large mods may take several minutes to download to the server.
@@ -124,7 +136,7 @@ The example mod can be activated by pressing `F1`.
 
 ### Mod Collections
 
-The Steam workshop has a feature that allows mods to be grouped in collections. Currently, Steam workshop collection ids won't work directly with ARK. Instead, you need to have all the individual ids of the mods you want to use.
+Steam workshop has a feature that allows mods to be grouped in collections. Currently steam workshop collection ids won't work directly with ARK. Instead, you need to have all the individual ids of the mods you want to use.
 
 {% hint style="success" %}
 To get individual item ids from collections you can use the [Steam Collection ID Grabber](https://tools.rusty.info/tools/stcolids/).
