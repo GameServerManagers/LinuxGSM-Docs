@@ -1,6 +1,6 @@
 # Stop Mode
 
-Stop mode allows a game server to gracefully shutdown by sending a stop signal to the server. The stop signal might be one of various commands such as `stop`,`quit`,`exit` etc. In some cases this is important to give the server time to save its state.
+Stop mode allows a game server to gracefully shutdown by sending a stop signal to the server. The stop signal might be one of the various commands such as `stop`,`quit`,`exit` etc. In some cases, this is important to give the server time to save its state.
 
 ```text
 # Stop Mode | https://docs.linuxgsm.com/features/stopmode

@@ -26,10 +26,10 @@ An understanding of how LinuxGSM handles [multiple game server](../features/mult
 
 #### \_default.cfg
 
-`_default.cfg` is the template config: The file is a base of all available default settings. It can not be edited and is updated by LinuxGSM when using `./gameserver update-lgsm`. This config is loaded first.
+`_default.cfg` is the template config, this file is a base of all available default settings. It can not be edited and is updated by LinuxGSM when using `./gameserver update-lgsm`. This config is loaded first.
 
 {% hint style="warning" %}
-Do not edit \_default.cfg any changes to this file will be overwritten
+Do not edit \_default.cfg any changes to this file will be overwritten.
 {% endhint %}
 
 #### common.cfg
@@ -38,7 +38,7 @@ Do not edit \_default.cfg any changes to this file will be overwritten
 
 #### instance.cfg
 
-`instance.cfg` is the configuration file used for each individual game server instance. Settings here will only apply to this specific game server instance. This config file takes the same name as the game server script `./gameserver`. For example if `./csgoserver` is used the _instance.cfg_ will be called `csgoserver.cfg`. This config is last to be loaded.
+`instance.cfg` is the configuration file used for each individual game server instance. Settings here will only apply to this specific game server instance. This config file takes the same name as the game server instance name `./gameserver`. For example, if `./csgoserver` is used the _instance.cfg_ will be called `csgoserver.cfg`. This config is last to be loaded.
 
 ### Config Load Priority
 
@@ -50,19 +50,37 @@ _default.cfg -> common.cfg -> instance.cfg
 ```
 {% endcode %}
 
-## How to use
+## How to Use
 
-**Warning**: When changing a variable that affects start parameters, or any other variable that are used later in the configuration file, you should always make sure that you copied the variable or function that is using it. For example, if changing `maxplayers=""`, you need to copy over the `fn_parms(){}` entirely as well so that it can take effect. If unsure, do as advised in the "Simple configuration" method and copy the whole template to your configuration file and you will be just fine.
+### Simple Configuration
 
-### Simple configuration
+This configuration fits most scenarios, where you have a simple installation with only one instance.
 
-This fits most scenarios, where you have a simple installation with only one instance.
+1. Browse to the `config-lgsm` directory
 
-1\) Browse to the `config-lgsm` directory  
-`cd lgsm/config-lgsm/`
+```text
+cd lgsm/config-lgsm/
+```
 
-2\) Use `ls` to view the content and find the name of your instance \(typically the name of your LinuxGSM server instance\)  
-`ls`
+2. Use `ls` to list the directory contents and find the name of your instance.cfg.
+
+3. Use `cat` or `nano` to see the contents of `_default.cfg` .
+
+```text
+cat _default.cfg
+```
+
+4. Copy the individual settings you want to change to `instance.cfg`
+
+{% hint style="info" %}
+It is recommended you only copy settings you want to change from `_default.cfg` into `instance.cfg`. If any settings in \_default.cfg are updated with a new release of LinuxGSM they may not be picked up if all the settings have been copied.
+{% endhint %}
+
+When changing settings, copy individual settings from  `_default.cfg` into `common.cfg` or `instance.cfg` as required
+
+
+
+
 
 3\) Copy the default config to your instance's config  
 `cat _default.cfg >> instance.cfg`  

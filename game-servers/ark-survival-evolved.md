@@ -25,7 +25,7 @@ Add the line `defaultmap="MAP_NAME_HERE"`. You can find an official map list rig
 
 By default, the default save directory is the default map name. However with the `altsavedirectoryname=` setting you can customise this if required.
 
-### Official Map Names
+### Official Map Names:
 
 * TheIsland
 * TheCenter
@@ -41,7 +41,7 @@ By default, the default save directory is the default map name. However with the
 
 You can change the number of maximum players by editing the [instance config](../configuration/linuxgsm-config.md) `lgsm/config-lgsm/arkserver/arkserver.cfg`.
 
-Add the line `maxplayers="70"`.
+Add the line `maxplayers=70`.
 
 ## Mod Support
 
