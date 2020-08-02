@@ -22,7 +22,7 @@ The majority of game servers using SteamCMD only require an _anonymous_ login. L
 
 ### Steam User Login
 
-Some game servers require you login to SteamCMD using a steam login to allow download of the server. Some also require you to own a copy of the game on the steam account.
+Some game servers require you to login to SteamCMD using a steam login to allow download of the server. Some also require you to own a copy of the game on the steam account.
 
 If this is the case LinuxGSM will prompt you on install to set a steam _username_ and _password._ This can be set by editing the following settings within the [LinuxGSM config](../configuration/linuxgsm-config.md).
 
@@ -50,7 +50,7 @@ SteamCMD prints out passwords in plain text meaning that the Steam login passwor
 
 Steam Guard is an additional layer of security that can be applied to a Steam account. The first layer is the account login credentials: the Steam account username and password. With Steam Guard, a second layer of security is applied to the account, making it harder for a Steam account to fall into the wrong hands.
 
-When Steam Guard is enabled on an account, when a login to from an unrecognized device happens an access code will be required as verification. Depending on the account Steam Guard settings, either an email with a code or a code from the Steam Mobile app on a smartphone is required.
+If Steam Guard is enabled on an account when a login to from an unrecognized device happens an access code will be required as verification. Depending on the account Steam Guard settings, either an email with a code or a code from the Steam Mobile app on a smartphone is required.
 
 {% hint style="info" %}
 For more info visit [steam support](https://support.steampowered.com/kb_article.php?ref=4020-ALZM-5519).
@@ -59,28 +59,28 @@ For more info visit [steam support](https://support.steampowered.com/kb_article.
 ### Authentication Methods for SteamCMD
 
 1. Username and password - No Steam Guard
-2. Username and password - Steam Guard via Email \(recommended\)
+2. Username and password - Steam Guard via Email
 3. Username and password - Steam Guard via Smartphone \(not compatible with LinuxGSM\)
 
 **Username and Password - No Steam Guard**
 
 Simply requires your Steam username and password.
 
-**Username and Password - Steam Guard via Email \(recommended\)**
+**Username and Password - Steam Guard via Email**
 
-Requires your Steam username and password but also you will receive and email on first login to SteamCMD and be required to enter a code. Once the code is entered your server is authorised to use the steam account you entered.
+Requires your Steam username and password and you will also receive an email on the first login to SteamCMD and be required to enter a code. Once the code is entered your server is authorised to use the steam account you entered.
 
 **Username and Password - Steam Guard via Smartphone \(not compatible with LinuxGSM\)**
 
-Requires your Steam Username & Password but also requires you have the Steam app on your phone to use 2-factor Authentication
+Requires your Steam Username & Password but also requires you have the Steam app on your phone to use 2-factor Authentication.
 
 ### Using Steam Guard with LinuxGSM
 
 Both options 1 & 2 work with LinuxGSM.
 
-Steam Guard via Smartphone is not compatible because it requires a code every time you login to SteamCMD. This is problematic if you want your servers to auto update.
+Steam Guard via Smartphone is not compatible because it requires a code every time you login to SteamCMD. This is problematic if you want your game servers to auto-update.
 
-If you have Steam Guard via email enabled the first time you start SteamCMD you will be prompted to enter a steam Guard code and you will receive an email with the code. Copy and paste the code in to the prompt and press enter. You will not need to enter a code again.
+If you have Steam Guard via email enabled the first time you start SteamCMD you will be prompted to enter a steam Guard code and you will receive an email with the code. Copy and paste the code into the prompt and press enter. You will not need to enter a code again.
 
 ## 
 
