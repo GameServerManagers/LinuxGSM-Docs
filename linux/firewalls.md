@@ -6,7 +6,7 @@ Firewalls can be physical hardware devices that sit on a network, or software th
 
 ## DDoS protection
 
-A [distributed denial-of-service](https://en.wikipedia.org/wiki/Denial-of-service_attack) \(DDoS\) attack occurs when multiple systems flood the bandwidth or resources of a targeted system, usually one or more web servers. Such an attack is often the result of multiple compromised systems \(for example, a botnet\) flooding the targeted system with traffic. A botnet is a network of zombie computers programmed to receive commands without the owners' knowledge. Server providers may offer DDoS protection, such as Arbor, that will mitigate such attacks before it reaches a server. However this feature is often provided as a premium feature meaning often only available on more expensive servers. Some providers may also provided sub-standard protection that may incorrectly filter traffic. So be aware of what protection if any a server provider has to protect your server.
+A [distributed denial-of-service](https://en.wikipedia.org/wiki/Denial-of-service_attack) \(DDoS\) attack occurs when multiple systems flood the bandwidth or resources of a targeted system, usually one or more web servers. Such an attack is often the result of multiple compromised systems \(for example, a botnet\) flooding the targeted system with traffic. A botnet is a network of zombie computers programmed to receive commands without the owners' knowledge. Server providers may offer DDoS protection, such as Arbor, that will mitigate such attacks before it reaches a server. However, this feature is often provided as a premium feature meaning often only available on more expensive servers. Some providers may also provide sub-standard protection that may incorrectly filter traffic. So be aware of what protection if a server provider has to protect your server.
 
 ### iptables
 
@@ -14,7 +14,7 @@ A [distributed denial-of-service](https://en.wikipedia.org/wiki/Denial-of-servic
 
 ### Protecting a game server
 
-One way to protect a game server is to rate limit incoming connections to the game server. Iptables will do this by dropping packets from a connection if it is sending too much traffic. This is particularly important if using the LinuxGSM monitor feature, as monitor relies on the query port being available. Should the query port be flooded with traffic it may become unavailable and LinuxGSM will assume the game server has crashed and reboot. The below example will rate limit traffic on port 27015 \(the default for source engine games\) to 10 requests every 60 seconds. Different game servers may require different rate limits, so it may be important to adjust the limits to ensure legitimate traffic does not get blocked.
+One way to protect a game server is to rate-limit incoming connections to the game server. Iptables will do this by dropping packets from a connection if it is sending too much traffic. This is particularly important if using the LinuxGSM monitor feature, as monitor relies on the query port being available. Should the query port be flooded with traffic it may become unavailable and LinuxGSM will assume the game server has crashed and reboot. The below example will rate-limit traffic on port 27015 \(the default for source engine games\) to 10 requests every 60 seconds. Different game servers may require different rate limits, so it may be important to adjust the limits to ensure legitimate traffic does not get blocked.
 
 ```text
 iptables -A INPUT -p udp -m udp --dport 27015 -m state --state NEW -m recent --set --name DEFAULT --rsource
@@ -27,7 +27,7 @@ Once you have created your port forwards and want to see if the internet can acc
 
 ### Networks with multiple gateways
 
-Some game servers \(like Rust\) register their external IP with steam when they start up. When you create port forwards to the game server, you need to make sure the port forward is on the address the outbound traffic is on. For example, say you have a router with two IPs from different ISPs;
+Some game servers \(like Rust\) register their external IP with steam when they startup. When you create port forwards to the game server, you need to make sure the port forward is on the address the outbound traffic is on. For example, say you have a router with two IPs from different ISPs;
 
 ```text
 [eth0] 192.168.1.1 (LAN)
@@ -39,6 +39,4 @@ Some game servers \(like Rust\) register their external IP with steam when they 
 ```
 
 If your traffic is going out WAN0 you need to put the port forwards on the 71.2.5.23 address. If your outbound traffic is going out WAN1 you would need to put your port forwards on 65.13.29.46.
-
-#### More rules to come. Feel free to edit this wiki if you know more.
 

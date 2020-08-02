@@ -2,16 +2,19 @@
 
 ![](../.gitbook/assets/factoriobanner.jpg)
 
-## Server Information
+## Server Resources
 
-### General Server Configuration
+* [World generation](https://wiki.factorio.com/World_generator)
+* [Factorio server Wiki](https://wiki.factorio.com/Multiplayer)
+* [Factorio console commands](https://wiki.factorio.com/Console#Command_line_parameters)
 
-Not all configuration can be done in the Game Server Config. Additional Configuration has to be done in the Factorio files.
-Path and file names might differ. It is assumed the server was set up according to [Factorio Install docs](https://linuxgsm.com/lgsm/fctrserver/).
+## Server Configuration
 
-#### Game Server Config (/lgsm/config-lgsm/fctrserver/fctrserver.cfg)
+Configuration for Factorio is split between both the [game server config](../configuration/game-server-config.md) and [start parameters](../configuration/start-parameters.md).
 
-you can adjust most settings in your Game Server Settings:
+### LinuxGSM Server Config 
+
+port, rcon and branch configuration is set using stat parameters
 
 ```text
 ## Server Start Settings | https://docs.linuxgsm.com/configuration/start-parameters
@@ -20,45 +23,54 @@ port="34197"
 rconport="34198"
 rconpassword="Change_Me"
 # (stable|experimental)
-branch="experimental"
+branch="stable"
 ```
-check [Game Server Config Docs](https://docs.linuxgsm.com/configuration/game-server-config) for more information on how to use this.
 
-#### Factorio Server Config (/serverfiles/data/fctrserver.json)
+### Game Server Config
 
-important settings are:
+All other settings are located in the Factorio [game server config](../configuration/game-server-config.md).
+
+```bash
+serverfiles/data/fctrserver.json
+```
+
+Useful settings include:
+
 ```text
-{
-  "name": "Name of the game as it will appear in the game listing",
-  "description": "Description of the game that will appear in the listing",
-  "tags": ["game", "tags"],
+"name": "Name of the game as it will appear in the game listing",
+"description": "Description of the game that will appear in the listing",
+"tags": ["game", "tags"],
 
-  "_comment_max_players": "Maximum number of players allowed, admins can join even a full server. 0 means unlimited.",
-  "max_players": 0,
+"_comment_max_players": "Maximum number of players allowed, admins can join even a full server. 0 means unlimited.",
+"max_players": 0,
 
-  ...
+"game_password": "",
 
-  "_comment_credentials": "Your factorio.com login credentials. Required for games with visibility public",
-  "username": "",
-  "password": "",
+"_comment_autosave_interval": "Autosave interval in minutes",
+"autosave_interval": 10,
 
-  "_comment_token": "Authentication token. May be used instead of 'password' above.",
-  "token": "",
+"_comment_autosave_slots": "server autosave slots, it is cycled through when the server autosaves.",
+"autosave_slots": 5,
+```
 
-  "game_password": "",
-  ...
-    "_comment_autosave_interval": "Autosave interval in minutes",
-  "autosave_interval": 10,
+### Server Credentials
 
-  "_comment_autosave_slots": "server autosave slots, it is cycled through when the server autosaves.",
-  "autosave_slots": 5,
-  ...
-  ```
-Enter your values on the right side of the :. Get your credentials from your profile from [Facotorio Website](www.Factorio.com). Either use username and token or username and password. This will show your game in the public server browser.
+If you want your server to be publicly listed on the server browser you will need to enter your profile credentials from the [Factorio website](https://www.factorio.com/profile). You can use either a _token_ or _password_.
 
-### World Generation Settings
+![Factorio Profile](../.gitbook/assets/factorioprofile.png)
 
-#### Overview
+```bash
+"_comment_credentials": "Your factorio.com login credentials. Required for games with visibility public",
+"username": "",
+"password": "",
+
+"_comment_token": "Authentication token. May be used instead of 'password' above.",
+"token": "",
+```
+
+## World Generation Settings
+
+### Overview
 
 Specifying world generation settings is a fairly simple task when creating a new world.
 
@@ -71,32 +83,29 @@ The steps to do so are as follows:
 
 Follow the Guide below for detailed instructions on doing the above.
 
-**Some things to note:**
+### Adjusting World Generation Settings
 
-* AFAIK there is no way currently to adjust world generation of an already-exisitng world. It may be possible, but there is no documentation on doing it.
-* I personally was unhappy with how the build-in world generation worked even after modifying the json file and opted to use the [Resource Spawner Overhaul mod](https://mods.factorio.com/mods/orzelek/rso-mod) instead. A guide of this will be included below as well. 
+Firstly, delete any existing worlds that are found in the `serverfiles` directory.
 
-#### Adjusting World Generation Settings \(No Mods\)
-
-Navigate to the root folder of your Factorio installation.
-
-First we need to delete any existing worlds from the `serverfiles` directory. \(This is a great time to make backups if you have any progress you would like to save\).
+{% hint style="info" %}
+Remember to backup your server
+{% endhint %}
 
 ```bash
-cd serverfiles/
-rm -rf save1.zip # this will PERMANENTLY delete your world
-rm -rf saves/* # this folder will only exist if you have ran the server
+cd serverfiles
+rm save1.zip # this will delete your world.
+rm -r saves # this directory will only exist if you have ran the server.
 ```
 
-Now go to the `data` directory, copy the example files, then tweak them to your liking.
+In the `data` directory, copy the example files, then and customise them to your requirements.
 
 ```bash
-cd data/
+cd data
 cp map-gen-settings.example.json map-gen-settings.json
-cp cp map-settings.example.json map-settings.json
+cp map-settings.example.json map-settings.json
 ```
 
-Open the files with your favorite text editor. For `map-gen-settings.json`, the [ore generation values](https://lua-api.factorio.com/latest/Concepts.html#MapGenSize) can be:
+In `map-gen-settings.json`, the [ore generation values](https://lua-api.factorio.com/latest/Concepts.html#MapGenSize) can be:
 
 ```text
 "none" - equivalent to 0
@@ -107,16 +116,16 @@ Open the files with your favorite text editor. For `map-gen-settings.json`, the 
 "very-high", "very-big", "very-good" - equivalent to 2
 ```
 
-Then it's time to use these files to generate your world. Enter back into the `serverfiles` directory and call the factorio binary:
+Once complete you will need to generate your World. Go back to the `serverfiles` directory and run the Factorio binary.
 
 ```bash
-cd ..
+cd ../
 ./bin/x64/factorio --create ./save1.zip --map-gen-settings data/map-gen-settings.json --map-settings data/map-settings.json
 ```
 
-#### Adjusting World Generation Settings \(Mods\)
+### Adjusting World Generation Settings \(Mods\)
 
-I prefer the added customization of the [Resource Overhaul Mod](https://mods.factorio.com/mods/orzelek/rso-mod) to the built in generation.
+I prefer the added customisation of the [Resource Overhaul Mod](https://mods.factorio.com/mods/orzelek/rso-mod) to the built-in generation.
 
 The easiest way that I've found to generate a world with the RSO mod \(and add mods in general\) is as follows:
 
@@ -160,13 +169,5 @@ rm -rf saves/* # this folder will only exist if you have ran the server
 
 Once you've done that, you're good to start the server.
 
-#### References
 
-[https://lua-api.factorio.com/latest/Concepts.html\#MapGenSize](https://lua-api.factorio.com/latest/Concepts.html#MapGenSettings)
-
-[https://wiki.factorio.com/World\_generator](https://wiki.factorio.com/World_generator)
-
-[https://wiki.factorio.com/Multiplayer\#](https://wiki.factorio.com/Multiplayer#)
-
-[https://wiki.factorio.com/Console\#Command\_line\_parameters](https://wiki.factorio.com/Console#Command_line_parameters)
 
