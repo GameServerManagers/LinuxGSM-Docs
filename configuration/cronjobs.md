@@ -173,12 +173,14 @@ Here is an example of a root based cronjob to monitor your server every 3 minute
 #*/5 * * * * su - rustmodded -c '/home/rustmodded/rustserver monitor' > /dev/null 2>&1
 #30 6 * * *  su - rustmodded -c '/home/rustmodded/zip-updater/zip-updater' > /dev/null 2>&1
 #0 0 * * 0 su - rustmodded -c '/home/rustmodded/rustserver uf' > /dev/null 2>&1
+#* 0 * * * su - rustmodded -c 'echo y | /home/rustmodded/rustserver wipe' > /dev/null 2>&1
 
 #Vanilla
 */5 * * * * su - rustvanilla -c '/home/rustvanilla/rustserver monitor' > /dev/null 2>&1
 */30 * * * * su - rustvanilla -c '/home/rustvanilla/rustserver update' > /dev/null 2>&1
 30 6 * * *  su - rustvanilla -c '/home/rustvanilla/rustserver fu' > /dev/null 2>&1
 0 0 * * 0 su - rustvanilla -c '/home/rustvanilla/rustserver uf' > /dev/null 2>&1
+* 0 * * * su - rustvanilla -c 'echo y | /home/rustvanilla/rustserver wipe' > /dev/null 2>&1
 
 ###ARK###
 */30 * * * * su - arkserver -c '/home/arkserver/arkserver monitor' > /dev/null 2>&1
