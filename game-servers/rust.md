@@ -8,6 +8,8 @@
 * CPU: Dual core 3.4GHz, Rust is mono thread
 * Bandwidth: 10mbps upload
 
+> note The server autosave can cause lag, depending on the CPU and disk speed.
+
 ## Modded server with Oxide
 
 LinuxGSM supports downloading, updating, or removing Oxide.

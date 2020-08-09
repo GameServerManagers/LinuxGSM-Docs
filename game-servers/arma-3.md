@@ -1,5 +1,9 @@
 # Arma 3
 
+## Resources
+
+* [ArmA3 Server tutorial](https://forums.bohemia.net/forums/topic/139003-tutorial-installation-configuration-of-arma3-dedicated-server/)
+
 ## Headless Client
 
 ### Headless Client Overview
@@ -43,18 +47,21 @@ Only a logged in admin can see the headless clients in the player menu on the se
 
 ## Adding Mods
 
-Incorporating mods into the server is not supported by LinuxGSM. The following guide is a general process for getting modules to load with your server. However, issues loading modules should be taken up with the mod developers.
+The following guide is a general process for getting mods to load with your server.
 
-For a standard deployment, you will want to have your modules unpacked under `serverfiles/mods`. For example, your directory structure might have the following raw modules unpacked under `serverfiles/mods`:
+### Mods Directory
+
+It is recommended you store all your mods in the `serverfiles/mods` directory
+
+Any mod directories you download normally start with an `@` for example.
 
 ```text
-[arma3server@localhost mods]$ ls
-@ace @AdvancedTowing @CBA_A3 @RHSUSAF @AdvancedRappelling @AdvancedUrbanRappelling @RHSAFRF @AdvancedSlingLoading @Ares @RHSGREF
+@CBA_A3
 ```
 
 ### Lower Case file names
 
-The server demands that the modules possess all lowercase names. Since not all mods do this all files with uppercase letters will need or be converted. This can be done my using the following script.
+ArmA 3 server requires that the mods possess all lowercase names. Since not all mods do this all files with uppercase letters will need or be converted. This can be done by using the following script.
 
 Run the script from the `mods` directory.
 
@@ -69,9 +76,6 @@ then
 fi
 done
 echo "the depth is ${depth}"
-```
-
-```text
 for ((i=1;i<=${depth};i++))
 do
   for x in $(find . -maxdepth $i | grep [A-Z])
@@ -81,24 +85,16 @@ do
 done
 ```
 
-All mods should now be in lowercase
-
-```text
-arma3server@gamebox3:~/serverfiles/mods$ ls
-@ace  @advancedrappelling  @advancedslingloading  @advancedtowing  @advancedurbanrappelling  @ares  @cba_a3  @rhsafrf  @rhsusaf
-```
-
-Next ensure that all the mods are correctly named in the LinuxGSM config. Ensuring that that only the semicolons are escaped `\`.
+Next, ensure that all the mods are listed in the LinuxGSM config. Ensuring that semicolons are escaped `\`.
 
 ```text
 mods="mods/@ace\;mods/@advancedrappelling\;mods/@advancedslingloading\;mods/@advancedtowing\;mods/@advancedurbanrappelling\;mods/@ares\;mods/@cba_a3\;mods/@rhsafrf\;mods/@rhsusaf"
 ```
 
 Start the server and check that your mods all have valid hashes.  
-You should see something similar to the following in your gameserver [log](../features/logging.md) file:
+You should see something similar to the following in your `console` [log](../features/logging.md)file.
 
 ```text
-arma3server@gamebox3:~$ grep "List of mods" log/console/arma3-server-console.log  -A25
  1:21:05 ============================================================================================= List of mods ===============================================================================================
  1:21:05 modsReadOnly = true
  1:21:05 safeModsActivated = false
