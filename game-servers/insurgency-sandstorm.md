@@ -1,8 +1,8 @@
 # Insurgency: SandStorm
 
-## Mods and Maps
+## Custom Mods and Maps
 
-Custom Mods and Maps are supported in Insurgency: Sandstorm via [mods.io](https://mods.io/). Please use this basic guide to get started using custom mods more in depth information can be found at [mod.io Server Admin Guide](https://insurgencysandstorm.mod.io/guides/server-admin-guide)
+Custom Mods and Maps are supported in Insurgency: Sandstorm via [mods.io](https://mods.io/). Please use this basic guide to get started using custom mods more in-depth information can be found at [mod.io Server Admin Guide](https://insurgencysandstorm.mod.io/guides/server-admin-guide)
 
 {% hint style="info" %}
 This guide will show you how to install the custom map [TORO](https://insurgencysandstorm.mod.io/toro) as an example
