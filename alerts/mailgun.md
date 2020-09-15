@@ -17,3 +17,10 @@ mailgunemailfrom="alert@example.com"
 mailgunemail="email@myemail.com"
 ```
 
+## EU Api endpoint
+
+To set the api endpoint of the mailgun api to the EU Endpoint, please add the following to the config:
+
+```
+mailgunapiregion="eu"
+```
