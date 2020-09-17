@@ -2,19 +2,19 @@
 
 ![](../.gitbook/assets/pushover_logo.png)
 
-[Pushover](https://pushover.net) allows the sending of push notifications to various devices such a PC, phone and tablet. This functionality is used to allow users to recieve alerts about LinuxGSM.
+[Pushover](https://pushover.net) allows the sending of push notifications to various devices such a PC, phone and tablet. This functionality is used to allow users to receive alerts about LinuxGSM.
 
 ## Setup Pushover Alerts
 
-A Pushover application is required to send messages to Pushover. 
+A Pushover application and your user key is required to send messages to Pushover. 
 
 Visit [here](https://pushover.net/apps/build) to create a new application.
 
 * name: LinuxGSM
 * Check the box agreeing to the Terms Of Service.
 
-Once the application has been created get the API key.  
-Turn on Pushover alerts and paste in API key and user in the [LinuxGSM config](../configuration/linuxgsm-config.md).
+Once the application has been created get the API key and user key \(which can be found in the pushover dashboard\).  
+Turn on Pushover alerts and paste in API key and user key in the [LinuxGSM config](../configuration/linuxgsm-config.md).
 
 ```text
 # Pushover Alerts | https://github.com/GameServerManagers/LinuxGSM/wiki/Pushover
