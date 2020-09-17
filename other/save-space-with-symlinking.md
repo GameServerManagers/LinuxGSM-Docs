@@ -10,7 +10,7 @@ Symlinks create another path to a file or folder and are useful for saving space
 
 This guide is for pointing multiple directories to the same folder by creating symlinks with the `ln` command.
 
-In my example I symlink 
+As an example, to save space hosting Killing Floor 2 
 
 ## Symlink and ln command resources
 
