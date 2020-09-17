@@ -100,3 +100,7 @@ Finally, test that everything correctly works by sending a test alert. You will 
 ./gameserver test-alert
 ```
 
+## Custom cURL String
+
+You can add a custom cURL string eg proxy \(useful in Russia\) in "curlcustomstring"
+
