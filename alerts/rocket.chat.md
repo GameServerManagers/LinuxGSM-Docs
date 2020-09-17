@@ -1,4 +1,4 @@
-# Rocket.chat
+# Rocket.Chat
 
 WIP
 

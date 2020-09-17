@@ -53,7 +53,7 @@
   * [Mailgun](alerts/mailgun.md)
   * [Pushbullet](alerts/pushbullet.md)
   * [Pushover](alerts/pushover.md)
-  * [Rocket.chat](alerts/rocket.chat.md)
+  * [Rocket.Chat](alerts/rocket.chat.md)
   * [Telegram](alerts/telegram.md)
   * [Slack](alerts/slack.md)
 * [Dependencies](requirements/README.md)
