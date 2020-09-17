@@ -9,9 +9,9 @@ There are hundreds in integrations available on [IFTTT](https://ifttt.com) allow
 To enable IFTTT you will need to setup a Webhooks integration.
 
 1. Visit [https://ifttt.com/maker\_webhooks](https://ifttt.com/maker_webhooks)
-2. Login and connect the Webhooks intergration
+2. Login and connect the Webhooks integration
 3. Select `Documentation` to get your IFTTT API key.
-4. Paste the API key in to [LinuxGSM settings](../configuration/linuxgsm-config.md).
+4. Paste the API key into [LinuxGSM settings](../configuration/linuxgsm-config.md).
 
 ```text
 # IFTTT Alerts | https://github.com/GameServerManagers/LinuxGSM/wiki/IFTTT
@@ -35,7 +35,7 @@ iftttevent="linuxgsm_alert"
 
 IFTTT allows 3 different values to be sent using the webhook; `Value1`, `Value2` and `Value3`. LinuxGSM sends different data for each value as listed below.
 
-* Value1: Sends the servicename of the server e.g `csgoserver`
+* Value1: Sends the name of the server e.g `csgoserver`
 * Value2: Sends an alert subject e.g `Alert - csgoserver - Test`
 * Value3: Sends an alert summary message.
 
