@@ -1,6 +1,6 @@
 # Email
 
-A linux server's own email solution can be used to receive alerts about LinuxGSM.
+A Linux server's own email solution can be used to receive alerts about LinuxGSM.
 
 ## Sending emails
 
