@@ -8,6 +8,8 @@
   * [Start Parameters](configuration/start-parameters.md)
   * [cronjobs](configuration/cronjobs.md)
   * [Running on Boot](configuration/running-on-boot.md)
+  * [Local/Home Server](configuration/local-home-server.md)
+  * [IP Address](configuration/ip-address.md)
   * [Ports](configuration/ports.md)
   * [LinuxGSM Stats](configuration/linuxgsm-stats.md)
 * [Commands](commands/README.md)
