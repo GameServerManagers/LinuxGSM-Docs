@@ -1,6 +1,6 @@
 # Telegram
 
-[Telegram](https://telegram.org) is an instant messenger app that allows other applications to send messages via a webhook. This functionality is used to allow users to receive alerts about LinuxGSM.
+[Telegram](https://telegram.org) is an instant messenger app that allows other applications to send messages via a webhook. This functionality is used to allow users to recieve alerts about LinuxGSM.
 
 ## Setup a Telegram Bot
 
@@ -75,7 +75,7 @@ Add the chat id to the [LinuxGSM config](../configuration/linuxgsm-config.md).
 The number given is the chat id
 
 {% hint style="warning" %}
-A group number might include a dash in the chat id e.g `-191537238`
+A group number includes a dash in the chat id e.g `-191537238`
 {% endhint %}
 
 ```text
@@ -99,8 +99,4 @@ Finally, test that everything correctly works by sending a test alert. You will 
 ```text
 ./gameserver test-alert
 ```
-
-## Custom cURL String
-
-You can add a custom cURL string eg proxy \(useful in Russia\) in "curlcustomstring"
 
