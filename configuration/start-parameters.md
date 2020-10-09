@@ -49,7 +49,6 @@ parms="-game nmrih -strictportbind -ip 91.121.72.41 -port 27015 +clientport 2701
 * [Memories Of Mars](https://memoriesofmars.gamepedia.com/Dedicated_Servers#Overriding_with_Commandline_Arguments):
 * [Natural Selection 2](%20http://wiki.unknownworlds.com/ns2/Dedicated_Server)
 * [Rust](https://developer.valvesoftware.com/wiki/Rust_Dedicated_Server)
-* [Serious Sam 3](https://github.com/GameServerManagers/Game-Server-Configs/blob/master/SeriousSam3BFE/help/DedicatedServer_Readme.txt)
 * [Squad](%20http://squad.gamepedia.com/Server_Configuration#Command_Line)
 * [Killing Floor 2](%20https://wiki.tripwireinteractive.com/index.php?title=Dedicated_Server_%28Killing_Floor_2%29#Advanced_Configuration)
 
