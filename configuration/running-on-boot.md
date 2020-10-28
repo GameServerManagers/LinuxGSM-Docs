@@ -18,10 +18,10 @@ Wants=network-online.target
 Type=forking
 User=ts3server
 WorkingDirectory=/home/ts3server
+RemainAfterExit=yes   #Assume that the service is running after main process exits with code 0
 ExecStart=/home/ts3server/ts3server start
 ExecStop=/home/ts3server/ts3server stop
 Restart=no
-RemainAfterExit=yes   #Assume that the service is running after main process exits with code 0
 
 [Install]
 WantedBy=multi-user.target
