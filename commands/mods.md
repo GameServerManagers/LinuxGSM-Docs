@@ -25,12 +25,23 @@ Zip add-ons are currently the only supported installations.
 
 ## Supported mods/add-ons
 
-\(This list was last updated on 2017-01-28\)
+\(This list was last updated on 2020-11-19\)
+
+### Goldsrc Engine Games (v20.6.0+)
+* Metamod
+* AMX Mod X
+
+###### Additional Game Specific **AMX Mod X** addons:
+* Counter-Strike 1.6
+* Day of Defeat
+* Team Fortress Classic
+* The Specialists
+* Natural Selection
 
 ### Source Engine Games
 
-* metamod
-* sourcemod \(1.8\)
+* Metamod: Source
+* SourceMod
 
 #### For Garry's Mod
 
