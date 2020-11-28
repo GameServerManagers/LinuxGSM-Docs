@@ -41,7 +41,7 @@
   * [Insurgency: SandStorm](game-servers/insurgency-sandstorm.md)
   * [Killing Floor 2](game-servers/killing-floor-2.md)
   * [Factorio](game-servers/factorio.md)
-  * [Minecraft](game-servers/minecraft.md)
+  * [Minecraft \(Java Edition\)](game-servers/minecraft.md)
   * [Multi Theft Auto](game-servers/multi-theft-auto.md)
   * [Rust](game-servers/rust.md)
   * [Sven Co-op](game-servers/sven-co-op.md)
