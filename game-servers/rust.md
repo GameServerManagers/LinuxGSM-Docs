@@ -31,6 +31,10 @@ LinuxGSM supports downloading, updating, or removing Oxide.
 Server RCON administration tool  
 [http://oxidemod.org/resources/rusty-server-rcon-administration-tool.53/](http://oxidemod.org/resources/rusty-server-rcon-administration-tool.53/)
 
+### Online Rcon tool by facepunch
+
+[https://facepunch.github.io/webrcon/](https://facepunch.github.io/webrcon/)
+
 ## Wipe
 
 A server wipe is used to reset a Rust server by deleting certain types of data about the map and players.
