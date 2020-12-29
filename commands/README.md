@@ -18,7 +18,7 @@ Replace `./gameserver` with the actual script name. Every command has a short ve
 | [Monitor](monitor.md) | `./gameserver monitor` | `./gameserver m` |
 | [Test Alert](test-alert.md) | `./gameserver test-alert` | `./gameserver ta` |
 | [Update](update.md) | `./gameserver update` | `./gameserver u` |
-| [Check Update](check-update.md) | `./gameserver check-update` | `./gameserver cu` |
+| [Check Update](https://github.com/GameServerManagers/LinuxGSM-Docs/tree/2374d4f323cf26c175af85e0eb50332597f44e41/commands/check-update.md) | `./gameserver check-update` | `./gameserver cu` |
 | [Force Update](force-update.md) | `./gameserver force-update` | `./gameserver fu` |
 | [Validate](validate.md) | `./gameserver validate` | `./gameserver v` |
 | [Console](console.md) | `./gameserver console` | `./gameserver c` |

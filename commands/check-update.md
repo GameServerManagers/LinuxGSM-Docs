@@ -1,6 +1,6 @@
 # check-update
 
-LinuxGSM comes with an game server `check-update` command. All [SteamCMD](../steamcmd/) games servers are supported.
+LinuxGSM comes with a game server `check-update` command. All [SteamCMD](../steamcmd/) games servers are supported.
 
 ## Commands
 
@@ -8,15 +8,17 @@ Standard: `./gameserver check-update`
 
 Short: `./gameserver cu`
 
-Check-update will check for any available update, taking no action if no update is available. If there is an update it will send a alert if one is set up.
+Unlike the [update](update.md) command `check-update` will check for any available update and taking no action if no update is available. If there is an update it will send an alert.
 
-## Automatic check for avaliupdate 
+## Automatic check for update
 
-### Scheduled check for updates updates
+### Scheduled check for updates
 
 A [cronjob](../configuration/cronjobs.md) can be set to run `check-update` at any given time.
 
-Currently a cronjob is only makes sense if a [Alert](../alerts/README.md) is set up.
+{% hint style="warning" %}
+Ensure that an [alert](../alerts/) is configured so you are alerted to any updates
+{% endhint %}
 
 To edit cronjobs, type:
 
@@ -30,7 +32,7 @@ Here is an example of a user based cronjob to check for an update once an hour.
 0 * * * * /home/username/gameserver check-update > /dev/null 2>&1
 ```
 
-Here is an example of a root based cronjob to check for an check-update once an hour.
+Here is an example of a root based cronjob to check for an update once an hour.
 
 {% hint style="info" %}
 The extra `su - username -c` indicates which user to run the script as.

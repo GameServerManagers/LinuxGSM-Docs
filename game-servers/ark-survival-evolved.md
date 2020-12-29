@@ -116,7 +116,7 @@ If you join before the server or your client has fully downloaded the mod you mi
 
 Once you have connected to the server you will be able to see that the mod has loaded by seeing the _Mod Name_ in the game menu `Esc`.
 
-![](../.gitbook/assets/image%20%281%29.png)
+![](../.gitbook/assets/image%20%281%29%20%281%29.png)
 
 The example mod can be activated by pressing `F1`.
 
