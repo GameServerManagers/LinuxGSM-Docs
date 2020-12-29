@@ -1,6 +1,6 @@
 # IFTTT
 
-![](../.gitbook/assets/ifttt_logo-1.png)
+![](../.gitbook/assets/ifttt_logo.png)
 
 There are hundreds in integrations available on [IFTTT](https://ifttt.com) allowing you to send alerts in all sorts of different ways to various services and devices. This functionality is used to allow users to recieve alerts about LinuxGSM.
 

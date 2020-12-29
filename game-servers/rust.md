@@ -131,5 +131,3 @@ server.writecfg ; will save config changes, including new admins
 
 > Note: append `server.writecfg` after adding an admin, and player needs to reconnect the server in order for it to be applied.
 
-
-

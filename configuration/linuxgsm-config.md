@@ -40,6 +40,18 @@ Do not edit \_default.cfg any changes to this file will be overwritten.
 
 `instance.cfg` is the configuration file used for each individual game server instance. Settings here will only apply to this specific game server instance. This config file takes the same name as the game server instance name `./gameserver`. For example, if `./csgoserver` is used the _instance.cfg_ will be called `csgoserver.cfg`. This config is last to be loaded.
 
+### Secret Configs
+
+{% hint style="danger" %}
+Secret configs are not enrypted, but a place to store sensetive info away from other configs.
+{% endhint %}
+
+The secret configs are a place to put sensitive information such as steam login details away from the main config files. This is done to allow server admins to backup their configs while excluding sensitive information. This is particularly useful for admins who want to create a version-controlled skeleton configuration using git that they might want to make public.
+
+It is important to know that the secret config is NOT encrypted or any more secure than other configs.
+
+A secret config can be identified with the word `secrets` prepended to the front of the config name.
+
 ### Config Load Priority
 
 When LinuxGSM is loading the configs they will load in order. First taking settings from `_default.cfg` then `common.cfg` and finally `instance.cfg`. This means that any setting set in `instance.cfg` will override that setting in `common.cfg` which in turn will override the setting in `_default.cfg`.
