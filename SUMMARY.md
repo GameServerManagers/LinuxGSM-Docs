@@ -20,6 +20,7 @@
   * [console](commands/console.md)
   * [debug](commands/debug.md)
   * [update](commands/update.md)
+  * [check-update](commands/check-update.md)
   * [force-update](commands/force-update.md)
   * [validate](commands/validate.md)
   * [update-lgsm](commands/update-lgsm.md)
