@@ -30,15 +30,13 @@ Anything added will be appended to the server executable binary.
 
 | Parms variable | Executable |
 | :--- | :--- |
-| `parms="-game nmrih"` | `./srcds_run -game nmrih` |
+| `startparameters="-game nmrih"` | `./srcds_run -game nmrih` |
 
 ### Full Example
 
 ```text
 ## Server Parameters | https://docs.linuxgsm.com/configuration/start-parameters#additional-parameters
-fn_parms(){
-parms="-game nmrih -strictportbind -ip 91.121.72.41 -port 27015 +clientport 27017 +tv_port 27016 +map nmo_broadway +servercfgfile nmrih-server-1.cfg -maxplayers 8"
-}
+startparameters="-game nmrih -strictportbind -ip 91.121.72.41 -port 27015 +clientport 27017 +tv_port 27016 +map nmo_broadway +servercfgfile nmrih-server-1.cfg -maxplayers 8"
 ```
 
 ## Parameters reference
@@ -46,7 +44,7 @@ parms="-game nmrih -strictportbind -ip 91.121.72.41 -port 27015 +clientport 2701
 * 7 Days to Die
 * Gold Source Servers
 * [Source Dedicated Servers](https://developer.valvesoftware.com/wiki/Command_Line_Options#Source_Dedicated_Server)
-* [Memories Of Mars](https://memoriesofmars.gamepedia.com/Dedicated_Servers#Overriding_with_Commandline_Arguments):
+* [Memories Of Mars](https://memoriesofmars.gamepedia.com/Dedicated_Servers#Overriding_with_Commandline_Arguments)
 * [Natural Selection 2](%20http://wiki.unknownworlds.com/ns2/Dedicated_Server)
 * [Rust](https://developer.valvesoftware.com/wiki/Rust_Dedicated_Server)
 * [Squad](%20http://squad.gamepedia.com/Server_Configuration#Command_Line)

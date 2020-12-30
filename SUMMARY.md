@@ -28,6 +28,7 @@
   * [map-compressor](commands/map-compressor.md)
   * [details](commands/details.md)
   * [mods](commands/mods.md)
+  * [skeleton](commands/skeleton.md)
   * [fastdl](commands/fastdl.md)
   * [change-password](commands/change-password.md)
 * [Game Servers](game-servers/README.md)
