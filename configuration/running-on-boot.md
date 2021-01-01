@@ -45,10 +45,10 @@ You need to reload the systemd-daemon once to make it aware of the new service f
 Now you can do (as root)
 
 ```bash
-systemctl start <gameserver> # Start the server
-systemctl stop <gameserver>  # Stop the server
-systemctl enable <gameserver> # Enable start on boot
-systemctl disable <gameserver> # Disable start on boot
+systemctl start gameserver # Start the server
+systemctl stop gameserver # Stop the server
+systemctl enable gameserver # Enable start on boot
+systemctl disable gameserver # Disable start on boot
 ```
 
 ## Crontab
