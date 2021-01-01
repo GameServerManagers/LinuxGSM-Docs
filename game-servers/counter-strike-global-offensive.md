@@ -41,8 +41,6 @@ Add to the folloing to the config `lgsm/csgoserver/csgoserver.cfg` :
 AS well it is needed to add a few options to the game config \(default in: `serverfiles/csgo/cfg/csgoserver.cfg` \)
 
 ```text
-cl_cmdrate 128
-cl_updaterate 128
 sv_mincmdrate 128
 sv_minupdaterate 128
 ```
