@@ -115,7 +115,7 @@ RCON is the protocol used to send commands to your server. You will need a tool 
 * Rustadmin: [https://www.rustadmin.com/](https://www.rustadmin.com/) \(supports both rconweb=1 and rconweb=0\)
 * Facepunch web tool: [http://facepunch.github.io/webrcon/\#/home](http://facepunch.github.io/webrcon/#/home)
 
-To use software like Rusty, you need to alter LinuxGSM config and change `rconweb="0"`. To use Facepunch tool or Rustadmin, you can leave it at default `rconweb="1"`
+To use software like Rusty, you need to alter LinuxGSM config and change `rconweb="0"`. To use Facepunch tool, Rustadmin desktop or Rustadmin Online, you can leave it at default `rconweb="1"`
 
 > Note: Facepunch web tool currently don't accept domain names, you need to enter server IP.
 
