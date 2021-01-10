@@ -43,7 +43,7 @@ Do not edit \_default.cfg any changes to this file will be overwritten.
 ### Secret Configs
 
 {% hint style="danger" %}
-Secret configs are not enrypted, but a place to store sensetive info away from other configs.
+Secret configs are not encrypted, but a place to store sensetive info away from other configs.
 {% endhint %}
 
 The secret configs are a place to put sensitive information such as steam login details away from the main config files. This is done to allow server admins to backup their configs while excluding sensitive information. This is particularly useful for admins who want to create a version-controlled skeleton configuration using git that they might want to make public.
