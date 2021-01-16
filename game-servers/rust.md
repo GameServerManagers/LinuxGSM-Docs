@@ -67,6 +67,14 @@ Using [cron](../configuration/cronjobs.md) it is possible to automate your serve
 0 0 * * 0 /home/rustserver/rustserver wipe > /dev/null 2>&1
 ```
 
+### Random Seed
+
+If the seed is not set in config when the wipe commands are used a random seed is set.
+
+```text
+seed=""
+```
+
 ## Rust Server with LinuxGSM Video tutorial
 
 A quick tour of Rust special features, and install guide for Rust and Oxide.
