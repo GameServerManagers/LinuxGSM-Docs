@@ -24,12 +24,12 @@ LinuxGSM supports downloading, updating, or removing Oxide.
 
 ### Oxide Support
 
-[http://oxidemod.org/threads/setting-up-a-rust-server-with-linux-and-lgsm.16528/](http://oxidemod.org/threads/setting-up-a-rust-server-with-linux-and-lgsm.16528/)
+[https://oxidemod.org/threads/setting-up-a-linux-server-with-lgsm.16528/](https://oxidemod.org/threads/setting-up-a-linux-server-with-lgsm.16528/)
 
-### Rusty
+### RustAdmin
 
 Server RCON administration tool  
-[http://oxidemod.org/resources/rusty-server-rcon-administration-tool.53/](http://oxidemod.org/resources/rusty-server-rcon-administration-tool.53/)
+[https://www.rustadmin.com/](https://www.rustadmin.com/)
 
 ### Online Rcon tool by facepunch
 
