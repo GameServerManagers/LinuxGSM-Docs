@@ -13,8 +13,6 @@ More info allows you to get further info about an alert using hastebin.com. Many
 ```text
 # More info | https://docs.linuxgsm.com/alerts#more-info
 postalert="off"
-postdays="7"
-posttarget="https://hastebin.com"
 ```
 
 ### Display IP
