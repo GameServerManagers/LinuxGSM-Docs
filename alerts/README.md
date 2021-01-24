@@ -17,7 +17,7 @@ postalert="off"
 
 ### Display IP
 
-The IP address you want to be displayed in alerts. 
+The IP address you want to be displayed in alerts.
 
 By default, the LinuxGSM alert will display the external internet facing IP. Failing this will fall back to the server IP. If the IP is incorrect it can be manually set using `displayip=""`.
 
