@@ -276,7 +276,7 @@ githubbranch="master"
 
 ```
 
-Once done update LinuxGSM.
+Once the details are changed update LinuxGSM.
 
 ```text
 ./gameserver update-lgsm
