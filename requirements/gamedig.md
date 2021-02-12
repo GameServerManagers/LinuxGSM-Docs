@@ -54,20 +54,6 @@ Once nodejs is installed use npm to install gamedig with the following command.
 npm install gamedig -g
 ```
 
-## Update GameDig
-
-Updates to GameDig are regularly made. It is possible to update by running the npm update command.
-
-```text
-npm update -g
-```
-
-You can also see which version of gamedig is installed by running the following.
-
-```text
- npm list -g gamedig
-```
-
 ## Sample output
 
 ### Details
