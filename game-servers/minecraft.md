@@ -1,4 +1,4 @@
-# Minecraft \(Java Edition\)
+# Minecraft: Java Edition
 
 ## To-DO
 

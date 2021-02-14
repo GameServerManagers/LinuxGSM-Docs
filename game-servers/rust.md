@@ -24,12 +24,12 @@ LinuxGSM supports downloading, updating, or removing Oxide.
 
 ### Oxide Support
 
-[http://oxidemod.org/threads/setting-up-a-rust-server-with-linux-and-lgsm.16528/](http://oxidemod.org/threads/setting-up-a-rust-server-with-linux-and-lgsm.16528/)
+[https://oxidemod.org/threads/setting-up-a-linux-server-with-lgsm.16528/](https://oxidemod.org/threads/setting-up-a-linux-server-with-lgsm.16528/)
 
-### Rusty
+### RustAdmin
 
 Server RCON administration tool  
-[http://oxidemod.org/resources/rusty-server-rcon-administration-tool.53/](http://oxidemod.org/resources/rusty-server-rcon-administration-tool.53/)
+[https://www.rustadmin.com/](https://www.rustadmin.com/)
 
 ### Online Rcon tool by facepunch
 
@@ -65,6 +65,14 @@ Using [cron](../configuration/cronjobs.md) it is possible to automate your serve
 
 ```bash
 0 0 * * 0 /home/rustserver/rustserver wipe > /dev/null 2>&1
+```
+
+### Random Seed
+
+If the seed is not set in config when the wipe commands are used a random seed is set.
+
+```text
+seed=""
 ```
 
 ## Rust Server with LinuxGSM Video tutorial
@@ -115,7 +123,7 @@ RCON is the protocol used to send commands to your server. You will need a tool 
 * Rustadmin: [https://www.rustadmin.com/](https://www.rustadmin.com/) \(supports both rconweb=1 and rconweb=0\)
 * Facepunch web tool: [http://facepunch.github.io/webrcon/\#/home](http://facepunch.github.io/webrcon/#/home)
 
-To use software like Rusty, you need to alter LinuxGSM config and change `rconweb="0"`. To use Facepunch tool or Rustadmin, you can leave it at default `rconweb="1"`
+To use software like Rusty, you need to alter LinuxGSM config and change `rconweb="0"`. To use Facepunch tool, Rustadmin desktop or Rustadmin Online, you can leave it at default `rconweb="1"`
 
 > Note: Facepunch web tool currently don't accept domain names, you need to enter server IP.
 

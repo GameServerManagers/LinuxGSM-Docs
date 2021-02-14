@@ -276,14 +276,7 @@ githubbranch="master"
 
 ```
 
-once the file is edited you will need to delete the functions directory by running the following.
-
-```text
-./gameserver dev
-./gameserver clear-functions
-```
-
-Yo revert back to the master branch run 
+Once the details are changed update LinuxGSM.
 
 ```text
 ./gameserver update-lgsm

@@ -13,13 +13,11 @@ More info allows you to get further info about an alert using hastebin.com. Many
 ```text
 # More info | https://docs.linuxgsm.com/alerts#more-info
 postalert="off"
-postdays="7"
-posttarget="https://hastebin.com"
 ```
 
 ### Display IP
 
-The IP address you want to be displayed in alerts. 
+The IP address you want to be displayed in alerts.
 
 By default, the LinuxGSM alert will display the external internet facing IP. Failing this will fall back to the server IP. If the IP is incorrect it can be manually set using `displayip=""`.
 
