@@ -125,4 +125,6 @@ You should see something similar to the following in your `console` [log](../fea
 ## Troubleshooting
 
 ### "BattlEye initialization failed"
-If you see this message while connecting to your server, try to open the port 2306 (UDP) in your firewall.
+
+If you see this message while connecting to your server, try to open the port 2306 \(UDP\) in your firewall.
+

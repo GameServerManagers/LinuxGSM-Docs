@@ -74,15 +74,14 @@ This configuration fits most scenarios, where you have a simple installation wit
 cd lgsm/config-lgsm/
 ```
 
-2. Use `ls` to list the directory contents and find the name of your instance.cfg.
-
-3. Use `cat` or `nano` to see the contents of `_default.cfg` .
+1. Use `ls` to list the directory contents and find the name of your instance.cfg.
+2. Use `cat` or `nano` to see the contents of `_default.cfg` .
 
 ```text
 cat _default.cfg
 ```
 
-4. Copy the individual settings you want to change to `instance.cfg`
+1. Copy the individual settings you want to change to `instance.cfg`
 
 {% hint style="info" %}
 It is recommended you only copy settings you want to change from `_default.cfg` into `instance.cfg`. If any settings in \_default.cfg are updated with a new release of LinuxGSM they may not be picked up if all the settings have been copied.
@@ -98,17 +97,15 @@ This configuration is useful for [multiple instances](../features/multiple-game-
 cd lgsm/config-lgsm/
 ```
 
-2. Use `ls` to list the directory contents.
-
-3. Use `cat` or `nano` to see the contents of `_default.cfg` .
-
-4. Copy any settings you want to apply to _all_ instances to `common.cfg`.
+1. Use `ls` to list the directory contents.
+2. Use `cat` or `nano` to see the contents of `_default.cfg` .
+3. Copy any settings you want to apply to _all_ instances to `common.cfg`.
 
 {% hint style="info" %}
 It is recommended you only copy settings you want to change from `_default.cfg` into `instance.cfg`. If any settings in \_default.cfg are updated with a new release of LinuxGSM they may not be picked up if all the settings have been copied.
 {% endhint %}
 
-5. Copy any settings you want to apply to a specific instance to its `instance.cfg`.
+1. Copy any settings you want to apply to a specific instance to its `instance.cfg`.
 
 ```text
 csgoserver.cfg
