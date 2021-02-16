@@ -82,7 +82,7 @@ By default backups are saved in the `backup` directory.
 ```text
 ├── home
 ├── csgoserver
-    ├── ** backups **       
+    ├── ** backup **       
     ├── lgsm
     ├── log       
     ├── serverfiles
