@@ -83,7 +83,7 @@
   * [Branch](steamcmd/branch.md)
   * [LAN Discovery](steamcmd/lan-discovery.md)
   * [Workshop](steamcmd/workshop.md)
-  * [Errors](steamcmd/errors.md)
+  * [Error Codes](steamcmd/errors.md)
 * [Linux](linux/README.md)
   * [distro](linux/distro.md)
   * [ftp-scp](linux/ftp-scp.md)

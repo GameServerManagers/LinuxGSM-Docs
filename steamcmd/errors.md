@@ -2,7 +2,7 @@
 description: Common
 ---
 
-# Errors
+# Error Codes
 
 ## SteamCMD
 
@@ -88,9 +88,7 @@ Missing content\_log.txt if you have experienced this error and have a log it pl
 
 ### Error 0x606
 
-{% hint style="info" %}
-Unknown error, if you have any details please let us know
-{% endhint %}
+SteamCMD is unable to write to the disk. Normally caused by permissions issues. This issue was discovered when a directory that was linked using symlink did not have the correct permissions to allow SteamCMD to write to it.
 
 ```text
 Error! App '<appid_number>' state is 0x606 after update job.
@@ -102,9 +100,7 @@ Error! App '<appid_number>' state is 0x606 after update job.
 | Hex | 0x606 |
 | Decimal/StateFlags | 1542 |
 
-{% hint style="info" %}
-Missing content\_log.txt if you have experienced this error and have a log it please let us know.
-{% endhint %}
+{% file src="../.gitbook/assets/content\_log \(2\).txt" %}
 
 ### Error 0x2
 
