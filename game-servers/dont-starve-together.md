@@ -14,12 +14,6 @@ You can quickly do this by running the following command, replacing `[AUTHTOKEN]
 echo '[AUTHTOKEN]' > ~/.klei/DoNotStarveTogether/[CLUSTER]/cluster_token.txt
 ```
 
-You can quickly do this by running the following command, replacing YourServerTokenHere with your server token \(Keep the quotes around the token\).
-
-```bash
-echo 'YourServerTokenHere' > ~/.klei/DoNotStarveTogether/MyDediServer/cluster_token.txt
-```
-
 ## Clusters and Shards
 
 A Don't Starve Together server consists of **clusters** and **shards**.
