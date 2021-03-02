@@ -62,5 +62,5 @@ querydelay="1"
 
 ## Monitor Activation
 
-Starting and stopping the game server activates and deactivates `monitor`. This prevents the server being manually stopped only to be started again my `monitor`.
+Starting and stopping the game server activates and deactivates `monitor`. This prevents the server being manually stopped only to be started again by `monitor`.
 
