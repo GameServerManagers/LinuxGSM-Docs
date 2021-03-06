@@ -36,14 +36,14 @@ Installing nodejs can be problematic, however, using the below should work well.
 
 ```text
 curl -fsSL https://deb.nodesource.com/setup_15.x | sudo -E bash -
-sudo apt update && sudo apt install -y nodejs
+sudo apt update && sudo apt install -y nodejs npm
 ```
 
 #### CentOS
 
 ```text
 curl -fsSL https://rpm.nodesource.com/setup_15.x | bash -
-yum install nodejs
+yum install nodejs npm
 ```
 
 ### Install GameDig npm
