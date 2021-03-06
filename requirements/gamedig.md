@@ -35,13 +35,14 @@ Installing nodejs can be problematic, however, using the below should work well.
 #### Ubuntu/Debian
 
 ```text
+curl -fsSL https://deb.nodesource.com/setup_15.x | sudo -E bash -
 sudo apt update && sudo apt install -y nodejs
 ```
 
 #### CentOS
 
 ```text
-curl -sL https://rpm.nodesource.com/setup_12.x | bash -
+curl -fsSL https://rpm.nodesource.com/setup_15.x | bash -
 yum install nodejs
 ```
 
