@@ -4,8 +4,8 @@
 
 Don't Starve Together server requires an Authentication Token.
 
-1. Go to the Klei website [https://accounts.klei.com](https://accounts.klei.com)
-2. After logging into your account visit [this](https://accounts.klei.com/account/game/servers?game=DontStarveTogether) page to get your game server authentication token.
+1. Go to the Klei website [https://accounts.klei.com](https://accounts.klei.com).
+2. After logging into your account [visit this page](https://accounts.klei.com/account/game/servers?game=DontStarveTogether) to get your game server authentication token.
 3. Enter a friendly name for your server and copy the access token and paste it into the file `cluster_token.txt`.
 
 You can quickly do this by running the following command, replacing `[AUTHTOKEN]` with your authentication token.
@@ -18,15 +18,17 @@ echo '[AUTHTOKEN]' > ~/.klei/DoNotStarveTogether/[CLUSTER]/cluster_token.txt
 
 A Don't Starve Together server consists of **clusters** and **shards**.
 
-One cluster can contain multiple shards. A shard is basically a map/level. Multiple shards are connected by cave entrances/exits found on the map. These are functioning as portals to allow players to travel between actual game servers.
+One cluster can contain multiple _shards_. A _shard_ is simply a map/level. Multiple _shards_ are connected by cave entrances/exits found on the map. These are functioning as portals to allow players to travel between actual game servers.
 
-> note: Each shard \(level of the world\) has to be run as an individual server instance.
+{% hint style="info" %}
+Each shard \(level of the world\) has to be run as an individual game server instance.
+{% endhint %}
 
 ### Single-Shard
 
-By default the cluster will be single-sharded. So you only need one server but you will also only have one map.
+By default, the cluster will be single-sharded. So you only need one server but you will also only have one map.
 
-Default script settings:
+Default start parameter setting:
 
 ```bash
 sharding="false"
@@ -34,14 +36,14 @@ sharding="false"
 
 ### Multi-Shard
 
-First of all take a look at [Multiple-Servers](https://docs.linuxgsm.com/features/multiple-game-servers) to get a general idea on how to create multiple game servers.
+Take a look at [Multiple-Servers](https://docs.linuxgsm.com/features/multiple-game-servers) to get a general idea of how to create multiple game servers.
 
 There are two types of shards:
 
 1. **master shard**: the shard you enter when joining the server / the shard/server you have to join \(**one** per cluster\)
 2. **slave shard**: shard that will connect to the master \(arbitrary number per cluster\)
 
-In this example we will only use two shards, one overworld shard and one cave shard, on the same machine using the same installation. If you want to use more shards or run the shards on different machines, take a look at the guides mentioned at the bottom. First of all we need two scripts:
+In this example, we will only use two shards, one overworld shard and one cave shard, on the same machine using the same installation. If you want to use more shards or run the shards on different machines, take a look at the guides mentioned at the bottom. First of all we need two scripts:
 
 ```text
 ./dstserver-1
@@ -50,10 +52,10 @@ In this example we will only use two shards, one overworld shard and one cave sh
 
 #### Server \#1
 
-dstserver-1 \(this will be the master shard with an overworld as level\):
+_**dstserver-1**_ will be the _master shard_ with an overworld as level.
 
 ```bash
-# Installation Variables
+## Predefined Parameters
 sharding="true"
 master="true"
 shard="Master" 
@@ -77,7 +79,7 @@ master_server_port = 27018
 dstserver-2 \(this will be the slave shard with a cave as level\):
 
 ```bash
-# Installation Variables
+## Predefined Parameters
 sharding="true"
 master="false"
 shard="Caves" 
