@@ -18,9 +18,9 @@ Cronjobs can be used to schedule server updates+restarts.
 
 Joining a Valheim Server Without Ingame Browser
 
-Valheim's in-game browser only shows 4920 servers at a time, as a workaround direct connect by adding a server to your steam server favorites. The port to use is the query port, which is `2457` by default. `./vhserver details` will list the current query port. To access the steam server list, at the top left of the steam library window go View-&gt;Servers, and in the new window press "Add A Server".
+Valheim's in-game browser only shows 4920 servers at a time, as a workaround direct connect by adding a server to your steam server favorites. The port to use is the query port, which is `2457` by default, or `gameport + 1`. You can list the current ports by using `./vhserver details`.
 
-
-
+To access the steam server list, at the top left of the steam library window go View-&gt;Servers, and in the new window press "Add A Server".
+Alternatively, you can go to Steam-&gt;Settings-&gt;Interface. Press the `SET TASKBAR PREFERENCES` button, check `Servers` and ok all windows. Now you can rightclick steam icon in taskbard, select servers.
 
 
