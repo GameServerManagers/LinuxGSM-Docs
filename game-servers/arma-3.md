@@ -63,6 +63,8 @@ Start your headless client with `./arma3server-hc start`.
 
 Only an admin can see the headless clients in the player menu on the server. The headless client will connect and automatically assume the first available headless client slot.
 
+{% file src="../.gitbook/assets/a3\_hc\_tutorial.pdf" caption="In depth guide to headless clients" %}
+
 ## Mod Support
 
 Arma 3 mods are managed using the [Steam Workshop](https://steamcommunity.com/app/346110/workshop/) or manual downloads.
