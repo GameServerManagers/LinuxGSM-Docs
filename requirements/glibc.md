@@ -21,6 +21,7 @@ List of distros and there glibc version.
 | Debian 10 | 2.28 |
 | Ubuntu 16.04 LTS | 2.23 |
 | Ubuntu 18.04 LTS | 2.27 |
+| Ubuntu 20.04 LTS | 2.31 |
 
 [distrowatch.com](http://distrowatch.com) is also a great source to find this information.
 
