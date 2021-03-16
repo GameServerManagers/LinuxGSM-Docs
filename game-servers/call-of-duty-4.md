@@ -2,9 +2,9 @@
 
 ## Call of Duty 4 Server Files
 
-Many tutorials state that the game disk is required to install a CoD4 server. This is because the server is built in to the client. This made it difficult to distribute and create a CoD4 server.
+Many tutorials state that the game disk is required to install a CoD4 server. This is because the server is built into the client. This made it difficult to distribute and create a CoD4 server.
 
-After investigating this issue, it was found that it is possible to run a server with most of the client files removed. This greatly reduces the file size and prevents the client from being used. Because of this LinuxGSM provides a download to only the files required to run the server. Preventing the use of the client that removes the opportunity to use the server to pirate the game.
+After investigating this issue, it was found that it is possible to run a server with most of the client files removed. This greatly reduces the file size and prevents the client from being used. Because of this LinuxGSM provides a download to only the files required to run the server. Preventing the use of the client, removing the opportunity to use the server to pirate the game.
 
 ## CoD4x
 
