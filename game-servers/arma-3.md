@@ -111,7 +111,7 @@ If you are adding multiple mods make sure you put a semicolon in between each mo
 mods="mods/@mod1;mods/@mod2"
 ```
 
-### Lower Case file names
+### Lower Case File Names
 
 Arma 3 server requires that mods have lowercase names. Some mods do not do this and will need to have there file names converted to lowercase.
 
