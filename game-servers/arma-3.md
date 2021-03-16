@@ -4,7 +4,7 @@
 
 ## Resources
 
-* [ArmA3 Server tutorial](https://forums.bohemia.net/forums/topic/139003-tutorial-installation-configuration-of-arma3-dedicated-server/)
+* [Arma3 Server tutorial](https://forums.bohemia.net/forums/topic/139003-tutorial-installation-configuration-of-arma3-dedicated-server/)
 
 ## Headless Client
 
@@ -12,7 +12,7 @@
 
 [https://community.bistudio.com/wiki/Arma\_3\_Headless\_Client](https://community.bistudio.com/wiki/Arma_3_Headless_Client)
 
-* Headless Client is used to off load AI calculations from the server.
+* Headless Client is used to offload AI calculations from the server.
 * Headless Client is integrated into game client and dedicated server executable \(Windows and Linux, use -client parameter\).
 * The server does not allow arbitrary connections from headless clients if you do not define the headless clients IPs in the server.cfg.
 
@@ -23,8 +23,6 @@ Starting up a headless client and having it connect to your server is easy, Crea
 {% hint style="info" %}
 This guide only handles the setup and connecting a headless client.
 {% endhint %}
-
-> note: All references to `arma3server` are referring the script you use to start your server, not the server executable itself unless noted.
 
 Create a [new server instance](../features/multiple-game-servers.md) using LinuxGSM `./linuxgsm.sh arma3server`. This will become the headless client instance and rename the new instance to `arma3server-hc`.
 
