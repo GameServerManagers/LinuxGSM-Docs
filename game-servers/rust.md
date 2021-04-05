@@ -5,16 +5,8 @@
 ## System requirements
 
 * RAM: 4GB-12GB, Increases depending upon map size
-* CPU: Dual core 3.4GHz, Rust is mono thread
+* CPU: Dual core 3.4GHz
 * Bandwidth: 10mbps upload
-
-## Modded server with Oxide
-
-LinuxGSM supports downloading, updating, or removing Oxide.
-
-```text
-./rustserver mods-install
-```
 
 ## Useful Links
 
@@ -22,16 +14,12 @@ LinuxGSM supports downloading, updating, or removing Oxide.
 
 [https://developer.valvesoftware.com/wiki/Rust\_Dedicated\_Server](https://developer.valvesoftware.com/wiki/Rust_Dedicated_Server)
 
-### Oxide Support
-
-[https://oxidemod.org/threads/setting-up-a-linux-server-with-lgsm.16528/](https://oxidemod.org/threads/setting-up-a-linux-server-with-lgsm.16528/)
-
 ### RustAdmin
 
 Server RCON administration tool  
 [https://www.rustadmin.com/](https://www.rustadmin.com/)
 
-### Online Rcon tool by facepunch
+### Online Rcon tool by Facepunch
 
 [https://facepunch.github.io/webrcon/](https://facepunch.github.io/webrcon/)
 
@@ -39,21 +27,21 @@ Server RCON administration tool
 
 A server wipe is used to reset a Rust server by deleting certain types of data about the map and players.
 
+{% hint style="info" %}
+A wipe will keep the Rust+ data intact.
+{% endhint %}
+
 ### Map Wipe
 
-A map wipe is when the game server deletes \(wipes\) all the entity information by players interacting with the server, for example, buildings and objects, map resources are also reset. However, individual player data is kept.
-
-To do a _Map wipe_ with LinuxGSM use the command:
+A map wipe will remove all the player-made buildings and resources. Resetting the map back to its original state. However, a player's blueprints will be retained.
 
 ```bash
-./rustserver wipe
+./rustserver map-wipe
 ```
 
-### Blueprint Wipe
+### Full Wipe
 
-A blueprint wipe is where player data is deleted \(wiped\). This includes player blueprints, entries, positions and inventories. Generally, a blueprint wipe only happens alongside a map wipe.
-
-To do a _Map+Blueprint wipe_ with LinuxGSM use the command:
+A full wipe will remove all the player-made buildings, resources _**and**_ all player's blueprints.
 
 ```bash
 ./rustserver full-wipe
@@ -64,30 +52,20 @@ To do a _Map+Blueprint wipe_ with LinuxGSM use the command:
 Using [cron](../configuration/cronjobs.md) it is possible to automate your server wipes. The below example will wipe the server every Sunday night at midnight.
 
 ```bash
-0 0 * * 0 /home/rustserver/rustserver wipe > /dev/null 2>&1
+0 0 * * 0 /home/rustserver/rustserver map-wipe > /dev/null 2>&1
 ```
 
 ### Random Seed
 
-If the seed is not set in config when the wipe commands are used a random seed is set.
+If the Rust server is using the _Procedural Map_ and a seed is not set in the config when the wipe commands will set a new random seed.
 
 ```text
 seed=""
 ```
 
-## Rust Server with LinuxGSM Video tutorial
-
-A quick tour of Rust special features, and install guide for Rust and Oxide.
-
-[https://www.youtube.com/watch?v=6GaoyPeN71g](https://www.youtube.com/watch?v=6GaoyPeN71g)
-
-If you need more help, here is a video that shows a bit more into depth how to use LinuxGSM, how the directory structure works, it also explains the basics of a Rust Server and other stuff, that's why it's 20 minutes long, otherwise, if you're experienced, you can get your server up and running in around 5 minutes without any mods.
-
-[https://www.youtube.com/watch?v=eFH9Qj-hUOM](https://www.youtube.com/watch?v=eFH9Qj-hUOM)
-
 ## Install Oxide
 
-Oxide is an API allowing you to run mods for you Rust server.
+Oxide is an API allowing you to run mods for your Rust server.
 
 LinuxGSM now handles the install of Oxide for Rust, with `mods-install` and `mods-update` commands.
 
