@@ -14,7 +14,7 @@ LinuxGSM cannot always provide support for specific game servers. However, there
 * [Killing Floor 2](https://forums.tripwireinteractive.com/forum/killing-floor-2/technical-support-ae/dedicated-server-support-ac)
 * [Minecraft](https://www.minecraftforum.net/forums/servers-java-edition/minecraft-server-hosting)
 * [Quake 3](https://steamcommunity.com/app/2200/discussions/)
-* [Rust](https://forum.facepunch.com/f/)
+* [Rust](https://forum.facepunch.com/c/rust/10)
 * [Terraria](https://forums.terraria.org/index.php?forums/)
 * [Team Fortress 2](https://steamcommunity.com/app/440/discussions/)
 * [Teamspeak 3](https://forum.teamspeak.com/forums/93-TeamSpeak-3-Technical-Discussions-EN-DE)
