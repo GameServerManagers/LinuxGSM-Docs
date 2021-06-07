@@ -8,6 +8,13 @@
 * [ARK: Survival Evolved Steam Workshop](https://steamcommunity.com/app/346110/workshop/)
 * [Official ARK: Survival Evolved Server Administration forum](https://survivetheark.com/index.php?/forums/forum/39-server-administration/)
 
+## System Requirements
+
+Different Maps require different system requirements.
+
+* TheIsland: 6GB RAM
+* Genesis 2: 12GB RAM
+
 ## Config Files
 
 ```text
@@ -116,7 +123,7 @@ If you join before the server or your client has fully downloaded the mod you mi
 
 Once you have connected to the server you will be able to see that the mod has loaded by seeing the _Mod Name_ in the game menu `Esc`.
 
-![](../.gitbook/assets/image%20%281%29%20%281%29%20%281%29%20%281%29%20%281%29%20%281%29%20%281%29%20%281%29.png)
+![](../.gitbook/assets/image%20%281%29%20%281%29%20%281%29%20%281%29%20%281%29%20%281%29%20%281%29%20%281%29%20%281%29.png)
 
 The example mod can be activated by pressing `F1`.
 
