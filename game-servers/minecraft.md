@@ -1,10 +1,12 @@
 # Minecraft: Java Edition
 
-## To-DO
+## Java Requirements
+
+Minecraft: Java Edition required Java 16
 
 ## Release Settings
 
-Minecraft java edition splits up its release in two ways. Firstly a branch, this is either classed as a _release_ or a _snapshot._ A release is a stable version of the game whereas a snapshot is still under development
+Minecraft java edition splits up its release in two ways. Firstly a branch is either classed as a _release_ or a _snapshot._ A release is a stable version of the game whereas a snapshot is still under development
 
 With LinuxGSM you can specify a specific release/snapshot or the latest release/snapshot. By default, LinuxGSM will use the latest release.
 
