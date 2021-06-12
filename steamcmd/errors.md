@@ -190,7 +190,7 @@ If you have experienced an error we don't have logs for please provide them to u
 
 ## SteamCMD Hex Codes
 
-SteamCMD uses hex error codes such as `0x202` which can be converted into decimal `514`. You can use a hex to decmal converter to do this. Using the table below you can work out that the status messages. By doing a calculation. Find the highest number below the state `512` which is the first error. Then take the number away from the total `514-512=2` which gives you the last error. This can be done for any error
+SteamCMD uses hex error codes such as `0x202` which can be converted into decimal `514`. You can use a hex to decimal converter to do this. Using the table below you can work out that the status messages. By doing a calculation. Find the highest number below the state `512` which is the first error. Then take the number away from the total `514-512=2` which gives you the last error. This can be done for any error
 
 `514-512-2=0`
 
