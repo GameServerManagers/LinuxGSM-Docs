@@ -1,0 +1,46 @@
+
+
+[2021-06-12 11:22:57] Loaded 0 apps from install folder "/home/lgsm/.local/share/Steam/steamapps\appmanifest_*.acf".
+[2021-06-12 11:22:57] Loaded 1 apps from install folder "/home/lgsm/squadserver/serverfiles/steamapps\appmanifest_*.acf".
+[2021-06-12 11:22:59] AppID 403240 scheduler update : Priority First, timeSinceLastPlayed=1623496979, appDisableSecondsRemaining=0
+[2021-06-12 11:22:59] AppID 403240 state changed : Update Required,Update Queued,Update Optional,
+[2021-06-12 11:22:59] AppID 403240 state changed : Update Required,Update Queued,Update Optional,Update Running,
+[2021-06-12 11:22:59] AppID 403240 update changed : Running,
+[2021-06-12 11:22:59] AppID 403240 update changed : Running,Reconfiguring,
+[2021-06-12 11:22:59] AppID 403240 update changed : Running,
+[2021-06-12 11:22:59] AppID 403240 update changed : Running,Validating,
+[2021-06-12 11:22:59] Validation: full scan in "/home/lgsm/squadserver/serverfiles" found 3/125 matching files (0 bytes/16.76 GB) in 0 seconds).
+[2021-06-12 11:22:59] AppID 403240 update changed : Running,
+[2021-06-12 11:22:59] AppID 403240 update changed : Running,Preallocating,
+[2021-06-12 11:22:59] AppID 403240 update canceled : Failed to preallocate (Not enough disk space) "10.7 GB"
+[2021-06-12 11:22:59] AppID 403240 update changed : Running,Preallocating,Stopping,
+[2021-06-12 11:22:59] AppID 403240 update changed : Running,Stopping,
+[2021-06-12 11:22:59] AppID 403240 update changed : None
+[2021-06-12 11:22:59] AppID 403240 state changed : Update Required,Update Queued,Update Optional, (Not enough disk space)
+[2021-06-12 11:22:59] AppID 403240 state changed : Update Required,Update Optional,Update Paused,
+[2021-06-12 11:22:59] AppID 403240 scheduler finished : removed from schedule (result Not enough disk space, state 0x212) 
+
+
+[2021-06-12 11:23:01] Loaded 0 apps from install folder "/home/lgsm/.local/share/Steam/steamapps\appmanifest_*.acf".
+[2021-06-12 11:23:01] Loaded 1 apps from install folder "/home/lgsm/squadserver/serverfiles/steamapps\appmanifest_*.acf".
+[2021-06-12 11:23:02] AppID 403240 scheduler update : Priority First, timeSinceLastPlayed=1623496982, appDisableSecondsRemaining=0
+[2021-06-12 11:23:02] AppID 403240 state changed : Update Required,Update Queued,Update Optional,
+[2021-06-12 11:23:02] AppID 403240 state changed : Update Required,Update Queued,Update Optional,Update Running,
+[2021-06-12 11:23:02] AppID 403240 update changed : Running,
+[2021-06-12 11:23:02] AppID 403240 update changed : Running,Reconfiguring,
+[2021-06-12 11:23:02] AppID 403240 update changed : Running,
+[2021-06-12 11:23:02] AppID 403240 update changed : Running,Validating,
+[2021-06-12 11:23:02] Validation: full scan in "/home/lgsm/squadserver/serverfiles" found 3/125 matching files (0 bytes/16.76 GB) in 0 seconds).
+[2021-06-12 11:23:02] AppID 403240 update changed : Running,
+[2021-06-12 11:23:02] AppID 403240 update changed : Running,Preallocating,
+[2021-06-12 11:23:02] AppID 403240 update canceled : Failed to preallocate (Not enough disk space) "10.7 GB"
+[2021-06-12 11:23:02] AppID 403240 update changed : Running,Preallocating,Stopping,
+[2021-06-12 11:23:02] AppID 403240 update changed : Running,Stopping,
+[2021-06-12 11:23:02] AppID 403240 update changed : None
+[2021-06-12 11:23:02] AppID 403240 state changed : Update Required,Update Queued,Update Optional, (Not enough disk space)
+[2021-06-12 11:23:02] AppID 403240 state changed : Update Required,Update Optional,Update Paused,
+[2021-06-12 11:23:02] AppID 403240 scheduler finished : removed from schedule (result Not enough disk space, state 0x212) 
+
+
+[2021-06-12 11:23:04] Loaded 0 apps from install folder "/home/lgsm/.local/share/Steam/steamapps\appmanifest_*.acf".
+[2021-06-12 11:23:05] Loaded 1 apps from install folder "/home/lgsm/squadserver/serverfiles/steamapps\appmanifest_*.acf".

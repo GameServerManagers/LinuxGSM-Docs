@@ -1,0 +1,16 @@
+[2020-07-15 23:20:02] Loaded 0 apps from install folder "/home/lgsm/.local/share/Steam/steamapps\appmanifest_*.acf".
+[2020-07-15 23:20:03] Loaded 1 apps from install folder "/home/lgsm/rustserver/serverfiles/steamapps\appmanifest_*.acf".
+[2020-07-15 23:20:05] AppID 258550 scheduler update : Priority First, legacy=no, restore="", timeSinceLastPlayed=1594855205, appDisableSecondsRemaining=0
+[2020-07-15 23:20:05] AppID 258550 state changed : Update Required,Fully Installed,Update Queued, (Update delayed for 295 secs)
+[2020-07-15 23:20:05] AppID 258550 state changed : Update Required,Fully Installed,Update Queued,Update Running,
+[2020-07-15 23:20:05] AppID 258550 update changed : Running,
+[2020-07-15 23:20:05] AppID 258550 update changed : Running,Reconfiguring,
+[2020-07-15 23:20:05] ContentServerDirectoryService::BYieldingGetServersForSteamPipe failed - 2/2
+[2020-07-15 23:20:05] Failed to get list of download sources
+[2020-07-15 23:20:05] AppID 258550 update canceled : Failed to initialize depot 258552, manifest 6486416718128206472 (Not Logged On) (No connection to content servers)
+[2020-07-15 23:20:05] AppID 258550 update changed : Running,Reconfiguring,Stopping,
+[2020-07-15 23:20:05] AppID 258550 update changed : Running,Stopping,
+[2020-07-15 23:20:05] AppID 258550 update changed : None
+[2020-07-15 23:20:05] AppID 258550 state changed : Update Required,Fully Installed,Update Queued, (No connection to content servers)
+[2020-07-15 23:20:05] AppID 258550 state changed : Update Required,Fully Installed, (Update delayed for 300 secs)
+[2020-07-15 23:20:05] AppID 258550 scheduler finished : removed from schedule

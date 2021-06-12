@@ -6,7 +6,7 @@ description: Common
 
 ## SteamCMD
 
-SteamCMD can sometimes output errors when something goes wrong. Sadly Valve has never released an official list of what the error messages mean. Because of this, a lot of guess work has been needed to figure it out. This page will highlight what we already know and info on researching what the error might mean in the hope that you can contribute to understanding SteamCMD errors.
+SteamCMD can sometimes output errors when something goes wrong. Sadly Valve has never released an official list of what the error messages mean. Because of this, a lot of guesswork has been needed to figure it out. This page will highlight what we already know and info on researching what the error might mean in the hope that you can contribute to understanding SteamCMD errors.
 
 SteamCMD uses hexadecimal numbers to give its current "state". Every time SteamCMD does something it changes its state. When SteamCMD fails it will output its has hexadecimal state, for example `0x202`.
 
@@ -26,7 +26,7 @@ Error! App '<appid_number>' state is 0x202 after update job.
 | Hex | 0x202 |
 | Decimal/StateFlags | 514 |
 
-{% file src="../.gitbook/assets/content\_log.txt" caption="content\_log.txt 0x202 example" %}
+{% file src="../.gitbook/assets/content\_log\_0x202.txt" %}
 
 ### Error 0x206
 
@@ -44,9 +44,25 @@ Error! App '<appid_number>' state is 0x206 after update job.
 | Hex | 0x206 |
 | Decimal/StateFlags | 518 |
 
-{% hint style="info" %}
+{% hint style="warning" %}
 Missing content\_log.txt if you have experienced this error and have a log it please let us know.
 {% endhint %}
+
+###  Error 0x212 <a id="error-0x206"></a>
+
+Not enough disk space.
+
+```text
+Error! App '<appid_number>' state is 0x212 after update job.
+```
+
+| ​Title | ​Title |
+| :--- | :--- |
+| Reason | ​Not enough disk space |
+| Hex | 0x212 |
+| Decimal/StateFlags | 530 |
+
+{% file src="../.gitbook/assets/content\_log\_0x212.txt" %}
 
 ### Error 0x402
 
@@ -62,7 +78,7 @@ Error! State is 0x402 after update job.
 | Hex | 0x402 |
 | Decimal/StateFlags | 1026 |
 
-{% hint style="info" %}
+{% hint style="warning" %}
 Missing content\_log.txt if you have experienced this error and have a log it please let us know.
 {% endhint %}
 
@@ -82,7 +98,7 @@ Error! State is 0x602 after update job.
 | Hex | 0x602 |
 | Decimal/StateFlags | 1538 |
 
-{% hint style="info" %}
+{% hint style="warning" %}
 Missing content\_log.txt if you have experienced this error and have a log it please let us know.
 {% endhint %}
 
@@ -96,11 +112,11 @@ Error! App '<appid_number>' state is 0x606 after update job.
 
 |  |  |
 | :--- | :--- |
-| Reason |  |
+| Reason | Disk write failure |
 | Hex | 0x606 |
 | Decimal/StateFlags | 1542 |
 
-{% file src="../.gitbook/assets/content\_log \(2\).txt" %}
+{% file src="../.gitbook/assets/content\_log\_0x606.txt" %}
 
 ### Error 0x2
 
@@ -114,11 +130,13 @@ Error! App '<appid_number>' state is is 0x2 after update job.
 | Hex | 0x2 |
 | Decimal/StateFlags | 2 |
 
-{% hint style="info" %}
+{% hint style="warning" %}
 Missing content\_log.txt if you have it please let us know.
 {% endhint %}
 
 ### Error 0x6
+
+No connection to content servers.
 
 ```text
 Error! App '<appid_number>' state is 0x6 after update job.
@@ -130,7 +148,7 @@ Error! App '<appid_number>' state is 0x6 after update job.
 | Hex | 0x6 |
 | Decimal/StateFlags | 6 |
 
-{% file src="../.gitbook/assets/content\_log \(1\).txt" caption="0x6 example" %}
+{% file src="../.gitbook/assets/content\_log\_0x6.txt" %}
 
 ### 0x3
 
@@ -164,15 +182,15 @@ Update state (0x61) downloading, progress: 1.11 (127644881 / 11530459441)
 
 ## SteamCMD Logs
 
-To get more info and output see the SteamCMD logs in `~/.steam/logs`. The most useful log is `content_log.txt` that will provide more information of errors.
+To get more info and output see the SteamCMD logs in `~/.local/share/Steam/logs`or `~/.steam/logs`. The most useful log is `content_log.txt` that will provide more information on errors.
 
 {% hint style="success" %}
-If you have experienced an error we don't have logs for please can you provide them to us to assist in diagnosing the issue.
+If you have experienced an error we don't have logs for please provide them to us to assist in diagnosing the issue.
 {% endhint %}
 
 ## SteamCMD Hex Codes
 
-SteamCMD uses hex error codes such as `0x202` which can be converted in to decimal `514`. Using the table below you can work out that the status messages. By doing a calculation. Find the highest number below the state `512` which if the first error. Then take the number away from the total `514-512=2` which gives you the last error. This can be done for any error
+SteamCMD uses hex error codes such as `0x202` which can be converted into decimal `514`. You can use a hex to decmal converter to do this. Using the table below you can work out that the status messages. By doing a calculation. Find the highest number below the state `512` which is the first error. Then take the number away from the total `514-512=2` which gives you the last error. This can be done for any error
 
 `514-512-2=0`
 
@@ -203,7 +221,7 @@ SteamCMD uses hex error codes such as `0x202` which can be converted in to decim
 | StateCommitting | 4194304 |
 | StateUpdateStopping | 8388608 |
 
-This table is from 2015 and is probably out dated now but its the best we currently have.
+This table is from 2015 and is probably outdated now but it's the best we currently have.
 
 {% embed url="https://github.com/lutris/lutris/blob/master/docs/steam.rst" caption="" %}
 
@@ -213,7 +231,7 @@ This table is from 2015 and is probably out dated now but its the best we curren
 ./steamcmd.sh: line 17: ulimit: open files: cannot modify limit: Operation not permitted
 ```
 
-Some users may get a ulimit error \(no permission/cannot open file\) while script is starting up. This error caused by a low setting of the -n parameter \(number of file descriptors\) of ulimit. Some servers forbid increasing ulimit values after startup \(or beyond a limit set by root\). This can be fixed by changing the file descriptor number ulimit:
+Some users may get a ulimit error \(no permission/cannot open file\) while SteamCMD is starting up. This error caused by a low setting of the -n parameter \(number of file descriptors\) of ulimit. Some servers forbid increasing ulimit values after startup \(or beyond a limit set by root\). This can be fixed by changing the file descriptor number ulimit:
 
 ```text
 ulimit -n 2048
@@ -229,7 +247,7 @@ The password for the branch is incorrect.
 
 ## \[S\_API FAIL\] SteamAPI\_Init\(\) failed; SteamAPI\_IsSteamRunning\(\) failed.
 
-Ignore the error, do not do anything to attempt to fix it. It is a known error that has been happening ever since SteamPipe was introduced \(this includes on Source1 games\). It does not cause any issue and can be ignored.
+Ignore the error, do not do anything to attempt to fix it. It is a known error that has appeared ever since SteamPipe was introduced. It does not cause any issue and can be ignored.
 
 ## Loading Steam API...Failed to init SDL priority manager: SDL not found
 

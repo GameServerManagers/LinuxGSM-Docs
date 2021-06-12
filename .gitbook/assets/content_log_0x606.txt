@@ -1,0 +1,18 @@
+[2021-02-18 02:33:07] Loaded 0 apps from install folder "/home/csgoserver/.local/share/Steam/steamapps\appmanifest_*.acf".
+[2021-02-18 02:33:07] Loaded 1 apps from install folder "/home/csgoserver/serverfiles/steamapps\appmanifest_*.acf".
+[2021-02-18 02:33:08] AppID 740 scheduler update : Priority First, timeSinceLastPlayed=1613615588, appDisableSecondsRemaining=0
+[2021-02-18 02:33:08] AppID 740 state changed : Update Required,Fully Installed,Update Queued,Update Started,
+[2021-02-18 02:33:08] AppID 740 state changed : Update Required,Fully Installed,Update Queued,Update Running,Update Started,
+[2021-02-18 02:33:08] AppID 740 update changed : Running,
+[2021-02-18 02:33:08] AppID 740 update changed : Running,Reconfiguring,
+[2021-02-18 02:33:09] AppID 740 update changed : Running,
+[2021-02-18 02:33:09] AppID 740 update started : download 238001344/238001344, store 0/0, reuse 1332967263/1332967263, delta 0/0, stage 2220703011/2220703011 
+[2021-02-18 02:33:09] AppID 740 update changed : Running,Committing,
+[2021-02-18 02:33:09] AppID 740 starting commit from "/home/csgoserver/serverfiles/steamapps/downloading/740" to "/home/csgoserver/serverfiles" : 104 updated, 0 moved, 0 deleted files
+[2021-02-18 02:33:09] AppID 740 update canceled : File commit failed: failed to move out file (Disk write failure) "/home/csgoserver/serverfiles/csgo/maps/cfg/guardian_op10_mirage_b.cfg"
+[2021-02-18 02:33:09] AppID 740 update changed : Running,Committing,Stopping,
+[2021-02-18 02:33:09] AppID 740 update changed : Running,Stopping,
+[2021-02-18 02:33:09] AppID 740 update changed : None
+[2021-02-18 02:33:09] AppID 740 state changed : Update Required,Fully Installed,Update Queued,Update Started, (Disk write failure)
+[2021-02-18 02:33:09] AppID 740 state changed : Update Required,Fully Installed,Update Paused,Update Started,
+[2021-02-18 02:33:09] AppID 740 scheduler finished : removed from schedule
