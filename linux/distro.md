@@ -18,8 +18,7 @@ Ubuntu 18.04 LTS is recommended
 
 | **Version** | **Code name** | **Release date** | **Supported until** |
 | :--- | :--- | :--- | :--- |
-| ~~~~[~~14.04 LTS~~](https://en.wikipedia.org/wiki/List_of_Ubuntu_releases#Ubuntu_14.04_LTS_%28Trusty_Tahr%29)~~~~ | ~~Trusty Tahr~~ | ~~2014-04-17~~ | ~~2019-04~~ |
-| [16.04 LTS](https://en.wikipedia.org/wiki/List_of_Ubuntu_releases#Ubuntu_16.04_LTS_%28Xenial_Xerus%29) | Xenial Xerus | 2016-04-21 | 2021-04 |
+| ~~~~[~~16.04 LTS~~](https://en.wikipedia.org/wiki/List_of_Ubuntu_releases#Ubuntu_16.04_LTS_%28Xenial_Xerus%29)~~~~ | ~~Xenial Xerus~~ | ~~2016-04-21~~ | ~~2021-04~~ |
 | [18.04 LTS](https://en.wikipedia.org/wiki/List_of_Ubuntu_releases#Ubuntu_18.04_LTS_%28Bionic_Beaver%29) | Bionic Beaver | 2018-04-26 | 2028-04 |
 | 20.04 LTS | Focal Fossa | 2020-04-23 | 2025-04 |
 
@@ -29,7 +28,7 @@ Ubuntu 18.04 LTS is recommended
 
 ![](../.gitbook/assets/debian.png)
 
-Debian is another popular distro that sits upstream of Ubuntu that shares many of the same advantages of Ubuntu. The release cycle is every 2 years. Debian supports “backports”, this allows newer software to be installed on stable Debian releases. This is particularly useful for game servers and LinuxGSM that may require newer software.
+Debian is another popular distro that sits upstream of Ubuntu that shares many of the same advantages of Ubuntu. The release cycle is every 2 years. Debian supports “backports”, which allows newer software to be installed on stable Debian releases. This is particularly useful for game servers and LinuxGSM that may require newer software.
 
 {% hint style="info" %}
 Debian 10 "Buster" is recommended
@@ -49,6 +48,10 @@ Debian 10 "Buster" is recommended
 
 CentOS is a Linux distribution that provides a free, enterprise-class, community-supported computing platform functionally compatible with its upstream source, Red Hat Enterprise Linux. This means CentOS is considered a very stable enterprise-grade distro and as such is very popular with server admins. CentOS also has a very long support cycle compared with other distros. The main downside to stability is that the latest software is not always available; this can be an issue when dealing with game servers.
 
+{% hint style="danger" %}
+[Significant changes](https://blog.centos.org/2020/12/future-is-centos-stream/) in the future of CentOS has occured.
+{% endhint %}
+
 {% hint style="warning" %}
 CentOS 6 is not supported by LinuxGSM
 {% endhint %}
@@ -61,7 +64,8 @@ CentOS 8 is recommended
 | :--- | :--- | :--- | :--- |
 | ~~6~~ | ~~10 July 2011~~ | ~~10 May 2017~~ | ~~30 November 2020~~ |
 | 7 | 7 July 2014 | 6 August 2020 | 30 June 2024 |
-| 8 | 24 September 2019 | 1 May 2024 | 31 May 2029 |
+| 8 | 24 September 2019 | 1 May 2024 | 31 December 2021 |
+| Stream 8 |  |  | 31 May 2024 |
 
 ### EPEL
 
