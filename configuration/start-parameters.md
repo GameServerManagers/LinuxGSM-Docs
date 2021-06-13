@@ -22,7 +22,7 @@ clientport="27005"
 
 ## Additional Parameters
 
-Additional command-line parameters can be added to the `parms` setting. 
+Additional command-line parameters can be added to the `startparameters` setting. 
 
 Anything added will be appended to the server executable binary.
 
