@@ -55,7 +55,7 @@ Navigate to your profile directory.
 
 edit `Player.Arma3Profile` and add the line `battleyeLicense=1;`.
 
-Start your server with `./arma3server start` 
+Start your server with `./arma3server start`
 
 Start your headless client with `./arma3server-hc start`.
 
@@ -77,7 +77,7 @@ Mods can cause your server to become unstable or may not be compatible with each
 
 Here is a popular mod to get started:
 
-*  [CBA: Community Based Addons for Arma 3](https://steamcommunity.com/workshop/filedetails/?id=450814997)
+* [CBA: Community Based Addons for Arma 3](https://steamcommunity.com/workshop/filedetails/?id=450814997)
 
 Download the Mod using [https://steamworkshopdownloader.io/](https://steamworkshopdownloader.io/) the workshop id is `450814997`
 

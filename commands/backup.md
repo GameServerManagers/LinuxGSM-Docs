@@ -89,6 +89,7 @@ By default backups are saved in the `backup` directory.
 ```
 
 You can change this using the [configuration file](../configuration/linuxgsm-config.md) and the property `backupdir`.
+
 ```bash
 backupdir="${lgsmdir}/backup"
 ```
