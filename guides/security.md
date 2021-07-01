@@ -3,10 +3,10 @@
 TO-DO
 
 ## Avoid a security breach and allow you to run multiple servers
-
 {% hint style="danger" %}
 needs to be verified
 {% endhint %}
+(NOTE: This method is detailed further [here](https://linux-audit.com/linux-system-hardening-adding-hidepid-to-proc/). The web page also describes how to give certain users the default full access to listing all processes.)  
 
 By default, a user can see all started processes from other users, which is bad, but also their start parameters, which is pretty dangerous. Those start parameters can contain sensitive information, such as RCON password, Steam API keys and GSLT upon start, a Rust dedicated server is checking if the process name started by any user, and will prevent you from running it again if it finds it, displaying "Player is already running".
 
