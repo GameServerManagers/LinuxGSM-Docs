@@ -33,7 +33,7 @@ Change the `port=` increasing the number by a factor of 12 e.g 2303 becomes 2314
 Update `startparameters=` changing it to the following.
 
 ```text
-startparmaters="-client -connect=${ip}:${port} -password=CHANGEME"
+startparameters="-client -connect=${ip}:${port} -password=CHANGEME"
 ```
 
 Edit the game server config of `arma3server` \(not the headless client\) `arma3server.server.cfg` and add the headless client IP address to `headlessClients[]=`. If the headless client is on the same physical server as the ARMA 3 server then also add the IP to `localClient[]=`.
