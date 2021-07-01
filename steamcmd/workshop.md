@@ -1,12 +1,12 @@
 # Workshop
 
-Many Steam games support the steam [workshop](https://steamcommunity.com/workshop). It is an easy way to share community maps and addons and is very useful for custom servers, without needing to worry about setting up [FastDL](../commands/fastdl.md). LinuxGSM adds workshop pre-configuration to game server scripts as when available.
+Many Steam games support the steam [workshop](https://steamcommunity.com/workshop). It is an easy way to share community maps and addons and is very useful for custom servers, without needing to worry about setting up [FastDL](../commands/fastdl.md). LinuxGSM adds workshop pre-configuration to game server scripts when available.
 
 You will need a Steam API key, a collection to subscribe to \(you can create one\), and some config parameters in your [LinuxGSM config](../configuration/linuxgsm-config.md).
 
 ## Getting a Steam API Key
 
-Simply go to [https://steamcommunity.com/dev/apikey](https://steamcommunity.com/dev/apikey) and follow instructions.
+Simply go to [https://steamcommunity.com/dev/apikey](https://steamcommunity.com/dev/apikey) and follow the instructions.
 
 {% hint style="danger" %}
 Do not share this key.
