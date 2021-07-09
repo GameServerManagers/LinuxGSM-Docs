@@ -15,7 +15,7 @@ Next, you will have to get an access token for the account.
 Enter your homeservers and the token in the [LinuxGSM config](../configuration/linuxgsm-config.md).
 
 ```text
-   #Matrix Alerts | https://docs.linuxgsm.com/alerts/matrix
+   # Matrix Alerts | https://docs.linuxgsm.com/alerts/matrix
    matrixalert="on"
    matrixhomeserver="matrix.org"
    matrixtoken="swt_a219dC4ib5T_QjAZsnEPpJLDNWSeDfk_8vj1Uw"
@@ -31,7 +31,7 @@ To obtain the room ID in Element, go to the room settings, go to the advanced ta
 Add the room id to the [LinuxGSM config](../configuration/linuxgsm-config.md).
 
 ```text
-   #Matrix Alerts | https://docs.linuxgsm.com/alerts/matrix
+   # Matrix Alerts | https://docs.linuxgsm.com/alerts/matrix
    matrixalert="on"
    matrixhomeserver="matrix.org"
    matrixtoken="swt_a219dC4ib5T_QjAZsnEPpJLDNWSeDfk_8vj1Uw"
