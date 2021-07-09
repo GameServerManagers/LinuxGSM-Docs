@@ -16,7 +16,6 @@ Enter your homeservers and the token in the [LinuxGSM config](../configuration/l
 
 ```text
    #Matrix Alerts | https://docs.linuxgsm.com/alerts/matrix
-
    matrixalert="on"
    matrixhomeserver="matrix.org"
    matrixtoken="swt_a219dC4ib5T_QjAZsnEPpJLDNWSeDfk_8vj1Uw"
@@ -33,7 +32,6 @@ Add the room id to the [LinuxGSM config](../configuration/linuxgsm-config.md).
 
 ```text
    #Matrix Alerts | https://docs.linuxgsm.com/alerts/matrix
-
    matrixalert="on"
    matrixhomeserver="matrix.org"
    matrixtoken="swt_a219dC4ib5T_QjAZsnEPpJLDNWSeDfk_8vj1Uw"
