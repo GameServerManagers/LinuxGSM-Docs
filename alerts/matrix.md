@@ -37,7 +37,7 @@ Add the room id to the [LinuxGSM config](../configuration/linuxgsm-config.md).
    matrixtoken="swt_a219dC4ib5T_QjAZsnEPpJLDNWSeDfk_8vj1Uw"
    matrixroom="!ygKaCNBxvTMUSagvZdz:matrix.org"
 ```
-8080
+
 ### Send Test Alert
 
 Finally, test that everything correctly works by sending a test alert. You will now receive a message from the bot directly or to a chosen group.
