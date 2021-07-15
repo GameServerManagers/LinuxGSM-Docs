@@ -34,7 +34,7 @@ If players are being banned for dying too much, such as on minigames maps, as a 
 
 ## **Setting for a 128 Tick Server**
 
-Add to the following to the config `lgsm/csgoserver/csgoserver.cfg` :
+Add to the following to the config `lgsm/config-lgsm/csgoserver/csgoserver.cfg` :
 
 `tickrate="128"`
 
