@@ -2,10 +2,14 @@
 
 ## Installation
 In order to successfully download Last Oasis via steamcmd, you must provide login credentials to an account that has an active subscription for Last Oasis.
-[Learn more](../steamcmd#steam-user-login). Running a Last Oasis server also requires you to register an account at https://myrealm.lastoasis.gg
+[Learn more](../steamcmd#steam-user-login).
+
+Running a Last Oasis server also requires you to register an account at https://myrealm.lastoasis.gg
 
 ### Keys:
 You need to provide your customer-key from https://myrealm.lastoasis.gg/Settings in order to start your Last Oasis instance:
+
+
 
 **loserver.cfg**
 ```text
@@ -16,7 +20,10 @@ customerkey=xxxxxxxxxxxx
 
 
 You also need to provide a specific provider-key per instance from https://myrealm.lastoasis.gg/Settings
+
 You may have to add a new key at first.
+
+
 
 **loserver.cfg**
 ```text
