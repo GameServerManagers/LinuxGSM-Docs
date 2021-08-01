@@ -52,6 +52,7 @@
   * [Unreal Tournament 2004](game-servers/unreal-tournament-2004.md)
   * [Unreal Tournament 3](game-servers/unreal-tournament-3.md)
   * [Valheim](game-servers/valheim.md)
+  * [Last Oasis](game-servers/last-oasis.md)
 * [Alerts](alerts/README.md)
   * [Discord](alerts/discord.md)
   * [Email](alerts/email.md)
