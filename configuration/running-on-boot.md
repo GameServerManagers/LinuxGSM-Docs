@@ -3,41 +3,52 @@
 ## Using systemd
 
 systemd is the default init system for most modern distros.
+You can either generate and place the files contents using the install-init function, which will do it all for you, or do it manually.
 
-You need to create a service file in `/etc/systemd/system/`
+- ### Using the install-init command
 
-Example `ts3server.service`
+    Run `./<gameserver> install-init`, this will create and place the contents in `/etc/systemd/system/short name-lgsm.service`.
+    The content will be based on the manual service file.
 
-```text
-[Unit]
-Description=LinuxGSM Teamspeak3 Server
-After=network-online.target
-Wants=network-online.target
 
-[Service]
-Type=forking
-User=ts3server
-WorkingDirectory=/home/ts3server
-RemainAfterExit=yes   #Assume that the service is running after main process exits with code 0
-ExecStart=/home/ts3server/ts3server start
-ExecStop=/home/ts3server/ts3server stop
-Restart=no
+- ### Manual service file
 
-[Install]
-WantedBy=multi-user.target
-```
+    You need to create a service file in `/etc/systemd/system/`
 
-Replace the user and paths to fit your setup.
+    Example `gameserver.service`
+
+    ```text
+    [Unit]
+    Description=LinuxGSM Game Server
+    After=network-online.target
+    Wants=network-online.target
+
+    [Service]
+    Type=forking
+    User=gameserver
+    WorkingDirectory=/home/gameserver
+    RemainAfterExit=yes # Assume that the service is running after main process exits with code 0
+    ExecStart=/home/gameserver/gameserver start
+    ExecStop=/home/gameserver/gameserver stop
+    Restart=no
+
+    [Install]
+    WantedBy=multi-user.target
+    ```
+
+    Replace the user and paths to fit your setup.
+
+
 
 You need to reload the systemd-daemon once to make it aware of the new service file by `systemctl daemon-reload`
 
-Now you can do
+Now you can do (as root)
 
 ```bash
-systemctl start ts3server # Start the server
-systemctl stop ts3server  # Stop the server
-systemctl enable ts3server # Enable start on boot
-systemctl disable ts3server # Disable start on boot
+systemctl start gameserver # Start the server
+systemctl stop gameserver # Stop the server
+systemctl enable gameserver # Enable start on boot
+systemctl disable gameserver # Disable start on boot
 ```
 
 ## Crontab
