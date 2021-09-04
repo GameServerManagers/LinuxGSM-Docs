@@ -1,10 +1,12 @@
 # LinuxGSM Stats
 
-LinuxGSM Stats is an `opt in` voluntary feature that allows you to provide selected information about your game server to be displayed on [linuxgsm.com](https://linuxgsm.com) by enabling the `stats` setting.
+[LinuxGSM Stats](https://linuxgsm.com/data/usage/) is an `opt in` voluntary feature that allows you to provide selected information about your game server to be displayed on [linuxgsm.com](https://linuxgsm.com) by enabling the `stats` setting.
 
 ## How is the information used?
 
-All data collected is used to provide an insight of which game servers, distro and servers are popular with game server admins. This will assist in prioritising LinuxGSM development and give me \(Daniel Gibbs\) a never before insight of the numbers of people using LinuxGSM. This is a massive personal motivator as it has previously been difficult to know how many people actually use LinuxGSM.
+All data collected is used to provide an insight into which game servers, distro and servers are popular with game server admins. This will assist in prioritising LinuxGSM development and give me \(Daniel Gibbs\) a never before insight into the numbers of people using LinuxGSM. This is a massive personal motivator as it has previously been difficult to know how many people actually use LinuxGSM.
+
+The collected data is publicly available to view in a dashboard on [LinuxGSM.com](https://linuxgsm.com/data/usage/)
 
 ## What information is collected?
 
@@ -55,7 +57,7 @@ The UUID is located in`lgsm/data/uuid.txt`,if this file is deleted a new UUID wi
 
 Data is sent every time the monitor runs as this is the only way to regularly send data.
 
-## How can i enable this feature?
+## How can I enable this feature?
 
 To enable LinuxGSM Stats simply add the `stats="on"` setting to the `common.cfg` file. This can also be enabled on install.
 
