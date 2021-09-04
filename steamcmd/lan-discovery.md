@@ -4,23 +4,31 @@ Many admins who have tried, reported a local server does not appear on the LAN t
 
 ![LAN Discovery](../.gitbook/assets/untitled.png)
 
-There are two easy workarounds for this:
+## Workarounds
 
-* Connect using the console command
+### Console Command
 
-  Syntax: `connect IP:PORT`
+Connect using the console command.
 
-  If the port is 27015, then you can just use : `connect IP`
+```text
+connect IP:PORT
+```
 
-  Examples: `connect 192.168.1.10:27025` ; `connect 192.168.1.10`
+If the port is 27015, then you can just use : `connect IP`
 
-* Add the server to the server browser's favourites. If in-game, then go to the legacy browser if applicable to find it. The syntax to use is the same as for the console connection.
+```text
+connect 192.168.1.10:27025
+```
+
+### Add server to favourites
+
+Add the server to the server browser's favourites. If in-game, then go to the legacy browser if applicable to find it. The syntax to use is the same as for the console connection.
 
 {% hint style="danger" %}
 Make sure your server actually works and is reachable on LAN, otherwise what you need is rather [Troubleshooting](../support/troubleshooting.md) first.
 {% endhint %}
 
-## Attempt at fixing the issue
+## Fix
 
 As [this github issue](https://github.com/GameServerManagers/LinuxGSM/issues/1770) shows, there might be a possible configuration that fixes the issue, but LinuxGSM devs were not able to reproduce it at the time of writing the doc, so this information is purely experimental and you are welcome to update it or post on the issue if you have useful information to share about it.
 
