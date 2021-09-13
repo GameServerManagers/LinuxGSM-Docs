@@ -48,16 +48,16 @@ yum install java-11-openjdk
 
 JRE Availability Table Different Distros have different versions of Java. This page will outline the different versions that are available.
 
-| Distro | JRE 6 | JRE 7 | JRE 8 | JRE 11 | JRE 13 | JRE 16 |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| CentOS 7 | YES | YES | YES | YES | NO | NO |
-| CentOS 8 | NO | NO | YES | YES | NO | NO |
-| Debian 8 "Jessie" | NO | YES | YES \(backport\) | NO | NO | NO |
-| Debian 9 "Stretch" | NO | NO | YES | YES \(backport\) | NO | NO |
-| Debian 10 "Buster" | NO | NO | NO | YES | NO | NO |
-| Ubuntu 16.04 LTS | NO | NO | YES | NO | NO | NO |
-| Ubuntu 18.04 LTS | NO | NO | YES | YES | NO | NO |
-| Ubuntu 20.04 LTS | NO | NO | YES | YES | YES | YES |
+| Distro | JRE 6 | JRE 7 | JRE 8 | JRE 11 | JRE 13 | JRE 16 | JRE 17 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| CentOS 7 | YES | YES | YES | YES | NO | NO | NO |
+| CentOS 8 | NO | NO | YES | YES | NO | NO | NO |
+| Debian 9 "Stretch" | NO | NO | YES | YES \(backport\) | NO | NO | NO |
+| Debian 10 "Buster" | NO | NO | NO | YES | NO | NO | NO |
+| Debian 11 "Bullseye" | NO | NO | NO | YES | NO | NO | YES |
+| Ubuntu 16.04 LTS | NO | NO | YES | NO | NO | NO | NO |
+| Ubuntu 18.04 LTS | NO | NO | YES | YES | NO | NO | NO |
+| Ubuntu 20.04 LTS | NO | NO | YES | YES | YES | YES | NO |
 
 [Distrowatch](https://distrowatch.com) also contains details of JRE versions.
 
