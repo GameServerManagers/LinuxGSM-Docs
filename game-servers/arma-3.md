@@ -105,10 +105,10 @@ Add @cba\_a3 to the `mods=""` setting in the [LinuxGSM config](../configuration/
 mods="mods/@cba_a3"
 ```
 
-If you are adding multiple mods make sure you put a semicolon in between each mod.
+If you are adding multiple mods make sure you put a semicolon with the escape character in between each mod.
 
 ```text
-mods="mods/@mod1;mods/@mod2"
+mods="mods/@mod1\;mods/@mod2"
 ```
 
 ### Lower Case File Names
