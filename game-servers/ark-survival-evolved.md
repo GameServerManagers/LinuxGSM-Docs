@@ -37,6 +37,7 @@ The default save directory is the default map name. However with the `altsavedir
 * Valguero\_P
 * Genesis
 * CrystalIsles
+* Gen2
 
 ## Mod Support
 
