@@ -75,9 +75,6 @@
   * [Log Management](features/logging.md)
   * [Message Display Time](features/message-display-time.md)
   * [Multiple Game Servers](features/multiple-game-servers.md)
-* [Support](support/README.md)
-  * [Troubleshooting](support/troubleshooting.md)
-  * [FAQ](support/faq.md)
 * [SteamCMD](steamcmd/README.md)
   * [Steam Master Server](steamcmd/steam-master-server.md)
   * [Game Server Login Token](steamcmd/gslt.md)
@@ -92,6 +89,8 @@
   * [firewalls](linux/firewalls.md)
   * [network-interfaces](linux/network-interfaces.md)
   * [permissions](linux/permissions.md)
+* [Troubleshooting](troubleshooting.md)
+* [FAQ](faq.md)
 * [Guides](guides/README.md)
   * [Security](guides/security.md)
   * [Make Webserver Case Insensitive](guides/make-webserver-case-insensitive.md)
@@ -101,4 +100,3 @@
   * [server-migration](other/server-migration.md)
   * [basic-usage](other/basic-usage.md)
   * [brand](other/brand.md)
-

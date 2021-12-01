@@ -65,13 +65,13 @@ Common faults include:
 * Trying to install LinuxGSM in a directory not owned by the correct user.
 * Not making `gameserver` file executable using the `chmod +x` command.
 
-If trying to run as `root` LinuxGSM will fail to run. See [FAQ](../support/faq.md).
+If trying to run as `root` LinuxGSM will fail to run. See [FAQ](../faq.md).
 
 To check if the correct user owns the directory or `gameserver` file, use `ls -al`
 
 **Example output**
 
-```text
+```
 drwxrwxr-x  5 nmrihserver nmrihserver 4096 Jul 17 20:25 lgsm
 drwxr-xr-x  4 nmrihserver nmrihserver 4096 Aug 27  2015 log
 -rwxrwxr-x  1 nmrihserver nmrihserver 3885 Aug  9 23:04 nmrihserver
@@ -89,7 +89,7 @@ If some files/directories are not owned by the correct user, use the `chown` com
 
 #### Poor Network Connection to Steam servers
 
-If the connection to the Steam servers is poor \(quite common\), SteamCMD download can fail. This is why LinuxGSM will always ask you if installation was successful allowing admins to retry the download should it fail.
+If the connection to the Steam servers is poor (quite common), SteamCMD download can fail. This is why LinuxGSM will always ask you if installation was successful allowing admins to retry the download should it fail.
 
 If there are still issues downloading try the [validate](validate.md) option.
 
@@ -111,9 +111,8 @@ To check your available storage, use:
 
 Make sure you can `ping` using a hostname.
 
-```text
+```
 ping google.com
 ```
 
 Should this fail, your server may not have DNS lookup correctly configured. [https://www.cyberciti.biz/faq/linux-setup-dns-lookup/](https://www.cyberciti.biz/faq/linux-setup-dns-lookup/)
-
