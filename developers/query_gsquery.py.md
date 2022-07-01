@@ -1,4 +1,4 @@
-# monitor\_gsquery.py
+# query\_gsquery.py
 
 ## What is gsquery ?
 
@@ -15,7 +15,7 @@ Simply use the [Monitor](../commands/monitor.md) function, and if gsquery is pre
 gsquery can also be used manually. There is a help option for complete list of supported engines/query types.
 
 ```text
-./gsquery.py -a 1.2.3.4 -p 27015 -e source
+./query_gsquery.py -a 1.2.3.4 -p 27015 -e source
 ```
 
 ### Known issue
