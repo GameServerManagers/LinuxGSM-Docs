@@ -45,7 +45,7 @@ the log is located is called `dev-debug.log`
 
 ## query-raw
 
-* querys both `gamedig` and `gsquery.py`.
+* querys both `gamedig` and `query_gsquery.py`.
 
 ```bash
 ./gameserver query-raw

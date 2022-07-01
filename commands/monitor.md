@@ -10,7 +10,7 @@ Short: `./gameserver m`
 
 ## How does monitor work?
 
-Monitor first checks that the server process or [tmux](../requirements/tmux.md) session is running. If it is, it will then attempt to query the server using [gamedig](../requirements/gamedig.md) or [gsquery.py](monitor.md). Should this fail to query it will attempt to query every 15 seconds over 60 second period. Should this fail the server will be rebooted and an alert sent out.
+Monitor first checks that the server process or [tmux](../requirements/tmux.md) session is running. If it is, it will then attempt to query the server using [gamedig](../requirements/gamedig.md) or [query_gsquery.py](monitor.md). Should this fail to query it will attempt to query every 15 seconds over 60 second period. Should this fail the server will be rebooted and an alert sent out.
 
 During server start, map change, workshop downloads, the server is unable to answer queries.The monitor will wait for 60 seconds as it is common for servers to stop responding to queries during a map change. This wait prevents monitor from rebooting a server that does not require it.
 
