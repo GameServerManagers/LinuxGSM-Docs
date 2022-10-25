@@ -12,6 +12,21 @@ SteamCMD uses hexadecimal numbers to give its current "state". Every time SteamC
 
 ## Codes
 
+### Error 0x10E
+
+Seems to affect HLDS based servers. Running again often fixes the issue
+
+```
+Error! App '90' state is 0x10E after update job.
+```
+
+| Reason             | Error! App '90' state is 0x10E after update job. |        |
+| ------------------ | ------------------------------------------------ | ------ |
+| Hex                | 0x10E                                            | Reason |
+| Decimal/StateFlags | 270                                              | Hex    |
+
+{% file src="../.gitbook/assets/content_log_0x10E (1).txt" %}
+
 ### Error 0x202
 
 Not enough disk space.
@@ -20,9 +35,8 @@ Not enough disk space.
 Error! App '<appid_number>' state is 0x202 after update job.
 ```
 
-|                    |                       |
-| ------------------ | --------------------- |
 | Reason             | Not enough disk quota |
+| ------------------ | --------------------- |
 | Hex                | 0x202                 |
 | Decimal/StateFlags | 514                   |
 
@@ -45,7 +59,7 @@ Error! App '<appid_number>' state is 0x206 after update job.
 | Decimal/StateFlags | 518   |
 
 {% hint style="warning" %}
-Missing content\_log.txt if you have experienced this error and have a log it please let us know.
+Missing content\_log.txt if you have experienced this error and have a log please let us know.
 {% endhint %}
 
 ### &#x20;Error 0x212 <a href="#error-0x206" id="error-0x206"></a>
@@ -72,14 +86,13 @@ Connection issue with steam, you will need to wait for the steam servers to reco
 Error! State is 0x402 after update job.
 ```
 
-|                    |       |
-| ------------------ | ----- |
-| Reason             |       |
-| Hex                | 0x402 |
-| Decimal/StateFlags | 1026  |
+| Reason             | Connection issue |
+| ------------------ | ---------------- |
+| Hex                | 0x402            |
+| Decimal/StateFlags | 1026             |
 
 {% hint style="warning" %}
-Missing content\_log.txt if you have experienced this error and have a log it please let us know.
+Missing content\_log.txt if you have experienced this error and have a log please let us know.
 {% endhint %}
 
 ### Error 0x602
@@ -99,7 +112,7 @@ Error! State is 0x602 after update job.
 | Decimal/StateFlags | 1538  |
 
 {% hint style="warning" %}
-Missing content\_log.txt if you have experienced this error and have a log it please let us know.
+Missing content\_log.txt if you have experienced this error and have a log please let us know.
 {% endhint %}
 
 ### Error 0x606
@@ -124,9 +137,8 @@ Error! App '<appid_number>' state is 0x606 after update job.
 Error! App '<appid_number>' state is is 0x2 after update job.
 ```
 
-|                    |     |
-| ------------------ | --- |
 | Reason             |     |
+| ------------------ | --- |
 | Hex                | 0x2 |
 | Decimal/StateFlags | 2   |
 
@@ -142,9 +154,8 @@ No connection to content servers.
 Error! App '<appid_number>' state is 0x6 after update job.
 ```
 
-|                    |                                                        |
-| ------------------ | ------------------------------------------------------ |
 | Reason             | No connection to content servers                       |
+| ------------------ | ------------------------------------------------------ |
 | Reason 2           | Received 401 (Unauthorized) HTTP response for depot 11 |
 | Hex                | 0x6                                                    |
 | Decimal/StateFlags | 6                                                      |
@@ -193,15 +204,14 @@ If you have experienced an error we don't have logs for please provide them to u
 
 ## SteamCMD Hex Codes
 
-SteamCMD uses hex error codes such as `0x202` which can be converted into decimal `514`. You can use a hex to decimal converter to do this. Using the table below you can work out that the status messages. By doing a calculation. Find the highest number below the state `512` which is the first error. Then take the number away from the total `514-512=2` which gives you the last error. This can be done for any error
+SteamCMD uses hex error codes such as `0x202` which can be converted into decimal `514`. You can use a hex-to-decimal converter to do this. Using the table below you can work out the status messages. By doing a calculation. Find the highest number below the state `512` which is the first error. Then take the number away from the total `514-512=2` which gives you the last error. This can be done for any error
 
 `514-512-2=0`
 
 `512 StateUpdateRunning` , `2 StateUpdateRequired`
 
-|                     |         |
-| ------------------- | ------- |
 | StateInvalid        | 0       |
+| ------------------- | ------- |
 | StateUninstalled    | 1       |
 | StateUpdateRequired | 2       |
 | StateFullyInstalled | 4       |
@@ -250,16 +260,16 @@ The password for the branch is incorrect.
 
 ## \[S\_API FAIL] SteamAPI\_Init() failed; SteamAPI\_IsSteamRunning() failed.
 
-Ignore the error, do not do anything to attempt to fix it. It is a known error that has appeared ever since SteamPipe was introduced. It does not cause any issue and can be ignored.
+Ignore the error, do not do anything to attempt to fix it. It is a known error that has appeared ever since SteamPipe was introduced. It does not cause any issues and can be ignored.
 
 ## Loading Steam API...Failed to init SDL priority manager: SDL not found
 
-Ignore the error, do not do anything to attempt to fix it. It does not cause any issue and can be ignored.
+Ignore the error, do not do anything to attempt to fix it. It does not cause any issues and can be ignored.
 
 ## CWorkThreadPool::\~CWorkThreadPool: work processing queue not empty: 2 items discarded.
 
-Ignore the error, do not do anything to attempt to fix it. It does not cause any issue and can be ignored.
+Ignore the error, do not do anything to attempt to fix it. It does not cause any issues and can be ignored.
 
 ## Failed to set thread priority: per-thread setup failed
 
-Ignore the error, do not do anything to attempt to fix it. It does not cause any issue and can be ignored.
+Ignore the error, do not do anything to attempt to fix it. It does not cause any issues and can be ignored.
