@@ -15,7 +15,7 @@ Unreal Tournament 99 Requires a few alterations from the official server downloa
 
 ## Server Resources
 
-[UT99.org is a community website for UT99](https://ut99.org)
+[UT99.org is a community website for UT99](https://ut99.org/)
 
 [OldUnreal is another community website](https://www.oldunreal.com/index.html)
 

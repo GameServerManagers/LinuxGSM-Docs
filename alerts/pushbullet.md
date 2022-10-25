@@ -1,6 +1,6 @@
 # Pushbullet
 
-![](../.gitbook/assets/pushbullet_logo%20%281%29.png)
+![](../.gitbook/assets/pushbullet\_logo.png)
 
 [Pushbullet](https://www.pushbullet.com) allows the sending of push notifications to various devices such a PC, phone and tablet. This functionality is used to allow users to recieve alerts about LinuxGSM.
 
@@ -25,7 +25,6 @@ Visit [here](https://www.pushbullet.com/my-channel) to generate a channel.
 
 Once you have created the channel set the channeltag in the script without using hash `#`.
 
-```text
+```
 channeltag="myepicserver"
 ```
-

@@ -2,7 +2,7 @@
 
 Many admins who have tried, reported a local server does not appear on the LAN tab in the steam browser.
 
-![LAN Discovery](../.gitbook/assets/untitled.png)
+![LAN Discovery](<../.gitbook/assets/untitled (1).png>)
 
 ## Workarounds
 
