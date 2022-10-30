@@ -9,15 +9,15 @@ To enable Telegram alerts you need to create your own Telegram Bot.
 1. To do this you will need to speak to @BotFather by visiting [here](https://telegram.me/BotFather).
 2. Click start to begin the chat.
 
-![BotFather Chat](../.gitbook/assets/botfather_chat.png)
+![BotFather Chat](../.gitbook/assets/botfather\_chat.png)
 
 1. Type `/newbot` and follow the instructions to create a bot.
 
-![new Bot](../.gitbook/assets/botfather_new_bot.png)
+![new Bot](../.gitbook/assets/botfather\_new\_bot.png)
 
 1. Once complete an API token will be given. Enter the token to the [LinuxGSM config](../configuration/linuxgsm-config.md).
 
-```text
+```
    #Telegram Alerts | https://github.com/GameServerManagers/LinuxGSM/wiki/Telegram
 
    telegramalert="on"
@@ -41,7 +41,7 @@ The bot will now be added to the group.
 
 If you are using an existing group, invite the bot to the group.
 
-```text
+```
 View group info -> Add Members.
 ```
 
@@ -56,7 +56,7 @@ To obtain the chat id a message must be received by the bot. This will allow it 
 
 To retrieve the chat id visit the following url, replacing the `XXXXX` with your bot token from earlier.
 
-```text
+```
 https://api.telegram.org/botXXXXXXXXX:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/getUpdates
 ```
 
@@ -64,7 +64,7 @@ Look for text `LINUXGSM` in the message and find the `chat id` part of that mess
 
 > note: A group number includes a dash in the chat id e.g `-191537238`
 
-```text
+```
 The number given is the chat id
 
 > note: A group number includes a dash in the chat id e.g `-191537238`
@@ -78,13 +78,13 @@ The number given is the chat id
 A group number might include a dash in the chat id e.g `-191537238`
 {% endhint %}
 
-```text
+```
 "chat":{"id":-191537238,
 ```
 
-Add the chat id to the [LinuxGSM config](../configuration/linuxgsm-config.md).
+Add the chat id to the [LinuxGSM config](https://app.gitbook.com/s/-LJf1\_IiU2L1vVxT7iNe/configuration/linuxgsm-config.md).
 
-```text
+```
 ## Telegram Alerts | https://github.com/GameServerManagers/LinuxGSM/wiki/Telegram
 
 telegramalert="on"
@@ -96,11 +96,10 @@ telegramchatid="-191537238"
 
 Finally, test that everything correctly works by sending a test alert. You will now receive a message from the bot directly or to a chosen group.
 
-```text
+```
 ./gameserver test-alert
 ```
 
 ## Custom cURL String
 
-You can add a custom cURL string eg proxy \(useful in Russia\) in "curlcustomstring"
-
+You can add a custom cURL string eg proxy (useful in Russia) in "curlcustomstring"

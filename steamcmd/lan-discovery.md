@@ -2,7 +2,7 @@
 
 Many admins who have tried, reported a local server does not appear on the LAN tab in the steam browser.
 
-![LAN Discovery](../.gitbook/assets/untitled.png)
+![LAN Discovery](<../.gitbook/assets/untitled (1).png>)
 
 ## Workarounds
 
@@ -10,13 +10,13 @@ Many admins who have tried, reported a local server does not appear on the LAN t
 
 Connect using the console command.
 
-```text
+```
 connect IP:PORT
 ```
 
 If the port is 27015, then you can just use : `connect IP`
 
-```text
+```
 connect 192.168.1.10:27025
 ```
 
@@ -25,7 +25,7 @@ connect 192.168.1.10:27025
 Add the server to the server browser's favourites. If in-game, then go to the legacy browser if applicable to find it. The syntax to use is the same as for the console connection.
 
 {% hint style="danger" %}
-Make sure your server actually works and is reachable on LAN, otherwise what you need is rather [Troubleshooting](../support/troubleshooting.md) first.
+Make sure your server actually works and is reachable on LAN, otherwise what you need is rather [Troubleshooting](../troubleshooting.md) first.
 {% endhint %}
 
 ## Fix
@@ -36,4 +36,3 @@ As [this github issue](https://github.com/GameServerManagers/LinuxGSM/issues/177
 2. Change `ip="0.0.0.0"` to an actual interface IP, for example `ip="192.168.1.10"` ; this will allow LinuxGSM to [monitor](../commands/monitor.md) and query your server properly.
 3. In the `fn_parms` section, add `+sv_lan 1` and make sure you replace `-ip ${ip}` with `-ip 0.0.0.0`
 4. Make sure your server main port listens to one of these IP or IP ranges: 4242 ; 26900-26905 ; 27015-27020 ; 27215
-

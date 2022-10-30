@@ -4,7 +4,7 @@
 
 ## How is the information used?
 
-All data collected is used to provide an insight into which game servers, distro and servers are popular with game server admins. This will assist in prioritising LinuxGSM development and give me \(Daniel Gibbs\) a never before insight into the numbers of people using LinuxGSM. This is a massive personal motivator as it has previously been difficult to know how many people actually use LinuxGSM.
+All data collected is used to provide an insight into which game servers, distro and servers are popular with game server admins. This will assist in prioritising LinuxGSM development and give me (Daniel Gibbs) a never before insight into the numbers of people using LinuxGSM. This is a massive personal motivator as it has previously been difficult to know how many people actually use LinuxGSM.
 
 The collected data is publicly available to view in a dashboard on [LinuxGSM.com](https://linuxgsm.com/data/usage/)
 
@@ -23,9 +23,9 @@ Below is a list of types of data collected
 
 Gathering game server usage helps set the minimum required hardware for each game server. This is particularly useful for resource intensive servers.
 
-* CPU Used - The CPU usage  in MHz \(rounded to the neared 100MHz\) of the game server.
-* RAM Used - The memory usage in MB \(rounded to the neared 100MB\) of the game server.
-* Disk Used - This storage taken by the game server \(serverfiles directory\) of the game server.
+* CPU Used - The CPU usage  in MHz (rounded to the neared 100MHz) of the game server.
+* RAM Used - The memory usage in MB (rounded to the neared 100MB) of the game server.
+* Disk Used - This storage taken by the game server (serverfiles directory) of the game server.
 
 ### Server Hardware
 
@@ -47,9 +47,9 @@ LinuxGSM Stats uses Google Analytics to collect information to allow Daniel Gibb
 
 Short answer - Yes
 
-Long answer - All information gathered is anonymous, the server IP address, hostname etc or other identifying information is not collected.   
-  
-When LinuxGSM Stats is first run it creates a [UUID \(Unique identifier\)](https://en.wikipedia.org/wiki/Universally_unique_identifier) which is a randomly generated ID to allow Google Analytics to identify your unique information anonymously. Since this ID is random there is no way to know where the info is from, only that it is from the same sender. 
+Long answer - All information gathered is anonymous, the server IP address, hostname etc or other identifying information is not collected. \
+\
+When LinuxGSM Stats is first run it creates a [UUID (Unique identifier)](https://en.wikipedia.org/wiki/Universally\_unique\_identifier) which is a randomly generated ID to allow Google Analytics to identify your unique information anonymously. Since this ID is random there is no way to know where the info is from, only that it is from the same sender.&#x20;
 
 The UUID is located in`lgsm/data/uuid.txt`,if this file is deleted a new UUID will be generated.
 
@@ -60,8 +60,6 @@ Data is sent every time the monitor runs as this is the only way to regularly se
 ## How can I enable this feature?
 
 To enable LinuxGSM Stats simply add the `stats="on"` setting to the `common.cfg` file. This can also be enabled on install.
-
-
 
 
 

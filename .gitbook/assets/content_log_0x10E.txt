@@ -1,0 +1,65 @@
+Waiting for user info...OK
+ Update state (0x3) reconfiguring, progress: 0.00 (0 / 0)
+ Update state (0x61) downloading, progress: 12.96 (11983576 / 92443098)
+ Update state (0x61) downloading, progress: 96.60 (89297370 / 92443098)
+Error! App '90' state is 0x10E after update job.
+
+
+[2022-10-25 20:38:00] Old Steam library detected! Migrating /home/dgibbs/.steam/SteamApps to lowercase.
+[2022-10-25 20:38:00] Loaded 0 apps from install folder "/home/dgibbs/.steam/steamapps\appmanifest_*.acf".
+[2022-10-25 20:38:05] AppID 90 state changed : Update Required,
+[2022-10-25 20:38:05] AppID 70 state changed : Uninstalled, (Missing configuration)
+[2022-10-25 20:38:05] AppID 70 finished uninstall (Missing configuration)
+[2022-10-25 20:38:05] AppID 90 scheduler update : Priority First, not played for 1 seconds, update disabled for 0 seconds
+[2022-10-25 20:38:05] AppID 90 state changed : Update Required,Update Queued,
+[2022-10-25 20:38:05] AppID 90 scheduler update : Priority First, not played for 1 seconds, update disabled for 0 seconds
+[2022-10-25 20:38:05] AppID 70 state changed : Uninstalled, (Missing configuration)
+[2022-10-25 20:38:05] AppID 70 finished uninstall (Missing configuration)
+[2022-10-25 20:38:05] AppID 90 state changed : Update Required,Update Queued,Update Running,
+[2022-10-25 20:38:05] AppID 90 update changed : Running Update,
+[2022-10-25 20:38:05] AppID 90 update changed : Running Update,Reconfiguring,
+[2022-10-25 20:38:05] Got 30 download sources and 0 caching proxies via ContentServerDirectoryService::BYieldingGetServersForSteamPipe (CellID 2 / Launcher 3)
+[2022-10-25 20:38:05] Created download interface of type 'SteamCache' (7) to host cache5-iad1.steamcontent.com (cache5-iad1.steamcontent.com)
+[2022-10-25 20:38:05] Created download interface of type 'SteamCache' (7) to host cache7-iad1.steamcontent.com (cache7-iad1.steamcontent.com)
+[2022-10-25 20:38:05] Created download interface of type 'SteamCache' (7) to host cache9-iad1.steamcontent.com (cache9-iad1.steamcontent.com)
+[2022-10-25 20:38:05] Created dual-stack http client
+[2022-10-25 20:38:06] HTTP (SteamCache,35) - cache5-iad1.steamcontent.com ([2602:801:f002:101::a2fe:c005]:80 / [2602:801:f002:101::a2fe:c005]:80, host: cache5-iad1.steamcontent.com): cache5-iad1.steamcontent.com/depot/4/manifest/8690279432129063737/5/2463911321644636995 - received 200 (OK) HTTP response
+[2022-10-25 20:38:06] HTTP (SteamCache,35) - cache5-iad1.steamcontent.com ([2602:801:f002:101::a2fe:c005]:80 / [2602:801:f002:101::a2fe:c005]:80, host: cache5-iad1.steamcontent.com): cache5-iad1.steamcontent.com/depot/1006/manifest/4444585935428744334/5/5023122876136411655 - received 200 (OK) HTTP response
+[2022-10-25 20:38:06] AppID 90 update changed : Running Update,
+[2022-10-25 20:38:06] AppID 90 update changed : Running Update,Validating,
+[2022-10-25 20:38:06] AppID 90 update changed : Running Update,
+[2022-10-25 20:38:06] AppID 90 update changed : Running Update,Preallocating,
+[2022-10-25 20:38:06] AppID 90 update changed : Running Update,
+[2022-10-25 20:38:06] AppID 90 update started : download 0/25871760, store 0/0, reuse 0/0, delta 0/0, stage 0/92443098 
+[2022-10-25 20:38:06] AppID 90 state changed : Update Required,Update Queued,Update Running,Update Started,
+[2022-10-25 20:38:06] AppID 90 update changed : Running Update,Downloading,Staging,
+[2022-10-25 20:38:06] Downloading 37 chunks from depot 4
+[2022-10-25 20:38:07] Downloading 64 chunks from depot 1006
+[2022-10-25 20:38:09] AppID 90 update changed : Running Update,
+[2022-10-25 20:38:09] AppID 90 update changed : Running Update,Verifying,
+[2022-10-25 20:38:09] Verified 88 MB in '/home/dgibbs/.steam', clean bytes tally is now 88 MB
+[2022-10-25 20:38:09] AppID 90 update changed : Running Update,
+[2022-10-25 20:38:09] AppID 90 update changed : Running Update,Committing,
+[2022-10-25 20:38:09] AppID 90 starting commit from "/home/dgibbs/.steam/steamapps/downloading/90" to "/home/dgibbs/.steam/steamapps/common/Half-Life" : 25 updated, 0 moved, 0 deleted files
+[2022-10-25 20:38:09] AppID 90 state changed : Fully Installed,Update Queued,Update Running,
+[2022-10-25 20:38:09] AppID 90 finished update, 2 mounted depots (BuildID 5433925) : 4 (8690279432129063737),1006 (4444585935428744334),
+[2022-10-25 20:38:09] AppID 90 update changed : Running Update,
+[2022-10-25 20:38:09] AppID 90 update changed : None
+[2022-10-25 20:38:09] AppID 90 state changed : Fully Installed,Update Queued,
+[2022-10-25 20:38:09] AppID 70 state changed : Update Required,Shared Only,
+[2022-10-25 20:38:09] Dependency added: parent 70, child 90, depot 1
+[2022-10-25 20:38:09] AppID 90 state changed : Update Required,Fully Installed,Update Queued,
+[2022-10-25 20:38:09] AppID 10 state changed : Update Required,Shared Only,
+[2022-10-25 20:38:09] Dependency added: parent 10, child 90, depot 11
+[2022-10-25 20:38:09] Dependency added: parent 70, child 90, depot 71
+[2022-10-25 20:38:09] AppID 90 scheduler finished : staying in schedule (result No Error, state 0xe) 
+[2022-10-25 20:38:09] AppID 90 state changed : Update Required,Fully Installed,Update Queued,Update Running,
+[2022-10-25 20:38:09] AppID 70 state changed : Update Required,Shared Only,Update Running,
+[2022-10-25 20:38:09] AppID 10 state changed : Update Required,Shared Only,Update Running,
+[2022-10-25 20:38:09] AppID 90 update changed : Running Update,
+[2022-10-25 20:38:09] AppID 90 update changed : Running Update,Reconfiguring,
+[2022-10-25 20:38:09] AppID 90 update canceled : Shutdown (No connection)
+[2022-10-25 20:38:09] AppID 90 update changed : Running Update,Reconfiguring,Stopping,
+[2022-10-25 20:38:09] HTTP (SteamCache,224) - cache9-iad1.steamcontent.com ([2602:801:f002:101::a2fe:c007]:80 / [2602:801:f002:101::a2fe:c007]:80, host: cache9-iad1.steamcontent.com): Closing connection
+[2022-10-25 20:38:09] HTTP (SteamCache,220) - cache7-iad1.steamcontent.com ([2602:801:f002:101::a2fe:c006]:80 / [2602:801:f002:101::a2fe:c006]:80, host: cache7-iad1.steamcontent.com): Closing connection
+[2022-10-25 20:38:09] HTTP (SteamCache,35) - cache5-iad1.steamcontent.com ([2602:801:f002:101::a2fe:c005]:80 / [2602:801:f002:101::a2fe:c005]:80, host: cache5-iad1.steamcontent.com): Closing connection

@@ -1,36 +1,36 @@
 # Ports
 
-Ports are communication endpoints for an application. A port will either listen or transmit network traffic on specific ports. 
+Ports are communication endpoints for an application. A port will either listen or transmit network traffic on specific ports.&#x20;
 
-There are port standards set by IANA for common protocols such as HTTP \(port 80\), SSH \(port 22\), SMTP \(port 25\) etc. Game servers tend to use standard ports depending upon the game engine. For example source engine games by default use port 27015 as the port it listens on.
+There are port standards set by IANA for common protocols such as HTTP (port 80), SSH (port 22), SMTP (port 25) etc. Game servers tend to use standard ports depending upon the game engine. For example source engine games by default use port 27015 as the port it listens on.
 
 ~~Here are the most common ones:~~
 
 * ~~When you want to run~~ [~~Multiple Game Servers~~](../features/multiple-game-servers.md) ~~on the same machine~~
-* ~~When you have a strict firewall and you need to open the right ports in order to let people connect to your server \(see~~ [~~Firewalls~~](../linux/firewalls.md)~~\)~~
-* ~~When you need to forward ports on a NAT to the desired local IP in order for your server to be reachable from outside the local network \(likely from the internet\)~~
+* ~~When you have a strict firewall and you need to open the right ports in order to let people connect to your server (see~~ [~~Firewalls~~](../linux/firewalls.md)~~)~~
+* ~~When you need to forward ports on a NAT to the desired local IP in order for your server to be reachable from outside the local network (likely from the internet)~~
 
 ## Vocabulary
 
-* _**Port listening**_ ****is what a service like a game server does in order to receive packets from incoming connections: by listening to a port, the program waiting for incoming packets on a given port.
+* _**Port listening**_** ** is what a service like a game server does in order to receive packets from incoming connections: by listening to a port, the program waiting for incoming packets on a given port.
 * _**Port opening**_ happens on a firewall, it consists of allowing traffic to a port.
 * _**Port redirection**_ is part of NAT and happens on a router or firewall. It consists of forwarding incoming traffic on a given port to a specific local IP.
-* _**Network Address Translation \(NAT\)**_  is a method of remapping an IP address into another by modifying [network address](https://en.wikipedia.org/wiki/Network_address) information.
+* _**Network Address Translation (NAT)**_  is a method of remapping an IP address into another by modifying [network address](https://en.wikipedia.org/wiki/Network\_address) information.
 
 ## Game Server Ports
 
 Game Servers typicaliy have ports for the following functions.
 
-Game port: The port that players connect to.  
-Query port: Used by software to gather information from the server such as server name, map and number of players.  
-Rcon port  
-Web port: used for game server that have web admin panels 
+Game port: The port that players connect to.\
+Query port: Used by software to gather information from the server such as server name, map and number of players.\
+Rcon port\
+Web port: used for game server that have web admin panels&#x20;
 
 Depending upon which game server being used, you can set game server ports within your start parameters or game server config file.
 
 LinuxGSM allows you to see the ports your game server is using with the `./gameserver details` command.
 
-```text
+```
 Useful port diagnostic command:
 netstat -atunp | grep srcds_linux
 
@@ -42,11 +42,11 @@ DESCRIPTION  DIRECTION  PORT   PROTOCOL
 
 ## Changing Default Ports
 
-Default ports are set in either the [start parameters](start-parameters.md) or [game config](game-server-config.md). 
+Default ports are set in either the [start parameters](start-parameters.md) or [game config](game-server-config.md).&#x20;
 
 LinuxGSMYou can use `./gameserver details` to find out where to edit port settings
 
-```text
+```
 # Ports
 # =====================================
 # Change ports by editing the parameters in:
@@ -83,17 +83,17 @@ Each type of server has a default set of ports. This is fine to use if only one 
 
 Source Default Ports
 
-```text
+```
 port="27015"
 sourcetvport="27020"
 clientport="27005"
 ```
 
-### Incremental \(recommended\)
+### Incremental (recommended)
 
 You can allocate ports incrementally, one after the other. With each server following on from the last.
 
-```text
+```
 port="27015"
 sourcetvport="27016"
 clientport="27017"
@@ -133,12 +133,12 @@ If you are running several game servers it is a good idea to create a spreadshee
 
 Ensure the game server ports are bound and listening before anything else, you need to know if your server is actually listening. Input : `./gameserver details` and look for this kind of diagnose command:
 
-```text
+```
 Useful port diagnostic command:
 netstat -atunp | grep srcds_linux
 ```
 
-Running the command will bring up any ports that are listening. If not, the game server has not started or not correctly binding to its allocated ports. 
+Running the command will bring up any ports that are listening. If not, the game server has not started or not correctly binding to its allocated ports.&#x20;
 
 * Check that ports are not already in use by something else.
 * Check that you are trying to listen to an actual interface IP.
@@ -149,7 +149,6 @@ Running the command will bring up any ports that are listening. If not, the game
 
 [Firewalls](../linux/firewalls.md) are a regular source of connectivity issues. When diagnosing connection issues temporarily disabling a firewall will help identify if it is the source of the problem.
 
-### Check Port Forwarding \(Local Networks\)
+### Check Port Forwarding (Local Networks)
 
-Ensure that the router correctly redirects incoming traffic to the correct ports and local IP displayed with `./gameserver details` with the correct protocol \(TCP and/or UDP\).
-
+Ensure that the router correctly redirects incoming traffic to the correct ports and local IP displayed with `./gameserver details` with the correct protocol (TCP and/or UDP).
