@@ -8,7 +8,7 @@ Due to the large influx of new LGSM users specifically setting up Valheim server
 
 
 
-L[inuxGSM Config Page](../configuration/linuxgsm-config.md)
+[LinuxGSM Config Page](../configuration/linuxgsm-config.md)
 
 Shows where to apply settings for a server using LGSM config files.
 
