@@ -16,11 +16,11 @@ It is recommended that only Ubuntu LTS releases are used for game servers becaus
 Ubuntu 18.04 LTS is recommended
 {% endhint %}
 
-| **Version** | **Code name** | **Release date** | **Supported until** |
+| **Version** | **Code name** | **Release date** | **Security support until** |
 | :--- | :--- | :--- | :--- |
 | ~~~~[~~16.04 LTS~~](https://en.wikipedia.org/wiki/List_of_Ubuntu_releases#Ubuntu_16.04_LTS_%28Xenial_Xerus%29)~~~~ | ~~Xenial Xerus~~ | ~~2016-04-21~~ | ~~2021-04~~ |
 | [18.04 LTS](https://en.wikipedia.org/wiki/List_of_Ubuntu_releases#Ubuntu_18.04_LTS_%28Bionic_Beaver%29) | Bionic Beaver | 2018-04-26 | 2028-04 |
-| 20.04 LTS | Focal Fossa | 2020-04-23 | 2025-04 |
+| 20.04 LTS | Focal Fossa | 2020-04-23 | 2030-04 |
 
 [https://en.wikipedia.org/wiki/Ubuntu\#Releases](https://en.wikipedia.org/wiki/Ubuntu#Releases)
 
