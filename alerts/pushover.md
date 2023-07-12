@@ -1,6 +1,6 @@
 # Pushover
 
-![](<../.gitbook/assets/pushover\_logo (1).png>)
+![](../.gitbook/assets/pushover\_logo.png)
 
 [Pushover](https://pushover.net) allows the sending of push notifications to various devices such a PC, phone and tablet. This functionality is used to allow users to receive alerts about LinuxGSM.
 

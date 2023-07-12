@@ -12,7 +12,7 @@ There are port standards set by IANA for common protocols such as HTTP (port 80)
 
 ## Vocabulary
 
-* _**Port listening**_** ** is what a service like a game server does in order to receive packets from incoming connections: by listening to a port, the program waiting for incoming packets on a given port.
+* _**Port listening**_ is what a service like a game server does in order to receive packets from incoming connections: by listening to a port, the program waiting for incoming packets on a given port.
 * _**Port opening**_ happens on a firewall, it consists of allowing traffic to a port.
 * _**Port redirection**_ is part of NAT and happens on a router or firewall. It consists of forwarding incoming traffic on a given port to a specific local IP.
 * _**Network Address Translation (NAT)**_  is a method of remapping an IP address into another by modifying [network address](https://en.wikipedia.org/wiki/Network\_address) information.

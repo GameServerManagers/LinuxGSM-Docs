@@ -20,12 +20,9 @@ Seems to affect HLDS based servers. Running again often fixes the issue
 Error! App '90' state is 0x10E after update job.
 ```
 
-| Reason             | Error! App '90' state is 0x10E after update job. |        |
-| ------------------ | ------------------------------------------------ | ------ |
-| Hex                | 0x10E                                            | Reason |
-| Decimal/StateFlags | 270                                              | Hex    |
+<table data-header-hidden><thead><tr><th width="333"></th><th></th><th data-hidden></th></tr></thead><tbody><tr><td>Reason</td><td>Error! App '90' state is 0x10E after update job.</td><td></td></tr><tr><td>Hex</td><td>0x10E</td><td>Reason</td></tr><tr><td>Decimal/StateFlags</td><td>270</td><td>Hex</td></tr></tbody></table>
 
-{% file src="../.gitbook/assets/content_log_0x10E (1).txt" %}
+{% file src="../.gitbook/assets/content_log_0x10E.txt" %}
 
 ### Error 0x202
 
@@ -40,7 +37,7 @@ Error! App '<appid_number>' state is 0x202 after update job.
 | Hex                | 0x202                 |
 | Decimal/StateFlags | 514                   |
 
-{% file src="../.gitbook/assets/content_log.txt" %}
+{% file src="../.gitbook/assets/content_log_0x202.txt" %}
 
 ### Error 0x206
 
@@ -62,7 +59,7 @@ Error! App '<appid_number>' state is 0x206 after update job.
 Missing content\_log.txt if you have experienced this error and have a log please let us know.
 {% endhint %}
 
-### &#x20;Error 0x212 <a href="#error-0x206" id="error-0x206"></a>
+### Error 0x212 <a href="#error-0x206" id="error-0x206"></a>
 
 Not enough disk space.
 
@@ -129,7 +126,7 @@ Error! App '<appid_number>' state is 0x606 after update job.
 | Hex                | 0x606              |
 | Decimal/StateFlags | 1542               |
 
-{% file src="../.gitbook/assets/content_log (2).txt" %}
+{% file src="../.gitbook/assets/content_log_0x606.txt" %}
 
 ### Error 0x2
 
@@ -154,15 +151,11 @@ No connection to content servers.
 Error! App '<appid_number>' state is 0x6 after update job.
 ```
 
-| Reason             | No connection to content servers                       |
-| ------------------ | ------------------------------------------------------ |
-| Reason 2           | Received 401 (Unauthorized) HTTP response for depot 11 |
-| Hex                | 0x6                                                    |
-| Decimal/StateFlags | 6                                                      |
+<table data-header-hidden><thead><tr><th width="241"></th><th></th></tr></thead><tbody><tr><td>Reason</td><td>No connection to content servers</td></tr><tr><td>Reason 2</td><td>Received 401 (Unauthorized) HTTP response for depot 11</td></tr><tr><td>Hex</td><td>0x6</td></tr><tr><td>Decimal/StateFlags</td><td>6</td></tr></tbody></table>
 
-{% file src="../.gitbook/assets/content_log (1).txt" %}
+{% file src="../.gitbook/assets/content_log_0x6.txt" %}
 
-{% file src="../.gitbook/assets/content_log_0x6-2 (2).txt" %}
+{% file src="../.gitbook/assets/content_log_0x6-2 (1) (1).txt" %}
 
 ### 0x3
 

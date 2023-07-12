@@ -1,6 +1,6 @@
 # Pushbullet
 
-![](../.gitbook/assets/pushbullet\_logo.png)
+![](<../.gitbook/assets/pushbullet\_logo (1).png>)
 
 [Pushbullet](https://www.pushbullet.com) allows the sending of push notifications to various devices such a PC, phone and tablet. This functionality is used to allow users to recieve alerts about LinuxGSM.
 
