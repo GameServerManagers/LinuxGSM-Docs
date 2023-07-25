@@ -1,0 +1,69 @@
+[2023-07-25 22:59:38] Client version: 1689642531
+[2023-07-25 22:59:38] Loaded Steam library folders configuration: /data/.local/share/Steam/steamapps/libraryfolders.vdf
+[2023-07-25 22:59:38] Loaded 1 apps from install folder "/data/serverfiles/steamapps\appmanifest_*.acf".
+[2023-07-25 22:59:38] Triggered async write of Steam library folders configuration (1 libraries).
+[2023-07-25 22:59:40] AppID 232250 config changed : updated depots 232250,232256
+[2023-07-25 22:59:40] AppID 232250 scheduler update : Priority First, not played for 1342122 seconds, update disabled for 0 seconds
+[2023-07-25 22:59:40] AppID 232250 state changed : Update Required,Fully Installed,Update Queued,Files Missing,Update Started,
+[2023-07-25 22:59:40] AppID 232250 config changed : updated depots 232250,232256
+[2023-07-25 22:59:40] AppID 232250 state changed : Update Required,Fully Installed,Update Queued,Files Missing,Update Running,Update Started,
+[2023-07-25 22:59:40] AppID 232250 update changed : Running Update,
+[2023-07-25 22:59:40] AppID 232250 update changed : Running Update,Reconfiguring,
+[2023-07-25 22:59:40] Got 30 download sources and 0 caching proxies via ContentServerDirectoryService::BYieldingGetServersForSteamPipe (CellID 4 / Launcher 3)
+[2023-07-25 22:59:40] Created download interface of type 'SteamCache' (7) to host cache7-lhr1.steamcontent.com (cache7-lhr1.steamcontent.com)
+[2023-07-25 22:59:40] Created download interface of type 'SteamCache' (7) to host cache1-lhr1.steamcontent.com (cache1-lhr1.steamcontent.com)
+[2023-07-25 22:59:40] Created download interface of type 'SteamCache' (7) to host cache3-lhr1.steamcontent.com (cache3-lhr1.steamcontent.com)
+[2023-07-25 22:59:40] HTTP/2 available
+[2023-07-25 22:59:40] Created ipv4-only http client
+[2023-07-25 22:59:40] HTTPS (SteamCache,228) - cache7-lhr1.steamcontent.com (162.254.196.6:443 / 162.254.196.6:443, host: cache7-lhr1.steamcontent.com): Negotiated HTTP/2
+[2023-07-25 22:59:41] HTTPS (SteamCache,143) - cache1-lhr1.steamcontent.com (162.254.196.3:443 / 162.254.196.3:443, host: cache1-lhr1.steamcontent.com): Negotiated HTTP/2
+[2023-07-25 22:59:41] AppID 232250 update changed : Running Update,
+[2023-07-25 22:59:41] AppID 232250 update changed : Running Update,Validating,
+[2023-07-25 22:59:41] Validation: missing file "tf\maps\cp_altitude.bsp"
+[2023-07-25 22:59:41] Validation: missing file "tf\maps\cp_steel.bsp"
+[2023-07-25 22:59:41] Validation: missing file "tf\maps\koth_cascade.bsp"
+[2023-07-25 22:59:41] Validation: missing file "tf\maps\pl_phoenix.bsp"
+[2023-07-25 22:59:41] Validation: missing file "tf\maps\vsh_distillery.bsp"
+[2023-07-25 22:59:41] Validation: missing file "tf\maps\vsh_nucleus.bsp"
+[2023-07-25 22:59:41] Validation: missing file "tf\maps\vsh_skirmish.bsp"
+[2023-07-25 22:59:41] Validation: missing file "tf\maps\vsh_tinyrock.bsp"
+[2023-07-25 22:59:41] Validation: missing file "tf\resource\tf_english.txt"
+[2023-07-25 22:59:41] Validation: missing file "tf\scripts\items\items_game.txt"
+[2023-07-25 22:59:41] Validation: missing file "tf\scripts\items\items_game.txt.sig"
+[2023-07-25 22:59:41] Validation: missing file "tf\steam.inf"
+[2023-07-25 22:59:41] Validation: missing file "bin\datacache_srv.so"
+[2023-07-25 22:59:41] Validation: missing file "bin\engine_srv.so"
+[2023-07-25 22:59:41] Validation: missing file "tf\bin\server_srv.so"
+[2023-07-25 22:59:41] Validation: quick scan in "/data/serverfiles" found 15/945 mismatching files (0 seconds).
+[2023-07-25 22:59:41] AppID 232250 update changed : Running Update,
+[2023-07-25 22:59:41] AppID 232250 update started : download 366517872/366517872, store 0/0, reuse 1048576/1048576, delta 0/0, stage 412374713/412374713
+[2023-07-25 22:59:41] AppID 232250 update changed : Running Update,Staging,
+[2023-07-25 22:59:41] AppID 232250 update changed : Running Update,
+[2023-07-25 22:59:41] AppID 232250 update changed : Running Update,Verifying,
+[2023-07-25 22:59:41] Validation: missing file "tf\maps\cp_altitude.bsp"
+[2023-07-25 22:59:41] Validation: missing file "tf\maps\cp_steel.bsp"
+[2023-07-25 22:59:41] Validation: missing file "tf\maps\koth_cascade.bsp"
+[2023-07-25 22:59:41] Validation: missing file "tf\maps\pl_phoenix.bsp"
+[2023-07-25 22:59:41] Validation: missing file "tf\maps\vsh_distillery.bsp"
+[2023-07-25 22:59:41] Validation: missing file "tf\maps\vsh_nucleus.bsp"
+[2023-07-25 22:59:41] Validation: missing file "tf\maps\vsh_skirmish.bsp"
+[2023-07-25 22:59:41] Validation: missing file "tf\maps\vsh_tinyrock.bsp"
+[2023-07-25 22:59:41] Validation: missing file "tf\resource\tf_english.txt"
+[2023-07-25 22:59:41] Validation: missing file "tf\scripts\items\items_game.txt"
+[2023-07-25 22:59:41] Validation: missing file "tf\scripts\items\items_game.txt.sig"
+[2023-07-25 22:59:41] Validation: missing file "tf\steam.inf"
+[2023-07-25 22:59:41] Validation: full scan in "/data/serverfiles/steamapps/downloading/232250" found 12/12 mismatching files (376.82 MB/376.82 MB) in 0 seconds).
+[2023-07-25 22:59:41] Validation: missing file "bin\datacache_srv.so"
+[2023-07-25 22:59:41] Validation: missing file "bin\engine_srv.so"
+[2023-07-25 22:59:41] Validation: missing file "tf\bin\server_srv.so"
+[2023-07-25 22:59:41] Validation: full scan in "/data/serverfiles/steamapps/downloading/232250" found 3/3 mismatching files (35.55 MB/35.55 MB) in 0 seconds).
+[2023-07-25 22:59:41] AppID 232250 update canceled : Staged file validation failed (12 missing, 0 corrupt, 0 unreadable) (Missing update files)
+[2023-07-25 22:59:41] AppID 232250 update changed : Running Update,Verifying,Stopping,
+[2023-07-25 22:59:41] AppID 232250 update changed : Running Update,Stopping,
+[2023-07-25 22:59:41] AppID 232250 update changed : None
+[2023-07-25 22:59:41] AppID 232250 state changed : Update Required,Fully Installed,Update Queued,Files Missing,Update Started, (Missing update files)
+[2023-07-25 22:59:41] AppID 232250 state changed : Update Required,Fully Installed,Files Missing,Update Paused,Update Started,
+[2023-07-25 22:59:41] AppID 232250 scheduler finished : removed from schedule (result Missing update files, state 0x626)
+[2023-07-25 22:59:41] HTTP (SteamCache,145) - cache3-lhr1.steamcontent.com (0.0.0.0:0 / 0.0.0.0:0, host: cache3-lhr1.steamcontent.com): Closing connection
+[2023-07-25 22:59:41] HTTP/2 (SteamCache,143) - cache1-lhr1.steamcontent.com (162.254.196.3:443 / 162.254.196.3:443, host: cache1-lhr1.steamcontent.com): Closing connection
+[2023-07-25 22:59:41] HTTP/2 (SteamCache,228) - cache7-lhr1.steamcontent.com (162.254.196.6:443 / 162.254.196.6:443, host: cache7-lhr1.steamcontent.com): Closing connection

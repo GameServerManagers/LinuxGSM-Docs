@@ -128,6 +128,26 @@ Error! App '<appid_number>' state is 0x606 after update job.
 
 {% file src="../.gitbook/assets/content_log_0x606.txt" %}
 
+### Error 0x626
+
+Missing update files
+
+```
+Error! App '232250' state is 0x626 after update job.
+```
+
+
+
+|                    |                      |
+| ------------------ | -------------------- |
+| Reason             | Missing update files |
+| Hex                | 0x626                |
+| Decimal/StateFlags |                      |
+
+{% file src="../.gitbook/assets/content_log_0x626.txt" %}
+
+
+
 ### Error 0x2
 
 ```
