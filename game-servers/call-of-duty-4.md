@@ -38,9 +38,7 @@ set sv_authtoken "mytokenhere"`
 
 The server then needs to be restarted to allow the game server to be listed.
 
-[CoD4x master server list](http://cod4master.cod4x.me/)
-
-[source](https://cod4x.me/index.php?/forums/topic/2814-new-requirement-for-cod4-x-servers-to-get-listed-on-masterserver/)
+[CoD4x master server list](https://cod4master.cod4x.ovh/)
 
 ## Mod Support
 
