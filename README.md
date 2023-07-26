@@ -2,7 +2,7 @@
 
 
 
-![](.gitbook/assets/linuxgsm_colour_logo_workmark_short_384.png)
+<figure><img src=".gitbook/assets/LinuxGSM_github_header.jpg" alt=""><figcaption></figcaption></figure>
 
 The command-line tool for quick, simple deployment and management of Linux dedicated game servers.
 
@@ -14,4 +14,3 @@ The command-line tool for quick, simple deployment and management of Linux dedic
 Welcome to the LinuxGSM documentation covering various topics related to the project.
 
 Contributions to this documentation are welcome and can be submitted via GitHub.
-
