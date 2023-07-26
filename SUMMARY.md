@@ -89,7 +89,7 @@
   * [firewalls](linux/firewalls.md)
   * [network-interfaces](linux/network-interfaces.md)
   * [permissions](linux/permissions.md)
-* [Troubleshooting](support/troubleshooting.md)
+* [Troubleshooting](troubleshooting.md)
 * [FAQ](support/faq.md)
 * [Guides](guides/README.md)
   * [Security](guides/security.md)
