@@ -37,7 +37,7 @@ LinuxGSM has a GitHub issues page where you can submit any bugs and feature sugg
 
 I received the following error
 
-```text
+```
 [ FAIL ] Tmux not installed
     * Tmux is required to run this server.
         * Please see the the following link.
@@ -46,25 +46,25 @@ I received the following error
 
 Tmux has not been installed. See the dependencies section of the installation instructions.
 
-```text
+```
 apt-get install tmux
 ```
 
 or
 
-```text
+```
 yum install tmux
 ```
 
 ## Can I run a server as root?
 
-```text
+```
 [ FAIL ] Script will not run as root!
 ```
 
 The script will not run as root and will error if you try. This is done for the following good reasons:
 
-* So you or someone else don't accidentally damage your system. \(`rm -rf *` anyone?\).
+* So you or someone else don't accidentally damage your system. (`rm -rf *` anyone?).
 * So you don't mess up your game servers user permissions.
 * To help prevent someone potentially using your game server and gain root access.
 * Keeping the game server compartmentalised in its own directory away from your other stuff.
@@ -72,17 +72,17 @@ The script will not run as root and will error if you try. This is done for the 
 * Would you really trust yourself as root after a 9 hour energy-drink fuelled CS:GO session?
 * Did i mention so you don't break everything!?
 
-## I can't download linuxgsm.sh \(TLS/SSL Errors\)
+## I can't download linuxgsm.sh (TLS/SSL Errors)
 
 If your error looks like `Unable to establish SSL connection` you need to make sure you installed the `ca-certificates` package first as well as other dependencies showed on the website's documentation.
 
 If you are using an "old" distribution, it is possible that your version of wget doesn't support redirects along with SSL/TLS. As a workaround, you can download the script using `--no-check-certificate`. Please note that you should only tolerate this practice if your trust your server network connection and the download source at 100%.
 
-```text
+```
 wget -N --no-check-certificate https://linuxgsm.sh
 ```
 
-## How can I install \[insert name\] mod?
+## How can I install \[insert name] mod?
 
 LinuxGSM installs a vanilla server by default. There is now a mods-install feature with a limited selection of popular mods. All other mods will have to be install manually. It is recommend you visit the official add-on/mod installation guides for more info.
 
@@ -118,11 +118,11 @@ For more info see this useful video on the subject.
 
 
 
-## \[ WARN \] Multiple active network interfaces.
+## \[ WARN ] Multiple active network interfaces.
 
 You will get the following message if your server has multiple IP addresses. The game server can only bind to one IP address, because of this you need to tell the server which IP address you want to use.
 
-```text
+```
 [ WARN ] Multiple active network interfaces
 
 Manually specify the IP you want to use within the csgoserver script.
@@ -133,17 +133,17 @@ Set ip="0.0.0.0" to one of the following:
 162.252.9.41
 ```
 
-Edit the LinuxGSM config located in lgsm/config-lgsm/\[servername\]/
+Edit the LinuxGSM config located in lgsm/config-lgsm/\[servername]/
 
 Find and edit the following line and change it to the IP address you want to use.
 
-```text
+```
 ip="0.0.0.0"
 ```
 
 ## version \`GLIBC\_2.15′ not found
 
-```text
+```
 version `GLIBC_2.15′ not found
 ```
 
@@ -151,15 +151,15 @@ The correct version of Glibc is not installed. See the dependencies section of t
 
 ## write error: No space left on device
 
-```text
+```
 write error: No space left on device
 ```
 
 The script cannot write to the server because there is no disk space available on your server. Free up some space to resolve.
 
-## Can you create a server script for a \[insert name\] game server?
+## Can you create a server script for a \[insert name] game server?
 
-You can request a script is created for a particular server by submitting a feature request on the \[GitHub issues\] page. This does not guarantee it will be created but we will review it and decide if its possible and how much demand there is for it. Servers will be created when time permits.
+You can request a script is created for a particular server by submitting a feature request on the \[GitHub issues] page. This does not guarantee it will be created but we will review it and decide if its possible and how much demand there is for it. Servers will be created when time permits.
 
 Please also check that the server can run on Linux before submitting. Servers that require WINE will not be considered. You can use SteamDB.info to find the server and check Linux comparability.
 
@@ -190,11 +190,11 @@ LinuxGSM itself has extremely low server requirements as it is written in BASH. 
 
 You're lacking the required function, because you didn't run this command before the last huge LinuxGSM update. The function structure changed, that's why you're getting a 404 error. You just need the newer LinuxGSM version.
 
-```text
+```
 ./gameserver update-lgsm
 ```
 
-## \[ FAIL \] Starting game-server: Ownership issues found
+## \[ FAIL ] Starting game-server: Ownership issues found
 
 The user that you are running LinuxGSM with does not own all of its files.
 
@@ -202,25 +202,25 @@ More information, see [Ownership](../linux/file-ownership.md)
 
 **Getting rid of bad practice**
 
-**Case 1\)** You've been uploading files as root or any other user than your gameserver user. If you're logging into your FTP as root, you must know that this is wrong on so many levels and must consider using a better method urgently. Here is an [example](https://gist.github.com/UltimateByte/229c17b3c48ca10080c5e56b5513e476) of a simple user based FTP set in 2 minutes with proftpd which would already be better. Otherwise, one way better practice is to use SFTP that comes with SSH. No need to install an FTP server as long as you've got an SSH server. Just setup your FTP client to use SFTP, and connect with the same port as your SSH server and with your username/password.
+**Case 1)** You've been uploading files as root or any other user than your gameserver user. If you're logging into your FTP as root, you must know that this is wrong on so many levels and must consider using a better method urgently. Here is an [example](https://gist.github.com/UltimateByte/229c17b3c48ca10080c5e56b5513e476) of a simple user based FTP set in 2 minutes with proftpd which would already be better. Otherwise, one way better practice is to use SFTP that comes with SSH. No need to install an FTP server as long as you've got an SSH server. Just setup your FTP client to use SFTP, and connect with the same port as your SSH server and with your username/password.
 
-**Case 2\)** You've been downloading/extracting/copying files as root instead of the appropriate user. Just don't, do it as the user, OR, if you're obstinate, then at least chown files afterwards.
+**Case 2)** You've been downloading/extracting/copying files as root instead of the appropriate user. Just don't, do it as the user, OR, if you're obstinate, then at least chown files afterwards.
 
 **Fixing wrong ownership**
 
 You can simply fix those ownership issues by using a chown command as root.
 
-```text
+```
 chown -R username:username /home/username
 ```
 
-## \[ FAIL \] Starting game-server: Permission issues found
+## \[ FAIL ] Starting game-server: Permission issues found
 
 It usually means some script or executable files are not actually executable.
 
 Useful command:
 
-```text
+```
 chmod +x <filename>
 ```
 
@@ -246,7 +246,7 @@ This kind of errors can happen at any time or be due to numerous reasons. Howeve
 
 If it happens upon start:
 
-* Interpreter issue \(glibc libstdc gcc libraries and so on\) - check your versions, libraries, and game binary files.
+* Interpreter issue (glibc libstdc gcc libraries and so on) - check your versions, libraries, and game binary files.
 * Outdated or bugged addon - Update or remove the addon
 * Missing or revoked GSLT - Update your GSLT
 * Corrupted game server files - run ./gameserver validate
@@ -266,7 +266,7 @@ either `linuxgsm.sh` or `gameserver` e.g `csgoserver`
 
 edit the following lines as required.
 
-```text
+```
 ## GitHub Branch Select
 # Allows for the use of different function files
 # from a different repo and/or branch.
@@ -278,7 +278,6 @@ githubbranch="master"
 
 Once the details are changed update LinuxGSM.
 
-```text
+```
 ./gameserver update-lgsm
 ```
-

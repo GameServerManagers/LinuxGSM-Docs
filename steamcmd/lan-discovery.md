@@ -25,7 +25,7 @@ connect 192.168.1.10:27025
 Add the server to the server browser's favourites. If in-game, then go to the legacy browser if applicable to find it. The syntax to use is the same as for the console connection.
 
 {% hint style="danger" %}
-Make sure your server actually works and is reachable on LAN, otherwise what you need is rather [Troubleshooting](../troubleshooting.md) first.
+Make sure your server actually works and is reachable on LAN, otherwise what you need is rather [Troubleshooting](../support/troubleshooting.md) first.
 {% endhint %}
 
 ## Fix
