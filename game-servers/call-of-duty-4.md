@@ -20,7 +20,7 @@ CoD4x has its own update functionality. It will automatically check for updates 
 
 CoD4x game servers (since version 17.6) require a server token to be listed on the CoD4x master server.
 
-To generate a token visit [here](https://cod4master.cod4x.me/index.php?token\_generator=true).
+To generate a token visit [here](https://cod4master.cod4x.ovh/index.php?token\_generator=true).
 
 Once a token is generated add it to the `sv_authtoken` cvar in `server.cfg` or command-line parameters.
 
