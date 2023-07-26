@@ -35,7 +35,7 @@ Short: `./gameserver ai`
 `chmod +x gameserver`
 
 1. Run the install command: `./gameserver install` or `./gameserver auto-install` to bypass any prompts.
-2. Follow on screen instructions.
+2. Follow on-screen instructions.
 
 ## Install Dependencies
 
@@ -89,13 +89,13 @@ If some files/directories are not owned by the correct user, use the `chown` com
 
 #### Poor Network Connection to Steam servers
 
-If the connection to the Steam servers is poor (quite common), SteamCMD download can fail. This is why LinuxGSM will always ask you if installation was successful allowing admins to retry the download should it fail.
+If the connection to the Steam servers is poor (quite common), the SteamCMD download can fail. This is why LinuxGSM will always ask you if the installation was successful allowing admins to retry the download should it fail.
 
 If there are still issues downloading try the [validate](validate.md) option.
 
 `./gameserver validate`
 
-If downloading is still failing it may be worth contacting your server provider to confirm steam servers are not being blocked for any reason.
+If downloading is still failing it may be worth contacting your server provider to confirm Steam servers are not being blocked for any reason.
 
 It is also worth searching the internet for issues relating to the error message you receive.
 
