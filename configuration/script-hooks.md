@@ -26,3 +26,6 @@ hook-<when>-<command>.sh
 
 LGSM will run the script and then continue without checking exit value.
 
+## Notes
+
+Don't forget to make the scripts executable!
