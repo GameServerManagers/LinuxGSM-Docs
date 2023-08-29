@@ -20,7 +20,7 @@ hook-<when>-<command>.sh
 
 `<when>` can have the values `pre`, `post`, or `error`. Post and error hooks are mutually exclusive and never run within the same command.
 
-`<command>` must match long command names. You can find the commands here ../commands/README.md. The middle column has the command names. Not the leftmost column with the humand-readable command description.
+`<command>` must match long command names. You can find the commands [here](../commands/README.md). The middle column has the command names. Not the leftmost column with the humand-readable command description.
 
 ### Behavior
 
