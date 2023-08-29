@@ -4,19 +4,11 @@ You can create scripts that run before, after, or after in case of error for any
 
 ## Hook Scripts Location
 
-Relative to your installation directory, create a folder:
-
-```
-lgsm/hooks
-```
+Relative to your installation directory, create a folder: `lgsm/hooks`
 
 ## Script Naming
 
-Script hooks are named according to this convention:
-
-```
-hook-<when>-<command>.sh
-```
+Script hooks are named according to this convention: `hook-<when>-<command>.sh`
 
 `<when>` can have the values `pre`, `post`, or `error`. Post and error hooks are mutually exclusive and never run within the same command.
 
