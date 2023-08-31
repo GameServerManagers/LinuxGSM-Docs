@@ -4,7 +4,7 @@
 
 ## Server Resources
 
-* [ARK: Survival Evolved Wiki Dedicated Server guide](https://ark.gamepedia.com/Dedicated\_Server\_Setup)
+* [ARK: Survival Evolved Wiki Dedicated Server Guide](https://ark.gamepedia.com/Dedicated\_Server\_Setup)
 * [ARK: Survival Evolved Steam Workshop](https://steamcommunity.com/app/346110/workshop/)
 * [Official ARK: Survival Evolved Server Administration forum](https://survivetheark.com/index.php?/forums/forum/39-server-administration/)
 
@@ -45,7 +45,7 @@ ARK server mods are managed using the [Steam Workshop](https://steamcommunity.co
 
 ### Adding Mods
 
-Firstly, you need to select the mods you want to use from the [steam workshop](https://steamcommunity.com/app/346110/workshop/).
+Firstly, you need to select the mods you want to use from the [Steam Workshop](https://steamcommunity.com/app/346110/workshop/).
 
 {% hint style="warning" %}
 Mods can cause your server to become unstable or may not be compatible with each other. It is a good idea to read the mods docs and/or speak with other experienced ARK admins.
@@ -64,14 +64,14 @@ Edit `GameUserSettings.ini`, adding the following line under `[ServerSettings]`.
 ActiveMods=924619115
 ```
 
-Next, edit or create `Game.ini` and add the following section, this will enable auto-download of mods. To add multiple mods add another `ModIDS=` line underneath the first.
+Next, edit or create `Game.ini` and add the following section, this will enable the auto-download of mods. To add multiple mods add another `ModIDS=` line underneath the first.
 
 ```
 [ModInstaller]
 ModIDS=924619115
 ```
 
-For the example mod add the following to `GameUserSettings.ini` other mods may require there own configuration as per there documentation.
+For the example mod add the following to `GameUserSettings.ini` other mods may require their own configuration as per their documentation.
 
 ```
 [WBUI]
@@ -132,11 +132,21 @@ The example mod can be activated by pressing `F1`.
 
 ### Mod Collections
 
-The Steam workshop has a feature that allows mods to be grouped in collections. Currently, Steam workshop collection ids won't work directly with ARK. Instead, you need to have all the individual ids of the mods you want to use.
+The Steam Workshop has a feature that allows mods to be grouped in collections. Currently, Steam workshop collection IDs won't work directly with ARK. Instead, you need to have all the individual IDs of the mods you want to use.
 
 {% hint style="success" %}
-To get individual item ids from collections you can use the [Steam Collection ID Grabber](https://tools.rusty.info/tools/stcolids/).
+To get individual item IDs from collections you can use the [Steam Collection ID Grabber](https://tools.rusty.info/tools/stcolids/).
 {% endhint %}
+
+## IP Addressing
+
+### Multihome&#x20;
+
+The `-multihome` parameter is used to bind the server to a specific interface. By default LinxuGSM sets this to the `${ip}` variable,
+
+### PublicIPForEpic
+
+If you want players who use the Epic Store to connect to the server the `-PublicIPForEpic` parameter. By default LinuxGSM will set this to `${publicip}`&#x20;
 
 ## Clusters
 
@@ -177,5 +187,5 @@ Ragnarok?SessionName=LinuxGSM Session 2?AltSaveDirectoryName=?ScorchedEarth_P?li
 ```
 
 {% hint style="warning" %}
-Servers which are running on _local networks_ sometimes have trouble travelling to other arks. A potential fix for this is adding `MultiHome=0.0.0.0` to your command-line parameters.
+Servers that are running on _local networks_ sometimes have trouble traveling to other arks. A potential fix for this is adding `MultiHome=0.0.0.0` to your command-line parameters.
 {% endhint %}
