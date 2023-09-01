@@ -17,10 +17,10 @@ Game Servers typically have ports for the following functions.
 
 Game port: The port that players connect to.\
 Query port: Used by software to gather information from the server such as server name, map, and number of players.\
-Rcon port\
-Web port: used for game servers that have web admin panels&#x20;
+Rcon port: Some game servers have remote console port allowing remote administration of a game server. \
+Web port: used for game servers that have web interface.
 
-Depending upon which game server is being used, you can set game server ports within your start parameters or game server config file.
+Depending upon which game server is being used, you can set game server ports within your [start parameters](start-parameters.md) or [game server](game-server-config.md) config file.
 
 LinuxGSM allows you to see the ports your game server is using with the `./gameserver details` command.
 
@@ -62,7 +62,7 @@ ip="0.0.0.0"
 
 ### Which ports can be used?
 
-You can use any port as long as it is not already in use and it is up to you to set up port allocation. It is recommended that ports are close together and sequential i.e 27015, 27016, 27017 to save confusion. Some servers ports by default are not sequential, however, there is nothing stopping you from changing this. Example for source engine game servers; you could set the port 27015, source tv port 27016, client port 27018. The next game server instance could simply follow on from this.
+You can use any port as long as it is not already in use and it is up to you to set up port allocation. It is recommended that ports are close together and sequential i.e. 27015, 27016, 27017 to save confusion. Some server's ports by default are not sequential, however, there is nothing stopping you from changing this. For example for source engine game servers; you could set port 27015, source TV port 27016, client port 27018. The next game server instance could simply follow on from this.
 
 {% hint style="info" %}
 If you're running multiple game servers, make sure you're using different ports on all of your game servers to avoid a port conflict.
