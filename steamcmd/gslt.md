@@ -8,8 +8,8 @@ Game Server Login Token is a new system by Valve for managing game servers.
 * Brainbread 2
 * Black Mesa: Deathmatch
 * Blade Symphony (**required**)
-* Counter Strike: Global Offensive (**required**)
-* Counter Strike: Source (**required**)
+* Counter-Strike: Global Offensive (**required**)
+* Counter-Strike: Source (**required**)
 * Day of Defeat: Source
 * Empires Mod
 * Garry’s Mod (**required**)
@@ -27,11 +27,11 @@ GSLT creates a persistent token for a game server. This allows any users who add
 
 To fully understand the reasoning behind GSLT, we need to back up a bit to July 2015. [Valve announced that running certain plugins would get your server blacklisted](http://dathost.net/blog/important-information-regarding-our-csgo-servers/), meaning it could not connect to the master servers and people wouldn’t be able to connect to the server.
 
-This created a lot of problems for game server providers, large communities and anyone providing configurable servers to third parties, as bans were handed out by IP, meaning that an entire machine could be banned because of one malicious or uninformed user.
+This created a lot of problems for game server providers, large communities, and anyone providing configurable servers to third parties, as bans were handed out by IP, meaning that an entire machine could be banned because of one malicious or uninformed user.
 
-To address this, Valve is moving the ban to account-level instead of IP-level, which means that the end-user is always responsible for what they run on their server. Of course, game server providers and the like still have a responsibility to educate their users on these policies, as some might mistakenly upload blacklisted plugins.
+To address this, Valve is moving the ban at the account level instead of the IP address level, which means that the end-user is always responsible for what they run on their server. Of course, game server providers and the like still have a responsibility to educate their users on these policies, as some might mistakenly upload blacklisted plugins.
 
-An added benefit is that people who add your server to favourite will still be able to find and connect to your server, even if you change hosting provider and/or the IP / port of your server. This is something that previously was impossible.
+An added benefit is that people who add your server to favorite will still be able to find and connect to your server, even if you change hosting provider and/or the IP / port of your server. This is something that previously was impossible.
 
 ## Generate a Token
 
@@ -71,7 +71,7 @@ Yes, all of the tokens on your account will be blacklisted if one of your server
 
 ### If my GSLT gets banned for running a blacklisted plugin, will my steam account be community and/or VAC banned?
 
-Depending on the game Valve will punish the account that generated the token, On CS:GO you get a global cool down of 7 days (you cannot join any community/valve server) Most likely, it won’t be VAC banned, but Valve’s requirement that anyone creating GSLTs is not community banned, you may be community banned for running blacklisted plugins.
+Depending on the game Valve will punish the account that generated the token, On CS:GO you get a global cooldown of 7 days (you cannot join any community/valve server) Most likely, it won’t be VAC banned, but Valve’s requirement that anyone creating GSLTs is not community banned, you may be community banned for running blacklisted plugins.
 
 ### Can I use the same GSLT for multiple servers?
 
@@ -97,6 +97,6 @@ Yes, you can have a maximum of 1000 GSLTs on your account.
 
 ### What are the requirements for my account to be able to create a GSLT?
 
-Your Steam account must not be currently community banned or locked. Your Steam account must not be limited. Your Steam account must have a qualifying registered phone. Your Steam account must own the game for which you are creating a GSLT. Your Steam account may not have more than 1000 tokens.
+Your Steam account must not be currently community-banned or locked. Your Steam account must not be limited. Your Steam account must have a qualifying registered phone. Your Steam account must own the game for which you are creating a GSLT. Your Steam account may not have more than 1000 tokens.
 
 For further information see this useful blog post: [http://dathost.net/blog/important-information-regarding-our-csgo-servers/](http://dathost.net/blog/important-information-regarding-our-csgo-servers/)
