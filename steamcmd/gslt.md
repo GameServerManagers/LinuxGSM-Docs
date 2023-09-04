@@ -7,14 +7,15 @@ Game Server Login Token is a new system by Valve for managing game servers.
 * Ballistic Overkill
 * Brainbread 2
 * Black Mesa: Deathmatch
-* Blade Symphony \(**required**\)
-* Counter Strike: Global Offensive \(**required**\)
-* Counter Strike: Source \(**required**\)
+* Blade Symphony (**required**)
+* Counter Strike: Global Offensive (**required**)
+* Counter Strike: Source (**required**)
 * Day of Defeat: Source
 * Empires Mod
-* Garry’s Mod \(**required**\)
+* Garry’s Mod (**required**)
 * Insurgency
-* No more Room in Hell \(**required**\)
+* Insurgency: Sandstorm
+* No more Room in Hell (**required**)
 * Nuclear Dawn
 * Team Fortress 2
 * Tower Unite
@@ -37,7 +38,7 @@ An added benefit is that people who add your server to favourite will still be a
 To generate a token follow this [link](http://steamcommunity.com/dev/managegameservers).
 
 {% hint style="info" %}
-GSLT requires the app ID of the base game \(e.g. 440 for TF2, 730 for CS:GO, 4000 for Garry's Mod\) when generating a token, not the server appid
+GSLT requires the app ID of the base game (e.g. 440 for TF2, 730 for CS:GO, 4000 for Garry's Mod) when generating a token, not the server appid
 {% endhint %}
 
 {% hint style="info" %}
@@ -46,7 +47,7 @@ Every single server must use a unique GSLT.
 
 ## GSLT Server Parameter
 
-GSLT can be registered on your server\(s\) by using the `sv_setsteamaccount` command either in [_autoexec.cfg_](../configuration/game-server-config.md) or from a [_start parameter_](../configuration/start-parameters.md).
+GSLT can be registered on your server(s) by using the `sv_setsteamaccount` command either in [_autoexec.cfg_](../configuration/game-server-config.md) or from a [_start parameter_](../configuration/start-parameters.md).
 
 start parameter
 
@@ -70,7 +71,7 @@ Yes, all of the tokens on your account will be blacklisted if one of your server
 
 ### If my GSLT gets banned for running a blacklisted plugin, will my steam account be community and/or VAC banned?
 
-Depending on the game Valve will punish the account that generated the token, On CS:GO you get a global cool down of 7 days \(you cannot join any community/valve server\) Most likely, it won’t be VAC banned, but Valve’s requirement that anyone creating GSLTs is not community banned, you may be community banned for running blacklisted plugins.
+Depending on the game Valve will punish the account that generated the token, On CS:GO you get a global cool down of 7 days (you cannot join any community/valve server) Most likely, it won’t be VAC banned, but Valve’s requirement that anyone creating GSLTs is not community banned, you may be community banned for running blacklisted plugins.
 
 ### Can I use the same GSLT for multiple servers?
 
@@ -99,4 +100,3 @@ Yes, you can have a maximum of 1000 GSLTs on your account.
 Your Steam account must not be currently community banned or locked. Your Steam account must not be limited. Your Steam account must have a qualifying registered phone. Your Steam account must own the game for which you are creating a GSLT. Your Steam account may not have more than 1000 tokens.
 
 For further information see this useful blog post: [http://dathost.net/blog/important-information-regarding-our-csgo-servers/](http://dathost.net/blog/important-information-regarding-our-csgo-servers/)
-
