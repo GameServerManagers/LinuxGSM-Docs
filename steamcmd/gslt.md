@@ -19,6 +19,7 @@ Game Server Login Token is a new system by Valve for managing game servers.
 * Nuclear Dawn
 * Team Fortress 2
 * Tower Unite
+* Unturned
 * Zombie Panic! Source
 
 ## What is GSLT?

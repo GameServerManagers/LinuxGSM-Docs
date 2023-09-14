@@ -53,6 +53,8 @@
   * [Unreal Tournament 2004](game-servers/unreal-tournament-2004.md)
   * [Unreal Tournament 3](game-servers/unreal-tournament-3.md)
   * [Valheim](game-servers/valheim.md)
+* [Networking](networking/README.md)
+  * [Source Engine](networking/source-engine.md)
 * [Alerts](alerts/README.md)
   * [Discord](alerts/discord.md)
   * [Email](alerts/email.md)
