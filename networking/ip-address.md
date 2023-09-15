@@ -8,7 +8,7 @@ This guide is not designed to be an in-depth guide to networking, instead focusi
 
 ## Internet Server vs. Local Server
 
-Your game server can be hosted online using a server provider such as Linode or on a [local network](local-home-server.md) at your house for either local-only LAN parties or allowing online players in through your router.&#x20;
+Your game server can be hosted online using a server provider such as Linode or on a [local network](../configuration/local-home-server.md) at your house for either local-only LAN parties or allowing online players in through your router.&#x20;
 
 ## Network Interfaces
 
@@ -72,7 +72,7 @@ By default, LinuxGSM will use the 0.0.0.0 meta-address. This behavior will allow
 
 Internet IP: LinuxGSM will try to gather the server internet IP address to be shown in [details](../commands/details.md).
 
-Specific IP: If a specific IP address needs to be set it can be done using the `ip` setting in the [LinuxGSM ](linuxgsm-config.md)or [game server ](game-server-config.md)config files.&#x20;
+Specific IP: If a specific IP address needs to be set it can be done using the `ip` setting in the [LinuxGSM ](../configuration/linuxgsm-config.md)or [game server ](../configuration/game-server-config.md)config files.&#x20;
 
 Display IP: If you want to change the IP address displayed in alerts you can use the [displayip](../alerts/#display-ip).
 

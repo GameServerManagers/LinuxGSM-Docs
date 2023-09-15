@@ -6,10 +6,10 @@ description: Hosting multiple game servers on the same host
 
 Depending upon the game server you are running it is possible to run multiple game servers on the same server host.
 
-**There are two recommended ways to run multiple game servers on one physical server**.  
+**There are two recommended ways to run multiple game servers on one physical server**.\
 Depending upon the circumstances you may choose a particular method or mixture of both.
 
-It is best to make a proper plan for running multiple game servers at the earliest stage of your deployment.  
+It is best to make a proper plan for running multiple game servers at the earliest stage of your deployment.\
 Make sure that you examined this page carefully and understood all of its content before starting.
 
 ## Prerequisites
@@ -20,13 +20,13 @@ You need some definitions to make this guide clear.
 
 * **Installation:** An _installation_ refers to the base directory of a game server. This is where the files required to run a game server is stored.
 
-```text
+```
 /home/gameserver/serverfiles
 ```
 
 * **Instance:** Each individual game server is referred too as an _instance._ There might be multiple instances running per installation. An instance is started by running the `./gameserver` script
 
-```text
+```
 /home/gameserver/gameserver
 /home/gameserver/gameserver-2
 ```
@@ -39,7 +39,7 @@ You should be familiar with how [LinuxGSM Configs](../configuration/linuxgsm-con
 
 #### Understand ports
 
-You need to understand how ports work in order to avoid port overlapping, otherwise your new instances won't start. Useful resource: [Ports](../configuration/ports.md).
+You need to understand how ports work in order to avoid port overlapping, otherwise your new instances won't start. Useful resource: [Ports](../networking/ports.md).
 
 ## Single Instance per Installation
 
@@ -70,18 +70,18 @@ This consists of creating a new user for each game server, repeat the install pr
 
 The installs are separated and isolated from each other in each users _home directory_.
 
-| Game Server | User | LinuxGSM Script location |
-| :--- | :--- | :--- |
-| Garry’s Mod | gmodserver | /home/gmodserver/gmodserver |
-| Garry’s Mod | gmodserver-slender | /home/gmodserver-slender/gmodserver |
-| Counter-Strike: Global Offensive | csgoserver | /home/csgoserver/csgoserver |
+| Game Server                      | User               | LinuxGSM Script location            |
+| -------------------------------- | ------------------ | ----------------------------------- |
+| Garry’s Mod                      | gmodserver         | /home/gmodserver/gmodserver         |
+| Garry’s Mod                      | gmodserver-slender | /home/gmodserver-slender/gmodserver |
+| Counter-Strike: Global Offensive | csgoserver         | /home/csgoserver/csgoserver         |
 | Counter-Strike: Global Offensive | csgoserver-zombies | /home/csgoserver-zombies/csgoserver |
 
 ### How to Install
 
-1. Create a new user with a home directory. 
+1. Create a new user with a home directory.&#x20;
 2. Repeat the standard installation process using this new user.
-3. Change the instance config adjusting ports numbers from the default 
+3. Change the instance config adjusting ports numbers from the default&#x20;
 
 ## Single Installation with Multiple Instances
 
@@ -113,19 +113,19 @@ Most but not all game servers work with this method
 
 ### How it works
 
-You have one game server installation, but you have multiple instances start in the same installation using different config files. 
+You have one game server installation, but you have multiple instances start in the same installation using different config files.&#x20;
 
-Every time a new instance is created, new default config files are created. This allows each instance to have different hostname, ports etc. The config files are by default the same name as the instance script. For example, if the script is `./gameserver-2` the config is `gameserver-2.cfg`. You can see the location of config files in `./gameserver-2 details` \(replace "instance" with your actual instance name\).
+Every time a new instance is created, new default config files are created. This allows each instance to have different hostname, ports etc. The config files are by default the same name as the instance script. For example, if the script is `./gameserver-2` the config is `gameserver-2.cfg`. You can see the location of config files in `./gameserver-2 details` (replace "instance" with your actual instance name).
 
 Each instance is managed using its own script which gives the config file names. These can be renamed how you like, however, the default will simply have an incremental number. Some admins may choose to name them after the server port, the map or the gamemode instead.
 
 ### Examples
 
-| Game | User | LinuxGSM Script location | notes |
-| :--- | :--- | :--- | :--- |
-| Garry’s Mod | gmodserver | /home/gmodserver/gmodserver | 1.2.3.4:27015 |
-| Garry’s Mod | gmodserver | /home/gmodserver/gmodserver-1 | 1.2.3.4:27018 |
-| Garry’s Mod | gmodserver | /home/gmodserver/gmodserver-2 | 1.2.3.4:27021 |
+| Game                             | User       | LinuxGSM Script location                  | notes                    |
+| -------------------------------- | ---------- | ----------------------------------------- | ------------------------ |
+| Garry’s Mod                      | gmodserver | /home/gmodserver/gmodserver               | 1.2.3.4:27015            |
+| Garry’s Mod                      | gmodserver | /home/gmodserver/gmodserver-1             | 1.2.3.4:27018            |
+| Garry’s Mod                      | gmodserver | /home/gmodserver/gmodserver-2             | 1.2.3.4:27021            |
 | Counter-Strike: Global Offensive | csgoserver | /home/csgoserver/csgoserver-zombies-27024 | 1.2.3.4:27024 Zombie Mod |
 | Counter-Strike: Global Offensive | csgoserver | /home/csgoserver/csgoserver-zombies-27027 | 1.2.3.4:27027 Zombie Mod |
 
@@ -133,9 +133,9 @@ In these examples, you can see the scripts are located in the same installation 
 
 ### How to install
 
-`linuxgsm.sh` allows you to generate as many instances as you want by running . 
+`linuxgsm.sh` allows you to generate as many instances as you want by running .&#x20;
 
-```text
+```
 ./linuxgsm.sh install
 OR
 ./linuxgsm.sh gameserver
@@ -143,7 +143,7 @@ OR
 
 It will generate a new LinuxGSM script using an incremental number.
 
-```text
+```
 ./gameserver-2
 ```
 
@@ -153,9 +153,8 @@ On the first run of `./gameserver-2` a new default LinuxGSM and game config `gam
 
 ### Forgetting to change ports and/or IP
 
-If you run multiple game servers you will need to alter ports. Ensure you are aware of how to manage [ports](../configuration/ports.md).
+If you run multiple game servers you will need to alter ports. Ensure you are aware of how to manage [ports](../networking/ports.md).
 
 ### Installing game servers with the same script name under the same user
 
 Installing multiple installations using the same user does work. However you must use unique script names i.e. `./gameserver`. This is because tmux requires unique session name to start a session. Tmux will fail to start if another server is using the same session name. LinuxGSM uses the script name as the tmux session name.
-

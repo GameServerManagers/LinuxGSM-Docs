@@ -20,7 +20,7 @@ Query port: Used by software to gather information from the server such as serve
 Rcon port: Some game servers have remote console port allowing remote administration of a game server. \
 Web port: used for game servers that have web interface.
 
-Depending upon which game server is being used, you can set game server ports within your [start parameters](start-parameters.md) or [game server](game-server-config.md) config file.
+Depending upon which game server is being used, you can set game server ports within your [start parameters](../configuration/start-parameters.md) or [game server](../configuration/game-server-config.md) config file.
 
 LinuxGSM allows you to see the ports your game server is using with the `./gameserver details` command.
 
@@ -37,7 +37,7 @@ App          28082  tcp       1
 
 ## Changing Default Ports
 
-Default ports are set in either the [start parameters](start-parameters.md) or [game config](game-server-config.md).&#x20;
+Default ports are set in either the [start parameters](../configuration/start-parameters.md) or [game config](../configuration/game-server-config.md).&#x20;
 
 You can use `./gameserver details` to find out where to edit port settings
 

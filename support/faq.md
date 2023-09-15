@@ -237,7 +237,7 @@ This can have numerous reasons. Here are some ways to diagnose this issue:
 * Are you behind [Firewalls](../linux/firewalls.md)? Double-check your rules, and try to disable it for testing
 * Do you have multiple interfaces? Set the right IP within your "gameserver" script or the game config file
 * Is it a home server? If you're behind a router, make sure you're listening to your local IP, then redirect appropriate ports to this local IP within your router settings.
-* Are the ports you're using free? See [Ports](../configuration/ports.md)
+* Are the ports you're using free? See [Ports](../networking/ports.md)
 * Did you wait long enough? Sometimes it's just a matter of time until your server shows up on the list
 
 ## How do I  solve a  segmentation fault?

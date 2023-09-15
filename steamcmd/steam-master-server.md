@@ -31,6 +31,6 @@ steammaster="true"
 There are instances when a game server might not appear in the server list due to several common reasons:
 
 * Server Loading Time: Please be patient while the server loads, as it may take some time before it becomes visible. Depending on the game server type, certain servers require additional time for tasks like map seeding or loading mods.
-* Blocked or Misconfigured [Ports](../configuration/ports.md): Ensure that the ports are correctly set up and not blocked. To verify the connection, try connecting directly to the server.
+* Blocked or Misconfigured [Ports](../networking/ports.md): Ensure that the ports are correctly set up and not blocked. To verify the connection, try connecting directly to the server.
 * Filtering in Server List: Check that you have not applied any filters in the server browser. Filters like specific maps, "Empty Server," or "Password Protected" should be unchecked to display all available servers.
 * Server Browser Limitations: It's possible that the server browser functionality of the game might not list all available game servers. In such cases, not all servers may be visible in the server list.
