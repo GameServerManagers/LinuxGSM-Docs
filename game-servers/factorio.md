@@ -26,6 +26,21 @@ rconpassword="Change_Me"
 branch="stable"
 ```
 
+#### Specific verison
+
+To use a specific version of Factorio, you can change the branch to the version you want to use :
+
+```text
+## Server Start Settings | https://docs.linuxgsm.com/configuration/start-parameters
+branch="1.1.87"
+```
+
+One the branch changed, do not forget to update the server :
+
+```bash
+./fctserver update
+```
+
 ### Game Server Config
 
 All other settings are located in the Factorio [game server config](../configuration/game-server-config.md).
