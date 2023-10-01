@@ -1,8 +1,8 @@
 # fastdl
 
-FastDL \(Fast Download\) allows the client to download custom server content \(maps, materials, models, particles, sounds, fonts, images\) from a web server.
+FastDL (Fast Download) allows the client to download custom server content (maps, materials, models, particles, sounds, fonts, images) from a web server.
 
-It is used to offload content downloads to a web server instead of relying on source servers \(SRCDS\) that only allows 20KBps downloads to clients. Content on the web server can be compressed to further speed up the download process. This means that custom content downloads much faster.
+It is used to offload content downloads to a web server instead of relying on source servers (SRCDS) that only allows 20KBps downloads to clients. Content on the web server can be compressed to further speed up the download process. This means that custom content downloads much faster.
 
 Valve now use steam workshop for most custom content however FastDL is still required in some cases.
 
@@ -20,20 +20,19 @@ Short: `./gameserver fd`
 
 ## Supported file formats
 
-* Maps \(.bsp\)
-* Materials \(.vtf, .vmt, .png, .svg\)
-* Models \(.vtx, .vvd, .mdl, .phy\)
-* Particles \(.pcf\)
-* Sounds \(.wav, .mp3, .ogg\)
-* Fonts \(.otf, .ttf\)
-* Images \(.png, .svg\)
+* Maps (.bsp)
+* Materials (.vtf, .vmt, .png, .svg)
+* Models (.vtx, .vvd, .mdl, .phy)
+* Particles (.pcf)
+* Sounds (.wav, .mp3, .ogg)
+* Fonts (.otf, .ttf)
+* Images (.png, .svg)
 
 ## Requirements
 
-* Web server on the game server \(Apache/Nginx\).
+*   Web server on the game server (Apache/Nginx).
 
-  or
-
+    or
 * Access to a remote web server.
 
 ## Usage
@@ -44,11 +43,11 @@ Run the FastDL command on your main LinuxGSM script. This will create a new dire
 
 `./gameserver fastdl`
 
-### Create A virtual Host \(local Apache web server\)
+### Create A virtual Host (local Apache web server)
 
 If Apache2 is being used a virtual host pointing to the newly created `public_html` directory can be used.
 
-Tip: Apache2 mod "userdir" is useful if the Linux server is hosting [multiple game servers](../features/multiple-game-servers.md), as it creates a url for the current user `http://yourwebsite.ltd/~username`.
+Tip: Apache2 mod "userdir" is useful if the Linux server is hosting [multiple game servers](../configuration/multiple-game-servers.md), as it creates a url for the current user `http://yourwebsite.ltd/~username`.
 
 #### Tutorial on setup of Apache2 server with Virtual Hosts
 
@@ -62,7 +61,7 @@ Firstly make sure your subdomain redirects to your game server and that Apache2 
 
 See the example below and edit the relevent details.
 
-```text
+```
 <VirtualHost *:80>
         ServerAdmin adminemail@domain.com
         ServerName subdomain.domain.com
@@ -82,7 +81,7 @@ See the example below and edit the relevent details.
 
 Enable your website by restarting Apache2
 
-```text
+```
 a2ensite yourvirtualhost.com.conf
 service apache2 reload
 ```
@@ -97,7 +96,7 @@ The new url will need to be added to the [game server config](../configuration/g
 
 Make sure you have this:
 
-```text
+```
 sv_downloadurl "http://subdomain.domain.com/fastdl"
 sv_allowdownload 1
 ```
@@ -115,4 +114,3 @@ Custom server content can be compressed using bzip2 which is supported by source
 #### Garry's Mod Download enforcer
 
 In order for a client to download files from a FastDL in Garry's Mod, the developer of an addon must put files from the addon into lua code `resource.Addfile ( "/path/to/file.ext" )`. However, some addon developers do not do this. In order for clients to download the required files, an lua file needs to be generated for it to work, which is what the lua enforcer feature does. The only downside is that clients may download files that are not required on the server.
-

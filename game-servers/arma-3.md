@@ -10,10 +10,10 @@
 
 ### Headless Client Overview
 
-[https://community.bistudio.com/wiki/Arma\_3\_Headless\_Client](https://community.bistudio.com/wiki/Arma_3_Headless_Client)
+[https://community.bistudio.com/wiki/Arma\_3\_Headless\_Client](https://community.bistudio.com/wiki/Arma\_3\_Headless\_Client)
 
 * Headless Client is used to offload AI calculations from the server.
-* Headless Client is integrated into game client and dedicated server executable \(Windows and Linux, use -client parameter\).
+* Headless Client is integrated into game client and dedicated server executable (Windows and Linux, use -client parameter).
 * The server does not allow arbitrary connections from headless clients if you do not define the headless clients IPs in the server.cfg.
 
 ### Headless Client Setup and Usage
@@ -24,7 +24,7 @@ Starting up a headless client and having it connect to your server is easy, Crea
 This guide only handles the setup and connecting a headless client.
 {% endhint %}
 
-Create a [new server instance](../features/multiple-game-servers.md) using LinuxGSM `./linuxgsm.sh arma3server`. This will become the headless client instance and rename the new instance to `arma3server-hc`.
+Create a [new server instance](../configuration/multiple-game-servers.md) using LinuxGSM `./linuxgsm.sh arma3server`. This will become the headless client instance and rename the new instance to `arma3server-hc`.
 
 Edit the config file `lgsm/config-lgsm/arma3server-hc.cfg`.
 
@@ -32,24 +32,24 @@ Change the `port=` increasing the number by a factor of 12 e.g 2303 becomes 2314
 
 Update `startparameters=` changing it to the following.
 
-```text
+```
 startparameters="-client -connect=${ip}:${port} -password=CHANGEME"
 ```
 
-Edit the game server config of `arma3server` \(not the headless client\) `arma3server.server.cfg` and add the headless client IP address to `headlessClients[]=`. If the headless client is on the same physical server as the ARMA 3 server then also add the IP to `localClient[]=`.
+Edit the game server config of `arma3server` (not the headless client) `arma3server.server.cfg` and add the headless client IP address to `headlessClients[]=`. If the headless client is on the same physical server as the ARMA 3 server then also add the IP to `localClient[]=`.
 
 {% hint style="warning" %}
 Do not use 127.0.0.1 as the IP address.
 {% endhint %}
 
-```text
+```
 headlessClients[]={"1.2.3.4"}; 
 localClient[]={"1.2.3.4"};
 ```
 
 Navigate to your profile directory.
 
-```text
+```
 ~cd ~/.local/share/Arma\ 3\ -\ Other\ Profiles
 ```
 
@@ -60,8 +60,6 @@ Start your server with `./arma3server start`
 Start your headless client with `./arma3server-hc start`.
 
 Only an admin can see the headless clients in the player menu on the server. The headless client will connect and automatically assume the first available headless client slot.
-
-{% file src="../.gitbook/assets/a3\_hc\_tutorial.pdf" caption="In depth guide to headless clients" %}
 
 ## Mod Support
 
@@ -83,7 +81,7 @@ Download the Mod using [https://steamworkshopdownloader.io/](https://steamworksh
 
 Create a directory called `@cba_a3` in `serverfiles/mods`
 
-```text
+```
 serverfiles/mods/@cba_a3
 ```
 
@@ -95,19 +93,19 @@ Remember to check you have the correct user permissions once uploaded
 
 Copy the contents of the `@cba_a3/keys` directory to the server keys directory.
 
-```text
+```
 cp serverfiles/mods/@cba_a3/keys/* serverfiles/keys
 ```
 
 Add @cba\_a3 to the `mods=""` setting in the [LinuxGSM config](../configuration/linuxgsm-config.md).
 
-```text
+```
 mods="mods/@cba_a3"
 ```
 
 If you are adding multiple mods make sure you put a semicolon with the escape character in between each mod.
 
-```text
+```
 mods="mods/@mod1\;mods/@mod2"
 ```
 
@@ -139,10 +137,10 @@ do
 done
 ```
 
-Start the server and check that your mods all have valid hashes.  
+Start the server and check that your mods all have valid hashes.\
 You should see the "Community Base Addons" mod appear in your `console` [log](../features/logging.md)file.
 
-```text
+```
 15:27:37 ============================================================================================= List of mods ===============================================================================================
 15:27:37 modsReadOnly = true
 15:27:37 safeModsActivated = false
@@ -167,4 +165,3 @@ You should see the "Community Base Addons" mod appear in your `console` [log](..
 15:27:37                                             Arma 3 |                   A3 |       true |       true |            NOT FOUND |                                          |           |
 15:27:37 ==========================================================================================================================================================================================================
 ```
-

@@ -21,7 +21,7 @@ The LinuxGSM configuration mechanism is intentionally designed to provide users 
 ### Configuration files
 
 {% hint style="info" %}
-An understanding of how LinuxGSM handles [multiple game server](../features/multiple-game-servers.md) instances helps.
+An understanding of how LinuxGSM handles [multiple game server](multiple-game-servers.md) instances helps.
 {% endhint %}
 
 #### \_default.cfg
@@ -89,7 +89,7 @@ It is recommended you only copy the settings you want to change from `_default.c
 
 ### Multiple Instances Configuration
 
-This configuration is useful for [multiple instances](../features/multiple-game-servers.md#single-installation-with-multiple-instances).
+This configuration is useful for [multiple instances](multiple-game-servers.md#single-installation-with-multiple-instances).
 
 1. Browse to the `config-lgsm` directory
 

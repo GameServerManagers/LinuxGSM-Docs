@@ -154,11 +154,11 @@ A cluster allows an admin to group ARK servers together, usually servers on diff
 
 ### Multi-Instance
 
-ARK will not work with LinuxGSM [multi instances ](../features/multiple-game-servers.md)in the same directory. This is due to its reliance on `GameUserSettings.ini` meaning multiple instances must use the same settings.
+ARK will not work with LinuxGSM [multi instances ](../configuration/multiple-game-servers.md)in the same directory. This is due to its reliance on `GameUserSettings.ini` meaning multiple instances must use the same settings.
 
 ### Adding Servers to Clusters
 
-Firstly, setup [multiple ARK game server instances](../features/multiple-game-servers.md).
+Firstly, setup [multiple ARK game server instances](../configuration/multiple-game-servers.md).
 
 Change the command-line parameters for your server instances by editing the instance configs:
 

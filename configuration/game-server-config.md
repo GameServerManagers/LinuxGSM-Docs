@@ -16,7 +16,7 @@ The `details` command will provide you with some config file information. Howeve
 
 ### Sample output example
 
-```text
+```
 ./gmodserver details
 
 gmodserver Script Details
@@ -34,16 +34,16 @@ Config file:         /home/gmodserver/serverfiles/garrysmod/cfg/gmod-server.cfg
 
 ## LinuxGSM Custom Config's
 
-Whenever possible, LinuxGSM provides basic easy-to-use game server configuration files.  
+Whenever possible, LinuxGSM provides basic easy-to-use game server configuration files.\
 A dedicated repository has been made so all server admins can benefit, even Windows admins.
 
-{% embed url="https://github.com/GameServerManagers/Game-Server-Configs" caption="" %}
+{% embed url="https://github.com/GameServerManagers/Game-Server-Configs" %}
 
 This configuration file is automatically downloaded upon server installation.
 
 ## Config file naming
 
-Whenever possible, LinuxGSM uses a custom name for configuration files that contains the `${servicename}` variable in it in order to allow the running of [multiple game servers](../features/multiple-game-servers.md) with different config files. If the game does not allow for that, then the usual name will be used.
+Whenever possible, LinuxGSM uses a custom name for configuration files that contains the `${servicename}` variable in it in order to allow the running of [multiple game servers](multiple-game-servers.md) with different config files. If the game does not allow for that, then the usual name will be used.
 
 ### Example
 
@@ -51,7 +51,7 @@ For source servers, the default `server.cfg` is not used with LinuxGSM. Instead 
 
 ## Missing configuration file handling
 
-LinuxGSM will always check a config file is present when starting a server.  
+LinuxGSM will always check a config file is present when starting a server.\
 If a config file is missing, it will re-download the default one or give a warning.
 
 ## Where are the settings I'm looking for?
@@ -64,5 +64,4 @@ One of the goals of LinuxGSM is to make managing these as easy as possible, by p
 
 If you found settings that are absent from the default configuration file provided by LinuxGSM that would be a useful addition, then you can open an issue or a pull request.
 
-{% embed url="https://github.com/GameServerManagers/Game-Server-Configs" caption="" %}
-
+{% embed url="https://github.com/GameServerManagers/Game-Server-Configs" %}

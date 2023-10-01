@@ -2,7 +2,7 @@
 description: Hosting multiple game servers on the same host
 ---
 
-# Multiple Game Servers
+# Running Multiple Game Servers
 
 Depending upon the game server you are running it is possible to run multiple game servers on the same server host.
 
@@ -10,7 +10,7 @@ Depending upon the game server you are running it is possible to run multiple ga
 Depending upon the circumstances you may choose a particular method or mixture of both.
 
 It is best to make a proper plan for running multiple game servers at the earliest stage of your deployment.\
-Make sure that you examined this page carefully and understood all of its content before starting.
+Make sure that you examine this page carefully and understand all of its content before starting.
 
 ## Prerequisites
 
@@ -24,7 +24,7 @@ You need some definitions to make this guide clear.
 /home/gameserver/serverfiles
 ```
 
-* **Instance:** Each individual game server is referred too as an _instance._ There might be multiple instances running per installation. An instance is started by running the `./gameserver` script
+* **Instance:** Each individual game server is referred to as an _instance._ There might be multiple instances running per installation. An instance is started by running the `./gameserver` script
 
 ```
 /home/gameserver/gameserver
@@ -35,21 +35,21 @@ You need some definitions to make this guide clear.
 
 #### LinuxGSM Configuration
 
-You should be familiar with how [LinuxGSM Configs](../configuration/linuxgsm-config.md) work.
+You should be familiar with how [LinuxGSM Configs](linuxgsm-config.md) work.
 
 #### Understand ports
 
-You need to understand how ports work in order to avoid port overlapping, otherwise your new instances won't start. Useful resource: [Ports](../networking/ports.md).
+You need to understand how ports work in order to avoid port overlapping, otherwise, your new instances won't start. Useful resource: [Ports](../networking/ports.md).
 
 ## Single Instance per Installation
 
 Single instance per installation is the most simple method and will fit most use cases. It keeps the server files and configs completely separate from each other.
 
-This consists of creating a new user for each game server, repeat the install process and edit your config files ensuring default ports are changed.
+This consists of creating a new user for each game server, repeating the install process, and edit your config files ensuring default ports are changed.
 
 ### Use cases
 
-* Running different game servers require installation in a different directory
+* Running different game servers requires installation in a different directory
 * Running multiple servers of the same game, but they have different content, addons or mods.
 * You want your game servers to be totally separate for simplicity and reduce the chance of multiple instances breaking all at once.
 
