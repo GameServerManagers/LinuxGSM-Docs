@@ -1,6 +1,6 @@
 # gamedig
 
-[GameDig](https://github.com/sonicsnes/node-gamedig) is a tool that queries game servers and returns outputs data from a query into json format. It can not only check if the game server is online but also return various data such as current maps and players. This allows `./gameserver details` to display live information.
+[GameDig](https://github.com/gamedig/node-gamedig) is a tool that queries game servers and returns outputs data from a query into json format. It can not only check if the game server is online but also return various data such as current maps and players. This allows `./gameserver details` to display live information.
 
 GameDig super-seeds gsquery as the tool to monitor game servers. GameDig is currently optional but recommended and gsquery is kept to ensure compatibility as gamedig requires Node.js to be installed.
 
