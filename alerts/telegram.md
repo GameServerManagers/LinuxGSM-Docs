@@ -49,7 +49,7 @@ View group info -> Add Members.
 
 The chat id is used to identify where the alert is being sent. Each user and group has its own ID.
 
-To obtain the chat id a message must be received by the bot. This will allow it to pick up the chat id
+To obtain the chat id a message must be received by the bot. This will allow it to pick up the chat id. You can now search for your bot in telegram and sent it the message `LINUXGSM`.
 
 * users: send the message `LINUXGSM` directly to the bot
 * groups: send the message `LINUXGSM` to the group
