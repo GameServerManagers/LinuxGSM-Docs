@@ -42,7 +42,6 @@
     * [Mounting Game Content](game-servers/garrys-mod/mounting-game-content.md)
   * [Insurgency: SandStorm](game-servers/insurgency-sandstorm.md)
   * [Killing Floor 2](game-servers/killing-floor-2.md)
-  * [Last Oasis](game-servers/last-oasis.md)
   * [Minecraft: Java Edition](game-servers/minecraft.md)
   * [Multi Theft Auto](game-servers/multi-theft-auto.md)
   * [Rust](game-servers/rust.md)
