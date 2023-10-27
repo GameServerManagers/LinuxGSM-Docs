@@ -51,6 +51,7 @@
   * [Unreal Tournament 2004](game-servers/unreal-tournament-2004.md)
   * [Unreal Tournament 3](game-servers/unreal-tournament-3.md)
   * [Valheim](game-servers/valheim.md)
+  * [Counter-Strike 2](game-servers/counter-strike-2.md)
 * [Networking](networking/README.md)
   * [IP Address](networking/ip-address.md)
   * [Ports](networking/ports.md)
