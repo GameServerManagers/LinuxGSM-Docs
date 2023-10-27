@@ -1,8 +1,8 @@
 # SteamCMD
 
-![](../.gitbook/assets/steamcmd%20%281%29.png)
+![](<../.gitbook/assets/steamcmd (1).png>)
 
-SteamCMD is a command-line based Steam client developed by Valve that is used to remotely download game files. This is very useful for game servers, as it is significantly easier to keep them up-to-date. Any game that supports dedicated servers will have its server files available on SteamCMD. All you need is the AppID which can be found on Valve's [wiki](https://developer.valvesoftware.com/wiki/Dedicated_Servers_List) or [SteamDB](https://steamdb.info/search/?a=app&q=server).
+SteamCMD is a command-line based Steam client developed by Valve that is used to remotely download game files. This is very useful for game servers, as it is significantly easier to keep them up-to-date. Any game that supports dedicated servers will have its server files available on SteamCMD. All you need is the AppID which can be found on Valve's [wiki](https://developer.valvesoftware.com/wiki/Dedicated\_Servers\_List) or [SteamDB](https://steamdb.info/search/?a=app\&q=server).
 
 {% hint style="info" %}
 You can only download server files for the operating system that you are using SteamCMD on.
@@ -24,13 +24,15 @@ The majority of game servers using SteamCMD only require an _anonymous_ login. L
 
 Some game servers require you to login to SteamCMD using a steam login to allow download of the server. Some also require you to own a copy of the game on the steam account.
 
-If this is the case LinuxGSM will prompt you on install to set a steam _username_ and _password._ This can be set by editing the following settings within the [LinuxGSM config](../configuration/linuxgsm-config.md).
+If this is the case LinuxGSM will prompt you on installation to set a steam _username_ and _password._ This can be set by editing the following settings within the [LinuxGSM config](../configuration/linuxgsm-config.md).
 
-```text
+```
 ## SteamCMD Login
 steamuser="username"
 steampass="password"
 ```
+
+If you get the error `ERROR! Failed to install app '2430930' (No subscription)` then you do not own a copy of the game in your account and will need to login on the standard steam client and buy the game. If the game is free you will need to "add to account".
 
 {% hint style="danger" %}
 **Do not** use your own steam login. Create a new Steam login just for the game server. As the steam login password is stored in [plain text](./#plain-text-passwords).
@@ -53,14 +55,14 @@ Steam Guard is an additional layer of security that can be applied to a Steam ac
 If Steam Guard is enabled on an account when a login to from an unrecognized device happens an access code will be required as verification. Depending on the account Steam Guard settings, either an email with a code or a code from the Steam Mobile app on a smartphone is required.
 
 {% hint style="info" %}
-For more info visit [steam support](https://support.steampowered.com/kb_article.php?ref=4020-ALZM-5519).
+For more info visit [steam support](https://support.steampowered.com/kb\_article.php?ref=4020-ALZM-5519).
 {% endhint %}
 
 ### Authentication Methods for SteamCMD
 
 1. Username and password - No Steam Guard
 2. Username and password - Steam Guard via Email
-3. Username and password - Steam Guard via Smartphone \(not compatible with LinuxGSM\)
+3. Username and password - Steam Guard via Smartphone (not compatible with LinuxGSM)
 
 **Username and Password - No Steam Guard**
 
@@ -70,7 +72,7 @@ Simply requires your Steam username and password.
 
 Requires your Steam username and password and you will also receive an email on the first login to SteamCMD and be required to enter a code. Once the code is entered your server is authorised to use the steam account you entered.
 
-**Username and Password - Steam Guard via Smartphone \(not compatible with LinuxGSM\)**
+**Username and Password - Steam Guard via Smartphone (not compatible with LinuxGSM)**
 
 Requires your Steam Username & Password but also requires you have the Steam app on your phone to use 2-factor Authentication.
 
@@ -82,5 +84,4 @@ Steam Guard via Smartphone is not compatible because it requires a code every ti
 
 If you have Steam Guard via email enabled the first time you start SteamCMD you will be prompted to enter a steam Guard code and you will receive an email with the code. Copy and paste the code into the prompt and press enter. You will not need to enter a code again.
 
-## 
-
+##
