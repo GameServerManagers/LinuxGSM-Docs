@@ -1,5 +1,9 @@
 # Counter-Strike 2
 
+{% hint style="info" %}
+This page is still a work in progress. If you have updated info please edit this document or let us know.
+{% endhint %}
+
 ## **Server Resources**
 
 **Official Server Resources**
