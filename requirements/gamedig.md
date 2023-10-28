@@ -14,7 +14,7 @@ If you already have an older version of nodejs installed or be having issues wit
 
 #### Ubuntu/Debian
 
-```text
+```
 sudo apt remove --purge nodejs npm
 sudo apt clean
 sudo apt autoclean
@@ -34,23 +34,19 @@ Installing nodejs can be problematic, however, using the below should work well.
 
 #### Ubuntu/Debian
 
-```text
-curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
-sudo apt update && sudo apt install -y nodejs
-```
+{% embed url="https://github.com/nodesource/distributions#ubuntu-versions" %}
 
-#### CentOS
+{% embed url="https://github.com/nodesource/distributions#debian-versions" %}
 
-```text
-curl -fsSL https://rpm.nodesource.com/setup_16.x | bash -
-yum install nodejs npm
-```
+#### Enterprise Linux Based Distributions
+
+{% embed url="https://github.com/nodesource/distributions#enterprise-linux-based-distributions" %}
 
 ### Install GameDig npm
 
 Once nodejs is installed use npm to install gamedig with the following command.
 
-```text
+```
 npm install gamedig -g
 ```
 
@@ -58,13 +54,13 @@ npm install gamedig -g
 
 Updates to GameDig are regularly made. It is possible to update by running the npm update command.
 
-```text
+```
 npm update -g
 ```
 
 You can also see which version of gamedig is installed by running the following.
 
-```text
+```
  npm list -g gamedig
 ```
 
@@ -74,18 +70,18 @@ You can also see which version of gamedig is installed by running the following.
 
 Extra info becomes available for game server details.
 
-```text
+```
 Players:          0/8
 Current Map:      Outpost
 ```
 
 ## Raw output
 
-```text
+```
 gamedig --type "protocol-valve" --host "1.2.3.4" --port "27015"
 ```
 
-```text
+```
 {
   "name": "LinuxGSM Server",
   "map": "StationKappa",
@@ -130,4 +126,3 @@ gamedig --type "protocol-valve" --host "1.2.3.4" --port "27015"
   }
 }
 ```
-
