@@ -1,8 +1,14 @@
 # Start Parameters
 
-Many game servers require _start parameters_, these are command-line options that are set with the servers executable when the server starts.&#x20;
 
-Using [game server configs](game-server-config.md) over parameters is prefered, however, sometimes this is not an option. When this is the case only parameters or a mixture of game server config and parameters will be used.
+
+{% hint style="info" %}
+Also known as Command-Line Parameters, Command line arguments, or Launch Parameters.
+{% endhint %}
+
+Many game servers require _start parameters_, these are command-line options that are set with the server executable when the server starts.&#x20;
+
+Using [game server configs](game-server-config.md) over parameters is preferred, however, sometimes this is not an option. When this is the case only parameters or a mixture of game server config and parameters will be used.
 
 Parameters being used by the game server can be found in `./gameserver details`. To alter them, you will need to edit [LinuxGSM config files](linuxgsm-config.md).
 
