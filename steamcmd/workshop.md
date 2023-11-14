@@ -46,10 +46,13 @@ The collection id would be `274397080`.
 
 ### Garry's Mod
 
+{% hint style="info" %}
+Garry's Mod doesn't need an API Key anymore.
+{% endhint %}
+
 For Garry's Mod, edit these lines in your [LinuxGSM config](../configuration/linuxgsm-config.md)
 
 ```
-wsapikey="YOUR_STEAM_API_KEY"
 wscollectionid="YOUR_COLLECTION_ID"
 ```
 
