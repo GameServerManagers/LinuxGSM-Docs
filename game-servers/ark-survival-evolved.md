@@ -4,15 +4,15 @@
 
 ## Server Resources
 
-* [ARK: Survival Evolved Wiki Dedicated Server Guide](https://ark.gamepedia.com/Dedicated\_Server\_Setup)
-* [ARK: Survival Evolved Steam Workshop](https://steamcommunity.com/app/346110/workshop/)
+* [Official Dedicated Server Guide](https://ark.wiki.gg/wiki/Server\_configuration)
+* [Steam Workshop](https://steamcommunity.com/app/346110/workshop/)
 * [Official ARK: Survival Evolved Server Administration forum](https://survivetheark.com/index.php?/forums/forum/39-server-administration/)
 
 ## System Requirements
 
 Different Maps require different system requirements.
 
-* TheIsland: 6GB RAM
+* TheIsland: 7GB RAM
 * Genesis 2: 12GB RAM
 
 ## Config Files
@@ -30,14 +30,17 @@ The default save directory is the default map name. However with the `altsavedir
 
 * TheIsland
 * TheCenter
-* Ragnarok
 * ScorchedEarth\_P
+* Ragnarok
 * Aberration\_P
 * Extinction
 * Valguero\_P
 * Genesis
 * CrystalIsles
+* Gen2
 * LostIsland
+* Fjordur
+* PGARK
 
 ## Mod Support
 
@@ -146,11 +149,11 @@ The `-multihome` parameter is used to bind the server to a specific interface. B
 
 ### PublicIPForEpic
 
-If you want players who use the Epic Store to connect to the server the `-PublicIPForEpic` parameter. By default LinuxGSM will set this to `${publicip}`&#x20;
+If you want players who use the Epic Store to connect to the server the `-PublicIPForEpic` parameter. By default, LinuxGSM will set this to `${publicip}`&#x20;
 
 ## Clusters
 
-A cluster allows an admin to group ARK servers together, usually servers on different maps. Allowing the transfer characters between the different servers.
+A cluster allows an admin to group ARK servers together, usually servers on different maps. Allowing the transfer of characters between the different servers.
 
 ### Multi-Instance
 
