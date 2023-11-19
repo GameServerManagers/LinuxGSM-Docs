@@ -4,7 +4,7 @@
 
 ## Resources
 
-* [Arma3 Server tutorial](https://forums.bohemia.net/forums/topic/139003-tutorial-installation-configuration-of-arma3-dedicated-server/)
+* [Official Dedicated Server Guide](https://community.bistudio.com/wiki/Arma\_3:\_Dedicated\_Server)
 
 ## Headless Client
 
@@ -12,9 +12,9 @@
 
 [https://community.bistudio.com/wiki/Arma\_3\_Headless\_Client](https://community.bistudio.com/wiki/Arma\_3\_Headless\_Client)
 
-* Headless Client is used to offload AI calculations from the server.
-* Headless Client is integrated into game client and dedicated server executable (Windows and Linux, use -client parameter).
-* The server does not allow arbitrary connections from headless clients if you do not define the headless clients IPs in the server.cfg.
+* A headless Client is used to offload AI calculations from the server.
+* Headless Client is integrated into the game client and dedicated server executable (Windows and Linux, use `-client` parameter).
+* The server does not allow arbitrary connections from headless clients if you do not define the headless clients' IPs in the `server.cfg`.
 
 ### Headless Client Setup and Usage
 
@@ -111,7 +111,7 @@ mods="mods/@mod1\;mods/@mod2"
 
 ### Lower Case File Names
 
-Arma 3 server requires that mods have lowercase names. Some mods do not do this and will need to have there file names converted to lowercase.
+Arma 3 server requires that mods have lowercase names. Some mods do not do this and will need to have their file names converted to lowercase.
 
 This can be done by using the following script.
 
