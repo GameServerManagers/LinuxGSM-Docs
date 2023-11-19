@@ -4,8 +4,8 @@
 
 ## System requirements
 
-* RAM: 4GB-12GB, Increases depending upon map size
-* CPU: Dual core 3.4GHz
+* Minimum RAM: 9GB, Increases depending upon map size
+* CPU: Dual-core 3.4GHz
 * Bandwidth: 10mbps upload
 
 ## Useful Links
