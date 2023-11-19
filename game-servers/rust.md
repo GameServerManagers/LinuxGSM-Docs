@@ -126,7 +126,7 @@ A complete list can be gathered by typing `find .` into Rust Rcon
 {% endhint %}
 
 {% hint style="info" %}
-Last updated: 19/11/2ariables
+Last updated: 19/11/23
 {% endhint %}
 
 ### Variables
