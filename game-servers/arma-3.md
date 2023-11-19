@@ -2,7 +2,7 @@
 
 ![](../.gitbook/assets/arma3.jpg)
 
-## Resources
+## Server Resources
 
 * [Official Dedicated Server Guide](https://community.bistudio.com/wiki/Arma\_3:\_Dedicated\_Server)
 
