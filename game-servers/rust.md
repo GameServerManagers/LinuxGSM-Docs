@@ -119,7 +119,7 @@ server.writecfg ; will save config changes, including new admins
 
 ## Rust Settings
 
-Below is a complete list off all Rust server settngs
+Below is a complete list of all Rust server settings.
 
 {% hint style="info" %}
 A complete list can be gathered by typing `find .` into Rust Rcon
