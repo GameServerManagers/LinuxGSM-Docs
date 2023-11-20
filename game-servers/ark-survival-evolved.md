@@ -25,7 +25,11 @@ serverfiles/ShooterGame/Saved/Config/LinuxServer/Game.ini
 
 ## Alt Saved Directory
 
-The default save directory is the default map name. However with the `altsavedirectoryname=` setting you can customise this if required.
+The alt saved directory is the location where the game save will be stored; by default, this is the current map name. To change this `altsavedirectoryname=` setting you can customise if required.
+
+{% hint style="warning" %}
+Be careful not to accidentally overwrite a save file if changing maps or using a custom save location
+{% endhint %}
 
 ## Official Map Names
 
@@ -146,7 +150,7 @@ To get individual item IDs from collections you can use the [Steam Collection ID
 
 ### Multihome&#x20;
 
-The `-multihome` parameter is used to bind the server to a specific interface. By default LinxuGSM sets this to the `${ip}` variable,
+The `-multihome` parameter is used to bind the server to a specific interface. By default, LinxuGSM sets this to the `${ip}` variable,
 
 ### PublicIPForEpic
 
@@ -162,7 +166,7 @@ ARK will not work with LinuxGSM [multi instances ](../configuration/multiple-gam
 
 ### Adding Servers to Clusters
 
-Firstly, setup [multiple ARK game server instances](../configuration/multiple-game-servers.md).
+Firstly, set up [multiple ARK game server instances](../configuration/multiple-game-servers.md).
 
 Change the command-line parameters for your server instances by editing the instance configs:
 
