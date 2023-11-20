@@ -53,13 +53,15 @@ Below is a list of common Configuration settings. For a complete list see the [A
 
 The following options must come under the `[ServerSettings]` section of `GameUserSettings.ini`:
 
-| Variable                                         | Description                                                                                                           |
-| ------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------- |
-| ActiveMods=ModID1,ModID2,ModID3                  | _Value type: list of mod IDs, comma-separated with no spaces, in a single line (for example: `ModID1,ModID2,ModID3`)_ |
-| BanListURL="http://arkdedicated.com/banlist.txt" | <p><em>Value type: string with a URL</em><br>Sets the global ban list. Must be enclosed in double quotes. </p>        |
-| RCONPort=27020                                   | Specifies the optional TCP RCON Port.                                                                                 |
-| ServerPassword=                                  | If specified, players must provide this password to join the server.                                                  |
-| serverPVE=                                       | If `True`, disables [PvP](https://ark.wiki.gg/wiki/PvP) and enables [PvE](https://ark.wiki.gg/wiki/PvE)               |
+| Variable                                         | Description                                                                                                                        |
+| ------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------- |
+| ActiveMods=ModID1,ModID2,ModID3                  | _Value type: list of mod IDs, comma-separated with no spaces, in a single line (for example: `ModID1,ModID2,ModID3`)_              |
+| BanListURL="http://arkdedicated.com/banlist.txt" | <p><em>Value type: string with a URL</em><br>Sets the global ban list. Must be enclosed in double-quotes. </p>                     |
+| RCONEnabled=True                                 | f `True`, enables RCON, needs `RCONPort=<TCP_PORT>` and `ServerAdminPassword=<admin_password>` to work                             |
+| RCONPort=27020                                   | Specifies the optional TCP RCON Port.                                                                                              |
+| ServerAdminPassword=                             | If specified, players must provide this password (via the in-game console) to gain access to administrator commands on the server. |
+| ServerPassword=                                  | If specified, players must provide this password to join the server.                                                               |
+| serverPVE=                                       | If `True`, disables [PvP](https://ark.wiki.gg/wiki/PvP) and enables [PvE](https://ark.wiki.gg/wiki/PvE)                            |
 
 The following options must come under the `[SessionSettings]` section of `GameUserSettings.ini`.
 
@@ -216,11 +218,11 @@ To get individual item IDs from collections you can use the [Steam Collection ID
 
 ### Multihome&#x20;
 
-The `-multihome` parameter is used to bind the server to a specific interface. By default, LinxuGSM sets this to the `${ip}` variable,
+The `-multihome` parameter is used to bind the server to a specific interface. By default, LinxuGSM sets this to the `${ip}` variable.
 
 ### PublicIPForEpic
 
-If you want players who use the Epic Store to connect to the server the `-PublicIPForEpic` parameter. By default, LinuxGSM will set this to `${publicip}`&#x20;
+If you want players who use the Epic Store to connect to the server the `-PublicIPForEpic` parameter. By default, LinuxGSM will set this to `${publicip}` variable.
 
 ## Clusters
 
