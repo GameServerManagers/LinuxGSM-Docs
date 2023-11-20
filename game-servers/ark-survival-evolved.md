@@ -232,11 +232,6 @@ ARK can work with LinuxGSM [multi instances ](../configuration/multiple-game-ser
 
 A [CrossARK](https://ark.wiki.gg/wiki/CrossARK\_Transfers) cluster allows players to transfer a survivor, items, and tames ("objects") from one ARK to another ARK. A server admin can group all their ARK servers together in a cluster. Typically a server admin will cluster servers with different maps. There are a few different ways to configure CrossARK depending upon your configuration.
 
-| Parameter | Description                                                                                                      |
-| --------- | ---------------------------------------------------------------------------------------------------------------- |
-|           | The cluster id is the name given to the cluster. Each instance must have the same cluster id                     |
-|           | The location of the cluster directory. Each instance must share the same directory to allow clustering to work.  |
-
 ### Cluster ID
 
 &#x20;The cluster ID is the global name of the cluster. Each instance that will be attached to the cluster must have the same cluster ID. Use `-ClusterId=<CLUSTER NAME>`to specify the cluster ID.
