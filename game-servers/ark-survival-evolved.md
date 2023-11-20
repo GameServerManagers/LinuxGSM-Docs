@@ -25,6 +25,60 @@ serverfiles/ShooterGame/Saved/Config/LinuxServer/GameUserSettings.ini
 serverfiles/ShooterGame/Saved/Config/LinuxServer/Game.ini
 ```
 
+## Server Settings
+
+### Common Command-Line Options
+
+Below is a list of common Command-Line options. For a complete list see the [Ark Wiki](https://ark.wiki.gg/wiki/Server\_configuration#Command\_line\_options).
+
+| Parameter                              | Description                                                                                                                                                                                                                                                                                                                                                                                                                |
+| -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| SessionName                            |                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| -MultiHome                             | Enables multihoming.                                                                                                                                                                                                                                                                                                                                                                                                       |
+| -Port                                  |                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| -QueryPort                             |                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| -AutoManagedMods                       | Steam only, automatic MOD download/installation/updating. Mod IDs are listed in _Game.ini_ under `[ModInstaller]` section.                                                                                                                                                                                                                                                                                                 |
+| -CrossPlay                             | Enables crossplay (i.e.: EPIC and Steam) on dedicated server. Note: PublicIPForEpic must also be set.                                                                                                                                                                                                                                                                                                                      |
+| -PublicIPForEpic=\<IPAddress>          | This is the public IP that EGS clients will attempt to connect to, if this option is missing and `-MULTIHOME` is specified, then EGS clients will attempt to connect to the multihome IP; note that if you're using multihome and specify a non-public IP address, then players will not be able to connect to your server using EGS. Make sure to set a public IP address (e.g.: WAN or external).                        |
+| -NoBattlEye                            | Run server without BattleEye.                                                                                                                                                                                                                                                                                                                                                                                              |
+| -ActiveEvent=                          | Enables a specified event or enables the event's colour palette on wild creatures. Only one can be specified and active at a time.                                                                                                                                                                                                                                                                                         |
+| ?AltSaveDirectoryName=\<savedir\_name> | Allows to specify a custom directory name for server world-save. Usually used to manage clusters, read more about it in the [Cross-ARK Data Transfer](https://ark.wiki.gg/wiki/Server\_configuration#Cross-ARK\_Data\_Transfer) section.                                                                                                                                                                                   |
+| -insecure                              | Disable Valve Anti-Cheat (VAC) system.                                                                                                                                                                                                                                                                                                                                                                                     |
+| -MapModID=                             | Dedicated servers can now optionally load custom maps via `ModID` directly, rather than having to specify the map name, using this syntax (where the `MapModID` is the Steam Workshop ID of your custom map, and the GameModIds are the Id’s of the stacked mods you wish to use, in order). `ActiveMods` must also be set in [GameUserSettings.ini](https://ark.wiki.gg/wiki/Server\_configuration#GameUserSettings.ini). |
+| ?GameModIds=\[,\[...]]                 | Steam only. Specifies the order and which mods are loaded, `ModIDs` need to be separated with commas (`,`). Mod priority is in descending order left to right (the left-most ID is the top priority mod). It is suggested to use instead the `ActiveMods` under `[ServerSettings]` of _GameUserSettings.ini_.                                                                                                              |
+
+### Common Configuration Settings
+
+Below is a list of common Configuration settings. For a complete list see the [Ark Wiki](https://ark.wiki.gg/wiki/Server\_configuration#Configuration\_Files).
+
+The following options must come under the `[ServerSettings]` section of `GameUserSettings.ini`:
+
+| Variable                                         | Description                                                                                                           |
+| ------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------- |
+| ActiveMods=ModID1,ModID2,ModID3                  | _Value type: list of mod IDs, comma-separated with no spaces, in a single line (for example: `ModID1,ModID2,ModID3`)_ |
+| BanListURL="http://arkdedicated.com/banlist.txt" | <p><em>Value type: string with a URL</em><br>Sets the global ban list. Must be enclosed in double quotes. </p>        |
+| RCONPort=27020                                   | Specifies the optional TCP RCON Port.                                                                                 |
+| ServerPassword=                                  | If specified, players must provide this password to join the server.                                                  |
+| serverPVE=                                       | If `True`, disables [PvP](https://ark.wiki.gg/wiki/PvP) and enables [PvE](https://ark.wiki.gg/wiki/PvE)               |
+
+The following options must come under the `[SessionSettings]` section of `GameUserSettings.ini`.
+
+
+
+<table><thead><tr><th width="187">Variable</th><th>Description</th></tr></thead><tbody><tr><td>SessionName</td><td>Specifies the Server name advertised in the Game Server Browser as well in Steam Server browser. If no name is provide, the default name will be <em>ARK #</em> followed by a random 6 digit number</td></tr></tbody></table>
+
+The following options must come under the `[/Script/Engine.GameSession]` section of `GameUserSettings.ini`.
+
+
+
+<table><thead><tr><th width="176">Variable</th><th>Description</th></tr></thead><tbody><tr><td>MaxPlayers=70</td><td>Specifies the maximum number of players that can play on the server simultaneously.</td></tr></tbody></table>
+
+The section `[ModInstaller]` handles each extra Steam Workshop Mods/Maps/TC IDs in the `Game.ini`.
+
+| Variable          | Description                                                                                                                                                                                                                                                     |
+| ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ModIDS=\<integer> | Specifies a single Steam Workshop Mods/Maps/TC ID to download/install/update on the server. To handle multiple IDs, multiple lines must be added with the same syntax, each one with the specific workshop ID. Requires `-automanagedmods` in the command line. |
+
 ## Alt Saved Directory Name
 
 ```
@@ -75,7 +129,7 @@ Here is a simple mod to get started:
 
 * [Editable Server UI (WBUI) Open Source - 924619115](https://steamcommunity.com/sharedfiles/filedetails/?id=924619115)
 
-`-automanagedmods`is the required [parameter](../configuration/start-parameters.md) to add workshop support and is added to the start parameters by default.
+`-automanagedmods` is the required [parameter](../configuration/start-parameters.md) to add workshop support and is added to the start parameters by default.
 
 Edit `GameUserSettings.ini`, adding the following line under `[ServerSettings]`. To add multiple mods use a comma delimiter e.g `ActiveMods=924619115,924619652`.
 
