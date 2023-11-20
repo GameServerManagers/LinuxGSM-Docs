@@ -18,18 +18,30 @@ Different Maps require different system requirements.
 
 ## Config Files
 
+An example of GameUserSettings.ini can be found [here](https://github.com/GameServerManagers/Game-Server-Configs/blob/main/ark/GameUserSettings.ini).
+
 ```
 serverfiles/ShooterGame/Saved/Config/LinuxServer/GameUserSettings.ini
 serverfiles/ShooterGame/Saved/Config/LinuxServer/Game.ini
 ```
 
-## Alt Saved Directory
+## Alt Saved Directory Name
 
-The alt saved directory is the location where the game save will be stored; by default, this is the current map name. To change this `altsavedirectoryname=` setting you can customise if required.
+```
+altsavedirectoryname=
+```
+
+The `altsavedirectoryname` is the location where the game save will be stored; by default, this is the current map name. However, this setting can be customised if desired.
 
 {% hint style="warning" %}
-Be careful not to accidentally overwrite a save file if changing maps or using a custom save location
+Be careful not to accidentally overwrite a save file if changing maps or using a custom save location.
 {% endhint %}
+
+If `altsaveddirectoryname` is `TheIsland` the save is located will be:
+
+```
+ShooterGame/Saved/TheIsland
+```
 
 ## Official Map Names
 
