@@ -27,9 +27,13 @@ serverfiles/ShooterGame/Saved/Config/LinuxServer/Game.ini
 
 ## Server Settings
 
-### Common Command-Line Options
+{% hint style="info" %}
+Command line parameters take precedence over configuration files.
+{% endhint %}
 
-Below is a list of common Command-Line options. For a complete list see the [Ark Wiki](https://ark.wiki.gg/wiki/Server\_configuration#Command\_line\_options).
+### Common Command-Line Parameters
+
+Below is a list of common Command-Line parameters. For a complete list see the [Ark Wiki](https://ark.wiki.gg/wiki/Server\_configuration#Command\_line\_options).
 
 | Parameter                              | Description                                                                                                                                                                                                                                                                                                                                                                                                                |
 | -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -47,7 +51,7 @@ Below is a list of common Command-Line options. For a complete list see the [Ark
 | -MapModID=                             | Dedicated servers can now optionally load custom maps via `ModID` directly, rather than having to specify the map name, using this syntax (where the `MapModID` is the Steam Workshop ID of your custom map, and the GameModIds are the Id’s of the stacked mods you wish to use, in order). `ActiveMods` must also be set in [GameUserSettings.ini](https://ark.wiki.gg/wiki/Server\_configuration#GameUserSettings.ini). |
 | ?GameModIds=\[,\[...]]                 | Steam only. Specifies the order and which mods are loaded, `ModIDs` need to be separated with commas (`,`). Mod priority is in descending order left to right (the left-most ID is the top priority mod). It is suggested to use instead the `ActiveMods` under `[ServerSettings]` of _GameUserSettings.ini_.                                                                                                              |
 
-### Common Configuration Settings
+### Common Configuration File Settings
 
 Below is a list of common Configuration settings. For a complete list see the [Ark Wiki](https://ark.wiki.gg/wiki/Server\_configuration#Configuration\_Files).
 
@@ -65,13 +69,9 @@ The following options must come under the `[ServerSettings]` section of `GameUse
 
 The following options must come under the `[SessionSettings]` section of `GameUserSettings.ini`.
 
-
-
 <table><thead><tr><th width="187">Variable</th><th>Description</th></tr></thead><tbody><tr><td>SessionName</td><td>Specifies the Server name advertised in the Game Server Browser as well in Steam Server browser. If no name is provide, the default name will be <em>ARK #</em> followed by a random 6 digit number</td></tr></tbody></table>
 
 The following options must come under the `[/Script/Engine.GameSession]` section of `GameUserSettings.ini`.
-
-
 
 <table><thead><tr><th width="176">Variable</th><th>Description</th></tr></thead><tbody><tr><td>MaxPlayers=70</td><td>Specifies the maximum number of players that can play on the server simultaneously.</td></tr></tbody></table>
 
@@ -87,7 +87,7 @@ The section `[ModInstaller]` handles each extra Steam Workshop Mods/Maps/TC IDs 
 altsavedirectoryname=
 ```
 
-The `altsavedirectoryname` is the location where the game save will be stored; by default, this is the current map name. However, this setting can be customised if desired.
+The `altsavedirectoryname` is the location where the game save will be stored. By default, this is the current map name. However, this setting can be customised if desired.
 
 {% hint style="warning" %}
 Be careful not to accidentally overwrite a save file if changing maps or using a custom save location.
@@ -131,7 +131,7 @@ Here is a simple mod to get started:
 
 * [Editable Server UI (WBUI) Open Source - 924619115](https://steamcommunity.com/sharedfiles/filedetails/?id=924619115)
 
-`-automanagedmods` is the required [parameter](../configuration/start-parameters.md) to add workshop support and is added to the start parameters by default.
+`-AutoManagedMods` is the required [parameter](../configuration/start-parameters.md) to add workshop support and is added to the start parameters by default.
 
 Edit `GameUserSettings.ini`, adding the following line under `[ServerSettings]`. To add multiple mods use a comma delimiter e.g `ActiveMods=924619115,924619652`.
 
@@ -210,7 +210,7 @@ The example mod can be activated by pressing `F1`.
 
 The Steam Workshop has a feature that allows mods to be grouped in collections. Currently, Steam workshop collection IDs won't work directly with ARK. Instead, you need to have all the individual IDs of the mods you want to use.
 
-{% hint style="success" %}
+{% hint style="info" %}
 To get individual item IDs from collections you can use the [Steam Collection ID Grabber](https://tools.rusty.info/tools/stcolids/).
 {% endhint %}
 
@@ -218,49 +218,86 @@ To get individual item IDs from collections you can use the [Steam Collection ID
 
 ### Multihome&#x20;
 
-The `-multihome` parameter is used to bind the server to a specific interface. By default, LinxuGSM sets this to the `${ip}` variable.
+The `-MultiHome` parameter is used to bind the server to a specific interface. By default, LinxuGSM sets this to the `${ip}` variable.
 
 ### PublicIPForEpic
 
-If you want players who use the Epic Store to connect to the server the `-PublicIPForEpic` parameter. By default, LinuxGSM will set this to `${publicip}` variable.
+If you want players who use the Epic Store to connect to the server the `-PublicIPForEpic` parameter. By default, LinuxGSM will set this to the `${publicip}` variable.
 
-## Clusters
+## Multi-Instance
 
-A cluster allows an admin to group ARK servers together, usually servers on different maps. Allowing the transfer of characters between the different servers.
+ARK can work with LinuxGSM [multi instances ](../configuration/multiple-game-servers.md)in the same install. However, each instance will use the same `GameUserSettings.ini`. To customise each server use command-line parameters as they take precedence over the configs.
 
-### Multi-Instance
+## CrossARK (Clusters)
 
-ARK will not work with LinuxGSM [multi instances ](../configuration/multiple-game-servers.md)in the same directory. This is due to its reliance on `GameUserSettings.ini` meaning multiple instances must use the same settings.
+A [CrossARK](https://ark.wiki.gg/wiki/CrossARK\_Transfers) cluster allows players to transfer a survivor, items, and tames ("objects") from one ARK to another ARK. A server admin can group all their ARK servers together in a cluster. Typically a server admin will cluster servers with different maps. There are a few different ways to configure CrossARK depending upon your configuration.
+
+| Parameter | Description                                                                                                      |
+| --------- | ---------------------------------------------------------------------------------------------------------------- |
+|           | The cluster id is the name given to the cluster. Each instance must have the same cluster id                     |
+|           | The location of the cluster directory. Each instance must share the same directory to allow clustering to work.  |
+
+### Cluster ID
+
+&#x20;The cluster ID is the global name of the cluster. Each instance that will be attached to the cluster must have the same cluster ID. Use `-ClusterId=<CLUSTER NAME>`to specify the cluster ID.
+
+### Cluster Directory
+
+Each server instance must be able to access the _cluster directory_. The cluster directory is a shared location that allows survivor and other data to be shared between server instances.
+
+By default the cluster directory is `ShooterGame/Saved/clusters/<CLUSTER NAME>`. Depending upon your configuration it may be required that instances need to be pointed to a specific shared directory. To do this use add the`-ClusterDirOverride=<PATH>`  parameter with the directory location.&#x20;
+
+The shared directory can be any preferred location however each instance must be able to read and write to that directory.
+
+### Game Server Instance locations
+
+It is possible to set up clusters between game server instances in the same installation directory, separate installation directory, or even separate physical servers as long as all instances can access the cluster directory.
+
+Using multiple physical servers will require the use and configuration of a file-sharing or syncing software such as SAMBA, Syncthing, or rsync.
 
 ### Adding Servers to Clusters
 
 Firstly, set up [multiple ARK game server instances](../configuration/multiple-game-servers.md).
 
-Change the command-line parameters for your server instances by editing the instance configs:
+In the below example, 2 servers will be clustered together in the same instance. For CrossARK to work each instance must have the same cluster id and share the same cluster directory.
 
-**arkserver.cfg**
+{% hint style="info" %}
+If you have multiple separate installations of ARK use `-ClusterDirOverride` to point each installation to the same cluster directory.
+{% endhint %}
+
+Change the command-line parameters for your server instances by editing the instance configs.
+
+#### Server 1 (**arkserver.cfg)**
 
 ```
 port="7777"
 queryport="27015"
 rconport="27020"
+defaultmap="TheIsland"
 ```
 
 ```
-TheIsland?SessionName=LinuxGSM Session 1?AltSaveDirectoryName=${defaultmap}?listen?MultiHome=${ip}?MaxPlayers=${maxplayers}?QueryPort=${queryport}?RCONPort=${rconport}?Port=${port} -automanagedmods -NoTransferFromFiltering -clusterid=cluster1
+${defaultmap}?SessionName=LinuxGSM-Server-1?AltSaveDirectoryName=${altsavedirectoryname}?RCONPort=${rconport} -MultiHome=${ip} -Port=${port} -QueryPort=${queryport} -AutoManagedMods -Crossplay -PublicIPForEpic=${publicip} -ClusterId=hsqCd8MR65VFRFdPcDjw
 ```
 
-**arkserver-2.cfg**
+#### **Server 2 (arkserver-2.cfg)**
 
 ```
-port="7779"
-queryport="27017"
-rconport="27022"
+port="7778"
+queryport="27016"
+rconport="27021"
+defaultmap="Ragnarok"
 ```
 
 ```
-Ragnarok?SessionName=LinuxGSM Session 2?AltSaveDirectoryName=?ScorchedEarth_P?listen?MultiHome=${ip}?MaxPlayers=${maxplayers}?QueryPort=${queryport}?RCONPort=${rconport}?Port=${port} -automanagedmods -NoTransferFromFiltering -clusterid=cluster1
+${defaultmap}?SessionName=LinuxGSM-Server-2?AltSaveDirectoryName=${altsavedirectoryname}?RCONPort=${rconport} -MultiHome=${ip} -Port=${port} -QueryPort=${queryport} -AutoManagedMods -Crossplay -PublicIPForEpic=${publicip} -ClusterId=hsqCd8MR65VFRFdPcDjw
 ```
+
+Once both server instances have been started check that the cluster directory has been created in `ShooterGame/Saved/clusters/hsqCd8MR65VFRFdPcDjw`.&#x20;
+
+{% hint style="info" %}
+This may require you to connect to an instance first
+{% endhint %}
 
 {% hint style="warning" %}
 Servers that are running on _local networks_ sometimes have trouble traveling to other arks. A potential fix for this is adding `MultiHome=0.0.0.0` to your command-line parameters.
