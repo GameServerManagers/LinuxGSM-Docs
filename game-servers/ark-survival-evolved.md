@@ -5,7 +5,7 @@
 ## Server Resources
 
 * [Official Dedicated Server Guide](https://ark.wiki.gg/wiki/Dedicated\_server\_setup)
-* [Official Dedicated Server](https://ark.wiki.gg/wiki/Server\_configuration)[ Configuration](https://ark.wiki.gg/wiki/Server\_configuration)
+* [Official Dedicated Server Configuration](https://ark.wiki.gg/wiki/Server\_configuration)
 * [Steam Workshop](https://steamcommunity.com/app/346110/workshop/)
 * [Official ARK: Survival Evolved Server Administration forum](https://survivetheark.com/index.php?/forums/forum/39-server-administration/)
 
