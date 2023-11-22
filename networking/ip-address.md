@@ -8,7 +8,7 @@ This guide is not designed to be an in-depth guide to networking, instead focusi
 
 ## Network Locations
 
-Your game server can be hosted online using a server provider such as Linode or on a [local network](../configuration/local-home-server.md) at home for either local-only LAN parties or allowing online players in through your router.&#x20;
+Your game server can be hosted online using a server provider such as Linode or on a [local network](broken-reference) at home for either local-only LAN parties or allowing online players in through your router.&#x20;
 
 ### Internet (Public)
 
