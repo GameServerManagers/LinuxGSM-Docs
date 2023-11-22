@@ -11,6 +11,7 @@
   * [Running Multiple Game Servers](configuration/multiple-game-servers.md)
   * [Local/Home Server](configuration/local-home-server.md)
   * [LinuxGSM Stats](configuration/linuxgsm-stats.md)
+  * [IP Address Configuration](configuration/ip-address-configuration.md)
 * [Commands](commands/README.md)
   * [install](commands/install.md)
   * [start-stop-restart](commands/start-stop-restart.md)
