@@ -1,31 +1,39 @@
 # Mounting Game Content
 
-Some Garry's Mod addons like TTT use content from other games. This guide is for installing another game with LinuxGSM, copying that game's files, and mounting the game to Garry's Mod. This guide is for CS:S but should work for any other game.
+Some Garry's Mod addons like TTT use content from other games. To do this the content will need to be "mounted".
 
-First install a Counter-Strike: Source server, if you already have a server installed this step can be skipped. If the server will be deleted after copying files, the GSLT step is skippable.&#x20;
+{% hint style="success" %}
+All source engine games should be mountable.
+{% endhint %}
 
-[Install CS:S Server with LinuxGSM](https://linuxgsm.com/servers/gmodserver/)
+## &#x20;Basic Guide
 
-## Mounting one server
+This guide is for installing another game server with LinuxGSM and use that content, copying that game's files, and mounting the game to Garry's Mod. This guide is for CS:S but should work for any other game.
 
-**Change the usernames to match yours.**&#x20;
+{% hint style="info" %}
+There are multiple ways to potentially mount content. The below example is just one example
+{% endhint %}
 
-Copy the cstrike folder to the Gmod folder.
+First install a Counter-Strike: Source server, if you already have a server installed this step can be skipped. If the server will be deleted after copying files.
+
+[Install CS:S Server with LinuxGSM](https://linuxgsm.com/servers/cssserver/)
+
+Copy the `cstrike` the directory from the Counter-Strike: Source to the Gmod folder.
 
 ```
-cp -R /home/cssuser/serverfiles/cstrike/ /home/gmoduser/serverfiles/cstrike/
+cp -R /home/cssserver/serverfiles/cstrike /home/gmodserver/serverfiles/cstrike
 ```
 
-Recursively claim ownership of files for the gmod user.
+Ensure that the copied files are owned by the `gmodserver`  user.
 
 ```
-chown -R gmoduser /home/gmoduser/
+chown -R gmodserver /home/gmodserver
 ```
 
 Open mount.cfg file.
 
 ```
-nano /home/gmoduser/serverfiles/garrysmod/cfg/mount.cfg
+nano /home/gmodserver/serverfiles/garrysmod/cfg/mount.cfg
 ```
 
 Add game to mount.cfg
@@ -37,16 +45,10 @@ Add game to mount.cfg
 }
 ```
 
-Restart the server. Check if the mount was successful by changing level to a mounted map with console or rcon.
+Restart the server. Check if the mount was successful by changing the level to a mounted map with console or rcon.
 
 ```
 changelevel cs_italy
-```
-
-If the CS:S user and install is no longer needed, it can be removed with userdel. **This command will remove the user and it's /home/ directory.**
-
-```
-userdel -r cssuser
 ```
 
 ##
