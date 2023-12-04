@@ -46,28 +46,6 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=157384458
 
 ## Server Configurations
 
-### Garry's Mod
-
-{% hint style="warning" %}
-Garry's Mod doesn't need an API Key anymore.
-{% endhint %}
-
-For Garry's Mod, add the collection ID in [LinuxGSM config](../configuration/linuxgsm-config.md) using `wscollectionid` setting. This will download the collection when the server starts.
-
-```
-wscollectionid="157384458"
-```
-
-### Counter-Strike Global Offensive
-
-For CSGO, edit these lines in your [LinuxGSM config](../configuration/linuxgsm-config.md)
-
-```
-wsapikey="YOUR_STEAM_API_KEY"
-wscollectionid="YOUR_COLLECTION_ID"
-wsstartmap="
-```
-
 ### **Killing Floor 2**
 
 For KF2 Server using LinuxGSM, workshop content is added in `LinuxServer-KFEngine.ini` under:
