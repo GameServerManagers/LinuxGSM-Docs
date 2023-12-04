@@ -40,21 +40,22 @@ If players are respawning in random locations on custom maps, set `mp_randomspaw
 
 If players are being banned for dying too much, such as on minigames maps, as a workaround set `mp_autokick` to 0. **Warning, this disables AFK and Teamkilling kicks as well.**
 
-## **Server Guides**
+## Workshop
 
-[Install Sourcemod on CS:GO Server](../guides/sourcemod-csgo-server.md)
+it is possible to add a single or collection of workshop maps to a Counter-Strike 2 server.
 
-## **Setting for a 128 Tick Server**
+### Workshop ID
 
-Add to the following to the config `lgsm/config-lgsm/csgoserver/csgoserver.cfg` :
-
-`tickrate="128"`
-
-AS well it is needed to add a few options to the game config (default in: `serverfiles/csgo/cfg/csgoserver.cfg` )
+First, gather the map or collection ID. To do this find to the workshop map or collection you want to use on the [CS2 steam workshop](https://steamcommunity.com/app/730/workshop/) and look at the URL; it will contain the required ID number. In the example below the ID is `3075706807`.
 
 ```
-sv_mincmdrate 128
-sv_minupdaterate 128
+https://steamcommunity.com/sharedfiles/filedetails/?id=3075706807
 ```
 
-This will as well force the client to use the 128 tickrate
+### Create a Collection
+
+
+
+### Auth Key
+
+If you are using a collection you will need to get an auth key from [here](https://steamcommunity.com/dev/apikey).

@@ -1,17 +1,17 @@
 # Workshop
 
-Many Steam games support the steam [workshop](https://steamcommunity.com/workshop). It is an easy way to share community maps and addons and is very useful for custom servers, without needing to worry about setting up [FastDL](../commands/fastdl.md). LinuxGSM adds workshop pre-configuration to game server scripts when available.
+Many Steam games support the Steam [workshop](https://steamcommunity.com/workshop). It is an easy way to share community maps and is very useful for custom servers, without needing to worry about setting up [FastDL](../commands/fastdl.md). LinuxGSM adds workshop pre-configuration to game server scripts when available.
 
 You will need a Steam API key, a collection to subscribe to (you can create one), and some config parameters in your [LinuxGSM config](../configuration/linuxgsm-config.md).
 
-## Supported Games Servers&#x20;
+## Supported Games Servers
 
 This is a list of game servers that are known to support Workshop
 
 * Ark: Survival Evolved
 * ARMA 3
 * Day of Infamy
-* Counter-Strike: Global Offensive
+* Counter-Strike 2
 * Garrys Mod
 * Hurtworld
 * Insurgency: Sandstorm
@@ -19,55 +19,44 @@ This is a list of game servers that are known to support Workshop
 * Natural Selection 2
 * Starbound
 
-## Getting a Steam API Key
-
-Simply go to [https://steamcommunity.com/dev/apikey](https://steamcommunity.com/dev/apikey) and follow the instructions.
+## Getting a Steam API/AUTH Key
 
 {% hint style="danger" %}
 Do not share this key.
 {% endhint %}
 
-## Creating a collection and get the collection ID
+Go to [https://steamcommunity.com/dev/apikey](https://steamcommunity.com/dev/apikey) and follow the instructions to get an API/AUTH key.
 
-Go browse collections for your desired game, and click "Create a collection".
+## Create a Collection and get the Collection ID
 
-* CS:GO: [https://steamcommunity.com/workshop/browse/?section=collections\&appid=730](https://steamcommunity.com/workshop/browse/?section=collections\&appid=730)
+{% hint style="info" %}
+It is possible to use an existing collection or create your own
+{% endhint %}
+
+Go browse collections for your desired game, and click "Create a Collection".
+
+* Counter-Strike 2: [https://steamcommunity.com/workshop/browse/?section=collections\&appid=730](https://steamcommunity.com/workshop/browse/?section=collections\&appid=730)
 * Garry's Mod: [https://steamcommunity.com/workshop/browse/?section=collections\&appid=4000](https://steamcommunity.com/workshop/browse/?section=collections\&appid=4000)
 
-Add some addons to the collection, then publish the completed collection. Then get the collection page id which can be found on the page URL. For example:
+Add any maps to the collection, then publish the completed collection. Then get the collection ID which can be found on the page URL. The collection id would be `157384458`.
 
 ```
-https://steamcommunity.com/sharedfiles/filedetails/?id=274397080
+https://steamcommunity.com/sharedfiles/filedetails/?id=157384458
 ```
-
-The collection id would be `274397080`.
 
 ## Server Configurations
 
 ### Garry's Mod
 
-{% hint style="info" %}
+{% hint style="warning" %}
 Garry's Mod doesn't need an API Key anymore.
 {% endhint %}
 
-For Garry's Mod, edit these lines in your [LinuxGSM config](../configuration/linuxgsm-config.md)
+For Garry's Mod, add the collection ID in [LinuxGSM config](../configuration/linuxgsm-config.md) using `wscollectionid` setting. This will download the collection when the server starts.
 
 ```
-wscollectionid="YOUR_COLLECTION_ID"
+wscollectionid="157384458"
 ```
-
-Setting the workshop collection ID only adds content to the server, and players will only download maps from the collection. This is because workshop files must be set in the workshop.lua file in:
-
-`/home/gmod/serverfiles/garrysmod/lua/autorun/server/`
-
-Example line:
-
-```
-resource.AddWorkshop( "workshop_ID_#_here" ) --comment
-resource.AddWorkshop( "1728099077" ) --Rick Roll SENT
-```
-
-I do not recommend putting a collection ID in this file if you are hosting a server with a large map list, this will cause players to download every map on their first connection. Instead, it is recommended to put every individual workshop item except maps in this file.
 
 ### Counter-Strike Global Offensive
 
@@ -90,4 +79,3 @@ For KF2 Server using LinuxGSM, workshop content is added in `LinuxServer-KFEngin
 While following the guide, remember `PCServer-KFEngine.ini` is instead `LinuxServer-KFEngine.ini`
 
 [Killing Floor 2 has a known workshop problem.](../game-servers/killing-floor-2.md)
-
