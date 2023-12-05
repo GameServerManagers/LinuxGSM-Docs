@@ -23,27 +23,17 @@ LinuxGSM installations contain `configSubDir=servername` in the command line by 
 
 Killing Floor 2 supports [Steam Workshop](../steamcmd/workshop.md).&#x20;
 
-Players on the Epic Store will not be able to download files hosted with the steam workshop.
+Players on the Epic Store will not be able to download files hosted with the Steam Workshop.
 
-### High disk IO using Steam Workshop
+For KF2 Server using LinuxGSM, workshop content is added in `LinuxServer-KFEngine.ini` under:
 
-Killing Floor 2 will check workshop files at server start and when map changes occur.
+/home/user/serverfiles/KFGame/Config/kf2server
 
-There is a potential problem with Killing Floor 2 servers using the steam workshop that causes server disk usage to read/write at 100% and could damage hardware.
+[Official Guide Here](https://wiki.killingfloor2.com/index.php?title=Dedicated\_Server\_\(Killing\_Floor\_2\)#Setting\_Up\_Steam\_Workshop\_For\_Servers)
 
-To avoid this problem keep the amount of workshop content as low as possible.&#x20;
+While following the guide, remember `PCServer-KFEngine.ini` is instead `LinuxServer-KFEngine.ini`
 
-Disk IO can be monitored with the `iotop` command.
-
-**References:**
-
-[TWI you destroyed my SSD forum post](https://forums.tripwireinteractive.com/index.php?threads/twi-you-destroyed-my-kf2-servers-ssd.2334936/)
-
-[Server is going disk drive crazy forum post](https://forums.tripwireinteractive.com/index.php?threads/server-is-going-disk-drive-crazy.2333489/)
-
-[Workshop map disk thrashing forum post](https://forums.tripwireinteractive.com/index.php?threads/workshop-map-disk-thrashing-is-back.2335275/)
-
-
+[Killing Floor 2 has a known workshop problem.](killing-floor-2.md)
 
 
 

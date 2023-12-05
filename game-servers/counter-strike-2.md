@@ -46,7 +46,7 @@ it is possible to add a single or collection of workshop maps to a Counter-Strik
 
 ### Workshop ID
 
-First, gather the map or collection ID. To do this find to the workshop map or collection you want to use on the [CS2 steam workshop](https://steamcommunity.com/app/730/workshop/) and look at the URL; it will contain the required ID number. In the example below the ID is `3075706807`.
+First, gather the map or collection ID. To do this find the workshop map or collection you want to use on the [CS2 steam workshop](https://steamcommunity.com/app/730/workshop/) and look at the URL; it will contain the required ID number. In the example below the ID is `3075706807`.
 
 ```
 https://steamcommunity.com/sharedfiles/filedetails/?id=3075706807

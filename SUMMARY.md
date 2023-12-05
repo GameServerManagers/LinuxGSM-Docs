@@ -39,7 +39,7 @@
   * [Counter-Strike 2](game-servers/counter-strike-2.md)
   * [Counter-Strike: Global Offensive](game-servers/counter-strike-global-offensive.md)
   * [Factorio](game-servers/factorio.md)
-  * [Garrys Mod](game-servers/garrys-mod.md)
+  * [Garrys Mod](game-servers/garrys-mod/README.md)
   * [Insurgency: SandStorm](game-servers/insurgency-sandstorm.md)
   * [Killing Floor 2](game-servers/killing-floor-2.md)
   * [Minecraft: Java Edition](game-servers/minecraft.md)

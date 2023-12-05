@@ -1,8 +1,10 @@
 # Workshop
 
-Many Steam games support the Steam [workshop](https://steamcommunity.com/workshop). It is an easy way to share community maps and is very useful for custom servers, without needing to worry about setting up [FastDL](../commands/fastdl.md). LinuxGSM adds workshop pre-configuration to game server scripts when available.
+Many Steam games support the [Steam Workshop](https://steamcommunity.com/workshop). It is an easy way to share community game modes, maps, skins, and other community-made content.
 
-You will need a Steam API key, a collection to subscribe to (you can create one), and some config parameters in your [LinuxGSM config](../configuration/linuxgsm-config.md).
+For game servers, the Workshop allows community content (mainly maps and game modes) to be made available to play on game servers. The Workshop content is automatically downloaded by the game client of the player connecting to the server. This removed the need to set up a [FastDL](../commands/fastdl.md) server.
+
+LinuxGSM adds workshop pre-configuration to game server scripts when available.
 
 ## Supported Games Servers
 
@@ -19,26 +21,41 @@ This is a list of game servers that are known to support Workshop
 * Natural Selection 2
 * Starbound
 
-## Getting a Steam API/AUTH Key
+## Steam Web API Key/Auth Key
+
+Some game servers require a Steam API key to access Workshop content. To get this key visit the [Steam API key page](https://steamcommunity.com/dev/apikey) and follow the instructions.
 
 {% hint style="danger" %}
-Do not share this key.
+Do not share your private API key.
 {% endhint %}
 
-Go to [https://steamcommunity.com/dev/apikey](https://steamcommunity.com/dev/apikey) and follow the instructions to get an API/AUTH key.
+## Items and Collections
 
-## Create a Collection and get the Collection ID
+The Steam Workshop is made up of individual items such as maps, game modes, skins, etc, and also collections of these items. Game servers can download these items and collections by getting their unique ID number and adding it to the game server config or parameter. For collections, it is possible to find and use an existing one or create your own.
 
-{% hint style="info" %}
-It is possible to use an existing collection or create your own
-{% endhint %}
+### Get an Item or Collection ID
 
-Go browse collections for your desired game, and click "Create a Collection".
+To get and item or collection ID browse to the item you want to add and look at the URL; it will contain the required ID number. In the example below the ID is `3075706807`.
 
-* Counter-Strike 2: [https://steamcommunity.com/workshop/browse/?section=collections\&appid=730](https://steamcommunity.com/workshop/browse/?section=collections\&appid=730)
-* Garry's Mod: [https://steamcommunity.com/workshop/browse/?section=collections\&appid=4000](https://steamcommunity.com/workshop/browse/?section=collections\&appid=4000)
+```
+https://steamcommunity.com/sharedfiles/filedetails/?id=3075706807
+```
 
-Add any maps to the collection, then publish the completed collection. Then get the collection ID which can be found on the page URL. The collection id would be `157384458`.
+### Create a Collection
+
+Creating a collection is a great way to manage and group all the content that you want on your game server.&#x20;
+
+To create your collection go to the collections section of your games Workshop, and select `Create Collection`.
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+Fill out the form.
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+Add any maps to the collection, then publish the completed collection. Then get the collection ID which can be found on the page URL. The collection ID in the url below is `157384458`.
 
 ```
 https://steamcommunity.com/sharedfiles/filedetails/?id=157384458
@@ -46,14 +63,4 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=157384458
 
 ## Server Configurations
 
-### **Killing Floor 2**
-
-For KF2 Server using LinuxGSM, workshop content is added in `LinuxServer-KFEngine.ini` under:
-
-/home/user/serverfiles/KFGame/Config/kf2server
-
-[Official Guide Here](https://wiki.killingfloor2.com/index.php?title=Dedicated\_Server\_\(Killing\_Floor\_2\)#Setting\_Up\_Steam\_Workshop\_For\_Servers)
-
-While following the guide, remember `PCServer-KFEngine.ini` is instead `LinuxServer-KFEngine.ini`
-
-[Killing Floor 2 has a known workshop problem.](../game-servers/killing-floor-2.md)
+###

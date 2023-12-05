@@ -33,19 +33,19 @@ TTT     gamemode="terrortown"
 Sandbox gamemode="sandbox"
 ```
 
-Other game modes like Zombie Survival can be found on the [steam workshop](../steamcmd/workshop.md).
+Other game modes like Zombie Survival can be found on the [steam workshop](../../steamcmd/workshop.md).
 
 ### Workshop
 
-{% content-ref url="../steamcmd/workshop.md" %}
-[workshop.md](../steamcmd/workshop.md)
+{% content-ref url="../../steamcmd/workshop.md" %}
+[workshop.md](../../steamcmd/workshop.md)
 {% endcontent-ref %}
 
 {% hint style="warning" %}
 Garry's Mod does not require an API/Auth Key anymore.
 {% endhint %}
 
-For Garry's Mod, add the collection ID in [LinuxGSM config](../configuration/linuxgsm-config.md) using `wscollectionid` setting. This will download the collection when the server starts.
+For Garry's Mod, add the collection ID in [LinuxGSM config](../../configuration/linuxgsm-config.md) using `wscollectionid` setting. This will download the collection when the server starts.
 
 ```
 wscollectionid="157384458"
@@ -106,4 +106,4 @@ changelevel cs_italy
 
 ## Guides
 
-[Install Sourcemod on Gmod Server](../guides/sourcemod-csgo-server.md)
+[Install Sourcemod on Gmod Server](../../guides/sourcemod-csgo-server.md)
