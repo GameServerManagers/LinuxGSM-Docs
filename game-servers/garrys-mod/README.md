@@ -1,10 +1,10 @@
-# Garrys Mod
+# Garry's Mod
 
 ## Game Resources
 
 [Garry's Mod Wiki](https://wiki.facepunch.com/gmod/)
 
-## Server Tips
+## Auto Refresh
 
 Autorefresh can lag the server when certain Lua files are edited. This happens when the refreshing cascades. This can be unwanted behavior when editing the scripts of a large project on a live server.
 
@@ -14,21 +14,23 @@ To disable autorefresh, add `-disableluarefresh` to parms.
  -disableluarefresh
 ```
 
-Loading screens are added by defining a website with `sv_loadingurl`, which is in gmodserver.cfg by default.  This file overrides other files.&#x20;
+## Loading Screen
 
-Links should not have `http://` or an ending`/` .&#x20;
+Loading screens are added by defining a website with `sv_loadingurl`, which is in `gmodserver.cfg` by default.  This file overrides other files. &#x20;
 
-Example:
+{% hint style="warning" %}
+Links should not have `http://` or an ending`/` .
+{% endhint %}
 
 ```
 sv_loadingurl "www.website.com/loading/screen"
 ```
 
+## Gamemode
+
 Gamemode is changed by editing start parameters in the LinuxGSM config file.
 
 ```
-Default gamemodes:
-
 TTT     gamemode="terrortown"
 Sandbox gamemode="sandbox"
 ```
@@ -58,8 +60,6 @@ Some Garry's Mod addons like TTT use content from other games. To do this the co
 {% hint style="success" %}
 All source engine games should be mountable.
 {% endhint %}
-
-## &#x20;Basic Guide
 
 This guide is for installing another game server with LinuxGSM and using that content, copying that game's files, and mounting the game to Garry's Mod. This guide is for CS:S but should work for any other game.
 
@@ -104,6 +104,3 @@ Restart the server. Check if the mount was successful by changing the level to a
 changelevel cs_italy
 ```
 
-## Guides
-
-[Install Sourcemod on Gmod Server](../../guides/sourcemod-csgo-server.md)
