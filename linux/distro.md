@@ -28,11 +28,10 @@ LinuxGSM developers primarily use Ubuntu for development and attempt to support 
 Ubuntu 22.04 LTS is recommended
 {% endhint %}
 
-| **Version**                                                                                                    | **Code name**   | **Release date** | **Supported until** |
-| -------------------------------------------------------------------------------------------------------------- | --------------- | ---------------- | ------------------- |
-| [18.04 LTS](https://en.wikipedia.org/wiki/List\_of\_Ubuntu\_releases#Ubuntu\_18.04\_LTS\_%28Bionic\_Beaver%29) | Bionic Beaver   | 2018-04-26       | 2023-04             |
-| 20.04 LTS                                                                                                      | Focal Fossa     | 2020-04-23       | 2025-04             |
-| 22.04 LTS                                                                                                      | Jammy Jellyfish | 2022-04-21       | 2027-04             |
+| **Version** | **Code name**   | **Release date** | **Supported until** |
+| ----------- | --------------- | ---------------- | ------------------- |
+| 20.04 LTS   | Focal Fossa     | 2020-04-23       | 2025-04             |
+| 22.04 LTS   | Jammy Jellyfish | 2022-04-21       | 2027-04             |
 
 [https://en.wikipedia.org/wiki/Ubuntu#Releases](https://en.wikipedia.org/wiki/Ubuntu#Releases)
 
@@ -94,13 +93,12 @@ Rocky Linux or Alma Linux are now the recommended alternative Enterprise Linux D
 1. **Shift to CentOS Stream:** CentOS Stream has become the rolling-release development version of RHEL, rather than a downstream clone of RHEL. This change means CentOS Stream might receive more frequent updates, which can introduce unpredictability and potential compatibility issues when managing game servers with LinuxGSM.
 2. **Impact on Stability:** CentOS Stream's shift towards being an upstream development platform might lead to reduced stability compared to previous CentOS versions. For hosting game servers, a stable environment is crucial to ensure consistent performance and avoid unnecessary disruptions.
 
-| **CentOS version** | Release date     | Full updates   | Maintenance updates  |
-| ------------------ | ---------------- | -------------- | -------------------- |
-| ~~6~~              | ~~10 July 2011~~ | ~~2017-05-10~~ | ~~30 November 2020~~ |
-| 7                  | 2014-07-07       | 2020-08-06     | 30 June 2024         |
-| 8                  | 2019-09-24       | 2021-12-31     |                      |
-| Stream 8           | 2019-09-24       | 2024-05-31     |                      |
-| Stream 9           | 2021-12-03       | 2027-05-31     |                      |
+| **CentOS version** | Release date | Full updates | Maintenance updates |
+| ------------------ | ------------ | ------------ | ------------------- |
+| 7                  | 2014-07-07   | 2020-08-06   | 30 June 2024        |
+| 8                  | 2019-09-24   | 2021-12-31   |                     |
+| Stream 8           | 2019-09-24   | 2024-05-31   |                     |
+| Stream 9           | 2021-12-03   | 2027-05-31   |                     |
 
 ### Rocky Linux
 
