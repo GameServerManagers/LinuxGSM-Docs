@@ -1,105 +1,143 @@
 # Telegram
 
-[Telegram](https://telegram.org) is an instant messenger app that allows other applications to send messages via a webhook. This functionality is used to allow users to receive alerts about LinuxGSM.
+[Telegram](https://telegram.org) is an instant messaging app that provides a powerful API that enables applications to send messages through bots. LinuxGSM leverages the [Telegram Bot API](https://core.telegram.org/bots/api) to dispatch alerts to users, enhancing monitoring and management of gaming servers.
 
-## Setup a Telegram Bot
+## Creating a Telegram Bot
 
-To enable Telegram alerts you need to create your own Telegram Bot.
+1. **Initiate Bot Creation**: Chat with [@BotFather](https://telegram.me/BotFather) on Telegram to start creating your bot. Begin the conversation by clicking "Start".
 
-1. To do this you will need to speak to @BotFather by visiting [here](https://telegram.me/BotFather).
-2. Click start to begin the chat.
+2. **Register Your Bot**: Send `/newbot` to @BotFather and follow the provided instructions to set up your bot. Upon completion, you will receive an API token.
 
-![BotFather Chat](../.gitbook/assets/botfather\_chat.png)
+   ![BotFather Chat](../.gitbook/assets/botfather_chat.png)
 
-1. Type `/newbot` and follow the instructions to create a bot.
+   ![New Bot](../.gitbook/assets/botfather_new_bot.png)
 
-![new Bot](../.gitbook/assets/botfather\_new\_bot.png)
+3. **Configure LinuxGSM**: Fill in the API token into your [LinuxGSM config](../configuration/linuxgsm-config.md) as follows:
 
-1. Once complete an API token will be given. Enter the token to the [LinuxGSM config](../configuration/linuxgsm-config.md).
+    ```bash
+    # Telegram Alerts | https://docs.linuxgsm.com/alerts/telegram
+    telegramapi="api.telegram.org"
+    telegramalert="on"  # Enable alerts by changing "off" to "on"
+    telegramtoken="XXXXXXXXX:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" # Replace with your bot token
+    telegramchatid=""
+    telegramthreadid=""
+    telegramsilentnotification="false" # Set to "true" to disable notification sounds and send alerts silently
+    curlcustomstring=""  # Optional: For proxies, etc.
+    ```
 
-```
-   #Telegram Alerts | https://github.com/GameServerManagers/LinuxGSM/wiki/Telegram
+## Configuring Alerts for a Group
 
-   telegramalert="on"
-   telegramtoken="401319987:AAGmgLWzYDprqkMHBjCT9qtzIRWCzqgoTLw"
-   telegramchatid=""
-```
+### New Group Creation
 
-## Telegram Group
+1. Select `New Group` within Telegram.
+2. Name your group.
+3. Add your bot by searching its `@Username`.
 
-Use this step If you want to send alerts to a group. If not skip to [Retrieve the Chat ](telegram.md#retrieve-the-chat-id)ID.
+### Adding to an Existing Group
 
-### Setup a New Group
+1. Open group info.
+2. Choose to add members.
+3. Search and select your bot by its `@Username`.
 
-1. Select `New Group`
-2. Give your group a name
-3. Select the Bot you just created by typing `@ExampleBot`.
+## Retrieving Your Telegram Chat ID
 
-The bot will now be added to the group.
+1. **Activate Your Bot**: Interact with your bot in Telegram.
+2. **Form the getUpdates URL**: Replace the placeholder with your bot's token in `https://api.telegram.org/botXXXXXXXXX:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/getUpdates`.
+3. **Visit the URL**: Use a web browser to access the URL.
+4. **Locate the Chat ID**: In the JSON response, find the `id` field under the `chat` object.
 
-## Use an Existing group
+    ```json
+    "chat": {
+        "id": 123456789,
+        "first_name": "Your Name",
+        "username": "YourUsername",
+        "type": "private"
+    }
+    ```
 
-If you are using an existing group, invite the bot to the group.
+    Note: The Chat ID for private chats is a positive number and for a group, it's a negative number.
 
-```
-View group info -> Add Members.
-```
+5. **Update LinuxGSM Config**: Place your Chat ID in the [LinuxGSM config](../configuration/linuxgsm-config.md) file.
 
-## Retrieve the Chat ID
+    ```bash
+    # Telegram Alerts | https://docs.linuxgsm.com/alerts/telegram
+    telegramapi="api.telegram.org"
+    telegramalert="on"
+    telegramtoken="XXXXXXXXX:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+    telegramchatid="123456789" # Fill in your chat ID
+    telegramthreadid=""
+    telegramsilentnotification="false"
+    curlcustomstring=""
+    ```
 
-The chat id is used to identify where the alert is being sent. Each user and group has its own ID.
+## Enabling Telegram Topics (Threads)
 
-To obtain the chat id a message must be received by the bot. This will allow it to pick up the chat id. You can now search for your bot in telegram and sent it the message `LINUXGSM`.
+1. Verify that Topics are enabled for your group by checking the group's settings.
+2. If you don't already have a topic created. Create a new Topic by clicking the three dots in the top right corner of the group chat and selecting `New Topic`.
+3. Send a message in the Topic you want to use.
+4. Repeat [Retrieving Your Telegram Chat ID](#retrieving-your-telegram-chat-id) to retrieve the thread ID by looking for the `message_thread_id` field in the `message` object.
 
-* users: send the message `LINUXGSM` directly to the bot
-* groups: send the message `LINUXGSM` to the group
+    ```json
+    {
+        "update_id": 123456,
+        "message": {
+            "message_id": 123,
+            "from": {
+                "id": 12345,
+                "is_bot": false,
+                "first_name": "Sender",
+                "username": "SenderUsername",
+                "language_code": "en"
+            },
+            "chat": {
+                "id": -123456789,
+                "first_name": "Your Name",
+                "username": "YourUsername",
+                "type": "supergroup"
+            },
+            "date": 1709691014,
+            "message_thread_id": 11, // Use this number as your telegramthreadid
+            "forum_topic_created": {
+                "name": "LinuxGSM",
+                "icon_color": 12345
+            },
+            "is_topic_message": true
+        }
+    }
+    ```
 
-To retrieve the chat id visit the following url, replacing the `XXXXX` with your bot token from earlier.
+5. Update the `telegramthreadid` field in the [LinuxGSM config](../configuration/linuxgsm-config.md) with the thread ID.
 
-```
-https://api.telegram.org/botXXXXXXXXX:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/getUpdates
-```
+    ```bash
+    # Telegram Alerts | https://docs.linuxgsm.com/alerts/telegram
+    telegramapi="api.telegram.org"
+    telegramalert="on"
+    telegramtoken="XXXXXXXXX:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+    telegramchatid="123456789"
+    telegramthreadid="5" # Fill	in your thread ID
+    telegramsilentnotification="false"
+    curlcustomstring=""
+    ```
 
-Look for text `LINUXGSM` in the message and find the `chat id` part of that message.
+## Testing the Configuration
 
-> note: A group number includes a dash in the chat id e.g `-191537238`
+Execute a test alert with `./gameserver test-alert` to verify the setup.
 
-```
-The number given is the chat id
+If you receive an alert on Telegram in the right place (group or private chat), the configuration is correct.
 
-> note: A group number includes a dash in the chat id e.g `-191537238`
+## Advanced Configuration: Custom cURL String
 
-Add the chat id to the [LinuxGSM config](../configuration/linuxgsm-config.md).
-```
+For specific needs such as bypassing network restrictions, you can specify custom cURL arguments in the configuration.
 
-The number given is the chat id
-
-{% hint style="warning" %}
-A group number might include a dash in the chat id e.g `-191537238`
-{% endhint %}
-
-```
-"chat":{"id":-191537238,
-```
-
-Add the chat id to the [LinuxGSM config](https://app.gitbook.com/s/-LJf1\_IiU2L1vVxT7iNe/configuration/linuxgsm-config.md).
-
-```
-## Telegram Alerts | https://github.com/GameServerManagers/LinuxGSM/wiki/Telegram
-
-telegramalert="on"
-telegramtoken="401319987:AAGmgLWzYDprqkMHBjCT9qtzIRWCzqgoTLw"
-telegramchatid="-191537238"
-```
-
-### Send Test Alert
-
-Finally, test that everything correctly works by sending a test alert. You will now receive a message from the bot directly or to a chosen group.
-
-```
-./gameserver test-alert
-```
-
-## Custom cURL String
-
-You can add a custom cURL string eg proxy (useful in Russia) in "curlcustomstring"
+```bash
+    # Telegram Alerts | https://docs.linuxgsm.com/alerts/telegram
+    # You can add a custom cURL string eg proxy (useful in Russia) in "curlcustomstring".
+    # For example "--socks5 ipaddr:port" for socks5 proxy see more in "curl --help all".
+    telegramapi="api.telegram.org"
+    telegramalert="on"
+    telegramtoken="XXXXXXXXX:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+    telegramchatid="123456789"
+    telegramthreadid="5"
+    telegramsilentnotification="false"
+    curlcustomstring="--socks5 ipaddr:port" # Fill in your custom cURL string
+    ```
