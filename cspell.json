@@ -1,0 +1,17 @@
+{
+	"version": "0.2",
+	"language": "en",
+	"allowCompoundWords": true,
+	"enableFiletypes": [],
+	"ignorePaths": [
+		"cspell.json"
+	],
+	// FlagWords allows you to specify a list of words that will always be considered incorrect. Useful for words that are commonly misspelled.
+	"flagWords": [],
+	// Ignore allows you the specify a list of words you want to ignore.
+	"ignoreWords": [],
+	// The words list allows you to add words that will be considered correct and will be used as suggestions.
+	// Feel free to add newly introduced words to the list
+	"words": [
+	]
+}
