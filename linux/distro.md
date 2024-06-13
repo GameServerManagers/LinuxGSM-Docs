@@ -118,18 +118,18 @@ Rocky Linux or Alma Linux are now the recommended alternative Enterprise Linux D
 * Game Server Hosting: Rocky Linux's RHEL compatibility and stability make it an excellent choice for deploying and managing game servers with LinuxGSM.
 * Continuity from CentOS: For users previously running game servers on CentOS with LinuxGSM, transitioning to Rocky Linux ensures a familiar and stable environment.
 
-### **Alma Linux**
+### **AlmaLinux**
 
 
 
 <figure><img src="../.gitbook/assets/Almalinux-logo-white-v2.png" alt=""><figcaption></figcaption></figure>
 
-#### **Reasons to use Alma Linux with LinuxGSM:**
+#### **Reasons to use AlmaLinux with LinuxGSM:**
 
-1. **RHEL Compatibility:** Alma Linux's direct binary compatibility with RHEL ensures that LinuxGSM will run seamlessly on Alma Linux, providing a stable platform for hosting game servers.
+1. **RHEL Compatibility:** **AlmaLinux i**s direct binary compatibility with RHEL ensures that LinuxGSM will run seamlessly on Alma Linux, providing a stable platform for hosting game servers.
 2. **Community-Driven Development:** LinuxGSM benefits from being community-driven, just like Rocky Linux. This alignment in community-focused development fosters a collaborative environment, where users of both projects can actively contribute and seek support from fellow enthusiasts.
-3. **Long-Term Support and Stability:** Game servers require consistent performance and long-term support to avoid disruptions. Alma Linux's commitment to stability and long-term support aligns with the requirements of managing game servers using LinuxGSM.
-4. **Security Emphasis:** Alma Linux prioritizes security, providing timely updates and patches. When combined with LinuxGSM's capabilities for automated updates, you can maintain a secure gaming environment effortlessly.
+3. **Long-Term Support and Stability:** Game servers require consistent performance and long-term support to avoid disruptions. **AlmaLinux**'s commitment to stability and long-term support aligns with the requirements of managing game servers using LinuxGSM.
+4. **Security Emphasis:** **AlmaLinux** prioritizes security, providing timely updates and patches. When combined with LinuxGSM's capabilities for automated updates, you can maintain a secure gaming environment effortlessly.
 
 #### **Ideal Use Cases:**
 
