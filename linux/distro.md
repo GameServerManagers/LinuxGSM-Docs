@@ -81,7 +81,7 @@ CentOS is no longer recommended for use with LinuxGSM for hosting game servers.
 {% endhint %}
 
 {% hint style="info" %}
-Rocky Linux or Alma Linux are now the recommended alternative Enterprise Linux Distro
+Rocky Linux or **AlmaLinux** are now the recommended alternative Enterprise Linux Distro
 {% endhint %}
 
 {% hint style="danger" %}
@@ -126,15 +126,15 @@ Rocky Linux or Alma Linux are now the recommended alternative Enterprise Linux D
 
 #### **Reasons to use AlmaLinux with LinuxGSM:**
 
-1. **RHEL Compatibility:** **AlmaLinux i**s direct binary compatibility with RHEL ensures that LinuxGSM will run seamlessly on Alma Linux, providing a stable platform for hosting game servers.
+1. **RHEL Compatibility:** **AlmaLinux i**s direct binary compatibility with RHEL ensures that LinuxGSM will run seamlessly on **AlmaLinux**, providing a stable platform for hosting game servers.
 2. **Community-Driven Development:** LinuxGSM benefits from being community-driven, just like Rocky Linux. This alignment in community-focused development fosters a collaborative environment, where users of both projects can actively contribute and seek support from fellow enthusiasts.
 3. **Long-Term Support and Stability:** Game servers require consistent performance and long-term support to avoid disruptions. **AlmaLinux**'s commitment to stability and long-term support aligns with the requirements of managing game servers using LinuxGSM.
 4. **Security Emphasis:** **AlmaLinux** prioritizes security, providing timely updates and patches. When combined with LinuxGSM's capabilities for automated updates, you can maintain a secure gaming environment effortlessly.
 
 #### **Ideal Use Cases:**
 
-* CentOS Replacement: For users transitioning from CentOS to Alma Linux for hosting game servers with LinuxGSM, the distribution's RHEL compatibility ensures continuity and stability.
-* Enterprise Game Server Deployments: Alma Linux's enterprise-grade stability and long-term support make it well-suited for hosting game servers in professional gaming environments.
+* CentOS Replacement: For users transitioning from CentOS to **AlmaLinux** for hosting game servers with LinuxGSM, the distribution's RHEL compatibility ensures continuity and stability.
+* Enterprise Game Server Deployments: **AlmaLinux**'s enterprise-grade stability and long-term support make it well-suited for hosting game servers in professional gaming environments.
 
 ### EPEL
 
