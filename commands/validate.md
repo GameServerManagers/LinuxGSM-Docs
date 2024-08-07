@@ -13,4 +13,3 @@ Validation will overwrite any files that have been changed. This may cause issue
 Standard: `./gameserver validate`
 
 Short: `./gameserver v`
-

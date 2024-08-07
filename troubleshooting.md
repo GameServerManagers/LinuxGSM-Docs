@@ -8,24 +8,24 @@ Your game server might not install for many reasons, mainly user based ones, and
 
 ### User and permissions
 
-* Did you create a dedicated user for your server?
-* Are you running the script as the right user? Check command: `whoami`
-* Does the user running the script owns its current directory? Check command: `ls -al .`, see [File Ownership](linux/file-ownership.md)
-* Does the user have the right permissions on its directories? See [Permissions](linux/permissions.md)
+-   Did you create a dedicated user for your server?
+-   Are you running the script as the right user? Check command: `whoami`
+-   Does the user running the script owns its current directory? Check command: `ls -al .`, see [File Ownership](linux/file-ownership.md)
+-   Does the user have the right permissions on its directories? See [Permissions](linux/permissions.md)
 
 ### Dependencies
 
-* Did you install required packages (dependencies) as game page on [https://linuxgsm.com](https://linuxgsm.com) requests?
-* If sudo isn't installed, did you remove "sudo" from packages install commands?
-* If `lib32gcc1 libstdc++6 libstdc++6:i386` packages won't install, did you run `apt update` after `dpkg --add-architecture i386`?
-* If some dependencies are not available, did you check your /etc/apt/sources.list? (Debian based and apt only)
+-   Did you install required packages (dependencies) as game page on [https://linuxgsm.com](https://linuxgsm.com) requests?
+-   If sudo isn't installed, did you remove "sudo" from packages install commands?
+-   If `lib32gcc1 libstdc++6 libstdc++6:i386` packages won't install, did you run `apt update` after `dpkg --add-architecture i386`?
+-   If some dependencies are not available, did you check your /etc/apt/sources.list? (Debian based and apt only)
 
 ### Game server downloads
 
-* Do you have enough disk space on the desired partition? Check command: `df -h`
-* If the server requests a Steam login, did you enter it properly by editing your (example) "gameserver" script? It's a good idea to have a dedicated Steam account for that purpose.
-* If the Steam download didn't work as intended, did you retry it, or try the [validate](commands/validate.md) command? Maybe your connection to Steam servers is faulty.
-* Did you make sure that a firewall doesn't prevent the download from working? Check command: `iptables -L` ; See [Firewalls](linux/firewalls.md)
+-   Do you have enough disk space on the desired partition? Check command: `df -h`
+-   If the server requests a Steam login, did you enter it properly by editing your (example) "gameserver" script? It's a good idea to have a dedicated Steam account for that purpose.
+-   If the Steam download didn't work as intended, did you retry it, or try the [validate](commands/validate.md) command? Maybe your connection to Steam servers is faulty.
+-   Did you make sure that a firewall doesn't prevent the download from working? Check command: `iptables -L` ; See [Firewalls](linux/firewalls.md)
 
 ## Start issues
 
@@ -35,48 +35,53 @@ Note: (example) `./gameserver details` will provide you with relevant informatio
 
 ### First start issues
 
-* Is the server properly installed? See the "Game server downloads" part
-* Are all packages installed properly? See "Dependencies" part
-* Is your Linux installation compatible? 32/64bit, distribution... Check command: `uname -a`
-* Are ports already used by another service? See [Ports](networking/ports.md) and [Multiple-Game-Servers](configuration/multiple-game-servers.md)
-* Is this a known tmux issue? See [Tmux](requirements/tmux.md)
-* Did you try to start with the `debug` command? See [debug](commands/debug.md)
-* What does the logs say? See \[[Logging](features/logging.md)
-* Do you have enough RAM? If not, do you have enough swap? Check command: `free -mh`
-* Did you set an ip in your (example) gameserver script or config file?
+-   Is the server properly installed? See the "Game server downloads" part
+-   Are all packages installed properly? See "Dependencies" part
+-   Is your Linux installation compatible? 32/64bit, distribution... Check command: `uname -a`
+-   Are ports already used by another service? See [Ports](networking/ports.md) and [Multiple-Game-Servers](configuration/multiple-game-servers.md)
+-   Is this a known tmux issue? See [Tmux](requirements/tmux.md)
+-   Did you try to start with the `debug` command? See [debug](commands/debug.md)
+-   What does the logs say? See [Logging](features/logging.md)
+-   Do you have enough RAM? If not, do you have enough swap? Check command: `free -mh`
+-   Did you set an ip in your (example) gameserver script or config file?
 
 ### Modded servers start issues
 
-* What does the logs say? See \[[Logging](features/logging.md)
-* Did you try to start with the `debug` command? See [debug](commands/debug.md)
-* Did you wrongly append start parameters? See [Start-Parameters](configuration/start-parameters.md)
-* Did you try temporarily removing mods, and adding them one by one?
-* Does the user have the right permissions on its directories? If this is the case, a corresponding error should be displayed. See [Permissions](linux/permissions.md)
+-   What does the logs say? See [Logging](features/logging.md)
+-   Did you try to start with the `debug` command? See [debug](commands/debug.md)
+-   Did you wrongly append start parameters? See [Start-Parameters](configuration/start-parameters.md)
+-   Did you try temporarily removing mods, and adding them one by one?
+-   Does the user have the right permissions on its directories? If this is the case, a corresponding error should be displayed. See [Permissions](linux/permissions.md)
 
 ### Server start issues after updates
 
-* What does the logs say? See \[[Logging](features/logging.md)
-* Did you try to start with the `debug` command? See [debug](commands/debug.md)
-* Did you try to validate your game files? (SteamCMD servers only) See [validate](commands/validate.md)
-* Is a mod no longer compatible? Try temporarily removing mods, and adding them one by one.
-* Is it an editor's error, breaking the server? Does it now require newer package versions? Check forums, alert us if needed by opening a Github issue (and check for existing ones).
+-   What does the logs say? See [Logging](features/logging.md)
+-   Did you try to start with the `debug` command? See [debug](commands/debug.md)
+-   Did you try to validate your game files? (SteamCMD servers only) See [validate](commands/validate.md)
+-   Is a mod no longer compatible? Try temporarily removing mods, and adding them one by one.
+-   Is it an editor's error, breaking the server? Does it now require newer package versions? Check forums, alert us if needed by opening a Github issue (and check for existing ones).
 
 ## Connectivity issues
 
 ### Unable to connect or not showing up in server list
 
-This is a three part diagnosis: 1) First off, you need to make sure that the server is started properly, take attention to any error messages in console or log output. 2) Check that the server is listening, to the right IP. 3) Check for firewalls or ports redirections that could prevent useful network packets from passing through.
+This is a three part diagnosis:
+
+1. First off, you need to make sure that the server is started properly, take attention to any error messages in console or log output.
+2. Check that the server is listening, to the right IP.
+3. Check for firewalls or ports redirections that could prevent useful network packets from passing through.
 
 #### Is the server actually started?
 
-* Start it with (example `./gameserver start` , then check server logs (see \[[Logging](features/logging.md)) to see if everything seems OK. You can also try the [details](commands/details.md) command and [monitor](commands/monitor.md) command to see if it's online and if it's able to answer simple queries. If not, then follow the "Start issues" section.
+-   Start it with `./gameserver start` , then check server logs (see [Logging](features/logging.md)) to see if everything seems OK. You can also try the [details](commands/details.md) and [monitor](commands/monitor.md) command to see if the server is online and if it's able to answer simple queries. If not, then follow the "Start issues" section.
 
 #### Is the server actually listening?
 
 `./gameserver details` will provide you with the corresponding command to check if the server process is properly listening. Example sample output:
 
-```
-Useful port diagnostic command:
+**Useful port diagnostic command:**
+
+```bash
 netstat -atunp | grep srcds_linux
 ```
 
@@ -84,27 +89,27 @@ Compare the output from this to expected ports displayed in the details command.
 
 If the output differs or your think something is wrong, here are the things to check on:
 
-* Did you set an ip in your gameserver script or config file or are you listening to `0.0.0.0`?
-* Are the ports you're using free? See [Ports](networking/ports.md)
-* Are you listening to an actual interface IP? See [Ports](networking/ports.md) Also, double check for typo mistakes.
+-   Did you set an ip in your gameserver script or config file or are you listening to `0.0.0.0`?
+-   Are the ports you're using free? See [Ports](networking/ports.md)
+-   Are you listening to an actual interface IP? See [Ports](networking/ports.md) Also, double check for typo mistakes.
 
 #### Isn't there a firewall or a missing NAT rule?
 
-* Are you behind [Firewalls](linux/firewalls.md)? See [Firewalls](linux/firewalls.md)
-* If it's a local server, are ports redirection done properly? See [Ports](networking/ports.md) and [details](commands/details.md)
+-   Are you behind [Firewalls](linux/firewalls.md)? See [Firewalls](linux/firewalls.md)
+-   If it's a local server, are ports redirection done properly? See [Ports](networking/ports.md) and [details](commands/details.md)
 
-#### Other keys to solving this:
+#### Other keys to solving this
 
-* As usual, first thing you have to ask yourself: What do the logs say? See \[[Logging](features/logging.md)
-* Did you wait long enough? Sometimes it's just a matter of time until the server is fully started and listed into the master server list.
+-   As usual, first thing you have to ask yourself: What do the logs say? See [Logging](features/logging.md)
+-   Did you wait long enough? Sometimes it's just a matter of time until the server is fully started and listed into the master server list.
 
 ## If none of these work
 
 **GitHub is only for bug reports regarding LinuxGSM, not resolving specific user issues.**
 
-These kind of install, start or accessibility issues are generally specific to your server or install or comprehension of Linux, so please, note that posting these on GitHub will only result in your issue being closed without an answer and developers' waste of time.\
-Instead, you should use the support methods offered to the community: **Discord** or **Steam Forum** as explained in the [Support](broken-reference) page. There are lot of nice and helpful users and devs follow them as well whenever they have free time.
+These kind of install, start or accessibility issues are generally specific to your server or install or comprehension of Linux, so please, note that posting these on GitHub will only result in your issue being closed without an answer and developers' waste of time.
+Instead, you should use the support methods offered to the community: **Discord** as explained in the [Support](https://linuxgsm.com/support/) page. There are lot of nice and helpful users and devs follow them as well whenever they have free time.
 
 If you ever confirm a global bug after this, LinuxGSM's developers will be happy to resolve it if you raise an issue on GitHub with as much elements as possible to help understanding, reproducing and resolving the bug quickly.
 
-To learn where and how to get support, see: [Support](broken-reference)
+To learn where and how to get support, see: [Support](https://linuxgsm.com/support/)

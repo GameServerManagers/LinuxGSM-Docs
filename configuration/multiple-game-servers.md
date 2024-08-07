@@ -14,24 +14,24 @@ Make sure that you examine this page carefully and understand all of its content
 
 ## Prerequisites
 
-#### Vocabulary
+### Vocabulary
 
 You need some definitions to make this guide clear.
 
-* **Installation:** An _installation_ refers to the base directory of a game server. This is where the files required to run a game server is stored.
+-   **Installation:** An _installation_ refers to the base directory of a game server. This is where the files required to run a game server is stored.
 
-```
+```text
 /home/gameserver/serverfiles
 ```
 
-* **Instance:** Each individual game server is referred to as an _instance._ There might be multiple instances running per installation. An instance is started by running the `./gameserver` script
+-   **Instance:** Each individual game server is referred to as an _instance._ There might be multiple instances running per installation. An instance is started by running the `./gameserver` script
 
-```
+```text
 /home/gameserver/gameserver
 /home/gameserver/gameserver-2
 ```
 
-* **User:** Each game server installation should run using its own _Linux user_. Although it is possible to have multiple _installations_ per user.
+-   **User:** Each game server installation should run using its own _Linux user_. Although it is possible to have multiple _installations_ per user.
 
 #### LinuxGSM Configuration
 
@@ -49,22 +49,22 @@ This consists of creating a new user for each game server, repeating the install
 
 ### Use cases
 
-* Running different game servers requires installation in a different directory
-* Running multiple servers of the same game, but they have different content, addons or mods.
-* You want your game servers to be totally separate for simplicity and reduce the chance of multiple instances breaking all at once.
+-   Running different game servers requires installation in a different directory
+-   Running multiple servers of the same game, but they have different content, addons or mods.
+-   You want your game servers to be totally separate for simplicity and reduce the chance of multiple instances breaking all at once.
 
 #### Pros
 
-* Easy to setup
-* Separate installations partition the game servers from each other
-* Each instance can have different maps, addons and mods rather than sharing, preventing conflicts.
-* More secure, by keeping instances separate with there own user.
-* Reduced risk of breaking multiple instances.
+-   Easy to setup
+-   Separate installations partition the game servers from each other
+-   Each instance can have different maps, addons and mods rather than sharing, preventing conflicts.
+-   More secure, by keeping instances separate with there own user.
+-   Reduced risk of breaking multiple instances.
 
 #### Cons
 
-* Requires more disk space as server files can not be shared
-* Each instance has to be individually setup.
+-   Requires more disk space as server files can not be shared
+-   Each instance has to be individually setup.
 
 ### Examples
 
@@ -72,8 +72,8 @@ The installs are separated and isolated from each other in each users _home dire
 
 | Game Server                      | User               | LinuxGSM Script location            |
 | -------------------------------- | ------------------ | ----------------------------------- |
-| Garry’s Mod                      | gmodserver         | /home/gmodserver/gmodserver         |
-| Garry’s Mod                      | gmodserver-slender | /home/gmodserver-slender/gmodserver |
+| Garry's Mod                      | gmodserver         | /home/gmodserver/gmodserver         |
+| Garry's Mod                      | gmodserver-slender | /home/gmodserver-slender/gmodserver |
 | Counter-Strike: Global Offensive | csgoserver         | /home/csgoserver/csgoserver         |
 | Counter-Strike: Global Offensive | csgoserver-zombies | /home/csgoserver-zombies/csgoserver |
 
@@ -95,21 +95,21 @@ Most but not all game servers work with this method
 
 ### Use cases
 
-* Running cloning an existing game server by creating a new instance.
-* Running the same game server with different game modes, maps etc.
-* Running multiple instances even with limited disk space available.
+-   Running cloning an existing game server by creating a new instance.
+-   Running the same game server with different game modes, maps etc.
+-   Running multiple instances even with limited disk space available.
 
 #### Pros
 
-* Uses less disk space as base installation is the same
-* Less configuration required
-* It is possible to use different game modes and map rotations by editing configs.
+-   Uses less disk space as base installation is the same
+-   Less configuration required
+-   It is possible to use different game modes and map rotations by editing configs.
 
 #### Cons
 
-* Each instance shares the same files which may limit options to customise an instance
-* Potential mod conflicts
-* Should one instance break all instances might also experience the same issue
+-   Each instance shares the same files which may limit options to customise an instance
+-   Potential mod conflicts
+-   Should one instance break all instances might also experience the same issue
 
 ### How it works
 
@@ -123,9 +123,9 @@ Each instance is managed using its own script which gives the config file names.
 
 | Game                             | User       | LinuxGSM Script location                  | notes                    |
 | -------------------------------- | ---------- | ----------------------------------------- | ------------------------ |
-| Garry’s Mod                      | gmodserver | /home/gmodserver/gmodserver               | 1.2.3.4:27015            |
-| Garry’s Mod                      | gmodserver | /home/gmodserver/gmodserver-1             | 1.2.3.4:27018            |
-| Garry’s Mod                      | gmodserver | /home/gmodserver/gmodserver-2             | 1.2.3.4:27021            |
+| Garry's Mod                      | gmodserver | /home/gmodserver/gmodserver               | 1.2.3.4:27015            |
+| Garry's Mod                      | gmodserver | /home/gmodserver/gmodserver-1             | 1.2.3.4:27018            |
+| Garry's Mod                      | gmodserver | /home/gmodserver/gmodserver-2             | 1.2.3.4:27021            |
 | Counter-Strike: Global Offensive | csgoserver | /home/csgoserver/csgoserver-zombies-27024 | 1.2.3.4:27024 Zombie Mod |
 | Counter-Strike: Global Offensive | csgoserver | /home/csgoserver/csgoserver-zombies-27027 | 1.2.3.4:27027 Zombie Mod |
 
@@ -135,7 +135,7 @@ In these examples, you can see the scripts are located in the same installation 
 
 `linuxgsm.sh` allows you to generate as many instances as you want by running .&#x20;
 
-```
+```bash
 ./linuxgsm.sh install
 OR
 ./linuxgsm.sh gameserver
@@ -143,7 +143,7 @@ OR
 
 It will generate a new LinuxGSM script using an incremental number.
 
-```
+```bash
 ./gameserver-2
 ```
 

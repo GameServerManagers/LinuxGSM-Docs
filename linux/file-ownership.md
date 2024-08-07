@@ -2,12 +2,12 @@
 
 ## Introduction
 
-Linux files and directories always belong to a user and group. That is what we call ownership.  
+Linux files and directories always belong to a user and group. That is what we call ownership.
 If this can be boring to new users, remember that this is a huge part of what makes Linux as secure as it is.
 
 ## Check current ownership
 
-### Check ownership in the current directory:
+### Check ownership in the current directory
 
 `ls -l`
 
@@ -26,14 +26,14 @@ drwxr-xr-x 5 ultimatebyte ultimatebyte 4096 Jan 29 22:24 steamcmd
 
 Syntax of the output is:
 
-* `d` for directory or `-` for file
-* user, then group, then others permissions
-* number specifies the number of links or directories inside of a directory
-* The user that owns the file, or directory
-* The group that file or directory belongs to
-* The size in bytes
-* The date of last modification
-* The name of the file
+-   `d` for directory or `-` for file
+-   user, then group, then others permissions
+-   number specifies the number of links or directories inside of a directory
+-   The user that owns the file, or directory
+-   The group that file or directory belongs to
+-   The size in bytes
+-   The date of last modification
+-   The name of the file
 
 ### Check ownership from all files and hidden files of any directory
 
@@ -64,7 +64,7 @@ drwxr-xr-x  5 ultimatebyte ultimatebyte  4096 Jan 29 22:24 steamcmd
 -rw-r--r--  1 ultimatebyte ultimatebyte    29 Jan 30 02:17 .tw-server.lock
 ```
 
-## All these commands require elevated privileges!
+## All these commands require elevated privileges
 
 ## Change owner
 
@@ -124,7 +124,6 @@ As usual, `chown --help` will provide you with all available arguments
 
 `chown -R user:group /path/to/dir`
 
-#### Example:
+#### Example
 
-chown -R myuser:myuser /home/myuser
-
+`chown -R myuser:myuser /home/myuser`

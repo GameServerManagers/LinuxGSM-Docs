@@ -1,17 +1,17 @@
 # Killing Floor 2
 
-![](../.gitbook/assets/kf2banner.jpg)
+![Killing Floor 2 Logo](../.gitbook/assets/kf2banner.jpg)
 
 ## Ports
 
-* **Game Port** Default: 7777 UDP Handled by: `LinuxServer-KFEngine.ini`&#x20;
-* **Query Port** Default: 27015 UDP Handled automatically or handled by parameters. The formula for finding query port assigned automatically is 19238 + assigned game port.&#x20;
-* **Web Admin** Default: 8080 TCP Handled by: `KFWeb.ini`&#x20;
-* **Steam Port** Default: 20560 UDP Handled automatically. The formula for finding the steam port is 12783 + Game Port.
+-   **Game Port** Default: 7777 UDP Handled by: `LinuxServer-KFEngine.ini`&#x20;
+-   **Query Port** Default: 27015 UDP Handled automatically or handled by parameters. The formula for finding query port assigned automatically is 19238 + assigned game port.&#x20;
+-   **Web Admin** Default: 8080 TCP Handled by: `KFWeb.ini`&#x20;
+-   **Steam Port** Default: 20560 UDP Handled automatically. The formula for finding the steam port is 12783 + Game Port.
 
 ## Resources
 
-[Killing Floor 2 Official Server Wiki](https://wiki.tripwireinteractive.com/index.php?title=Dedicated\_Server\_%28Killing\_Floor\_2%29)
+[Killing Floor 2 Official Server Wiki](https://wiki.tripwireinteractive.com/index.php?title=Dedicated_Server_%28Killing_Floor_2%29)
 
 [Killing floor 2 Official Forums](https://forums.tripwireinteractive.com/index.php?categories/killing-floor-2.25/)
 
@@ -31,11 +31,11 @@ Workshop content is added in `LinuxServer-KFEngine.ini` in the `OnlineSubsystemS
 Ensure the game server is stopped before editing the file to prevent it being overwritten.
 {% endhint %}
 
-```
+```text
 KFGame/Config/kf2server/LinuxGSM-KFEngine.ini
 ```
 
-```
+```text
 [OnlineSubsystemSteamworks.KFWorkshopSteamworks]
 ServerSubscribedWorkshopItems=605633924
 ServerSubscribedWorkshopItems=605551918
@@ -50,9 +50,4 @@ This will only work for Workshop items that the server downloads itself, that ar
 3. Add the line "DownloadManagers=OnlineSubsystemSteamworks.SteamWorkshopDownload" to that section. If there are other "DownloadManagers=" lines, make sure this one is the first.
 4. Do not delete anything from this section, except (optionally) other DownloadManagers= lines.
 
-[Official Guide Here](https://wiki.killingfloor2.com/index.php?title=Dedicated\_Server\_\(Killing\_Floor\_2\)#Setting\_Up\_Steam\_Workshop\_For\_Servers)
-
-
-
-
-
+[Official Guide Here](<https://wiki.killingfloor2.com/index.php?title=Dedicated_Server_(Killing_Floor_2)#Setting_Up_Steam_Workshop_For_Servers>)

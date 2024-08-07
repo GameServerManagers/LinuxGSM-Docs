@@ -4,29 +4,29 @@ Game Server Login Token is a new system by Valve for managing game servers.
 
 ## Games using GSLT
 
-* Ballistic Overkill
-* Brainbread 2
-* Black Mesa: Deathmatch
-* Blade Symphony (**required**)
-* Counter-Strike: Global Offensive (**required**)
-* Counter-Strike: Source (**required**)
-* Day of Defeat: Source
-* Empires Mod
-* Garry’s Mod (**required**)
-* Insurgency
-* Insurgency: Sandstorm
-* No more Room in Hell (**required**)
-* Nuclear Dawn
-* Team Fortress 2
-* Tower Unite
-* Unturned
-* Zombie Panic! Source
+-   Ballistic Overkill
+-   Brainbread 2
+-   Black Mesa: Deathmatch
+-   Blade Symphony (**required**)
+-   Counter-Strike: Global Offensive (**required**)
+-   Counter-Strike: Source (**required**)
+-   Day of Defeat: Source
+-   Empires Mod
+-   Garry’s Mod (**required**)
+-   Insurgency
+-   Insurgency: Sandstorm
+-   No more Room in Hell (**required**)
+-   Nuclear Dawn
+-   Team Fortress 2
+-   Tower Unite
+-   Unturned
+-   Zombie Panic! Source
 
 ## What is GSLT?
 
 GSLT creates a persistent token for a game server. This allows any users who added your server to favorites to join, even if you change your ip address. This is very useful if you change your server/hosting provider.
 
-To fully understand the reasoning behind GSLT, we need to back up a bit to July 2015. [Valve announced that running certain plugins would get your server blacklisted](http://dathost.net/blog/important-information-regarding-our-csgo-servers/), meaning it could not connect to the master servers and people wouldn’t be able to connect to the server.
+To fully understand the reasoning behind GSLT, we need to back up a bit to July 2015. [Valve announced that running certain plugins would get your server blacklisted](http://dathost.net/blog/important-information-regarding-our-csgo-servers/), meaning it could not connect to the master servers and people wouldn't be able to connect to the server.
 
 This created a lot of problems for game server providers, large communities, and anyone providing configurable servers to third parties, as bans were handed out by IP, meaning that an entire machine could be banned because of one malicious or uninformed user.
 
@@ -48,7 +48,7 @@ Every single server must use a unique GSLT.
 
 ## GSLT Server Parameter
 
-GSLT can be registered on your server(s) by using the `sv_setsteamaccount` command either in [_autoexec.cfg_](../configuration/game-server-config.md) or from a [_start parameter_](../configuration/start-parameters.md).
+GSLT can be registered on your server(s) by using the `sv_setsteamaccount` command either in [autoexec.cfg](../configuration/game-server-config.md) or from a [start parameter](../configuration/start-parameters.md).
 
 start parameter
 
@@ -68,11 +68,11 @@ Tower Unite has a command within its [config file](../configuration/game-server-
 
 ### If one of my tokens is banned/blacklisted, will all tokens be banned?
 
-Yes, all of the tokens on your account will be blacklisted if one of your servers are found to be running a blacklisted plugin. Make sure you read up on Valve’s plugin policies before running a game server so nothing unfortunate happens to your tokens.
+Yes, all of the tokens on your account will be blacklisted if one of your servers are found to be running a blacklisted plugin. Make sure you read up on Valve's plugin policies before running a game server so nothing unfortunate happens to your tokens.
 
 ### If my GSLT gets banned for running a blacklisted plugin, will my steam account be community and/or VAC banned?
 
-Depending on the game Valve will punish the account that generated the token, On CS:GO you get a global cooldown of 7 days (you cannot join any community/valve server) Most likely, it won’t be VAC banned, but Valve’s requirement that anyone creating GSLTs is not community banned, you may be community banned for running blacklisted plugins.
+Depending on the game Valve will punish the account that generated the token, On CS:GO you get a global cooldown of 7 days (you cannot join any community/valve server) Most likely, it won't be VAC banned, but Valve's requirement that anyone creating GSLTs is not community banned, you may be community banned for running blacklisted plugins.
 
 ### Can I use the same GSLT for multiple servers?
 
@@ -80,17 +80,17 @@ No. You must create a unique GSLT for each simultaneously running server.
 
 ### Can I re-use GSLTs?
 
-Yes, you can add your GSLT to a new server, you just can’t run two servers with the same GSLT, at the same time.
+Yes, you can add your GSLT to a new server, you just can't run two servers with the same GSLT, at the same time.
 
 ### Do I still need a Steam WebAPI key to host workshop maps?
 
 Unfortunately, despite registering a GSLT to your server, CS:GO servers will still need a Steam WebAPI key to host maps from the Workshop.
 
-As of yet, no official confirmation has been made that TF2 servers will also require GSLTs, but they do support them so it’s not a wild guess that this is to come.
+As of yet, no official confirmation has been made that TF2 servers will also require GSLTs, but they do support them so it's not a wild guess that this is to come.
 
 ### My server loses connection to the registered Steam account
 
-Don’t use the same GSLT for multiple servers. When a server starts with a specific GSLT, it will disconnect any other servers already running that same GSLT. You need to create a unique GSLT for each server.
+Don't use the same GSLT for multiple servers. When a server starts with a specific GSLT, it will disconnect any other servers already running that same GSLT. You need to create a unique GSLT for each server.
 
 ### Is there a limit on how many GSLTs my account can have?
 

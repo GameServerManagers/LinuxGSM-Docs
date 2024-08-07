@@ -16,11 +16,14 @@ SteamCMD uses hexadecimal numbers to give its current "state". Every time SteamC
 
 Seems to affect HLDS based servers. Running again often fixes the issue
 
-```
+```text
 Error! App '90' state is 0x10E after update job.
 ```
 
-<table data-header-hidden><thead><tr><th width="333"></th><th></th><th data-hidden></th></tr></thead><tbody><tr><td>Reason</td><td>Error! App '90' state is 0x10E after update job.</td><td></td></tr><tr><td>Hex</td><td>0x10E</td><td>Reason</td></tr><tr><td>Decimal/StateFlags</td><td>270</td><td>Hex</td></tr></tbody></table>
+| Reason             | Error! App '90' state is 0x10E after update job. |
+| ------------------ | ------------------------------------------------ |
+| Hex                | 0x10E                                            |
+| Decimal/StateFlags | 270                                              |
 
 {% file src="../.gitbook/assets/content_log_0x10E.txt" %}
 
@@ -28,7 +31,7 @@ Error! App '90' state is 0x10E after update job.
 
 Not enough disk space.
 
-```
+```text
 Error! App '<appid_number>' state is 0x202 after update job.
 ```
 
@@ -45,7 +48,7 @@ Error! App '<appid_number>' state is 0x202 after update job.
 Unknown error, if you have any details please let us know
 {% endhint %}
 
-```
+```text
 Error! App '<appid_number>' state is 0x206 after update job.
 ```
 
@@ -56,22 +59,22 @@ Error! App '<appid_number>' state is 0x206 after update job.
 | Decimal/StateFlags | 518   |
 
 {% hint style="warning" %}
-Missing content\_log.txt if you have experienced this error and have a log please let us know.
+Missing content_log.txt if you have experienced this error and have a log please let us know.
 {% endhint %}
 
-### Error 0x212 <a href="#error-0x206" id="error-0x206"></a>
+### Error 0x212 [error-0x206](#error-0x206)
 
 Not enough disk space.
 
-```
+```text
 Error! App '<appid_number>' state is 0x212 after update job.
 ```
 
-| ​Title             | ​Title                 |
-| ------------------ | ---------------------- |
-| Reason             | ​Not enough disk space |
-| Hex                | 0x212                  |
-| Decimal/StateFlags | 530                    |
+| Title              | Title                 |
+| ------------------ | --------------------- |
+| Reason             | Not enough disk space |
+| Hex                | 0x212                 |
+| Decimal/StateFlags | 530                   |
 
 {% file src="../.gitbook/assets/content_log_0x212.txt" %}
 
@@ -79,7 +82,7 @@ Error! App '<appid_number>' state is 0x212 after update job.
 
 Connection issue with steam, you will need to wait for the steam servers to recover.
 
-```
+```text
 Error! State is 0x402 after update job.
 ```
 
@@ -89,7 +92,7 @@ Error! State is 0x402 after update job.
 | Decimal/StateFlags | 1026             |
 
 {% hint style="warning" %}
-Missing content\_log.txt if you have experienced this error and have a log please let us know.
+Missing content_log.txt if you have experienced this error and have a log please let us know.
 {% endhint %}
 
 ### Error 0x602
@@ -98,7 +101,7 @@ Missing content\_log.txt if you have experienced this error and have a log pleas
 Unknown error, if you have any details please let us know
 {% endhint %}
 
-```
+```text
 Error! State is 0x602 after update job.
 ```
 
@@ -109,14 +112,14 @@ Error! State is 0x602 after update job.
 | Decimal/StateFlags | 1538  |
 
 {% hint style="warning" %}
-Missing content\_log.txt if you have experienced this error and have a log please let us know.
+Missing content_log.txt if you have experienced this error and have a log please let us know.
 {% endhint %}
 
 ### Error 0x606
 
 SteamCMD is unable to write to the disk. Normally caused by permissions issues. This issue was discovered when a directory that was linked using symlink did not have the correct permissions to allow SteamCMD to write to it.
 
-```
+```text
 Error! App '<appid_number>' state is 0x606 after update job.
 ```
 
@@ -132,11 +135,9 @@ Error! App '<appid_number>' state is 0x606 after update job.
 
 Missing update files
 
-```
+```text
 Error! App '232250' state is 0x626 after update job.
 ```
-
-
 
 |                    |                      |
 | ------------------ | -------------------- |
@@ -146,11 +147,9 @@ Error! App '232250' state is 0x626 after update job.
 
 {% file src="../.gitbook/assets/content_log_0x626.txt" %}
 
-
-
 ### Error 0x2
 
-```
+```text
 Error! App '<appid_number>' state is is 0x2 after update job.
 ```
 
@@ -160,18 +159,22 @@ Error! App '<appid_number>' state is is 0x2 after update job.
 | Decimal/StateFlags | 2   |
 
 {% hint style="warning" %}
-Missing content\_log.txt if you have it please let us know.
+Missing content_log.txt if you have it please let us know.
 {% endhint %}
 
 ### Error 0x6
 
 No connection to content servers.
 
-```
+```text
 Error! App '<appid_number>' state is 0x6 after update job.
 ```
 
-<table data-header-hidden><thead><tr><th width="241"></th><th></th></tr></thead><tbody><tr><td>Reason</td><td>No connection to content servers</td></tr><tr><td>Reason 2</td><td>Received 401 (Unauthorized) HTTP response for depot 11</td></tr><tr><td>Hex</td><td>0x6</td></tr><tr><td>Decimal/StateFlags</td><td>6</td></tr></tbody></table>
+| Reason             | No connection to content servers                       |
+| ------------------ | ------------------------------------------------------ |
+| Reason 2           | Received 401 (Unauthorized) HTTP response for depot 11 |
+| Hex                | 0x6                                                    |
+| Decimal/StateFlags | 6                                                      |
 
 {% file src="../.gitbook/assets/content_log_0x6.txt" %}
 
@@ -179,31 +182,31 @@ Error! App '<appid_number>' state is 0x6 after update job.
 
 ### 0x3
 
-```
+```text
 Update state (0x3) reconfiguring, progress: 0.00 (0 / 0)
 ```
 
 ### 0x5
 
-```
+```text
 Update state (0x5) validating, progress: 13.48 (1554089956 / 11530459441)
 ```
 
 ### 0x11
 
-```
+```text
 Update state (0x11) preallocating, progress: 8.53 (983870089 / 11530459441)
 ```
 
 ### 0x61
 
-```
+```text
 Update state (0x61) downloading, progress: 1.11 (127644881 / 11530459441)
 ```
 
 ### 0x101
 
-```
+```text
  Update state (0x101) committing, progress: 3.43 (395043827 / 11530459441)
 ```
 
@@ -253,25 +256,25 @@ This table is from 2015 and is probably outdated now but it's the best we curren
 
 ## ulimit SteamCMD startup error
 
-```
+```text
 ./steamcmd.sh: line 17: ulimit: open files: cannot modify limit: Operation not permitted
 ```
 
 Some users may get a ulimit error (no permission/cannot open file) while SteamCMD is starting up. This error caused by a low setting of the -n parameter (number of file descriptors) of ulimit. Some servers forbid increasing ulimit values after startup (or beyond a limit set by root). This can be fixed by changing the file descriptor number ulimit:
 
-```
+```bash
 ulimit -n 2048
 ```
 
-## ERROR! Failed to install app '\<appid\_number>' (No subscription)
+## ERROR! Failed to install app '\<appid_number>' (No subscription)
 
 The Steam account being used does not have a license for the required game.
 
-## ERROR! Password check for AppId \<appid\_number> returned error Failure.
+## ERROR! Password check for AppId \<appid_number> returned error Failure
 
 The password for the branch is incorrect.
 
-## \[S\_API FAIL] SteamAPI\_Init() failed; SteamAPI\_IsSteamRunning() failed.
+## \[S_API FAIL] SteamAPI_Init() failed; SteamAPI_IsSteamRunning() failed
 
 Ignore the error, do not do anything to attempt to fix it. It is a known error that has appeared ever since SteamPipe was introduced. It does not cause any issues and can be ignored.
 
@@ -279,7 +282,7 @@ Ignore the error, do not do anything to attempt to fix it. It is a known error t
 
 Ignore the error, do not do anything to attempt to fix it. It does not cause any issues and can be ignored.
 
-## CWorkThreadPool::\~CWorkThreadPool: work processing queue not empty: 2 items discarded.
+## CWorkThreadPool::\~CWorkThreadPool: work processing queue not empty: 2 items discarded
 
 Ignore the error, do not do anything to attempt to fix it. It does not cause any issues and can be ignored.
 

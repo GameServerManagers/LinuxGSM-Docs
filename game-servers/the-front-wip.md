@@ -1,2 +1,3 @@
-# The Front \[WIP]
+# The Front
 
+[WIP]

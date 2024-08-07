@@ -16,7 +16,7 @@ The `details` command will provide you with some config file information. Howeve
 
 ### Sample output example
 
-```
+```text
 ./gmodserver details
 
 gmodserver Script Details

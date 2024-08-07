@@ -1,6 +1,6 @@
 # syntax-and-conventions
 
-In order to make LinuxGSM as coherent as possible, we adopted some code conventions to follow.  
+In order to make LinuxGSM as coherent as possible, we adopted some code conventions to follow.
 Here are some of them.
 
 ## Variables
@@ -40,9 +40,9 @@ find "${executabledir}/bin"
 
 ### Syntax
 
-* The `if [ statement ]; then` should be a one-liner operation.
-* Signs comparators like ==; &lt;; &lt;=; etc. are prefered to -eq -le -lt.
-* Anything within an if statement must be tabulated one step deeper.
+-   The `if [ statement ]; then` should be a one-liner operation.
+-   Signs comparators like ==; &lt;; &lt;=; etc. are prefered to -eq -le -lt.
+-   Anything within an if statement must be tabulated one step deeper.
 
 Example:
 
@@ -56,15 +56,15 @@ fi
 
 #### `! -z`and `! -n`
 
-A `-z` check returns true if a variable is not defined.  
+A `-z` check returns true if a variable is not defined.
 A `-n` check returns true if a variable is defined.
 
 For that matter, you should use `-n` rather than `! -z` and use `-z` rather than `! -n`.
 
 ## Loops
 
-* Loops should be a one liner statement.
-* Anything withing a loop must be tabulated one step deeper.
+-   Loops should be a one liner statement.
+-   Anything withing a loop must be tabulated one step deeper.
 
 ```bash
 while [ "${var}" < "${cap}" ]; do
@@ -75,9 +75,9 @@ done
 
 ## Functions
 
-* Function should be named starting with `fn_` and using lowercase letters only.
-* Any recurrent task should be put into a function.
-* Anything within a function must be tabulated one step deeper.
+-   Function should be named starting with `fn_` and using lowercase letters only.
+-   Any recurrent task should be put into a function.
+-   Anything within a function must be tabulated one step deeper.
 
 Example:
 
@@ -89,6 +89,5 @@ fn_myfunction(){
 
 ## Messages
 
-* Messages should be given using core\_messages.sh forms
-* Additional information messages are given in the form of echo " \* Message here"
-
+-   Messages should be given using core_messages.sh forms
+-   Additional information messages are given in the form of echo " \* Message here"

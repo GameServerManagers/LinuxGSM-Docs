@@ -6,10 +6,10 @@ There are port standards set by IANA for common protocols such as HTTP (port 80)
 
 ## Vocabulary
 
-* _**Port listening**_ is what a service like a game server does in order to receive packets from incoming connections: by listening to a port, the program waits for incoming packets on a given port.
-* _**Port opening**_ happens on a firewall, it consists of allowing traffic to a port.
-* _**Port redirection**_ is part of NAT and happens on a router or firewall. It consists of forwarding incoming traffic on a given port to a specific local IP.
-* _**Network Address Translation (NAT)**_  is a method of remapping an IP address into another by modifying [network address](https://en.wikipedia.org/wiki/Network\_address) information.
+-   **Port listening** is what a service like a game server does in order to receive packets from incoming connections: by listening to a port, the program waits for incoming packets on a given port.
+-   **Port opening** happens on a firewall, it consists of allowing traffic to a port.
+-   **Port redirection** is part of NAT and happens on a router or firewall. It consists of forwarding incoming traffic on a given port to a specific local IP.
+-   **Network Address Translation (NAT)** is a method of remapping an IP address into another by modifying [network address](https://en.wikipedia.org/wiki/Network_address) information.
 
 ## Game Server Ports
 
@@ -24,7 +24,7 @@ Depending upon which game server is being used, you can set game server ports wi
 
 LinuxGSM allows you to see the ports your game server is using with the `./gameserver details` command.
 
-```
+```text
 Useful port diagnostic command:
 ss -tuplwn | grep RustDedicated
 
@@ -41,7 +41,7 @@ Default ports are set in either the [start parameters](../configuration/start-pa
 
 You can use `./gameserver details` to find out where to edit port settings
 
-```
+```text
 # Ports
 # =====================================
 # Change ports by editing the parameters in:
@@ -78,7 +78,7 @@ Each type of server has a default set of ports. This is fine to use if only one 
 
 Source Default Ports
 
-```
+```text
 port="27015"
 sourcetvport="27020"
 clientport="27005"
@@ -88,7 +88,7 @@ clientport="27005"
 
 You can allocate ports incrementally, one after the other. With each server following on from the last.
 
-```
+```text
 port="27015"
 sourcetvport="27016"
 clientport="27017"
@@ -132,7 +132,7 @@ Ensure the game server ports are bound and listening before anything else. You c
 Depending on the game server not all ports will listen. However, a good rule is that the game and query ports will typically listen.&#x20;
 {% endhint %}
 
-```
+```text
 Useful port diagnostic command:
 ss -tuplwn | grep RustDedicated
 
@@ -145,9 +145,9 @@ App          28082  tcp       0
 
 Running the `ss` command will bring up any ports that are listening. If not, the game server has not started or not correctly binding to its allocated ports.&#x20;
 
-* Check that ports are not already in use by another application.
-* Check that you are trying to listen to an actual interface IP.
-* Check that the server does not crash upon start by checking console logs or try starting the server with `./gameserver debug`
+-   Check that ports are not already in use by another application.
+-   Check that you are trying to listen to an actual interface IP.
+-   Check that the server does not crash upon start by checking console logs or try starting the server with `./gameserver debug`
 
 ### Check the Firewall
 

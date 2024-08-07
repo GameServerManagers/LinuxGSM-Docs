@@ -16,7 +16,7 @@ A list of all available branches for a game server are listed on SteamDB under t
 
 ## Select a Branch
 
-The default SteamCMD branch is `public`. However, it is possible to use other builds by entering a branch name in the `branch` setting in your [LinuxGSM config](../configuration/linuxgsm-config.md). 
+The default SteamCMD branch is `public`. However, it is possible to use other builds by entering a branch name in the `branch` setting in your [LinuxGSM config](../configuration/linuxgsm-config.md).
 
 ```text
 # Steam App Branch Select
@@ -31,4 +31,3 @@ Some branches require a password. This can be done by entering a password in the
 ```text
 betapassword="branchpassword"
 ```
-

@@ -14,11 +14,11 @@ To get started you will need a mod.io account, once you have signed in, click yo
 
 Under `OAuth 2 Management > Generate Access Token`, enter a name to give your token and give it read access and click `Create Token`.
 
-![](../.gitbook/assets/2568525685image2020-3-17\_.png)
+![Screenshot](../.gitbook/assets/2568525685image2020-3-17_.png)
 
 Once the token is generated you will need to copy it to your game servers `Engine.ini`. Paste the following into `Engine.ini` and replace `TOKEN HERE` with your access token.
 
-```
+```text
 [/Script/ModKit.ModIOClient]
 bHasUserAcceptedTerms=True
 AccessToken=TOKEN HERE
@@ -32,7 +32,7 @@ Next you will need to specify which mods you want to add to your game server.&#x
 
 Create the `Mods.txt` file located `Insurgency/Config/Server/Mods.txt`&#x20;
 
-```
+```bash
 mkdir -p Insurgency/Config/Server
 touch Insurgency/Config/Server/Mods.txt
 ```
@@ -49,19 +49,19 @@ To use this custom map you will need to add it to your mapcycle and if required,
 
 Create `MapCyle.txt`and add the custom map to your mapcycle.
 
-```
+```bash
 touch Insurgency/Config/Server/MapCyle.txt
-   
-```
 
 ```
+
+```text
 (Scenario="Scenario_TORO_Checkpoint_Security",Lighting="Day",Mode="Checkpoint")
 (Scenario="Scenario_TORO_Checkpoint_Insurgents",Lighting="Day",Mode="Checkpoint")
 ```
 
 If you want the custom map to be the default edit your [start parameters](../configuration/start-parameters.md)
 
-```
+```text
 defaultmap="TORO"
 defaultscenario="Scenario_TORO_Checkpoint_Security"
 ```

@@ -1,18 +1,18 @@
 # Factorio
 
-![](../.gitbook/assets/factoriobanner.jpg)
+![Factorio Logo](../.gitbook/assets/factoriobanner.jpg)
 
 ## Server Resources
 
-* [World generation](https://wiki.factorio.com/World_generator)
-* [Factorio server Wiki](https://wiki.factorio.com/Multiplayer)
-* [Factorio console commands](https://wiki.factorio.com/Console#Command_line_parameters)
+-   [World generation](https://wiki.factorio.com/World_generator)
+-   [Factorio server Wiki](https://wiki.factorio.com/Multiplayer)
+-   [Factorio console commands](https://wiki.factorio.com/Console#Command_line_parameters)
 
 ## Server Configuration
 
 Configuration for Factorio is split between both the [game server config](../configuration/game-server-config.md) and [start parameters](../configuration/start-parameters.md).
 
-### LinuxGSM Server Config 
+### LinuxGSM Server Config
 
 port, rcon and branch configuration is set using stat parameters
 
@@ -138,7 +138,7 @@ cd ../
 ./bin/x64/factorio --create ./save1.zip --map-gen-settings data/map-gen-settings.json --map-settings data/map-settings.json
 ```
 
-### Adjusting World Generation Settings \(Mods\)
+### Adjusting World Generation Settings (Mods)
 
 I prefer the added customisation of the [Resource Overhaul Mod](https://mods.factorio.com/mods/orzelek/rso-mod) to the built-in generation.
 
@@ -147,7 +147,7 @@ The easiest way that I've found to generate a world with the RSO mod \(and add m
 1. Startup Factorio on a client and install the RSO mod
 2. Start generation of a new world and configure mod generation settings
 3. Grab the mod files and `mod-settings.dat`
-4. Transfer them to the server 
+4. Transfer them to the server
 5. Delete or rename any previous worlds
 
 To configure the generation, go to `Play` &gt; `New World` &gt; `Mod Settings` &gt; `Map`, then adjust options accordingly. Doing so will generate a file called `mod-settings.dat` which stores these settings.
@@ -164,7 +164,7 @@ Linux: ~/.factorio/mods
 
 Transfer all of the mods and `mod-settings.dat` file to your server with a tool like [Filezilla](https://filezilla-project.org/) or the `rsync` command on Mac/Linux, or even a USB drive.
 
-**Note: DO NOT TRANSFER FILES OVER FTP**
+## Note: DO NOT TRANSFER FILES OVER FTP
 
 If you have SSH open on the server, you will want to use SFTP. If you're using Filezilla, setting the port to 22 will tell it to use SFTP. If you're using `rsync`, the command would look something like this:
 
@@ -183,6 +183,3 @@ rm -rf saves/* # this folder will only exist if you have ran the server
 ```
 
 Once you've done that, you're good to start the server.
-
-
-

@@ -39,9 +39,7 @@ Replace `./gameserver` with the actual script name. Every command has a short ve
 | ----------------------------------- | ----------------------------- | ----------------- |
 | [Map Compressor](map-compressor.md) | `./gameserver map-compressor` | `./gameserver mc` |
 
-### Rust&#x20;
-
-
+### Rust
 
 | Command Name                        | Command                  | Short             |
 | ----------------------------------- | ------------------------ | ----------------- |

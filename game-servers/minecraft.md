@@ -10,6 +10,5 @@ Minecraft java edition splits up its release in two ways. Firstly a branch is ei
 
 With LinuxGSM you can specify a specific release/snapshot or the latest release/snapshot. By default, LinuxGSM will use the latest release.
 
-* [List of Minecraft Java releases ](https://minecraft.gamepedia.com/Java_Edition_version_history)
-* [List of Minecraft Java snapshots](https://minecraft.gamepedia.com/Java_Edition_version_history/Development_versions)
-
+-   [List of Minecraft Java releases](https://minecraft.gamepedia.com/Java_Edition_version_history)
+-   [List of Minecraft Java snapshots](https://minecraft.gamepedia.com/Java_Edition_version_history/Development_versions)

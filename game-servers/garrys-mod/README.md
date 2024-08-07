@@ -10,19 +10,19 @@ Autorefresh can lag the server when certain Lua files are edited. This happens w
 
 To disable autorefresh, add `-disableluarefresh` to parms.
 
-```
+```text
  -disableluarefresh
 ```
 
 ## Loading Screen
 
-Loading screens are added by defining a website with `sv_loadingurl`, which is in `gmodserver.cfg` by default.  This file overrides other files. &#x20;
+Loading screens are added by defining a website with `sv_loadingurl`, which is in `gmodserver.cfg` by default. This file overrides other files. &#x20;
 
 {% hint style="warning" %}
 Links should not have `http://` or an ending`/` .
 {% endhint %}
 
-```
+```text
 sv_loadingurl "www.website.com/loading/screen"
 ```
 
@@ -30,7 +30,7 @@ sv_loadingurl "www.website.com/loading/screen"
 
 Gamemode is changed by editing start parameters in the LinuxGSM config file.
 
-```
+```text
 TTT     gamemode="terrortown"
 Sandbox gamemode="sandbox"
 ```
@@ -49,7 +49,7 @@ Garry's Mod does not require an API/Auth Key anymore.
 
 For Garry's Mod, add the collection ID in [LinuxGSM config](../../configuration/linuxgsm-config.md) using `wscollectionid` setting. This will download the collection when the server starts.
 
-```
+```text
 wscollectionid="157384458"
 ```
 
@@ -73,25 +73,25 @@ First install a Counter-Strike: Source server, if you already have a server inst
 
 Copy the `cstrike` the directory from the Counter-Strike: Source to the Gmod folder.
 
-```
+```bash
 cp -R /home/cssserver/serverfiles/cstrike /home/gmodserver/serverfiles/cstrike
 ```
 
-Ensure that the copied files are owned by the `gmodserver`  user.
+Ensure that the copied files are owned by the `gmodserver` user.
 
-```
+```bash
 chown -R gmodserver /home/gmodserver
 ```
 
 Open mount.cfg file.
 
-```
+```bash
 nano /home/gmodserver/serverfiles/garrysmod/cfg/mount.cfg
 ```
 
 Add game to mount.cfg
 
-```
+```text
 "mountcfg"
 {
          "cstrike"      "/home/gmoduser/serverfiles/cstrike"
@@ -100,7 +100,6 @@ Add game to mount.cfg
 
 Restart the server. Check if the mount was successful by changing the level to a mounted map with console or rcon.
 
-```
+```text
 changelevel cs_italy
 ```
-

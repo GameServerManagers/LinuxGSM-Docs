@@ -16,15 +16,15 @@ If your server is hosted on the internet using a server provider you should have
 
 ### Local Networks (Private)&#x20;
 
-Using a home server or virtual machine on your desktop is a great way to get started with LinuxGSM. However, a local network (LAN) may require a better understanding of networking equipment, how local IP addressing works, and technologies such as [DHCP](https://en.wikipedia.org/wiki/Dynamic\_Host\_Configuration\_Protocol) and [NAT](https://en.wikipedia.org/wiki/Network\_address\_translation).
+Using a home server or virtual machine on your desktop is a great way to get started with LinuxGSM. However, a local network (LAN) may require a better understanding of networking equipment, how local IP addressing works, and technologies such as [DHCP](https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol) and [NAT](https://en.wikipedia.org/wiki/Network_address_translation).
 
 When a server is hosted on a local network it will be given a private IP address that is only accessible to other devices on your local network. This is fine if you want to get friends around host a game server for a good old-fashioned LAN party. But if you want to allow online players access to your local game server you will need to configure your home router's firewall and setup port forwarding using NAT.
 
 ## Network Interfaces
 
-All computers will have some sort of physical or virtual [network interface](https://en.wikipedia.org/wiki/Network\_interface) (ethernet, fiber optic, wi-fi) to connect to a network. On Linux, you can see your server's interfaces by using the following command.
+All computers will have some sort of physical or virtual [network interface](https://en.wikipedia.org/wiki/Network_interface) (ethernet, fiber optic, wi-fi) to connect to a network. On Linux, you can see your server's interfaces by using the following command.
 
-```
+```text
 ip -o link show
 ```
 
@@ -35,11 +35,13 @@ Typically you may see (depending on distro) a `localhost` loopback interface and
 An IP (Internet Protocol) address is a numerical label assigned to each device connected to a computer network that uses the Internet Protocol for communication. It serves two primary functions: host or network interface identification and location addressing. IP addresses enable devices to send and receive data within a network, facilitating communication and data transfer across the Internet.
 
 1. **LAN IP Address:**
-   * Example: 192.168.1.10
-   * Explanation: In a typical home or office network, devices are often assigned private IP addresses within the range defined by the Internet Engineering Task Force (IETF) for private networks. The "192.168.1.10" address is an example of a private IP address commonly used within a LAN. Each device on the local network would have a unique private IP address for internal communication.
+
+    - Example: 192.168.1.10
+    - Explanation: In a typical home or office network, devices are often assigned private IP addresses within the range defined by the Internet Engineering Task Force (IETF) for private networks. The "192.168.1.10" address is an example of a private IP address commonly used within a LAN. Each device on the local network would have a unique private IP address for internal communication.
+
 2. **Internet IP Address:**
-   * Example: 203.0.113.45
-   * Explanation: Internet IP addresses, also known as public IP addresses, are assigned by Internet Service Providers (ISPs) and are globally unique. The "203.0.113.45" address is an example of a public IP address. Websites, servers, and other devices connected to the Internet have public IP addresses that are used for communication between different networks on a global scale. These addresses are essential for routing data across the Internet.
+    - Example: 203.0.113.45
+    - Explanation: Internet IP addresses, also known as public IP addresses, are assigned by Internet Service Providers (ISPs) and are globally unique. The "203.0.113.45" address is an example of a public IP address. Websites, servers, and other devices connected to the Internet have public IP addresses that are used for communication between different networks on a global scale. These addresses are essential for routing data across the Internet.
 
 ### Virtual Private Networks
 

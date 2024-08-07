@@ -1,6 +1,6 @@
 # Unreal Tournament 2004
 
-![](../.gitbook/assets/ut2004banner.jpg)
+![Unreaol Tournament 2004 Logo](../.gitbook/assets/ut2004banner.jpg)
 
 ## Server Files
 
@@ -47,4 +47,3 @@ BR-UCMP2-Sublimity.ut2       CTF-Maul.ut2                 DM-CBP1-AugustNoon.ut2
 CTF-1on1-Joust.ut2           CTF-MoonDragon.ut2           DM-CBP1-BlackJackal.ut2      DM-Curse4.ut2                DM-UCMP-Contrast.ut2         DOM-Renascent.ut2            ONS-Urban.ut2
 CTF-AbsoluteZero.ut2         CTF-Orbital2.ut2             DM-CBP1-Downgrave.ut2        DM-DE-Grendelkeep.ut2        DM-UCMP-ImMortalis.ut2       DOM-Ruination.ut2            VCTF-UCMP2-RiverCanyon2.ut2
 ```
-

@@ -1,20 +1,20 @@
 # Arma 3
 
-![](../.gitbook/assets/arma3.jpg)
+![Arma 3 Logo](../.gitbook/assets/arma3.jpg)
 
 ## Server Resources
 
-* [Official Dedicated Server Guide](https://community.bistudio.com/wiki/Arma\_3:\_Dedicated\_Server)
+-   [Official Dedicated Server Guide](https://community.bistudio.com/wiki/Arma_3:_Dedicated_Server)
 
 ## Headless Client
 
 ### Headless Client Overview
 
-[https://community.bistudio.com/wiki/Arma\_3\_Headless\_Client](https://community.bistudio.com/wiki/Arma\_3\_Headless\_Client)
+[https://community.bistudio.com/wiki/Arma_3_Headless_Client](https://community.bistudio.com/wiki/Arma_3_Headless_Client)
 
-* A headless Client is used to offload AI calculations from the server.
-* Headless Client is integrated into the game client and dedicated server executable (Windows and Linux, use `-client` parameter).
-* The server does not allow arbitrary connections from headless clients if you do not define the headless clients' IPs in the `server.cfg`.
+-   A headless Client is used to offload AI calculations from the server.
+-   Headless Client is integrated into the game client and dedicated server executable (Windows and Linux, use `-client` parameter).
+-   The server does not allow arbitrary connections from headless clients if you do not define the headless clients' IPs in the `server.cfg`.
 
 ### Headless Client Setup and Usage
 
@@ -32,7 +32,7 @@ Change the `port=` increasing the number by a factor of 12 e.g 2303 becomes 2314
 
 Update `startparameters=` changing it to the following.
 
-```
+```bash
 startparameters="-client -connect=${ip}:${port} -password=CHANGEME"
 ```
 
@@ -42,14 +42,14 @@ Edit the game server config of `arma3server` (not the headless client) `arma3ser
 Do not use 127.0.0.1 as the IP address.
 {% endhint %}
 
-```
-headlessClients[]={"1.2.3.4"}; 
+```text
+headlessClients[]={"1.2.3.4"};
 localClient[]={"1.2.3.4"};
 ```
 
 Navigate to your profile directory.
 
-```
+```bash
 ~cd ~/.local/share/Arma\ 3\ -\ Other\ Profiles
 ```
 
@@ -75,13 +75,13 @@ Mods can cause your server to become unstable or may not be compatible with each
 
 Here is a popular mod to get started:
 
-* [CBA: Community Based Addons for Arma 3](https://steamcommunity.com/workshop/filedetails/?id=450814997)
+-   [CBA: Community Based Addons for Arma 3](https://steamcommunity.com/workshop/filedetails/?id=450814997)
 
 Download the Mod using [https://steamworkshopdownloader.io/](https://steamworkshopdownloader.io/) the workshop id is `450814997`
 
 Create a directory called `@cba_a3` in `serverfiles/mods`
 
-```
+```text
 serverfiles/mods/@cba_a3
 ```
 
@@ -93,19 +93,19 @@ Remember to check you have the correct user permissions once uploaded
 
 Copy the contents of the `@cba_a3/keys` directory to the server keys directory.
 
-```
+```bash
 cp serverfiles/mods/@cba_a3/keys/* serverfiles/keys
 ```
 
-Add @cba\_a3 to the `mods=""` setting in the [LinuxGSM config](../configuration/linuxgsm-config.md).
+Add @cba_a3 to the `mods=""` setting in the [LinuxGSM config](../configuration/linuxgsm-config.md).
 
-```
+```text
 mods="mods/@cba_a3"
 ```
 
 If you are adding multiple mods make sure you put a semicolon with the escape character in between each mod.
 
-```
+```text
 mods="mods/@mod1\;mods/@mod2"
 ```
 
@@ -140,7 +140,7 @@ done
 Start the server and check that your mods all have valid hashes.\
 You should see the "Community Base Addons" mod appear in your `console` [log](../features/logging.md)file.
 
-```
+```text
 15:27:37 ============================================================================================= List of mods ===============================================================================================
 15:27:37 modsReadOnly = true
 15:27:37 safeModsActivated = false

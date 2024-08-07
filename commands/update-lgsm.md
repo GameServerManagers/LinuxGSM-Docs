@@ -13,4 +13,3 @@ It is a good idea to regularly update LinuxGSM to receive new features and bug f
 Standard: `./gameserver update-lgsm`
 
 Short: `./gameserver ul`
-

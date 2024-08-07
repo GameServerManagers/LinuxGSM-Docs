@@ -1,6 +1,6 @@
 # Multi Theft Auto
 
-![](../.gitbook/assets/mtabanner.jpg)
+![Multi Theft Auto Logo](../.gitbook/assets/mtabanner.jpg)
 
 ## Server Information
 
@@ -13,4 +13,3 @@ Resources are a key part of Multi Theft Auto. A resource is essentially a direct
 A resource can be seen as being partly equivalent to a program running in an operating system - it can be started and stopped, and multiple resources can run at once. Its worth remember though, that unlike programs on an operating system, there is no multi-tasking between resources. Resources generally contain content and Lua scripts for game modes, user interfaces and other tasks affecting the players that are connected to the dedicated server on which the resources are running.
 
 For a collection of user created resources, head over to our [Community](https://community.mtasa.com) web page which serves as a place for hosting our community's resources.
-

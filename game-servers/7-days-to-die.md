@@ -1,10 +1,10 @@
 # 7 Days to Die
 
-![](../.gitbook/assets/7daystodiebanner.jpg)
+![7 Days To Die Logo](../.gitbook/assets/7daystodiebanner.jpg)
 
 ## Server Resources
 
-* [Official Dedicated Server Guide](https://7daystodie.fandom.com/wiki/Server)
+-   [Official Dedicated Server Guide](https://7daystodie.fandom.com/wiki/Server)
 
 ## Telnet
 

@@ -6,7 +6,7 @@ description: Information for Sven Co-op servers
 
 ## **Server Resources**
 
-**Official Resources**
+### Official Resources
 
 [Sven Co-op Forums](https://forums.svencoop.com/)
 
@@ -28,18 +28,15 @@ Survival Mode settings, can be set in svenserver.cfg
 
 ```text
 //Default Survival state (enabled by default) 1=on 2=off
-mp_survival_mode 
+mp_survival_mode
 
 //1=Players can vote to enable/disable survival 2=Players can't vote on this
-mp_survival_voteallow 
+mp_survival_voteallow
 
 //Number of retries before "next map" vote starts. -1 is infinite,  3 is default
-mp_survival_retries 
+mp_survival_retries
 
 //Minimum number of players needed to start Survival mode
-mp_survival_minplayers 
+mp_survival_minplayers
 
 ```
-
-
-

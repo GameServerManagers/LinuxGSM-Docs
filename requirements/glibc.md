@@ -12,16 +12,16 @@ A complete list can be found [here](https://linuxgsm.com/data/glibc).
 
 List of distros and there glibc version.
 
-| Distro | glibc |
-| :--- | :--- |
-| CentOS 7 | 2.17 |
-| CentOS 8 | 2.28 |
-| Debian 9 | 2.24 |
-| Debian 10 | 2.28 |
-| Debian 11 | 2.31 |
-| Ubuntu 16.04 LTS | 2.23 |
-| Ubuntu 18.04 LTS | 2.27 |
-| Ubuntu 20.04 LTS | 2.31 |
+| Distro           | glibc |
+| :--------------- | :---- |
+| CentOS 7         | 2.17  |
+| CentOS 8         | 2.28  |
+| Debian 9         | 2.24  |
+| Debian 10        | 2.28  |
+| Debian 11        | 2.31  |
+| Ubuntu 16.04 LTS | 2.23  |
+| Ubuntu 18.04 LTS | 2.27  |
+| Ubuntu 20.04 LTS | 2.31  |
 
 [distrowatch.com](http://distrowatch.com) is also a great source to find this information.
 
@@ -29,6 +29,5 @@ glibc version history available on [Wikipedia](https://en.wikipedia.org/wiki/GNU
 
 ## External Links
 
-* [distrowatch.com](http://distrowatch.com/)
-* [glibc Homepage](http://www.gnu.org/software/libc/)
-
+-   [distrowatch.com](http://distrowatch.com/)
+-   [glibc Homepage](http://www.gnu.org/software/libc/)

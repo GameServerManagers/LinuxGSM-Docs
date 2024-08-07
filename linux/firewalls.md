@@ -33,10 +33,9 @@ Some game servers \(like Rust\) register their external IP with steam when they 
 [eth0] 192.168.1.1 (LAN)
      |  |
 -----------------
-|                | --[WAN0] 71.2.5.23 (ISP A)  
-|                | --[WAN1] 65.13.29.46 (ISP B)  
+|                | --[WAN0] 71.2.5.23 (ISP A)
+|                | --[WAN1] 65.13.29.46 (ISP B)
 ------------------
 ```
 
 If your traffic is going out WAN0 you need to put the port forwards on the 71.2.5.23 address. If your outbound traffic is going out WAN1 you would need to put your port forwards on 65.13.29.46.
-

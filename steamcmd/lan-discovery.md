@@ -10,13 +10,13 @@ Many admins who have tried, reported a local server does not appear on the LAN t
 
 Connect using the console command.
 
-```
+```text
 connect IP:PORT
 ```
 
 If the port is 27015, then you can just use : `connect IP`
 
-```
+```text
 connect 192.168.1.10:27025
 ```
 

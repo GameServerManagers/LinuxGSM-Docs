@@ -20,19 +20,19 @@ CoD4x has its own update functionality. It will automatically check for updates 
 
 CoD4x game servers (since version 17.6) require a server token to be listed on the CoD4x master server.
 
-To generate a token visit [here](https://cod4master.cod4x.ovh/index.php?token\_generator=true).
+To generate a token visit [here](https://cod4master.cod4x.ovh/index.php?token_generator=true).
 
 Once a token is generated add it to the `sv_authtoken` cvar in `server.cfg` or command-line parameters.
 
 #### server.cfg
 
-```
+```text
 set sv_authtoken "mytokenhere"`
 ```
 
 #### command-line parameters
 
-```
+```text
 +set sv_authtoken "mytokenhere"
 ```
 
@@ -48,17 +48,17 @@ Mods for Call of Duty 4 have to be manually added to the game server.
 
 To run a mod the servers `fs_game` variable must be set correctly. Mods reside in the `mods` folder inside `fs_homepath`. Example directory tree:
 
-```
-mods/                                  
-     ├── pml220                         
-     │   ├── mod.ff                         
-     │   ├── pml220.iwd                     
+```text
+mods/
+     ├── pml220
+     │   ├── mod.ff
+     │   ├── pml220.iwd
      │   ├── z_c_r.iwd
 ```
 
 To start the server with a mod set the `fs_game` variable accordingly.
 
-```
+```bash
 parms="+set sv_punkbuster 0 +set fs_basepath ${serverfiles} +set dedicated 1 +set net_ip ${ip} +set net_port ${port} +set sv_maxclients ${maxplayers} +exec ${servercfg} +map ${defaultmap} +set fs_game "mods/pml220""
 ```
 
@@ -66,7 +66,7 @@ parms="+set sv_punkbuster 0 +set fs_basepath ${serverfiles} +set dedicated 1 +se
 
 Modded CoD4 servers have the ability to run with user-created maps. To run a server with a custom map, it has to first be placed in the `usermaps` directory (if missing simply create it yourself).
 
-```
+```text
     ├── usermaps
     │   ├── mp_nuketown
     │   │   ├── mp_nuketown.ff
@@ -80,7 +80,7 @@ Typically, maps are prefixed by mp\_ following the maps name.
 
 Running custom maps on unmodded servers is not supported, but there is a neat workaround to still load custom maps. First, create a mods folder and some empty folder inside it.
 
-```
+```text
     ├── mods
     │   ├── myemptymod
 ```
@@ -91,7 +91,7 @@ Now set `fs_game` to `mods/myemptymod` and you will be able to run custom maps.
 
 [Fast download](../commands/fastdl.md) is possible with CoD4 to allow custom maps and mods to be hosted on a webserver.
 
-```
+```text
 set sv_allowDownload "1" // allow clients to download gamefiles
 set sv_wwwDownload "1" // enable download redirection
 set sv_wwwBaseURL "http://domain.tld/cod4fastdl/" // defines url to download from
@@ -102,7 +102,7 @@ here `sv_wwwBaseURL` has to point to a URL served by your web server.
 
 An example directory tree for a served folder may look as below:
 
-```
+```text
     cod4fastdl/
     ├── mods
     │   ├── pml220

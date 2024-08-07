@@ -26,11 +26,10 @@ Change the game server folder ownership to be under their respective users and y
 
 `chown svencoop2 /home/svencoop2/serverfiles/svencoop_downloads`
 
-The files in the symlinks do not need be owned by the gameserver users and will not be recognized by linuxGSM's ownership check. That being said, make sure they can be read by the gameserver users. 
+The files in the symlinks do not need be owned by the gameserver users and will not be recognized by linuxGSM's ownership check. That being said, make sure they can be read by the gameserver users.
 
 ## Symlink resources
 
 [Excellent description of differences between Symlinks and Hardlinks by OSTechNix](https://www.ostechnix.com/explaining-soft-link-and-hard-link-in-linux-with-examples/)
 
 [Official Ubuntu ln Documentation](http://manpages.ubuntu.com/manpages/disco/man1/ln.1.html)
-

@@ -32,13 +32,13 @@ Use these cron examples to setup automated monitoring.
 Replace the username and gameserver according to your requirements.
 {% endhint %}
 
-* A _user_ based cronjob to monitor your server every 5 minutes .
+-   A _user_ based cronjob to monitor your server every 5 minutes .
 
 ```text
 */5 * * * *  /home/username/gameserver monitor > /dev/null 2>&1
 ```
 
-* A _root user_ based cronjob to monitor your server every 5 minutes .
+-   A _root user_ based cronjob to monitor your server every 5 minutes .
 
 ```text
 */5 * * * *  su - username -c '/home/username/gameserver monitor' > /dev/null 2>&1
@@ -63,4 +63,3 @@ querydelay="1"
 ## Monitor Activation
 
 Starting and stopping the game server activates and deactivates `monitor`. This prevents the server being manually stopped only to be started again by `monitor`.
-

@@ -21,4 +21,3 @@ Stop will attempt a [graceful shutdown](../features/stop-mode.md) of a game serv
 Will simply stop, then the start the server.
 
 `./gameserver restart`
-

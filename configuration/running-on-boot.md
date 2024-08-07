@@ -83,4 +83,3 @@ rc.local is another method to run scripts on boot. Any commands added to the rc.
 nano /etc/rc.local
 su - username -c '/home/username/gameserver start'
 ```
-

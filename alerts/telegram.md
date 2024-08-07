@@ -8,9 +8,9 @@
 
 2. **Register Your Bot**: Send `/newbot` to @BotFather and follow the provided instructions to set up your bot. Upon completion, you will receive an API token.
 
-   ![BotFather Chat](../.gitbook/assets/botfather_chat.png)
+    ![BotFather Chat](../.gitbook/assets/botfather_chat.png)
 
-   ![New Bot](../.gitbook/assets/botfather_new_bot.png)
+    ![New Bot](../.gitbook/assets/botfather_new_bot.png)
 
 3. **Configure LinuxGSM**: Fill in the API token into your [LinuxGSM config](../configuration/linuxgsm-config.md) as follows:
 
@@ -79,30 +79,30 @@
 
     ```json
     {
-        "update_id": 123456,
-        "message": {
-            "message_id": 123,
-            "from": {
-                "id": 12345,
-                "is_bot": false,
-                "first_name": "Sender",
-                "username": "SenderUsername",
-                "language_code": "en"
-            },
-            "chat": {
-                "id": -123456789,
-                "first_name": "Your Name",
-                "username": "YourUsername",
-                "type": "supergroup"
-            },
-            "date": 1709691014,
-            "message_thread_id": 11, // Use this number as your telegramthreadid
-            "forum_topic_created": {
-                "name": "LinuxGSM",
-                "icon_color": 12345
-            },
-            "is_topic_message": true
-        }
+    	"update_id": 123456,
+    	"message": {
+    		"message_id": 123,
+    		"from": {
+    			"id": 12345,
+    			"is_bot": false,
+    			"first_name": "Sender",
+    			"username": "SenderUsername",
+    			"language_code": "en"
+    		},
+    		"chat": {
+    			"id": -123456789,
+    			"first_name": "Your Name",
+    			"username": "YourUsername",
+    			"type": "supergroup"
+    		},
+    		"date": 1709691014,
+    		"message_thread_id": 11, // Use this number as your telegramthreadid
+    		"forum_topic_created": {
+    			"name": "LinuxGSM",
+    			"icon_color": 12345
+    		},
+    		"is_topic_message": true
+    	}
     }
     ```
 
@@ -114,7 +114,7 @@
     telegramalert="on"
     telegramtoken="XXXXXXXXX:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
     telegramchatid="123456789"
-    telegramthreadid="5" # Fill	in your thread ID
+    telegramthreadid="5" # Fill in your thread ID
     telegramsilentnotification="false"
     curlcustomstring=""
     ```
@@ -129,7 +129,7 @@ If you receive an alert on Telegram in the right place (group or private chat), 
 
 For specific needs such as bypassing network restrictions, you can specify custom cURL arguments in the configuration.
 
-```bash
+````bash
     # Telegram Alerts | https://docs.linuxgsm.com/alerts/telegram
     # You can add a custom cURL string eg proxy (useful in Russia) in "curlcustomstring".
     # For example "--socks5 ipaddr:port" for socks5 proxy see more in "curl --help all".
@@ -141,3 +141,4 @@ For specific needs such as bypassing network restrictions, you can specify custo
     telegramsilentnotification="false"
     curlcustomstring="--socks5 ipaddr:port" # Fill in your custom cURL string
     ```
+````

@@ -10,16 +10,16 @@ LinuxGSM adds workshop pre-configuration to game server scripts when available.
 
 This is a list of game servers that are known to support Workshop
 
-* Ark: Survival Evolved
-* ARMA 3
-* Day of Infamy
-* Counter-Strike 2
-* Garrys Mod
-* Hurtworld
-* Insurgency: Sandstorm
-* Killing Floor 2
-* Natural Selection 2
-* Starbound
+-   Ark: Survival Evolved
+-   ARMA 3
+-   Day of Infamy
+-   Counter-Strike 2
+-   Garrys Mod
+-   Hurtworld
+-   Insurgency: Sandstorm
+-   Killing Floor 2
+-   Natural Selection 2
+-   Starbound
 
 ## Steam Web API Key/Auth Key
 
@@ -37,7 +37,7 @@ The Steam Workshop is made up of individual items such as maps, game modes, skin
 
 To get and item or collection ID browse to the item you want to add and look at the URL; it will contain the required ID number. In the example below the ID is `3075706807`.
 
-```
+```text
 https://steamcommunity.com/sharedfiles/filedetails/?id=3075706807
 ```
 
@@ -57,10 +57,8 @@ Fill out the form.
 
 Add any maps to the collection, then publish the completed collection. Then get the collection ID which can be found on the page URL. The collection ID in the url below is `157384458`.
 
-```
+```text
 https://steamcommunity.com/sharedfiles/filedetails/?id=157384458
 ```
 
 ## Server Configurations
-
-###

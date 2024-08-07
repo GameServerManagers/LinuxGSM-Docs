@@ -12,11 +12,10 @@ The password is given on server installation. Passwords can also be found in the
 
 ## Supported Servers
 
-* TeamSpeak 3
+-   TeamSpeak 3
 
 ## Commands
 
 Standard: `./gameserver change-password`
 
 Short: `./gameserver pw`
-

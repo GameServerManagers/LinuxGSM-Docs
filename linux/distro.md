@@ -8,7 +8,7 @@ LinuxGSM developers primarily use Ubuntu for development and attempt to support 
 
 ### Ubuntu
 
-![](../.gitbook/assets/ubuntu\_black-orange\_hex\_su.png)
+![Ubuntu Logo](../.gitbook/assets/ubuntu_black-orange_hex_su.png)
 
 #### **Reasons to use Ubuntu with LinuxGSM:**
 
@@ -37,7 +37,7 @@ Ubuntu 22.04 LTS is recommended
 
 ### Debian
 
-![](../.gitbook/assets/debian.png)
+![Debian Logo](../.gitbook/assets/debian.png)
 
 #### **Reasons to use Debian with LinuxGSM:**
 
@@ -58,7 +58,7 @@ Ubuntu 22.04 LTS is recommended
 Debian 12 "Bookworm" is recommended
 {% endhint %}
 
-[https://en.wikipedia.org/wiki/Debian\_version\_history](https://en.wikipedia.org/wiki/Debian\_version\_history)
+[https://en.wikipedia.org/wiki/Debian_version_history](https://en.wikipedia.org/wiki/Debian_version_history)
 
 | **Version** | **Status**       | **Code name** | **Release date** | **Security support until** | **LTS until** |
 | ----------- | ---------------- | ------------- | ---------------- | -------------------------- | ------------- |
@@ -66,7 +66,7 @@ Debian 12 "Bookworm" is recommended
 | 11          | oldstable        | Bullseye      | 14 August 2021   |                            |               |
 | 12          | stable           | Bookworm      | 10 June 2023     |                            |               |
 
-[https://en.wikipedia.org/wiki/Debian\_version\_history#Release\_table](https://en.wikipedia.org/wiki/Debian\_version\_history#Release\_table)
+[https://en.wikipedia.org/wiki/Debian_version_history#Release_table](https://en.wikipedia.org/wiki/Debian_version_history#Release_table)
 
 ## Enterprise Linux Distros
 
@@ -74,7 +74,7 @@ LinuxGSM also works with Enterprise Linux distributions. Known for their stabili
 
 ### CentOS
 
-![](../.gitbook/assets/centos.png)
+![CentOS Logo](../.gitbook/assets/centos.png)
 
 {% hint style="info" %}
 CentOS is no longer recommended for use with LinuxGSM for hosting game servers.
@@ -102,9 +102,7 @@ Rocky Linux or Alma Linux are now the recommended alternative Enterprise Linux D
 
 ### Rocky Linux
 
-
-
-<figure><img src="../.gitbook/assets/Rocky_Linux.png" alt=""><figcaption></figcaption></figure>
+![Rocky Linux Logo](../.gitbook/assets/Rocky_Linux.png)
 
 #### **Reasons to use Rocky Linux with LinuxGSM:**
 
@@ -115,14 +113,12 @@ Rocky Linux or Alma Linux are now the recommended alternative Enterprise Linux D
 
 #### **Ideal Use Cases:**
 
-* Game Server Hosting: Rocky Linux's RHEL compatibility and stability make it an excellent choice for deploying and managing game servers with LinuxGSM.
-* Continuity from CentOS: For users previously running game servers on CentOS with LinuxGSM, transitioning to Rocky Linux ensures a familiar and stable environment.
+-   Game Server Hosting: Rocky Linux's RHEL compatibility and stability make it an excellent choice for deploying and managing game servers with LinuxGSM.
+-   Continuity from CentOS: For users previously running game servers on CentOS with LinuxGSM, transitioning to Rocky Linux ensures a familiar and stable environment.
 
 ### **Alma Linux**
 
-
-
-<figure><img src="../.gitbook/assets/Almalinux-logo-white-v2.png" alt=""><figcaption></figcaption></figure>
+![Alma Linux Logo](../.gitbook/assets/Almalinux-logo-white-v2.png)
 
 #### **Reasons to use Alma Linux with LinuxGSM:**
 
@@ -133,8 +129,8 @@ Rocky Linux or Alma Linux are now the recommended alternative Enterprise Linux D
 
 #### **Ideal Use Cases:**
 
-* CentOS Replacement: For users transitioning from CentOS to Alma Linux for hosting game servers with LinuxGSM, the distribution's RHEL compatibility ensures continuity and stability.
-* Enterprise Game Server Deployments: Alma Linux's enterprise-grade stability and long-term support make it well-suited for hosting game servers in professional gaming environments.
+-   CentOS Replacement: For users transitioning from CentOS to Alma Linux for hosting game servers with LinuxGSM, the distribution's RHEL compatibility ensures continuity and stability.
+-   Enterprise Game Server Deployments: Alma Linux's enterprise-grade stability and long-term support make it well-suited for hosting game servers in professional gaming environments.
 
 ### EPEL
 

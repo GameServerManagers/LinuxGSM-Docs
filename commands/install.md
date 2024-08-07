@@ -4,11 +4,11 @@ LinuxGSM allows for the simple installation of game servers. The installer is de
 
 The installer will:
 
-* Create required directories
-* Install/advise on required dependencies
-* Download the game server files
-* Load config files
-* Apply any fixes required to get the game server working
+-   Create required directories
+-   Install/advise on required dependencies
+-   Download the game server files
+-   Load config files
+-   Apply any fixes required to get the game server working
 
 ## Commands
 
@@ -61,17 +61,17 @@ LinuxGSM may fail to run if the correct permissions have not been used. This fau
 
 Common faults include:
 
-* Trying to install the LinuxGSM as root.
-* Trying to install LinuxGSM in a directory not owned by the correct user.
-* Not making `gameserver` file executable using the `chmod +x` command.
+-   Trying to install the LinuxGSM as root.
+-   Trying to install LinuxGSM in a directory not owned by the correct user.
+-   Not making `gameserver` file executable using the `chmod +x` command.
 
 If trying to run as `root` LinuxGSM will fail to run. See [FAQ](../support/faq.md).
 
 To check if the correct user owns the directory or `gameserver` file, use `ls -al`
 
-**Example output**
+#### Example output
 
-```
+```bash
 drwxrwxr-x  5 nmrihserver nmrihserver 4096 Jul 17 20:25 lgsm
 drwxr-xr-x  4 nmrihserver nmrihserver 4096 Aug 27  2015 log
 -rwxrwxr-x  1 nmrihserver nmrihserver 3885 Aug  9 23:04 nmrihserver
@@ -111,7 +111,7 @@ To check your available storage, use:
 
 Make sure you can `ping` using a hostname.
 
-```
+```bash
 ping google.com
 ```
 

@@ -12,7 +12,7 @@ If you are unsure which version to choose simply pick the default JRE.
 
 To install the most up to date JRE for the distro run:
 
-```
+```bash
 apt install default-jre
 ```
 
@@ -20,19 +20,19 @@ apt install default-jre
 
 For `openjdk`, run the following changing the version number:
 
-```
+```bash
 apt install openjdk-8-jre
 ```
 
-```
+```bash
 apt install openjdk-11-jre
 ```
 
-```
+```bash
 apt install openjdk-16-jre
 ```
 
-```
+```bash
 apt install openjdk-17-jre
 ```
 
@@ -40,11 +40,11 @@ apt install openjdk-17-jre
 
 Run the following command, changing the version number:
 
-```
+```bash
 yum install java-1.8.0-openjdk
 ```
 
-```
+```bash
 yum install java-11-openjdk
 ```
 

@@ -1,10 +1,10 @@
 # Valheim
 
-<figure><img src="../.gitbook/assets/vhserver_header.jpg" alt=""><figcaption></figcaption></figure>
+![Valheim Logo](../.gitbook/assets/vhserver_header.jpg)
 
 ## Server Resources
 
-* [Official Dedicated Server Guide](https://valheim.fandom.com/wiki/Valheim\_Dedicated\_Server)
+-   [Official Dedicated Server Guide](https://valheim.fandom.com/wiki/Valheim_Dedicated_Server)
 
 ## Valheim Servers require Passwords
 
@@ -18,7 +18,7 @@ The Valheim in-game browser can be slow, as a workaround you can directly connec
 
 Valheim has been previously known to have problems with long server names and special characters, if you are having trouble connecting to a server try making its name shorter or remove special characters.
 
-## Other Resources:
+## Other Resources
 
 Add admins to Valheim server:
 

@@ -82,9 +82,9 @@ By default backups are saved in the `backup` directory.
 ```text
 ├── home
 ├── csgoserver
-    ├── ** backup **       
+    ├── ** backup **
     ├── lgsm
-    ├── log       
+    ├── log
     ├── serverfiles
 ```
 
@@ -141,4 +141,3 @@ duplicity-backup.sh is a very useful bash wrapper to help automate duplicity.
 [rclone](http://rclone.org) is similar to rsync however can easily sync to cloud storage solutions.
 
 {% embed url="http://rclone.org" caption="" %}
-

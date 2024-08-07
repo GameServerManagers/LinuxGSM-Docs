@@ -1,4 +1,4 @@
-# query\_gsquery.py
+# query_gsquery.py
 
 ## What is gsquery ?
 
@@ -21,4 +21,3 @@ gsquery can also be used manually. There is a help option for complete list of s
 ### Known issue
 
 The only known limit noted to this function has been seen in Garry's Mod, where the server would sometimes be frozen, but still answer to queries.
-

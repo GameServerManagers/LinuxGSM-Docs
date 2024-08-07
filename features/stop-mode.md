@@ -16,6 +16,3 @@ Stop mode allows a game server to gracefully shutdown by sending a stop signal t
 # 10: Teamspeak 3
 stopmode="7"
 ```
-
-
-

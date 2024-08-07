@@ -8,7 +8,7 @@ FAQ section is to try to help with common problems with LinuxGSM.
 
 There are various ways to get help and support with LinuxGSM.
 
-* [http://linuxgsm.com/support](https://linuxgsm.com/support)
+-   [http://linuxgsm.com/support](https://linuxgsm.com/support)
 
 {% hint style="warning" %}
 Remember to consider the best place to post your issue and search the internet for a solution before posting.
@@ -18,26 +18,26 @@ Remember to consider the best place to post your issue and search the internet f
 
 The website and GitHub wiki is a useful resource for various LinuxGSM related topics.
 
-* [https://linuxgsm.com](https://linuxgsm.com)
-* [https://docs.linuxgsm.com](https://docs.linuxgsm.com)
+-   [https://linuxgsm.com](https://linuxgsm.com)
+-   [https://docs.linuxgsm.com](https://docs.linuxgsm.com)
 
 ### General Support
 
 LinuxGSM has a discord server where you can get general support for LinuxGSM related stuff.
 
-* [https://linuxgsm.com/discord](https://linuxgsm.com/discord)
+-   [https://linuxgsm.com/discord](https://linuxgsm.com/discord)
 
 ### Bugs/Feature Requests
 
 LinuxGSM has a GitHub issues page where you can submit any bugs and feature suggestions.
 
-* [https://linuxgsm.com/issues](https://linuxgsm.com/issues)
+-   [https://linuxgsm.com/issues](https://linuxgsm.com/issues)
 
 ## tmux: command not found
 
 I received the following error
 
-```
+```text
 [ FAIL ] Tmux not installed
     * Tmux is required to run this server.
         * Please see the the following link.
@@ -46,31 +46,31 @@ I received the following error
 
 Tmux has not been installed. See the dependencies section of the installation instructions.
 
-```
+```bash
 apt-get install tmux
 ```
 
 or
 
-```
+```bash
 yum install tmux
 ```
 
 ## Can I run a server as root?
 
-```
+```text
 [ FAIL ] Script will not run as root!
 ```
 
 The script will not run as root and will error if you try. This is done for the following good reasons:
 
-* So you or someone else don't accidentally damage your system. (`rm -rf *` anyone?).
-* So you don't mess up your game servers' user permissions.
-* To help prevent someone from potentially using your game server and gain root access.
-* Keep the game server compartmentalised in its own directory away from your other stuff.
-* It's really bad practice to run scripts as root.
-* Would you really trust yourself as root after a 9-hour energy-drink-fuelled CS:GO session?
-* Did I mention it so you don't break everything!?
+-   So you or someone else don't accidentally damage your system. (`rm -rf *` anyone?).
+-   So you don't mess up your game servers' user permissions.
+-   To help prevent someone from potentially using your game server and gain root access.
+-   Keep the game server compartmentalised in its own directory away from your other stuff.
+-   It's really bad practice to run scripts as root.
+-   Would you really trust yourself as root after a 9-hour energy-drink-fuelled CS:GO session?
+-   Did I mention it so you don't break everything!?
 
 ## I can't download linuxgsm.sh (TLS/SSL Errors)
 
@@ -78,7 +78,7 @@ If your error looks like `Unable to establish SSL connection` you need to make s
 
 If you are using an "old" distribution, it is possible that your version of wget doesn't support redirects along with SSL/TLS. As a workaround, you can download the script using `--no-check-certificate`. Please note that you should only tolerate this practice if your trust your server network connection and the download source at 100%.
 
-```
+```bash
 wget -N --no-check-certificate https://linuxgsm.sh
 ```
 
@@ -88,11 +88,11 @@ LinuxGSM installs a vanilla server by default. There is now a mods-install featu
 
 Here are a few useful resources for this.
 
-* [Metamod: Source](http://www.sourcemm.net/)
-* [Metamod](http://metamod.org/)
-* [Sourcemod](http://www.sourcemod.net/)
-* [AMX Mod X](http://www.amxmodx.org/)
-* [Alliedmodders](http://alliedmods.net/)
+-   [Metamod: Source](http://www.sourcemm.net/)
+-   [Metamod](http://metamod.org/)
+-   [Sourcemod](http://www.sourcemod.net/)
+-   [AMX Mod X](http://www.amxmodx.org/)
+-   [Alliedmodders](http://alliedmods.net/)
 
 ## Will LinuxGSM run on Raspberry PI?
 
@@ -116,13 +116,11 @@ For more info see this useful video on the subject.
 
 {% embed url="https://www.youtube.com/watch?v=loC7VfgRT-I" %}
 
-
-
-## \[ WARN ] Multiple active network interfaces.
+## [ WARN ] Multiple active network interfaces
 
 You will get the following message if your server has multiple IP addresses. The game server can only bind to one IP address, because of this you need to tell the server which IP address you want to use.
 
-```
+```text
 [ WARN ] Multiple active network interfaces
 
 Manually specify the IP you want to use within the csgoserver script.
@@ -137,13 +135,13 @@ Edit the LinuxGSM config located in lgsm/config-lgsm/\[servername]/
 
 Find and edit the following line and change it to the IP address you want to use.
 
-```
+```bash
 ip="0.0.0.0"
 ```
 
-## version \`GLIBC\_2.15′ not found
+## version `GLIBC_2.15′ not found
 
-```
+```text
 version `GLIBC_2.15′ not found
 ```
 
@@ -151,7 +149,7 @@ The correct version of Glibc is not installed. See the dependencies section of t
 
 ## write error: No space left on device
 
-```
+```text
 write error: No space left on device
 ```
 
@@ -181,10 +179,10 @@ Non-steam versions of the games ARE pirated and this would be the only reason to
 
 LinuxGSM itself has extremely low server requirements as it is written in BASH. However, the game servers themselves do have hardware requirements. You need to be aware of these requirements in order to choose a server that fits your needs. There are no hard and fast rules when it comes to server requirements and depends upon many factors.
 
-* Hard Disk: You will need to ensure you have enough disk space to install the game server. The space required varies drastically depending on the game. Generally the older the game the smaller the size. If the server is on SteamCMD you can use SteamDB to find out the disk requirements. For example [https://steamdb.info/app/403240/depots/](https://steamdb.info/app/403240/depots/). Also take into consideration any mods, addons, backups, etc you might need.
-* CPU: Most game servers are mono-threaded. This means it will only use one CPU core per instance, because of this it is worth looking at the performance of an individual core. Every game server has different resource requirements with certain factors increasing CPU demand. For example, In Rust, the map size greatly affects CPU usage. For Counter-Strike the tick rate and bots will make a difference. Whereas for Garry's Mod the number of connected players, add-ons, and props that are used and spawned increase server requirements.
-* RAM: Again the specific game server will impact upon the RAM requirements. In general factors such as map size number of players, bots, and add-ons can have an impact on the RAM required. For example, a No More Room in Hell server has a much lower RAM requirement than ARK or Rust. The game engine also plays a massive role in RAM requirements, with Rust using around 12GB and ARK using around 6GB, Unity3D engine games can also have higher requirements.
-* Network: Game servers are not usually very demanding in terms of bandwidth. However, the connection must be reliable and consistent to ensure players get a good experience. Reducing ping and packet loss is very important, otherwise, players will experience latency and lag. Your server's location has a big effect on ping, so try to get your server relatively close to where your players are going to be. If your players are in France then a server in Europe is going to be much better than one in the US for example. Servers can sometimes come under attack so DDoS protection is also important.
+-   Hard Disk: You will need to ensure you have enough disk space to install the game server. The space required varies drastically depending on the game. Generally the older the game the smaller the size. If the server is on SteamCMD you can use SteamDB to find out the disk requirements. For example [https://steamdb.info/app/403240/depots/](https://steamdb.info/app/403240/depots/). Also take into consideration any mods, addons, backups, etc you might need.
+-   CPU: Most game servers are mono-threaded. This means it will only use one CPU core per instance, because of this it is worth looking at the performance of an individual core. Every game server has different resource requirements with certain factors increasing CPU demand. For example, In Rust, the map size greatly affects CPU usage. For Counter-Strike the tick rate and bots will make a difference. Whereas for Garry's Mod the number of connected players, add-ons, and props that are used and spawned increase server requirements.
+-   RAM: Again the specific game server will impact upon the RAM requirements. In general factors such as map size number of players, bots, and add-ons can have an impact on the RAM required. For example, a No More Room in Hell server has a much lower RAM requirement than ARK or Rust. The game engine also plays a massive role in RAM requirements, with Rust using around 12GB and ARK using around 6GB, Unity3D engine games can also have higher requirements.
+-   Network: Game servers are not usually very demanding in terms of bandwidth. However, the connection must be reliable and consistent to ensure players get a good experience. Reducing ping and packet loss is very important, otherwise, players will experience latency and lag. Your server's location has a big effect on ping, so try to get your server relatively close to where your players are going to be. If your players are in France then a server in Europe is going to be much better than one in the US for example. Servers can sometimes come under attack so DDoS protection is also important.
 
 To find out specific requirements of game servers check out official game documentation or forums.
 
@@ -192,37 +190,41 @@ To find out specific requirements of game servers check out official game docume
 
 You're lacking the required module, because you didn't run this command before the last huge LinuxGSM update. The module structure changed, that's why you're getting a 404 error. You just need the newer LinuxGSM version.
 
-```
+```bash
 ./gameserver update-lgsm
 ```
 
-## \[ FAIL ] Starting game-server: Ownership issues found
+## [ FAIL ] Starting game-server: Ownership issues found
 
 The user that you are running LinuxGSM with does not own all of its files.
 
 For more information, see [Ownership](../linux/file-ownership.md)
 
-**Getting rid of bad practice**
+## Getting rid of bad practice
 
-**Case 1)** You've been uploading files as root or any other user than your game server user. If you're logging into your FTP as root, you must know that this is wrong on so many levels and must consider using a better method urgently. Here is an [example](https://gist.github.com/UltimateByte/229c17b3c48ca10080c5e56b5513e476) of a simple user-based FTP set in 2 minutes with proftpd which would already be better. Otherwise, one way better practice is to use SFTP that comes with SSH. No need to install an FTP server as long as you've got an SSH server. Just setup your FTP client to use SFTP, and connect with the same port as your SSH server and with your username/password.
+### Case 1
 
-**Case 2)** You've been downloading/extracting/copying files as root instead of the appropriate user. Just don't, do it as the user, OR, if you're obstinate, then at least chown files afterward.
+You've been uploading files as root or any other user than your game server user. If you're logging into your FTP as root, you must know that this is wrong on so many levels and must consider using a better method urgently. Here is an [example](https://gist.github.com/UltimateByte/229c17b3c48ca10080c5e56b5513e476) of a simple user-based FTP set in 2 minutes with proftpd which would already be better. Otherwise, one way better practice is to use SFTP that comes with SSH. No need to install an FTP server as long as you've got an SSH server. Just setup your FTP client to use SFTP, and connect with the same port as your SSH server and with your username/password.
 
-**Fixing wrong ownership**
+### Case 2
+
+You've been downloading/extracting/copying files as root instead of the appropriate user. Just don't, do it as the user, OR, if you're obstinate, then at least chown files afterward.
+
+## Fixing wrong ownership
 
 You can simply fix those ownership issues by using a chown command as root.
 
-```
+```bash
 chown -R username:username /home/username
 ```
 
-## \[ FAIL ] Starting game-server: Permission issues found
+## [ FAIL ] Starting game-server: Permission issues found
 
 It usually means some scripts or executable files are not actually executable.
 
 Useful command:
 
-```
+```bash
 chmod +x <filename>
 ```
 
@@ -232,15 +234,15 @@ To learn more about this, see [Permissions](../linux/permissions.md)
 
 This can have numerous reasons. Here are some ways to diagnose this issue:
 
-* Check your game logs to see if it contains any clue
-* Is your server listening? Input `./gameserver details` to get the corresponding command to know it
-* Are you behind [Firewalls](../linux/firewalls.md)? Double-check your rules, and try to disable it for testing
-* Do you have multiple interfaces? Set the right IP within your "gameserver" script or the game config file
-* Is it a home server? If you're behind a router, make sure you're listening to your local IP, then redirect appropriate ports to this local IP within your router settings.
-* Are the ports you're using free? See [Ports](../networking/ports.md)
-* Did you wait long enough? Sometimes it's just a matter of time until your server shows up on the list
+-   Check your game logs to see if it contains any clue
+-   Is your server listening? Input `./gameserver details` to get the corresponding command to know it
+-   Are you behind [Firewalls](../linux/firewalls.md)? Double-check your rules, and try to disable it for testing
+-   Do you have multiple interfaces? Set the right IP within your "gameserver" script or the game config file
+-   Is it a home server? If you're behind a router, make sure you're listening to your local IP, then redirect appropriate ports to this local IP within your router settings.
+-   Are the ports you're using free? See [Ports](../networking/ports.md)
+-   Did you wait long enough? Sometimes it's just a matter of time until your server shows up on the list
 
-## How do I  solve a  segmentation fault?
+## How do I solve a segmentation fault?
 
 My source server is displaying an error like `./srcds_run: line 318: 31093 Segmentation fault`
 
@@ -248,17 +250,17 @@ This kind of error can happen at any time or be due to numerous reasons. However
 
 If it happens upon start:
 
-* Interpreter issue (glibc libstdc gcc libraries and so on) - check your versions, libraries, and game binary files.
-* Outdated or bugged addon - Update or remove the addon
-* Missing or revoked GSLT - Update your GSLT
-* Corrupted game server files - run ./gameserver validate
-* File version incompatibility - run ./gameserver validate
+-   Interpreter issue (glibc libstdc gcc libraries and so on) - check your versions, libraries, and game binary files.
+-   Outdated or bugged addon - Update or remove the addon
+-   Missing or revoked GSLT - Update your GSLT
+-   Corrupted game server files - run ./gameserver validate
+-   File version incompatibility - run ./gameserver validate
 
 If it happens after a while:
 
-* A bug from the game server or an addon - Check your console logs, see if you can reproduce, and diagnose your addons
-* Unstable hardware - very unlikely, check your system stability
-* Ulimit issue: Your system cannot open as many files as it should - See ulimit info from this page
+-   A bug from the game server or an addon - Check your console logs, see if you can reproduce, and diagnose your addons
+-   Unstable hardware - very unlikely, check your system stability
+-   Ulimit issue: Your system cannot open as many files as it should - See ulimit info from this page
 
 ## How do I change the LinuxGSM branch?
 
@@ -268,7 +270,7 @@ either `linuxgsm.sh` or `gameserver` e.g `csgoserver`
 
 edit the following lines as required.
 
-```
+```bash
 ## GitHub Branch Select
 # Allows for the use of different function files
 # from a different repo and/or branch.
@@ -280,6 +282,6 @@ githubbranch="master"
 
 Once the details are changed update LinuxGSM.
 
-```
+```bash
 ./gameserver update-lgsm
 ```

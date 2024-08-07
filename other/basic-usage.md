@@ -53,8 +53,8 @@ The [details](../commands/details.md) command provides information relevant to t
 
 Configuring a game server requires altering settings in various locations. Configuration is split in two main sections, Linuxgsm configuration and Game configuration.
 
-* [LinuxGSM configuration](../configuration/linuxgsm-config.md) handles settings related to LinuxGSM
-* [Game configuration](../configuration/game-server-config.md) handles settings related to the dedicated server.
+-   [LinuxGSM configuration](../configuration/linuxgsm-config.md) handles settings related to LinuxGSM
+-   [Game configuration](../configuration/game-server-config.md) handles settings related to the dedicated server.
 
 ### LinuxGSM Config
 
@@ -144,12 +144,12 @@ For more info, see [update-lgsm](../commands/update-lgsm.md)
 
 You can use [Cronjobs](../configuration/cronjobs.md) to automate any LinuxGSM command. Most commonly used are:
 
-* Automatically check for updates. [update](../commands/update.md)
-* Automatically check for server crash and restart if needed. [monitor](../commands/monitor.md)
-* Automatically keep LinuxGSM up to date. [update-lgsm](../commands/update-lgsm.md)
-* Automatically restart the server at a given time. [start-stop-restart](../commands/start-stop-restart.md)
-* Automatically update and restart the server. [force-update](../commands/force-update.md)
-* Automatically backup the server. [backup](../commands/backup.md)
+-   Automatically check for updates. [update](../commands/update.md)
+-   Automatically check for server crash and restart if needed. [monitor](../commands/monitor.md)
+-   Automatically keep LinuxGSM up to date. [update-lgsm](../commands/update-lgsm.md)
+-   Automatically restart the server at a given time. [start-stop-restart](../commands/start-stop-restart.md)
+-   Automatically update and restart the server. [force-update](../commands/force-update.md)
+-   Automatically backup the server. [backup](../commands/backup.md)
 
 For more details, see [Cronjobs](../configuration/cronjobs.md).
 
@@ -192,4 +192,3 @@ Use debug mode to help you if you are having issues starting the server. Debug a
 ```
 
 For more info, see [debug](../commands/debug.md).
-

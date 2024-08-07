@@ -58,12 +58,12 @@ _**dstserver-1**_ will be the _master shard_ with an overworld as level.
 ## Predefined Parameters
 sharding="true"
 master="true"
-shard="Master" 
+shard="Master"
 cluster="Cluster_1"
 cave="false"
 ```
 
-~/.klei/DoNotStarveTogether/Cluster\_1/Master/server.ini
+~/.klei/DoNotStarveTogether/Cluster_1/Master/server.ini
 
 ```text
 [NETWORK]
@@ -82,12 +82,12 @@ dstserver-2 \(this will be the slave shard with a cave as level\):
 ## Predefined Parameters
 sharding="true"
 master="false"
-shard="Caves" 
+shard="Caves"
 cluster="Cluster_1"
 cave="true"
 ```
 
-~/.klei/DoNotStarveTogether/Cluster\_1/Caves/server.ini
+~/.klei/DoNotStarveTogether/Cluster_1/Caves/server.ini
 
 ```text
 [NETWORK]
@@ -100,7 +100,7 @@ master_server_port = 27019
 
 If you want to Caves and Overworld to display on the same server, you also to change the cluster.ini, otherwise it will run two instances, one with the Overworld and another with the Caves:
 
-~/.klei/DoNotStarveTogether/Cluster\_1/cluster.ini
+~/.klei/DoNotStarveTogether/Cluster_1/cluster.ini
 
 ```lua
 [SHARD]
@@ -113,10 +113,9 @@ For clarity it is recommended recommend naming the master shard _**Master**_.
 
 Lastly you have to start both servers. The order does not matter because the slave server will auto-retry connecting to the master server which is listening.
 
-## Guides / Documentations:
+## Guides / Documentations
 
-* [Quick Setup](http://forums.kleientertainment.com/topic/64441-dedicated-server-quick-setup-guide-linux/)
-* [Server Settings](http://forums.kleientertainment.com/topic/64552-dedicated-server-settings-guide/)
-* [Command Line Options](http://forums.kleientertainment.com/topic/64743-dedicated-server-command-line-options-guide/)
-* [Understanding Shards and Migration Portals](http://forums.kleientertainment.com/topic/59174-understanding-shards-and-migration-portals/)
-
+-   [Quick Setup](http://forums.kleientertainment.com/topic/64441-dedicated-server-quick-setup-guide-linux/)
+-   [Server Settings](http://forums.kleientertainment.com/topic/64552-dedicated-server-settings-guide/)
+-   [Command Line Options](http://forums.kleientertainment.com/topic/64743-dedicated-server-command-line-options-guide/)
+-   [Understanding Shards and Migration Portals](http://forums.kleientertainment.com/topic/59174-understanding-shards-and-migration-portals/)

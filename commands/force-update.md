@@ -13,4 +13,3 @@ Force update is a useful feature for admins that restart their server daily. It 
 Standard: `./gameserver force-update`
 
 Short: `./gameserver fu`
-

@@ -1,18 +1,18 @@
 # Rust
 
-![](../.gitbook/assets/rustbanner.jpg)
+![Rust Logo](../.gitbook/assets/rustbanner.jpg)
 
 ## System requirements
 
-* Minimum RAM: 9GB, Increases depending upon map size
-* CPU: Dual-core 3.4GHz
-* Bandwidth: 10mbps upload
+-   Minimum RAM: 9GB, Increases depending upon map size
+-   CPU: Dual-core 3.4GHz
+-   Bandwidth: 10mbps upload
 
 ## Useful Links
 
 ### General Information
 
-[https://developer.valvesoftware.com/wiki/Rust\_Dedicated\_Server](https://developer.valvesoftware.com/wiki/Rust\_Dedicated\_Server)
+[https://developer.valvesoftware.com/wiki/Rust_Dedicated_Server](https://developer.valvesoftware.com/wiki/Rust_Dedicated_Server)
 
 ### RustAdmin
 
@@ -59,7 +59,7 @@ Using [cron](../configuration/cronjobs.md) it is possible to automate your serve
 
 If the Rust server is using the _Procedural Map_ and a seed is not set in the config when the wipe commands will set a new random seed.
 
-```
+```text
 seed=""
 ```
 
@@ -87,19 +87,19 @@ If you need to edit any addon configs, they will be located in `serverfiles/oxid
 
 To update an addon without restarting the server, you'll need to reload the addon with an RCON command.
 
-```
+```text
 oxide.reload PluginName
 ```
 
 ## RCON
 
-### Send RCON commands:
+### Send RCON commands
 
 RCON is the protocol used to send commands to your server. You will need a tool to use it. Here are 3 of them:
 
-* Rusty: [http://oxidemod.org/resources/rusty-server-rcon-administration-tool.53/](http://oxidemod.org/resources/rusty-server-rcon-administration-tool.53/)
-* Rustadmin: [https://www.rustadmin.com/](https://www.rustadmin.com/) (supports both rconweb=1 and rconweb=0)
-* Facepunch web tool: [http://facepunch.github.io/webrcon/#/home](http://facepunch.github.io/webrcon/#/home)
+-   Rusty: [http://oxidemod.org/resources/rusty-server-rcon-administration-tool.53/](http://oxidemod.org/resources/rusty-server-rcon-administration-tool.53/)
+-   Rustadmin: [https://www.rustadmin.com/](https://www.rustadmin.com/) (supports both rconweb=1 and rconweb=0)
+-   Facepunch web tool: [http://facepunch.github.io/webrcon/#/home](http://facepunch.github.io/webrcon/#/home)
 
 To use software like Rusty, you need to alter LinuxGSM config and change `rconweb="0"`. To use Facepunch tool, Rustadmin desktop or Rustadmin Online, you can leave it at default `rconweb="1"`
 
@@ -107,7 +107,7 @@ To use software like Rusty, you need to alter LinuxGSM config and change `rconwe
 
 ### Essential RCON Commands
 
-```
+```text
 save ; will save the server state (useful before a stop or restart)
 oxide.reload PluginName ; will reload a plugin after updating it
 ownerid STEAMID64 "Nickname" "Reason" ; to add an owner
@@ -119,10 +119,10 @@ server.writecfg ; will save config changes, including new admins
 
 ## Rust Settings
 
-Below is a complete list of all Rust server settings.
+Below is an incomplete list of Rust server settings.
 
 {% hint style="info" %}
-A complete list can be gathered by typing `find .` into Rust Rcon
+A complete list can be gathered by typing `find .` into Rust Rcon or the ingame console
 {% endhint %}
 
 {% hint style="info" %}
@@ -131,7 +131,7 @@ Last updated: 19/11/23
 
 ### Variables
 
-```
+```text
 aibrainsenses.humanknownplayerslosupdateinterval  (0.2)
 aibrainsenses.knownplayerslosupdateinterval  (0.5)
 aibrainsenses.updateinterval  (0.5)
@@ -851,26 +851,26 @@ zombie.population        Population active on the server, per square km (0)
 
 ### Commands
 
-```
-baseboat.seconds_between_shore_drift(  ) 
-baseboat.seconds_until_shore_drift(  ) 
-boombox.clearradiobyuser(  ) 
-bradleyapc.spawnroadbradley(  ) 
-cassette.clearcassettes(  ) 
-cassette.clearcassettesbyuser(  ) 
-commands.echo(  ) 
-commands.find(  ) 
-camerarenderermanager.pool_stats(  ) 
-global.adminui_deleteugccontent(  ) 
-global.adminui_fullrefresh(  ) 
-global.adminui_requestfireworkpattern(  ) 
-global.adminui_requestplayerlist(  ) 
-global.adminui_requestserverconvars(  ) 
-global.adminui_requestserverinfo(  ) 
-global.adminui_requestugccontent(  ) 
-global.adminui_requestugclist(  ) 
+```text
+baseboat.seconds_between_shore_drift(  )
+baseboat.seconds_until_shore_drift(  )
+boombox.clearradiobyuser(  )
+bradleyapc.spawnroadbradley(  )
+cassette.clearcassettes(  )
+cassette.clearcassettesbyuser(  )
+commands.echo(  )
+commands.find(  )
+camerarenderermanager.pool_stats(  )
+global.adminui_deleteugccontent(  )
+global.adminui_fullrefresh(  )
+global.adminui_requestfireworkpattern(  )
+global.adminui_requestplayerlist(  )
+global.adminui_requestserverconvars(  )
+global.adminui_requestserverinfo(  )
+global.adminui_requestugccontent(  )
+global.adminui_requestugclist(  )
 global.authcount(  ) Returns all entities that the provided player is authed to (TC's, locks, etc), supports --json
-global.authradius(  ) 
+global.authradius(  )
 global.ban(  ) ban <player> <reason> [optional duration]
 global.banid(  ) banid <steamid> <username> <reason> [optional duration]
 global.banlist(  ) List of banned users (sourceds compat)
@@ -878,261 +878,261 @@ global.banlistex(  ) List of banned users - shows reasons and usernames
 global.bans(  ) List of banned users
 global.buildinfo(  ) Get information about this build
 global.carstats(  ) Get information about all the cars in the world
-global.clearugcentitiesinrange(  ) 
-global.clearugcentity(  ) 
-global.clientperf(  ) 
-global.clientperf_frametime(  ) 
-global.deauthradius(  ) 
+global.clearugcentitiesinrange(  )
+global.clearugcentity(  )
+global.clientperf(  )
+global.clientperf_frametime(  )
+global.deauthradius(  )
 global.entcount(  ) Returns all entities that the provided player has placed, supports --json
-global.entid(  ) 
-global.getugcinfo(  ) 
-global.injureplayer(  ) 
-global.kick(  ) 
-global.kickall(  ) 
-global.killplayer(  ) 
+global.entid(  )
+global.getugcinfo(  )
+global.injureplayer(  )
+global.kick(  )
+global.kickall(  )
+global.killplayer(  )
 global.listid(  ) List of banned users, by ID (sourceds compat)
-global.moderatorid(  ) 
-global.mute(  ) 
+global.moderatorid(  )
+global.mute(  )
 global.mutelist(  ) Print a list of currently muted players
-global.ownerid(  ) 
+global.ownerid(  )
 global.playerlist(  ) Get a list of players
 global.players(  ) Print out currently connected clients etc
-global.recoverplayer(  ) 
-global.removemoderator(  ) 
-global.removeowner(  ) 
+global.recoverplayer(  )
+global.removemoderator(  )
+global.removeowner(  )
 global.removeskipqueue(  ) Removes skip queue permission from a SteamID
 global.say(  ) Sends a message in chat
 global.serverinfo(  ) Get a list of information about the server
 global.skin_radius(  ) skin_radius 'skin' 'radius'
-global.skipqueue(  ) 
+global.skipqueue(  )
 global.skipqueueid(  ) Adds skip queue permissions to a SteamID
 global.sleepingusers(  ) Show user info for players on server.
 global.sleepingusersinrange(  ) Show user info for sleeping players on server in range of the player.
 global.stats(  ) Print out stats of currently connected clients
 global.status(  ) Print out currently connected clients
-global.teaminfo(  ) 
-global.unban(  ) 
-global.unmute(  ) 
+global.teaminfo(  )
+global.unban(  )
+global.unmute(  )
 global.upgrade_radius(  ) upgrade_radius 'grade' 'radius'
 global.users(  ) Show user info for players on server.
 global.usersinrange(  ) Show user info for players on server in range of the player.
 global.usersinrangeofplayer(  ) Show user info for players on server in range of the supplied player (eg. Jim 50)
 ai.addignoreplayer(  ) Add a player (or command user if no player is specified) to the AIs ignore list.
-ai.brainstats(  ) 
+ai.brainstats(  )
 ai.clearignoredplayers(  ) Remove all players from the AIs ignore list.
-ai.killanimals(  ) 
-ai.killscientists(  ) 
+ai.killanimals(  )
+ai.killscientists(  )
 ai.printignoredplayers(  ) Print a lost of all the players in the AI ignore list.
 ai.removeignoreplayer(  ) Remove a player (or command user if no player is specified) from the AIs ignore list.
-ai.selectnpclookatserver(  ) 
-ai.sleepwakestats(  ) 
-ai.wakesleepingai(  ) 
-app.appban(  ) 
-app.appunban(  ) 
-app.connections(  ) 
-app.info(  ) 
-app.pair(  ) 
-app.regeneratetoken(  ) 
-app.resetlimiter(  ) 
+ai.selectnpclookatserver(  )
+ai.sleepwakestats(  )
+ai.wakesleepingai(  )
+app.appban(  )
+app.appunban(  )
+app.connections(  )
+app.info(  )
+app.pair(  )
+app.regeneratetoken(  )
+app.resetlimiter(  )
 app.retry_initialize(  ) Retry initializing the Rust+ companion server if it previously failed
-bradley.quickrespawn(  ) 
-chat.cardgamesay(  ) 
-chat.clansay(  ) 
-chat.localsay(  ) 
-chat.say(  ) 
-chat.search(  ) 
-chat.tail(  ) 
-chat.teamsay(  ) 
+bradley.quickrespawn(  )
+chat.cardgamesay(  )
+chat.clansay(  )
+chat.localsay(  )
+chat.say(  )
+chat.search(  )
+chat.tail(  )
+chat.teamsay(  )
 clan.info(  ) Prints info about a clan given its ID
-console.search(  ) 
-console.tail(  ) 
-craft.add(  ) 
-craft.cancel(  ) 
-craft.canceltask(  ) 
-craft.fasttracktask(  ) 
-data.export(  ) 
+console.search(  )
+console.tail(  )
+craft.add(  )
+craft.cancel(  )
+craft.canceltask(  )
+craft.fasttracktask(  )
+data.export(  )
 debug.bench_io(  ) Spawn lots of IO entities to lag the server
 debug.breakheld(  ) Break the current held object
 debug.breakitem(  ) Break all the items in your inventory whose name match the passed string
-debug.deleteentitiesbyshortname(  ) 
-debug.drink(  ) 
-debug.eat(  ) 
-debug.enable_player_movement(  ) 
+debug.deleteentitiesbyshortname(  )
+debug.drink(  )
+debug.eat(  )
+debug.enable_player_movement(  )
 debug.flushgroup(  ) Takes you in and out of your current network group, causing you to delete and then download all entities in your PVS again
-debug.heal(  ) 
-debug.hurt(  ) 
+debug.heal(  )
+debug.hurt(  )
 debug.puzzlereset(  ) reset all puzzles
-debug.refillvitals(  ) 
-debug.renderinfo(  ) 
+debug.refillvitals(  )
+debug.renderinfo(  )
 debug.repair_inventory(  ) Repair all items in inventory
-debug.resetsleepingbagtimers(  ) 
-debug.setdamage(  ) 
-debug.setfood(  ) 
-debug.sethealth(  ) 
-debug.setradiation(  ) 
-debug.setwater(  ) 
-debug.spawnparachutetester(  ) 
-debug.stall(  ) 
-demo.record(  ) 
-demo.stop(  ) 
-entity.debug_toggle(  ) 
+debug.resetsleepingbagtimers(  )
+debug.setdamage(  )
+debug.setfood(  )
+debug.sethealth(  )
+debug.setradiation(  )
+debug.setwater(  )
+debug.spawnparachutetester(  )
+debug.stall(  )
+demo.record(  )
+demo.stop(  )
+entity.debug_toggle(  )
 entity.deleteby(  ) Destroy all entities created by provided users (separate users by space)
 entity.deletebytextblock(  ) Destroy all entities created by users in the provided text block (can use with copied results from ent auth)
-entity.find_entity(  ) 
-entity.find_group(  ) 
-entity.find_id(  ) 
-entity.find_parent(  ) 
-entity.find_radius(  ) 
-entity.find_self(  ) 
-entity.find_status(  ) 
-entity.nudge(  ) 
-entity.spawnlootfrom(  ) 
-entity.spawn(  ) 
-entity.spawngrid(  ) 
-entity.spawnitem(  ) 
-env.addtime(  ) 
-gamemode.set(  ) 
-gamemode.setteam(  ) 
-gc.alloc(  ) 
-gc.collect(  ) 
-gc.unload(  ) 
-global.breakclothing(  ) 
-global.breakitem(  ) 
-global.clearallsprays(  ) 
-global.clearallspraysbyplayer(  ) 
-global.cleardroppeditems(  ) 
-global.clearspraysatpositioninradius(  ) 
-global.clearspraysinradius(  ) 
-global.colliders(  ) 
-global.error(  ) 
-global.free(  ) 
-global.injure(  ) 
-global.kill(  ) 
-global.objects(  ) 
-global.queue(  ) 
-global.quit(  ) 
-global.recover(  ) 
-global.report(  ) 
-global.respawn(  ) 
-global.respawn_sleepingbag(  ) 
-global.respawn_sleepingbag_remove(  ) 
-global.restart(  ) 
-global.setinfo(  ) 
-global.sleep(  ) 
-global.spectate(  ) 
-global.spectateid(  ) 
-global.status_sv(  ) 
-global.subscriptions(  ) 
-global.sysinfo(  ) 
-global.sysuid(  ) 
-global.teleport(  ) 
-global.teleport2autheditem(  ) 
-global.teleport2death(  ) 
-global.teleport2marker(  ) 
-global.teleport2me(  ) 
-global.teleport2owneditem(  ) 
-global.teleportany(  ) 
-global.teleporteveryone2me(  ) 
-global.teleportlos(  ) 
-global.teleportpos(  ) 
-global.textures(  ) 
-global.version(  ) 
-harmony.load(  ) 
-harmony.unload(  ) 
-hierarchy.cd(  ) 
-hierarchy.del(  ) 
-hierarchy.ls(  ) 
+entity.find_entity(  )
+entity.find_group(  )
+entity.find_id(  )
+entity.find_parent(  )
+entity.find_radius(  )
+entity.find_self(  )
+entity.find_status(  )
+entity.nudge(  )
+entity.spawnlootfrom(  )
+entity.spawn(  )
+entity.spawngrid(  )
+entity.spawnitem(  )
+env.addtime(  )
+gamemode.set(  )
+gamemode.setteam(  )
+gc.alloc(  )
+gc.collect(  )
+gc.unload(  )
+global.breakclothing(  )
+global.breakitem(  )
+global.clearallsprays(  )
+global.clearallspraysbyplayer(  )
+global.cleardroppeditems(  )
+global.clearspraysatpositioninradius(  )
+global.clearspraysinradius(  )
+global.colliders(  )
+global.error(  )
+global.free(  )
+global.injure(  )
+global.kill(  )
+global.objects(  )
+global.queue(  )
+global.quit(  )
+global.recover(  )
+global.report(  )
+global.respawn(  )
+global.respawn_sleepingbag(  )
+global.respawn_sleepingbag_remove(  )
+global.restart(  )
+global.setinfo(  )
+global.sleep(  )
+global.spectate(  )
+global.spectateid(  )
+global.status_sv(  )
+global.subscriptions(  )
+global.sysinfo(  )
+global.sysuid(  )
+global.teleport(  )
+global.teleport2autheditem(  )
+global.teleport2death(  )
+global.teleport2marker(  )
+global.teleport2me(  )
+global.teleport2owneditem(  )
+global.teleportany(  )
+global.teleporteveryone2me(  )
+global.teleportlos(  )
+global.teleportpos(  )
+global.textures(  )
+global.version(  )
+harmony.load(  )
+harmony.unload(  )
+hierarchy.cd(  )
+hierarchy.del(  )
+hierarchy.ls(  )
 inventory.clearinventory(  ) Clears the inventory of a target player. eg. inventory.clearInventory jim
 inventory.copyto(  ) Copies the players inventory to the player in front of them
-inventory.defs(  ) 
+inventory.defs(  )
 inventory.deployloadout(  ) Deploys the given loadout to a target player. eg. inventory.deployLoadout testloadout jim
 inventory.deployloadoutinrange(  ) Deploys a loadout to players in a radius eg. inventory.deployLoadoutInRange testloadout 30
-inventory.endloot(  ) 
-inventory.equipslot(  ) 
-inventory.equipslottarget(  ) 
-inventory.give(  ) 
-inventory.giveall(  ) 
-inventory.givearm(  ) 
-inventory.givebp(  ) 
-inventory.giveid(  ) 
-inventory.giveto(  ) 
-inventory.lighttoggle(  ) 
+inventory.endloot(  )
+inventory.equipslot(  )
+inventory.equipslottarget(  )
+inventory.give(  )
+inventory.giveall(  )
+inventory.givearm(  )
+inventory.givebp(  )
+inventory.giveid(  )
+inventory.giveto(  )
+inventory.lighttoggle(  )
 inventory.listloadouts(  ) Prints all saved inventory loadouts
-inventory.reloaddefs(  ) 
-inventory.resetbp(  ) 
+inventory.reloaddefs(  )
+inventory.resetbp(  )
 inventory.saveloadout(  ) Saves the current equipped loadout of the calling player. eg. inventory.saveLoadout loaduoutname
-inventory.unlockall(  ) 
-manifest.printmanifest(  ) 
-manifest.printmanifestraw(  ) 
-memsnap.full(  ) 
-memsnap.managed(  ) 
-memsnap.native(  ) 
-nexus.broadcast_ping(  ) 
-nexus.ping(  ) 
-nexus.playeronline(  ) 
-nexus.refreshislands(  ) 
-nexus.transfer(  ) 
+inventory.unlockall(  )
+manifest.printmanifest(  )
+manifest.printmanifestraw(  )
+memsnap.full(  )
+memsnap.managed(  )
+memsnap.native(  )
+nexus.broadcast_ping(  )
+nexus.ping(  )
+nexus.playeronline(  )
+nexus.refreshislands(  )
+nexus.transfer(  )
 nexus.uploadmap(  ) Reupload the map image to the nexus. Normally happens automatically at server boot. WARNING: This will lag the server!
-heli.call(  ) 
-heli.calltome(  ) 
-heli.drop(  ) 
-heli.strafe(  ) 
-heli.testpuzzle(  ) 
-player.abandonmission(  ) 
-player.cinematic_gesture(  ) 
-player.cinematic_play(  ) 
-player.cinematic_stop(  ) 
-player.copyrotation(  ) 
-player.createskull(  ) 
-player.createtrophy(  ) 
-player.dismount(  ) 
-player.fillwater(  ) 
-player.gesture_radius(  ) 
-player.gotosleep(  ) 
-player.markhostile(  ) 
-player.mount(  ) 
-player.printpresence(  ) 
-player.printstats(  ) 
-player.reloadweapons(  ) 
+heli.call(  )
+heli.calltome(  )
+heli.drop(  )
+heli.strafe(  )
+heli.testpuzzle(  )
+player.abandonmission(  )
+player.cinematic_gesture(  )
+player.cinematic_play(  )
+player.cinematic_stop(  )
+player.copyrotation(  )
+player.createskull(  )
+player.createtrophy(  )
+player.dismount(  )
+player.fillwater(  )
+player.gesture_radius(  )
+player.gotosleep(  )
+player.markhostile(  )
+player.mount(  )
+player.printpresence(  )
+player.printstats(  )
+player.reloadweapons(  )
 player.resetstate(  ) Resets the PlayerState of the given player
-player.stopgesture_radius(  ) 
-player.swapseat(  ) 
-player.wakeup(  ) 
-player.wakeupall(  ) 
-pool.clear_assets(  ) 
-pool.clear_memory(  ) 
-pool.clear_prefabs(  ) 
-pool.export_prefabs(  ) 
-pool.fill_prefabs(  ) 
-pool.print_arraypool(  ) 
-pool.print_assets(  ) 
-pool.print_memory(  ) 
-pool.print_prefabs(  ) 
-profile.flush_analytics(  ) 
-profile.start(  ) 
-profile.stop(  ) 
+player.stopgesture_radius(  )
+player.swapseat(  )
+player.wakeup(  )
+player.wakeupall(  )
+pool.clear_assets(  )
+pool.clear_memory(  )
+pool.clear_prefabs(  )
+pool.export_prefabs(  )
+pool.fill_prefabs(  )
+pool.print_arraypool(  )
+pool.print_assets(  )
+pool.print_memory(  )
+pool.print_prefabs(  )
+profile.flush_analytics(  )
+profile.start(  )
+profile.stop(  )
 render.print_global_entities(  ) Print off count of global building entities on the server
-render.tree_entities(  ) 
+render.tree_entities(  )
 server.backup(  ) Backup server folder
-server.broadcastplayvideo(  ) 
-server.cheatreport(  ) 
+server.broadcastplayvideo(  )
+server.cheatreport(  )
 server.combatlog(  ) Get the player combat log
 server.combatlog_outgoing(  ) Get the player combat log, only showing outgoing damage
-server.fps(  ) 
+server.fps(  )
 server.listtoolcupboards(  ) Prints all the Tool Cupboards on the server
 server.listvendingmachines(  ) Prints all the vending machines on the server
-server.netprotocol(  ) 
-server.packetlog(  ) 
+server.netprotocol(  )
+server.packetlog(  )
 server.playerlistpos(  ) Prints the position of all players on the server
-server.printdecryptqueue(  ) 
+server.printdecryptqueue(  )
 server.printeyes(  ) Print the current player eyes.
 server.printpos(  ) Print the current player position.
-server.printreadqueue(  ) 
+server.printreadqueue(  )
 server.printrot(  ) Print the current player rotation.
-server.printwritequeue(  ) 
-server.readcfg(  ) 
+server.printwritequeue(  )
+server.readcfg(  )
 server.resetserveremoji(  ) Rescans the serveremoji folder, note that clients will need to reconnect to get the latest emoji
-server.rpclog(  ) 
+server.rpclog(  )
 server.save(  ) Force save the current game
 server.sendnetworkupdate(  ) Send network update for all players
 server.setshowholstereditems(  ) Show holstered items on player bodies
@@ -1140,64 +1140,64 @@ server.snapshot(  ) This sends a snapshot of all the entities in the client's pv
 server.start(  ) Starts a server
 server.stop(  ) Stops a server
 server.writecfg(  ) Writes config files
-spawn.cargoshipevent(  ) 
-spawn.fill_groups(  ) 
-spawn.fill_individuals(  ) 
-spawn.fill_populations(  ) 
-spawn.report(  ) 
-spawn.scalars(  ) 
-stability.refresh_stability(  ) 
-supply.call(  ) 
-supply.drop(  ) 
-system.cpu_affinity(  ) 
-system.cpu_priority(  ) 
-vehicle.autohover(  ) 
+spawn.cargoshipevent(  )
+spawn.fill_groups(  )
+spawn.fill_individuals(  )
+spawn.fill_populations(  )
+spawn.report(  )
+spawn.scalars(  )
+stability.refresh_stability(  )
+supply.call(  )
+supply.drop(  )
+system.cpu_affinity(  )
+system.cpu_priority(  )
+vehicle.autohover(  )
 vehicle.boatdriftinfo(  ) Print out boat drift status for all boats
-vehicle.fixcars(  ) 
-vehicle.killboats(  ) 
-vehicle.killcars(  ) 
-vehicle.killdrones(  ) 
-vehicle.killminis(  ) 
-vehicle.killscraphelis(  ) 
-vehicle.killtrains(  ) 
-vehicle.stop_all_trains(  ) 
-vehicle.swapseats(  ) 
+vehicle.fixcars(  )
+vehicle.killboats(  )
+vehicle.killcars(  )
+vehicle.killdrones(  )
+vehicle.killminis(  )
+vehicle.killscraphelis(  )
+vehicle.killtrains(  )
+vehicle.stop_all_trains(  )
+vehicle.swapseats(  )
 voice.togglevoicerangeboost(  ) Enabled/disables voice range boost for a player eg. ToggleVoiceRangeBoost sam 1
-weather.load(  ) 
-weather.report(  ) 
-weather.reset(  ) 
-workshop.print_approved_skins(  ) 
-world.monuments(  ) 
+weather.load(  )
+weather.report(  )
+weather.reset(  )
+workshop.print_approved_skins(  )
+world.monuments(  )
 world.renderlabs(  ) Renders a PNG of the current map's underwater labs, for a specific floor
 world.rendermap(  ) Renders a high resolution PNG of the current map
 world.rendertunnels(  ) Renders a PNG of the current map's tunnel network
-xmas.refill(  ) 
-cui.cui_test(  ) 
-cui.cui_test_update(  ) 
-cui.endtest(  ) 
-global.dump(  ) 
-global.steamrelayinit(  ) 
-global.steamstatus(  ) 
-analytics.pending_analytics(  ) 
-growableentity.growall(  ) 
+xmas.refill(  )
+cui.cui_test(  )
+cui.cui_test_update(  )
+cui.endtest(  )
+global.dump(  )
+global.steamrelayinit(  )
+global.steamstatus(  )
+analytics.pending_analytics(  )
+growableentity.growall(  )
 meta.add(  ) add <convar> <amount> - adds amount to convar
-note.update(  ) 
-relationshipmanager.acceptinvite(  ) 
-relationshipmanager.addtoteam(  ) 
-relationshipmanager.fakeinvite(  ) 
-relationshipmanager.kickmember(  ) 
-relationshipmanager.leaveteam(  ) 
-relationshipmanager.promote(  ) 
-relationshipmanager.rejectinvite(  ) 
-relationshipmanager.sendinvite(  ) 
-relationshipmanager.sleeptoggle(  ) 
-relationshipmanager.trycreateteam(  ) 
-relationshipmanager.wipe_all_contacts(  ) 
-relationshipmanager.wipecontacts(  ) 
-ridablehorse.sethorsebreed(  ) 
-santasleigh.drop(  ) 
-telephonemanager.printallphones(  ) 
-wipetimer.printtimezones(  ) 
-wipetimer.printwipe(  ) 
+note.update(  )
+relationshipmanager.acceptinvite(  )
+relationshipmanager.addtoteam(  )
+relationshipmanager.fakeinvite(  )
+relationshipmanager.kickmember(  )
+relationshipmanager.leaveteam(  )
+relationshipmanager.promote(  )
+relationshipmanager.rejectinvite(  )
+relationshipmanager.sendinvite(  )
+relationshipmanager.sleeptoggle(  )
+relationshipmanager.trycreateteam(  )
+relationshipmanager.wipe_all_contacts(  )
+relationshipmanager.wipecontacts(  )
+ridablehorse.sethorsebreed(  )
+santasleigh.drop(  )
+telephonemanager.printallphones(  )
+wipetimer.printtimezones(  )
+wipetimer.printwipe(  )
 ziplinelaunchpoint.report(  )
 ```

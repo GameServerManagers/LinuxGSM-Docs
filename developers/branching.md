@@ -16,7 +16,6 @@ Any non-group developers please submit pull requests to the "develop" branch and
 
 It is also a good idea to start using [Git Kracken](https://www.gitkraken.com/) as the git client. It is a little more complex that GitHub Desktop but will give you a much better understanding of the development process.
 
-![](http://nvie.com/img/git-model@2x.png)
+![Git Model](http://nvie.com/img/git-model@2x.png)
 
-![](http://i.imgur.com/E241CSR.jpg)
-
+![feature release flowchart](http://i.imgur.com/E241CSR.jpg)

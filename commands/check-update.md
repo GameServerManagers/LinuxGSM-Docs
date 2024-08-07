@@ -28,7 +28,7 @@ A cronjob can be run as the `gameserver user` or as `root`, this choice is down 
 
 Here is an example of a user-based cronjob to check for an update once an hour.
 
-```
+```bash
 0 * * * * /home/username/gameserver check-update > /dev/null 2>&1
 ```
 
@@ -38,7 +38,7 @@ Here is an example of a root-based cronjob to check for an update once an hour.
 The extra `su - username -c` indicates which user to run the script as.
 {% endhint %}
 
-```
+```bash
 0 * * * * su - username -c '/home/username/gameserver update' > /dev/null 2>&1
 ```
 

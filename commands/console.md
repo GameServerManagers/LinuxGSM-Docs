@@ -31,4 +31,3 @@ Take your time as this can be confusing at first.
 {% hint style="danger" %}
 Pressing `CTRL+c` while in console will kill the [tmux](../requirements/tmux.md) session, stopping the game server.
 {% endhint %}
-
