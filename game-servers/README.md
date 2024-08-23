@@ -21,4 +21,4 @@ LinuxGSM cannot always provide support for specific game servers. However, there
 * [Unreal Tournament 2004](https://www.epicgames.com/unrealtournament/forums/past-unreal-tournament-games/unreal-tournament-2003-2004)
 * [Unreal Tournament 3](https://www.epicgames.com/unrealtournament/forums/past-unreal-tournament-games/unreal-tournament-3)
 * [Unreal Tournament 99](https://www.epicgames.com/unrealtournament/forums/past-unreal-tournament-games/unreal-tournament-‘99)
-
+* [Xonotic](https://forums.xonotic.org/)
