@@ -22,7 +22,7 @@ Like written in the FAQ the default Configuration files are located in:
 
 ### Serverhosting Locations
 
-You can start Xonotic with the startparameter '-userdir'. With this parameter Xonotic excpects in that folder a subfolder `data` with the `server.cfg`. For example for choosing `./xonotic-linux64-dedicated -userdir /home/xonotic/server1` your server.cfg location should be `/home/xonotic/server1/data/server.cfg`
+You can start Xonotic with the startparameter `-userdir`. With this parameter Xonotic excpects in that folder a subfolder `data` with the `server.cfg`. For example for choosing `./xonotic-linux64-dedicated -userdir /home/xonotic/server1` your server.cfg location should be `/home/xonotic/server1/data/server.cfg`
 
 ## Game Modes
 
@@ -45,3 +45,22 @@ A list is currently located in [Xonotic Gitlab](https://gitlab.com/xonotic/xonot
 | Race | rc | Free for all Gamemode where players try to run over a track as fast as possible |
 | Complete the Stage | cts | Like Race Gamemode with additional Checkpoints to pass |
 | Nextball | nb | Team- and Roundbased Mode where teams try to shoot a ball the enemys goal |
+
+## Custom Maps
+
+### Server side
+Xonotic has Custom Maps support in fileformat `pk3`. Maps should be located in the data folder like `server.cfg` on your dedicated Server.
+
+### Make it useable for Clients
+Xonotic doesn't provide a Filedownloader inside the gameserver, have need to host your custommaps on HTTP Webspace and set the correct values in `server.cfg`.
+
+#### Example
+- Userdir: `-userdir /home/xonotic/server1`: add `foo.pk3`in  `/home/xonotic/server1/data/`
+- `server.cfg`: Add `sv_curl_defaulturl="http://xonotic.foo.bar"`
+- Put `foo.pk3` in the HTTP Root Folder to make it accessable via `http://xonotic.foo.bar/foo.pk3`
+
+Look at [Xonotic Wiki](https://gitlab.com/xonotic/xonotic/-/wikis/Automatic-map-downloads) for more infos about Custom Map Hosting
+
+## Start parameters
+
+Every Server cvar can be overwritten in an starting argument, but it's recommended to setup as much as possible in `server.cfg`
