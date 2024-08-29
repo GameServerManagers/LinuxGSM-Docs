@@ -12,7 +12,7 @@
 
 ### Client Specific
 
-Like written in the FAQ, the default Configuration files are located in:
+As written in the FAQ, the default Configuration files are located in:
 
 | System | Location |
 |--|--|
@@ -22,7 +22,7 @@ Like written in the FAQ, the default Configuration files are located in:
 
 ### Serverhosting Locations
 
-You can start Xonotic with the startparameter `-userdir`. With this parameter, Xonotic excpects in that folder a subfolder `data` with the `server.cfg`. For example for choosing `./xonotic-linux64-dedicated -userdir /home/xonotic/server1` your server.cfg location should be `/home/xonotic/server1/data/server.cfg`
+You can start Xonotic with the startparameter `-userdir`. With this parameter, Xonotic expects a subfolder `data` with the `server.cfg` in that directory. For example for choosing `./xonotic-linux64-dedicated -userdir /home/xonotic/server1` your server.cfg location should be `/home/xonotic/server1/data/server.cfg`
 
 ## Game Modes
 
@@ -30,21 +30,21 @@ A list is currently located in [Xonotic Gitlab](https://gitlab.com/xonotic/xonot
 
 | Gametype | Servervalue | Description |
 |--|--|--|
-| Deathmatch | dm | Classic Free for All Gamemode where player with most frags win |
-| Team Deatchmatch | tdm | Teambased Gamemode where team with most frags win |
+| Deathmatch | dm | Classic Free for All Gamemode where the player with most frags win |
+| Team Deatchmatch | tdm | Teambased Gamemode where the team with most frags win |
 | Capture the Flag | ctf | Teambased Gamemode where the enemy flag has to be captured and brought back to own base |
 | Clan Arena | ca | Team- and Roundbased Mode where surving team gets a point. Pickup Items are absent |
 | Freeze Tag | ft | Like Teamdeathmatch, where killed players are freezed and can be revived from teammembers. Ammo Pickups are absent |
 | Key Hunt | kh | Multiteam- and Roundbased Mode Mode where one player of each team gets a key and the team goal is to get all keys | 
 | Assault | as | Team- and Roundbased Mode where one Team is attacking and the other defending. Attackers try to destroy objects as fast as possible |
-| Domination | dom | Multiteambased Gamemode where the teams capturing and controlling points on the map |
-| Last Man Standing | lms | Free for All Gamemode where you only respawn a certain amount of time |
+| Domination | dom | Multiteambased Gamemode where the teams captures and controlls points on the map |
+| Last Man Standing | lms | Free for All Gamemode where the player only respawn a certain amount of time |
 | Keepaway | ka | Free for All Gamemode where you take a ball and with that equipped frag people |
 | Invasion | inv | Roundbased PvE Gamemode where players fight against monsters |
-| Onslaught | ons | Team- and Roundbased Mode where the Team tries to destroy the enemy generator |
+| Onslaught | ons | Team- and Roundbased Mode where the Teams tries to destroy the enemy generator |
 | Race | rc | Free for all Gamemode where players try to run over a track as fast as possible |
 | Complete the Stage | cts | Like Race Gamemode with additional Checkpoints to pass |
-| Nextball | nb | Team- and Roundbased Mode where teams try to shoot a ball the enemys goal |
+| Nextball | nb | Team- and Roundbased Mode where the teams try to shoot a ball into the enemys goal |
 
 ## Custom Maps
 
