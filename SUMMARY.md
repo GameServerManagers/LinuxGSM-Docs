@@ -51,6 +51,7 @@
   * [Unreal Tournament 2004](game-servers/unreal-tournament-2004.md)
   * [Unreal Tournament 3](game-servers/unreal-tournament-3.md)
   * [Valheim](game-servers/valheim.md)
+  * [Xonotic](game-servers/xonotic.md)
   * [The Front \[WIP\]](game-servers/the-front-wip.md)
 * [Networking](networking/README.md)
   * [IP Address](networking/ip-address.md)
