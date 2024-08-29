@@ -62,7 +62,7 @@ Xonotic doesn't provide a Filedownloader inside the gameserver, have need to hos
 - Userdir: `-userdir /home/xonotic/server1`: add `foo.pk3`in `/home/xonotic/server1/data/`
 -  `server.cfg`: Add `sv_curl_defaulturl="http://xonotic.foo.bar"`
 - Put `foo.pk3` in the HTTP Root Folder to make it accessable via `http://xonotic.foo.bar/foo.pk3`
-- 
+
 Look at [Xonotic Wiki](https://gitlab.com/xonotic/xonotic/-/wikis/Automatic-map-downloads) for more infos about Custom Map Hosting
 
 ## Start parameters
