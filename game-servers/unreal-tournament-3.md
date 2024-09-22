@@ -31,7 +31,11 @@ All servers require a **unique** login to allow a server to show on the [OpenSpy
 
 <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
+## How to fix the Unreal Tournament 3 Game Client
 
+Download the OpenSpy Patch to get the server browser working.
+
+[https://ut3-ultimate.com/playing-ut3/](https://ut3-ultimate.com/playing-ut3/)
 
 ## **Game Types**
 
