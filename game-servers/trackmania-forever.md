@@ -25,7 +25,7 @@ For LAN Hosting a server login isn't required!
 
 ## Startparameters
 
-Startparameters overrise Settings in the configuration of `dedicated_cfg`
+Startparameters override Settings in the configuration of `dedicated_cfg`
 
 | Startparameter | Function
 |--|--|
