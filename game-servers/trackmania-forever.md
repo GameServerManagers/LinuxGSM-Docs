@@ -153,13 +153,13 @@ The First Block setup the match settings like gamemode, timelimit etc.
 | allwarmupduration | Specify how many rounds warmup is active before game begins |
 | disablerespawn | Disable / Enable respawn  |
 | forceshowallopponents | Forcing players to see all opponents |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
+| rounds_pointslimit | Point Limit in Rounds Gamemode |
+| rounds_usenewrules | `0`= First on the round gets 10 points, the second 6 etc, `1`= First on the round gets one point and the others nothing |
+| rounds_forcedlaps | Force the number of laps in roundmode |
+| rounds_pointslimitnewrules | Point Limit if `rounds_usenewrules=1` |
+| team_pointslimit | Point Limit in Team Gamemode |
+| team_maxpoints | Defines how many points a team is able to win max. in a round |
+| team_usenewrules | `0`= The Players get points  |
 |  |  |
 |  |  |
 |  |  |
@@ -289,7 +289,8 @@ Can be tested on http://dedimania.net/deditest
 ## Source
 
 More Information about Serverhosting can be aquired on https://server.xaseco.org/ 
-More Information about Server configuration can be aquired on https://web.archive.org/web/20221208093059/https://www.tm-forum.com/viewtopic.php?t=14203 and https://www.gamers.org/tmf/docs/readme_dedicated.html
+More Information about Server configuration can be aquired on https://web.archive.org/web/20221208093059/https://www.tm-forum.com/viewtopic.php?t=14203 and https://www.gamers.org/tmf/docs/readme_dedicated.html and https://web.archive.org/web/20150318151253/https://wiki.maniaplanet.com/en/Dedicated_servers
+
 
 ## Game Modes
 
