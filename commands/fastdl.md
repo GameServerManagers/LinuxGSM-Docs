@@ -11,6 +11,7 @@ LinuxGSM FastDL automatically creates the web directories and compresses the con
 ## Supported Servers
 
 * All Source engine servers
+* HLDM Servers
 
 ## Commands
 
@@ -110,6 +111,8 @@ If the custom server content is updated or removed re running the fastdl command
 ### Bzip2 Compression
 
 Custom server content can be compressed using bzip2 which is supported by source games, allowing clients downloads will be faster. It is a must-have if you're hosting large files, as it will save you bandwidth, and speed up downloads for clients. However, using bzip2 on many small files can slow down client loading times.
+
+HLDM does not support bzip2 compression.
 
 #### Garry's Mod Download enforcer
 
