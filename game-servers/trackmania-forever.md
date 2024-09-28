@@ -9,7 +9,7 @@
 
 ## Online Hosting Requirements
 
-Hosting an Internet accessable Online Server requieres a login to the master server. It can't be your game login and every server needs an unique account. 
+Hosting an Internet accessable Online Server requires a login to the master server. It can't be your game login and every server needs an unique account. 
 
 For LAN Hosting a server login isn't required!
 
