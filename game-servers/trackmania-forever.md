@@ -28,7 +28,7 @@ For LAN Hosting a server login isn't required!
 
 Startparameters override Settings in the configuration of `dedicated_cfg`
 
-| Startparameter | Function
+| Startparameter | Function |
 |--|--|
 | dedicated_cfg=xxx | Specifies the name of the dedicated configuration |
 | game_settings=xxx | Specifies the name of game settings configuration |
@@ -137,7 +137,36 @@ Example:
 
 ### Game Settings
 
-Example:
+#### Tip for easier generation of Game Settings
+
+The Game Settings can be generated ingame as well. To do this Create a Server ingame and after setting everything up, press `save match settings` button. The file will then be saved in `(PATH)\GameData\Tracks\MatchSettings`
+
+#### First Block
+
+The First Block setup the match settings like gamemode, timelimit etc.
+
+| Parameter | Description |
+|--|--|
+| game_mode | Specify the played Game Mode |
+| chat_time | Specify in milliseconds how long chat is available after finishing the map |
+| finishtimeout | Specify in milliseconds how much time is left after first player finish the round. (use `0` for classic and `1` for adaptive. `1` is default) |
+| allwarmupduration | Specify how many rounds warmup is active before game begins |
+| disablerespawn | Disable / Enable respawn  |
+| forceshowallopponents | Forcing players to see all opponents |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+
+
+
+#### Example of Game Settings
 
 ```
 <?xml version="1.0" encoding="utf-8" ?>
