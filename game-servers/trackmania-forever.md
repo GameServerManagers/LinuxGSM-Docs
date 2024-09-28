@@ -3,13 +3,14 @@
 
 ## Ports
 
-- Game Port Default: 2350 UDP
+- Game Port Default: 2350 TCP & UDP
 - P2P Port for downloading Custom Maps / Files: 3450 TCP
 - XMLRPC Port: 5000 TCP
 
 ## Online Hosting Requirements
 
-Hosting an Internet accessable Online Server requires a login to the master server. It can't be your game login and every server needs an unique account. 
+- Hosting an Internet accessable Online Server requires a login to the master server. It can't be your game login and every server needs an unique account.
+- The Hosting Server needs to be enabled of accessing `http://game.trackmaniaforever.com/online_game/request.php`
 
 For LAN Hosting a server login isn't required!
 
@@ -54,6 +55,10 @@ Source of parameters: https://web.archive.org/web/20221003213817/https://www.tm-
 ## Configuration
 
 Configuration happens on two `.txt` files which are formatted in XML, name can be anything you like. The dedicated configuration needs to be located in `GameData/Config/` and game settings in `GameData/Tracks/`. 
+
+### Trackmania Nations Forever Config Requirement
+
+For having on the Free Version your server visible in the gamebrowser, you have to make sure that `<packmask>stadium</packmask>` is set on the Dedicated Server Configuration in `<dedicated><system_config>`
 
 ### Dedicated Server Configuration
 
