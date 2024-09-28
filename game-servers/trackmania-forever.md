@@ -259,8 +259,17 @@ Can be tested on http://dedimania.net/deditest
 
 ## Source
 
-More Information about Serverhosting can be aquired on https://server.xaseco.org/
+More Information about Serverhosting can be aquired on https://server.xaseco.org/ 
+More Information about Server configuration can be aquired on https://web.archive.org/web/20221208093059/https://www.tm-forum.com/viewtopic.php?t=14203 and https://www.gamers.org/tmf/docs/readme_dedicated.html
 
 ## Game Modes
 
-TBW
+The Gamemode will be configured in `<playlist><gameinfos><game_mode>` and can have the following Values:
+
+| Gametype | Servervalue | Description |
+|--|--|--|
+| Rounds | 0 | Players start all at the same time and receive points depending on the place they finished in this race. After everyone is finished the next race starts on the same map. Map will be changed after point limit is reached and ranked by the points they achieved. |
+| TimeAttack | 1 | Players wants to achieve the best round time. Therefore they got unlimited tries until the timelimit is reached. |
+| Team | 2 | Like in Rounds players start at the same time. Then points of all team members are calculated. The team with the most points wins the round. Map get changed after reaching Pointlimit. |
+| Laps | 3 | Like Formula 1 racing a fixed amount of laps that need to be run is set. First reaching the amount of laps wins the race. |
+| Stunts | 4 | Players goal is to make as much points with stunts as possible. Roundtime does not count here. |
