@@ -46,6 +46,7 @@
   * [Multi Theft Auto](game-servers/multi-theft-auto.md)
   * [Rust](game-servers/rust.md)
   * [Sven Co-op](game-servers/sven-co-op.md)
+  * [Trackmania Nations Forever / Trackmania United Forever](game-servers/trackmania-forever.md)
   * [TeamSpeak 3](game-servers/teamspeak-3.md)
   * [Unreal Tournament 99](game-servers/unreal-tournament-99.md)
   * [Unreal Tournament 2004](game-servers/unreal-tournament-2004.md)
