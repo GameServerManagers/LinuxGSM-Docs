@@ -159,7 +159,13 @@ The First Block setup the match settings like gamemode, timelimit etc.
 | rounds_pointslimitnewrules | Point Limit if `rounds_usenewrules=1` |
 | team_pointslimit | Point Limit in Team Gamemode |
 | team_maxpoints | Defines how many points a team is able to win max. in a round |
-| team_usenewrules | `0`= The Players get points  |
+| team_usenewrules | `0`= Teampoints are getting distributed depending of how many players where on the lead in one team. For Example: If Team A got players on place 1, 2 and 3, this means the team scores 3 points. `1`= Points are getting distributed to players regardless of teams. Example: If `maxpoints=6` then Place 1 gets 6 points, Place 2 gets 5 points etc. The Team with the most points get a point for the round |
+| team_pointslimitnewrules | Point Limit if `team_usenewrules=1`  |
+| timeattack_limit | Specify in milliseconds how much time players got to achieve the best roundtime |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
 |  |  |
 |  |  |
 |  |  |
