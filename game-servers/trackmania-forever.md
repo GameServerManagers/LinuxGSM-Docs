@@ -162,15 +162,25 @@ The First Block setup the match settings like gamemode, timelimit etc.
 | team_usenewrules | `0`= Teampoints are getting distributed depending of how many players where on the lead in one team. For Example: If Team A got players on place 1, 2 and 3, this means the team scores 3 points. `1`= Points are getting distributed to players regardless of teams. Example: If `maxpoints=6` then Place 1 gets 6 points, Place 2 gets 5 points etc. The Team with the most points get a point for the round |
 | team_pointslimitnewrules | Point Limit if `team_usenewrules=1`  |
 | timeattack_limit | Specify in milliseconds how much time players got to achieve the best roundtime |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
+| laps_nblaps | Specify the amount of laps played in Laps Mode |
+| laps_timelimit | Specify a Timelimit in milliseconds in Laps Gamemode  |
+| cup_pointslimit | Specify the pointlimit in Cups Mode |
+| cup_roundsperchallenge | Specify the amount of rounds per Challenge in Cups Mode |
+| cup_nbwinner | Specify the amount of winners in Cups Mode |
+| cup_warmupduration | Specify the amount of warmup rounds on Cups Mode |
 |  |  |
 
+#### Second Block
 
+The Second Block setup the filters, to make sure of the server is a LAN server, Internet server etc
+
+| Parameter | Description |
+|--|--|
+| is_lan | Specify that server is a LAN server |
+| is_internet | Specify that server is an Internet server |
+|  |  |
+|  |  |
+|  |  |
 
 #### Example of Game Settings
 
@@ -202,15 +212,10 @@ The First Block setup the match settings like gamemode, timelimit etc.
 		<cup_warmupduration>2</cup_warmupduration>
 	</gameinfos>
 
-	<hotseat>
-		<game_mode>0</game_mode>
-		<time_limit>300000</time_limit>
-		<rounds_count>5</rounds_count>
-	</hotseat>
 
 	<filter>
 		<is_lan>1</is_lan>
-		<is_internet>1</is_internet>
+		<is_internet>0</is_internet>
 		<is_solo>0</is_solo>
 		<is_hotseat>0</is_hotseat>
 		<sort_index>1000</sort_index>
