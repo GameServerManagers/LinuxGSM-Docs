@@ -168,7 +168,6 @@ The First Block setup the match settings like gamemode, timelimit etc.
 | cup_roundsperchallenge | Specify the amount of rounds per Challenge in Cups Mode |
 | cup_nbwinner | Specify the amount of winners in Cups Mode |
 | cup_warmupduration | Specify the amount of warmup rounds on Cups Mode |
-|  |  |
 
 #### Second Block
 
