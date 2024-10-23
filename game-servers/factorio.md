@@ -38,7 +38,7 @@ branch="1.1.87"
 One the branch changed, do not forget to update the server :
 
 ```bash
-./fctserver update
+./fctrserver update
 ```
 
 ### Game Server Config
