@@ -142,9 +142,13 @@ Error! App '232250' state is 0x626 after update job.
 
 {% file src="../.gitbook/assets/content_log_0x626.txt" %}
 
-### Error 0x6a6
+### Error 0x6A6
 
-Corrupt update files
+Corrupt update files.
+
+```
+Error! App '317670' state is 0x6A6 after update job.
+```
 
 |                    |                      |
 | ------------------ | -------------------- |
