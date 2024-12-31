@@ -1,0 +1,29 @@
+[2024-12-31 02:06:27] Client version: 1733269577
+[2024-12-31 02:06:27] Loaded 1 apps from install folder "/app/serverfiles/steamapps\appmanifest_*.acf".
+[2024-12-31 02:06:27] Triggered async write of Steam library folders configuration (1 libraries).
+[2024-12-31 02:06:28] AppID 317670 beta changed: public
+[2024-12-31 02:06:28] AppID 317670 config changed : added depots 317672,317673,317675
+[2024-12-31 02:06:28] AppID 317670 scheduler update : Priority First, not played for 197 seconds, update disabled for 0 seconds
+[2024-12-31 02:06:28] AppID 317670 state changed : Update Required,Update Queued,Update Started,
+[2024-12-31 02:06:28] AppID 317670 config changed : added depots 317672,317673,317675
+[2024-12-31 02:06:28] AppID 317670 state changed : Update Required,Update Queued,Update Running,Update Started,
+[2024-12-31 02:06:28] AppID 317670 update changed : Running Update,
+[2024-12-31 02:06:28] AppID 317670 update changed : Running Update,Reconfiguring,
+[2024-12-31 02:06:28] AppID 317670 update changed : Running Update,
+[2024-12-31 02:06:28] AppID 317670 update started : download 3256039680/3256039680, store 0/0, reuse 0/0, delta 0/0, stage 6193385453/6193385453
+[2024-12-31 02:06:28] AppID 317670 update changed : Running Update,Staging,
+[2024-12-31 02:06:28] AppID 317670 update changed : Running Update,
+[2024-12-31 02:06:28] AppID 317670 update changed : Running Update,Verifying,
+[2024-12-31 02:06:34] Verified 2049 MB in '/data/.local/share/Steam', clean bytes tally is now 2049 MB
+[2024-12-31 02:06:34] Triggered async write of Steam library folders configuration (1 libraries).
+[2024-12-31 02:06:34] AppID 317670 update changed : Running Update,
+[2024-12-31 02:06:34] AppID 317670 update changed : Running Update,Committing,
+[2024-12-31 02:06:34] AppID 317670 starting commit from "/app/serverfiles/steamapps/downloading/317670" to "/app/serverfiles" : 1841 updated, 0 moved, 0 deleted files
+[2024-12-31 02:06:34] Validation: missing file "nmrih\bin\game_shader_dx9_srv.so"
+[2024-12-31 02:06:34] Validation: missing file "nmrih\bin\server.so"
+[2024-12-31 02:06:34] Validation: missing file "nmrih\bin\server_srv.so"
+[2024-12-31 02:06:34] Validation: missing file "nmrih\bin\game_shader_dx9.so"
+[2024-12-31 02:06:34] Validation: missing file "nmrih\bin\client_srv.so"
+[2024-12-31 02:06:34] Validation: missing file "nmrih\bin\client.so"
+[2024-12-31 02:06:34] Validation: quick scan in "/app/serverfiles/steamapps/downloading/317670" found 6/6 mismatching files (0 seconds).
+[2024-12-31 02:06:35] AppID 317670 update canceled : Staged file validation failed (6 missing, 0 corrupt, 0 unreadable) (Missing update files)

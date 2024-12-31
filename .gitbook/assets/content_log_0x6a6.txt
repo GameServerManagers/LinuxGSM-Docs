@@ -1,0 +1,98 @@
+[2024-12-30 20:03:18] Client version: 1733269577
+[2024-12-30 20:03:18] Loaded 1 apps from install folder "/app/serverfiles/steamapps\appmanifest_*.acf".
+[2024-12-30 20:03:18] Triggered async write of Steam library folders configuration (1 libraries).
+[2024-12-30 20:03:20] AppID 317670 config changed : updated depots 317672,317673,317675
+[2024-12-30 20:03:20] AppID 317670 scheduler update : Priority First, not played for 46604718 seconds, update disabled for 0 seconds
+[2024-12-30 20:03:20] AppID 317670 state changed : Update Required,Fully Installed,Update Queued,Files Missing,Files Corrupt,Update Started,
+[2024-12-30 20:03:20] AppID 317670 config changed : updated depots 317672,317673,317675
+[2024-12-30 20:03:20] AppID 317670 state changed : Update Required,Fully Installed,Update Queued,Files Missing,Files Corrupt,Update Running,Update Started,
+[2024-12-30 20:03:20] AppID 317670 update changed : Running Update,
+[2024-12-30 20:03:20] AppID 317670 update changed : Running Update,Reconfiguring,
+[2024-12-30 20:03:20] AppID 317670 update changed : Running Update,
+[2024-12-30 20:03:20] Validation: read 165 files missing and 3 files corrupt for AppID 317670
+[2024-12-30 20:03:20] AppID 317670 update started : download 2343678944/2343678944, store 0/0, reuse 464884834/464884834, delta 10855252/10855252, stage 5169965817/5169965817 
+[2024-12-30 20:03:20] AppID 317670 update changed : Running Update,Staging,
+[2024-12-30 20:03:20] AppID 317670 update changed : Running Update,
+[2024-12-30 20:03:20] AppID 317670 update changed : Running Update,Verifying,
+[2024-12-30 20:03:21] Validation: corrupt chunk 4a72d719ad24c1d7113cbe78d51ad0d4f4ceaff5 has all zeros at offset 25874009 (1048576 bytes)
+[2024-12-30 20:03:21] Validation: corrupt chunk f4e7705eba63d2dbd973fc0cc9afb7b08aab0c4a has all zeros at offset 30068313 (1048576 bytes)
+[2024-12-30 20:03:21] Validation: corrupt chunk f8d4ec5406c5f30af238e06bcee7f3613754d84f has all zeros at offset 31116889 (45291 bytes)
+[2024-12-30 20:03:21] Validation: corrupt chunk 0f6c4dc128121a93f80b2621870f52c062c65c38 has all zeros at offset 32210756 (1048576 bytes)
+[2024-12-30 20:03:21] Validation: corrupt chunk a68770a97dd139d06284a9392a37745055f4b850 has all zeros at offset 33259332 (1048576 bytes)
+[2024-12-30 20:03:21] Validation: corrupt chunk 68eca40a16a3de3b91c5586480346fcf636120ea has all zeros at offset 35356484 (1048576 bytes)
+[2024-12-30 20:03:21] Validation: corrupt chunk 57009773edf46fe6edba33f69103d00dd0051528 has all zeros at offset 36405060 (1048576 bytes)
+[2024-12-30 20:03:21] Validation: corrupt chunk e6de88c45a342d88c477f4c0fcfd3434db65ca9a has all zeros at offset 75207831 (1048576 bytes)
+[2024-12-30 20:03:21] Validation: corrupt chunk e6de88c45a342d88c477f4c0fcfd3434db65ca9a has all zeros at offset 77305225 (1048576 bytes)
+[2024-12-30 20:03:21] Validation: corrupt chunk 099e95b4cca578c3517a567bc779d4981f10b425 has all zeros at offset 83597454 (1048576 bytes)
+[2024-12-30 20:03:21] Validation: corrupt chunk 099e95b4cca578c3517a567bc779d4981f10b425 has all zeros at offset 85694846 (1048576 bytes)
+[2024-12-30 20:03:22] Validation: corrupt chunk 34225705ffbb8b466856447a3fadc30eec200771 has all zeros at offset 182850540 (1048576 bytes)
+[2024-12-30 20:03:22] Validation: corrupt chunk 34225705ffbb8b466856447a3fadc30eec200771 has all zeros at offset 188358142 (1048576 bytes)
+[2024-12-30 20:03:22] Validation: corrupt chunk 02abe77a49fbf9dcf9631ed943af5e33950a151e has all zeros at offset 209516175 (1048576 bytes)
+[2024-12-30 20:03:22] Validation: 14 chunks corrupt of 228 total in file "nmrih\nmrih_000.vpk"
+[2024-12-30 20:03:22] Validation: corrupt chunk 6054efda64719801bf27f5ed8d82474617a98300 has all zeros at offset 2738777 (1048576 bytes)
+[2024-12-30 20:03:22] Validation: corrupt chunk eebee31ffe4bfaa69e10a9bf2402e52094e7b371 has all zeros at offset 123555111 (1048576 bytes)
+[2024-12-30 20:03:22] Validation: corrupt chunk eebee31ffe4bfaa69e10a9bf2402e52094e7b371 has all zeros at offset 182922955 (1048576 bytes)
+[2024-12-30 20:03:22] Validation: corrupt chunk 8b14731ccef9c593c8241fda41331c9705a412d8 has all zeros at offset 194457291 (1048576 bytes)
+[2024-12-30 20:03:22] Validation: corrupt chunk 8b14731ccef9c593c8241fda41331c9705a412d8 has all zeros at offset 196773275 (1048576 bytes)
+[2024-12-30 20:03:22] Validation: 5 chunks corrupt of 214 total in file "nmrih\nmrih_001.vpk"
+[2024-12-30 20:03:22] Validation: corrupt chunk 02abe77a49fbf9dcf9631ed943af5e33950a151e has all zeros at offset 23874788 (1048576 bytes)
+[2024-12-30 20:03:22] Validation: corrupt chunk 6054efda64719801bf27f5ed8d82474617a98300 has all zeros at offset 25971940 (1048576 bytes)
+[2024-12-30 20:03:23] Validation: 2 chunks corrupt of 217 total in file "nmrih\nmrih_002.vpk"
+[2024-12-30 20:03:24] Validation: corrupt chunk 6d82c6023acb55cbb2a18d1dfc654054b5a4ef95 has all zeros at offset 81064477 (1048576 bytes)
+[2024-12-30 20:03:24] Validation: corrupt chunk 6d82c6023acb55cbb2a18d1dfc654054b5a4ef95 has all zeros at offset 83861113 (1048576 bytes)
+[2024-12-30 20:03:24] Validation: corrupt chunk 7cf9b9100c56220a7a6d9fd6da076f733a77fba3 has all zeros at offset 170841759 (1048576 bytes)
+[2024-12-30 20:03:24] Validation: corrupt chunk 3a1e7b772301bc6bb8ca2d1584eca124bf50135b has all zeros at offset 199631060 (1048576 bytes)
+[2024-12-30 20:03:24] Validation: corrupt chunk 3a1e7b772301bc6bb8ca2d1584eca124bf50135b has all zeros at offset 201204704 (1048576 bytes)
+[2024-12-30 20:03:24] Validation: 5 chunks corrupt of 229 total in file "nmrih\nmrih_004.vpk"
+[2024-12-30 20:03:25] Validation: corrupt chunk 4a72d719ad24c1d7113cbe78d51ad0d4f4ceaff5 has all zeros at offset 179151041 (1048576 bytes)
+[2024-12-30 20:03:25] Validation: corrupt chunk f4e7705eba63d2dbd973fc0cc9afb7b08aab0c4a has all zeros at offset 190208990 (1048576 bytes)
+[2024-12-30 20:03:25] Validation: corrupt chunk f8d4ec5406c5f30af238e06bcee7f3613754d84f has all zeros at offset 191257566 (45291 bytes)
+[2024-12-30 20:03:25] Validation: 3 chunks corrupt of 220 total in file "nmrih\nmrih_005.vpk"
+[2024-12-30 20:03:25] Validation: corrupt chunk 0f6c4dc128121a93f80b2621870f52c062c65c38 has all zeros at offset 58519249 (1048576 bytes)
+[2024-12-30 20:03:25] Validation: corrupt chunk a68770a97dd139d06284a9392a37745055f4b850 has all zeros at offset 59567825 (1048576 bytes)
+[2024-12-30 20:03:25] Validation: corrupt chunk 68eca40a16a3de3b91c5586480346fcf636120ea has all zeros at offset 61664981 (1048576 bytes)
+[2024-12-30 20:03:25] Validation: corrupt chunk 57009773edf46fe6edba33f69103d00dd0051528 has all zeros at offset 62713557 (1048576 bytes)
+[2024-12-30 20:03:25] Validation: 4 chunks corrupt of 217 total in file "nmrih\nmrih_006.vpk"
+[2024-12-30 20:03:27] Validation: corrupt chunk 932f04c5ff2c874f39162f51d783a87ded908bfa has all zeros at offset 170529569 (1048576 bytes)
+[2024-12-30 20:03:28] Validation: corrupt chunk 932f04c5ff2c874f39162f51d783a87ded908bfa has all zeros at offset 173025857 (1048576 bytes)
+[2024-12-30 20:03:28] Validation: 2 chunks corrupt of 214 total in file "nmrih\nmrih_010.vpk"
+[2024-12-30 20:03:28] Validation: corrupt chunk 7cf9b9100c56220a7a6d9fd6da076f733a77fba3 has all zeros at offset 115258856 (1048576 bytes)
+[2024-12-30 20:03:28] Validation: corrupt chunk f9c83bbb240f823c0f3e576b195d5b6a035db6c0 has all zeros at offset 119735342 (1048576 bytes)
+[2024-12-30 20:03:28] Validation: corrupt chunk 7cf9b9100c56220a7a6d9fd6da076f733a77fba3 has all zeros at offset 131618935 (1048576 bytes)
+[2024-12-30 20:03:28] Validation: 3 chunks corrupt of 223 total in file "nmrih\nmrih_011.vpk"
+[2024-12-30 20:03:28] Validation: corrupt chunk f9c83bbb240f823c0f3e576b195d5b6a035db6c0 has all zeros at offset 9822025 (1048576 bytes)
+[2024-12-30 20:03:28] Validation: corrupt chunk e886e5e0b9038272d764b0b575b2291d28f39b9a has all zeros at offset 54981674 (1048576 bytes)
+[2024-12-30 20:03:28] Validation: corrupt chunk e886e5e0b9038272d764b0b575b2291d28f39b9a has all zeros at offset 56030250 (1048576 bytes)
+[2024-12-30 20:03:29] Validation: 3 chunks corrupt of 215 total in file "nmrih\nmrih_012.vpk"
+[2024-12-30 20:03:29] Validation: corrupt chunk 5a53594ccfb83996559802b10884cc40e0d8a24d has all zeros at offset 25172846 (1048576 bytes)
+[2024-12-30 20:03:29] Validation: corrupt chunk 5a53594ccfb83996559802b10884cc40e0d8a24d has all zeros at offset 26221422 (1048576 bytes)
+[2024-12-30 20:03:29] Validation: 2 chunks corrupt of 211 total in file "nmrih\nmrih_013.vpk"
+[2024-12-30 20:03:32] Validation: corrupt chunk cfc02d77e14b2ed55b16e6cfee3c454d6acb87a6 has all zeros at offset 203510127 (1048576 bytes)
+[2024-12-30 20:03:32] Validation: 1 chunks corrupt of 213 total in file "nmrih\nmrih_018.vpk"
+[2024-12-30 20:03:32] Validation: corrupt chunk cfc02d77e14b2ed55b16e6cfee3c454d6acb87a6 has all zeros at offset 111226631 (1048576 bytes)
+[2024-12-30 20:03:33] Validation: 1 chunks corrupt of 210 total in file "nmrih\nmrih_019.vpk"
+[2024-12-30 20:03:33] Validation: corrupt chunk c0ff09675ad99e4ccddd5a87a2fd64284c682f79 has all zeros at offset 96739664 (1048576 bytes)
+[2024-12-30 20:03:33] Validation: corrupt chunk 886a4485d6ec5941cded13311df870da4a1f7553 has all zeros at offset 160099900 (1048576 bytes)
+[2024-12-30 20:03:33] Validation: corrupt chunk 886a4485d6ec5941cded13311df870da4a1f7553 has all zeros at offset 162180380 (1048576 bytes)
+[2024-12-30 20:03:33] Validation: 3 chunks corrupt of 214 total in file "nmrih\nmrih_020.vpk"
+[2024-12-30 20:03:33] Validation: corrupt chunk c0ff09675ad99e4ccddd5a87a2fd64284c682f79 has all zeros at offset 15774746 (1048576 bytes)
+[2024-12-30 20:03:33] Validation: corrupt chunk d7a9c559b0ff34a473acb8527ae9a156932f2b8c has all zeros at offset 27288478 (1048576 bytes)
+[2024-12-30 20:03:33] Validation: corrupt chunk d7a9c559b0ff34a473acb8527ae9a156932f2b8c has all zeros at offset 111871502 (1048576 bytes)
+[2024-12-30 20:03:34] Validation: 3 chunks corrupt of 212 total in file "nmrih\nmrih_021.vpk"
+[2024-12-30 20:03:34] Validation: full scan in "/app/serverfiles/steamapps/downloading/317670" found 14/132 mismatching files (51.47 MB/5.10 GB) in 13 seconds).
+[2024-12-30 20:03:34] Validation: missing file "nmrih\bin\game_shader_dx9_srv.so"
+[2024-12-30 20:03:34] Validation: missing file "nmrih\bin\server.so"
+[2024-12-30 20:03:34] Validation: missing file "nmrih\bin\server_srv.so"
+[2024-12-30 20:03:34] Validation: missing file "nmrih\bin\game_shader_dx9.so"
+[2024-12-30 20:03:34] Validation: missing file "nmrih\bin\client_srv.so"
+[2024-12-30 20:03:34] Validation: missing file "nmrih\bin\client.so"
+[2024-12-30 20:03:34] Validation: full scan in "/app/serverfiles/steamapps/downloading/317670" found 6/6 mismatching files (65.21 MB/65.21 MB) in 0 seconds).
+[2024-12-30 20:03:34] AppID 317670 update canceled : Staged file validation failed (0 missing, 14 corrupt, 0 unreadable) (Corrupt update files)
+[2024-12-30 20:03:34] AppID 317670 update changed : Running Update,Verifying,Stopping,
+[2024-12-30 20:03:34] Corruption detected in '/data/.local/share/Steam', clean bytes tally reset to 0
+[2024-12-30 20:03:34] Triggered async write of Steam library folders configuration (1 libraries).
+[2024-12-30 20:03:34] AppID 317670 update changed : Running Update,Stopping,
+[2024-12-30 20:03:34] AppID 317670 update changed : None
+[2024-12-30 20:03:34] AppID 317670 state changed : Update Required,Fully Installed,Update Queued,Files Missing,Files Corrupt,Update Started, (Corrupt update files)
+[2024-12-30 20:03:34] AppID 317670 state changed : Update Required,Fully Installed,Files Missing,Files Corrupt,Update Paused,Update Started,
+[2024-12-30 20:03:34] AppID 317670 scheduler finished : removed from schedule (result Corrupt update files, state 0x6a6) 

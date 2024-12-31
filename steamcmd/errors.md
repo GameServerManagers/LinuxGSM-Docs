@@ -6,15 +6,15 @@ description: Common
 
 ## SteamCMD
 
-SteamCMD can sometimes output errors when something goes wrong. Sadly Valve has never released an official list of what the error messages mean. Because of this, a lot of guesswork has been needed to figure it out. This page will highlight what we already know and info on researching what the error might mean in the hope that you can contribute to understanding SteamCMD errors.
+SteamCMD can sometimes output errors when something goes wrong. Sadly, Valve has never released an official list of what the error messages mean. Because of this, a lot of guesswork has been needed to figure it out. This page will highlight what we already know and info on researching what the error might mean in the hope that you can contribute to understanding SteamCMD errors.
 
-SteamCMD uses hexadecimal numbers to give its current "state". Every time SteamCMD does something it changes its state. When SteamCMD fails it will output its has hexadecimal state, for example `0x202`.
+SteamCMD uses hexadecimal numbers to give its current "state". Every time SteamCMD does something, it changes its state. When SteamCMD fails, it will output its hexadecimal state, for example `0x202`.
 
 ## Codes
 
 ### Error 0x10E
 
-Seems to affect HLDS based servers. Running again often fixes the issue
+Seems to affect HLDS based servers. Running again often fixes the issue.
 
 ```
 Error! App '90' state is 0x10E after update job.
@@ -108,9 +108,7 @@ Error! State is 0x602 after update job.
 | Hex                | 0x602 |
 | Decimal/StateFlags | 1538  |
 
-{% hint style="warning" %}
-Missing content\_log.txt if you have experienced this error and have a log please let us know.
-{% endhint %}
+{% file src="../.gitbook/assets/content_log_0x602 (1).txt" %}
 
 ### Error 0x606
 
@@ -136,8 +134,6 @@ Missing update files
 Error! App '232250' state is 0x626 after update job.
 ```
 
-
-
 |                    |                      |
 | ------------------ | -------------------- |
 | Reason             | Missing update files |
@@ -146,7 +142,17 @@ Error! App '232250' state is 0x626 after update job.
 
 {% file src="../.gitbook/assets/content_log_0x626.txt" %}
 
+### Error 0x6a6
 
+Corrupt update files
+
+|                    |                      |
+| ------------------ | -------------------- |
+| Reason             | Corrupt update files |
+| Hex                | 0x6a6                |
+| Decimal/StateFlags |                      |
+
+{% file src="../.gitbook/assets/content_log_0x6a6.txt" %}
 
 ### Error 0x2
 
