@@ -39,12 +39,12 @@ startparameters="-client -connect=${ip}:${port} -password=CHANGEME"
 Edit the game server config of `arma3server` (not the headless client) `arma3server.server.cfg` and add the headless client IP address to `headlessClients[]=`. If the headless client is on the same physical server as the ARMA 3 server then also add the IP to `localClient[]=`.
 
 {% hint style="warning" %}
-Do not use 127.0.0.1 as the IP address.
+127.0.0.1 is the acceptable IP address when HC is started on the same machine as the main server.
 {% endhint %}
 
 ```
-headlessClients[]={"1.2.3.4"}; 
-localClient[]={"1.2.3.4"};
+headlessClients[]={"127.0.0.1"}; 
+localClient[]={"127.0.0.1"};
 ```
 
 Navigate to your profile directory.
