@@ -18,6 +18,10 @@ For LAN Hosting a server login isn't required!
 
 - Start your gameclient and create an account there
 
+#### Signup Issues on GameClient
+
+It is possible that you get an error when you create your Gameaccount! The Issue is, like for the Trackmania United Forever Server Account, the old TLS Version that TMNF is using. Like descriped on [Reddit](https://www.reddit.com/r/TrackMania/comments/rblp1v/comment/ho4l2wv/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button) you have to enable TLS 1.0 on your Windows on "Internet Options" --> Advanced --> Security
+
 ### Trackmania United Forever Server Account
 
 - Login with your gaming credentials at http://official.trackmania.com/tmf-playerpage/ (either use http or setup your browser to support older https protocols)
@@ -177,9 +181,6 @@ The Second Block setup the filters, to make sure of the server is a LAN server, 
 |--|--|
 | is_lan | Specify that server is a LAN server |
 | is_internet | Specify that server is an Internet server |
-|  |  |
-|  |  |
-|  |  |
 
 #### Example of Game Settings
 
