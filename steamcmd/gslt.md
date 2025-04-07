@@ -10,6 +10,7 @@ Game Server Login Token is a new system by Valve for managing game servers.
 * Blade Symphony (**required**)
 * Counter-Strike: Global Offensive (**required**)
 * Counter-Strike: Source (**required**)
+* Counter-Strike 2 (**required**)
 * Day of Defeat: Source
 * Empires Mod
 * Garry’s Mod (**required**)
@@ -24,15 +25,15 @@ Game Server Login Token is a new system by Valve for managing game servers.
 
 ## What is GSLT?
 
-GSLT creates a persistent token for a game server. This allows any users who added your server to favorites to join, even if you change your ip address. This is very useful if you change your server/hosting provider.
+GSLT creates a persistent token for a game server. This allows any users who added your server to favourites to join, even if you change your ip address. This is very useful if you change your server/hosting provider.
 
 To fully understand the reasoning behind GSLT, we need to back up a bit to July 2015. [Valve announced that running certain plugins would get your server blacklisted](http://dathost.net/blog/important-information-regarding-our-csgo-servers/), meaning it could not connect to the master servers and people wouldn’t be able to connect to the server.
 
 This created a lot of problems for game server providers, large communities, and anyone providing configurable servers to third parties, as bans were handed out by IP, meaning that an entire machine could be banned because of one malicious or uninformed user.
 
-To address this, Valve is moving the ban at the account level instead of the IP address level, which means that the end-user is always responsible for what they run on their server. Of course, game server providers and the like still have a responsibility to educate their users on these policies, as some might mistakenly upload blacklisted plugins.
+To address this, Valve is moving the ban to the account level instead of the IP address level, which means that the end-user is always responsible for what they run on their server. Of course, game server providers and the like still have a responsibility to educate their users on these policies, as some might mistakenly upload blacklisted plugins.
 
-An added benefit is that people who add your server to favorite will still be able to find and connect to your server, even if you change hosting provider and/or the IP / port of your server. This is something that previously was impossible.
+An added benefit is that people who add your server to favourite will still be able to find and connect to your server, even if you change hosting provider and/or the IP / port of your server. This is something that previously was impossible.
 
 ## Generate a Token
 
@@ -48,13 +49,17 @@ Every single server must use a unique GSLT.
 
 ## GSLT Server Parameter
 
-GSLT can be registered on your server(s) by using the `sv_setsteamaccount` command either in [_autoexec.cfg_](../configuration/game-server-config.md) or from a [_start parameter_](../configuration/start-parameters.md).
+GSLT can be registered on your server(s) by using the `sv_setsteamaccount` command either in [_game server config_](../configuration/game-server-config.md) or from a [_start parameter_](../configuration/start-parameters.md).
 
 start parameter
 
+{% hint style="info" %}
+&#x20;LinuxGSM may provide the variable `gslt=` that gets added to the start parameter.
+{% endhint %}
+
 `+sv_setsteamaccount [token]`
 
-autoexec.cfg
+game server config
 
 `sv_setsteamaccount [token]`
 
@@ -68,7 +73,7 @@ Tower Unite has a command within its [config file](../configuration/game-server-
 
 ### If one of my tokens is banned/blacklisted, will all tokens be banned?
 
-Yes, all of the tokens on your account will be blacklisted if one of your servers are found to be running a blacklisted plugin. Make sure you read up on Valve’s plugin policies before running a game server so nothing unfortunate happens to your tokens.
+Yes, all the tokens on your account will be blacklisted if one of your servers are found to be running a blacklisted plugin. Make sure you read up on Valve’s plugin policies before running a game server so nothing unfortunate happens to your tokens.
 
 ### If my GSLT gets banned for running a blacklisted plugin, will my steam account be community and/or VAC banned?
 
@@ -86,7 +91,7 @@ Yes, you can add your GSLT to a new server, you just can’t run two servers wit
 
 Unfortunately, despite registering a GSLT to your server, CS:GO servers will still need a Steam WebAPI key to host maps from the Workshop.
 
-As of yet, no official confirmation has been made that TF2 servers will also require GSLTs, but they do support them so it’s not a wild guess that this is to come.
+As of yet, no official confirmation has been made that TF2 servers will also require GSLTs, but they do support them, so it’s not a wild guess that this is to come.
 
 ### My server loses connection to the registered Steam account
 
@@ -100,4 +105,4 @@ Yes, you can have a maximum of 1000 GSLTs on your account.
 
 Your Steam account must not be currently community-banned or locked. Your Steam account must not be limited. Your Steam account must have a qualifying registered phone. Your Steam account must own the game for which you are creating a GSLT. Your Steam account may not have more than 1000 tokens.
 
-For further information see this useful blog post: [http://dathost.net/blog/important-information-regarding-our-csgo-servers/](http://dathost.net/blog/important-information-regarding-our-csgo-servers/)
+For further information, see this useful blog post: [http://dathost.net/blog/important-information-regarding-our-csgo-servers/](http://dathost.net/blog/important-information-regarding-our-csgo-servers/)
