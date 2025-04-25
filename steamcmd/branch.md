@@ -32,3 +32,6 @@ Some branches require a password. This can be done by entering a password in the
 betapassword="branchpassword"
 ```
 
+## Install Branch
+
+After selecting the Branch, you'll need to [update](../commands/update.md) your server, to install the new Branch
