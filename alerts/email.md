@@ -17,7 +17,7 @@ Sending mail directly from a home/VPS IP is likely to be flagged as spam. Relayi
 | Provider | Free tier | Notes |
 |---|---|---|
 | [SMTP2GO](https://www.smtp2go.com/) | 1,000 emails/month | Permanently free, plain SMTP credentials, no card required |
-| [Brevo](https://www.brevo.com/) | 300 emails/day | Permanently free, plain SMTP credentials; adds branding to emails on the free tier |
+| [Mailjet](https://www.mailjet.com/) | 6,000 emails/month (200/day) | Permanently free, plain SMTP relay credentials, no card required |
 | [MailerSend](https://www.mailersend.com/) | 3,000 emails/month | Permanently free, SMTP + API, no branding on free tier |
 | [Mailgun](https://www.mailgun.com/) | 100 emails/day | Permanently free (no longer a time-limited trial); requires domain verification |
 
