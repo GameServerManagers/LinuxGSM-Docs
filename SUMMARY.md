@@ -62,6 +62,7 @@
   * [Discord](alerts/discord.md)
   * [Email](alerts/email.md)
   * [IFTTT](alerts/ifttt.md)
+  * [Matrix](alerts/matrix.md)
   * [Pushbullet](alerts/pushbullet.md)
   * [Pushover](alerts/pushover.md)
   * [Rocket.Chat](alerts/rocket.chat.md)
