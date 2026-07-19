@@ -14,12 +14,12 @@ If you only need to relay outbound alert emails through an external SMTP provide
 
 Sending mail directly from a home/VPS IP is likely to be flagged as spam. Relaying through a dedicated email provider improves deliverability, and several offer a free tier suitable for the low volume of alert emails LinuxGSM sends:
 
-| Provider | Free tier | Notes |
-|---|---|---|
-| [SMTP2GO](https://www.smtp2go.com/) | 1,000 emails/month | Permanently free, plain SMTP credentials, no card required |
-| [Mailjet](https://www.mailjet.com/) | 6,000 emails/month (200/day) | Permanently free, plain SMTP relay credentials, no card required |
-| [MailerSend](https://www.mailersend.com/) | 3,000 emails/month | Permanently free, SMTP + API, no branding on free tier |
-| [Mailgun](https://www.mailgun.com/) | 100 emails/day | Permanently free (no longer a time-limited trial); requires domain verification |
+| Provider | Free tier |
+|---|---|
+| [SMTP2GO](https://www.smtp2go.com/) | 1,000 emails/month |
+| [Mailjet](https://www.mailjet.com/) | 6,000 emails/month (200/day) |
+| [MailerSend](https://www.mailersend.com/) | 3,000 emails/month |
+| [Mailgun](https://www.mailgun.com/) | 100 emails/day |
 
 Any of these can be used as the smarthost for Postfix or nullmailer — see the provider's SMTP relay setup docs for the exact Postfix/nullmailer configuration.
 
