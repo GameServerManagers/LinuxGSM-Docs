@@ -23,10 +23,6 @@ Sending mail directly from a home/VPS IP is likely to be flagged as spam. Relayi
 
 Any of these can be used as the smarthost for Postfix or nullmailer — see the provider's SMTP relay setup docs for the exact Postfix/nullmailer configuration.
 
-{% hint style="info" %}
-Cloudflare added SMTP-based [Email Service](https://developers.cloudflare.com/email-service/) sending in 2026, but it currently requires a paid Workers plan for outbound sending, so it isn't a free option unless you already pay for Workers.
-{% endhint %}
-
 ## Enable Email alerts
 
 To enable email alerts you will need to add an email address to the [LinuxGSM config](../configuration/linuxgsm-config.md).
