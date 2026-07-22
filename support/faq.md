@@ -141,6 +141,26 @@ Find and edit the following line and change it to the IP address you want to use
 ip="0.0.0.0"
 ```
 
+## WARNING: setlocale('en\_US.UTF-8') failed, using locale: 'C'
+
+```
+WARNING: setlocale('en_US.UTF-8') failed, using locale: 'C'. International characters may not work.
+```
+
+SteamCMD expects the `en_US.UTF-8` locale to be installed and generated on your system. If it isn't, SteamCMD falls back to the `C` locale and warns about it on every run. This is a system locale issue, not a LinuxGSM bug, but the fix is quick.
+
+On Debian/Ubuntu, generate the locale with:
+
+```
+dpkg-reconfigure locales
+```
+
+Select (or enable) `en_US.UTF-8 UTF-8` from the list, then let it regenerate.
+
+On other distros, use the equivalent locale tool, for example `locale-gen en_US.UTF-8` followed by `update-locale`.
+
+If you are already using a different UTF-8 locale (for example `hu_HU.UTF-8`), the warning still appears because SteamCMD specifically looks for `en_US.UTF-8`. You need to have it installed alongside your preferred locale.
+
 ## version \`GLIBC\_2.15′ not found
 
 ```
