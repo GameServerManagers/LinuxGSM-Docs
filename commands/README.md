@@ -18,6 +18,7 @@ Replace `./gameserver` with the actual script name. Every command has a short ve
 | [Update LinuxGSM](update-lgsm.md)                    | `./gameserver update-lgsm`  | `./gameserver ul` |
 | [Monitor](monitor.md)                                | `./gameserver monitor`      | `./gameserver m`  |
 | [Test Alert](test-alert.md)                          | `./gameserver test-alert`   | `./gameserver ta` |
+| [Custom Alert](custom-alert.md)                      | `./gameserver custom-alert` | `./gameserver ca` |
 | [Update](update.md)                                  | `./gameserver update`       | `./gameserver u`  |
 | [Check Update](check-update.md)                      | `./gameserver check-update` | `./gameserver cu` |
 | [Force Update](force-update.md)                      | `./gameserver force-update` | `./gameserver fu` |
@@ -40,8 +41,6 @@ Replace `./gameserver` with the actual script name. Every command has a short ve
 | [Map Compressor](map-compressor.md) | `./gameserver map-compressor` | `./gameserver mc` |
 
 ### Rust&#x20;
-
-
 
 | Command Name                        | Command                  | Short             |
 | ----------------------------------- | ------------------------ | ----------------- |
