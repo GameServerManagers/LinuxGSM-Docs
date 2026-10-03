@@ -45,6 +45,13 @@ Zip add-ons are currently the only supported installations.
 * Metamod: Source
 * SourceMod
 
+### Counter-Strike 2 \(v26.3.0+\)
+
+* Metamod:Source 2.0
+* CounterStrikeSharp \(requires Metamod:Source 2.0\)
+
+See [Counter-Strike 2](../game-servers/counter-strike-2.md#mods) for CS2-specific notes.
+
 #### For Garry's Mod
 
 * ACF
