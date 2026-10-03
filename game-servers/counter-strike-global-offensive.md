@@ -9,6 +9,51 @@
 * [CS:GO Server Known Issues Wiki](https://developer.valvesoftware.com/wiki/CSGO\_Game\_Mode\_Commands)
 * [CS:GO Game Modes](https://developer.valvesoftware.com/wiki/CS:GO\_Game\_Modes)
 
+## Client App ID
+
+Since March 2026, CS:GO has been available on Steam as a standalone game (App ID `4465480`), separate from Counter-Strike 2 (App ID `730`). From v26.3.0, csgoserver has two App ID settings:
+
+| Setting       | Default   | What it does                                                                                                         |
+| ------------- | --------- | -------------------------------------------------------------------------------------------------------------------- |
+| `appid`       | `740`     | The App ID SteamCMD downloads the dedicated server files from. Do not change.                                        |
+| `clientappid` | `4465480` | The App ID the server advertises to players. Only clients of this App ID can connect, and your GSLT must be created for it. |
+
+Choose `clientappid` based on which players you want to connect:
+
+| Players using                      | `clientappid`       | Create the GSLT for |
+| ---------------------------------- | ------------------- | ------------------- |
+| Standalone CS:GO                   | `4465480` (default) | `4465480`           |
+| Counter-Strike 2 `csgo_legacy` beta | `730`               | `730`               |
+
+To change it, set it in your instance config, for example `lgsm/config-lgsm/csgoserver/csgoserver.cfg`:
+
+```bash
+clientappid="730"
+```
+
+A server advertises one App ID, so it serves one of these client types at a time. To serve both, run two separate installs: instances that share the same `serverfiles` would overwrite each other's `steam_appid.txt`.
+
+LinuxGSM writes `clientappid` to `serverfiles/steam_appid.txt` and `serverfiles/csgo/steam.inf` before every start, because SteamCMD updates can revert them. Set `clientappid=""` if you want to manage these files yourself.
+
+### NoLobbyReservation
+
+Standalone CS:GO clients can only connect when the NoLobbyReservation SourceMod plugin is loaded. Install Metamod:Source, SourceMod and then NoLobbyReservation with the [mods commands](../commands/mods.md):
+
+```
+./csgoserver mods-install
+```
+
+NoLobbyReservation is only published as source code, so LinuxGSM compiles it with the SourceMod compiler during install.
+
+### Upgrading from an earlier LinuxGSM version
+
+{% hint style="warning" %}
+After `update-lgsm`, existing CS:GO servers switch from App ID `730` to `4465480` the next time they start.
+
+* **If your players use standalone CS:GO:** create a new GSLT for App ID `4465480`, set it as `gslt`, and install NoLobbyReservation.
+* **If your players use the CS2 `csgo_legacy` branch:** set `clientappid="730"` in your instance config to keep the old behaviour. Your existing GSLT stays valid.
+{% endhint %}
+
 ## **Game Modes**
 
 CS:GO features various game modes, which can be played on your server. To make setting up your server a bit easier, the following table sums up the configuration required in your server's [LinuxGSM config](../configuration/linuxgsm-config.md) for the various game modes. If you want more detailed and up-to-date information, take a look at Valve's wiki: [CS:GO Game Modes](https://developer.valvesoftware.com/wiki/CS:GO\_Game\_Modes). Up-to-date information about mapgroups can be found in the file `serverfiles/csgo/gamemodes.txt`.

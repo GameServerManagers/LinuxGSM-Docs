@@ -40,7 +40,7 @@ An added benefit is that people who add your server to favourite will still be a
 To generate a token follow this [link](http://steamcommunity.com/dev/managegameservers).
 
 {% hint style="info" %}
-GSLT requires the app ID of the base game (e.g. 440 for TF2, 730 for CS:GO, 4000 for Garry's Mod) when generating a token, not the server appid
+GSLT requires the app ID of the base game (e.g. 440 for TF2, 730 for CS2, 4000 for Garry's Mod) when generating a token, not the server appid. For CS:GO, use the App ID set in `clientappid`: 4465480 for standalone CS:GO or 730 for the CS2 `csgo_legacy` branch. See [Client App ID](../game-servers/counter-strike-global-offensive.md#client-app-id).
 {% endhint %}
 
 {% hint style="info" %}
