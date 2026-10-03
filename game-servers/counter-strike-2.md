@@ -59,3 +59,20 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=3075706807
 ### Auth Key
 
 If you are using a collection you will need to get an auth key from [here](https://steamcommunity.com/dev/apikey).
+
+## Mods
+
+LinuxGSM can install, update and remove the following CS2 mods using the [mods commands](../commands/mods.md) (v26.3.0+):
+
+* **Metamod:Source 2.0**: plugin framework (development build, the only version that supports CS2).
+* **CounterStrikeSharp**: write server plugins in C#. Requires Metamod:Source 2.0 to be installed first.
+
+```
+./cs2server mods-install
+```
+
+Metamod:Source needs a `Game csgo/addons/metamod` search path in `game/csgo/gameinfo.gi`. LinuxGSM adds this line when Metamod:Source 2.0 is installed and removes it when it is uninstalled.
+
+{% hint style="warning" %}
+CS2 game updates replace `gameinfo.gi`, which removes the Metamod:Source search path, so Metamod and its plugins stop loading. After a game update, run `./cs2server mods-update` to update Metamod:Source to a build that supports the new CS2 version and restore the search path.
+{% endhint %}
