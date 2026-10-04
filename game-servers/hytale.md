@@ -3,7 +3,7 @@
 ## Requirements
 
 * A **Hytale account that owns the game**. It's needed even to download the dedicated server, and for the server itself to run.
-* Java 25 (`openjdk-25-jre`). LinuxGSM installs it as a dependency.
+* Java 25 (`openjdk-25-jre` on Debian/Ubuntu, `java-25-openjdk` on RHEL-based distros). LinuxGSM installs it as a dependency.
 * At least 4 GB of RAM. The download is about 3.5 GB.
 
 Hytale isn't on Steam. LinuxGSM downloads the server with Hytale's official `hytale-downloader`.
@@ -93,5 +93,5 @@ To change the port, set `port` in your LinuxGSM instance config (`lgsm/config-lg
 If the saved downloader login stops working, an unattended update fails within 5 minutes with a message, rather than waiting forever. Run `./hytserver update` in a terminal and approve the login again.
 
 {% hint style="info" %}
-The Hytale server also checks for updates itself, every hour. If it updates its own files, `./hytserver details` and `update` warn that the server files are newer than LinuxGSM's record, and the next `./hytserver update` corrects it.
+The Hytale server also checks for updates itself, every hour. If it updates its own files, `./hytserver update` and `check-update` warn that the server files are newer than LinuxGSM's record, and the next `./hytserver update` corrects it.
 {% endhint %}
