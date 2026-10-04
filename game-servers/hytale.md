@@ -21,6 +21,8 @@ A Hytale server needs two separate logins with your Hytale account. Each one is 
 Both files contain credentials for your Hytale account. Like `secrets-*.cfg`, they're included in LinuxGSM backups, so keep backups private.
 {% endhint %}
 
+The server login is encrypted with a key tied to the machine, so it only works on the machine (or container) where it was created. After restoring a backup on another machine, or re-creating a Docker container, the server can't read it and needs a new login. LinuxGSM detects this on start and shows a new server login URL.
+
 ## Installing
 
 1. Create and install the server:
@@ -38,7 +40,7 @@ Both files contain credentials for your Hytale account. Like `secrets-*.cfg`, th
    ./hytserver start
    ```
 
-4. **Server login.** On the first start, LinuxGSM shows **Hytale server login required** with a URL, and sends it as an alert if [alerts](../alerts/README.md) are configured. Open the URL and approve it within 10 minutes. The server saves the login and restores it on every restart.
+4. **Server login.** On the first start, LinuxGSM shows **Hytale server login required** with a URL, and sends it as an alert if [alerts](../alerts/README.md) are configured. Open the URL and approve it within 10 minutes. The server saves the login and restores it on every restart. LinuxGSM checks this on every start and shows a new URL whenever the server isn't logged in.
 
 If the server login code expires, or you need to log in again, send the command to the server console and approve the code shown in the console log (`./hytserver console`):
 
@@ -59,7 +61,7 @@ The flow is the same, but there's no terminal, so the login URLs appear in the c
 2. Approve the **downloader** login URL from the logs within 15 minutes. The install then completes.
 3. When the server starts, approve the **server** login URL from the logs, or from your configured alert (Discord, ntfy and so on), within 10 minutes.
 
-Both logins are saved under `serverfiles` on the data volume, so re-creating or updating the container doesn't ask again.
+The **downloader** login is saved under `serverfiles` on the data volume, so re-creating or updating the container doesn't ask for it again. The **server** login is tied to the container, so after re-creating or updating the container, approve the new server login URL from the logs or your alert.
 
 ## Server Settings
 
