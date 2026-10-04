@@ -6,7 +6,7 @@
 Also known as Command-Line Parameters, Command line arguments, or Launch Parameters.
 {% endhint %}
 
-Many game servers require _start parameters_, these are command-line options that are set with the server executable when the server starts.&#x20;
+Many game servers require *start parameters*, these are command-line options that are set with the server executable when the server starts.&#x20;
 
 Using [game server configs](game-server-config.md) over parameters is preferred, however, sometimes this is not an option. When this is the case only parameters or a mixture of game server config and parameters will be used.
 
@@ -24,6 +24,7 @@ maxplayers="42"
 port="27015"
 sourcetvport="27020"
 clientport="27005"
+extraparams=""
 ```
 
 ## Additional Parameters
@@ -31,6 +32,10 @@ clientport="27005"
 Additional command-line parameters can be added to the `startparameters` setting.&#x20;
 
 Anything added will be appended to the server executable binary.
+
+{% hint style="info" %}
+To add parameters without replacing the default `startparameters`, use [Extra Parameters](#extra-parameters) instead.
+{% endhint %}
 
 ### Basic Example
 
@@ -42,8 +47,26 @@ Anything added will be appended to the server executable binary.
 
 ```
 ## Server Parameters | https://docs.linuxgsm.com/configuration/start-parameters#additional-parameters
-startparameters="-game nmrih -strictportbind -ip 91.121.72.41 -port 27015 +clientport 27017 +tv_port 27016 +map nmo_broadway +servercfgfile nmrih-server-1.cfg -maxplayers 8"
+startparameters="-game nmrih -strictportbind -ip 91.121.72.41 -port 27015 +clientport 27017 +tv_port 27016 +map nmo_broadway +servercfgfile nmrih-server-1.cfg -maxplayers 8 ${extraparams}"
 ```
+
+## Extra Parameters
+
+The `extraparams` setting adds your own command-line parameters without overriding `startparameters`. The default `startparameters` of every game server ends with `${extraparams}`, so anything added will be appended to the end of the default parameters.
+
+Set `extraparams` in `instance.cfg`, or in `common.cfg` to apply it to all instances. See [LinuxGSM config files](linuxgsm-config.md).
+
+Using `extraparams` is preferred over overriding `startparameters`. As the default `startparameters` is not copied into your config, any changes to it in new LinuxGSM releases will still be picked up.
+
+### Example
+
+| Parms variable          | Executable                         |
+| ----------------------- | ---------------------------------- |
+| `extraparams="-nohltv"` | `./srcds_run -game tf ... -nohltv` |
+
+{% hint style="warning" %}
+If you override `startparameters` in your own config, keep `${extraparams}` at the end of it, otherwise `extraparams` will have no effect.
+{% endhint %}
 
 ## Parameters reference
 
