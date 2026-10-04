@@ -93,5 +93,5 @@ To change the port, set `port` in your LinuxGSM instance config (`lgsm/config-lg
 If the saved downloader login stops working, an unattended update fails within 5 minutes with a message, rather than waiting forever. Run `./hytserver update` in a terminal and approve the login again.
 
 {% hint style="info" %}
-The Hytale server also checks for updates itself, every hour. If it updates its own files, `./hytserver update` and `check-update` warn that the server files are newer than LinuxGSM's record, and the next `./hytserver update` corrects it.
+The Hytale server also checks for updates itself, every hour. If it updates its own files, `./hytserver update` and `./hytserver check-update` warn that the server files are newer than LinuxGSM's record, and the next `./hytserver update` corrects it.
 {% endhint %}
