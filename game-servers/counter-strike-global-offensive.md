@@ -25,33 +25,33 @@ Choose `clientappid` based on which players you want to connect:
 | Standalone CS:GO                   | `4465480` (default) | `4465480`           |
 | Counter-Strike 2 `csgo_legacy` beta | `730`               | `730`               |
 
-To change it, set it in your instance config, for example `lgsm/config-lgsm/csgoserver/csgoserver.cfg`:
+To change it, set it in `lgsm/config-lgsm/csgoserver/common.cfg`, as it applies to all instances sharing the same `serverfiles`:
 
 ```bash
 clientappid="730"
 ```
 
-A server advertises one App ID, so it serves one of these client types at a time. To serve both, run two separate installs: instances that share the same `serverfiles` would overwrite each other's `steam_appid.txt`.
+A server advertises one App ID, so it serves one of these client types at a time. To serve both, run two separate installs: instances that share the same `serverfiles` would overwrite each other's `steam_appid.txt` and `steam.inf`.
 
 LinuxGSM writes `clientappid` to `serverfiles/steam_appid.txt` and `serverfiles/csgo/steam.inf` before every start, because SteamCMD updates can revert them. Set `clientappid=""` if you want to manage these files yourself.
 
 ### NoLobbyReservation
 
-Standalone CS:GO clients can only connect when the NoLobbyReservation SourceMod plugin is loaded. Install Metamod:Source, SourceMod and then NoLobbyReservation with the [mods commands](../commands/mods.md):
+Standalone CS:GO clients can only connect when the NoLobbyReservation SourceMod plugin is loaded. Install Metamod:Source, SourceMod and then NoLobbyReservation with the [mods commands](../commands/mods.md): run `./csgoserver mods-install` three times and select `metamodsource`, `sourcemod` and then `nolobbyreservation`. NoLobbyReservation can only be installed after SourceMod.
 
 ```
 ./csgoserver mods-install
 ```
 
-NoLobbyReservation is only published as source code, so LinuxGSM compiles it with the SourceMod compiler during install.
+NoLobbyReservation is only published as source code, so LinuxGSM compiles it with the SourceMod compiler during `mods-install` and `mods-update`.
 
 ### Upgrading from an earlier LinuxGSM version
 
 {% hint style="warning" %}
 After `update-lgsm`, existing CS:GO servers switch from App ID `730` to `4465480` the next time they start.
 
-* **If your players use standalone CS:GO:** create a new GSLT for App ID `4465480`, set it as `gslt`, and install NoLobbyReservation.
-* **If your players use the CS2 `csgo_legacy` branch:** set `clientappid="730"` in your instance config to keep the old behaviour. Your existing GSLT stays valid.
+* **If your players use standalone CS:GO:** create a new GSLT for App ID `4465480`, set it as `gslt`, and install Metamod:Source, SourceMod and NoLobbyReservation (see [NoLobbyReservation](#nolobbyreservation)).
+* **If your players use the CS2 `csgo_legacy` branch:** set `clientappid="730"` in `common.cfg` to keep the old behaviour. Your existing GSLT stays valid.
 {% endhint %}
 
 ## **Game Modes**
