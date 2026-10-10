@@ -25,6 +25,8 @@ Game servers get Workshop content in one of two ways:
 | Killing Floor 2 | Game server | `ServerSubscribedWorkshopItems` in `PCServer-KFEngine.ini` |
 | Natural Selection 2 | Game server | `-mods` in `startparameters` (`mods` in the LinuxGSM config for NS2: Combat) |
 | Project Zomboid | Game server | `WorkshopItems=` and `Mods=` in the server `.ini` |
+| Squad | LinuxGSM (v26.4.0+) | `workshopmods` in the LinuxGSM config, see [below](#linuxgsm-workshop-downloads) |
+| Starbound | LinuxGSM (v26.4.0+) | `workshopmods` in the LinuxGSM config, see [below](#linuxgsm-workshop-downloads) |
 | Unturned | Game server | `WorkshopDownloadConfig.json` |
 
 {% hint style="info" %}
@@ -73,12 +75,20 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=157384458
 
 ## LinuxGSM Workshop Downloads
 
-For game servers that cannot download Workshop content themselves, LinuxGSM downloads and installs it for you. This is available for Arma 3 and DayZ from v26.4.0.
+For game servers that cannot download Workshop content themselves, LinuxGSM downloads and installs it for you. This is available for Arma 3, DayZ, Squad and Starbound from v26.4.0.
 
-### Requirements
+### Steam Account Requirements
 
-* `steamuser` and `steampass` set in the [LinuxGSM config](../configuration/linuxgsm-config.md). See [SteamCMD login](README.md#steamcmd-login).
-* The Steam account must **own the game** (not just the dedicated server). Steam will not download Workshop items for a game the account does not own, and LinuxGSM will report the item as failed.
+Whether you need a Steam account that owns the game depends on the game.
+
+| Game server | Server download | Workshop download |
+| --- | --- | --- |
+| Arma 3 | Any Steam account (not anonymous) | Account must **own Arma 3** |
+| DayZ | Any Steam account (not anonymous) | Account must **own DayZ** |
+| Squad | Anonymous | Anonymous |
+| Starbound | Account must own Starbound | Uses the same account |
+
+For Arma 3 and DayZ, the dedicated server is free with any Steam account, but Steam only downloads Workshop items for an account that owns the game itself. If the account in `steamuser` does not own the game, the server installs and runs, but every Workshop item fails to download with `Failure`. Set `steamuser` and `steampass` in the [LinuxGSM config](../configuration/linuxgsm-config.md), see [SteamCMD login](README.md#steamcmd-login).
 
 ### Setup
 
@@ -94,7 +104,15 @@ Then install them.
 ./arma3server workshop-update
 ```
 
-That's it. On the next start, LinuxGSM adds the installed mods to `-mod=` for you, in the order they are listed. Any mods you have set yourself in `mods` are kept and loaded first.
+Where each game's mods are installed, and how they are loaded:
+
+| Game server | Installed to | Loaded by |
+| --- | --- | --- |
+| Arma 3, DayZ | `serverfiles/workshop/@<id>` | LinuxGSM adds them to `-mod=` on start, in the order listed, after any mods you set in `mods` |
+| Squad | `SquadGame/Plugins/Mods/<id>` | The server loads every mod in this folder |
+| Starbound | `serverfiles/workshop/@<id>`, linked into `serverfiles/mods` | The server loads every `.pak` in `serverfiles/mods` |
+
+For example, on Arma 3:
 
 ```
 -mod=mods/@mymod\;workshop/@450814997\;workshop/@1234567890
@@ -104,8 +122,8 @@ That's it. On the next start, LinuxGSM adds the installed mods to `-mod=` for yo
 
 * **Collections** are expanded into their items, in the collection's order. Duplicate items are only installed once.
 * **Updates:** only new or changed items are downloaded. The download happens while the server is running, and the server is only restarted if a mod was installed, updated or removed.
-* **Install:** each item is installed to `serverfiles/workshop/@<id>`. Its file names are converted to lowercase, which Arma 3 and DayZ require on Linux, and its `.bikey` files are copied into `serverfiles/keys`.
-* **Removal:** removing an ID from `workshopmods` removes that mod and its keys on the next `workshop-update`.
+* **Install:** for Arma 3 and DayZ, file names are converted to lowercase, which these games require on Linux, and each mod's `.bikey` files are copied into `serverfiles/keys`.
+* **Removal:** removing an ID from `workshopmods` removes that mod (and its keys or links) on the next `workshop-update`. Mods you added yourself are never removed.
 * [update](../commands/update.md) also updates Workshop mods, and [check-update](../commands/check-update.md) reports Workshop updates without applying them.
 
 {% hint style="info" %}
