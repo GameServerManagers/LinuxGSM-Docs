@@ -27,6 +27,7 @@
   * [map-compressor](commands/map-compressor.md)
   * [details](commands/details.md)
   * [mods](commands/mods.md)
+  * [workshop-update](commands/workshop-update.md)
   * [skeleton](commands/skeleton.md)
   * [fastdl](commands/fastdl.md)
   * [change-password](commands/change-password.md)

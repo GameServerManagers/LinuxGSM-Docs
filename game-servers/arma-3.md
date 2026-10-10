@@ -65,7 +65,17 @@ Only an admin can see the headless clients in the player menu on the server. The
 
 Arma 3 mods are managed using the [Steam Workshop](https://steamcommunity.com/app/346110/workshop/) or manual downloads.
 
-### Adding Mods
+### Workshop Mods (v26.4.0+)
+
+LinuxGSM can download, install and update Workshop mods for you. Add the Workshop IDs to `workshopmods` in the [LinuxGSM config](../configuration/linuxgsm-config.md) and run `./arma3server workshop-update`.
+
+```bash
+workshopmods="450814997"
+```
+
+LinuxGSM converts the mod files to lowercase, copies their keys and adds them to `-mod=` automatically. The Steam account in `steamuser` must own Arma 3. See [Workshop](../steamcmd/workshop.md#linuxgsm-workshop-downloads) for details.
+
+### Adding Mods Manually
 
 Firstly, you need to select the mods you want to use from the [steam workshop](https://steamcommunity.com/app/346110/workshop/).
 
@@ -111,7 +121,7 @@ mods="mods/@mod1\;mods/@mod2"
 
 ### Lower Case File Names
 
-Arma 3 server requires that mods have lowercase names. Some mods do not do this and will need to have their file names converted to lowercase.
+Arma 3 server requires that mods have lowercase names. Some mods do not do this and will need to have their file names converted to lowercase. Workshop mods installed with `workshop-update` are converted automatically.
 
 This can be done by using the following script.
 
