@@ -26,4 +26,4 @@ For Arma 3, Colony Survival and DayZ, the Steam account in `steamuser` must own 
 * Removes mods that are no longer in `workshopmods`. Mods you added yourself are left alone.
 * If the server is running and anything was installed, updated or removed, the server is restarted.
 
-The [update](update.md) command runs the same Workshop update after updating the game server.
+The [update](update.md) command runs the same Workshop update after updating the game server, and [check-update](check-update.md) reports Workshop updates without applying them.

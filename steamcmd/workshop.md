@@ -1,59 +1,51 @@
 # Workshop
 
-Many Steam games support the [Steam Workshop](https://steamcommunity.com/workshop). It is an easy way to share community game modes, maps, skins, and other community-made content.
+Many Steam games support the [Steam Workshop](https://steamcommunity.com/workshop), an easy way to share community-made maps, game modes, mods, skins and other content.
 
-For game servers, the Workshop allows community content (mainly maps, game modes and mods) to be made available to play on game servers. For most games, players who connect download the content automatically, which removes the need to set up a [FastDL](../commands/fastdl.md) server.
+On game servers, the Workshop makes community content (mainly maps, game modes and mods) available to play. For most games, players who connect download the content automatically, which removes the need for a [FastDL](../commands/fastdl.md) server.
 
 Game servers get Workshop content in one of two ways:
 
-* **The game server downloads it.** You add item or collection IDs to the game server config or start parameters, and the server downloads them when it starts. LinuxGSM adds the settings to the config where they are available.
-* **LinuxGSM downloads it.** Some game servers cannot download Workshop content. For these, LinuxGSM downloads the content with SteamCMD, installs it and keeps it up to date using the [workshop-update](../commands/workshop-update.md) command.
+* **The game server downloads it.** You add item or collection IDs to the game server config or start parameters, and the server downloads them when it starts. LinuxGSM adds the settings to its config where they are available.
+* **LinuxGSM downloads it.** Some game servers cannot download Workshop content themselves. For these, LinuxGSM downloads the content with SteamCMD, installs it and keeps it up to date with the [workshop-update](../commands/workshop-update.md) command. See [LinuxGSM Workshop Downloads](#linuxgsm-workshop-downloads).
 
 ## Supported Game Servers
 
 | Game server | Downloaded by | Where to add Workshop content |
 | --- | --- | --- |
-| ARK: Survival Evolved | Game server | `ActiveMods=` in `GameUserSettings.ini` (`-AutoManagedMods` is in the default start parameters) |
-| Arma 3 | LinuxGSM (v26.4.0+) | `workshopmods` in the [LinuxGSM config](../configuration/linuxgsm-config.md), see [below](#linuxgsm-workshop-downloads) |
-| Barotrauma | LinuxGSM (v26.4.0+) | `workshopmods` in the LinuxGSM config, see [below](#linuxgsm-workshop-downloads) |
-| Colony Survival | LinuxGSM (v26.4.0+) | `workshopmods` in the LinuxGSM config, see [below](#linuxgsm-workshop-downloads) |
-| Counter-Strike 2 | Game server | `+host_workshop_collection` or `+host_workshop_map` in `startparameters`, with `wsapikey` |
-| Counter-Strike: Global Offensive | Game server | `wscollectionid`, `wsstartmap` and `wsapikey` in the LinuxGSM config |
+| [ARK: Survival Evolved](../game-servers/ark-survival-evolved.md) | Game server | `ActiveMods=` in `GameUserSettings.ini` (`-AutoManagedMods` is in the default start parameters) |
+| [Arma 3](../game-servers/arma-3.md) | LinuxGSM (v26.4.0+) | `workshopmods` in the [LinuxGSM config](../configuration/linuxgsm-config.md) |
+| Barotrauma | LinuxGSM (v26.4.0+) | `workshopmods` in the LinuxGSM config |
+| Colony Survival | LinuxGSM (v26.4.0+) | `workshopmods` in the LinuxGSM config |
+| [Counter-Strike 2](../game-servers/counter-strike-2.md) | Game server | `+host_workshop_collection` or `+host_workshop_map` in `startparameters`, with `wsapikey` set |
+| [Counter-Strike: Global Offensive](../game-servers/counter-strike-global-offensive.md) | Game server | `wscollectionid`, `wsstartmap` and `wsapikey` in the LinuxGSM config |
 | Day of Infamy | Game server | `subscribed_file_ids.txt` in the game directory (`-workshop` is in the default start parameters) |
-| DayZ | LinuxGSM (v26.4.0+) | `workshopmods` in the LinuxGSM config, see [below](#linuxgsm-workshop-downloads) |
-| Don't Starve Together | Game server | `dedicated_server_mods_setup.lua` |
-| Garry's Mod | Game server | `wscollectionid` in the LinuxGSM config |
+| DayZ | LinuxGSM (v26.4.0+) | `workshopmods` in the LinuxGSM config |
+| [Don't Starve Together](../game-servers/dont-starve-together.md) | Game server | `dedicated_server_mods_setup.lua` |
+| [Garry's Mod](../game-servers/garrys-mod/README.md) | Game server | `wscollectionid` in the LinuxGSM config |
 | Insurgency | Game server | `subscribed_file_ids.txt` in the game directory (`-workshop` is in the default start parameters) |
-| Killing Floor 2 | Game server | `ServerSubscribedWorkshopItems` in `PCServer-KFEngine.ini` |
-| Left 4 Dead 2 | LinuxGSM (v26.4.0+) | `workshopmods` in the LinuxGSM config, see [below](#linuxgsm-workshop-downloads) |
+| [Killing Floor 2](../game-servers/killing-floor-2.md) | Game server | `ServerSubscribedWorkshopItems` in `LinuxServer-KFEngine.ini` |
+| Left 4 Dead 2 | LinuxGSM (v26.4.0+) | `workshopmods` in the LinuxGSM config |
 | Natural Selection 2 | Game server | `-mods` in `startparameters` (`mods` in the LinuxGSM config for NS2: Combat) |
-| Operation: Harsh Doorstop | LinuxGSM (v26.4.0+) | `workshopmods` in the LinuxGSM config, see [below](#linuxgsm-workshop-downloads) |
+| Operation: Harsh Doorstop | LinuxGSM (v26.4.0+) | `workshopmods` in the LinuxGSM config |
 | Project Zomboid | Game server | `WorkshopItems=` and `Mods=` in the server `.ini` |
-| Squad | LinuxGSM (v26.4.0+) | `workshopmods` in the LinuxGSM config, see [below](#linuxgsm-workshop-downloads) |
-| Squad 44 | LinuxGSM (v26.4.0+) | `workshopmods` in the LinuxGSM config, see [below](#linuxgsm-workshop-downloads) |
-| Starbound | LinuxGSM (v26.4.0+) | `workshopmods` in the LinuxGSM config, see [below](#linuxgsm-workshop-downloads) |
-| Stationeers | LinuxGSM (v26.4.0+) | `workshopmods` in the LinuxGSM config, see [below](#linuxgsm-workshop-downloads) |
+| Squad | LinuxGSM (v26.4.0+) | `workshopmods` in the LinuxGSM config |
+| Squad 44 | LinuxGSM (v26.4.0+) | `workshopmods` in the LinuxGSM config |
+| Starbound | LinuxGSM (v26.4.0+) | `workshopmods` in the LinuxGSM config |
+| Stationeers | LinuxGSM (v26.4.0+) | `workshopmods` in the LinuxGSM config |
 | Unturned | Game server | `WorkshopDownloadConfig.json` |
 
 {% hint style="info" %}
-Insurgency: Sandstorm uses [mod.io](https://mod.io), not the Steam Workshop.
-{% endhint %}
-
-## Steam Web API Key/Auth Key
-
-Some game servers require a Steam API key to access Workshop content. To get this key visit the [Steam API key page](https://steamcommunity.com/dev/apikey) and follow the instructions.
-
-{% hint style="danger" %}
-Do not share your private API key.
+[Insurgency: Sandstorm](../game-servers/insurgency-sandstorm.md) uses [mod.io](https://mod.io), not the Steam Workshop.
 {% endhint %}
 
 ## Items and Collections
 
-The Steam Workshop is made up of individual items such as maps, game modes, skins, etc, and also collections of these items. Game servers can download these items and collections by getting their unique ID number and adding it to the game server config or parameter. For collections, it is possible to find and use an existing one or create your own.
+The Steam Workshop is made up of individual items, such as maps, game modes and mods, and collections of items. Game servers download them by their ID number. For collections, you can use an existing one or create your own.
 
 ### Get an Item or Collection ID
 
-To get an item or collection ID, browse to the item you want to add and look at the URL; it will contain the required ID number. In the example below the ID is `3075706807`.
+Browse to the item or collection and look at the URL; it contains the ID number. In the example below the ID is `3075706807`.
 
 ```
 https://steamcommunity.com/sharedfiles/filedetails/?id=3075706807
@@ -61,9 +53,9 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=3075706807
 
 ### Create a Collection
 
-Creating a collection is a great way to manage and group all the content that you want on your game server.&#x20;
+A collection is a great way to manage and group all the content you want on your game server.
 
-To create your collection go to the collections section of your games Workshop, and select `Create Collection`.
+Go to the collections section of your game's Workshop and select `Create Collection`.
 
 <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
@@ -73,15 +65,41 @@ Fill out the form.
 
 <figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
-Add any maps to the collection, then publish the completed collection. Then get the collection ID which can be found on the page URL. The collection ID in the url below is `157384458`.
+Add items to the collection, publish it, then get the collection ID from the page URL. In the example below the collection ID is `157384458`.
 
 ```
 https://steamcommunity.com/sharedfiles/filedetails/?id=157384458
 ```
 
+## Steam Web API Key
+
+Some game servers, such as Counter-Strike 2 and Counter-Strike: Global Offensive, need a Steam Web API key (`wsapikey` in the LinuxGSM config) to download Workshop collections. To get a key, visit the [Steam API key page](https://steamcommunity.com/dev/apikey) and follow the instructions.
+
+{% hint style="danger" %}
+Do not share your private API key.
+{% endhint %}
+
+LinuxGSM Workshop downloads do not need an API key.
+
 ## LinuxGSM Workshop Downloads
 
-For game servers that cannot download Workshop content themselves, LinuxGSM downloads and installs it for you. This is available for Arma 3, Barotrauma, Colony Survival, DayZ, Left 4 Dead 2, Operation: Harsh Doorstop, Squad, Squad 44, Starbound and Stationeers from v26.4.0.
+For game servers that cannot download Workshop content themselves, LinuxGSM downloads and installs it for you. This is available from v26.4.0 for Arma 3, Barotrauma, Colony Survival, DayZ, Left 4 Dead 2, Operation: Harsh Doorstop, Squad, Squad 44, Starbound and Stationeers.
+
+### Setup
+
+Add Workshop item and/or collection IDs to `workshopmods` in the [LinuxGSM config](../configuration/linuxgsm-config.md), separated by spaces.
+
+```bash
+workshopmods="450814997 1234567890"
+```
+
+Then install them with [workshop-update](../commands/workshop-update.md).
+
+```
+./gameserver workshop-update
+```
+
+[update](../commands/update.md) also keeps Workshop mods up to date, so a scheduled update covers them too.
 
 ### Steam Account Requirements
 
@@ -100,29 +118,15 @@ Whether you need a Steam account that owns the game depends on the game.
 | Starbound | Account must own Starbound | Uses the same account |
 | Stationeers | Anonymous | Anonymous |
 
-For Arma 3 and DayZ, the dedicated server is free with any Steam account, and the Colony Survival server downloads anonymously, but Steam only downloads their Workshop items for an account that owns the game itself. If the account in `steamuser` does not own the game, the server installs and runs, but every Workshop item fails to download with `Failure`. Set `steamuser` and `steampass` in the [LinuxGSM config](../configuration/linuxgsm-config.md), see [SteamCMD login](README.md#steamcmd-login).
+Steam only downloads Arma 3, Colony Survival and DayZ Workshop items for an account that owns the game itself, even though their dedicated servers download with any account. If the account in `steamuser` does not own the game, the server installs and runs, but every Workshop item fails to download with `Failure`. Set `steamuser` and `steampass` in the LinuxGSM config, see [SteamCMD Login](README.md#steamcmd-login).
 
-### Setup
-
-Add the Workshop item and/or collection IDs to `workshopmods` in the LinuxGSM config, separated by spaces.
-
-```bash
-workshopmods="450814997 1234567890"
-```
-
-Then install them.
-
-```
-./arma3server workshop-update
-```
-
-Where each game's mods are installed, and how they are loaded:
+### Where Mods Are Installed
 
 | Game server | Installed to | Loaded by |
 | --- | --- | --- |
 | Arma 3, DayZ | `serverfiles/workshop/@<id>` | LinuxGSM adds them to `-mod=` on start, in the order listed, after any mods you set in `mods` |
-| Barotrauma | `LocalMods/<id>` | LinuxGSM adds each mod to `<regularpackages>` in `config_player.xml`, in the order listed. Entries you add yourself are kept |
-| Colony Survival | `gamedata/mods/<id>` | LinuxGSM enables each mod in every world's `gamedata/savegames/<world>/worldconfig.json`. Entries you add yourself are kept |
+| Barotrauma | `LocalMods/<id>` | LinuxGSM adds each mod to `<regularpackages>` in `config_player.xml`, in the order listed |
+| Colony Survival | `gamedata/mods/<id>` | LinuxGSM enables each mod in every world's `gamedata/savegames/<world>/worldconfig.json` |
 | Left 4 Dead 2 | `serverfiles/workshop/@<id>`, linked into `left4dead2/addons/<id>.vpk` | The server loads every `.vpk` in `left4dead2/addons` |
 | Operation: Harsh Doorstop | `HarshDoorstop/Mods/<mod name>` | The server loads every mod in this folder. Select mod maps and modes with `defaultmap` or `startparameters` |
 | Squad | `SquadGame/Plugins/Mods/<id>` | The server loads every mod in this folder |
@@ -136,16 +140,17 @@ For example, on Arma 3:
 -mod=mods/@mymod\;workshop/@450814997\;workshop/@1234567890
 ```
 
-### How it works
+### How It Works
 
 * **Collections** are expanded into their items, in the collection's order. Duplicate items are only installed once.
-* **Updates:** only new or changed items are downloaded. The download happens while the server is running, and the server is only restarted if a mod was installed, updated or removed.
-* **Install:** for Arma 3 and DayZ, file names are converted to lowercase, which these games require on Linux, and each mod's `.bikey` files are copied into `serverfiles/keys`.
-* **Removal:** removing an ID from `workshopmods` removes that mod (and its keys or links) on the next `workshop-update`. Mods you added yourself are never removed.
-* [update](../commands/update.md) also updates Workshop mods, and [check-update](../commands/check-update.md) reports Workshop updates without applying them.
+* **Updates:** only new or changed items are downloaded. Downloads happen while the server keeps running, and the server is only restarted if a mod was installed, updated or removed.
+* **Arma 3 and DayZ:** file names are converted to lowercase, which these games require on Linux, and each mod's `.bikey` files are copied into `serverfiles/keys`.
+* **Removal:** removing an ID from `workshopmods` removes that mod, and its keys, links or config entries, on the next `workshop-update`.
+* **Your own mods are kept:** mods and config entries you add yourself are never changed or removed.
+* [check-update](../commands/check-update.md) reports Workshop updates without applying them.
 
 {% hint style="info" %}
-If you change `workshopmods`, run `workshop-update` before starting the server. LinuxGSM will warn on start if a listed mod is not installed yet.
+If you change `workshopmods`, run `workshop-update` before starting the server. LinuxGSM warns on start if a listed mod is not installed yet.
 {% endhint %}
 
 {% hint style="warning" %}

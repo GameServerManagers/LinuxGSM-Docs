@@ -48,6 +48,22 @@ Replace `./gameserver` with the actual script name. Every command has a short ve
 | [Full Wipe](./#rust)                | `./rustserver full-wipe` | `./rustserver fw` |
 | [Map Wipe](../game-servers/rust.md) | `./rustserver map-wipe`  | `./rustserver mw` |
 
+### Mods
+
+| Command Name                        | Command                     | Short             |
+| ----------------------------------- | --------------------------- | ----------------- |
+| [Install Mods](mods.md#install-mods) | `./gameserver mods-install` | `./gameserver mi` |
+| [Update Mods](mods.md#update-mods)   | `./gameserver mods-update`  | `./gameserver mu` |
+| [Remove Mods](mods.md#remove-mods)   | `./gameserver mods-remove`  | `./gameserver mr` |
+
+### Steam Workshop (v26.4.0+)
+
+Arma 3, Barotrauma, Colony Survival, DayZ, Left 4 Dead 2, Operation: Harsh Doorstop, Squad, Squad 44, Starbound and Stationeers.
+
+| Command Name                        | Command                        | Short             |
+| ----------------------------------- | ------------------------------ | ----------------- |
+| [Workshop Update](workshop-update.md) | `./gameserver workshop-update` | `./gameserver wu` |
+
 ## Developer & Debug commands
 
 | Command Name                                                                                                                                    | Command                       | Short              |
@@ -57,4 +73,4 @@ Replace `./gameserver` with the actual script name. Every command has a short ve
 | Detect Glibc                                                                                                                                    | `./gameserver detect-glibc`   | `./gameserver dg`  |
 | Detect ldd                                                                                                                                      | `./gameserver detect-ldd`     | `./gameserver dl`  |
 | Query Raw                                                                                                                                       | `./gameserver query-raw`      | `./gameserver qr`  |
-| Clear Modules                                                                                                                                   | `./gameserver clear-moeuldes` | `./gameserver cm`  |
+| Clear Modules                                                                                                                                   | `./gameserver clear-modules` | `./gameserver cm`  |

@@ -10,6 +10,8 @@ Short: `./gameserver cu`
 
 Unlike the [update](update.md) command `check-update` will check for any available updates and take no action if no update is available. If there is an update it will send an alert.
 
+For game servers that use [LinuxGSM Workshop downloads](../steamcmd/workshop.md#linuxgsm-workshop-downloads) (v26.4.0+), `check-update` also reports Workshop mod updates without applying them.
+
 ## Automatic check for update
 
 ### Scheduled check for updates
@@ -39,7 +41,7 @@ The extra `su - username -c` indicates which user to run the script as.
 {% endhint %}
 
 ```
-0 * * * * su - username -c '/home/username/gameserver update' > /dev/null 2>&1
+0 * * * * su - username -c '/home/username/gameserver check-update' > /dev/null 2>&1
 ```
 
 [crontab.guru](https://crontab.guru/) is a great resource to generate cronjobs.
