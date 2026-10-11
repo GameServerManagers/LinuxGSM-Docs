@@ -30,6 +30,7 @@ Game servers get Workshop content in one of two ways:
 | Natural Selection 2 | Game server | `-mods` in `startparameters` (`mods` in the LinuxGSM config for NS2: Combat) |
 | Operation: Harsh Doorstop | LinuxGSM (v26.4.0+) | `workshopmods` in the LinuxGSM config |
 | Project Zomboid | Game server | `WorkshopItems=` and `Mods=` in the server `.ini` |
+| Soldat | LinuxGSM (v26.4.0+) | `workshopmods` in the LinuxGSM config, then add the maps to `mapslist.txt` |
 | Squad | LinuxGSM (v26.4.0+) | `workshopmods` in the LinuxGSM config |
 | Squad 44 | LinuxGSM (v26.4.0+) | `workshopmods` in the LinuxGSM config |
 | Starbound | LinuxGSM (v26.4.0+) | `workshopmods` in the LinuxGSM config |
@@ -37,7 +38,7 @@ Game servers get Workshop content in one of two ways:
 | Unturned | Game server | `WorkshopDownloadConfig.json` |
 
 {% hint style="info" %}
-[Insurgency: Sandstorm](../game-servers/insurgency-sandstorm.md) uses [mod.io](https://mod.io), not the Steam Workshop.
+[Insurgency: Sandstorm](../game-servers/insurgency-sandstorm.md), Pavlov VR and Core Keeper dedicated servers load mods from [mod.io](https://mod.io), not the Steam Workshop.
 {% endhint %}
 
 ## Items and Collections
@@ -84,7 +85,7 @@ LinuxGSM Workshop downloads do not need an API key.
 
 ## LinuxGSM Workshop Downloads
 
-For game servers that cannot download Workshop content themselves, LinuxGSM downloads and installs it for you. This is available from v26.4.0 for Arma 3, Barotrauma, Colony Survival, DayZ, Hurtworld, Left 4 Dead 2, Operation: Harsh Doorstop, Squad, Squad 44, Starbound and Stationeers.
+For game servers that cannot download Workshop content themselves, LinuxGSM downloads and installs it for you. This is available from v26.4.0 for Arma 3, Barotrauma, Colony Survival, DayZ, Hurtworld, Left 4 Dead 2, Operation: Harsh Doorstop, Soldat, Squad, Squad 44, Starbound and Stationeers.
 
 ### Setup
 
@@ -115,6 +116,7 @@ Whether you need a Steam account that owns the game depends on the game.
 | Hurtworld | Anonymous | Anonymous |
 | Left 4 Dead 2 | Anonymous | Anonymous |
 | Operation: Harsh Doorstop | Anonymous | Anonymous |
+| Soldat | Anonymous | Anonymous |
 | Squad | Anonymous | Anonymous |
 | Squad 44 | Anonymous | Anonymous |
 | Starbound | Account must own Starbound | Uses the same account |
@@ -132,6 +134,7 @@ Steam only downloads Arma 3, Colony Survival and DayZ Workshop items for an acco
 | Hurtworld | `steamapps/workshop/content/393420/<id>` | LinuxGSM adds `loadmod <id>` to the `-exec` start parameters on start, in the order listed. If you set your own `startparameters`, keep `${workshoploadmods}` inside `-exec` |
 | Left 4 Dead 2 | `serverfiles/workshop/@<id>`, linked into `left4dead2/addons/<id>.vpk` | The server loads every `.vpk` in `left4dead2/addons` |
 | Operation: Harsh Doorstop | `HarshDoorstop/Mods/<mod name>` | The server loads every mod in this folder. Select mod maps and modes with `defaultmap` or `startparameters` |
+| Soldat | `serverfiles/workshop/@<id>`, with its files linked into `maps`, `textures` and `scenery-gfx` | Add the maps you want to `mapslist.txt`. Maps are linked with a lowercase `.pms` extension, and existing files are never overwritten |
 | Squad | `SquadGame/Plugins/Mods/<id>` | The server loads every mod in this folder |
 | Squad 44 | `PostScriptum/Plugins/Mods/<id>` | The server loads every mod in this folder |
 | Starbound | `serverfiles/workshop/@<id>`, linked into `serverfiles/mods` | The server loads every `.pak` in `serverfiles/mods` |
