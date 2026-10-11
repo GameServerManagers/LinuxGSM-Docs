@@ -46,6 +46,7 @@
   * [Minecraft: Java Edition](game-servers/minecraft.md)
   * [Multi Theft Auto](game-servers/multi-theft-auto.md)
   * [RuneScape: Dragonwilds](game-servers/runescape-dragonwilds.md)
+  * [Running With Rifles](game-servers/running-with-rifles.md)
   * [Rust](game-servers/rust.md)
   * [Sven Co-op](game-servers/sven-co-op.md)
   * [Trackmania Nations Forever / Trackmania United Forever](game-servers/trackmania-nations-forever-trackmania-united-forever.md)
