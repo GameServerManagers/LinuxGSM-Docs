@@ -58,7 +58,7 @@ Replace `./gameserver` with the actual script name. Every command has a short ve
 
 ### Steam Workshop (v26.4.0+)
 
-Arma 3, Barotrauma, Colony Survival, DayZ, Left 4 Dead 2, Operation: Harsh Doorstop, Squad, Squad 44, Starbound and Stationeers.
+Arma 3, Barotrauma, Colony Survival, DayZ, Hurtworld, Left 4 Dead 2, Operation: Harsh Doorstop, Squad, Squad 44, Starbound and Stationeers.
 
 | Command Name                        | Command                        | Short             |
 | ----------------------------------- | ------------------------------ | ----------------- |

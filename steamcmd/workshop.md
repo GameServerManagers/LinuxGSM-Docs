@@ -23,6 +23,7 @@ Game servers get Workshop content in one of two ways:
 | DayZ | LinuxGSM (v26.4.0+) | `workshopmods` in the LinuxGSM config |
 | [Don't Starve Together](../game-servers/dont-starve-together.md) | Game server | `dedicated_server_mods_setup.lua` |
 | [Garry's Mod](../game-servers/garrys-mod/README.md) | Game server | `wscollectionid` in the LinuxGSM config |
+| Hurtworld | LinuxGSM (v26.4.0+) | `workshopmods` in the LinuxGSM config |
 | Insurgency | Game server | `subscribed_file_ids.txt` in the game directory (`-workshop` is in the default start parameters) |
 | [Killing Floor 2](../game-servers/killing-floor-2.md) | Game server | `ServerSubscribedWorkshopItems` in `LinuxServer-KFEngine.ini` |
 | Left 4 Dead 2 | LinuxGSM (v26.4.0+) | `workshopmods` in the LinuxGSM config |
@@ -83,7 +84,7 @@ LinuxGSM Workshop downloads do not need an API key.
 
 ## LinuxGSM Workshop Downloads
 
-For game servers that cannot download Workshop content themselves, LinuxGSM downloads and installs it for you. This is available from v26.4.0 for Arma 3, Barotrauma, Colony Survival, DayZ, Left 4 Dead 2, Operation: Harsh Doorstop, Squad, Squad 44, Starbound and Stationeers.
+For game servers that cannot download Workshop content themselves, LinuxGSM downloads and installs it for you. This is available from v26.4.0 for Arma 3, Barotrauma, Colony Survival, DayZ, Hurtworld, Left 4 Dead 2, Operation: Harsh Doorstop, Squad, Squad 44, Starbound and Stationeers.
 
 ### Setup
 
@@ -111,6 +112,7 @@ Whether you need a Steam account that owns the game depends on the game.
 | Barotrauma | Anonymous | Anonymous |
 | Colony Survival | Anonymous | Account must **own Colony Survival** |
 | DayZ | Any Steam account (not anonymous) | Account must **own DayZ** |
+| Hurtworld | Anonymous | Anonymous |
 | Left 4 Dead 2 | Anonymous | Anonymous |
 | Operation: Harsh Doorstop | Anonymous | Anonymous |
 | Squad | Anonymous | Anonymous |
@@ -127,6 +129,7 @@ Steam only downloads Arma 3, Colony Survival and DayZ Workshop items for an acco
 | Arma 3, DayZ | `serverfiles/workshop/@<id>` | LinuxGSM adds them to `-mod=` on start, in the order listed, after any mods you set in `mods` |
 | Barotrauma | `LocalMods/<id>` | LinuxGSM adds each mod to `<regularpackages>` in `config_player.xml`, in the order listed |
 | Colony Survival | `gamedata/mods/<id>` | LinuxGSM enables each mod in every world's `gamedata/savegames/<world>/worldconfig.json` |
+| Hurtworld | `steamapps/workshop/content/393420/<id>` | LinuxGSM adds `loadmod <id>` to the `-exec` start parameters on start, in the order listed. If you set your own `startparameters`, keep `${workshoploadmods}` inside `-exec` |
 | Left 4 Dead 2 | `serverfiles/workshop/@<id>`, linked into `left4dead2/addons/<id>.vpk` | The server loads every `.vpk` in `left4dead2/addons` |
 | Operation: Harsh Doorstop | `HarshDoorstop/Mods/<mod name>` | The server loads every mod in this folder. Select mod maps and modes with `defaultmap` or `startparameters` |
 | Squad | `SquadGame/Plugins/Mods/<id>` | The server loads every mod in this folder |
