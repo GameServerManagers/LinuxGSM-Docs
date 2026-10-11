@@ -26,6 +26,8 @@ stoponlyifnoplayers="off"
 
 When a `restart` is requested while players are online, the restart is **postponed** rather than cancelled: LinuxGSM records a restart request and the [monitor](monitor.md) command will retry the restart automatically once the server is empty. Enable a monitor cronjob for postponed restarts to be carried out.
 
+An `update` that finds an update while players are online is postponed in the same way, and the monitor command applies it once the server is empty.
+
 By default this protection applies to **all** commands that stop the server, including `update`. To limit it to only the explicit `stop` and `restart` commands (so an `update` can still stop the server even while players are online), set `stoponlyifnoplayersallcommands` to `off`.
 
 ```properties
@@ -33,6 +35,14 @@ By default this protection applies to **all** commands that stop the server, inc
 stoponlyifnoplayersallcommands="on"
 # Or limit it to explicit stop/restart only:
 # stoponlyifnoplayersallcommands="off"
+```
+
+#### Warn players before stopping (optional)
+
+LinuxGSM can count down with in-game messages before it stops, restarts or updates the server. See [Player Warnings](../features/player-warnings.md).
+
+```properties
+warnplayerstimer="15"
 ```
 
 ### Restarting a server
