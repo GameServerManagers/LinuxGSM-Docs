@@ -14,23 +14,23 @@ Game servers get Workshop content in one of two ways:
 | Game server | Downloaded by | Where to add Workshop content |
 | --- | --- | --- |
 | ARK: Survival Evolved | Game server | `ActiveMods=` in `GameUserSettings.ini` (`-AutoManagedMods` is in the default start parameters) |
-| Barotrauma | LinuxGSM (v26.4.0+) | `workshopmods` in the LinuxGSM config, see [below](#linuxgsm-workshop-downloads) |
 | Arma 3 | LinuxGSM (v26.4.0+) | `workshopmods` in the [LinuxGSM config](../configuration/linuxgsm-config.md), see [below](#linuxgsm-workshop-downloads) |
+| Barotrauma | LinuxGSM (v26.4.0+) | `workshopmods` in the LinuxGSM config, see [below](#linuxgsm-workshop-downloads) |
 | Counter-Strike 2 | Game server | `+host_workshop_collection` or `+host_workshop_map` in `startparameters`, with `wsapikey` |
 | Counter-Strike: Global Offensive | Game server | `wscollectionid`, `wsstartmap` and `wsapikey` in the LinuxGSM config |
-| DayZ | LinuxGSM (v26.4.0+) | `workshopmods` in the LinuxGSM config, see [below](#linuxgsm-workshop-downloads) |
 | Day of Infamy | Game server | `subscribed_file_ids.txt` in the game directory (`-workshop` is in the default start parameters) |
+| DayZ | LinuxGSM (v26.4.0+) | `workshopmods` in the LinuxGSM config, see [below](#linuxgsm-workshop-downloads) |
 | Don't Starve Together | Game server | `dedicated_server_mods_setup.lua` |
 | Garry's Mod | Game server | `wscollectionid` in the LinuxGSM config |
 | Insurgency | Game server | `subscribed_file_ids.txt` in the game directory (`-workshop` is in the default start parameters) |
 | Killing Floor 2 | Game server | `ServerSubscribedWorkshopItems` in `PCServer-KFEngine.ini` |
-| Operation: Harsh Doorstop | LinuxGSM (v26.4.0+) | `workshopmods` in the LinuxGSM config, see [below](#linuxgsm-workshop-downloads) |
 | Natural Selection 2 | Game server | `-mods` in `startparameters` (`mods` in the LinuxGSM config for NS2: Combat) |
-| Stationeers | LinuxGSM (v26.4.0+) | `workshopmods` in the LinuxGSM config, see [below](#linuxgsm-workshop-downloads) |
+| Operation: Harsh Doorstop | LinuxGSM (v26.4.0+) | `workshopmods` in the LinuxGSM config, see [below](#linuxgsm-workshop-downloads) |
 | Project Zomboid | Game server | `WorkshopItems=` and `Mods=` in the server `.ini` |
 | Squad | LinuxGSM (v26.4.0+) | `workshopmods` in the LinuxGSM config, see [below](#linuxgsm-workshop-downloads) |
 | Squad 44 | LinuxGSM (v26.4.0+) | `workshopmods` in the LinuxGSM config, see [below](#linuxgsm-workshop-downloads) |
 | Starbound | LinuxGSM (v26.4.0+) | `workshopmods` in the LinuxGSM config, see [below](#linuxgsm-workshop-downloads) |
+| Stationeers | LinuxGSM (v26.4.0+) | `workshopmods` in the LinuxGSM config, see [below](#linuxgsm-workshop-downloads) |
 | Unturned | Game server | `WorkshopDownloadConfig.json` |
 
 {% hint style="info" %}
@@ -88,13 +88,13 @@ Whether you need a Steam account that owns the game depends on the game.
 | Game server | Server download | Workshop download |
 | --- | --- | --- |
 | Arma 3 | Any Steam account (not anonymous) | Account must **own Arma 3** |
-| DayZ | Any Steam account (not anonymous) | Account must **own DayZ** |
 | Barotrauma | Anonymous | Anonymous |
+| DayZ | Any Steam account (not anonymous) | Account must **own DayZ** |
 | Operation: Harsh Doorstop | Anonymous | Anonymous |
 | Squad | Anonymous | Anonymous |
 | Squad 44 | Anonymous | Anonymous |
-| Stationeers | Anonymous | Anonymous |
 | Starbound | Account must own Starbound | Uses the same account |
+| Stationeers | Anonymous | Anonymous |
 
 For Arma 3 and DayZ, the dedicated server is free with any Steam account, but Steam only downloads Workshop items for an account that owns the game itself. If the account in `steamuser` does not own the game, the server installs and runs, but every Workshop item fails to download with `Failure`. Set `steamuser` and `steampass` in the [LinuxGSM config](../configuration/linuxgsm-config.md), see [SteamCMD login](README.md#steamcmd-login).
 
@@ -121,8 +121,8 @@ Where each game's mods are installed, and how they are loaded:
 | Operation: Harsh Doorstop | `HarshDoorstop/Mods/<mod name>` | The server loads every mod in this folder. Select mod maps and modes with `defaultmap` or `startparameters` |
 | Squad | `SquadGame/Plugins/Mods/<id>` | The server loads every mod in this folder |
 | Squad 44 | `PostScriptum/Plugins/Mods/<id>` | The server loads every mod in this folder |
-| Stationeers | `mods/<id>` | The server enables every mod in this folder in `modconfig.xml` |
 | Starbound | `serverfiles/workshop/@<id>`, linked into `serverfiles/mods` | The server loads every `.pak` in `serverfiles/mods` |
+| Stationeers | `mods/<id>` | The server enables every mod in this folder in `modconfig.xml` |
 
 For example, on Arma 3:
 
