@@ -23,9 +23,11 @@ Game servers get Workshop content in one of two ways:
 | Garry's Mod | Game server | `wscollectionid` in the LinuxGSM config |
 | Insurgency | Game server | `subscribed_file_ids.txt` in the game directory (`-workshop` is in the default start parameters) |
 | Killing Floor 2 | Game server | `ServerSubscribedWorkshopItems` in `PCServer-KFEngine.ini` |
+| Operation: Harsh Doorstop | LinuxGSM (v26.4.0+) | `workshopmods` in the LinuxGSM config, see [below](#linuxgsm-workshop-downloads) |
 | Natural Selection 2 | Game server | `-mods` in `startparameters` (`mods` in the LinuxGSM config for NS2: Combat) |
 | Project Zomboid | Game server | `WorkshopItems=` and `Mods=` in the server `.ini` |
 | Squad | LinuxGSM (v26.4.0+) | `workshopmods` in the LinuxGSM config, see [below](#linuxgsm-workshop-downloads) |
+| Squad 44 | LinuxGSM (v26.4.0+) | `workshopmods` in the LinuxGSM config, see [below](#linuxgsm-workshop-downloads) |
 | Starbound | LinuxGSM (v26.4.0+) | `workshopmods` in the LinuxGSM config, see [below](#linuxgsm-workshop-downloads) |
 | Unturned | Game server | `WorkshopDownloadConfig.json` |
 
@@ -75,7 +77,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=157384458
 
 ## LinuxGSM Workshop Downloads
 
-For game servers that cannot download Workshop content themselves, LinuxGSM downloads and installs it for you. This is available for Arma 3, DayZ, Squad and Starbound from v26.4.0.
+For game servers that cannot download Workshop content themselves, LinuxGSM downloads and installs it for you. This is available for Arma 3, DayZ, Operation: Harsh Doorstop, Squad, Squad 44 and Starbound from v26.4.0.
 
 ### Steam Account Requirements
 
@@ -85,7 +87,9 @@ Whether you need a Steam account that owns the game depends on the game.
 | --- | --- | --- |
 | Arma 3 | Any Steam account (not anonymous) | Account must **own Arma 3** |
 | DayZ | Any Steam account (not anonymous) | Account must **own DayZ** |
+| Operation: Harsh Doorstop | Anonymous | Anonymous |
 | Squad | Anonymous | Anonymous |
+| Squad 44 | Anonymous | Anonymous |
 | Starbound | Account must own Starbound | Uses the same account |
 
 For Arma 3 and DayZ, the dedicated server is free with any Steam account, but Steam only downloads Workshop items for an account that owns the game itself. If the account in `steamuser` does not own the game, the server installs and runs, but every Workshop item fails to download with `Failure`. Set `steamuser` and `steampass` in the [LinuxGSM config](../configuration/linuxgsm-config.md), see [SteamCMD login](README.md#steamcmd-login).
@@ -109,7 +113,9 @@ Where each game's mods are installed, and how they are loaded:
 | Game server | Installed to | Loaded by |
 | --- | --- | --- |
 | Arma 3, DayZ | `serverfiles/workshop/@<id>` | LinuxGSM adds them to `-mod=` on start, in the order listed, after any mods you set in `mods` |
+| Operation: Harsh Doorstop | `HarshDoorstop/Mods/<mod name>` | The server loads every mod in this folder. Select mod maps and modes with `defaultmap` or `startparameters` |
 | Squad | `SquadGame/Plugins/Mods/<id>` | The server loads every mod in this folder |
+| Squad 44 | `PostScriptum/Plugins/Mods/<id>` | The server loads every mod in this folder |
 | Starbound | `serverfiles/workshop/@<id>`, linked into `serverfiles/mods` | The server loads every `.pak` in `serverfiles/mods` |
 
 For example, on Arma 3:
@@ -128,4 +134,8 @@ For example, on Arma 3:
 
 {% hint style="info" %}
 If you change `workshopmods`, run `workshop-update` before starting the server. LinuxGSM will warn on start if a listed mod is not installed yet.
+{% endhint %}
+
+{% hint style="warning" %}
+Squad 44 on Linux only loads mods whose authors include a Linux server build (`LinuxNoEditor`). Windows-only mods download and install, but the server logs them as invalid and does not load them. Check with the mod author if a mod does not load.
 {% endhint %}
