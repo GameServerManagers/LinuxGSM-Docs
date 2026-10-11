@@ -2,7 +2,7 @@
 
 Installs, updates and removes the Steam Workshop mods set in `workshopmods`, for game servers that cannot download Workshop content themselves.
 
-Available for Arma 3, DayZ, Operation: Harsh Doorstop, Squad, Squad 44 and Starbound from v26.4.0. See [Workshop](../steamcmd/workshop.md#linuxgsm-workshop-downloads) for setup and requirements.
+Available for Arma 3, Barotrauma, DayZ, Operation: Harsh Doorstop, Squad, Squad 44, Starbound and Stationeers from v26.4.0. See [Workshop](../steamcmd/workshop.md#linuxgsm-workshop-downloads) for setup and requirements.
 
 {% hint style="warning" %}
 For Arma 3 and DayZ, the Steam account in `steamuser` must own the game, not just the dedicated server. Otherwise every Workshop item fails to download. Workshop items for the other games download without this.
