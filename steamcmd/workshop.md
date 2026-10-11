@@ -16,6 +16,7 @@ Game servers get Workshop content in one of two ways:
 | ARK: Survival Evolved | Game server | `ActiveMods=` in `GameUserSettings.ini` (`-AutoManagedMods` is in the default start parameters) |
 | Arma 3 | LinuxGSM (v26.4.0+) | `workshopmods` in the [LinuxGSM config](../configuration/linuxgsm-config.md), see [below](#linuxgsm-workshop-downloads) |
 | Barotrauma | LinuxGSM (v26.4.0+) | `workshopmods` in the LinuxGSM config, see [below](#linuxgsm-workshop-downloads) |
+| Colony Survival | LinuxGSM (v26.4.0+) | `workshopmods` in the LinuxGSM config, see [below](#linuxgsm-workshop-downloads) |
 | Counter-Strike 2 | Game server | `+host_workshop_collection` or `+host_workshop_map` in `startparameters`, with `wsapikey` |
 | Counter-Strike: Global Offensive | Game server | `wscollectionid`, `wsstartmap` and `wsapikey` in the LinuxGSM config |
 | Day of Infamy | Game server | `subscribed_file_ids.txt` in the game directory (`-workshop` is in the default start parameters) |
@@ -79,7 +80,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=157384458
 
 ## LinuxGSM Workshop Downloads
 
-For game servers that cannot download Workshop content themselves, LinuxGSM downloads and installs it for you. This is available for Arma 3, Barotrauma, DayZ, Operation: Harsh Doorstop, Squad, Squad 44, Starbound and Stationeers from v26.4.0.
+For game servers that cannot download Workshop content themselves, LinuxGSM downloads and installs it for you. This is available for Arma 3, Barotrauma, Colony Survival, DayZ, Operation: Harsh Doorstop, Squad, Squad 44, Starbound and Stationeers from v26.4.0.
 
 ### Steam Account Requirements
 
@@ -89,6 +90,7 @@ Whether you need a Steam account that owns the game depends on the game.
 | --- | --- | --- |
 | Arma 3 | Any Steam account (not anonymous) | Account must **own Arma 3** |
 | Barotrauma | Anonymous | Anonymous |
+| Colony Survival | Anonymous | Account must **own Colony Survival** |
 | DayZ | Any Steam account (not anonymous) | Account must **own DayZ** |
 | Operation: Harsh Doorstop | Anonymous | Anonymous |
 | Squad | Anonymous | Anonymous |
@@ -96,7 +98,7 @@ Whether you need a Steam account that owns the game depends on the game.
 | Starbound | Account must own Starbound | Uses the same account |
 | Stationeers | Anonymous | Anonymous |
 
-For Arma 3 and DayZ, the dedicated server is free with any Steam account, but Steam only downloads Workshop items for an account that owns the game itself. If the account in `steamuser` does not own the game, the server installs and runs, but every Workshop item fails to download with `Failure`. Set `steamuser` and `steampass` in the [LinuxGSM config](../configuration/linuxgsm-config.md), see [SteamCMD login](README.md#steamcmd-login).
+For Arma 3 and DayZ, the dedicated server is free with any Steam account, and the Colony Survival server downloads anonymously, but Steam only downloads their Workshop items for an account that owns the game itself. If the account in `steamuser` does not own the game, the server installs and runs, but every Workshop item fails to download with `Failure`. Set `steamuser` and `steampass` in the [LinuxGSM config](../configuration/linuxgsm-config.md), see [SteamCMD login](README.md#steamcmd-login).
 
 ### Setup
 
@@ -118,6 +120,7 @@ Where each game's mods are installed, and how they are loaded:
 | --- | --- | --- |
 | Arma 3, DayZ | `serverfiles/workshop/@<id>` | LinuxGSM adds them to `-mod=` on start, in the order listed, after any mods you set in `mods` |
 | Barotrauma | `LocalMods/<id>` | LinuxGSM adds each mod to `<regularpackages>` in `config_player.xml`, in the order listed. Entries you add yourself are kept |
+| Colony Survival | `gamedata/mods/<id>` | LinuxGSM enables each mod in every world's `gamedata/savegames/<world>/worldconfig.json`. Entries you add yourself are kept |
 | Operation: Harsh Doorstop | `HarshDoorstop/Mods/<mod name>` | The server loads every mod in this folder. Select mod maps and modes with `defaultmap` or `startparameters` |
 | Squad | `SquadGame/Plugins/Mods/<id>` | The server loads every mod in this folder |
 | Squad 44 | `PostScriptum/Plugins/Mods/<id>` | The server loads every mod in this folder |
