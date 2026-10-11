@@ -5,15 +5,6 @@
 * A **Steam account that owns Running With Rifles**. The dedicated server is part of the game (app 270150) and can't be downloaded anonymously. Set `steamuser` and `steampass` as described in [SteamCMD Login](../steamcmd/README.md#steamcmd-login).
 * The **WW2 game modes** also need the account to own the matching DLC (see [DLC Game Modes](#dlc-game-modes)).
 * At least 1 GB of RAM.
-* Tested on Ubuntu 24.04 and 26.04. The server is 32-bit, so LinuxGSM installs the i386 libraries it needs as dependencies.
-
-## Installing
-
-```
-./linuxgsm.sh rwrserver
-./rwrserver install
-./rwrserver start
-```
 
 ## Server Settings
 
@@ -70,10 +61,6 @@ The WW2 game modes need scripts from the Running With Rifles DLC. The base game 
 
 After buying the DLC on the server's Steam account, run `./rwrserver validate` so SteamCMD downloads it.
 
-## Stopping
-
-LinuxGSM saves player profiles (`save_profiles`) and stops the game (`stop_server`) before closing the server.
-
 ## Logs
 
-The server writes `rwr_server.log` to the top of `serverfiles`. LinuxGSM's console log is in `log/console`.
+The server writes `rwr_server.log` to the top of `serverfiles`.
