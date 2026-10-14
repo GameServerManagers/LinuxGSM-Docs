@@ -18,7 +18,11 @@ Stop will attempt a [graceful shutdown](../features/stop-mode.md) of a game serv
 
 #### Stop only if empty (optional)
 
-If the `stoponlyifnoplayers` setting is enabled, LinuxGSM will only stop the server when it is empty and prevent it from stopping otherwise. This feature requires [gamedig](../requirements/gamedig.md) and a working query (`querymode` 2 or 3).
+If the `stoponlyifnoplayers` setting is enabled, LinuxGSM will only stop the server when it is empty and prevent it from stopping otherwise.
+
+{% hint style="warning" %}
+This feature requires [gamedig](../requirements/gamedig.md) (which needs Node.js 16 or newer) and a working query (`querymode` 2 or 3). If the player count can't be checked, LinuxGSM shows `Unable to determine player count` with the reason and stops the server anyway.
+{% endhint %}
 
 ```properties
 stoponlyifnoplayers="off"

@@ -46,7 +46,9 @@ There are no warnings when:
 * `force-update` or `validate` is used.
 * The server is empty. If everyone leaves during the countdown, LinuxGSM stops waiting and carries on straight away.
 
-Checking for players requires [gamedig](../requirements/gamedig.md) and a working query (`querymode` 2 or 3). If the player count can't be checked, LinuxGSM warns anyway.
+{% hint style="warning" %}
+Checking for players requires [gamedig](../requirements/gamedig.md) (which needs Node.js 16 or newer) and a working query (`querymode` 2 or 3). Without it, LinuxGSM can't tell whether the server is empty, so it always warns and always waits the full `warnplayerstimer`, and shows `unable to check for players` with the reason.
+{% endhint %}
 
 If the countdown is cancelled with CTRL+c, players are told the stop or restart was cancelled.
 
