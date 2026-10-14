@@ -81,6 +81,7 @@
 * [Features](features/README.md)
   * [ANSI Colors](features/ansi-colors.md)
   * [Stop Mode](features/stop-mode.md)
+  * [Player Warnings](features/player-warnings.md)
   * [Log Management](features/logging.md)
   * [Message Display Time](features/message-display-time.md)
 * [SteamCMD](steamcmd/README.md)

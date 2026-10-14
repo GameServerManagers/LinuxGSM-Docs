@@ -59,6 +59,12 @@ Set if the server should be stopped for a backup using `stoponbackup`. If the se
 stoponbackup="on"
 ```
 
+#### Backups while players are online
+
+With [stop only if empty](start-stop-restart.md#stop-only-if-empty-optional) (`stoponlyifnoplayers="on"`), a backup that would stop the server while players are online is postponed. The [monitor](monitor.md) command runs it once the server is empty, and sends an [alert](../alerts/README.md) if it has been postponed for over 24 hours.
+
+Players can be warned before the server is stopped for a backup with [Player Warnings](../features/player-warnings.md).
+
 ## Automated Backups
 
 Automated backups can be set using [cronjobs](../configuration/cronjobs.md). It is recommended that frequently you backup and your retention policy to prevent your server is carefully considered to prevent storage issues.
