@@ -52,23 +52,19 @@ If the countdown is cancelled with CTRL+c, players are told the stop or restart 
 
 ## Supported games
 
-Warnings are sent with the game's own chat command, typed into the server console. They work for game servers with an interactive console (`consoleinteract="yes"`) and a known chat command, set with `warncommand` (`%s` is replaced by the message):
+Warnings are sent with the game's own chat command, typed into the server console, so they work for game servers with an interactive console:
 
-| Game servers                                                                                         | `warncommand`         |
+| Game servers                                                                                         | Chat command          |
 | ---------------------------------------------------------------------------------------------------- | --------------------- |
-| Source, Source 2 and GoldSrc games, Quake and Call of Duty games, Xonotic, Minecraft, Terraria, Unturned, Barotrauma | `say %s` |
-| Project Zomboid                                                                                      | `servermsg "%s"`      |
-| Don't Starve Together                                                                                | `c_announce("%s")`    |
-| SCP: Secret Laboratory                                                                               | `/bc 10 %s`           |
-| Vintage Story                                                                                        | `/announce %s`        |
-| WaterfallMC                                                                                          | `alert %s`            |
-| Factorio                                                                                             | `%s`                  |
+| Source, Source 2 and GoldSrc games, Quake and Call of Duty games, Xonotic, Minecraft, Terraria, Unturned, Barotrauma, Hytale | `say` |
+| Project Zomboid                                                                                      | `servermsg`           |
+| Don't Starve Together                                                                                | `c_announce`          |
+| SCP: Secret Laboratory                                                                               | `/bc`                 |
+| Vintage Story                                                                                        | `/announce`           |
+| WaterfallMC                                                                                          | `alert`               |
+| Factorio                                                                                             | Plain console text    |
 
-For other game servers, `warncommand` is empty and warnings are skipped. If your server uses a mod with its own chat command, you can set `warncommand` yourself, e.g. for a Source server running SourceMod:
-
-```properties
-warncommand="sm_csay %s"
-```
+For other game servers, warnings are skipped with `Warning players: not supported`.
 
 ## Warnings and stop only if empty
 
