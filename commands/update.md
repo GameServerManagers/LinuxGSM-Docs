@@ -10,6 +10,8 @@ Short: `./gameserver u`
 
 Update will check for any available update, taking no action if no update is available. If there is an update it will apply the update, restarting the server if already running.
 
+For game servers that use [LinuxGSM Workshop downloads](../steamcmd/workshop.md#linuxgsm-workshop-downloads) (v26.4.0+), `update` also updates the Workshop mods set in `workshopmods`, the same as [workshop-update](workshop-update.md).
+
 ## Automatic update
 
 ### Update on start

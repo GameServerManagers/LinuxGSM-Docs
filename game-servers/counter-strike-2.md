@@ -54,11 +54,15 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=3075706807
 
 ### Create a Collection
 
+See [Create a Collection](../steamcmd/workshop.md#create-a-collection).
 
+### Add Workshop Content
+
+Add the ID to `startparameters` in the [LinuxGSM config](../configuration/linuxgsm-config.md): `+host_workshop_collection <id>` for a collection, or `+host_workshop_map <id>` for a single map. The server downloads the content when it starts.
 
 ### Auth Key
 
-If you are using a collection you will need to get an auth key from [here](https://steamcommunity.com/dev/apikey).
+If you are using a collection you will need a [Steam Web API key](https://steamcommunity.com/dev/apikey). Set it as `wsapikey` in the LinuxGSM config.
 
 ## Mods
 

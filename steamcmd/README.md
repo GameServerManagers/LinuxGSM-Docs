@@ -29,13 +29,17 @@ If this is the case LinuxGSM will prompt you on installation to set a steam _use
 ```
 ## SteamCMD Login
 steamuser="username"
-steampass="password"
+steampass='password'
 ```
+
+Keep the password in single quotes so characters such as `$` are not expanded.
 
 If you get the error `ERROR! Failed to install app '2430930' (No subscription)` then you do not own a copy of the game in your account and will need to login on the standard steam client and buy the game. If the game is free you will need to "add to account".
 
+Some game servers also need a Steam login for [Workshop downloads](workshop.md#steam-account-requirements), even when the server itself downloads anonymously.
+
 {% hint style="danger" %}
-**Do not** use your own steam login. Create a new Steam login just for the game server. As the steam login password is stored in [plain text](./#plain-text-passwords).
+**Do not** use your own steam login. Create a new Steam login just for the game server. The Steam login password is stored in [plain text](#plain-text-passwords).
 {% endhint %}
 
 {% hint style="info" %}
@@ -44,7 +48,7 @@ Check [here](https://linuxgsm.com/data/steamcmd) for a list of game servers that
 
 ### Plain Text Passwords
 
-SteamCMD prints out passwords in plain text meaning that the Steam login password is visible to anyone on the server. LinuxGSM saves logs and the Steam login password will be view-able in the logs.
+SteamCMD prints out passwords in plain text meaning that the Steam login password is visible to anyone on the server. LinuxGSM saves logs, and the Steam login password will be viewable in the logs.
 
 ## Steam Guard
 
@@ -52,7 +56,7 @@ SteamCMD prints out passwords in plain text meaning that the Steam login passwor
 
 Steam Guard is an additional layer of security that can be applied to a Steam account. The first layer is the account login credentials: the Steam account username and password. With Steam Guard, a second layer of security is applied to the account, making it harder for a Steam account to fall into the wrong hands.
 
-If Steam Guard is enabled on an account when a login to from an unrecognized device happens an access code will be required as verification. Depending on the account Steam Guard settings, either an email with a code or a code from the Steam Mobile app on a smartphone is required.
+If Steam Guard is enabled on an account, a login from an unrecognised device requires an access code as verification. Depending on the account Steam Guard settings, either an email with a code or a code from the Steam Mobile app on a smartphone is required.
 
 {% hint style="info" %}
 For more info visit [steam support](https://support.steampowered.com/kb\_article.php?ref=4020-ALZM-5519).
@@ -83,5 +87,3 @@ Both options 1 & 2 work with LinuxGSM.
 Steam Guard via Smartphone is not compatible because it requires a code every time you login to SteamCMD. This is problematic if you want your game servers to auto-update.
 
 If you have Steam Guard via email enabled the first time you start SteamCMD you will be prompted to enter a steam Guard code and you will receive an email with the code. Copy and paste the code into the prompt and press enter. You will not need to enter a code again.
-
-##

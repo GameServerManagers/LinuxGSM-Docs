@@ -3,6 +3,10 @@
 LinuxGSM supports the installation, updating, and removing of selected mods and add-ons for some games and engines.  
 Zip add-ons are currently the only supported installations.
 
+{% hint style="info" %}
+For Steam Workshop mods, see [Workshop](../steamcmd/workshop.md) and the [workshop-update](workshop-update.md) command.
+{% endhint %}
+
 ## Commands
 
 ### Install mods

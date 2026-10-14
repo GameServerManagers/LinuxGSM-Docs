@@ -63,11 +63,21 @@ Only an admin can see the headless clients in the player menu on the server. The
 
 ## Mod Support
 
-Arma 3 mods are managed using the [Steam Workshop](https://steamcommunity.com/app/346110/workshop/) or manual downloads.
+Arma 3 mods are managed using the [Steam Workshop](https://steamcommunity.com/app/107410/workshop/) or manual downloads.
 
-### Adding Mods
+### Workshop Mods (v26.4.0+)
 
-Firstly, you need to select the mods you want to use from the [steam workshop](https://steamcommunity.com/app/346110/workshop/).
+LinuxGSM can download, install and update Workshop mods for you. Add the Workshop IDs to `workshopmods` in the [LinuxGSM config](../configuration/linuxgsm-config.md) and run `./arma3server workshop-update`.
+
+```bash
+workshopmods="450814997"
+```
+
+LinuxGSM converts the mod files to lowercase, copies their keys and adds them to `-mod=` automatically. The Steam account in `steamuser` must own Arma 3. See [Workshop](../steamcmd/workshop.md#linuxgsm-workshop-downloads) for details.
+
+### Adding Mods Manually
+
+Firstly, you need to select the mods you want to use from the [steam workshop](https://steamcommunity.com/app/107410/workshop/).
 
 {% hint style="warning" %}
 Mods can cause your server to become unstable or may not be compatible with each other. It is a good idea to read the mods docs and/or speak with other experienced Arma3 admins.
@@ -77,7 +87,7 @@ Here is a popular mod to get started:
 
 * [CBA: Community Based Addons for Arma 3](https://steamcommunity.com/workshop/filedetails/?id=450814997)
 
-Download the Mod using [https://steamworkshopdownloader.io/](https://steamworkshopdownloader.io/) the workshop id is `450814997`
+Subscribe to the mod in a Steam client that owns Arma 3. Steam saves it in `steamapps/workshop/content/107410/450814997`, where `450814997` is the Workshop ID
 
 Create a directory called `@cba_a3` in `serverfiles/mods`
 
@@ -111,7 +121,7 @@ mods="mods/@mod1\;mods/@mod2"
 
 ### Lower Case File Names
 
-Arma 3 server requires that mods have lowercase names. Some mods do not do this and will need to have their file names converted to lowercase.
+Arma 3 server requires that mods have lowercase names. Some mods do not do this and will need to have their file names converted to lowercase. Workshop mods installed with `workshop-update` are converted automatically.
 
 This can be done by using the following script.
 
