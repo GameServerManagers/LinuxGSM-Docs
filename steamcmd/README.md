@@ -10,6 +10,21 @@ SteamCMD normally downloads files for the host operating system. It can also req
 
 ![SteamCMD Terminal](../.gitbook/assets/steamcmd.png)
 
+## Network ports
+
+SteamCMD connects to Valve over the Internet to log in and download or update game files. It needs **outbound access**, not incoming port forwarding.
+
+Valve lists these destination ports for Steam login and downloads:
+
+| Destination ports | Protocol | Direction |
+| --- | --- | --- |
+| 80 and 443 | TCP | **Outbound** from your machine to Valve/content servers |
+| 27015-27050 | TCP and UDP | **Outbound** from your machine to Steam services |
+
+If your firewall already allows outbound connections and their replies, no extra inbound rule or router port forward is needed for SteamCMD. If outbound traffic is restricted, allow the destination ports above and reply traffic. These are ports on the remote services, not ports to forward into your server. See Valve's [Required Ports for Steam](https://help.steampowered.com/en/faqs/view/2EA8-4D75-DA21-31EB) for its current requirements.
+
+The running game server has separate networking requirements. Players must be able to reach its incoming game/query ports. See [Source engine ports](../networking/source-engine.md) or the [general ports guide](../networking/ports.md) for other games.
+
 ## SteamCMD Login
 
 The game's Steam distribution determines whether SteamCMD can log in anonymously or needs an account.
