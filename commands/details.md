@@ -42,7 +42,7 @@ Various relevant details are provided including:
 | `Status: STARTED` | LinuxGSM's tmux session exists. The game server may still be loading. |
 | `Status: STOPPED` | LinuxGSM's tmux session is absent. |
 | `LISTEN` | The number of local socket entries matching the listed port and protocol. A value above zero indicates a local match. |
-| `Query Check` | A link to an external query service, shown for supported games. Open it to test whether the public query address responds. |
+| `Query Check` | A link to [ismygameserver.online](https://ismygameserver.online), shown for supported games. Open it to test whether the public query address responds. |
 
 Public access also depends on the server binding to the correct network interface, inbound firewall rules, and any router port forwarding or container port mappings. An external query response confirms that the query service is reachable from that test location; connecting with a game client checks player access.
 

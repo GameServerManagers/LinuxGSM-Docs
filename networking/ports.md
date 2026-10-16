@@ -164,6 +164,6 @@ Ensure that the router correctly redirects incoming traffic to the correct ports
 
 ### Check public access
 
-For supported games, open the `Query Check` link shown by `./gameserver details` to test the public query address from an external service. A failed query can have several causes, including server startup, an incorrect address or port, or network filtering.
+Use [ismygameserver.online](https://ismygameserver.online) to check whether a supported game server responds over the Internet. Select the game and enter its public IP address or hostname and query port. For supported games, `./gameserver details` provides a `Query Check` link with the server address already filled in. A failed query can have several causes, including server startup, an incorrect address or port, or network filtering.
 
 Test player access by connecting with a game client from outside the server's local network. Local `LISTEN` entries show bound sockets; public access requires the relevant traffic to reach those sockets through every firewall and router along the path.
