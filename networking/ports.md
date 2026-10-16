@@ -124,6 +124,8 @@ If you are running several game servers it is a good idea to create a spreadshee
 
 ## Diagnosing server accessibility
 
+`Status: STARTED` in `./gameserver details` means LinuxGSM's tmux session exists. Use the checks below to confirm that the game has bound its ports and is accessible to players.
+
 ### Check ports are bound
 
 Ensure the game server ports are bound and listening before anything else. You can check if your server is actually listening by using `./gameserver details` if a port is bound and listening then the `LISTEN` column will not be zero.
@@ -153,6 +155,15 @@ Running the `ss` command will bring up any ports that are listening. If not, the
 
 [Firewalls](../linux/firewalls.md) are a regular source of connectivity issues. When diagnosing connection issues temporarily disabling a firewall will help identify if it is the source of the problem.
 
+For cloud-hosted servers, also check the provider's inbound firewall rules, such as AWS security groups. For Docker bridge networking, publish the required incoming ports with the correct TCP or UDP protocol.
+
 ### Check Port Forwarding (Local Networks)
 
 Ensure that the router correctly redirects incoming traffic to the correct ports and local IP displayed with `./gameserver details` with the correct protocol (TCP and/or UDP).
+
+
+### Check public access
+
+For supported games, open the `Query Check` link shown by `./gameserver details` to test the public query address from an external service. A failed query can have several causes, including server startup, an incorrect address or port, or network filtering.
+
+Test player access by connecting with a game client from outside the server's local network. Local `LISTEN` entries show bound sockets; public access requires the relevant traffic to reach those sockets through every firewall and router along the path.
