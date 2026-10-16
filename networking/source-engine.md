@@ -18,12 +18,6 @@ Direction is relative to your server: **Inbound** starts with another machine co
 
 The forwarding guidance assumes a router with stateful NAT and outbound connections allowed. The router tracks outbound connections and lets their replies back without a separate port forward.
 
-## Steam backend port
-
-The Steam backend port is used by the running game server for outbound communication with Valve's Steam services. The port number depends on the game and may be selected automatically.
-
-See the [Steamworks server API](https://partner.steamgames.com/doc/api/steam_gameserver#SteamGameServer_Init) for the port definition and [SteamCMD network ports](../steamcmd/README.md#network-ports) for download and update requirements.
-
 ## Firewall and router setup
 
 * **Server firewall:** allow the inbound game/query port and any optional incoming services you use. Allow required outbound Steam traffic and its replies.
