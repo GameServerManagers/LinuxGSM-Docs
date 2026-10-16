@@ -22,13 +22,15 @@ Players on the Internet    --> Your game server's game/query port
 
 The Steam port shown by LinuxGSM belongs to the running game server's communication with Valve. It is not an internal connection between SteamCMD and the game server. In networking documentation, a local port means a port on your machine; it does not mean that the traffic stays on your machine or LAN.
 
+Direction is relative to your server: **Inbound** means another machine starts communicating with your server; **Outbound** means your server starts communicating with another machine. Replies travel in the opposite direction.
+
 The table below assumes a typical router with stateful NAT and outbound connections allowed. It distinguishes an outbound firewall rule from an inbound port-forwarding rule.
 
 | Activity | Traffic direction | Router port forwarding |
 | --- | --- | --- |
-| SteamCMD login and downloads | Your machine connects out to Valve | **No.** SteamCMD needs outbound access and reply traffic, not an incoming port-forwarding rule. |
-| Public game server: players and queries | Players and server browsers connect in to your machine | **Yes**, for the game's configured incoming ports and protocols. |
-| Game server communication with Steam | The game server connects out to Valve | **No** for connections initiated by the server and their replies. Check any additional requirements documented by the particular game. |
+| SteamCMD login and downloads | **Outbound:** your machine to Valve | **No.** SteamCMD needs outbound access and reply traffic, not an incoming port-forwarding rule. |
+| Public game server: players and queries | **Inbound:** players/server browsers to your machine | **Yes**, for the game's configured incoming ports and protocols. |
+| Game server communication with Steam | **Outbound:** your game server to Valve | **No** for connections initiated by the server and their replies. Check any additional requirements documented by the particular game. |
 
 For a restrictive outbound firewall, see Valve's [Required Ports for Steam](https://help.steampowered.com/en/faqs/view/2EA8-4D75-DA21-31EB). Its login/download guidance lists TCP 80/443 and TCP/UDP remote ports 27015-27050. Remote ports are the destination ports at Steam, not a range to forward into your game server. Allow reply traffic through a stateful firewall.
 

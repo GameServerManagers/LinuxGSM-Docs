@@ -4,15 +4,17 @@
 
 These are common defaults for Source dedicated servers. The game, engine version and start parameters determine the actual ports; GoldSrc and Source 2 games may differ.
 
+Direction is relative to your game server. **Inbound** traffic starts with an Internet player or administrator contacting your server. **Outbound** traffic starts with your server contacting another service. Replies travel in the opposite direction.
+
 For the forwarding column, assume a public dedicated server behind a router with stateful NAT and outbound connections allowed. Use your configured port numbers if you changed the defaults.
 
-| Purpose | Common default | Protocol | Use | Forward on the router? |
+| Purpose | Common default | Protocol | Direction | Forward on the router? |
 | --- | --- | --- | --- | --- |
-| Game and query | 27015 | UDP | Player connections and server browser queries. | **Yes**, for players connecting from the Internet. |
-| RCON | 27015 | TCP | Remote administration. | **Only if** administrators need direct access from the Internet. Restrict access to trusted addresses, or use a VPN. |
-| Client | 27005 | UDP | The engine's client networking socket. | **No** for normal dedicated Source server hosting. Players connect to the game port above. |
-| SourceTV | 27020 | UDP | Spectator traffic when SourceTV is enabled. | **Only if** you enable SourceTV for spectators connecting from the Internet. |
-| Steam backend | Around 26900/26901 | UDP on older Source servers | The game server's connection to Valve's Steam services. | **No** for outbound Steam communication and its replies. This is not a player connection port. |
+| Game and query | 27015 | UDP | **Inbound** | **Yes**, for players connecting from the Internet. |
+| RCON | 27015 | TCP | **Inbound** | **Only if** administrators need direct access from the Internet. Restrict access to trusted addresses, or use a VPN. |
+| Client | 27005 | UDP | **Outbound** | **No** for normal dedicated Source server hosting. Players connect to the game port above. |
+| SourceTV | 27020 | UDP | **Inbound** | **Only if** you enable SourceTV for spectators connecting from the Internet. |
+| Steam backend | Around 26900/26901 | UDP on older Source servers | **Outbound** | **No** for outbound Steam communication and its replies. This is not a player connection port. |
 
 For a typical Source server offering gameplay without public RCON or SourceTV, forward its game/query port, usually **27015/UDP**. Do not forward 27005 or 26901 just because they appear in a port list. Check the game's documentation for any extra incoming services it requires.
 
