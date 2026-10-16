@@ -2,88 +2,71 @@
 
 ![](<../.gitbook/assets/steamcmd (1).png>)
 
-SteamCMD is a command-line based Steam client developed by Valve that is used to remotely download game files. This is very useful for game servers, as it is significantly easier to keep them up-to-date. Any game that supports dedicated servers will have its server files available on SteamCMD. All you need is the AppID which can be found on Valve's [wiki](https://developer.valvesoftware.com/wiki/Dedicated\_Servers\_List) or [SteamDB](https://steamdb.info/search/?a=app\&q=server).
+SteamCMD is Valve's command-line client for downloading and updating applications distributed through Steam. LinuxGSM uses it for game servers that provide their files through Steam. Each application has an AppID; the dedicated server AppID can differ from the game's client AppID. See Valve's [Dedicated Servers List](https://developer.valvesoftware.com/wiki/Dedicated_Servers_List) or [SteamDB](https://steamdb.info/search/?a=app&q=server).
 
 {% hint style="info" %}
-You can only download server files for the operating system that you are using SteamCMD on.
+SteamCMD normally downloads files for the host operating system. It can also request files for another platform. LinuxGSM selects the required platform for supported servers, including games that need Windows game data alongside a Linux server executable.
 {% endhint %}
 
 ![SteamCMD Terminal](../.gitbook/assets/steamcmd.png)
 
 ## SteamCMD Login
 
-SteamCMD requires a login to download some game servers.
-
-It is recommended that you [create a new Steam username](https://store.steampowered.com/login/) just for the server.
+The game's Steam distribution determines whether SteamCMD can log in anonymously or needs an account.
 
 ### Anonymous Login
 
-The majority of game servers using SteamCMD only require an _anonymous_ login. LinuxGSM will not require any configuration if this is the case.
+For servers available anonymously, keep LinuxGSM's default Steam login settings. No Steam account details are required.
 
 ### Steam User Login
 
-Some game servers require you to login to SteamCMD using a steam login to allow download of the server. Some also require you to own a copy of the game on the steam account.
+Some servers require a Steam account, and some require that account to own the game. Use a [dedicated Steam account](https://store.steampowered.com/join/) for server administration.
 
-If this is the case LinuxGSM will prompt you on installation to set a steam _username_ and _password._ This can be set by editing the following settings within the [LinuxGSM config](../configuration/linuxgsm-config.md).
+When LinuxGSM reports that a Steam login is required, set the credentials in the [LinuxGSM config](../configuration/linuxgsm-config.md#secret-configs). Use `secrets-common.cfg` for shared settings or `secrets-<gameserver>.cfg` for a particular instance, in `lgsm/config-lgsm/<gameserver>/`.
 
-```
-## SteamCMD Login
+```bash
 steamuser="username"
 steampass='password'
 ```
 
-Keep the password in single quotes so characters such as `$` are not expanded.
+Keep the password in single quotes so characters such as `$` are not expanded. Config values use Bash quoting rules.
 
-If you get the error `ERROR! Failed to install app '2430930' (No subscription)` then you do not own a copy of the game in your account and will need to login on the standard steam client and buy the game. If the game is free you will need to "add to account".
+#### No subscription
+
+`ERROR! Failed to install app '<appid>' (No subscription)` means the Steam login does not have the entitlement needed for the requested application. Check the AppID, the account being used, and whether that server supports anonymous downloads. For a paid game that requires ownership, the account must own the required game. For a free game, the account may need to claim its licence through the Steam store.
 
 Some game servers also need a Steam login for [Workshop downloads](workshop.md#steam-account-requirements), even when the server itself downloads anonymously.
 
-{% hint style="danger" %}
-**Do not** use your own steam login. Create a new Steam login just for the game server. The Steam login password is stored in [plain text](#plain-text-passwords).
+{% hint style="warning" %}
+Use a dedicated Steam account for the game server. Credentials saved in LinuxGSM config files are stored in plain text. Restrict access to those files and to the server's Steam authentication cache.
 {% endhint %}
 
-{% hint style="info" %}
-Check [here](https://linuxgsm.com/data/steamcmd) for a list of game servers that require a login.
-{% endhint %}
+See the [SteamCMD server data](https://linuxgsm.com/data/steamcmd) for game-specific login requirements.
 
 ### Plain Text Passwords
 
-SteamCMD prints out passwords in plain text meaning that the Steam login password is visible to anyone on the server. LinuxGSM saves logs, and the Steam login password will be viewable in the logs.
+Secret config files separate credentials from general settings; their contents are not encrypted. Limit read access to the server account and administrators, and exclude these files from public repositories and shared backups.
+
+LinuxGSM passes configured credentials to SteamCMD when it logs in. Command-line arguments, diagnostic output or debug logs can expose sensitive values depending on the system and logging mode. Check logs before sharing them for support.
 
 ## Steam Guard
 
 ![Steam Guard](../.gitbook/assets/steamguard.jpg)
 
-Steam Guard is an additional layer of security that can be applied to a Steam account. The first layer is the account login credentials: the Steam account username and password. With Steam Guard, a second layer of security is applied to the account, making it harder for a Steam account to fall into the wrong hands.
-
-If Steam Guard is enabled on an account, a login from an unrecognised device requires an access code as verification. Depending on the account Steam Guard settings, either an email with a code or a code from the Steam Mobile app on a smartphone is required.
-
-{% hint style="info" %}
-For more info visit [steam support](https://support.steampowered.com/kb\_article.php?ref=4020-ALZM-5519).
-{% endhint %}
+Steam Guard adds verification to Steam account logins. A new or unauthorised login can require an emailed code or confirmation through the Steam Mobile app. See [Steam Support](https://help.steampowered.com/en/faqs/view/06B0-26E6-2CF8-254C) for account settings.
 
 ### Authentication Methods for SteamCMD
 
-1. Username and password - No Steam Guard
-2. Username and password - Steam Guard via Email
-3. Username and password - Steam Guard via Smartphone (not compatible with LinuxGSM)
-
-**Username and Password - No Steam Guard**
-
-Simply requires your Steam username and password.
-
-**Username and Password - Steam Guard via Email**
-
-Requires your Steam username and password and you will also receive an email on the first login to SteamCMD and be required to enter a code. Once the code is entered your server is authorised to use the steam account you entered.
-
-**Username and Password - Steam Guard via Smartphone (not compatible with LinuxGSM)**
-
-Requires your Steam Username & Password but also requires you have the Steam app on your phone to use 2-factor Authentication.
+| Method | Verification | LinuxGSM automation |
+| --- | --- | --- |
+| Username and password without Steam Guard | Account credentials | Can run unattended, with less account protection. |
+| Steam Guard by email | Email code when Steam requires authorisation | Suitable after authorisation, while the saved login remains valid. |
+| Steam Guard Mobile Authenticator | Mobile code or approval when requested | Not recommended for unattended game-server updates. Any login requiring a fresh code or approval needs an administrator present. |
 
 ### Using Steam Guard with LinuxGSM
 
-Both options 1 & 2 work with LinuxGSM.
+Use email-based Steam Guard for a server account that needs unattended LinuxGSM updates. Complete the initial authorisation interactively as the same Linux user that runs the game server, then verify that a subsequent update can log in without prompting.
 
-Steam Guard via Smartphone is not compatible because it requires a code every time you login to SteamCMD. This is problematic if you want your game servers to auto-update.
+Authentication that requires a fresh mobile code or approval for each login is unsuitable for automatic updates and should not be used for unattended server operation.
 
-If you have Steam Guard via email enabled the first time you start SteamCMD you will be prompted to enter a steam Guard code and you will receive an email with the code. Copy and paste the code into the prompt and press enter. You will not need to enter a code again.
+SteamCMD can cache a successful login for later runs. The cache belongs to that Linux user's Steam installation. It must remain available between updates, including when running in a container. Moving to another user or installation, removing the cache, or Steam requiring reauthorisation can cause another prompt. Complete the required verification interactively before relying on scheduled updates again.
