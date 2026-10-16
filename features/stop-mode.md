@@ -17,5 +17,8 @@ Stop mode allows a game server to gracefully shutdown by sending a stop signal t
 # 11: end
 # 12: shutdown
 # 13: Soulmask
+# 14: Running With Rifles
+# 15: Rising World
+# 16: Conan Exiles
 stopmode="7"
 ```

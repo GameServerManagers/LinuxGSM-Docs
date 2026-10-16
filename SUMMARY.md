@@ -36,6 +36,7 @@
   * [Arma 3](game-servers/arma-3.md)
   * [ARK: Survival Evolved](game-servers/ark-survival-evolved.md)
   * [Call of Duty 4](game-servers/call-of-duty-4.md)
+  * [Conan Exiles](game-servers/conan-exiles.md)
   * [Dont Starve Together](game-servers/dont-starve-together.md)
   * [Counter-Strike 2](game-servers/counter-strike-2.md)
   * [Counter-Strike: Global Offensive](game-servers/counter-strike-global-offensive.md)
