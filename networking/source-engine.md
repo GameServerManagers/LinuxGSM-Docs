@@ -2,47 +2,42 @@
 
 ## Default ports
 
-These are common defaults for Source dedicated servers. The game, engine version and start parameters determine the actual ports; GoldSrc and Source 2 games may differ.
+For a typical public Source dedicated server, allow **27015/UDP inbound** for players and server browser queries. If the server is behind a router, forward that port to the server. Add incoming ports for RCON or SourceTV only when you use those services over the Internet.
 
-Direction is relative to your game server. **Inbound** traffic starts with an Internet player or administrator contacting your server. **Outbound** traffic starts with your server contacting another service. Replies travel in the opposite direction.
+The table shows common Source defaults. Use your configured ports if they differ, and check the game's requirements for additional services. GoldSrc and Source 2 games may differ.
 
-For the forwarding column, assume a public dedicated server behind a router with stateful NAT and outbound connections allowed. Use your configured port numbers if you changed the defaults.
+Direction is relative to your server: **Inbound** starts with another machine contacting your server; **Outbound** starts with your server contacting another service. Replies travel in the opposite direction.
 
-| Purpose | Common default | Protocol | Direction | Forward on the router? |
+| Purpose | Default port | Protocol | Direction | Forward on the router? |
 | --- | --- | --- | --- | --- |
-| Game and query | 27015 | UDP | **Inbound** | **Yes**, for players connecting from the Internet. |
-| RCON | 27015 | TCP | **Inbound** | **Only if** administrators need direct access from the Internet. Restrict access to trusted addresses, or use a VPN. |
-| Client | 27005 | UDP | **Outbound** | **No** for normal dedicated Source server hosting. Players connect to the game port above. |
-| SourceTV | 27020 | UDP | **Inbound** | **Only if** you enable SourceTV for spectators connecting from the Internet. |
-| Steam backend | Around 26900/26901 | UDP on older Source servers | **Outbound** | **No** for outbound Steam communication and its replies. This is not a player connection port. |
+| Game and query | 27015 | UDP | **Inbound** | **Yes**, for Internet players and queries. |
+| RCON | 27015 | TCP | **Inbound** | **Only if** administrators need direct Internet access. Restrict it to trusted addresses. |
+| SourceTV | 27020 | UDP | **Inbound** | **Only if** Internet spectators use SourceTV. |
+| Client networking | 27005 | UDP | **Outbound** | **No** for normal dedicated Source server hosting. |
+| Steam backend | 26900/26901 on older Source games; varies | UDP | **Outbound** | **No** for outgoing Steam connections and their replies. |
 
-For a typical Source server offering gameplay without public RCON or SourceTV, forward its game/query port, usually **27015/UDP**. Do not forward 27005 or 26901 just because they appear in a port list. Check the game's documentation for any extra incoming services it requires.
+The forwarding guidance assumes a router with stateful NAT and outbound connections allowed. The router tracks outbound connections and lets their replies back without a separate port forward.
 
 ## Steam backend port
 
-Valve describes the [Steam port](https://partner.steamgames.com/doc/api/steam_gameserver#SteamGameServer_Init) as the local port used to communicate with Steam servers. Here, Steam servers means Valve's services on the Internet. The running game server makes this connection itself; SteamCMD is not involved. Local means the socket is on your machine, not that it is an internal SteamCMD-to-game-server connection. It is separate from the game port and query port. A [Game Server Login Token](../steamcmd/gslt.md) authenticates the server; it does not assign a universal GSLT port.
+The running game server uses this port to communicate with Valve's Steam services over the Internet. It is a local socket on your server, not an internal connection between SteamCMD and the game server. SteamCMD only downloads and updates files and can exit while the game server runs.
 
-Older Source games commonly use ports around 26900/26901, and some select another port when one is occupied. Supported launch options and the relationship between a requested port and the bound port vary by game. Check the game's supported start parameters before changing this port. A LinuxGSM variable only changes the binding if the game's launch command or config uses it.
+The port can vary by game or be selected automatically. Do not assume that every Steam game uses 26901. Valve describes this local port in the [Steamworks server API](https://partner.steamgames.com/doc/api/steam_gameserver#SteamGameServer_Init). SteamCMD's separate outbound requirements are listed under [SteamCMD network ports](../steamcmd/README.md#network-ports).
 
-LinuxGSM can report a configured Steam port and may detect one from a running Source server's sockets. If the port is unknown, the Steam row may be absent. This alone does not show that Steam login has failed.
+## Firewall and router setup
 
-## Firewall direction and port forwarding
+* **Server firewall:** allow the inbound game/query port and any optional incoming services you use. Allow required outbound Steam traffic and its replies.
+* **Router/NAT:** forward only the required incoming services to the server. Outbound Steam connections and their replies do not need manual forwarding rules.
+* **Public-IP server/VPS:** router forwarding is not needed when the server has a directly reachable public IP. The server firewall and provider firewall/security group must still allow the required incoming traffic.
+* **Docker bridge networking:** publish the required incoming ports to the host with the correct TCP/UDP protocol. If the host is behind a router, forward those ports to the host as well. Outbound connections do not need Docker ports published to receive replies.
 
-Port forwarding lets a new connection from the Internet reach a service behind your router. Replies to a connection your server opened are different: a stateful router/firewall tracks that connection and normally lets its replies back without a manual forwarding rule.
-
-Allow incoming game/query traffic through the server firewall and router. Add incoming rules for SourceTV or RCON only when you provide those services. A server with a public IP, such as many VPSs, does not need router port forwarding, but its host firewall and provider firewall/security group must still allow the required incoming traffic.
-
-For Docker bridge networking, publish the incoming service ports to the host using the matching protocol, then forward them to that host if it is behind a router. Outbound SteamCMD and Steam connections do not need Docker ports published just to receive replies.
-
-If outbound traffic is restricted, allow the required Steam destinations and established reply traffic. Adding an inbound 26901 forward will not fix a blocked outbound connection. Check the console for the actual Steam login error and use the game's networking requirements before adding rules.
-
-The `LISTEN` column in `./gameserver details` reports socket binding. It does not test your firewall, router forwarding, or whether an Internet client can reach the server.
-
-SteamCMD login/download connections have separate requirements; see [SteamCMD network ports](../steamcmd/README.md#network-ports) and Valve's [Required Ports for Steam](https://help.steampowered.com/en/faqs/view/2EA8-4D75-DA21-31EB).
+Use `./gameserver details` to check port settings. Its `LISTEN` column reports socket binding; it does not test firewall rules, router forwarding or Internet reachability. If Steam login fails, check the game console and outbound connectivity rather than adding an inbound Steam-port forward.
 
 ## Static Port Mapping (NAT/Docker)
 
-The port that is configured in the start parameters _must_ be the port that is exposed to the Internet. This is because the game server reports the port that it is configured in start parameters to use to the master server. If this does not match the game client will not be able to connect to the server.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      &#x20;
+Source servers advertise their configured game port to Steam's server browser. Keep the Internet-facing game port the same as the game's configured port so players can connect to the advertised address.
+
+For example, if the game uses 27015/UDP, publish 27015/UDP from Docker and forward 27015/UDP on the router to that host. To use 27016/UDP instead, change the game's start parameters to 27016 and use that port in the Docker mapping and router rule.
 
 <figure><img src="../.gitbook/assets/srcds_ports.jpg" alt=""><figcaption><p>Changing port using Docker or firewall</p></figcaption></figure>
 

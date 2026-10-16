@@ -12,29 +12,18 @@ You can only download server files for the operating system that you are using S
 
 ## Network ports
 
-SteamCMD is a downloader. It connects over the Internet to Valve to log in and download or update files. The game server then runs those files and makes its own connections to players and Steam services. The game server can run after SteamCMD exits.
+SteamCMD connects to Valve over the Internet to log in and download or update game files. It needs **outbound access**, not incoming port forwarding.
 
-```text
-SteamCMD on your machine    --> Valve's login and download services
-Game server on your machine --> Valve's Steam services
-Players on the Internet    --> Your game server's game/query port
-```
+Valve lists these destination ports for Steam login and downloads:
 
-The Steam port shown by LinuxGSM belongs to the running game server's communication with Valve. It is not an internal connection between SteamCMD and the game server. In networking documentation, a local port means a port on your machine; it does not mean that the traffic stays on your machine or LAN.
-
-Direction is relative to your server: **Inbound** means another machine starts communicating with your server; **Outbound** means your server starts communicating with another machine. Replies travel in the opposite direction.
-
-The table below assumes a typical router with stateful NAT and outbound connections allowed. It distinguishes an outbound firewall rule from an inbound port-forwarding rule.
-
-| Activity | Traffic direction | Router port forwarding |
+| Destination ports | Protocol | Direction |
 | --- | --- | --- |
-| SteamCMD login and downloads | **Outbound:** your machine to Valve | **No.** SteamCMD needs outbound access and reply traffic, not an incoming port-forwarding rule. |
-| Public game server: players and queries | **Inbound:** players/server browsers to your machine | **Yes**, for the game's configured incoming ports and protocols. |
-| Game server communication with Steam | **Outbound:** your game server to Valve | **No** for connections initiated by the server and their replies. Check any additional requirements documented by the particular game. |
+| 80 and 443 | TCP | **Outbound** from your machine to Valve/content servers |
+| 27015-27050 | TCP and UDP | **Outbound** from your machine to Steam services |
 
-For a restrictive outbound firewall, see Valve's [Required Ports for Steam](https://help.steampowered.com/en/faqs/view/2EA8-4D75-DA21-31EB). Its login/download guidance lists TCP 80/443 and TCP/UDP remote ports 27015-27050. Remote ports are the destination ports at Steam, not a range to forward into your game server. Allow reply traffic through a stateful firewall.
+If your firewall already allows outbound connections and their replies, no extra inbound rule or router port forward is needed for SteamCMD. If outbound traffic is restricted, allow the destination ports above and reply traffic. These are ports on the remote services, not ports to forward into your server. See Valve's [Required Ports for Steam](https://help.steampowered.com/en/faqs/view/2EA8-4D75-DA21-31EB) for its current requirements.
 
-Some Source games use a separate local Steam port around 26900/26901. This is not a universal GSLT port or a reason to forward that port for every game. See [Source engine ports](../networking/source-engine.md#steam-backend-port) and the general [ports guide](../networking/ports.md).
+The running game server has separate networking requirements. Players must be able to reach its incoming game/query ports. See [Source engine ports](../networking/source-engine.md) or the [general ports guide](../networking/ports.md) for other games.
 
 ## SteamCMD Login
 
