@@ -10,6 +10,20 @@ You can only download server files for the operating system that you are using S
 
 ![SteamCMD Terminal](../.gitbook/assets/steamcmd.png)
 
+## Network ports
+
+SteamCMD downloads and the running game server use different network connections.
+
+| Activity | Connection | What to allow |
+| --- | --- | --- |
+| SteamCMD login and downloads | Outbound connections to Steam authentication and content services | Allow the outbound traffic and its replies. Downloading files does not require forwarding the game's incoming ports. |
+| Players and server browser queries | Incoming connections to the running game server | Allow the game's configured ports and protocols. Forward them to the server if it is behind NAT. |
+| Game server communication with Steam | Connections between the running server and Steam services | Follow the game's requirements. This is separate from SteamCMD downloading files. |
+
+For a restrictive outbound firewall, see Valve's [Required Ports for Steam](https://help.steampowered.com/en/faqs/view/2EA8-4D75-DA21-31EB). Its login/download guidance lists TCP 80/443 and TCP/UDP remote ports 27015-27050. Remote ports are the destination ports at Steam, not a range to forward into your game server. Allow reply traffic through a stateful firewall.
+
+Some Source games use a separate local Steam port around 26900/26901. This is not a universal GSLT port or a reason to forward that port for every game. See [Source engine ports](../networking/source-engine.md#steam-backend-port) and the general [ports guide](../networking/ports.md).
+
 ## SteamCMD Login
 
 SteamCMD requires a login to download some game servers.
