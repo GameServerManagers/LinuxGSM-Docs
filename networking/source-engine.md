@@ -20,9 +20,9 @@ The forwarding guidance assumes a router with stateful NAT and outbound connecti
 
 ## Steam backend port
 
-The running game server uses this port to communicate with Valve's Steam services over the Internet. It is a local socket on your server, not an internal connection between SteamCMD and the game server. SteamCMD only downloads and updates files and can exit while the game server runs.
+The Steam backend port is used by the running game server for outbound communication with Valve's Steam services. The port number depends on the game and may be selected automatically.
 
-The port can vary by game or be selected automatically. Do not assume that every Steam game uses 26901. Valve describes this local port in the [Steamworks server API](https://partner.steamgames.com/doc/api/steam_gameserver#SteamGameServer_Init). SteamCMD's separate outbound requirements are listed under [SteamCMD network ports](../steamcmd/README.md#network-ports).
+See the [Steamworks server API](https://partner.steamgames.com/doc/api/steam_gameserver#SteamGameServer_Init) for the port definition and [SteamCMD network ports](../steamcmd/README.md#network-ports) for download and update requirements.
 
 ## Firewall and router setup
 
