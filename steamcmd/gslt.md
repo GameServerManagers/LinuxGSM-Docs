@@ -71,12 +71,6 @@ Tower Unite has a command within its [config file](../configuration/game-server-
 
 ## FAQ
 
-### Does GSLT require port 26901?
-
-A GSLT identifies the game server when it logs into Steam; it does not define a universal network port. Some Source games use a local Steam backend port around 26900/26901, but other games and engine versions can behave differently.
-
-The running game server connects to Valve to authenticate; this is not a connection to SteamCMD. With a normal stateful router and outbound access allowed, that outgoing connection and its replies do not need a manual port forward. Forward the incoming game/query ports players need, plus any optional services you enable. Do not forward 26901 solely because the game uses a GSLT. See [SteamCMD network ports](README.md#network-ports) and [Source Steam backend ports](../networking/source-engine.md#steam-backend-port).
-
 ### If one of my tokens is banned/blacklisted, will all tokens be banned?
 
 Yes, all the tokens on your account will be blacklisted if one of your servers are found to be running a blacklisted plugin. Make sure you read up on Valve’s plugin policies before running a game server so nothing unfortunate happens to your tokens.
