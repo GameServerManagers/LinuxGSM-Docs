@@ -33,6 +33,21 @@ Various relevant details are provided including:
 * Backups
 * Server parameters
 
+## Server status and connectivity
+
+`details` provides the following status and connectivity information:
+
+| Indicator | Meaning |
+| --- | --- |
+| `Status: STARTED` | LinuxGSM's tmux session exists. The game server may still be loading. |
+| `Status: STOPPED` | LinuxGSM's tmux session is absent. |
+| `LISTEN` | The number of local socket entries matching the listed port and protocol. A value above zero indicates a local match. |
+| `Query Check` | A link to [ismygameserver.online](https://ismygameserver.online), shown for supported games. Open it to test whether the public query address responds. |
+
+Public access also depends on the server binding to the correct network interface, inbound firewall rules, and any router port forwarding or container port mappings. An external query response confirms that the query service is reachable from that test location; connecting with a game client checks player access.
+
+See [Diagnosing server accessibility](../networking/ports.md#diagnosing-server-accessibility) for troubleshooting steps.
+
 ## Example output
 
 ```text
@@ -65,7 +80,7 @@ Fistful of Frags Server Details
 Server name:  Fistful of Frags Server
 Server IP:    192.168.1.1:27015
 RCON password:  rconpassword
-Status:       OFFLINE
+Status:       STOPPED
 
 Service name:  fof-server
 User:          fofserver
