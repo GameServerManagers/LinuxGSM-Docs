@@ -70,6 +70,9 @@ LinuxGSM can install, update and remove the following CS2 mods using the [mods c
 
 * **Metamod:Source 2.0**: plugin framework (development build, the only version that supports CS2).
 * **CounterStrikeSharp**: write server plugins in C#. Requires Metamod:Source 2.0 to be installed first.
+* **MatchZy** (v26.4.0+): plugin for practice, pugs, scrims and matches, with Get5 Panel (G5API/G5V) support. Requires CounterStrikeSharp.
+
+LinuxGSM stops the install if a required mod is missing, so install them in this order: Metamod:Source 2.0, CounterStrikeSharp, then MatchZy.
 
 ```
 ./cs2server mods-install
@@ -79,4 +82,14 @@ Metamod:Source needs a `Game csgo/addons/metamod` search path in `game/csgo/game
 
 {% hint style="warning" %}
 CS2 game updates replace `gameinfo.gi`, which removes the Metamod:Source search path, so Metamod and its plugins stop loading. After a game update, run `./cs2server mods-update` to update Metamod:Source to a build that supports the new CS2 version and restore the search path.
+{% endhint %}
+
+{% hint style="info" %}
+MatchZy configs are in `game/csgo/cfg/MatchZy`. `./cs2server mods-update` overwrites the CFGs that MatchZy ships, such as `config.cfg` and `live.cfg`, so put custom settings in the matching `<name>_override.cfg` instead, for example `config_override.cfg` (MatchZy 0.9.2+). If you edited the shipped CFGs directly, move those settings to the override CFGs before updating.
+
+Updates keep the override CFGs, `admins.json`, `database.json`, `savednades.json` and `whitelist.cfg`, as well as the `matchzy.db` SQLite database in `game/csgo/addons/counterstrikesharp/plugins/MatchZy`. See [Override CFGs](https://shobhit-pathak.github.io/MatchZy/configuration/#override-cfgs) in the MatchZy docs.
+{% endhint %}
+
+{% hint style="warning" %}
+`./cs2server mods-remove` deletes `game/csgo/cfg/MatchZy`, including the override CFGs and JSON files, and `matchzy.db` with the SQLite match stats. To keep them, copy them somewhere else before removing MatchZy.
 {% endhint %}
