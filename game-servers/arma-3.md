@@ -28,12 +28,18 @@ Create a [new server instance](../configuration/multiple-game-servers.md) using 
 
 Edit the config file `lgsm/config-lgsm/arma3server-hc.cfg`.
 
-Change the `port=` increasing the number by a factor of 12 e.g 2303 becomes 2314.
+Change `port=` so the headless client does not use the same ports as the server. Arma 3 uses a range of ports from the one you set, so add 12, e.g. 2302 becomes 2314.
 
-Update `startparameters=` changing it to the following.
+Update `startparameters=` changing it to the following. `-connect` must use the main server's IP and port (not `${ip}` and `${port}`, which are now the headless client's own settings). The headless client must load the same mods as the server, so set `mods=` to match.
 
 ```
-startparameters="-client -connect=${ip}:${port} -password=CHANGEME"
+startparameters="-client -connect=127.0.0.1:2302 -port=${port} -password=CHANGEME -mod=${mods}"
+```
+
+Set the query mode to session only. A headless client does not respond to server queries, so with the default query mode `monitor` would treat it as down and keep restarting it.
+
+```
+querymode="1"
 ```
 
 Edit the game server config of `arma3server` (not the headless client) `arma3server.server.cfg` and add the headless client IP address to `headlessClients[]=`. If the headless client is on the same physical server as the ARMA 3 server then also add the IP to `localClient[]=`.
@@ -58,6 +64,8 @@ edit `Player.Arma3Profile` and add the line `battleyeLicense=1;`.
 Start your server with `./arma3server start`
 
 Start your headless client with `./arma3server-hc start`.
+
+To restart the headless client if it crashes or stops, run `./arma3server-hc monitor` from cron. See [monitor](../commands/monitor.md).
 
 Only an admin can see the headless clients in the player menu on the server. The headless client will connect and automatically assume the first available headless client slot.
 
