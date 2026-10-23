@@ -104,6 +104,7 @@
 * [FAQ](support/faq.md)
 * [Guides](guides/README.md)
   * [Security](guides/security.md)
+  * [FastDL Web Server](guides/fastdl-web-server.md)
   * [Make Webserver Case Insensitive](guides/make-webserver-case-insensitive.md)
   * [Sourcemod and Metamod:Source](guides/sourcemod-csgo-server.md)
 * [Other](other/README.md)
