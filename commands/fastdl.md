@@ -138,80 +138,27 @@ FastDL files are created in `public_html/fastdl` inside the LinuxGSM installatio
 webdir="/var/www/html"
 ```
 
-## Requirements
+## Serving the files
 
-*   Web server on the game server (Apache/Nginx).
+Players download FastDL files from a web server, which LinuxGSM does not set up for you. Any web server that can serve static files works, such as nginx or Apache, on the game server or on a separate web host.
 
-    or
-* Access to a remote web server.
+See the [FastDL Web Server](../guides/fastdl-web-server.md) guide for step-by-step setups with nginx or Apache, in Docker or installed on the server, plus testing and troubleshooting.
 
-## Usage
+The quickest option, if Docker is installed, serves the files on port 8080:
 
-### Generate Compressed files
-
-Run the FastDL command on your main LinuxGSM script. This will create a new directory `/home/gameserver/public_html/fastdl`
-
-`./gameserver fastdl`
-
-### Create A virtual Host (local Apache web server)
-
-If Apache2 is being used a virtual host pointing to the newly created `public_html` directory can be used.
-
-Tip: Apache2 mod "userdir" is useful if the Linux server is hosting [multiple game servers](../configuration/multiple-game-servers.md), as it creates a url for the current user `http://yourwebsite.ltd/~username`.
-
-#### Tutorial on setup of Apache2 server with Virtual Hosts
-
-Here is an example of setting up Apache2 using a subdomain.
-
-This works for Apache 2.4+ and when using a domain name. If you have got a different configuration, refer to the Apache2 documentation.
-
-Firstly make sure your subdomain redirects to your game server and that Apache2 is correctly installed and started. Create a virtual host in order to be able to host a website :
-
-`nano /etc/apache2/sites-available/yourvirtualhost.com.conf`
-
-See the example below and edit the relevent details.
-
-```
-<VirtualHost *:80>
-        ServerAdmin adminemail@domain.com
-        ServerName subdomain.domain.com
-        ServerAlias subdomain.domain.com
-        DocumentRoot /home/gameserver/public_html
-        <Directory /home/gameserver/public_html>
-                Options Indexes FollowSymLinks MultiViews
-                AllowOverride All
-                Require all granted
-        </Directory>
-        ErrorLog ${APACHE_LOG_DIR}/error.log
-        # Possible values include: debug, info, notice, warn, error, crit, alert, emerg.
-        LogLevel warn
-        CustomLog ${APACHE_LOG_DIR}/access.log combined
-</VirtualHost>
+```bash
+docker run -d --name fastdl --restart unless-stopped -p 8080:80 \
+  -v /home/gameserver/public_html:/usr/share/nginx/html:ro nginx:stable
 ```
 
-Enable your website by restarting Apache2
+Then add the address of the `fastdl` folder to the [game server config](../configuration/game-server-config.md) and restart the game server:
 
 ```
-a2ensite yourvirtualhost.com.conf
-service apache2 reload
-```
-
-Test the domain, to make sure it is working `http://subdomain.domain.com/fastdl`
-
-### Edit Game Server config
-
-The new url will need to be added to the [game server config](../configuration/game-server-config.md)
-
-`nano serverfiles/gamename/cfg/game-server.cfg`
-
-Make sure you have this:
-
-```
-sv_downloadurl "http://subdomain.domain.com/fastdl"
+sv_downloadurl "http://203.0.113.10:8080/fastdl"
 sv_allowdownload 1
 ```
 
-### Bzip2 Compression
+## Bzip2 Compression
 
 Source servers compress FastDL content with bzip2, which Source games support, so client downloads are faster. It is a must-have if you're hosting large files, as it will save you bandwidth, and speed up downloads for clients. However, using bzip2 on many small files can slow down client loading times.
 
@@ -219,7 +166,7 @@ LinuxGSM compresses several files at once, one per CPU core, so large servers fi
 
 GoldSrc does not support bzip2 compression, so GoldSrc files are copied as they are.
 
-#### Garry's Mod Download enforcer
+## Garry's Mod Download enforcer
 
 In order for a client to download files from a FastDL in Garry's Mod, the developer of an addon must put files from the addon into lua code `resource.Addfile ( "/path/to/file.ext" )`. However, some addon developers do not do this. In order for clients to download the required files, an lua file needs to be generated for it to work, which is what the lua enforcer feature does. The only downside is that clients may download files that are not required on the server.
 
