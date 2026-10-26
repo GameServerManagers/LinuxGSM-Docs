@@ -53,6 +53,7 @@ For Steam Workshop mods, see [Workshop](../steamcmd/workshop.md) and the [worksh
 
 * Metamod:Source 2.0
 * CounterStrikeSharp \(requires Metamod:Source 2.0\)
+* MatchZy \(requires CounterStrikeSharp, v26.4.0+\)
 
 See [Counter-Strike 2](../game-servers/counter-strike-2.md#mods) for CS2-specific notes.
 
