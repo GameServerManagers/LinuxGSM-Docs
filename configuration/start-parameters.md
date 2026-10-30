@@ -26,11 +26,40 @@ sourcetvport="27020"
 clientport="27005"
 ```
 
+## Extra Parameters
+
+{% hint style="info" %}
+Available from LinuxGSM v26.5.0.
+{% endhint %}
+
+To add your own parameters and keep the defaults, set `extraparams` in your [LinuxGSM config](linuxgsm-config.md) (usually the instance config). LinuxGSM adds them to the end of the start parameters.
+
+```
+## Extra Parameters | https://docs.linuxgsm.com/configuration/start-parameters#extra-parameters
+extraparams="+sv_lan 1 +sv_pure 1"
+```
+
+| Config                          | Executable                                                      |
+| ------------------------------- | --------------------------------------------------------------- |
+| `extraparams="+sv_lan 1"`       | `./srcds_run -game nmrih ... -maxplayers 8 +sv_lan 1`           |
+
+This is the recommended way to add parameters. The default `startparameters` stays untouched, so you keep getting changes to it when LinuxGSM is updated. `extraparams` is also added if you have overridden `startparameters`.
+
+Check the result with `./gameserver details`.
+
+{% hint style="warning" %}
+`extraparams` is only added at the end of the command line. Options that have to be part of another parameter, such as Unreal Engine `?Option=value` map options, still need `startparameters`. For Minecraft servers, Java options belong in `javaram` or `preexecutable`, not `extraparams`.
+{% endhint %}
+
 ## Additional Parameters
 
-Additional command-line parameters can be added to the `startparameters` setting.&#x20;
+`startparameters` holds the full set of command-line parameters that are appended to the server executable binary.
 
-Anything added will be appended to the server executable binary.
+Setting `startparameters` in your config replaces the default completely. It is not added to it. Only do this when you need to change or remove a default parameter. Copy the line from `_default.cfg` and edit it.
+
+{% hint style="warning" %}
+An overridden `startparameters` no longer receives changes to the defaults when LinuxGSM is updated. Compare it with `_default.cfg` after updating. To only add parameters, use [Extra Parameters](#extra-parameters) instead.
+{% endhint %}
 
 ### Basic Example
 

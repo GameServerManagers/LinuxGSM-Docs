@@ -102,7 +102,7 @@ Many game servers require [Start-Parameters](../configuration/start-parameters.m
 
 These parameters can be reviewed using the [details](../commands/details.md) command.
 
-To alter them, edit the LinuxGSM config files using `vi` or `nano` and edit variables from the `## Server Start Settings` section. The `#### LinuxGSM Settings ####` section allows customising many different settings.
+To alter them, edit the LinuxGSM config files using `vi` or `nano` and set variables from the `## Predefined Parameters` section. To add your own parameters, use `extraparams` from the `## Extra Parameters` section. The `#### LinuxGSM Settings ####` section allows customising many different settings.
 
 For more info, see [Start-Parameters](../configuration/start-parameters.md).
 
