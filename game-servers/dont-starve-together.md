@@ -1,4 +1,4 @@
-# Dont Starve Together
+# Don't Starve Together
 
 ## Authentication Token
 
@@ -36,14 +36,14 @@ sharding="false"
 
 ### Multi-Shard
 
-Take a look at [Multiple-Servers](https://docs.linuxgsm.com/features/multiple-game-servers) to get a general idea of how to create multiple game servers.
+Take a look at [Multiple-Servers](../configuration/multiple-game-servers.md) to get a general idea of how to create multiple game servers.
 
 There are two types of shards:
 
 1. **master shard**: the shard you enter when joining the server / the shard/server you have to join \(**one** per cluster\)
 2. **slave shard**: shard that will connect to the master \(arbitrary number per cluster\)
 
-In this example, we will only use two shards, one overworld shard and one cave shard, on the same machine using the same installation. If you want to use more shards or run the shards on different machines, take a look at the guides mentioned at the bottom. First of all we need two scripts:
+In this example, we will only use two shards, one overworld shard and one cave shard, on the same machine using the same installation. If you want to use more shards or run the shards on different machines, take a look at the guides in [Server Resources](#server-resources). First of all we need two scripts:
 
 ```text
 ./dstserver-1
@@ -58,7 +58,7 @@ _**dstserver-1**_ will be the _master shard_ with an overworld as level.
 ## Predefined Parameters
 sharding="true"
 master="true"
-shard="Master" 
+shard="Master"
 cluster="Cluster_1"
 cave="false"
 ```
@@ -82,7 +82,7 @@ dstserver-2 \(this will be the slave shard with a cave as level\):
 ## Predefined Parameters
 sharding="true"
 master="false"
-shard="Caves" 
+shard="Caves"
 cluster="Cluster_1"
 cave="true"
 ```
@@ -131,7 +131,7 @@ return { override_enabled = true, preset = "DST_CAVE", }
 
 This is what tells the game to generate an underground cave map for that shard instead of a normal overworld. Without it, a "Caves" shard would just generate a second overworld map. Since this file is only written on install, changing `cave` on an already-installed shard requires a fresh install (or a reinstall) of that instance to regenerate the world with the new preset.
 
-## Installing Mods
+## Mods
 
 LinuxGSM does not install or manage Don't Starve Together mods automatically, this has to be done manually in three steps.
 
@@ -171,10 +171,9 @@ Copy the same file into the `Caves` shard directory if you want the mod active t
 
 Some mods expose extra configuration options (difficulty, spawn rates, etc). The easiest way to generate a correctly formatted `modoverrides.lua` with these settings is to temporarily host a non-dedicated client server with the same mods enabled, configure the mods through the in-game mod options UI, generate the world once, then copy the resulting `modoverrides.lua` from that client's save folder over to both the Master and Caves shard directories on the dedicated server.
 
-## Guides / Documentations:
+## Server Resources
 
-* [Quick Setup](http://forums.kleientertainment.com/topic/64441-dedicated-server-quick-setup-guide-linux/)
-* [Server Settings](http://forums.kleientertainment.com/topic/64552-dedicated-server-settings-guide/)
-* [Command Line Options](http://forums.kleientertainment.com/topic/64743-dedicated-server-command-line-options-guide/)
-* [Understanding Shards and Migration Portals](http://forums.kleientertainment.com/topic/59174-understanding-shards-and-migration-portals/)
-
+- [Quick Setup](http://forums.kleientertainment.com/topic/64441-dedicated-server-quick-setup-guide-linux/)
+- [Server Settings](http://forums.kleientertainment.com/topic/64552-dedicated-server-settings-guide/)
+- [Command Line Options](http://forums.kleientertainment.com/topic/64743-dedicated-server-command-line-options-guide/)
+- [Understanding Shards and Migration Portals](http://forums.kleientertainment.com/topic/59174-understanding-shards-and-migration-portals/)

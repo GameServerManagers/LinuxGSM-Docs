@@ -1,10 +1,8 @@
 # Garry's Mod
 
-## Game Resources
+## Server Settings
 
-[Garry's Mod Wiki](https://wiki.facepunch.com/gmod/)
-
-## Auto Refresh
+### Auto Refresh
 
 Autorefresh can lag the server when certain Lua files are edited. This happens when the refreshing cascades. This can be unwanted behavior when editing the scripts of a large project on a live server.
 
@@ -14,9 +12,9 @@ To disable autorefresh, add `-disableluarefresh` to parms.
  -disableluarefresh
 ```
 
-## Loading Screen
+### Loading Screen
 
-Loading screens are added by defining a website with `sv_loadingurl`, which is in `gmodserver.cfg` by default.  This file overrides other files. &#x20;
+Loading screens are added by defining a website with `sv_loadingurl`, which is in `gmodserver.cfg` by default. This file overrides other files. &#x20;
 
 {% hint style="warning" %}
 Links should not have `http://` or an ending`/` .
@@ -26,7 +24,7 @@ Links should not have `http://` or an ending`/` .
 sv_loadingurl "www.website.com/loading/screen"
 ```
 
-## Gamemode
+## Game Modes
 
 Gamemode is changed by editing start parameters in the LinuxGSM config file.
 
@@ -37,7 +35,7 @@ Sandbox gamemode="sandbox"
 
 Other game modes like Zombie Survival can be found on the [steam workshop](../../steamcmd/workshop.md).
 
-### Workshop
+## Workshop
 
 {% content-ref url="../../steamcmd/workshop.md" %}
 [workshop.md](../../steamcmd/workshop.md)
@@ -77,7 +75,7 @@ Copy the `cstrike` the directory from the Counter-Strike: Source to the Gmod fol
 cp -R /home/cssserver/serverfiles/cstrike /home/gmodserver/serverfiles/cstrike
 ```
 
-Ensure that the copied files are owned by the `gmodserver`  user.
+Ensure that the copied files are owned by the `gmodserver` user.
 
 ```
 chown -R gmodserver /home/gmodserver
@@ -104,3 +102,6 @@ Restart the server. Check if the mount was successful by changing the level to a
 changelevel cs_italy
 ```
 
+## Server Resources
+
+- [Garry's Mod Wiki](https://wiki.facepunch.com/gmod/)
