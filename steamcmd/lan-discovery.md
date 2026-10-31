@@ -34,5 +34,5 @@ As [this github issue](https://github.com/GameServerManagers/LinuxGSM/issues/177
 
 1. Edit your [Start Parameters](../configuration/start-parameters.md) using your [LinuxGSM Config](../configuration/linuxgsm-config.md) files
 2. Change `ip="0.0.0.0"` to an actual interface IP, for example `ip="192.168.1.10"` ; this will allow LinuxGSM to [monitor](../commands/monitor.md) and query your server properly.
-3. In the `fn_parms` section, add `+sv_lan 1` and make sure you replace `-ip ${ip}` with `-ip 0.0.0.0`
+3. Copy `startparameters` from `_default.cfg` into your instance config, add `+sv_lan 1`, and replace `-ip ${ip}` with `-ip 0.0.0.0`. This needs a [`startparameters` override](../configuration/start-parameters.md#additional-parameters) because it changes an existing parameter; `extraparams` only appends parameters.
 4. Make sure your server main port listens to one of these IP or IP ranges: 4242 ; 26900-26905 ; 27015-27020 ; 27215
