@@ -156,19 +156,9 @@ OSX: ~/Library/"Application Support"/factorio/mods
 Linux: ~/.factorio/mods
 ```
 
-Transfer all of the mods and `mod-settings.dat` file to your server with a tool like [Filezilla](https://filezilla-project.org/) or the `rsync` command on Mac/Linux, or even a USB drive.
+Copy the mod files and `mod-settings.dat` to `serverfiles/mods` on the server.
 
-{% hint style="warning" %}
-Do not transfer files over FTP.
-{% endhint %}
-
-If you have SSH open on the server, you will want to use SFTP. If you're using Filezilla, setting the port to 22 will tell it to use SFTP. If you're using `rsync`, the command would look something like this:
-
-```text
-rsync -a <source files> <user>@<ip>:<remote destination>
-```
-
-You will want to drop those files in the `serverfiles/mods` directory. You will also need to delete the existing save so that it generates a new one with the new generation rules. \(This is a great time to make backups if you have any progress you would like to save\).
+You will also need to delete the existing save so that it generates a new one with the new generation rules. \(This is a great time to make backups if you have any progress you would like to save\).
 
 Navigate to the root folder of your Factorio installation, then delete the save:
 
