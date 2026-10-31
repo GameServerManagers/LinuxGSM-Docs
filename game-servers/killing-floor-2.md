@@ -52,7 +52,10 @@ This will only work for Workshop items that the server downloads itself, that ar
 
 [Official Guide Here](https://wiki.killingfloor2.com/index.php?title=Dedicated\_Server\_\(Killing\_Floor\_2\)#Setting\_Up\_Steam\_Workshop\_For\_Servers)
 
+### Workshop maps as the starting map
 
+{% hint style="warning" %}
+Do not set a Workshop map as the starting map until the server has downloaded it. If the map is not downloaded yet, the server aborts at `LoadMap` and fails to start.
+{% endhint %}
 
-
-
+Start the server on a stock map first, such as the default `KF-BioticsLab`, so it can download the Workshop items listed in `ServerSubscribedWorkshopItems`. Once the download has finished, the Workshop map can be used as the starting map by setting `defaultmap` in the LinuxGSM config.
