@@ -2,22 +2,23 @@
 
 ![](../.gitbook/assets/kf2banner.jpg)
 
-## Ports
-
-* **Game Port** Default: 7777 UDP Handled by: `LinuxServer-KFEngine.ini`&#x20;
-* **Query Port** Default: 27015 UDP Handled automatically or handled by parameters. The formula for finding query port assigned automatically is 19238 + assigned game port.&#x20;
-* **Web Admin** Default: 8080 TCP Handled by: `KFWeb.ini`&#x20;
-* **Steam Port** Default: 20560 UDP Handled automatically. The formula for finding the steam port is 12783 + Game Port.
-
-## Resources
-
-[Killing Floor 2 Official Server Wiki](https://wiki.tripwireinteractive.com/index.php?title=Dedicated\_Server\_%28Killing\_Floor\_2%29)
-
-[Killing floor 2 Official Forums](https://forums.tripwireinteractive.com/index.php?categories/killing-floor-2.25/)
-
-## Server Config Information
+## Server Settings
 
 LinuxGSM installations contain `configSubDir=servername` in the command line by default, which creates a folder for config files named after the server. The default directory is `/home/user/serverfiles/KFGame/Config/kf2server` . Use these files to change server settings.
+
+## Ports
+
+| Description | Port    | Protocol |
+| ----------- | ------- | -------- |
+| Game        | `7777`  | UDP      |
+| Query       | `27015` | UDP      |
+| Web Admin   | `8080`  | TCP      |
+| Steam       | `20560` | UDP      |
+
+- **Game Port** Handled by: `LinuxServer-KFEngine.ini`
+- **Query Port** Handled automatically or handled by parameters. The formula for finding query port assigned automatically is 19238 + assigned game port.
+- **Web Admin** Handled by: `KFWeb.ini`
+- **Steam Port** Handled automatically. The formula for finding the steam port is 12783 + Game Port.
 
 ## Workshop
 
@@ -50,7 +51,7 @@ This will only work for Workshop items that the server downloads itself, that ar
 3. Add the line "DownloadManagers=OnlineSubsystemSteamworks.SteamWorkshopDownload" to that section. If there are other "DownloadManagers=" lines, make sure this one is the first.
 4. Do not delete anything from this section, except (optionally) other DownloadManagers= lines.
 
-[Official Guide Here](https://wiki.killingfloor2.com/index.php?title=Dedicated\_Server\_\(Killing\_Floor\_2\)#Setting\_Up\_Steam\_Workshop\_For\_Servers)
+[Official Guide Here](<https://wiki.killingfloor2.com/index.php?title=Dedicated_Server_(Killing_Floor_2)#Setting_Up_Steam_Workshop_For_Servers>)
 
 ### Workshop maps as the starting map
 
@@ -59,3 +60,8 @@ Do not set a Workshop map as the starting map until the server has downloaded it
 {% endhint %}
 
 Start the server on a stock map first, such as the default `KF-BioticsLab`, so it can download the Workshop items listed in `ServerSubscribedWorkshopItems`. Once the download has finished, the Workshop map can be used as the starting map by setting `defaultmap` in the LinuxGSM config.
+
+## Server Resources
+
+- [Killing Floor 2 Official Server Wiki](https://wiki.tripwireinteractive.com/index.php?title=Dedicated_Server_%28Killing_Floor_2%29)
+- [Killing floor 2 Official Forums](https://forums.tripwireinteractive.com/index.php?categories/killing-floor-2.25/)

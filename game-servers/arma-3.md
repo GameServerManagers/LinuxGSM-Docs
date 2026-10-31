@@ -1,20 +1,14 @@
-# Arma 3
+# ARMA 3
 
 ![](../.gitbook/assets/arma3.jpg)
-
-## Server Resources
-
-* [Official Dedicated Server Guide](https://community.bistudio.com/wiki/Arma\_3:\_Dedicated\_Server)
 
 ## Headless Client
 
 ### Headless Client Overview
 
-[https://community.bistudio.com/wiki/Arma\_3\_Headless\_Client](https://community.bistudio.com/wiki/Arma\_3\_Headless\_Client)
-
-* A headless Client is used to offload AI calculations from the server.
-* Headless Client is integrated into the game client and dedicated server executable (Windows and Linux, use `-client` parameter).
-* The server does not allow arbitrary connections from headless clients if you do not define the headless clients' IPs in the `server.cfg`.
+- A headless Client is used to offload AI calculations from the server.
+- Headless Client is integrated into the game client and dedicated server executable (Windows and Linux, use `-client` parameter).
+- The server does not allow arbitrary connections from headless clients if you do not define the headless clients' IPs in the `server.cfg`.
 
 ### Headless Client Setup and Usage
 
@@ -49,7 +43,7 @@ Edit the game server config of `arma3server` (not the headless client) `arma3ser
 {% endhint %}
 
 ```
-headlessClients[]={"127.0.0.1"}; 
+headlessClients[]={"127.0.0.1"};
 localClient[]={"127.0.0.1"};
 ```
 
@@ -69,7 +63,7 @@ To restart the headless client if it crashes or stops, run `./arma3server-hc mon
 
 Only an admin can see the headless clients in the player menu on the server. The headless client will connect and automatically assume the first available headless client slot.
 
-## Mod Support
+## Mods
 
 Arma 3 mods are managed using the [Steam Workshop](https://steamcommunity.com/app/107410/workshop/) or manual downloads.
 
@@ -93,7 +87,7 @@ Mods can cause your server to become unstable or may not be compatible with each
 
 Here is a popular mod to get started:
 
-* [CBA: Community Based Addons for Arma 3](https://steamcommunity.com/workshop/filedetails/?id=450814997)
+- [CBA: Community Based Addons for Arma 3](https://steamcommunity.com/workshop/filedetails/?id=450814997)
 
 Subscribe to the mod in a Steam client that owns Arma 3. Steam saves it in `steamapps/workshop/content/107410/450814997`, where `450814997` is the Workshop ID
 
@@ -183,3 +177,8 @@ You should see the "Community Base Addons" mod appear in your `console` [log](..
 15:27:37                                             Arma 3 |                   A3 |       true |       true |            NOT FOUND |                                          |           |
 15:27:37 ==========================================================================================================================================================================================================
 ```
+
+## Server Resources
+
+- [Official Dedicated Server Guide](https://community.bistudio.com/wiki/Arma_3:_Dedicated_Server)
+- [Arma 3 Headless Client](https://community.bistudio.com/wiki/Arma_3_Headless_Client)
