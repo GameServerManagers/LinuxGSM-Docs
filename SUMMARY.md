@@ -45,6 +45,7 @@
   * [Hytale](game-servers/hytale.md)
   * [Insurgency: Sandstorm](game-servers/insurgency-sandstorm.md)
   * [Killing Floor 2](game-servers/killing-floor-2.md)
+  * [Luanti](game-servers/luanti.md)
   * [Minecraft](game-servers/minecraft.md)
   * [Multi Theft Auto](game-servers/multi-theft-auto.md)
   * [RuneScape: Dragonwilds](game-servers/runescape-dragonwilds.md)
