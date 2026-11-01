@@ -105,6 +105,7 @@
 * [Guides](guides/README.md)
   * [Security](guides/security.md)
   * [Make Webserver Case Insensitive](guides/make-webserver-case-insensitive.md)
+  * [PunkBuster](guides/punkbuster.md)
   * [Sourcemod and Metamod:Source](guides/sourcemod-csgo-server.md)
 * [Other](other/README.md)
   * [server-migration](other/server-migration.md)
