@@ -14,21 +14,21 @@ LinuxGSM installs every server with PunkBuster turned off.
 
 ## Supported Servers
 
-| Server                             | PunkBuster files                   |
+| Server                             | PunkBuster server                  |
 | ---------------------------------- | ---------------------------------- |
-| Battlefield 1942                   | Included                           |
-| Battlefield: Vietnam               | Included                           |
-| Call of Duty 2                     | Included                           |
-| Quake 3: Arena                     | Included                           |
-| Quake 4                            | Included                           |
-| Soldier Of Fortune 2: Gold Edition | Included                           |
-| Wolfenstein: Enemy Territory       | Included                           |
-| Call of Duty: World at War         | Not included, download from PBBans |
+| Battlefield 1942                   | v1.056                             |
+| Battlefield: Vietnam               | v1.458                             |
+| Call of Duty 2                     | v1.760                             |
+| Call of Duty: World at War         | v1.814                             |
+| Quake 3: Arena                     | v1.641                             |
+| Quake 4                            | v1.743                             |
+| Soldier Of Fortune 2: Gold Edition | v1.728                             |
+| Wolfenstein: Enemy Territory       | v1.809                             |
 | Call of Duty                       | Not available                      |
 | Call of Duty: United Offensive     | Not available                      |
 | Call of Duty 4                     | Not supported, LinuxGSM uses CoD4x |
 
-"Included" means the `pb` folder that came with the original server files is already in `serverfiles/pb`.
+Each server ships the last PunkBuster release for that game in `serverfiles/pb`. There are no PunkBuster files for the Linux Call of Duty and United Offensive servers.
 
 Call of Duty 4 installs [CoD4x](https://cod4x.ovh), the maintained Linux server for CoD4. It works with 1.7 clients, but it doesn't support PunkBuster. LinuxGSM doesn't offer the official CoD4 server.
 
@@ -39,7 +39,7 @@ Return to Castle Wolfenstein, Jedi Knight II and Jedi Knight: Jedi Academy use o
 1. Stop the server.
 2. In `lgsm/config-lgsm/<x>server/<x>server.cfg`, copy the `startparameters` line from `_default.cfg` and change `+set sv_punkbuster 0` to `+set sv_punkbuster 1`. See [Start Parameters](../configuration/start-parameters.md).
 3. Set the same value in the game config, where the game has one:
-   - Quake 4: `seta sv_punkbuster "1"` in `serverfiles/q4base/server.cfg`.
+   - Quake 4: `seta sv_punkbuster "1"` in `serverfiles/q4base/q4server.cfg`.
    - Battlefield 1942 and Battlefield: Vietnam: `game.serverPunkBuster 1` in `serverfiles/mods/<mod>/settings/serversettings.con`. These two don't use the start parameter.
 4. Start the server and check the console for PunkBuster loading.
 
@@ -47,23 +47,19 @@ Return to Castle Wolfenstein, Jedi Knight II and Jedi Knight: Jedi Academy use o
 In the Quake 3 engine games, `sv_punkbuster` is read-only once the server is running. Set it in the start parameters, or use `pb_sv_enable` in the console.
 {% endhint %}
 
-## Add PunkBuster Files
+## Restore PunkBuster Files
 
-Call of Duty: World at War doesn't come with PunkBuster files. Use this if you need them, or if a `pb` folder is missing or damaged:
+If the `pb` folder is missing or damaged, reinstall the server to get the files back. The legacy files are also on [PBBans Legacy PunkBuster Files](https://community.pbbans.com/files/category/7-legacy-punkbuster-files/).
 
-1. Download the legacy server files for your game from [PBBans Legacy PunkBuster Files](https://community.pbbans.com/files/category/7-legacy-punkbuster-files/). Get both the Linux and Windows packages where both exist.
-2. Stop the server.
-3. Extract them into `serverfiles/pb`, so `pbsv.so` sits at `serverfiles/pb/pbsv.so`.
-4. Make sure the files are owned by the LinuxGSM user, and that the user can write to `serverfiles/pb`. PunkBuster writes its logs, screenshots and settings there.
-5. Enable PunkBuster as above.
-
-{% hint style="warning" %}
-LinuxGSM can't bundle these files. The PunkBuster licence doesn't allow redistribution, so download them yourself and accept the licence that comes with them.
-{% endhint %}
+Make sure the LinuxGSM user owns the `pb` folder and can write to it. PunkBuster writes its logs, screenshots and settings there.
 
 ## Configuration
 
-PunkBuster reads its server settings from `serverfiles/pb/pbsv.cfg` when it starts. Create the file if it doesn't exist. For example, to turn on player screenshots:
+PunkBuster reads its server settings from `pbsv.cfg` in its `pb` folder when it starts. Create the file if it doesn't exist.
+
+Battlefield 1942, Battlefield: Vietnam and Enemy Territory run PunkBuster from `serverfiles/pb`. Call of Duty 2, World at War, Quake 3 and Soldier of Fortune 2 copy it to the `pb` folder in the game's home directory, for example `~/.q3a/pb`, and run it from there, so put `pbsv.cfg` there and look there for the logs.
+
+For example, to turn on player screenshots:
 
 ```
 pb_sv_ssflag 1
