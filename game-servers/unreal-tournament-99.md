@@ -6,20 +6,14 @@
 
 Unreal Tournament 99 Requires a few alterations from the official server download. Because of this, the LinuxGSM version of the server files includes the following.
 
-* OldUnreal-UTPatch469a-Linux.tar.bz2 ([OldUnreal Patch](https://www.oldunreal.com/cgi-bin/yabb2/YaBB.pl?num=1569587267))
-* ut-server-436.tar (Latest Official Version)
-* UTBonusPack.zip
-* UTBonusPack2.zip (maps only)
-* UTInoxxPack.zip
-* UTBonusPack4.zip
+- OldUnreal-UTPatch469a-Linux.tar.bz2 ([OldUnreal Patch](https://www.oldunreal.com/cgi-bin/yabb2/YaBB.pl?num=1569587267))
+- ut-server-436.tar (Latest Official Version)
+- UTBonusPack.zip
+- UTBonusPack2.zip (maps only)
+- UTInoxxPack.zip
+- UTBonusPack4.zip
 
-## Server Resources
-
-[UT99.org is a community website for UT99](https://ut99.org/)
-
-[OldUnreal is another community website](https://www.oldunreal.com/index.html)
-
-## Config File Settings
+## Server Settings
 
 With a default LinuxGSM Install, server settings can be configured in this file:
 
@@ -29,7 +23,7 @@ You can change most of these settings in a browser by enabling the webserver and
 
 ```
 [Engine.GameReplicationInfo]
-ServerName= 
+ServerName=
 ShortName=
 AdminName=
 AdminEmail=
@@ -37,7 +31,7 @@ Region=0
 MOTDLine1=
 MOTDLine2=
 MOTDLine3=
-MOTDLine4= 
+MOTDLine4=
 
 [Botpack.ChallengeBotInfo]
 Difficulty=4
@@ -81,3 +75,8 @@ bEnabled=True
 AdminUsername=
 AdminPassword=
 ```
+
+## Server Resources
+
+- [UT99.org is a community website for UT99](https://ut99.org/)
+- [OldUnreal is another community website](https://www.oldunreal.com/index.html)

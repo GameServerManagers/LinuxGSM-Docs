@@ -2,8 +2,8 @@
 
 ## Requirements
 
-* glibc 2.28 or newer. The native Linux server arrived with the Conan Exiles Enhanced update.
-* At least 8 GB of RAM.
+- glibc 2.28 or newer. The native Linux server arrived with the Conan Exiles Enhanced update.
+- At least 8 GB of RAM.
 
 The dedicated server (Steam app 443030) downloads anonymously, so no Steam login is needed.
 
@@ -11,12 +11,12 @@ The dedicated server (Steam app 443030) downloads anonymously, so no Steam login
 
 The server name, max players and ports are set as start parameters in your instance config (`lgsm/config-lgsm/ceserver/ceserver.cfg`):
 
-| Setting | Default |
-| ------- | ------- |
+| Setting      | Default    |
+| ------------ | ---------- |
 | `servername` | `LinuxGSM` |
-| `maxplayers` | `40` |
-| `port` | `7777` |
-| `queryport` | `27015` |
+| `maxplayers` | `40`       |
+| `port`       | `7777`     |
+| `queryport`  | `27015`    |
 
 Other settings are in `ServerSettings.ini`, which the server creates on its first start:
 
@@ -28,11 +28,13 @@ This includes `AdminPassword` and `ServerPassword`. Stop the server before editi
 
 ## Ports
 
-| Port | Protocol | Default | Description |
-| ---- | -------- | ------- | ----------- |
-| Game | UDP | 7777 | Set by `port`. |
-| Raw UDP | UDP | 7778 | Always `port` + 1. |
-| Query | UDP | 27015 | Set by `queryport`. |
+| Description | Port    | Protocol |
+| ----------- | ------- | -------- |
+| Game        | `7777`  | UDP      |
+| Raw UDP     | `7778`  | UDP      |
+| Query       | `27015` | UDP      |
+
+The game port is set by `port` and the query port by `queryport`. The raw UDP port is always `port` + 1.
 
 When running more than one instance, leave a gap of at least two between game ports, so the raw port doesn't clash.
 

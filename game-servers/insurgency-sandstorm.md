@@ -1,6 +1,6 @@
-# Insurgency: SandStorm
+# Insurgency: Sandstorm
 
-## Custom Mods and Maps
+## Mods
 
 Custom Mods and Maps are supported in Insurgency: Sandstorm via [mod.io](https://mod.io/). Please use this basic guide to get started using custom mods more in-depth information can be found at [mod.io Server Admin Guide](https://insurgencysandstorm.mod.io/guides/server-admin-guide)
 
@@ -14,7 +14,7 @@ To get started you will need a mod.io account, once you have signed in, click yo
 
 Under `OAuth 2 Management > Generate Access Token`, enter a name to give your token and give it read access and click `Create Token`.
 
-![](../.gitbook/assets/2568525685image2020-3-17\_.png)
+![](../.gitbook/assets/2568525685image2020-3-17_.png)
 
 Once the token is generated you will need to copy it to your game servers `Engine.ini`. Paste the following into `Engine.ini` and replace `TOKEN HERE` with your access token.
 
@@ -51,7 +51,7 @@ Create `MapCyle.txt`and add the custom map to your mapcycle.
 
 ```
 touch Insurgency/Config/Server/MapCyle.txt
-   
+
 ```
 
 ```
@@ -68,6 +68,6 @@ defaultscenario="Scenario_TORO_Checkpoint_Security"
 
 Once the server is restarted the custom map should be available on your game server.
 
-## Resources
+## Server Resources
 
-[Official Server Admin Guide](https://sandstorm-support.newworldinteractive.com/hc/en-us/articles/360049211072-Server-Admin-Guide)
+- [Official Server Admin Guide](https://sandstorm-support.newworldinteractive.com/hc/en-us/articles/360049211072-Server-Admin-Guide)

@@ -4,16 +4,9 @@
 This page is still a work in progress. If you have updated info please edit this document or let us know.
 {% endhint %}
 
-## **Server Resources**
+## Game Modes
 
-**Official Server Resources**
-
-* [CS 2 Dedicated server Wiki](https://developer.valvesoftware.com/wiki/Counter-Strike\_2/Dedicated\_Servers)
-* [CS 2 Game Modes](https://developer.valvesoftware.com/wiki/CS:GO\_Game\_Modes)
-
-## **Game Modes**
-
-CS2 features various game modes, which can be played on your server. To make setting up your server a bit easier, the following table sums up the configuration required in your server's [LinuxGSM config](../configuration/linuxgsm-config.md) for the various game modes. If you want more detailed and up-to-date information, take a look at Valve's wiki: [CS2 Game Modes](https://developer.valvesoftware.com/wiki/CS:GO\_Game\_Modes).&#x20;
+CS2 features various game modes, which can be played on your server. To make setting up your server a bit easier, the following table sums up the configuration required in your server's [LinuxGSM config](../configuration/linuxgsm-config.md) for the various game modes. If you want more detailed and up-to-date information, take a look at Valve's wiki: [CS2 Game Modes](https://developer.valvesoftware.com/wiki/CS:GO_Game_Modes).&#x20;
 
 | \[Game Modes]                     | gametype | gamemode | gamemodeflags | skirmishid | mapgroup (you can mix these across all Game Modes except Danger Zone, but use only one)                                                                             |
 | --------------------------------- | -------- | -------- | ------------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -68,8 +61,8 @@ If you are using a collection you will need a [Steam Web API key](https://steamc
 
 LinuxGSM can install, update and remove the following CS2 mods using the [mods commands](../commands/mods.md) (v26.3.0+):
 
-* **Metamod:Source 2.0**: plugin framework (development build, the only version that supports CS2).
-* **CounterStrikeSharp**: write server plugins in C#. Requires Metamod:Source 2.0 to be installed first.
+- **Metamod:Source 2.0**: plugin framework (development build, the only version that supports CS2).
+- **CounterStrikeSharp**: write server plugins in C#. Requires Metamod:Source 2.0 to be installed first.
 
 ```
 ./cs2server mods-install
@@ -80,3 +73,8 @@ Metamod:Source needs a `Game csgo/addons/metamod` search path in `game/csgo/game
 {% hint style="warning" %}
 CS2 game updates replace `gameinfo.gi`, which removes the Metamod:Source search path, so Metamod and its plugins stop loading. After a game update, run `./cs2server mods-update` to update Metamod:Source to a build that supports the new CS2 version and restore the search path.
 {% endhint %}
+
+## Server Resources
+
+- [CS 2 Dedicated server Wiki](https://developer.valvesoftware.com/wiki/Counter-Strike_2/Dedicated_Servers)
+- [CS 2 Game Modes](https://developer.valvesoftware.com/wiki/CS:GO_Game_Modes)

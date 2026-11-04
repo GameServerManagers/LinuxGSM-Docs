@@ -2,17 +2,11 @@
 
 ![](../.gitbook/assets/factoriobanner.jpg)
 
-## Server Resources
-
-* [World generation](https://wiki.factorio.com/World_generator)
-* [Factorio server Wiki](https://wiki.factorio.com/Multiplayer)
-* [Factorio console commands](https://wiki.factorio.com/Console#Command_line_parameters)
-
-## Server Configuration
+## Server Settings
 
 Configuration for Factorio is split between both the [game server config](../configuration/game-server-config.md) and [start parameters](../configuration/start-parameters.md).
 
-### LinuxGSM Server Config 
+### LinuxGSM Config
 
 port, rcon and branch configuration is set using stat parameters
 
@@ -24,21 +18,6 @@ rconport="34198"
 rconpassword="Change_Me"
 # (stable|experimental)
 branch="stable"
-```
-
-#### Specific verison
-
-To use a specific version of Factorio, you can change the branch to the version you want to use :
-
-```text
-## Server Start Settings | https://docs.linuxgsm.com/configuration/start-parameters
-branch="1.1.87"
-```
-
-One the branch changed, do not forget to update the server :
-
-```bash
-./fctrserver update
 ```
 
 ### Game Server Config
@@ -81,6 +60,21 @@ If you want your server to be publicly listed on the server browser you will nee
 
 "_comment_token": "Authentication token. May be used instead of 'password' above.",
 "token": "",
+```
+
+## Updates
+
+To use a specific version of Factorio, you can change the branch to the version you want to use :
+
+```text
+## Server Start Settings | https://docs.linuxgsm.com/configuration/start-parameters
+branch="1.1.87"
+```
+
+One the branch changed, do not forget to update the server :
+
+```bash
+./fctrserver update
 ```
 
 ## World Generation Settings
@@ -147,7 +141,7 @@ The easiest way that I've found to generate a world with the RSO mod \(and add m
 1. Startup Factorio on a client and install the RSO mod
 2. Start generation of a new world and configure mod generation settings
 3. Grab the mod files and `mod-settings.dat`
-4. Transfer them to the server 
+4. Transfer them to the server
 5. Delete or rename any previous worlds
 
 To configure the generation, go to `Play` &gt; `New World` &gt; `Mod Settings` &gt; `Map`, then adjust options accordingly. Doing so will generate a file called `mod-settings.dat` which stores these settings.
@@ -162,17 +156,9 @@ OSX: ~/Library/"Application Support"/factorio/mods
 Linux: ~/.factorio/mods
 ```
 
-Transfer all of the mods and `mod-settings.dat` file to your server with a tool like [Filezilla](https://filezilla-project.org/) or the `rsync` command on Mac/Linux, or even a USB drive.
+Copy the mod files and `mod-settings.dat` to `serverfiles/mods` on the server.
 
-**Note: DO NOT TRANSFER FILES OVER FTP**
-
-If you have SSH open on the server, you will want to use SFTP. If you're using Filezilla, setting the port to 22 will tell it to use SFTP. If you're using `rsync`, the command would look something like this:
-
-```text
-rsync -a <source files> <user>@<ip>:<remote destination>
-```
-
-You will want to drop those files in the `serverfiles/mods` directory. You will also need to delete the existing save so that it generates a new one with the new generation rules. \(This is a great time to make backups if you have any progress you would like to save\).
+You will also need to delete the existing save so that it generates a new one with the new generation rules. \(This is a great time to make backups if you have any progress you would like to save\).
 
 Navigate to the root folder of your Factorio installation, then delete the save:
 
@@ -184,5 +170,8 @@ rm -rf saves/* # this folder will only exist if you have ran the server
 
 Once you've done that, you're good to start the server.
 
+## Server Resources
 
-
+- [World generation](https://wiki.factorio.com/World_generator)
+- [Factorio server Wiki](https://wiki.factorio.com/Multiplayer)
+- [Factorio console commands](https://wiki.factorio.com/Console#Command_line_parameters)

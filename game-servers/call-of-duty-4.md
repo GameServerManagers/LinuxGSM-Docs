@@ -1,6 +1,6 @@
 # Call of Duty 4
 
-## Call of Duty 4 Server Files
+## Server Files
 
 Many tutorials state that the game disk is required to install a CoD4 server. This is because the server is built into the client. This made it difficult to distribute and create a CoD4 server.
 
@@ -10,17 +10,11 @@ After investigating this issue, it was found that it is possible to run a server
 
 `cod4server` uses CoD4x project for its server, rather than the original, as it fixes various bugs and adds a few features over the vanilla server.
 
-[https://cod4x.ovh](https://cod4x.ovh)
-
-### Updating CoD4x
-
-CoD4x has its own update functionality. It will automatically check for updates and does not require LinuxGSM to check for updates.
-
 ### CoD4x Master Server
 
 CoD4x game servers (since version 17.6) require a server token to be listed on the CoD4x master server.
 
-To generate a token visit [here](https://cod4master.cod4x.ovh/index.php?token\_generator=true).
+To generate a token visit [here](https://cod4master.cod4x.ovh/index.php?token_generator=true).
 
 Once a token is generated add it to the `sv_authtoken` cvar in `server.cfg` or command-line parameters.
 
@@ -38,9 +32,11 @@ set sv_authtoken "mytokenhere"`
 
 The server then needs to be restarted to allow the game server to be listed.
 
-[CoD4x master server list](https://cod4master.cod4x.ovh/)
+## Updates
 
-## Mod Support
+CoD4x has its own update functionality. It will automatically check for updates and does not require LinuxGSM to check for updates.
+
+## Mods
 
 Mods for Call of Duty 4 have to be manually added to the game server.
 
@@ -49,10 +45,10 @@ Mods for Call of Duty 4 have to be manually added to the game server.
 To run a mod the servers `fs_game` variable must be set correctly. Mods reside in the `mods` folder inside `fs_homepath`. Example directory tree:
 
 ```
-mods/                                  
-     ├── pml220                         
-     │   ├── mod.ff                         
-     │   ├── pml220.iwd                     
+mods/
+     ├── pml220
+     │   ├── mod.ff
+     │   ├── pml220.iwd
      │   ├── z_c_r.iwd
 ```
 
@@ -76,7 +72,7 @@ Modded CoD4 servers have the ability to run with user-created maps. To run a ser
 
 Typically, maps are prefixed by mp\_ following the maps name.
 
-## Running custom maps on unmodded servers
+### Running custom maps on unmodded servers
 
 Running custom maps on unmodded servers is not supported, but there is a neat workaround to still load custom maps. First, create a mods folder and some empty folder inside it.
 
@@ -115,3 +111,8 @@ An example directory tree for a served folder may look as below:
     │   │   ├── mp_nuketown.iwd
     │   │   ├── mp_nuketown_load.ff
 ```
+
+## Server Resources
+
+- [CoD4x](https://cod4x.ovh)
+- [CoD4x master server list](https://cod4master.cod4x.ovh/)

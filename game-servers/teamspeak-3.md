@@ -6,13 +6,13 @@
 
 To enable server query certain permissions have to be enabled or the guest server group.
 
-* Virtual Server
-* b\_virtualserver\_info\_view
-* b\_virtualserver\_channel\_list
-* b\_virtualserver\_client\_list
-* Group
-* b\_virtualserver\_servergroup\_list
-* b\_virtualserver\_channelgroup\_list
+- Virtual Server
+- b\_virtualserver\_info\_view
+- b\_virtualserver\_channel\_list
+- b\_virtualserver\_client\_list
+- Group
+- b\_virtualserver\_servergroup\_list
+- b\_virtualserver\_channelgroup\_list
 
 To enable these permissions first navigate to TeamSpeak3 Options and enable `Advanced permissions system`.
 
@@ -30,15 +30,15 @@ Permissions > Server Groups
 
 Select the values shown below and close the menu.
 
-* Virtual Server
-  * Information
-    * b\_virtualserver\_info\_view
-    * b\_virtualserver\_channel\_list
-    * b\_virtualserver\_client\_list
-* Group
-  * Information
-    * b\_virtualserver\_servergroup\_list
-    * b\_virtualserver\_channelgroup\_list
+- Virtual Server
+  - Information
+    - b\_virtualserver\_info\_view
+    - b\_virtualserver\_channel\_list
+    - b\_virtualserver\_client\_list
+- Group
+  - Information
+    - b\_virtualserver\_servergroup\_list
+    - b\_virtualserver\_channelgroup\_list
 
 ![](../.gitbook/assets/ts3_server_group_permissions.jpg)
 
@@ -46,7 +46,7 @@ Select the values shown below and close the menu.
 
 Because a user has to manually enable server query with TeamSpeak 3, LinuxGSM has gamedig query disabled by default. Enabling will allow more information to be displayed in _details_ and enable monitor to use gamedig.
 
-Copy the query mode settings from `_default.cfg`  to `common.cfg` and change `querymode`from `5` to `3`.
+Copy the query mode settings from `_default.cfg` to `common.cfg` and change `querymode`from `5` to `3`.
 
 ```text
 ## Query mode
@@ -126,7 +126,7 @@ cd ~
 ./ts3server restart
 ```
 
-## Known issues
+## Known Issues
 
 ### IPv6
 
@@ -147,4 +147,3 @@ If you find the above in the TeamSpeak 3 log you may need to remove the followin
 ### Server Crashed after a while \(outdated and no licence\)
 
 If the following message appears in the log of the Teamspeak 3 Linux Server `Error creating ephemeral license: EXPIRED` You need to upgrade the version of the TeamSpeak 3 Server to a more up-to-date version.
-
