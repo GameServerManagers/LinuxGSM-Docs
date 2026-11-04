@@ -51,6 +51,10 @@ matrixroom="!wsxanjDijPztgZgrYL:matrix.org"
 If your homeserver uses `.well-known` delegation (matrix.org delegates to `matrix-client.matrix.org`), the bare domain works in most cases. If alerts fail to send, try setting `matrixhomeserver` to the delegated client API host directly.
 {% endhint %}
 
+## Message format
+
+Alerts are sent as notices with HTML formatting, so headings show in bold and links are clickable. Clients that do not render HTML show the same alert as plain text.
+
 ## Testing the configuration
 
 Execute a test alert with `./gameserver test-alert` to verify the setup. If the alert appears in your Matrix room, the configuration is correct.
