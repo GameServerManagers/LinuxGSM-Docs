@@ -48,6 +48,7 @@
   * [Luanti](game-servers/luanti.md)
   * [Minecraft](game-servers/minecraft.md)
   * [Multi Theft Auto](game-servers/multi-theft-auto.md)
+  * [OpenRA: Red Alert](game-servers/openra-red-alert.md)
   * [RuneScape: Dragonwilds](game-servers/runescape-dragonwilds.md)
   * [Running With Rifles](game-servers/running-with-rifles.md)
   * [Rust](game-servers/rust.md)
