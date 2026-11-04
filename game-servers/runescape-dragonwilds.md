@@ -1,10 +1,10 @@
 # RuneScape: Dragonwilds
 
-## Server Resources
+## Requirements
 
-* [RuneScape: Dragonwilds Dedicated Servers (wiki)](https://dragonwilds.runescape.wiki/w/Dedicated\_Servers)
+- At least 2 GB of RAM.
 
-The dedicated server is a native Linux build, downloaded with SteamCMD (App ID `4019830`, about 5 GB). LinuxGSM recommends at least 2 GB of RAM.
+The dedicated server is a native Linux build, downloaded with SteamCMD (App ID `4019830`, about 5 GB).
 
 ## First Start: Set the Owner ID
 
@@ -46,13 +46,13 @@ serverfiles/RSDragonwilds/Saved/Config/LinuxServer/DedicatedServer.ini
 
 These settings are read from `DedicatedServer.ini`, not from LinuxGSM config. Stop the server before editing.
 
-| Setting            | Description                                    |
-| ------------------ | ---------------------------------------------- |
-| `OwnerId`          | Your Player ID. Required.                      |
-| `ServerName`       | Name shown to players.                         |
+| Setting            | Description                                          |
+| ------------------ | ---------------------------------------------------- |
+| `OwnerId`          | Your Player ID. Required.                            |
+| `ServerName`       | Name shown to players.                               |
 | `WorldPassword`    | Password players need to join. Leave empty for none. |
-| `AdminPassword`    | Password for admin access.                     |
-| `DefaultWorldName` | The world the server loads.                    |
+| `AdminPassword`    | Password for admin access.                           |
+| `DefaultWorldName` | The world the server loads.                          |
 
 `./rsdwserver details` shows the server name, world name and Owner ID that LinuxGSM reads from this file.
 
@@ -63,3 +63,7 @@ These settings are read from `DedicatedServer.ini`, not from LinuxGSM config. St
 | Game        | `7777` | UDP      |
 
 To change the port, set `port` in your LinuxGSM instance config (`lgsm/config-lgsm/rsdwserver/rsdwserver.cfg`). It is passed to the server as `-Port=`. Players can join with **Direct Connect** using your server's IP and port.
+
+## Server Resources
+
+- [RuneScape: Dragonwilds Dedicated Servers (wiki)](https://dragonwilds.runescape.wiki/w/Dedicated_Servers)
