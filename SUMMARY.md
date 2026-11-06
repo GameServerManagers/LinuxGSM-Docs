@@ -49,6 +49,7 @@
   * [Killing Floor 2](game-servers/killing-floor-2.md)
   * [Luanti](game-servers/luanti.md)
   * [Minecraft](game-servers/minecraft.md)
+  * [Minecraft Bedrock](game-servers/minecraft-bedrock.md)
   * [Multi Theft Auto](game-servers/multi-theft-auto.md)
   * [OpenRA: Red Alert](game-servers/openra-red-alert.md)
   * [RuneScape: Dragonwilds](game-servers/runescape-dragonwilds.md)
