@@ -6,6 +6,12 @@ The `backup` command allows the creation of `.tar.gz` archives of a game server.
 Each time a backup runs the whole game server will be backed up, this can take up significant storage space. Consider a backup policy to prevent your Linux server from running out of storage.
 {% endhint %}
 
+## What Is Included
+
+LinuxGSM backs up the server installation and, where they exist outside it, game saves and configuration needed to restore the server. This includes locations such as `~/Zomboid`, `~/.klei` for Don't Starve Together, Valheim worlds, 7 Days to Die saves and SCP: Secret Laboratory configuration. LinuxGSM shows each extra directory as `* Including <path>` during a backup.
+
+The archive can therefore contain files from outside `serverfiles` and may be larger than that directory. Check the archive contents before restoring it, especially when restoring on a different machine or into a container. Caches, crash dumps and unrelated home-directory files are not included just because they exist outside the install folder.
+
 ## Commands
 
 Standard: `./gameserver backup`
