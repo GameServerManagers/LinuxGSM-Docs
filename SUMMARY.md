@@ -42,6 +42,7 @@
   * [Counter-Strike: WON2](game-servers/counter-strike-won2.md)
   * [Don't Starve Together](game-servers/dont-starve-together.md)
   * [Factorio](game-servers/factorio.md)
+  * [FiveM](game-servers/fivem.md)
   * [Garry's Mod](game-servers/garrys-mod/README.md)
   * [Half-Life: WON2](game-servers/half-life-won2.md)
   * [Hytale](game-servers/hytale.md)
