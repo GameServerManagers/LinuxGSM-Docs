@@ -1,69 +1,29 @@
 # LinuxGSM Stats
 
-[LinuxGSM Stats](https://linuxgsm.com/data/usage/) is an `opt in` voluntary feature that allows you to provide selected information about your game server to be displayed on [linuxgsm.com](https://linuxgsm.com) by enabling the `stats` setting.
+LinuxGSM Stats is an optional, opt-in report that helps the project see which game servers and Linux distributions people use. Stats are off by default.
 
-## How is the information used?
+## Enable Stats
 
-All data collected is used to provide insight into which game servers, distros, and servers are popular with game server admins. This will assist in prioritising LinuxGSM development and give me (Daniel Gibbs) a never before insight into the number of people using LinuxGSM. This is a massive personal motivator as it has previously been difficult to know how many people actually use LinuxGSM.
+Add `stats="on"` to your [LinuxGSM config](linuxgsm-config.md), such as `common.cfg` for every instance or an instance config for one server. You can also opt in during installation. Set `stats="off"` to stop future reports.
 
-The collected data is publicly available to view in a dashboard on [LinuxGSM.com](https://linuxgsm.com/data/usage/)
+## What Is Sent
 
-## What information is collected?
+The report contains:
 
-Below is a list of types of data collected
+- A randomly generated instance UUID, so reports from the same server instance can be grouped.
+- Game name, Linux distribution, LinuxGSM version and virtualisation type.
+- CPU core count, total RAM and disk capacity.
+- Game server CPU, RAM and disk use when those values are available and above zero. CPU use is rounded up to 100 MHz and RAM use to 100 MB.
+- Names of enabled alert types, such as Discord or email. No alert address or token is included.
 
-### Basic Info
+The report does not include the CPU model, machine ID, hostname, server IP address, alert destinations or credentials. The collector receives the network connection used to send the report, as any web service does.
 
-* Game Server - Knowing the game server you are running gives insights into which servers are popular and can help shape development priorities.
-* Distro - It is useful to know which distros LinuxGSM is being used on to help focus development.
-* LinuxGSM Version - The currently installed version of LinuxGSM.
-* Alert Types - The alert types that have been turned on.
+The UUID is stored in `lgsm/data/uuid-<instance>.txt`. Only the random UUID portion is sent, without the human-readable name prefix. Removing the UUID files causes LinuxGSM to generate new identifiers on a later stats run.
 
-### Game Server Usage
+## When and Where It Is Sent
 
-Gathering game server usage helps set the minimum required hardware for each game server. This is particularly useful for resource-intensive servers.
+LinuxGSM sends a report to `https://usage.linuxgsm.com/v1/report` at most once per day for each instance when stats run. It no longer sends stats to Google Analytics. The request has a five-second timeout and a collector failure does not stop the server or delay monitoring beyond that timeout.
 
-* CPU Used - The CPU usage in MHz (rounded to the nearest 100MHz) of the game server.
-* RAM Used - The memory usage in MB (rounded to the nearest 100MB) of the game server.
-* Disk Used - The storage taken by the game server (serverfiles directory) of the game server.
+The data helps prioritise LinuxGSM development and is used in the [public usage dashboard](https://linuxgsm.com/data/usage/).
 
-### Server Hardware
-
-Gathering information on the server hardware being used to host a Game Server. This provides useful stats on the sorts of hardware game server admins are deciding to use.
-
-* CPU - Gathers the CPU Manufacturer and Model.
-* RAM - Total server RAM.
-* Disk Space - Total server disk space.
-
-### Country of origin
-
-~~The country of origin is shown identifying where in the world LinuxGSM is being used.~~
-
-The country of origin is no longer working with GA-4 but might be available again in the future
-
-## How is Information collected?
-
-LinuxGSM Stats uses Google Analytics (GA-4) event-driven API to collect information to allow Daniel Gibbs to get an idea of which game servers and distros are popular identify system requirements for game servers and know the sort of servers game server admins are using.
-
-## Is my data anonymous?
-
-Short answer - Yes
-
-Long answer - All information gathered is anonymous, the server IP address, hostname, etc., or other identifying information is not collected. \
-\
-When LinuxGSM Stats is first run it creates a [UUID (Unique identifier)](https://en.wikipedia.org/wiki/Universally\_unique\_identifier) which is a randomly generated ID to allow Google Analytics to identify your unique information anonymously. Since this ID is random there is no way to know where the info is from, only that it is from the same sender.&#x20;
-
-The UUID is located in`lgsm/data/uuid.txt`,if this file is deleted a new UUID will be generated.
-
-Since LinuxGSM is open-source you can also see how the data is gathered by looking at the `info_stats.sh` file.
-
-## How frequently is the data sent?
-
-Data is sent every time the monitor runs as this is the only way to regularly send data.
-
-## How can I enable this feature?
-
-To enable LinuxGSM Stats simply add the `stats="on"` setting to the `common.cfg` file. This can also be enabled on install.
-
-
-
+You can inspect how the report is built in [`info_stats.sh`](https://github.com/GameServerManagers/LinuxGSM/blob/develop/lgsm/modules/info_stats.sh).
