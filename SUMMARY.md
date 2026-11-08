@@ -35,6 +35,7 @@
   * [7 Days To Die](game-servers/7-days-to-die.md)
   * [ARK: Survival Evolved](game-servers/ark-survival-evolved.md)
   * [ARMA 3](game-servers/arma-3.md)
+  * [Battlefront Eternal](game-servers/battlefront-eternal.md)
   * [Call of Duty 4](game-servers/call-of-duty-4.md)
   * [Conan Exiles](game-servers/conan-exiles.md)
   * [Counter-Strike 2](game-servers/counter-strike-2.md)
