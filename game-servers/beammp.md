@@ -3,7 +3,7 @@
 ## Requirements
 
 - A **BeamMP AuthKey** from [keymaster.beammp.com](https://keymaster.beammp.com). The server won't run without one.
-- **Debian or Ubuntu**. BeamMP only publishes Linux builds for these. On other distros the install stops with an error.
+- **Debian or Ubuntu**. BeamMP only publishes Linux builds for these. RHEL, Rocky Linux, AlmaLinux and CentOS Stream 10 or newer use the Ubuntu 24.04 build, which needs glibc 2.38. On other distros, including version 9 of those, the install stops with an error.
 - x86\_64 or arm64.
 - Players need BeamNG.drive with the BeamMP mod.
 
