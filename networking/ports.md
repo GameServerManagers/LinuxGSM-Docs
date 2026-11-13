@@ -72,6 +72,76 @@ If you're running multiple game servers, make sure you're using different ports 
 
 Should a server have multiple dedicated IP addresses allocated, it is possible for game servers to have the same ports but bound to different IP addresses. Admins will need to set the specific IP address in the LinuxGSM config or game config.
 
+## Static Port Mapping (NAT and Docker)
+
+Many game servers add themselves to a server list, such as the Steam master server, and players join from that list. The game server reports the port it is configured to use, not the port the outside world sees. If Docker or a router maps a different outside port to it, the list shows the wrong port and players cannot join from the server browser.
+
+Keep the outside port the same as the port the game is configured to use:
+
+* **Docker:** publish the same port on both sides, for example `-p 27016:27016/udp` or `- "27016:27016/udp"` in `docker-compose.yml`, not `27016:27015/udp`.
+* **Router:** forward outside port 27016 to port 27016 on the server.
+* **Changing the port:** change it in the game's [start parameters](../configuration/start-parameters.md) or [game config](../configuration/game-server-config.md) first, then use the same number in Docker and on the router.
+
+This applies to any game that registers with a server list, including Source, GoldSrc and most other Steam games. A mapped port can work for players who join by typing the address and port, but keeping the ports the same avoids the problem entirely.
+
+### Example: a Source server on port 27016
+
+**Changing the port using Docker or the firewall (fails)**
+
+```mermaid
+flowchart RL
+    MASTER["Steam<br/>master server"]
+    CLIENT["Steam client"]
+    FW["Firewall<br/>27016"]
+    DOCKER["Docker<br/>27016 to 27015"]
+    SRCDS["SRCDS<br/>27015"]
+    MASTER ~~~ CLIENT ~~~ FW ~~~ DOCKER ~~~ SRCDS
+    CLIENT -- "(5) 27016" --> FW
+    FW -- "27016" --> DOCKER
+    DOCKER -- "27015" --> SRCDS
+    SRCDS -. "(4) 27015" .-> MASTER
+    MASTER -. "(6) 27015" .-> CLIENT
+    SRCDS -. "(7) 27015" .-> CLIENT
+    CLIENT -- "(8) 27015 FAILS" --x FW
+```
+
+1. SRCDS is configured to use port 27015.
+2. Docker has a port mapping that changes the port from 27016 to 27015.
+3. The firewall is configured to allow port 27016.
+4. SRCDS is running and reports to the master server that it is using port 27015.
+5. The player adds the server to the server browser using port 27016 and queries SRCDS.
+6. The master server believes SRCDS is using port 27015.
+7. SRCDS successfully responds to the query, stating it is using port 27015.
+8. The game attempts to connect to the server on port 27015 and fails.
+
+**Changing the port using the start parameters (works)**
+
+```mermaid
+flowchart RL
+    MASTER["Steam<br/>master server"]
+    CLIENT["Steam client"]
+    FW["Firewall<br/>27016"]
+    DOCKER["Docker<br/>27016"]
+    SRCDS["SRCDS<br/>27016"]
+    MASTER ~~~ CLIENT ~~~ FW ~~~ DOCKER ~~~ SRCDS
+    CLIENT -- "(5) 27016" --> FW
+    FW -- "27016" --> DOCKER
+    DOCKER -- "27016" --> SRCDS
+    SRCDS -. "(4) 27016" .-> MASTER
+    MASTER -. "(6) 27016" .-> CLIENT
+    SRCDS -. "(7) 27016" .-> CLIENT
+    CLIENT == "(8) 27016 WORKS" ==> FW
+```
+
+1. SRCDS is configured to use port 27016.
+2. Docker has a port mapping of 27016.
+3. The firewall is configured to allow port 27016.
+4. SRCDS is running and reports to the master server that it is using port 27016.
+5. The player adds the server to the server browser using port 27016 and queries SRCDS.
+6. The master server believes SRCDS is using port 27016.
+7. SRCDS successfully responds to the query, stating it is using port 27016.
+8. The game attempts to connect to the server on port 27016 and succeeds.
+
 ## Port Allocation Scheme
 
 Each type of server has a default set of ports. This is fine to use if only one server is being set up. However, if multiple servers are being used a port scheme needs to be considered. There is no requirement to stick to specific ports but it is recommended they are in a logical order.
