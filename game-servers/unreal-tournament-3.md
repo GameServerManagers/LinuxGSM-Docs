@@ -73,7 +73,7 @@ GameSpecificMapCycles=(GameClassName="UTDuelGame",Maps=("DM-Arsenal","DM-Biohaza
 | ----------- | ------ | -------- |
 | Game        | `7777` | UDP      |
 | Query       | `6500` | UDP      |
-| Web Admin   | `8080` | TCP      |
+| Web Admin   | `7779` | TCP      |
 
 The game and query ports are handled by parms. The Web Admin port is handled by `UTWeb.ini`.
 
