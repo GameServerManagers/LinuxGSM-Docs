@@ -48,6 +48,16 @@ yum install java-1.8.0-openjdk
 yum install java-11-openjdk
 ```
 
+## Choosing a Java binary
+
+By default Java game servers start with the `java` found in the `PATH`. If several Java versions are installed, set `javabin` in the instance config to use a specific one for that server:
+
+```
+javabin="/usr/lib/jvm/java-21-openjdk-amd64/bin/java"
+```
+
+`javabin` is available for Minecraft, PaperMC, Waterfall and Velocity servers. Run `update-alternatives --list java` to see the installed paths on Debian and Ubuntu.
+
 ## JRE Availability Table
 
 JRE Availability Table Different Distros have different versions of Java. This page will outline the different versions that are available.
