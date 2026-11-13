@@ -66,6 +66,8 @@ You can use any port as long as it is not already in use and it is up to you to 
 
 {% hint style="info" %}
 If you're running multiple game servers, make sure you're using different ports on all of your game servers to avoid a port conflict.
+
+Source engine servers also have a client port that must be different on each server, even though it is never forwarded. See [Source Engine](source-engine.md#client-port).
 {% endhint %}
 
 ## Multiple IP addresses
