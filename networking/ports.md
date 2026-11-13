@@ -90,19 +90,19 @@ This applies to any game that registers with a server list, including Source, Go
 
 ```mermaid
 flowchart RL
-    MASTER["Steam master server"]
+    MASTER["Steam<br/>master server"]
     CLIENT["Steam client"]
-    FW["Firewall<br/>allows 27016"]
-    DOCKER["Docker<br/>maps 27016 to 27015"]
-    SRCDS["SRCDS<br/>set to 27015"]
+    FW["Firewall<br/>27016"]
+    DOCKER["Docker<br/>27016 to 27015"]
+    SRCDS["SRCDS<br/>27015"]
     MASTER ~~~ CLIENT ~~~ FW ~~~ DOCKER ~~~ SRCDS
-    CLIENT -- "Step 5: query on 27016" --> FW
+    CLIENT -- "(5) 27016" --> FW
     FW -- "27016" --> DOCKER
     DOCKER -- "27015" --> SRCDS
-    SRCDS -. "Step 4: reports 27015" .-> MASTER
-    MASTER -. "Step 6: lists 27015" .-> CLIENT
-    SRCDS -. "Step 7: replies I am on 27015" .-> CLIENT
-    CLIENT -- "Step 8: connects to 27015, FAILS" --x FW
+    SRCDS -. "(4) 27015" .-> MASTER
+    MASTER -. "(6) 27015" .-> CLIENT
+    SRCDS -. "(7) 27015" .-> CLIENT
+    CLIENT -- "(8) 27015 FAILS" --x FW
 ```
 
 1. SRCDS is configured to use port 27015.
@@ -118,19 +118,19 @@ flowchart RL
 
 ```mermaid
 flowchart RL
-    MASTER["Steam master server"]
+    MASTER["Steam<br/>master server"]
     CLIENT["Steam client"]
-    FW["Firewall<br/>allows 27016"]
-    DOCKER["Docker<br/>maps 27016 to 27016"]
-    SRCDS["SRCDS<br/>set to 27016"]
+    FW["Firewall<br/>27016"]
+    DOCKER["Docker<br/>27016"]
+    SRCDS["SRCDS<br/>27016"]
     MASTER ~~~ CLIENT ~~~ FW ~~~ DOCKER ~~~ SRCDS
-    CLIENT -- "Step 5: query on 27016" --> FW
+    CLIENT -- "(5) 27016" --> FW
     FW -- "27016" --> DOCKER
     DOCKER -- "27016" --> SRCDS
-    SRCDS -. "Step 4: reports 27016" .-> MASTER
-    MASTER -. "Step 6: lists 27016" .-> CLIENT
-    SRCDS -. "Step 7: replies I am on 27016" .-> CLIENT
-    CLIENT == "Step 8: connects to 27016, WORKS" ==> FW
+    SRCDS -. "(4) 27016" .-> MASTER
+    MASTER -. "(6) 27016" .-> CLIENT
+    SRCDS -. "(7) 27016" .-> CLIENT
+    CLIENT == "(8) 27016 WORKS" ==> FW
 ```
 
 1. SRCDS is configured to use port 27016.
