@@ -10,7 +10,7 @@ Source engine servers use the following ports by default.
 | Query    | 27015   | UDP      | Inbound         | Yes (same port as the game)     |
 | RCON     | 27015   | TCP      | Inbound         | Only if you use RCON remotely   |
 | SourceTV | 27020   | UDP      | Inbound         | Only if SourceTV is enabled     |
-| Client   | 27005   | UDP      | Not used        | No, but it must be unique       |
+| Client   | 27005   | UDP      | Unused          | No, but it must be unique       |
 
 GoldSrc engine servers (Half-Life 1 based games) use 27015 for the game, query and RCON, and do not open a client port.
 
@@ -22,13 +22,13 @@ The client port is the one that confuses most people, so here is what it is and 
 
 The Source engine is a single program that contains both the game you play and the server you host. When you play a Source game, the client half of the engine uses the client port (27005 by default) to talk to servers. A dedicated server runs the same engine, so it opens the client port as well, even though no player is sitting at it.
 
-<figure><img src="../.gitbook/assets/source-client-port-halves.svg" alt="A Source server has a server half on port 27015 that players and the server browser connect to, and an idle client half on port 27005"><figcaption><p>Players and the server browser only ever use the game port</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/source-client-port-halves.svg" alt="A Source server has a server half on port 27015 that players and the server browser connect to, and an unused client half on port 27005"><figcaption><p>Players and the server browser only ever use the game port</p></figcaption></figure>
 
-On a dedicated server the client port is idle. Players, server browser queries, RCON and the Steam master server do not use it, and nothing is sent or received on it. It does **not** need to be opened in a firewall or forwarded on a router.
+On a dedicated server the client port is unused. Players, server browser queries, RCON and the Steam master server do not use it, and nothing is sent or received on it. It does **not** need to be opened in a firewall or forwarded on a router.
 
 ### Why it still matters
 
-Even an idle port takes up its number, and only one program can use a port number at a time. If you run more than one Source server on the same host, each server needs its own client port, as well as its own game and SourceTV ports.
+Even an unused port takes up its number, and only one program can use a port number at a time. If you run more than one Source server on the same host, each server needs its own client port, as well as its own game and SourceTV ports.
 
 LinuxGSM starts Source servers with `-strictportbind`, which tells the server to stop rather than quietly pick a different port. So if a second server finds 27005 already taken, it will not start, even when its game port is different. The console log shows:
 
