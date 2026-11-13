@@ -72,6 +72,53 @@ If you're running multiple game servers, make sure you're using different ports 
 
 Should a server have multiple dedicated IP addresses allocated, it is possible for game servers to have the same ports but bound to different IP addresses. Admins will need to set the specific IP address in the LinuxGSM config or game config.
 
+## Static Port Mapping (NAT and Docker)
+
+Many game servers add themselves to a server list, such as the Steam master server, and players join from that list. The game server reports the port it is configured to use, not the port the outside world sees. If Docker or a router maps a different outside port to it, the list shows the wrong port and players cannot join from the server browser.
+
+Keep the outside port the same as the port the game is configured to use:
+
+* **Docker:** publish the same port on both sides, for example `-p 27016:27016/udp` or `- "27016:27016/udp"` in `docker-compose.yml`, not `27016:27015/udp`.
+* **Router:** forward outside port 27016 to port 27016 on the server.
+* **Changing the port:** change it in the game's [start parameters](../configuration/start-parameters.md) or [game config](../configuration/game-server-config.md) first, then use the same number in Docker and on the router.
+
+This applies to any game that registers with a server list, including Source, GoldSrc and most other Steam games. A mapped port can work for players who join by typing the address and port, but keeping the ports the same avoids the problem entirely.
+
+### Example: a Source server on port 27016
+
+Mapping outside port 27016 to a game still set to 27015 fails, because the server list hands players port 27015:
+
+```mermaid
+sequenceDiagram
+    participant P as Player
+    participant L as Steam master server
+    participant R as Router or Docker
+    participant S as Game server
+    Note over R,S: Game set to 27015. Outside port 27016 is mapped to 27015.
+    S->>L: Register on port 27015
+    P->>L: Find servers
+    L-->>P: 203.0.113.10:27015
+    P-xR: Connect to 27015
+    Note over P,R: 27015 is not forwarded, so the player cannot join
+```
+
+Setting the game itself to 27016 and passing 27016 straight through works, because the listed port is the one that is forwarded:
+
+```mermaid
+sequenceDiagram
+    participant P as Player
+    participant L as Steam master server
+    participant R as Router or Docker
+    participant S as Game server
+    Note over R,S: Game set to 27016. Outside port 27016 goes to 27016.
+    S->>L: Register on port 27016
+    P->>L: Find servers
+    L-->>P: 203.0.113.10:27016
+    P->>R: Connect to 27016
+    R->>S: Forward to 27016
+    S-->>P: Player joins
+```
+
 ## Port Allocation Scheme
 
 Each type of server has a default set of ports. This is fine to use if only one server is being set up. However, if multiple servers are being used a port scheme needs to be considered. There is no requirement to stick to specific ports but it is recommended they are in a logical order.

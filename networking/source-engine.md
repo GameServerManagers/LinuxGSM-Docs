@@ -29,13 +29,4 @@ Use `./gameserver details` to check port settings. Its `LISTEN` column reports s
 
 ## Static Port Mapping (NAT/Docker)
 
-Source servers advertise their configured game port to Steam's server browser. Keep the Internet-facing game port the same as the game's configured port so players can connect to the advertised address.
-
-For example, if the game uses 27015/UDP, publish 27015/UDP from Docker and forward 27015/UDP on the router to that host. To use 27016/UDP instead, change the game's start parameters to 27016 and use that port in the Docker mapping and router rule.
-
-<figure><img src="../.gitbook/assets/srcds_ports.jpg" alt=""><figcaption><p>Changing port using Docker or firewall</p></figcaption></figure>
-
-
-
-<figure><img src="../.gitbook/assets/sdcds_ports_2.jpg" alt=""><figcaption><p>Changing port using the start parameters</p></figcaption></figure>
-
+Source servers advertise their configured game port to Steam's server browser, so the Internet-facing game port must be the same as the port in the start parameters. See [Static Port Mapping](ports.md#static-port-mapping-nat-and-docker) for why, with diagrams.
