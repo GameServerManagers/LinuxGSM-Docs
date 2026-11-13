@@ -86,38 +86,61 @@ This applies to any game that registers with a server list, including Source, Go
 
 ### Example: a Source server on port 27016
 
-Mapping outside port 27016 to a game still set to 27015 fails, because the server list hands players port 27015:
+**Changing the port using Docker or the firewall (fails)**
 
 ```mermaid
-sequenceDiagram
-    participant P as Player
-    participant L as Steam master server
-    participant R as Router or Docker
-    participant S as Game server
-    Note over R,S: Game set to 27015. Outside port 27016 is mapped to 27015.
-    S->>L: Register on port 27015
-    P->>L: Find servers
-    L-->>P: 203.0.113.10:27015
-    P-xR: Connect to 27015
-    Note over P,R: 27015 is not forwarded, so the player cannot join
+flowchart RL
+    MASTER["Steam master server"]
+    CLIENT["Steam client"]
+    FW["Firewall<br/>allows 27016"]
+    DOCKER["Docker<br/>maps 27016 to 27015"]
+    SRCDS["SRCDS<br/>set to 27015"]
+    MASTER ~~~ CLIENT ~~~ FW ~~~ DOCKER ~~~ SRCDS
+    CLIENT -- "Step 5: query on 27016" --> FW
+    FW -- "27016" --> DOCKER
+    DOCKER -- "27015" --> SRCDS
+    SRCDS -. "Step 4: reports 27015" .-> MASTER
+    MASTER -. "Step 6: lists 27015" .-> CLIENT
+    SRCDS -. "Step 7: replies I am on 27015" .-> CLIENT
+    CLIENT -- "Step 8: connects to 27015, FAILS" --x FW
 ```
 
-Setting the game itself to 27016 and passing 27016 straight through works, because the listed port is the one that is forwarded:
+1. SRCDS is configured to use port 27015.
+2. Docker has a port mapping that changes the port from 27016 to 27015.
+3. The firewall is configured to allow port 27016.
+4. SRCDS is running and reports to the master server that it is using port 27015.
+5. The player adds the server to the server browser using port 27016 and queries SRCDS.
+6. The master server believes SRCDS is using port 27015.
+7. SRCDS successfully responds to the query, stating it is using port 27015.
+8. The game attempts to connect to the server on port 27015 and fails.
+
+**Changing the port using the start parameters (works)**
 
 ```mermaid
-sequenceDiagram
-    participant P as Player
-    participant L as Steam master server
-    participant R as Router or Docker
-    participant S as Game server
-    Note over R,S: Game set to 27016. Outside port 27016 goes to 27016.
-    S->>L: Register on port 27016
-    P->>L: Find servers
-    L-->>P: 203.0.113.10:27016
-    P->>R: Connect to 27016
-    R->>S: Forward to 27016
-    S-->>P: Player joins
+flowchart RL
+    MASTER["Steam master server"]
+    CLIENT["Steam client"]
+    FW["Firewall<br/>allows 27016"]
+    DOCKER["Docker<br/>maps 27016 to 27016"]
+    SRCDS["SRCDS<br/>set to 27016"]
+    MASTER ~~~ CLIENT ~~~ FW ~~~ DOCKER ~~~ SRCDS
+    CLIENT -- "Step 5: query on 27016" --> FW
+    FW -- "27016" --> DOCKER
+    DOCKER -- "27016" --> SRCDS
+    SRCDS -. "Step 4: reports 27016" .-> MASTER
+    MASTER -. "Step 6: lists 27016" .-> CLIENT
+    SRCDS -. "Step 7: replies I am on 27016" .-> CLIENT
+    CLIENT == "Step 8: connects to 27016, WORKS" ==> FW
 ```
+
+1. SRCDS is configured to use port 27016.
+2. Docker has a port mapping of 27016.
+3. The firewall is configured to allow port 27016.
+4. SRCDS is running and reports to the master server that it is using port 27016.
+5. The player adds the server to the server browser using port 27016 and queries SRCDS.
+6. The master server believes SRCDS is using port 27016.
+7. SRCDS successfully responds to the query, stating it is using port 27016.
+8. The game attempts to connect to the server on port 27016 and succeeds.
 
 ## Port Allocation Scheme
 
