@@ -5,7 +5,7 @@
 ## Requirements
 
 - An MQTT broker you can reach from the game server, for example [Mosquitto](https://mosquitto.org).
-- The `mosquitto_pub` client. LinuxGSM installs it for you when MQTT alerts are on: `mosquitto-clients` on Debian and Ubuntu, `mosquitto` on CentOS, Rocky, AlmaLinux and Fedora.
+- The `mosquitto_pub` client. LinuxGSM installs it for you the next time you start or restart the server with MQTT alerts on, or you can install it yourself first: `mosquitto-clients` on Debian and Ubuntu, `mosquitto` on CentOS, Rocky, AlmaLinux and Fedora.
 
 ## Configuring MQTT Alerts
 
