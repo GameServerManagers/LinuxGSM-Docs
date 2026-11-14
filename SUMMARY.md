@@ -46,6 +46,7 @@
   * [FiveM](game-servers/fivem.md)
   * [Garry's Mod](game-servers/garrys-mod/README.md)
   * [Half-Life: WON2](game-servers/half-life-won2.md)
+  * [Holdfast: Nations At War](game-servers/holdfast-nations-at-war.md)
   * [Hytale](game-servers/hytale.md)
   * [Insurgency: Sandstorm](game-servers/insurgency-sandstorm.md)
   * [Killing Floor 2](game-servers/killing-floor-2.md)
