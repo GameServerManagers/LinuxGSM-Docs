@@ -106,7 +106,7 @@ The in-game server browser gets its list of servers from a master server. Each s
 
 The vanilla and Reborn variants use `master.gametir.com`. New installs get the current engines, and on start LinuxGSM changes the master address in the known GameSpy and xNULL engines, so older installs move over without reinstalling. Nothing else in the engine changes.
 
-OpenMoHAA lists servers on the 333networks masters by default, and isn't affected by the xNULL shutdown. See the [OpenMoHAA documentation](https://github.com/openmoh/openmohaa) to change them.
+OpenMoHAA lists servers on the 333networks masters by default, and isn't affected by the xNULL shutdown. See the [OpenMoHAA documentation](https://www.openmohaa.org/) to change them.
 
 ## Connecting
 
@@ -115,7 +115,7 @@ Players need a copy of the game the server runs. The [Medal of Honor: Allied Ass
 Players can use either client:
 
 - **Original game (Windows):** the unpatched game still looks for the closed GameSpy master, so its server browser stays empty. Installing the [MoH Reborn](https://www.mohreborn.com/downloads) 1.12 patch points the browser at the community master. [333networks](https://333networks.com/instructions/mohaa/s) has instructions for patching the game yourself.
-- **OpenMoHAA:** the [OpenMoHAA](https://github.com/openmoh/openmohaa) client runs on Windows, Linux and macOS (x86_64 and arm64). It uses the game files from an original copy, has a launcher for each of the three games, and its server browser uses the 333networks masters.
+- **OpenMoHAA:** the [OpenMoHAA](https://www.openmohaa.org/) client runs on Windows, Linux and macOS (x86_64 and arm64). It uses the game files from an original copy, has a launcher for each of the three games, and its server browser uses the 333networks masters.
 
 Any client can join by address without the server browser. Start the game with `+set ui_console 1`, open the console with `~` and enter:
 
@@ -136,6 +136,6 @@ connect <ip>:12203
 
 ## Server Resources
 
-- [OpenMoHAA](https://github.com/openmoh/openmohaa)
+- [OpenMoHAA](https://www.openmohaa.org/)
 - [MoH Reborn](https://www.mohreborn.com/)
 - [333networks](https://333networks.com/)
