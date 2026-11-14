@@ -76,6 +76,7 @@
   * [Gotify](alerts/gotify.md)
   * [IFTTT](alerts/ifttt.md)
   * [Matrix](alerts/matrix.md)
+  * [MQTT](alerts/mqtt.md)
   * [ntfy](alerts/ntfy.md)
   * [Pushbullet](alerts/pushbullet.md)
   * [Pushover](alerts/pushover.md)
