@@ -26,8 +26,6 @@ One `mohaaserver` runs Allied Assault and both expansions, Spearhead and Breakth
 
 New installs use `alliedassault-openmohaa`, saved to `lgsm/config-lgsm/mohaaserver/common.cfg` at install. Installs without a `variant` setting, including every install made before variants were added, use `alliedassault-reborn`.
 
-The vanilla and Reborn engines in the LinuxGSM download use the `master.x-null.net` master server instead of the closed GameSpy master, so servers still show in the in-game server browser.
-
 ### Changing Variant
 
 Set `variant` in your instance config (`lgsm/config-lgsm/mohaaserver/mohaaserver.cfg`) and restart the server:
@@ -72,6 +70,12 @@ For a Spearhead or Breakthrough server, set `defaultmap` to a map from that game
 
 Change them with `port` and `queryport` in your instance config. They become `+set net_port` and `+set net_gamespy_port`.
 
+## Master Server
+
+The original engines list servers on the GameSpy master, which has closed. The vanilla and Reborn variants use `master.gametir.com` instead, the master from the current Reborn release, so servers show in the in-game server browser. LinuxGSM changes the master in older engines on start, including those using `master.x-null.net`, which shuts down on 1 March 2027. Only the master address changes.
+
+OpenMoHAA lists servers on the 333networks masters by default. See the [OpenMoHAA documentation](https://github.com/openmoh/openmohaa) to change them.
+
 ## Files
 
 | Path                    | Contents                                                                        |
@@ -86,4 +90,5 @@ Change them with `port` and `queryport` in your instance config. They become `+s
 ## Server Resources
 
 - [OpenMoHAA](https://github.com/openmoh/openmohaa)
-- [xNULL](https://www.x-null.net/)
+- [MoH Reborn](https://www.mohreborn.com/)
+- [333networks](https://333networks.com/)
