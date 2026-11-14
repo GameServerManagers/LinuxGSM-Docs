@@ -50,6 +50,7 @@
   * [Insurgency: Sandstorm](game-servers/insurgency-sandstorm.md)
   * [Killing Floor 2](game-servers/killing-floor-2.md)
   * [Luanti](game-servers/luanti.md)
+  * [Medal of Honor: Allied Assault](game-servers/medal-of-honor-allied-assault.md)
   * [Minecraft](game-servers/minecraft.md)
   * [Minecraft Bedrock](game-servers/minecraft-bedrock.md)
   * [Multi Theft Auto](game-servers/multi-theft-auto.md)
