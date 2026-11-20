@@ -61,6 +61,7 @@ Warnings are sent with the game's own chat command, typed into the server consol
 | Source, Source 2 and GoldSrc games, Quake and Call of Duty games, Xonotic, Minecraft, Terraria, Unturned, Barotrauma, Hytale | `say` |
 | Project Zomboid                                                                                      | `servermsg`           |
 | Don't Starve Together                                                                                | `c_announce`          |
+| Natural Selection 2                                                                                  | `sv_say`              |
 | SCP: Secret Laboratory                                                                               | `/bc`                 |
 | Vintage Story                                                                                        | `/announce`           |
 | WaterfallMC                                                                                          | `alert`               |
